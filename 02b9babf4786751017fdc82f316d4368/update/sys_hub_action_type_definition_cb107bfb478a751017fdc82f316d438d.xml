@@ -1,0 +1,4460 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_status/>
+        <action_template/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <ih_action>false</ih_action>
+        <internal_name>retrieve_marval_character_cards</internal_name>
+        <label_cache>[{"name":"{{step[8b775f3d-c042-4121-bbad-2ee8176bfb2c].response_body}}","label":"step➛REST step➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[63444f10-e73f-4fec-9fe3-6f21a3cdf024].root}}","label":"step➛JSON Parser step➛root","type":"step","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{}}]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <name>Retrieve Marvel Character cards</name>
+        <natlang/>
+        <outputs/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <state>draft</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-30 03:28:22</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>cb107bfb478a751017fdc82f316d438d</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Retrieve Marvel Character cards</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Flow Designer SNUG" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Flow Designer SNUG">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_cb107bfb478a751017fdc82f316d438d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-30 23:40:11</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_translated_text action="delete_multiple" query="documentkey=cb107bfb478a751017fdc82f316d438d"/>
+    <sys_variable_value action="delete_multiple" query="document_key=cb107bfb478a751017fdc82f316d438d"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>cb107bfb478a751017fdc82f316d438d</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-30 03:54:08</sys_created_on>
+        <sys_id>1806ff3f47ca751017fdc82f316d439c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-30 03:54:08</sys_updated_on>
+        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"4adfb7bc-9d67-498d-88d0-8d6c3d584fed\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</value>
+        <variable display_value="Action Status">9806ff3f47ca751017fdc82f316d4390</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>cb107bfb478a751017fdc82f316d438d</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-30 03:54:08</sys_created_on>
+        <sys_id>5406ff3f47ca751017fdc82f316d439c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-30 03:54:08</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Don't Treat as Error">1006ff3f47ca751017fdc82f316d4395</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>cb107bfb478a751017fdc82f316d438d</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-30 03:56:48</sys_created_on>
+        <sys_id>6b963f7f47ca751017fdc82f316d4365</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-30 23:40:11</sys_updated_on>
+        <value/>
+        <variable display_value="Response Payload">e3963f7f47ca751017fdc82f316d4333</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=cb107bfb478a751017fdc82f316d438d"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>response_payload</field>
+        <id>cb107bfb478a751017fdc82f316d438d</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-30 03:56:48</sys_created_on>
+        <sys_id>e7963f7f47ca751017fdc82f316d4365</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-30 23:40:11</sys_updated_on>
+        <table>var__m_sys_hub_action_output_cb107bfb478a751017fdc82f316d438d</table>
+        <value>{{step[63444f10-e73f-4fec-9fe3-6f21a3cdf024].root}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__action_status__</field>
+        <id>cb107bfb478a751017fdc82f316d438d</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-30 03:54:08</sys_created_on>
+        <sys_id>d006ff3f47ca751017fdc82f316d439c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-30 03:54:08</sys_updated_on>
+        <table>var__m_sys_hub_action_output_cb107bfb478a751017fdc82f316d438d</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__dont_treat_as_error__</field>
+        <id>cb107bfb478a751017fdc82f316d438d</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-30 03:54:08</sys_created_on>
+        <sys_id>1006ff3f47ca751017fdc82f316d439c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-30 03:54:08</sys_updated_on>
+        <table>var__m_sys_hub_action_output_cb107bfb478a751017fdc82f316d438d</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="delete_multiple" query="action=cb107bfb478a751017fdc82f316d438d^sys_idNOT IN1006ff3f47ca751017fdc82f316d435f,63963f7f47ca751017fdc82f316d4321"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Retrieve Marvel Character cards">cb107bfb478a751017fdc82f316d438d</action>
+        <cid>8b775f3d-c042-4121-bbad-2ee8176bfb2c</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>REST step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="REST">07a762fb47222200b4fad7527c9a7129</step_type>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-30 03:54:07</sys_created_on>
+        <sys_id>1006ff3f47ca751017fdc82f316d435f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Flow Designer SNUG">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-30 03:54:08</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=1006ff3f47ca751017fdc82f316d435f"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>1006ff3f47ca751017fdc82f316d435f</document_key>
+        <order>13</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-30 03:54:08</sys_created_on>
+        <sys_id>1006ff3f47ca751017fdc82f316d438c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-30 03:54:08</sys_updated_on>
+        <value>18409d8007482000dada43c0d1021e8f</value>
+        <variable display_value="Capabilities">c30a451d2f201300a09a839fb18c95b4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>1006ff3f47ca751017fdc82f316d435f</document_key>
+        <order>20</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-30 03:54:08</sys_created_on>
+        <sys_id>1406ff3f47ca751017fdc82f316d438b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-30 03:54:08</sys_updated_on>
+        <value>search.php?database</value>
+        <variable display_value="Resource Path">3d090af03b23320057a4a2e334efc455</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>1006ff3f47ca751017fdc82f316d435f</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-30 03:54:08</sys_created_on>
+        <sys_id>1c06ff3f47ca751017fdc82f316d438c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-30 03:54:08</sys_updated_on>
+        <value/>
+        <variable display_value="Connection Timeout">7a59009bc7522010820469467ec260c0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>1006ff3f47ca751017fdc82f316d435f</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-30 03:54:08</sys_created_on>
+        <sys_id>5006ff3f47ca751017fdc82f316d438b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-30 03:54:08</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Honor Duplicate Query Params">58715a1c53f22010d3a8ddeeff7b1248</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>1006ff3f47ca751017fdc82f316d435f</document_key>
+        <order>25</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-30 03:54:08</sys_created_on>
+        <sys_id>5806ff3f47ca751017fdc82f316d438c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-30 03:54:08</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[{"attributes":{"mandatory":false,"omit_if_empty":false},"name":"type","value":"Character"},{"attributes":{"mandatory":false,"omit_if_empty":false},"name":"sort","value":"id"},{"attributes":{"mandatory":false,"omit_if_empty":false},"name":"limit","value":"300"},{"attributes":{"mandatory":false,"omit_if_empty":false},"name":"offset","value":"0"}]}</value>
+        <variable display_value="Query Parameters">4328e2fb47222200b4fad7527c9a7164</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>1006ff3f47ca751017fdc82f316d435f</document_key>
+        <order>30</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-30 03:54:08</sys_created_on>
+        <sys_id>5c06ff3f47ca751017fdc82f316d438b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-30 03:54:08</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[{"attributes":{"mandatory":false,"omit_if_empty":false},"name":"Accept-Encoding","value":"gzip, deflate, br"},{"attributes":{"mandatory":false,"omit_if_empty":false},"name":"Accept","value":"*/*"},{"attributes":{"mandatory":false,"omit_if_empty":false},"name":"Connection","value":"keep-alive"}]}</value>
+        <variable display_value="Headers">371837f1c71003007b237f48cb9763b0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>1006ff3f47ca751017fdc82f316d435f</document_key>
+        <order>12</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-30 03:54:08</sys_created_on>
+        <sys_id>9406ff3f47ca751017fdc82f316d438c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-30 03:54:08</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f11ebf865f101300a09a2abd7f466652</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>1006ff3f47ca751017fdc82f316d435f</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-30 03:54:08</sys_created_on>
+        <sys_id>9806ff3f47ca751017fdc82f316d438b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-30 03:54:08</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Override Base URL">8e4f451f5b010110ab933520b881c72c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>1006ff3f47ca751017fdc82f316d435f</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-30 03:54:08</sys_created_on>
+        <sys_id>9c06ff3f47ca751017fdc82f316d438a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-30 03:54:08</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Honor Duplicate Headers">15288f755bd24110ab933520b881c713</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>1006ff3f47ca751017fdc82f316d435f</document_key>
+        <order>15</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-30 03:54:08</sys_created_on>
+        <sys_id>d006ff3f47ca751017fdc82f316d438c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-30 03:54:08</sys_updated_on>
+        <value>https://marvelsnap.io/api/search.php</value>
+        <variable display_value="Base URL">a67a8ef03b23320057a4a2e334efc472</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>1006ff3f47ca751017fdc82f316d435f</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-30 03:54:08</sys_created_on>
+        <sys_id>d406ff3f47ca751017fdc82f316d438b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-30 03:54:08</sys_updated_on>
+        <value>define_connection_inline</value>
+        <variable display_value="Connection">91e207d03b50030057a4a2e334efc4a0</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129^id=1006ff3f47ca751017fdc82f316d435f"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=1006ff3f47ca751017fdc82f316d435f"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=1006ff3f47ca751017fdc82f316d435f"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=1006ff3f47ca751017fdc82f316d435f"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=1006ff3f47ca751017fdc82f316d435f"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_1006ff3f47ca751017fdc82f316d435f"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Retrieve Marvel Character cards">cb107bfb478a751017fdc82f316d438d</action>
+        <cid>63444f10-e73f-4fec-9fe3-6f21a3cdf024</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>JSON Parser step</label>
+        <order>2</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="JSON Parser">502328c387523300f917e55936cb0bf0</step_type>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-30 03:56:48</sys_created_on>
+        <sys_id>63963f7f47ca751017fdc82f316d4321</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Flow Designer SNUG">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-30 03:56:48</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=63963f7f47ca751017fdc82f316d4321"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>63963f7f47ca751017fdc82f316d4321</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-30 03:56:48</sys_created_on>
+        <sys_id>2b963f7f47ca751017fdc82f316d432e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-30 03:56:48</sys_updated_on>
+        <value>{
+    "card": [
+        {
+            "id": 1,
+            "name": "Abomination",
+            "type": "Character",
+            "cost": 5,
+            "power": 9,
+            "ability": null,
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "1_526,1_525,1_524,1_521",
+            "pretty_url": "abomination-1",
+            "method": "Starter Card",
+            "slug": "Abomination"
+        },
+        {
+            "id": 2,
+            "name": "Aero",
+            "type": "Character",
+            "cost": 5,
+            "power": 8,
+            "ability": "On Reveal: Move the last enemy card played this turn to this location.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "2_550,2_4302,2_549,2_548",
+            "pretty_url": "aero-2",
+            "method": "Collection Level 462-? (Pool 3)",
+            "slug": "Aero"
+        },
+        {
+            "id": 3,
+            "name": "Agent 13",
+            "type": "Character",
+            "cost": 1,
+            "power": 2,
+            "ability": "On Reveal: Add a random card to your hand.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "3_2469,3_2468,3_2467,3_2470",
+            "pretty_url": "agent-13-3",
+            "method": "Collection Level 222-450 (Pool 2)",
+            "slug": "Agent13"
+        },
+        {
+            "id": 4,
+            "name": "America Chavez",
+            "type": "Character",
+            "cost": 6,
+            "power": 9,
+            "ability": "Starts on the bottom of your deck. Draw this on turn 6.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "4_167,4_165,4_114,4_391",
+            "pretty_url": "america-chavez-4",
+            "method": "Collection Level 18-214 (Pool 1)",
+            "slug": "AmericaChavez"
+        },
+        {
+            "id": 5,
+            "name": "Angel",
+            "type": "Character",
+            "cost": 1,
+            "power": 2,
+            "ability": "When one of your cards is destroyed, this flies out of your deck to replace it.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "5_4322,5_567,5_272,5_169",
+            "pretty_url": "angel-5",
+            "method": "Collection Level 18-214 (Pool 1)",
+            "slug": "Angel"
+        },
+        {
+            "id": 6,
+            "name": "Angela",
+            "type": "Character",
+            "cost": 2,
+            "power": 0,
+            "ability": "After you play a card here, +2 Power.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "6_571,6_276,6_274,6_171",
+            "pretty_url": "angela-6",
+            "method": "Collection Level 18-214 (Pool 1)",
+            "slug": "Angela"
+        },
+        {
+            "id": 7,
+            "name": "Ant-Man",
+            "type": "Character",
+            "cost": 1,
+            "power": 1,
+            "ability": "Ongoing: If you have 3 other cards here, +3 Power.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "7_641,7_640,7_639,7_87",
+            "pretty_url": "ant-man-7",
+            "method": "Recruit Season",
+            "slug": "AntMan"
+        },
+        {
+            "id": 8,
+            "name": "Apocalypse",
+            "type": "Character",
+            "cost": 6,
+            "power": 8,
+            "ability": "When you discard this from your hand, put it back with +4 Power.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "8_644,8_137,8_84,8_645",
+            "pretty_url": "apocalypse-8",
+            "method": "Collection Level 18-214 (Pool 1)",
+            "slug": "Apocalypse"
+        },
+        {
+            "id": 9,
+            "name": "Armor",
+            "type": "Character",
+            "cost": 2,
+            "power": 3,
+            "ability": "Ongoing: Cards at this location can't be destroyed.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "9_4338,9_4337,9_647,9_401",
+            "pretty_url": "armor-9",
+            "method": "Collection Level 18-214 (Pool 1)",
+            "slug": "Armor"
+        },
+        {
+            "id": 10,
+            "name": "Arnim Zola",
+            "type": "Character",
+            "cost": 6,
+            "power": 0,
+            "ability": "On Reveal: Destroy a random friendly card here. Add copies of it to the other locations.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "10_4342,10_2496,10_2495,10_2494",
+            "pretty_url": "arnim-zola-10",
+            "method": "Collection Level 462-? (Pool 3)",
+            "slug": "ArnimZola"
+        },
+        {
+            "id": 11,
+            "name": "Baron Mordo",
+            "type": "Character",
+            "cost": 2,
+            "power": 3,
+            "ability": "On Reveal: Your opponent draws a card. Set it's cost to 6",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "11_4346,11_4345,11_2498,11_2497",
+            "pretty_url": "baron-mordo-11",
+            "method": "Collection Level 462-? (Pool 3)",
+            "slug": "BaronMordo"
+        },
+        {
+            "id": 12,
+            "name": "Beast",
+            "type": "Character",
+            "cost": 3,
+            "power": 4,
+            "ability": "On Reveal: Return your other cards at this location to your hand. They cost 1 less.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "12_701,12_700,12_699,12_4350",
+            "pretty_url": "beast-12",
+            "method": "Collection Level 462-? (Pool 3)",
+            "slug": "Beast"
+        },
+        {
+            "id": 13,
+            "name": "Bishop",
+            "type": "Character",
+            "cost": 3,
+            "power": 1,
+            "ability": "After you play a card, this gains +1 Power.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "13_4354,13_704,13_703,13_176",
+            "pretty_url": "bishop-13",
+            "method": "Collection Level 18-214 (Pool 1)",
+            "slug": "Bishop"
+        },
+        {
+            "id": 14,
+            "name": "Black Bolt",
+            "type": "Character",
+            "cost": 5,
+            "power": 7,
+            "ability": "On Reveal: Discard the lowest-cost card from your opponent’s hand.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "14_2507,14_2506,14_2505,14_2508",
+            "pretty_url": "black-bolt-14",
+            "method": "Collection Level 462-? (Pool 3)",
+            "slug": "BlackBolt"
+        },
+        {
+            "id": 15,
+            "name": "Black Cat",
+            "type": "Character",
+            "cost": 4,
+            "power": 9,
+            "ability": "If you end the turn with this in your hand, discard it.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "15_2512,15_2511,15_2510,15_2509",
+            "pretty_url": "black-cat-15",
+            "method": "Collection Level 462-? (Pool 3)",
+            "slug": "BlackCat"
+        },
+        {
+            "id": 16,
+            "name": "Black Panther",
+            "type": "Character",
+            "cost": 5,
+            "power": 4,
+            "ability": "On Reveal: Double this card's Power.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "16_2513,16_2516,16_2515,16_2514",
+            "pretty_url": "black-panther-16",
+            "method": null,
+            "slug": "BlackPanther"
+        },
+        {
+            "id": 17,
+            "name": "Black Widow",
+            "type": "Character",
+            "cost": 2,
+            "power": 1,
+            "ability": "On Reveal: Add a Widow's Bite to your opponent's hand.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "17_2520,17_2519,17_2518,17_2517",
+            "pretty_url": "black-widow-17",
+            "method": "Collection Level 462-? (Pool 3)",
+            "slug": "BlackWidow"
+        },
+        {
+            "id": 18,
+            "name": "Blade",
+            "type": "Character",
+            "cost": 1,
+            "power": 3,
+            "ability": "On Reveal: Discard the rightmost card from your hand.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "18_4378,18_723,18_129,18_83",
+            "pretty_url": "blade-18",
+            "method": "Collection Level 18-214 (Pool 1)",
+            "slug": "Blade"
+        },
+        {
+            "id": 19,
+            "name": "Blue Marvel",
+            "type": "Character",
+            "cost": 5,
+            "power": 3,
+            "ability": "Ongoing: Your other cards have +1 Power.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "19_2530,19_2529,19_2528,19_284",
+            "pretty_url": "blue-marvel-19",
+            "method": "Recruit Season",
+            "slug": "BlueMarvel"
+        },
+        {
+            "id": 20,
+            "name": "Brood",
+            "type": "Character",
+            "cost": 3,
+            "power": 2,
+            "ability": "On Reveal: Add 2 Broodlings to this location with the same Power.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "20_733,20_732,20_731,20_734",
+            "pretty_url": "brood-20",
+            "method": "Collection Level 462-? (Pool 3)",
+            "slug": "Brood"
+        },
+        {
+            "id": 21,
+            "name": "Cable",
+            "type": "Character",
+            "cost": 2,
+            "power": 2,
+            "ability": "On Reveal: Draw the top card of your opponent's deck.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "21_744,21_743,21_742,21_741",
+            "pretty_url": "cable-21",
+            "method": "Collection Level 18-214 (Pool 1)",
+            "slug": "Cable"
+        },
+        {
+            "id": 22,
+            "name": "Captain America",
+            "type": "Character",
+            "cost": 3,
+            "power": 3,
+            "ability": "Ongoing: Your other cards at this location have +1 Power.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "22_2548,22_2547,22_180,22_179",
+            "pretty_url": "captain-america-22",
+            "method": "Collection Level 18-214 (Pool 1)",
+            "slug": "CaptainAmerica"
+        },
+        {
+            "id": 23,
+            "name": "Captain Marvel",
+            "type": "Character",
+            "cost": 4,
+            "power": 4,
+            "ability": "At the end of the game, move to a location that wins you the game. (If possible)",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "23_5,23_4,23_3,23_2",
+            "pretty_url": "captain-marvel-23",
+            "method": "Collection Level 462-? (Pool 3)",
+            "slug": "CaptainMarvel"
+        },
+        {
+            "id": 24,
+            "name": "Carnage",
+            "type": "Character",
+            "cost": 2,
+            "power": 2,
+            "ability": "On Reveal: Destroy your other cards here. +2 Power for each destroyed.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "24_756,24_755,24_186,24_140",
+            "pretty_url": "carnage-24",
+            "method": "Collection Level 18-214 (Pool 1)",
+            "slug": "Carnage"
+        },
+        {
+            "id": 25,
+            "name": "Cerebro",
+            "type": "Character",
+            "cost": 3,
+            "power": 0,
+            "ability": "Ongoing: Your highest-Power cards have +2 Power.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "25_4422,25_4421,25_758,25_757",
+            "pretty_url": "cerebro-25",
+            "method": "Collection Level 462-? (Pool 3)",
+            "slug": "Cerebro"
+        },
+        {
+            "id": 26,
+            "name": "Cloak",
+            "type": "Character",
+            "cost": 2,
+            "power": 4,
+            "ability": "On Reveal: Next turn, both players can move cards to this location.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "26_4426,26_761,26_760,26_759",
+            "pretty_url": "cloak-26",
+            "method": "Collection Level 222-450 (Pool 2)",
+            "slug": "Cloak"
+        },
+        {
+            "id": 27,
+            "name": "Colossus",
+            "type": "Character",
+            "cost": 2,
+            "power": 3,
+            "ability": "Ongoing: Can't be destroyed, moved, or have its Power reduced.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "27_768,27_189,27_188,27_155",
+            "pretty_url": "colossus-27",
+            "method": "Recruit Season",
+            "slug": "Colossus"
+        },
+        {
+            "id": 28,
+            "name": "Cosmo",
+            "type": "Character",
+            "cost": 3,
+            "power": 3,
+            "ability": "Ongoing: On Reveal abilities won't happen at this location.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "28_772,28_298,28_157,28_85",
+            "pretty_url": "cosmo-28",
+            "method": "Collection Level 18-214 (Pool 1)",
+            "slug": "Cosmo"
+        },
+        {
+            "id": 29,
+            "name": "Crystal",
+            "type": "Character",
+            "cost": 3,
+            "power": 3,
+            "ability": "On Reveal: Each player draws a card.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "29_4446,29_4445,29_4444,29_777",
+            "pretty_url": "crystal-29",
+            "method": "Collection Level 462-? (Pool 3)",
+            "slug": "Crystal"
+        },
+        {
+            "id": 30,
+            "name": "Cyclops",
+            "type": "Character",
+            "cost": 3,
+            "power": 4,
+            "ability": null,
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "30_781,30_780,30_74,30_73",
+            "pretty_url": "cyclops-30",
+            "method": "Starter Card",
+            "slug": "Cyclops"
+        },
+        {
+            "id": 31,
+            "name": "Dagger",
+            "type": "Character",
+            "cost": 2,
+            "power": 2,
+            "ability": "When this moves to a location, +2 Power for each card your opponent has there.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "31_4454,31_784,31_783,31_782",
+            "pretty_url": "dagger-31",
+            "method": "Collection Level 462-? (Pool 3)",
+            "slug": "Dagger"
+        },
+        {
+            "id": 32,
+            "name": "Deadpool",
+            "type": "Character",
+            "cost": 1,
+            "power": 1,
+            "ability": "When this is destroyed, return it to your hand with double the Power.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "32_8,32_7,32_6,32_9",
+            "pretty_url": "deadpool-32",
+            "method": "Collection Level 462-? (Pool 3)",
+            "slug": "Deadpool"
+        },
+        {
+            "id": 33,
+            "name": "Death",
+            "type": "Character",
+            "cost": 8,
+            "power": 12,
+            "ability": "Costs 1 less for each card destroyed this game.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "33_800,33_799,33_798,33_797",
+            "pretty_url": "death-33",
+            "method": "Collection Level 462-? (Pool 3)",
+            "slug": "Death"
+        },
+        {
+            "id": 34,
+            "name": "Deathlok",
+            "type": "Character",
+            "cost": 3,
+            "power": 5,
+            "ability": "On Reveal: Destroy your other cards at this location.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "34_804,34_803,34_427,34_305",
+            "pretty_url": "deathlok-34",
+            "method": "Collection Level 18-214 (Pool 1)",
+            "slug": "Deathlok"
+        },
+        {
+            "id": 35,
+            "name": "Destroyer",
+            "type": "Character",
+            "cost": 6,
+            "power": 15,
+            "ability": "On Reveal: Destroy your other cards.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "35_4486,35_809,35_808,35_807",
+            "pretty_url": "destroyer-35",
+            "method": "Collection Level 462-? (Pool 3)",
+            "slug": "Destroyer"
+        },
+        {
+            "id": 36,
+            "name": "Devil Dinosaur",
+            "type": "Character",
+            "cost": 5,
+            "power": 3,
+            "ability": "Ongoing: +2 Power for each card in your hand.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "36_2613,36_2612,36_2611,36_198",
+            "pretty_url": "devil-dinosaur-36",
+            "method": "Collection Level 18-214 (Pool 1)",
+            "slug": "DevilDinosaur"
+        },
+        {
+            "id": 37,
+            "name": "Doctor Doom",
+            "type": "Character",
+            "cost": 6,
+            "power": 5,
+            "ability": "On Reveal: Add a 4-Power Doombot to each other location.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "37_2617,37_2616,37_2615,37_2614",
+            "pretty_url": "doctor-doom-37",
+            "method": "Collection Level 462-? (Pool 3)",
+            "slug": "DrDoom"
+        },
+        {
+            "id": 38,
+            "name": "Doctor Octopus",
+            "type": "Character",
+            "cost": 5,
+            "power": 10,
+            "ability": "On Reveal: Pull 4 random cards from your opponent's hand to their side of this location.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "38_4498,38_2620,38_2619,38_2618",
+            "pretty_url": "doctor-octopus-38",
+            "method": null,
+            "slug": "DoctorOctopus"
+        },
+        {
+            "id": 39,
+            "name": "Doctor Strange",
+            "type": "Character",
+            "cost": 3,
+            "power": 3,
+            "ability": "On Reveal: Move your highest-Power card(s) to this location.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "39_13,39_12,39_11,39_10",
+            "pretty_url": "doctor-strange-39",
+            "method": "Collection Level 18-214 (Pool 1)",
+            "slug": "DoctorStrange"
+        },
+        {
+            "id": 40,
+            "name": "Domino",
+            "type": "Character",
+            "cost": 2,
+            "power": 3,
+            "ability": "You always draw this card on turn 2, and not before.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "40_1328,40_313,40_204,40_141",
+            "pretty_url": "domino-40",
+            "method": "Collection Level 18-214 (Pool 1)",
+            "slug": "Domino"
+        },
+        {
+            "id": 41,
+            "name": "Drax",
+            "type": "Character",
+            "cost": 4,
+            "power": 6,
+            "ability": "On Reveal: If your opponent played a card here this turn, +2 Power.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "41_17,41_16,41_15,41_14",
+            "pretty_url": "drax-41",
+            "method": "Collection Level 462-? (Pool 3)",
+            "slug": "Drax"
+        },
+        {
+            "id": 42,
+            "name": "Ebony Maw",
+            "type": "Character",
+            "cost": 1,
+            "power": 7,
+            "ability": "You can't play this after turn 3. Ongoing: You can't play cards here.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "42_4518,42_4517,42_2637,42_318",
+            "pretty_url": "ebony-maw-42",
+            "method": "Collection Level 222-450 (Pool 2)",
+            "slug": "EbonyMaw"
+        },
+        {
+            "id": 43,
+            "name": "Electro",
+            "type": "Character",
+            "cost": 3,
+            "power": 2,
+            "ability": "On Reveal: +1 Max Energy. Ongoing: You can only play 1 card a turn.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "43_4522,43_4521,43_1339,43_1338",
+            "pretty_url": "electro-43",
+            "method": "Collection Level 462-? (Pool 3)",
+            "slug": "Electro"
+        },
+        {
+            "id": 44,
+            "name": "Elektra",
+            "type": "Character",
+            "cost": 1,
+            "power": 1,
+            "ability": "On Reveal: Destroy a random enemy 1-Cost card at this location.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "44_1343,44_321,44_320,44_154",
+            "pretty_url": "elektra-44",
+            "method": "Collection Level 18-214 (Pool 1)",
+            "slug": "Elektra"
+        },
+        {
+            "id": 45,
+            "name": "Forge",
+            "type": "Character",
+            "cost": 2,
+            "power": 1,
+            "ability": "On Reveal: Give the next card you play +3 Power.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "45_4542,45_1353,45_1352,45_213",
+            "pretty_url": "forge-45",
+            "method": "Collection Level 18-214 (Pool 1)",
+            "slug": "Forge"
+        },
+        {
+            "id": 46,
+            "name": "Galactus",
+            "type": "Character",
+            "cost": 6,
+            "power": 5,
+            "ability": "On Reveal: If you’re winning this location and this is your only card here, destroy all other locations.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "46_1355,46_1354,46_1357,46_1356",
+            "pretty_url": "galactus-46",
+            "method": null,
+            "slug": "Galactus"
+        },
+        {
+            "id": 47,
+            "name": "Gambit",
+            "type": "Character",
+            "cost": 3,
+            "power": 3,
+            "ability": "On Reveal: Discard a card from your hand. Destroy a random enemy card.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "47_4549,47_1359,47_1358,47_4550",
+            "pretty_url": "gambit-47",
+            "method": "Collection Level 462-? (Pool 3)",
+            "slug": "Gambit"
+        },
+        {
+            "id": 48,
+            "name": "Gamora",
+            "type": "Character",
+            "cost": 5,
+            "power": 7,
+            "ability": "On Reveal: If your opponent played a card here this turn, +5 Power.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "48_1363,48_1362,48_160,48_77",
+            "pretty_url": "gamora-48",
+            "method": "Recruit Season",
+            "slug": "Gamora"
+        },
+        {
+            "id": 49,
+            "name": "Ghost Rider",
+            "type": "Character",
+            "cost": 4,
+            "power": 3,
+            "ability": "On Reveal: Bring back one of your discarded cards to this location.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "49_4558,49_2666,49_2665,49_124",
+            "pretty_url": "ghost-rider-49",
+            "method": "Collection Level 462-? (Pool 3)",
+            "slug": "GhostRider"
+        },
+        {
+            "id": 50,
+            "name": "Goose",
+            "type": "Character",
+            "cost": 2,
+            "power": 2,
+            "ability": "Ongoing: Nobody can play cards that cost 4, 5, or 6 at this location.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "50_1375,50_1374,50_1373,50_4570",
+            "pretty_url": "goose-50",
+            "method": "Collection Level 462-? (Pool 3)",
+            "slug": "Goose"
+        },
+        {
+            "id": 51,
+            "name": "Green Goblin",
+            "type": "Character",
+            "cost": 3,
+            "power": -3,
+            "ability": "On Reveal: Your opponent gains control of this.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "51_2679,51_2678,51_2677,51_2676",
+            "pretty_url": "green-goblin-51",
+            "method": "Collection Level 462-? (Pool 3)",
+            "slug": "GreenGoblin"
+        },
+        {
+            "id": 52,
+            "name": "Groot",
+            "type": "Character",
+            "cost": 3,
+            "power": 4,
+            "ability": "On Reveal: If your opponent played a card here this turn, +2 Power.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "52_1383,52_1382,52_1381,52_217",
+            "pretty_url": "groot-52",
+            "method": "Collection Level 18-214 (Pool 1)",
+            "slug": "Groot"
+        },
+        {
+            "id": 53,
+            "name": "Hawkeye",
+            "type": "Character",
+            "cost": 1,
+            "power": 1,
+            "ability": "On Reveal: If you play a card here next turn, +3 Power.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "53_1387,53_1386,53_1385,53_80",
+            "pretty_url": "hawkeye-53",
+            "method": "Starter Card",
+            "slug": "Hawkeye"
+        },
+        {
+            "id": 54,
+            "name": "Hazmat",
+            "type": "Character",
+            "cost": 2,
+            "power": 2,
+            "ability": "On Reveal: Afflict all other cards with -1 Power.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "54_1391,54_1390,54_1389,54_1388",
+            "pretty_url": "hazmat-54",
+            "method": "Collection Level 462-? (Pool 3)",
+            "slug": "Hazmat"
+        },
+        {
+            "id": 55,
+            "name": "Heimdall",
+            "type": "Character",
+            "cost": 6,
+            "power": 8,
+            "ability": "On Reveal: Move your other cards one location to the left.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "55_1395,55_1394,55_1393,55_1392",
+            "pretty_url": "heimdall-55",
+            "method": "Collection Level 18-214 (Pool 1)",
+            "slug": "Heimdall"
+        },
+        {
+            "id": 56,
+            "name": "Hellcow",
+            "type": "Character",
+            "cost": 4,
+            "power": 6,
+            "ability": "On Reveal: Discard 2 cards from your hand.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "56_1400,56_1399,56_1398,56_4598",
+            "pretty_url": "hellcow-56",
+            "method": "Collection Level 462-? (Pool 3)",
+            "slug": "Hellcow"
+        },
+        {
+            "id": 57,
+            "name": "Hobgoblin",
+            "type": "Character",
+            "cost": 5,
+            "power": -8,
+            "ability": "On Reveal: Your opponent gains control of this.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "57_1404,57_1403,57_1402,57_1401",
+            "pretty_url": "hobgoblin-57",
+            "method": "Collection Level 222-450 (Pool 2)",
+            "slug": "Hobgoblin"
+        },
+        {
+            "id": 58,
+            "name": "Hulk",
+            "type": "Character",
+            "cost": 6,
+            "power": 12,
+            "ability": null,
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "58_1408,58_1407,58_1406,58_1405",
+            "pretty_url": "hulk-58",
+            "method": "Starter Card",
+            "slug": "Hulk"
+        },
+        {
+            "id": 59,
+            "name": "Human Torch",
+            "type": "Character",
+            "cost": 1,
+            "power": 2,
+            "ability": "When this moves, double its Power.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "59_4617,59_4616,59_2712,59_4618",
+            "pretty_url": "human-torch-59",
+            "method": "Collection Level 462-? (Pool 3)",
+            "slug": "HumanTorch"
+        },
+        {
+            "id": 60,
+            "name": "Iceman",
+            "type": "Character",
+            "cost": 1,
+            "power": 2,
+            "ability": "On Reveal: Give a random card in your opponent's hand +1 Cost. (maximum 6)",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "60_456,60_455,60_22,60_1413",
+            "pretty_url": "iceman-60",
+            "method": "Collection Level 222-450 (Pool 2)",
+            "slug": "Iceman"
+        },
+        {
+            "id": 61,
+            "name": "Invisible Woman",
+            "type": "Character",
+            "cost": 2,
+            "power": 3,
+            "ability": "Ongoing: Cards you play here are not revealed until the game ends.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "61_2720,61_2719,61_2718,61_2717",
+            "pretty_url": "invisible-woman-61",
+            "method": "Collection Level 462-? (Pool 3)",
+            "slug": "InvisibleWoman"
+        },
+        {
+            "id": 62,
+            "name": "Iron Fist",
+            "type": "Character",
+            "cost": 1,
+            "power": 2,
+            "ability": "On Reveal: After you play your next card, move it one location to the left",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "62_2724,62_2723,62_2722,62_153",
+            "pretty_url": "iron-fist-62",
+            "method": "Collection Level 18-214 (Pool 1)",
+            "slug": "IronFist"
+        },
+        {
+            "id": 63,
+            "name": "Iron Man",
+            "type": "Character",
+            "cost": 5,
+            "power": 0,
+            "ability": "Ongoing: Your total Power is doubled at this location.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "63_2728,63_2727,63_162,63_82",
+            "pretty_url": "iron-man-63",
+            "method": "Starter Card",
+            "slug": "IronMan"
+        },
+        {
+            "id": 64,
+            "name": "Ironheart",
+            "type": "Character",
+            "cost": 3,
+            "power": 0,
+            "ability": "On Reveal: Give 3 other friendly cards +2 Power.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "64_1432,64_1431,64_164,64_76",
+            "pretty_url": "ironheart-64",
+            "method": "Recruit Season",
+            "slug": "Ironheart"
+        },
+        {
+            "id": 65,
+            "name": "Jessica Jones",
+            "type": "Character",
+            "cost": 4,
+            "power": 4,
+            "ability": "On Reveal: If you don't play a card here next turn, +4 Power.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "65_2740,65_2739,65_79,65_78",
+            "pretty_url": "jessica-jones-65",
+            "method": "Collection Level 1-14",
+            "slug": "JessicaJones"
+        },
+        {
+            "id": 66,
+            "name": "Jubilee",
+            "type": "Character",
+            "cost": 4,
+            "power": 1,
+            "ability": "On Reveal: Add the top card of your deck to this location.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "66_1444,66_1443,66_1442,66_465",
+            "pretty_url": "jubilee-66",
+            "method": "Collection Level 222-450 (Pool 2)",
+            "slug": "Jubilee"
+        },
+        {
+            "id": 67,
+            "name": "Kang",
+            "type": "Character",
+            "cost": 5,
+            "power": 0,
+            "ability": "On Reveal: Look at what your opponent did, then restart the turn. (without Kang)",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "67_1449,67_1448,67_4658,67_4657",
+            "pretty_url": "kang-67",
+            "method": null,
+            "slug": "Kang"
+        },
+        {
+            "id": 68,
+            "name": "Kazar",
+            "type": "Character",
+            "cost": 4,
+            "power": 4,
+            "ability": "Ongoing: Your 1-Cost cards have +1 Power.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "68_4662,68_4661,68_1451,68_1450",
+            "pretty_url": "kazar-68",
+            "method": "Collection Level 18-214 (Pool 1)",
+            "slug": "Kazar"
+        },
+        {
+            "id": 69,
+            "name": "Killmonger",
+            "type": "Character",
+            "cost": 3,
+            "power": 3,
+            "ability": "On Reveal: Destroy ALL 1-Cost cards.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "69_4666,69_1454,69_1453,69_1452",
+            "pretty_url": "killmonger-69",
+            "method": "Collection Level 462-? (Pool 3)",
+            "slug": "Killmonger"
+        },
+        {
+            "id": 70,
+            "name": "Kingpin",
+            "type": "Character",
+            "cost": 3,
+            "power": 4,
+            "ability": "When a card moves here on turn 6, destroy it.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "70_1458,70_1457,70_1456,70_89",
+            "pretty_url": "kingpin-70",
+            "method": "Collection Level 462-? (Pool 3)",
+            "slug": "Kingpin"
+        },
+        {
+            "id": 71,
+            "name": "Klaw",
+            "type": "Character",
+            "cost": 5,
+            "power": 4,
+            "ability": "Ongoing: The location to the right has +6 Power.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "71_4678,71_1463,71_1462,71_151",
+            "pretty_url": "klaw-71",
+            "method": "Collection Level 18-214 (Pool 1)",
+            "slug": "Klaw"
+        },
+        {
+            "id": 72,
+            "name": "Kraven",
+            "type": "Character",
+            "cost": 2,
+            "power": 2,
+            "ability": "When a card moves here, this gains +2 Power.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "72_1471,72_1470,72_1469,72_231",
+            "pretty_url": "kraven-72",
+            "method": "Collection Level 18-214 (Pool 1)",
+            "slug": "Kraven"
+        },
+        {
+            "id": 73,
+            "name": "Lady Sif",
+            "type": "Character",
+            "cost": 3,
+            "power": 5,
+            "ability": "On Reveal: Discard the highest-cost card from your hand.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "73_4694,73_2777,73_2776,73_232",
+            "pretty_url": "lady-sif-73",
+            "method": "Collection Level 18-214 (Pool 1)",
+            "slug": "LadySif"
+        },
+        {
+            "id": 74,
+            "name": "Leech",
+            "type": "Character",
+            "cost": 5,
+            "power": 3,
+            "ability": "At the start of turn 6, remove all abilities from cards in your opponent’s hand.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "74_4702,74_4701,74_1482,74_1481",
+            "pretty_url": "leech-74",
+            "method": "Collection Level 222-450 (Pool 2)",
+            "slug": "Leech"
+        },
+        {
+            "id": 75,
+            "name": "Lizard",
+            "type": "Character",
+            "cost": 2,
+            "power": 5,
+            "ability": "Ongoing: -4 Power if your opponent has 4 cards here.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "75_1486,75_1485,75_1484,75_156",
+            "pretty_url": "lizard-75",
+            "method": "Collection Level 18-214 (Pool 1)",
+            "slug": "Lizard"
+        },
+        {
+            "id": 76,
+            "name": "Magik",
+            "type": "Character",
+            "cost": 3,
+            "power": 2,
+            "ability": "On Reveal: Replace this location with 'Limbo'. Doesn't work after turn 5.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "76_4725,76_2170,76_2169,76_2168",
+            "pretty_url": "magik-76",
+            "method": "Collection Level 462-? (Pool 3)",
+            "slug": "Magik"
+        },
+        {
+            "id": 77,
+            "name": "Magneto",
+            "type": "Character",
+            "cost": 6,
+            "power": 12,
+            "ability": "On Reveal: Move all opposing 3 and 4-Cost cards to this location.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "77_2173,77_2172,77_2171,77_4729",
+            "pretty_url": "magneto-77",
+            "method": "Collection Level 462-? (Pool 3)",
+            "slug": "Magneto"
+        },
+        {
+            "id": 78,
+            "name": "Mantis",
+            "type": "Character",
+            "cost": 1,
+            "power": 2,
+            "ability": "On Reveal: If your opponent played a card here this turn, draw a card from their deck.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "78_2177,78_2176,78_2175,78_161",
+            "pretty_url": "mantis-78",
+            "method": "Collection Level 18-214 (Pool 1)",
+            "slug": "Mantis"
+        },
+        {
+            "id": 79,
+            "name": "Maximus",
+            "type": "Character",
+            "cost": 3,
+            "power": 7,
+            "ability": "On Reveal: Your opponent draws 2 cards.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "79_4741,79_4740,79_2181,79_2180",
+            "pretty_url": "maximus-79",
+            "method": "Collection Level 462-? (Pool 3)",
+            "slug": "Maximus"
+        },
+        {
+            "id": 80,
+            "name": "Medusa",
+            "type": "Character",
+            "cost": 2,
+            "power": 2,
+            "ability": "On Reveal: If this is at the middle location, +3 Power.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "80_2185,80_2184,80_236,80_47",
+            "pretty_url": "medusa-80",
+            "method": "Starter Card",
+            "slug": "Medusa"
+        },
+        {
+            "id": 81,
+            "name": "Mister Fantastic",
+            "type": "Character",
+            "cost": 3,
+            "power": 2,
+            "ability": "Ongoing: Adjacent locations have +2 Power.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "81_4757,81_2813,81_2812,81_2811",
+            "pretty_url": "mister-fantastic-81",
+            "method": "Collection Level 1-14",
+            "slug": "MrFantastic"
+        },
+        {
+            "id": 82,
+            "name": "Mister Sinister",
+            "type": "Character",
+            "cost": 2,
+            "power": 2,
+            "ability": "On Reveal: Add a Sinister Clone to this location with the same Power.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "82_2821,82_2820,82_2819,82_143",
+            "pretty_url": "mister-sinister-82",
+            "method": "Collection Level 18-214 (Pool 1)",
+            "slug": "MrSinister"
+        },
+        {
+            "id": 83,
+            "name": "Mojo",
+            "type": "Character",
+            "cost": 2,
+            "power": 2,
+            "ability": "Ongoing: If both players have 4 cards at this location, +6 Power.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "83_2205,83_2204,83_2203,83_2202",
+            "pretty_url": "mojo-83",
+            "method": "Collection Level 462-? (Pool 3)",
+            "slug": "Mojo"
+        },
+        {
+            "id": 84,
+            "name": "Moon Girl",
+            "type": "Character",
+            "cost": 4,
+            "power": 4,
+            "ability": "On Reveal: Duplicate your hand.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "84_4781,84_2832,84_2831,84_2830",
+            "pretty_url": "moon-girl-84",
+            "method": "Collection Level 18-214 (Pool 1)",
+            "slug": "MoonGirl"
+        },
+        {
+            "id": 85,
+            "name": "Morph",
+            "type": "Character",
+            "cost": 3,
+            "power": 0,
+            "ability": "On Reveal: Become a copy of a random card in your opponent's hand.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "85_2218,85_479,85_352,85_158",
+            "pretty_url": "morph-85",
+            "method": "Collection Level 18-214 (Pool 1)",
+            "slug": "Morph"
+        },
+        {
+            "id": 86,
+            "name": "Multiple Man",
+            "type": "Character",
+            "cost": 2,
+            "power": 3,
+            "ability": "When this moves, add a copy to the old location.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "86_4801,86_2849,86_2848,86_239",
+            "pretty_url": "multiple-man-86",
+            "method": "Collection Level 18-214 (Pool 1)",
+            "slug": "MultipleMan"
+        },
+        {
+            "id": 87,
+            "name": "Mysterio",
+            "type": "Character",
+            "cost": 2,
+            "power": 4,
+            "ability": "As you play this, play Illusions to other locations. Disguise this as an Illusion until the game ends.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "87_2228,87_2227,87_2226,87_4805",
+            "pretty_url": "mysterio-87",
+            "method": "Collection Level 462-? (Pool 3)",
+            "slug": "Mysterio"
+        },
+        {
+            "id": 88,
+            "name": "Mystique",
+            "type": "Character",
+            "cost": 3,
+            "power": 0,
+            "ability": "On Reveal: If the last card you played has an Ongoing, copy its text. (if it’s in play)",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "88_2231,88_2230,88_2229,88_4809",
+            "pretty_url": "mystique-88",
+            "method": "Collection Level 462-? (Pool 3)",
+            "slug": "Mystique"
+        },
+        {
+            "id": 89,
+            "name": "Nakia",
+            "type": "Character",
+            "cost": 3,
+            "power": 2,
+            "ability": "On Reveal: Give all cards in your hand +1 Power.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "89_4813,89_2234,89_2233,89_354",
+            "pretty_url": "nakia-89",
+            "method": "Collection Level 222-450 (Pool 2)",
+            "slug": "Nakia"
+        },
+        {
+            "id": 90,
+            "name": "Namor",
+            "type": "Character",
+            "cost": 4,
+            "power": 6,
+            "ability": "Ongoing: +5 Power if this is your only card here.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "90_4817,90_2237,90_145,90_144",
+            "pretty_url": "namor-90",
+            "method": "Collection Level 18-214 (Pool 1)",
+            "slug": "Namor"
+        },
+        {
+            "id": 91,
+            "name": "Nightcrawler",
+            "type": "Character",
+            "cost": 1,
+            "power": 2,
+            "ability": "You can move this once.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "91_4829,91_486,91_243,91_86",
+            "pretty_url": "nightcrawler-91",
+            "method": "Collection Level 1-14",
+            "slug": "Nightcrawler"
+        },
+        {
+            "id": 92,
+            "name": "Nova",
+            "type": "Character",
+            "cost": 1,
+            "power": 1,
+            "ability": "When this is destroyed, give your cards +1 Power.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "92_4833,92_489,92_245,92_146",
+            "pretty_url": "nova-92",
+            "method": "Collection Level 18-214 (Pool 1)",
+            "slug": "Nova"
+        },
+        {
+            "id": 93,
+            "name": "Odin",
+            "type": "Character",
+            "cost": 6,
+            "power": 8,
+            "ability": "On Reveal: Activate the On Reveal abilities of your other cards at this location.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "93_4837,93_2249,93_247,93_147",
+            "pretty_url": "odin-93",
+            "method": "Collection Level 1-14",
+            "slug": "Odin"
+        },
+        {
+            "id": 94,
+            "name": "Okoye",
+            "type": "Character",
+            "cost": 2,
+            "power": 2,
+            "ability": "On Reveal: Give every card in your deck +1 Power.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "94_2252,94_2251,94_2250,94_2253",
+            "pretty_url": "okoye-94",
+            "method": "Collection Level 222-450 (Pool 2)",
+            "slug": "Okoye"
+        },
+        {
+            "id": 95,
+            "name": "Onslaught",
+            "type": "Character",
+            "cost": 6,
+            "power": 7,
+            "ability": "Ongoing: Double your other Ongoing effects at this location.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "95_2260,95_494,95_364,95_363,95_148",
+            "pretty_url": "onslaught-95",
+            "method": "Collection Level 18-214 (Pool 1)",
+            "slug": "Onslaught"
+        },
+        {
+            "id": 96,
+            "name": "Polaris",
+            "type": "Character",
+            "cost": 3,
+            "power": 5,
+            "ability": "On Reveal: Move an opposing 1 or 2-Cost card to this location.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "96_4861,96_4860,96_2267,96_2266",
+            "pretty_url": "polaris-96",
+            "method": "Collection Level 462-? (Pool 3)",
+            "slug": "Polaris"
+        },
+        {
+            "id": 97,
+            "name": "Professor X",
+            "type": "Character",
+            "cost": 5,
+            "power": 3,
+            "ability": "Ongoing: Lock down this location. (Cards can't be added, removed, etc.)",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "97_4865,97_2894,97_2893,97_249",
+            "pretty_url": "professor-x-97",
+            "method": "Collection Level 18-214 (Pool 1)",
+            "slug": "ProfessorX"
+        },
+        {
+            "id": 98,
+            "name": "Psylocke",
+            "type": "Character",
+            "cost": 2,
+            "power": 2,
+            "ability": "On Reveal: Next turn, you get +1 Energy.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "98_21,98_20,98_19,98_18",
+            "pretty_url": "psylocke-98",
+            "method": "Collection Level 462-? (Pool 3)",
+            "slug": "Psylocke"
+        },
+        {
+            "id": 99,
+            "name": "The Punisher",
+            "type": "Character",
+            "cost": 3,
+            "power": 2,
+            "ability": "Ongoing: +1 Power for each opposing card at this location.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "99_5054,99_3644,99_3643,99_3642",
+            "pretty_url": "the-punisher-99",
+            "method": "Starter Card",
+            "slug": "Punisher"
+        },
+        {
+            "id": 100,
+            "name": "Quake",
+            "type": "Character",
+            "cost": 2,
+            "power": 3,
+            "ability": "On Reveal: If this is at the middle location, swap the positions of each location.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "100_4873,100_2277,100_2276,100_2275",
+            "pretty_url": "quake-100",
+            "method": "Collection Level 462-? (Pool 3)",
+            "slug": "Quake"
+        },
+        {
+            "id": 101,
+            "name": "Quicksilver",
+            "type": "Character",
+            "cost": 1,
+            "power": 2,
+            "ability": "Starts in your opening hand.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "101_4877,101_2280,101_2279,101_75",
+            "pretty_url": "quicksilver-101",
+            "method": "Starter Card",
+            "slug": "Quicksilver"
+        },
+        {
+            "id": 102,
+            "name": "Red Skull",
+            "type": "Character",
+            "cost": 5,
+            "power": 14,
+            "ability": "Ongoing: Enemy cards at this location have +2 Power.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "102_4888,102_4887,102_2908,102_4889",
+            "pretty_url": "red-skull-102",
+            "method": "Collection Level 462-? (Pool 3)",
+            "slug": "RedSkull"
+        },
+        {
+            "id": 103,
+            "name": "Rescue",
+            "type": "Character",
+            "cost": 4,
+            "power": 4,
+            "ability": "On Reveal: If you play a card here next turn, +5 Power.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "103_2288,103_2287,103_2286,103_2285",
+            "pretty_url": "rescue-103",
+            "method": "Collection Level 462-? (Pool 3)",
+            "slug": "Rescue"
+        },
+        {
+            "id": 104,
+            "name": "Rhino",
+            "type": "Character",
+            "cost": 3,
+            "power": 3,
+            "ability": "On Reveal: Ruin this location. (remove its ability)",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "104_4897,104_2291,104_2290,104_2289",
+            "pretty_url": "rhino-104",
+            "method": "Collection Level 222-450 (Pool 2)",
+            "slug": "Rhino"
+        },
+        {
+            "id": 105,
+            "name": "Rocket Racoon",
+            "type": "Character",
+            "cost": 1,
+            "power": 2,
+            "ability": "On Reveal: If your opponent played a card here this turn, +2 Power.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "105_4901,105_3542,105_3541,105_3540",
+            "pretty_url": "rocket-racoon-105",
+            "method": "Collection Level 18-214 (Pool 1)",
+            "slug": "RocketRaccoon"
+        },
+        {
+            "id": 106,
+            "name": "Rockslide",
+            "type": "Character",
+            "cost": 3,
+            "power": 3,
+            "ability": "On Reveal: Shuffle 2 Rocks into your opponent's deck.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "106_2294,106_2293,106_2292,106_2295",
+            "pretty_url": "rockslide-106",
+            "method": null,
+            "slug": "Rockslide"
+        },
+        {
+            "id": 107,
+            "name": "Rogue",
+            "type": "Character",
+            "cost": 3,
+            "power": 2,
+            "ability": "On Reveal: Steal an Ongoing ability from a random enemy card at this location.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "107_2298,107_2297,107_2296,107_4909",
+            "pretty_url": "rogue-107",
+            "method": "Collection Level 462-? (Pool 3)",
+            "slug": "Rogue"
+        },
+        {
+            "id": 108,
+            "name": "Sandman",
+            "type": "Character",
+            "cost": 5,
+            "power": 3,
+            "ability": "Ongoing: Players can only play 1 card a turn.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "108_2302,108_2301,108_2300,108_4921",
+            "pretty_url": "sandman-108",
+            "method": "Collection Level 462-? (Pool 3)",
+            "slug": "Sandman"
+        },
+        {
+            "id": 109,
+            "name": "Scarlet Witch",
+            "type": "Character",
+            "cost": 2,
+            "power": 3,
+            "ability": "On Reveal: Replace this location with a random new one.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "109_4925,109_2929,109_2928,109_163",
+            "pretty_url": "scarlet-witch-109",
+            "method": "Collection Level 18-214 (Pool 1)",
+            "slug": "ScarletWitch"
+        },
+        {
+            "id": 110,
+            "name": "Scorpion",
+            "type": "Character",
+            "cost": 2,
+            "power": 2,
+            "ability": "On Reveal: Afflict cards in your opponent's hand with -1 Power.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "110_4929,110_2308,110_2307,110_2306",
+            "pretty_url": "scorpion-110",
+            "method": "Collection Level 222-450 (Pool 2)",
+            "slug": "Scorpion"
+        },
+        {
+            "id": 111,
+            "name": "Sentinel",
+            "type": "Character",
+            "cost": 2,
+            "power": 3,
+            "ability": "On Reveal: Add another Sentinel to your hand.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "111_4933,111_2311,111_2310,111_45",
+            "pretty_url": "sentinel-111",
+            "method": "Starter Card",
+            "slug": "Sentinel"
+        },
+        {
+            "id": 112,
+            "name": "Sera",
+            "type": "Character",
+            "cost": 5,
+            "power": 4,
+            "ability": "Ongoing: Cards in your hand cost 1 less. (minimum 1)",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "112_4941,112_2316,112_2315,112_2314",
+            "pretty_url": "sera-112",
+            "method": "Collection Level 462-? (Pool 3)",
+            "slug": "Sera"
+        },
+        {
+            "id": 113,
+            "name": "Shang-Chi",
+            "type": "Character",
+            "cost": 4,
+            "power": 3,
+            "ability": "On Reveal: Destroy all enemy cards at this location that have 9 or more Power.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "113_2320,113_2319,113_503,113_2321",
+            "pretty_url": "shang-chi-113",
+            "method": "Collection Level 222-450 (Pool 2)",
+            "slug": "ShangChi"
+        },
+        {
+            "id": 114,
+            "name": "Shocker",
+            "type": "Character",
+            "cost": 2,
+            "power": 3,
+            "ability": null,
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "114_4954,114_2326,114_2325,114_2324",
+            "pretty_url": "shocker-114",
+            "method": "Starter Card",
+            "slug": "Shocker"
+        },
+        {
+            "id": 115,
+            "name": "Spectrum",
+            "type": "Character",
+            "cost": 6,
+            "power": 5,
+            "ability": "On Reveal: Give your Ongoing cards +2 Power.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "115_2342,115_2341,115_126,115_81",
+            "pretty_url": "spectrum-115",
+            "method": "Collection Level 1-14",
+            "slug": "Spectrum"
+        },
+        {
+            "id": 116,
+            "name": "Spider-Man",
+            "type": "Character",
+            "cost": 3,
+            "power": 5,
+            "ability": "On Reveal: Move to another location and pull an enemy card from here to there.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "116_2345,116_2343,116_1,116_4989",
+            "pretty_url": "spider-man-116",
+            "method": "Collection Level 462-? (Pool 3)",
+            "slug": "SpiderMan"
+        },
+        {
+            "id": 117,
+            "name": "Spider-Woman",
+            "type": "Character",
+            "cost": 5,
+            "power": 8,
+            "ability": "On Reveal: Afflict all enemy cards here with -1 Power.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "117_2349,117_2348,117_2347,117_2346",
+            "pretty_url": "spider-woman-117",
+            "method": "Collection Level 18-214 (Pool 1)",
+            "slug": "SpiderWoman"
+        },
+        {
+            "id": 118,
+            "name": "Squirrel Girl",
+            "type": "Character",
+            "cost": 1,
+            "power": 2,
+            "ability": "On Reveal: Add a 1-Power Squirrel to each other location.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "118_2977,118_2976,118_2975,118_159",
+            "pretty_url": "squirrel-girl-118",
+            "method": "Collection Level 18-214 (Pool 1)",
+            "slug": "SquirrelGirl"
+        },
+        {
+            "id": 119,
+            "name": "Star Lord",
+            "type": "Character",
+            "cost": 2,
+            "power": 2,
+            "ability": "On Reveal: If your opponent played a card here this turn, +3 Power.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "119_5001,119_2980,119_2979,119_2978",
+            "pretty_url": "star-lord-119",
+            "method": "Starter Card",
+            "slug": "StarLord"
+        },
+        {
+            "id": 120,
+            "name": "Storm",
+            "type": "Character",
+            "cost": 3,
+            "power": 2,
+            "ability": "On Reveal: Flood this location. Next turn is the last turn cards can be played here.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "120_5005,120_2359,120_2358,120_508",
+            "pretty_url": "storm-120",
+            "method": "Collection Level 222-450 (Pool 2)",
+            "slug": "Storm"
+        },
+        {
+            "id": 121,
+            "name": "Strong Guy",
+            "type": "Character",
+            "cost": 4,
+            "power": 4,
+            "ability": "Ongoing: If your hand is empty, +6 Power.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "121_5009,121_5008,121_2985,121_261",
+            "pretty_url": "strong-guy-121",
+            "method": "Collection Level 18-214 (Pool 1)",
+            "slug": "StrongGuy"
+        },
+        {
+            "id": 122,
+            "name": "Sunspot",
+            "type": "Character",
+            "cost": 1,
+            "power": 0,
+            "ability": "At the end of each turn, gain +1 Power for each unspent Energy.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "122_5013,122_2364,122_2363,122_5014",
+            "pretty_url": "sunspot-122",
+            "method": "Collection Level 222-450 (Pool 2)",
+            "slug": "Sunspot"
+        },
+        {
+            "id": 123,
+            "name": "Swarm",
+            "type": "Character",
+            "cost": 2,
+            "power": 3,
+            "ability": "When this is discarded from your hand, add two copies that Cost 0 to your hand.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "123_2369,123_2368,123_2367,123_2370",
+            "pretty_url": "swarm-123",
+            "method": "Collection Level 222-450 (Pool 2)",
+            "slug": "Swarm"
+        },
+        {
+            "id": 124,
+            "name": "Sword Master",
+            "type": "Character",
+            "cost": 3,
+            "power": 6,
+            "ability": "On Reveal: Discard a card from your hand.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "124_5026,124_5025,124_2996,124_378",
+            "pretty_url": "sword-master-124",
+            "method": "Collection Level 18-214 (Pool 1)",
+            "slug": "SwordMaster"
+        },
+        {
+            "id": 125,
+            "name": "Taskmaster",
+            "type": "Character",
+            "cost": 5,
+            "power": 0,
+            "ability": "On Reveal: Set this card’s Power equal to that of the last card you played. (if that card’s in play)",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "125_5030,125_2375,125_2374,125_2373",
+            "pretty_url": "taskmaster-125",
+            "method": "Collection Level 462-? (Pool 3)",
+            "slug": "Taskmaster"
+        },
+        {
+            "id": 126,
+            "name": "Thanos",
+            "type": "Character",
+            "cost": 6,
+            "power": 10,
+            "ability": "At the start of the game, shuffle the six Infinity Stones into your deck.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "126_2379,126_2378,126_2377,126_2376",
+            "pretty_url": "thanos-126",
+            "method": null,
+            "slug": "Thanos"
+        },
+        {
+            "id": 127,
+            "name": "The Collector",
+            "type": "Character",
+            "cost": 2,
+            "power": 0,
+            "ability": "When a card enters your hand from anywhere (except your deck), +1 Power.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "127_5038,127_3006,127_3005,127_3004",
+            "pretty_url": "the-collector-127",
+            "method": "Collection Level 222-450 (Pool 2)",
+            "slug": "TheCollector"
+        },
+        {
+            "id": 128,
+            "name": "The Hood",
+            "type": "Character",
+            "cost": 1,
+            "power": -3,
+            "ability": "On Reveal: Add a Demon to your hand.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "128_3639,128_3638,128_3637,128_3636",
+            "pretty_url": "the-hood-128",
+            "method": "Collection Level 462-? (Pool 3)",
+            "slug": "Hood"
+        },
+        {
+            "id": 129,
+            "name": "The Infinaut",
+            "type": "Character",
+            "cost": 6,
+            "power": 20,
+            "ability": "If you played a card last turn, you can't play this.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "129_5045,129_3641,129_3640,129_5046",
+            "pretty_url": "the-infinaut-129",
+            "method": "Collection Level 222-450 (Pool 2)",
+            "slug": "Infinaut"
+        },
+        {
+            "id": 130,
+            "name": "The Thing",
+            "type": "Character",
+            "cost": 4,
+            "power": 6,
+            "ability": null,
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "130_5058,130_3009,130_380,130_262",
+            "pretty_url": "the-thing-130",
+            "method": "Starter Card",
+            "slug": "TheThing"
+        },
+        {
+            "id": 131,
+            "name": "Typhoid Mary",
+            "type": "Character",
+            "cost": 4,
+            "power": 10,
+            "ability": "Ongoing: Your other cards have -1 Power.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "131_5071,131_5070,131_5069,131_3017",
+            "pretty_url": "typhoid-mary-131",
+            "method": "Collection Level 462-? (Pool 3)",
+            "slug": "TyphoidMary"
+        },
+        {
+            "id": 132,
+            "name": "Uatu the Watcher",
+            "type": "Character",
+            "cost": 1,
+            "power": 2,
+            "ability": "Once this is in your hand, you can see the unrevealed locations.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "132_3659,132_3658,132_3656,132_263",
+            "pretty_url": "uatu-the-watcher-132",
+            "method": null,
+            "slug": "Uatu"
+        },
+        {
+            "id": 133,
+            "name": "Ultron",
+            "type": "Character",
+            "cost": 6,
+            "power": 8,
+            "ability": "On Reveal: Create four 1-Power Drones at each other location.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "133_2397,133_2396,133_2395,133_2394",
+            "pretty_url": "ultron-133",
+            "method": "Collection Level 462-? (Pool 3)",
+            "slug": "Ultron"
+        },
+        {
+            "id": 134,
+            "name": "Venom",
+            "type": "Character",
+            "cost": 3,
+            "power": 3,
+            "ability": "On Reveal: Destroy your other cards at this location. Add their Power to this card.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "134_2404,134_2403,134_2402,134_2401",
+            "pretty_url": "venom-134",
+            "method": "Collection Level 462-? (Pool 3)",
+            "slug": "Venom"
+        },
+        {
+            "id": 135,
+            "name": "Viper",
+            "type": "Character",
+            "cost": 2,
+            "power": 3,
+            "ability": "On Reveal: Your opponent gains control of one of your other cards at this location.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "135_5093,135_2406,135_2405,135_5094",
+            "pretty_url": "viper-135",
+            "method": "Collection Level 462-? (Pool 3)",
+            "slug": "Viper"
+        },
+        {
+            "id": 136,
+            "name": "Vision",
+            "type": "Character",
+            "cost": 5,
+            "power": 8,
+            "ability": "You can move this each turn.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "136_2410,136_2409,136_2408,136_382",
+            "pretty_url": "vision-136",
+            "method": "Collection Level 222-450 (Pool 2)",
+            "slug": "Vision"
+        },
+        {
+            "id": 137,
+            "name": "Vulture",
+            "type": "Character",
+            "cost": 3,
+            "power": 3,
+            "ability": "When this card moves, +5 Power.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "137_2413,137_2412,137_2411,137_2414",
+            "pretty_url": "vulture-137",
+            "method": "Collection Level 222-450 (Pool 2)",
+            "slug": "Vulture"
+        },
+        {
+            "id": 138,
+            "name": "Wasp",
+            "type": "Character",
+            "cost": 0,
+            "power": 1,
+            "ability": null,
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "138_2423,138_2422,138_2421,138_2420",
+            "pretty_url": "wasp-138",
+            "method": "Collection Level 462-? (Pool 3)",
+            "slug": "Wasp"
+        },
+        {
+            "id": 139,
+            "name": "Wave",
+            "type": "Character",
+            "cost": 3,
+            "power": 3,
+            "ability": "On Reveal: All cards cost 4 until the end of next turn.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "139_5118,139_5117,139_2425,139_515",
+            "pretty_url": "wave-139",
+            "method": "Season 01",
+            "slug": "Wave"
+        },
+        {
+            "id": 140,
+            "name": "White Queen",
+            "type": "Character",
+            "cost": 4,
+            "power": 6,
+            "ability": "On Reveal: Copy the highest-Cost card in your opponent’s hand into your hand.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "140_5122,140_3052,140_265,140_149",
+            "pretty_url": "white-queen-140",
+            "method": "Collection Level 18-214 (Pool 1)",
+            "slug": "WhiteQueen"
+        },
+        {
+            "id": 141,
+            "name": "White Tiger",
+            "type": "Character",
+            "cost": 5,
+            "power": 1,
+            "ability": "On Reveal: Add a 7-Power Tiger to another location.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "141_3056,141_3055,141_3054,141_3053",
+            "pretty_url": "white-tiger-141",
+            "method": "Collection Level 1-14",
+            "slug": "WhiteTiger"
+        },
+        {
+            "id": 142,
+            "name": "Wolfsbane",
+            "type": "Character",
+            "cost": 3,
+            "power": 1,
+            "ability": "On Reveal: +2 Power for each other card you have here.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "142_2436,142_2435,142_2434,142_2433",
+            "pretty_url": "wolfsbane-142",
+            "method": "Collection Level 1-14",
+            "slug": "Wolfsbane"
+        },
+        {
+            "id": 143,
+            "name": "Wolverine",
+            "type": "Character",
+            "cost": 2,
+            "power": 2,
+            "ability": "When this is discarded or destroyed, regenerate it at a random location with +2 Power.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "143_5135,143_2439,143_2438,143_266",
+            "pretty_url": "wolverine-143",
+            "method": "Collection Level 18-214 (Pool 1)",
+            "slug": "Wolverine"
+        },
+        {
+            "id": 144,
+            "name": "Wong",
+            "type": "Character",
+            "cost": 4,
+            "power": 2,
+            "ability": "Ongoing: Your On Reveal abilities at this location happen twice.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "144_2442,144_2441,144_2440,144_5139",
+            "pretty_url": "wong-144",
+            "method": "Collection Level 462-? (Pool 3)",
+            "slug": "Wong"
+        },
+        {
+            "id": 145,
+            "name": "Yellowjacket",
+            "type": "Character",
+            "cost": 0,
+            "power": 2,
+            "ability": "On Reveal: Afflict your other cards at this location with -1 Power.",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "145_2444,145_2443,145_5143,145_5142",
+            "pretty_url": "yellowjacket-145",
+            "method": null,
+            "slug": "Yellowjacket"
+        },
+        {
+            "id": 146,
+            "name": "Yondu",
+            "type": "Character",
+            "cost": 1,
+            "power": 2,
+            "ability": "On Reveal: Destroy the top card of your opponent’s deck",
+            "date_added": "2022-05-20 08:46:03",
+            "status": null,
+            "variants": "146_5147,146_2447,146_268,146_88",
+            "pretty_url": "yondu-146",
+            "method": "Collection Level 18-214 (Pool 1)",
+            "slug": "Yondu"
+        },
+        {
+            "id": 200,
+            "name": "Absorbing Man",
+            "type": "Character",
+            "cost": 4,
+            "power": 4,
+            "ability": "If the last card you played has an On Reveal, copy its text. (if it’s in play)",
+            "date_added": "2022-05-21 19:28:54",
+            "status": null,
+            "variants": "200_4294,200_2457,200_2456,200_2455",
+            "pretty_url": "absorbing-man-200",
+            "method": null,
+            "slug": "AbsorbingMan"
+        },
+        {
+            "id": 201,
+            "name": "Adam Warlock",
+            "type": "Character",
+            "cost": 2,
+            "power": 0,
+            "ability": "At the end of each turn, if you are winning this location, draw a card.",
+            "date_added": "2022-05-21 19:46:07",
+            "status": null,
+            "variants": "201_4298,201_4297,201_2459,201_2458",
+            "pretty_url": "adam-warlock-201",
+            "method": "Collection Level 462-? (Pool 3)",
+            "slug": "AdamWarlock"
+        },
+        {
+            "id": 202,
+            "name": "Agatha Harkness",
+            "type": "Character",
+            "cost": 6,
+            "power": 14,
+            "ability": "Agatha starts in your hand and plays your cards for you.",
+            "date_added": "2022-05-21 19:46:08",
+            "status": null,
+            "variants": "202_2466,202_2465,202_2464,202_2463",
+            "pretty_url": "agatha-harkness-202",
+            "method": "Collection Level 462-? (Pool 3)",
+            "slug": "AgathaHarkness"
+        },
+        {
+            "id": 203,
+            "name": "Agent Coulson",
+            "type": "Character",
+            "cost": 3,
+            "power": 4,
+            "ability": "On Reveal: Add a random 4-cost and 5-cost card to your hand.",
+            "date_added": "2022-05-21 19:46:09",
+            "status": null,
+            "variants": "203_4314,203_2472,203_4313,203_2471",
+            "pretty_url": "agent-coulson-203",
+            "method": null,
+            "slug": "AgentCoulson"
+        },
+        {
+            "id": 204,
+            "name": "Black Knight",
+            "type": "Character",
+            "cost": 1,
+            "power": 2,
+            "ability": "After you discard a card, add the Ebony Blade to your hand with that card’s Power. (once per game)",
+            "date_added": "2022-05-21 19:46:10",
+            "status": null,
+            "variants": "204_4363,204_4366,204_4365,204_4364",
+            "pretty_url": "black-knight-204",
+            "method": null,
+            "slug": "BlackKnight"
+        },
+        {
+            "id": 205,
+            "name": "Blink",
+            "type": "Character",
+            "cost": 3,
+            "power": 1,
+            "ability": "You can move this each turn. When it moves, +1 Power.",
+            "date_added": "2022-05-21 19:46:11",
+            "status": null,
+            "variants": "205_4382,205_4381,205_4380,205_4379",
+            "pretty_url": "blink-205",
+            "method": null,
+            "slug": "Blink"
+        },
+        {
+            "id": 206,
+            "name": "Blob",
+            "type": "Character",
+            "cost": 3,
+            "power": 4,
+            "ability": "Ongoing: Nothing can move this to another location.",
+            "date_added": "2022-05-21 19:46:12",
+            "status": null,
+            "variants": "206_4386,206_726,206_725,206_724",
+            "pretty_url": "blob-206",
+            "method": null,
+            "slug": "Blob"
+        },
+        {
+            "id": 207,
+            "name": "Bucky Barnes",
+            "type": "Character",
+            "cost": 2,
+            "power": 1,
+            "ability": "When this is destroyed, replace it with the Winter Soldier.",
+            "date_added": "2022-05-21 19:46:13",
+            "status": null,
+            "variants": "207_2538,207_2537,207_2536,207_2535",
+            "pretty_url": "bucky-barnes-207",
+            "method": "Collection Level 222-450 (Pool 2)",
+            "slug": "BuckyBarnes"
+        },
+        {
+            "id": 208,
+            "name": "Bullseye",
+            "type": "Character",
+            "cost": 1,
+            "power": 2,
+            "ability": "On Reveal: The next card you draw will be a 2-Cost card. (if any are left)",
+            "date_added": "2022-05-21 19:46:14",
+            "status": null,
+            "variants": "208_740,208_739,208_4402,208_4401",
+            "pretty_url": "bullseye-208",
+            "method": null,
+            "slug": "Bullseye"
+        },
+        {
+            "id": 209,
+            "name": "Colleen Wing",
+            "type": "Character",
+            "cost": 2,
+            "power": 4,
+            "ability": "On Reveal: Discard the lowest-cost card from your hand.",
+            "date_added": "2022-05-21 19:46:15",
+            "status": null,
+            "variants": "209_4430,209_2564,209_2563,209_2562",
+            "pretty_url": "colleen-wing-209",
+            "method": "Collection Level 462-? (Pool 3)",
+            "slug": "ColleenWing"
+        },
+        {
+            "id": 210,
+            "name": "Crossbones",
+            "type": "Character",
+            "cost": 4,
+            "power": 8,
+            "ability": "You can only play this at locations where you are winning.",
+            "date_added": "2022-05-21 19:46:16",
+            "status": null,
+            "variants": "210_776,210_775,210_774,210_773",
+            "pretty_url": "crossbones-210",
+            "method": "Collection Level 462-? (Pool 3)",
+            "slug": "Crossbones"
+        },
+        {
+            "id": 211,
+            "name": "Daredevil",
+            "type": "Character",
+            "cost": 2,
+            "power": 2,
+            "ability": "On turn 5, you get to see your opponent's plays before you make your own.",
+            "date_added": "2022-05-21 19:46:17",
+            "status": null,
+            "variants": "211_786,211_785,211_788,211_787",
+            "pretty_url": "daredevil-211",
+            "method": null,
+            "slug": "Daredevil"
+        },
+        {
+            "id": 212,
+            "name": "Darkhawk",
+            "type": "Character",
+            "cost": 4,
+            "power": 0,
+            "ability": "Ongoing: +2 Power for each card in your opponent’s deck.",
+            "date_added": "2022-05-21 19:46:18",
+            "status": null,
+            "variants": "212_790,212_4462,212_789,212_4461",
+            "pretty_url": "darkhawk-212",
+            "method": null,
+            "slug": "Darkhawk"
+        },
+        {
+            "id": 213,
+            "name": "Dazzler",
+            "type": "Character",
+            "cost": 3,
+            "power": 2,
+            "ability": "Ongoing: +2 Power for each location that’s full on your side.",
+            "date_added": "2022-05-21 19:46:19",
+            "status": null,
+            "variants": "213_792,213_4466,213_791,213_4465",
+            "pretty_url": "dazzler-213",
+            "method": null,
+            "slug": "Dazzler"
+        },
+        {
+            "id": 214,
+            "name": "Debrii",
+            "type": "Character",
+            "cost": 3,
+            "power": 3,
+            "ability": "On Reveal: Add a Rock to each other location, for both players.",
+            "date_added": "2022-05-21 19:46:21",
+            "status": null,
+            "variants": "214_4481,214_806,214_805,214_4482",
+            "pretty_url": "debrii-214",
+            "method": "Collection Level 462-? (Pool 3)",
+            "slug": "Debrii"
+        },
+        {
+            "id": 215,
+            "name": "Dracula",
+            "type": "Character",
+            "cost": 4,
+            "power": 0,
+            "ability": "At the end of the game, discard a card from your hand. This has its Power.",
+            "date_added": "2022-05-21 19:46:27",
+            "status": null,
+            "variants": "215_4510,215_1331,215_1330,215_1329",
+            "pretty_url": "dracula-215",
+            "method": "Collection Level 462-? (Pool 3)",
+            "slug": "Dracula"
+        },
+        {
+            "id": 216,
+            "name": "Elsa Bloodstone",
+            "type": "Character",
+            "cost": 2,
+            "power": 2,
+            "ability": "If you play another card to fill a location, give it +3 Power.",
+            "date_added": "2022-05-21 19:46:35",
+            "status": null,
+            "variants": "216_4527,216_4530,216_4529,216_4528",
+            "pretty_url": "elsa-bloodstone-216",
+            "method": null,
+            "slug": "ElsaBloodstone"
+        },
+        {
+            "id": 217,
+            "name": "Enchantress",
+            "type": "Character",
+            "cost": 4,
+            "power": 5,
+            "ability": "On Reveal: Remove the abilities from all Ongoing cards at this location.",
+            "date_added": "2022-05-21 19:46:36",
+            "status": null,
+            "variants": "217_1347,217_212,217_211,217_152",
+            "pretty_url": "enchantress-217",
+            "method": "Collection Level 18-214 (Pool 1)",
+            "slug": "Enchantress"
+        },
+        {
+            "id": 218,
+            "name": "Falcon",
+            "type": "Character",
+            "cost": 2,
+            "power": 3,
+            "ability": "On Reveal: Return your 1-Cost cards to your hand.",
+            "date_added": "2022-05-21 19:46:36",
+            "status": null,
+            "variants": "218_4538,218_1350,218_1349,218_1348",
+            "pretty_url": "falcon-218",
+            "method": "Collection Level 462-? (Pool 3)",
+            "slug": "Falcon"
+        },
+        {
+            "id": 219,
+            "name": "Giganto",
+            "type": "Character",
+            "cost": 6,
+            "power": 14,
+            "ability": "You can only play this at the left location.",
+            "date_added": "2022-05-21 19:46:46",
+            "status": null,
+            "variants": "219_1372,219_1371,219_1370,219_4566",
+            "pretty_url": "giganto-219",
+            "method": "Collection Level 462-? (Pool 3)",
+            "slug": "Giganto"
+        },
+        {
+            "id": 220,
+            "name": "Hit Monkey",
+            "type": "Character",
+            "cost": 3,
+            "power": 2,
+            "ability": "On Reveal: Gain +2 Power for each other card you played this turn.",
+            "date_added": "2022-05-21 19:46:54",
+            "status": null,
+            "variants": "220_4602,220_4601,220_4600,220_4599",
+            "pretty_url": "hit-monkey-220",
+            "method": null,
+            "slug": "HitMonkey"
+        },
+        {
+            "id": 221,
+            "name": "Hulk Buster",
+            "type": "Character",
+            "cost": 3,
+            "power": 5,
+            "ability": "On Reveal: Merge this card with a random friendly card at this location.",
+            "date_added": "2022-05-21 19:47:01",
+            "status": null,
+            "variants": "221_4614,221_2711,221_2710,221_331",
+            "pretty_url": "hulk-buster-221",
+            "method": "Collection Level 18-214 (Pool 1)",
+            "slug": "HulkBuster"
+        },
+        {
+            "id": 222,
+            "name": "Jean Grey",
+            "type": "Character",
+            "cost": 3,
+            "power": 3,
+            "ability": "Ongoing: Players must play their first card here each turn. (if possible)",
+            "date_added": "2022-05-21 19:47:17",
+            "status": null,
+            "variants": "222_2735,222_2734,222_4642,222_2736",
+            "pretty_url": "jean-grey-222",
+            "method": null,
+            "slug": "JeanGrey"
+        },
+        {
+            "id": 223,
+            "name": "Juggernaut",
+            "type": "Character",
+            "cost": 3,
+            "power": 3,
+            "ability": "On Reveal: If your opponent played cards here this turn, move them randomly.",
+            "date_added": "2022-05-21 19:47:19",
+            "status": null,
+            "variants": "223_1447,223_1446,223_1445,223_4654",
+            "pretty_url": "juggernaut-223",
+            "method": "Collection Level 462-? (Pool 3)",
+            "slug": "Juggernaut"
+        },
+        {
+            "id": 224,
+            "name": "Kitty Pryde",
+            "type": "Character",
+            "cost": 1,
+            "power": 0,
+            "ability": "When this returns to your hand, +1 Power. Returns at the start of each turn.",
+            "date_added": "2022-05-21 19:47:25",
+            "status": null,
+            "variants": "224_4674,224_4673,224_2760,224_2759",
+            "pretty_url": "kitty-pryde-224",
+            "method": null,
+            "slug": "KittyPryde"
+        },
+        {
+            "id": 225,
+            "name": "Korg",
+            "type": "Character",
+            "cost": 1,
+            "power": 2,
+            "ability": "On Reveal: Shuffle a Rock into your opponent's deck.",
+            "date_added": "2022-05-21 19:47:26",
+            "status": null,
+            "variants": "225_1467,225_1466,225_1465,225_142",
+            "pretty_url": "korg-225",
+            "method": "Collection Level 18-214 (Pool 1)",
+            "slug": "Korg"
+        },
+        {
+            "id": 226,
+            "name": "Lady Deathstrike",
+            "type": "Character",
+            "cost": 5,
+            "power": 4,
+            "ability": "On Reveal: Destroy each card here with less Power than this",
+            "date_added": "2022-05-21 19:47:29",
+            "status": null,
+            "variants": "226_4690,226_2774,226_2773,226_2772",
+            "pretty_url": "lady-deathstrike-226",
+            "method": null,
+            "slug": "LadyDeathstrike"
+        },
+        {
+            "id": 227,
+            "name": "Leader",
+            "type": "Character",
+            "cost": 6,
+            "power": 2,
+            "ability": "On Reveal: Copy the enemy card(s) with the highest Power played this turn, but on your side.",
+            "date_added": "2022-05-21 19:47:30",
+            "status": null,
+            "variants": "227_4698,227_1480,227_1479,227_1478",
+            "pretty_url": "leader-227",
+            "method": "Collection Level 462-? (Pool 3)",
+            "slug": "Leader"
+        },
+        {
+            "id": 228,
+            "name": "Legion",
+            "type": "Character",
+            "cost": 5,
+            "power": 7,
+            "ability": "On Reveal: Replace each other location with this one.",
+            "date_added": "2022-05-21 19:47:32",
+            "status": null,
+            "variants": "228_4704,228_4703,228_4705",
+            "pretty_url": "legion-228",
+            "method": null,
+            "slug": "Legion"
+        },
+        {
+            "id": 229,
+            "name": "Lockjaw",
+            "type": "Character",
+            "cost": 3,
+            "power": 2,
+            "ability": "After you play a card here, swap it with a card in your deck. (once per turn)",
+            "date_added": "2022-05-21 19:47:33",
+            "status": null,
+            "variants": "229_4713,229_4712,229_1488,229_1487",
+            "pretty_url": "lockjaw-229",
+            "method": "Collection Level 462-? (Pool 3)",
+            "slug": "Lockjaw"
+        },
+        {
+            "id": 230,
+            "name": "Loki",
+            "type": "Character",
+            "cost": 3,
+            "power": 5,
+            "ability": "On Reveal: Replace your hand with cards from your opponent's starting deck. Give them -1 cost.",
+            "date_added": "2022-05-21 19:47:34",
+            "status": null,
+            "variants": null,
+            "pretty_url": "loki-230",
+            "method": null,
+            "slug": "Loki"
+        },
+        {
+            "id": 231,
+            "name": "Luke Cage",
+            "type": "Character",
+            "cost": 2,
+            "power": 2,
+            "ability": "Ongoing: Your cards can't have their Power reduced.",
+            "date_added": "2022-05-21 19:47:35",
+            "status": null,
+            "variants": "231_2790,231_2789,231_4717,231_2791",
+            "pretty_url": "luke-cage-231",
+            "method": null,
+            "slug": "LukeCage"
+        },
+        {
+            "id": 232,
+            "name": "M'Baku",
+            "type": "Character",
+            "cost": 1,
+            "power": 2,
+            "ability": "If this is in your deck at the end of the game, it jumps to a random location.",
+            "date_added": "2022-05-21 19:47:35",
+            "status": null,
+            "variants": "232_4002,232_4001,232_4721,232_4003",
+            "pretty_url": "m-baku-232",
+            "method": null,
+            "slug": "MBaku"
+        },
+        {
+            "id": 233,
+            "name": "Makkari",
+            "type": "Character",
+            "cost": 0,
+            "power": 2,
+            "ability": "When you draw this, place it at a random location.",
+            "date_added": "2022-05-21 19:47:41",
+            "status": null,
+            "variants": null,
+            "pretty_url": "makkari-233",
+            "method": null,
+            "slug": "Makkari"
+        },
+        {
+            "id": 234,
+            "name": "Maria Hill",
+            "type": "Character",
+            "cost": 2,
+            "power": 3,
+            "ability": "On Reveal: Add a random 1 or 2-Cost card to your hand.",
+            "date_added": "2022-05-21 19:47:42",
+            "status": null,
+            "variants": "234_4737,234_4736,234_2803,234_2802",
+            "pretty_url": "maria-hill-234",
+            "method": null,
+            "slug": "MariaHill"
+        },
+        {
+            "id": 235,
+            "name": "Mephisto",
+            "type": "Character",
+            "cost": 6,
+            "power": 0,
+            "ability": "If you win this game, double your winnings.",
+            "date_added": "2022-05-21 19:47:45",
+            "status": null,
+            "variants": "235_4748,235_4747,235_4746,235_4749",
+            "pretty_url": "mephisto-235",
+            "method": null,
+            "slug": "Mephisto"
+        },
+        {
+            "id": 236,
+            "name": "Mister Negative",
+            "type": "Character",
+            "cost": 4,
+            "power": -1,
+            "ability": "On Reveal: Swap the Power and Cost of all cards in your deck.",
+            "date_added": "2022-05-21 19:47:49",
+            "status": null,
+            "variants": "236_2817,236_2816,236_2815,236_2814",
+            "pretty_url": "mister-negative-236",
+            "method": "Collection Level 462-? (Pool 3)",
+            "slug": "MrNegative"
+        },
+        {
+            "id": 237,
+            "name": "Misty Knight",
+            "type": "Character",
+            "cost": 1,
+            "power": 2,
+            "ability": null,
+            "date_added": "2022-05-21 19:47:53",
+            "status": null,
+            "variants": "237_4769,237_2824,237_2823,237_476",
+            "pretty_url": "misty-knight-237",
+            "method": "Starter Card",
+            "slug": "MistyKnight"
+        },
+        {
+            "id": 238,
+            "name": "MODOK",
+            "type": "Character",
+            "cost": 5,
+            "power": 8,
+            "ability": "On Reveal: Discard your hand.",
+            "date_added": "2022-05-21 19:47:54",
+            "status": null,
+            "variants": "238_4773,238_4772,238_4771,238_2201",
+            "pretty_url": "modok-238",
+            "method": null,
+            "slug": "MODOK"
+        },
+        {
+            "id": 239,
+            "name": "Moon Knight",
+            "type": "Character",
+            "cost": 3,
+            "power": 3,
+            "ability": "On Reveal: Discard a card from each player's hand.",
+            "date_added": "2022-05-21 19:47:56",
+            "status": null,
+            "variants": "239_2835,239_2834,239_2833,239_4785",
+            "pretty_url": "moon-knight-239",
+            "method": "Collection Level 462-? (Pool 3)",
+            "slug": "MoonKnight"
+        },
+        {
+            "id": 240,
+            "name": "Morbius",
+            "type": "Character",
+            "cost": 2,
+            "power": 0,
+            "ability": "Ongoing: +2 Power for each time you discarded a card this game.",
+            "date_added": "2022-05-21 19:47:57",
+            "status": null,
+            "variants": "240_2214,240_2213,240_2212,240_4789",
+            "pretty_url": "morbius-240",
+            "method": "Collection Level 222-450 (Pool 2)",
+            "slug": "Morbius"
+        },
+        {
+            "id": 241,
+            "name": "Ms Marvel",
+            "type": "Character",
+            "cost": 3,
+            "power": 4,
+            "ability": "Ongoing: If this is your only card here, adjacent locations have +5 Power.",
+            "date_added": "2022-05-21 19:47:59",
+            "status": null,
+            "variants": "241_2846,241_2845,241_2844,241_2843",
+            "pretty_url": "ms-marvel-241",
+            "method": null,
+            "slug": "MsMarvel"
+        },
+        {
+            "id": 242,
+            "name": "Nebula",
+            "type": "Character",
+            "cost": 1,
+            "power": 1,
+            "ability": "Each turn your opponent doesn't play a card here, +2 Power. (except the turn you play this)",
+            "date_added": "2022-05-21 19:48:10",
+            "status": null,
+            "variants": "242_4819,242_4821,242_2238,242_4820",
+            "pretty_url": "nebula-242",
+            "method": null,
+            "slug": "Nebula"
+        },
+        {
+            "id": 243,
+            "name": "Negasonic Teenage Warhead",
+            "type": "Character",
+            "cost": 3,
+            "power": 5,
+            "ability": "After ANY card is played here, destroy this card AND that card.",
+            "date_added": "2022-05-21 19:48:11",
+            "status": null,
+            "variants": null,
+            "pretty_url": "negasonic-teenage-warhead-243",
+            "method": null,
+            "slug": "NegasonicTeenageWarhead"
+        },
+        {
+            "id": 244,
+            "name": "Orka",
+            "type": "Character",
+            "cost": 6,
+            "power": 11,
+            "ability": "Ongoing: +5 Power if this is your only card here.",
+            "date_added": "2022-05-21 19:48:21",
+            "status": null,
+            "variants": "244_2263,244_4853,244_2262,244_2261",
+            "pretty_url": "orka-244",
+            "method": null,
+            "slug": "Orka"
+        },
+        {
+            "id": 245,
+            "name": "Patriot",
+            "type": "Character",
+            "cost": 3,
+            "power": 1,
+            "ability": "Ongoing: Your cards with no abilities have +2 Power.",
+            "date_added": "2022-05-21 19:48:22",
+            "status": null,
+            "variants": "245_4857,245_4856,245_2265,245_2264",
+            "pretty_url": "patriot-245",
+            "method": "Collection Level 462-? (Pool 3)",
+            "slug": "Patriot"
+        },
+        {
+            "id": 246,
+            "name": "Phoenix Force",
+            "type": "Character",
+            "cost": 4,
+            "power": 5,
+            "ability": "On Reveal: Revive one of your destroyed cards and merge with it. That card can move each turn.",
+            "date_added": "2022-05-21 19:48:22",
+            "status": null,
+            "variants": null,
+            "pretty_url": "phoenix-force-246",
+            "method": null,
+            "slug": "PhoenixForce"
+        },
+        {
+            "id": 248,
+            "name": "Red Guardian",
+            "type": "Character",
+            "cost": 3,
+            "power": 6,
+            "ability": "On Reveal: You must play a card here next turn.",
+            "date_added": "2022-05-21 19:48:31",
+            "status": null,
+            "variants": "248_4884,248_4883,248_4882,248_4885",
+            "pretty_url": "red-guardian-248",
+            "method": null,
+            "slug": "RedGuardian"
+        },
+        {
+            "id": 250,
+            "name": "Ronan the Accuser",
+            "type": "Character",
+            "cost": 5,
+            "power": 3,
+            "ability": "Ongoing: +2 Power for each card in your opponent's hand.",
+            "date_added": "2022-05-21 19:48:44",
+            "status": null,
+            "variants": "250_3551,250_4913,250_3550,250_4912",
+            "pretty_url": "ronan-the-accuser-250",
+            "method": null,
+            "slug": "Ronan"
+        },
+        {
+            "id": 251,
+            "name": "Sabretooth",
+            "type": "Character",
+            "cost": 3,
+            "power": 4,
+            "ability": "When this is destroyed, return it to your hand. It costs 0.",
+            "date_added": "2022-05-21 19:48:44",
+            "status": null,
+            "variants": "251_4916,251_4915,251_2299,251_4917",
+            "pretty_url": "sabretooth-251",
+            "method": "Collection Level 222-450 (Pool 2)",
+            "slug": "Sabretooth"
+        },
+        {
+            "id": 252,
+            "name": "Sentry",
+            "type": "Character",
+            "cost": 4,
+            "power": 10,
+            "ability": "Cannot be played at the right location. On Reveal: Add a -10 Power Void to the right location.",
+            "date_added": "2022-05-21 19:48:50",
+            "status": null,
+            "variants": "252_4937,252_4936,252_2313,252_2312",
+            "pretty_url": "sentry-252",
+            "method": null,
+            "slug": "Sentry"
+        },
+        {
+            "id": 253,
+            "name": "Shadow King",
+            "type": "Character",
+            "cost": 2,
+            "power": 3,
+            "ability": "On Reveal: Set all cards here to their original base Power.",
+            "date_added": "2022-05-21 19:48:51",
+            "status": null,
+            "variants": "253_2941",
+            "pretty_url": "shadow-king-253",
+            "method": null,
+            "slug": "ShadowKing"
+        },
+        {
+            "id": 254,
+            "name": "Shanna the She-Devil",
+            "type": "Character",
+            "cost": 3,
+            "power": 2,
+            "ability": "On Reveal: Add a random 1-Cost card to each location",
+            "date_added": "2022-05-21 19:48:55",
+            "status": null,
+            "variants": null,
+            "pretty_url": "shanna-the-she-devil-254",
+            "method": null,
+            "slug": "ShannatheSheDevil"
+        },
+        {
+            "id": 255,
+            "name": "She-Hulk",
+            "type": "Character",
+            "cost": 6,
+            "power": 9,
+            "ability": "Costs 1 less for each unspent Energy last turn.",
+            "date_added": "2022-05-21 19:48:56",
+            "status": null,
+            "variants": "255_4950,255_4949,255_2323,255_2322",
+            "pretty_url": "she-hulk-255",
+            "method": null,
+            "slug": "SheHulk"
+        },
+        {
+            "id": 256,
+            "name": "Shuri",
+            "type": "Character",
+            "cost": 4,
+            "power": 2,
+            "ability": "On Reveal: If you play your next card here, double its Power.",
+            "date_added": "2022-05-21 19:48:58",
+            "status": null,
+            "variants": "256_2329,256_2328,256_2327,256_2330",
+            "pretty_url": "shuri-256",
+            "method": null,
+            "slug": "Shuri"
+        },
+        {
+            "id": 257,
+            "name": "Silk",
+            "type": "Character",
+            "cost": 2,
+            "power": 5,
+            "ability": "After ANY card is played here, this moves to another location.",
+            "date_added": "2022-05-21 19:48:59",
+            "status": null,
+            "variants": "257_4966,257_2333,257_2332,257_2331",
+            "pretty_url": "silk-257",
+            "method": null,
+            "slug": "Silk"
+        },
+        {
+            "id": 258,
+            "name": "Silver Sable",
+            "type": "Character",
+            "cost": 2,
+            "power": 6,
+            "ability": "You can only play this at a location where you have 6+ total Power.",
+            "date_added": "2022-05-21 19:48:59",
+            "status": null,
+            "variants": "258_4970,258_4969,258_4968,258_2958",
+            "pretty_url": "silver-sable-258",
+            "method": null,
+            "slug": "SilverSable"
+        },
+        {
+            "id": 259,
+            "name": "Silver Samurai",
+            "type": "Character",
+            "cost": 4,
+            "power": 5,
+            "ability": "On Reveal: Each player discards the lowest-Power card from their hand.",
+            "date_added": "2022-05-21 19:49:00",
+            "status": null,
+            "variants": "259_4971,259_4974,259_4973,259_4972",
+            "pretty_url": "silver-samurai-259",
+            "method": null,
+            "slug": "SilverSamurai"
+        },
+        {
+            "id": 260,
+            "name": "Silver Surfer",
+            "type": "Character",
+            "cost": 3,
+            "power": 2,
+            "ability": "On Reveal: Give your other 3-Cost cards +2 Power.",
+            "date_added": "2022-05-21 19:49:01",
+            "status": null,
+            "variants": "260_4978,260_4977,260_2959,260_4976",
+            "pretty_url": "silver-surfer-260",
+            "method": null,
+            "slug": "SilverSurfer"
+        },
+        {
+            "id": 261,
+            "name": "Slapstick",
+            "type": "Character",
+            "cost": null,
+            "power": null,
+            "ability": null,
+            "date_added": "2022-05-21 19:49:02",
+            "status": null,
+            "variants": null,
+            "pretty_url": "slapstick-261",
+            "method": null,
+            "slug": "Slapstick"
+        },
+        {
+            "id": 262,
+            "name": "Snowguard",
+            "type": "Character",
+            "cost": 1,
+            "power": 2,
+            "ability": "On Reveal: Add the Hawk and Bear auroras to your hand.",
+            "date_added": "2022-05-21 19:49:03",
+            "status": null,
+            "variants": "262_2338,262_2337,262_2336",
+            "pretty_url": "snowguard-262",
+            "method": null,
+            "slug": "Snowguard"
+        },
+        {
+            "id": 263,
+            "name": "Ghost-Spider",
+            "type": "Character",
+            "cost": 1,
+            "power": 2,
+            "ability": "On Reveal: The last card you played moves here.",
+            "date_added": "2022-05-21 19:49:04",
+            "status": null,
+            "variants": "263_1369,263_4562,263_1368,263_1367",
+            "pretty_url": "ghost-spider-263",
+            "method": null,
+            "slug": "GhostSpider"
+        },
+        {
+            "id": 264,
+            "name": "Spider-Man (Miles Morales)",
+            "type": "Character",
+            "cost": 4,
+            "power": 5,
+            "ability": "If a card moved last turn, this costs 1.",
+            "date_added": "2022-05-21 19:49:05",
+            "status": null,
+            "variants": null,
+            "pretty_url": "spider-man-miles-morales-264",
+            "method": null,
+            "slug": "SpiderManMilesMorales"
+        },
+        {
+            "id": 265,
+            "name": "Stryfe",
+            "type": "Character",
+            "cost": 3,
+            "power": 7,
+            "ability": "If your opponent has 12+ Power here at the end of any turn, destroy this.",
+            "date_added": "2022-05-21 19:49:11",
+            "status": null,
+            "variants": "265_2362",
+            "pretty_url": "stryfe-265",
+            "method": null,
+            "slug": "Stryfe"
+        },
+        {
+            "id": 266,
+            "name": "Super Skrull",
+            "type": "Character",
+            "cost": 4,
+            "power": 2,
+            "ability": "Ongoing: Has the Ongoing effects of all enemy cards.",
+            "date_added": "2022-05-21 19:49:14",
+            "status": null,
+            "variants": "266_5018,266_5017,266_2990,266_2989",
+            "pretty_url": "super-skrull-266",
+            "method": null,
+            "slug": "SuperSkrull"
+        },
+        {
+            "id": 267,
+            "name": "Surtur",
+            "type": "Character",
+            "cost": 5,
+            "power": 0,
+            "ability": "If you move the Human Torch to this location, +10 Power.",
+            "date_added": "2022-05-21 19:49:15",
+            "status": null,
+            "variants": null,
+            "pretty_url": "surtur-267",
+            "method": null,
+            "slug": "Surtur"
+        },
+        {
+            "id": 268,
+            "name": "The Living Tribunal",
+            "type": "Character",
+            "cost": 6,
+            "power": 9,
+            "ability": "Ongoing: Split your total Power evenly among all locations.",
+            "date_added": "2022-05-21 19:49:27",
+            "status": null,
+            "variants": "268_4228,268_5050,268_4227,268_5049",
+            "pretty_url": "the-living-tribunal-268",
+            "method": null,
+            "slug": "LivingTribunal"
+        },
+        {
+            "id": 269,
+            "name": "The Void",
+            "type": "Character",
+            "cost": 4,
+            "power": -10,
+            "ability": null,
+            "date_added": "2022-05-21 19:49:28",
+            "status": null,
+            "variants": "269_3010",
+            "pretty_url": "the-void-269",
+            "method": null,
+            "slug": "TheVoid"
+        },
+        {
+            "id": 271,
+            "name": "Titania",
+            "type": "Character",
+            "cost": 1,
+            "power": 5,
+            "ability": "After ANY card is played here, this card switches sides.",
+            "date_added": "2022-05-21 19:49:30",
+            "status": null,
+            "variants": "271_5067,271_5066,271_2392,271_2391",
+            "pretty_url": "titania-271",
+            "method": null,
+            "slug": "Titania"
+        },
+        {
+            "id": 272,
+            "name": "Uncle Ben",
+            "type": "Character",
+            "cost": 1,
+            "power": 2,
+            "ability": "When this card is destroyed, add Spider-Man to your hand.",
+            "date_added": "2022-05-21 19:49:36",
+            "status": null,
+            "variants": "272_5082,272_5081,272_5080",
+            "pretty_url": "uncle-ben-272",
+            "method": null,
+            "slug": "UncleBen"
+        },
+        {
+            "id": 273,
+            "name": "Valkyrie",
+            "type": "Character",
+            "cost": 5,
+            "power": 3,
+            "ability": "On Reveal: Set ALL cards at this location to 3 Power.",
+            "date_added": "2022-05-21 19:49:37",
+            "status": null,
+            "variants": "273_5086,273_2400,273_2399,273_2398",
+            "pretty_url": "valkyrie-273",
+            "method": null,
+            "slug": "Valkyrie"
+        },
+        {
+            "id": 274,
+            "name": "Warpath",
+            "type": "Character",
+            "cost": 4,
+            "power": 5,
+            "ability": "Ongoing: If any of your locations are empty, +4 Power.",
+            "date_added": "2022-05-21 19:49:39",
+            "status": null,
+            "variants": "274_2419,274_2418,274_2417,274_5110",
+            "pretty_url": "warpath-274",
+            "method": "Collection Level 222-450 (Pool 2)",
+            "slug": "Warpath"
+        },
+        {
+            "id": 275,
+            "name": "Widow's Bite",
+            "type": "Character",
+            "cost": 0,
+            "power": 0,
+            "ability": "While this is in your hand, you can’t draw cards.",
+            "date_added": "2022-05-21 19:49:42",
+            "status": null,
+            "variants": "275_4286",
+            "pretty_url": "widow-s-bite-275",
+            "method": null,
+            "slug": "WidowsBite"
+        },
+        {
+            "id": 277,
+            "name": "Zabu",
+            "type": "Character",
+            "cost": 2,
+            "power": 2,
+            "ability": "Ongoing: Your 4-Cost cards cost 1 less. (minimum 1)",
+            "date_added": "2022-05-21 19:49:48",
+            "status": null,
+            "variants": "277_5151,277_5150,277_5149,277_5148",
+            "pretty_url": "zabu-277",
+            "method": null,
+            "slug": "Zabu"
+        },
+        {
+            "id": 278,
+            "name": "Zero",
+            "type": "Character",
+            "cost": 1,
+            "power": 3,
+            "ability": "On Reveal: Remove the abilities on the next card you play.",
+            "date_added": "2022-05-21 19:49:49",
+            "status": null,
+            "variants": "278_2448,278_2450,278_2449,278_5155",
+            "pretty_url": "zero-278",
+            "method": null,
+            "slug": "Zero"
+        },
+        {
+            "id": 300,
+            "name": "Jane Foster Mighty Thor",
+            "type": "Character",
+            "cost": 5,
+            "power": 8,
+            "ability": "On Reveal: Draw all cards that Cost 0 from your deck.",
+            "date_added": "2022-05-22 22:37:28",
+            "status": null,
+            "variants": "300_4960,300_4963,300_4962,300_4961",
+            "pretty_url": "jane-foster-mighty-thor-300",
+            "method": null,
+            "slug": "JaneFoster"
+        },
+        {
+            "id": 305,
+            "name": "Hela",
+            "type": "Character",
+            "cost": 6,
+            "power": 6,
+            "ability": "On Reveal: Play all cards you discarded from your hand to random locations.",
+            "date_added": "2022-05-24 09:39:42",
+            "status": null,
+            "variants": "305_4594,305_4593,305_1397,305_1396",
+            "pretty_url": "hela-305",
+            "method": "Collection Level 462-? (Pool 3)",
+            "slug": "Hela"
+        },
+        {
+            "id": 313,
+            "name": "Omega Red",
+            "type": "Character",
+            "cost": 4,
+            "power": 5,
+            "ability": "Ongoing: If you're ahead by 10 Power here, +4 Power to other locations.",
+            "date_added": "2022-05-25 08:26:21",
+            "status": null,
+            "variants": "313_4845,313_2880,313_2879,313_2878",
+            "pretty_url": "omega-red-313",
+            "method": "Collection Level 462-? (Pool 3)",
+            "slug": "OmegaRed"
+        },
+        {
+            "id": 314,
+            "name": "Quinjet",
+            "type": "Character",
+            "cost": 1,
+            "power": 2,
+            "ability": "Ongoing: Cards that didn't start in your deck cost 1 less. (minimum 1)",
+            "date_added": "2022-05-25 08:26:26",
+            "status": null,
+            "variants": "314_2283,314_2282,314_2281,314_4881",
+            "pretty_url": "quinjet-314",
+            "method": "Collection Level 462-? (Pool 3)",
+            "slug": "Quinjet"
+        },
+        {
+            "id": 317,
+            "name": "Thor",
+            "type": "Character",
+            "cost": 3,
+            "power": 4,
+            "ability": "On Reveal: Shuffle Mjölnir into your deck.",
+            "date_added": "2022-05-29 19:37:59",
+            "status": null,
+            "variants": "317_2390,317_2389,317_2388,317_2387",
+            "pretty_url": "thor-317",
+            "method": null,
+            "slug": "Thor"
+        },
+        {
+            "id": 319,
+            "name": "Mirage",
+            "type": "Character",
+            "cost": 2,
+            "power": 2,
+            "ability": "On Reveal: Copy the lowest-Cost card in your opponent’s hand into your hand. Give it +2 Power.",
+            "date_added": "2022-06-07 09:03:19",
+            "status": null,
+            "variants": "319_2186,319_4753,319_4752,319_4751",
+            "pretty_url": "mirage-319",
+            "method": null,
+            "slug": "Mirage"
+        },
+        {
+            "id": 320,
+            "name": "Nick Fury",
+            "type": "Character",
+            "cost": 4,
+            "power": 5,
+            "ability": "On Reveal: Add 3 random 6-Cost cards to your hand.",
+            "date_added": "2022-06-07 09:03:28",
+            "status": null,
+            "variants": "320_2863,320_4825,320_4824,320_2864",
+            "pretty_url": "nick-fury-320",
+            "method": null,
+            "slug": "NickFury"
+        },
+        {
+            "id": 321,
+            "name": "War Machine",
+            "type": "Character",
+            "cost": 4,
+            "power": 5,
+            "ability": "Ongoing: Your 1-Cost cards have +1 Power.",
+            "date_added": "2022-06-07 09:04:06",
+            "status": null,
+            "variants": "321_3039,321_5106,321_5105,321_3040",
+            "pretty_url": "war-machine-321",
+            "method": null,
+            "slug": "WarMachine"
+        },
+        {
+            "id": 322,
+            "name": "Yo-Yo",
+            "type": "Character",
+            "cost": 1,
+            "power": 2,
+            "ability": "When this card moves, move it back with +1 Power.",
+            "date_added": "2022-06-07 09:04:28",
+            "status": null,
+            "variants": null,
+            "pretty_url": "yo-yo-322",
+            "method": null,
+            "slug": "YoYo"
+        },
+        {
+            "id": 340,
+            "name": "Attuma",
+            "type": "Character",
+            "cost": 4,
+            "power": 10,
+            "ability": "If you have another card here at the end of your turn, destroy this",
+            "date_added": "2022-12-13 03:25:22",
+            "status": null,
+            "variants": null,
+            "pretty_url": "attuma-340",
+            "method": null,
+            "slug": null
+        },
+        {
+            "id": 341,
+            "name": "Bast",
+            "type": "Character",
+            "cost": 1,
+            "power": 1,
+            "ability": "On Reveal: Set the Power of all cards in your hand to 3.",
+            "date_added": "2022-12-13 03:25:24",
+            "status": null,
+            "variants": null,
+            "pretty_url": "bast-341",
+            "method": null,
+            "slug": null
+        },
+        {
+            "id": 342,
+            "name": "Helicarrier",
+            "type": "Character",
+            "cost": 6,
+            "power": 10,
+            "ability": "When you discard this from your hand, add 3 random cards to your hand.",
+            "date_added": "2022-12-13 03:25:26",
+            "status": null,
+            "variants": null,
+            "pretty_url": "helicarrier-342",
+            "method": null,
+            "slug": null
+        },
+        {
+            "id": 343,
+            "name": "Knull",
+            "type": "Character",
+            "cost": 6,
+            "power": 0,
+            "ability": "Ongoing: Has the combined Power of all cards destroyed this game.",
+            "date_added": "2022-12-13 03:25:28",
+            "status": null,
+            "variants": null,
+            "pretty_url": "knull-343",
+            "method": null,
+            "slug": null
+        },
+        {
+            "id": 345,
+            "name": "Sauron",
+            "type": "Character",
+            "cost": 3,
+            "power": 3,
+            "ability": "On Reveal: Remove the abilities from all Ongoing cards in your hand and deck.",
+            "date_added": "2023-01-18 04:25:19",
+            "status": null,
+            "variants": null,
+            "pretty_url": "sauron-345",
+            "method": null,
+            "slug": null
+        },
+        {
+            "id": 352,
+            "name": "Ghost",
+            "type": "Character",
+            "cost": 1,
+            "power": 2,
+            "ability": "Ongoing: Your cards are always revealed last. (Their On Reveal abilities happen last.)",
+            "date_added": "2023-02-22 00:25:24",
+            "status": null,
+            "variants": null,
+            "pretty_url": null,
+            "method": null,
+            "slug": null
+        },
+        {
+            "id": 353,
+            "name": "Stature",
+            "type": "Character",
+            "cost": 5,
+            "power": 6,
+            "ability": "Costs 1 if your opponent discarded a card from their hand this game.",
+            "date_added": "2023-02-22 00:25:27",
+            "status": null,
+            "variants": null,
+            "pretty_url": null,
+            "method": null,
+            "slug": null
+        },
+        {
+            "id": 354,
+            "name": "Nimrod",
+            "type": "Character",
+            "cost": 5,
+            "power": 6,
+            "ability": "When this is destroyed, add a copy to each other location.",
+            "date_added": "2023-02-22 00:25:28",
+            "status": null,
+            "variants": null,
+            "pretty_url": null,
+            "method": null,
+            "slug": null
+        },
+        {
+            "id": 359,
+            "name": "Master Mold",
+            "type": "Character",
+            "cost": 2,
+            "power": 2,
+            "ability": "On Reveal: Add 2 Sentinel to your opponent’s hand.",
+            "date_added": "2023-03-23 02:25:15",
+            "status": null,
+            "variants": null,
+            "pretty_url": null,
+            "method": null,
+            "slug": null
+        },
+        {
+            "id": 360,
+            "name": "Jeff the Baby Land Shark",
+            "type": "Character",
+            "cost": 2,
+            "power": 3,
+            "ability": "You can move this once. Nothing can stop you from moving or playing this to any location.",
+            "date_added": "2023-03-23 02:25:17",
+            "status": null,
+            "variants": null,
+            "pretty_url": null,
+            "method": null,
+            "slug": null
+        },
+        {
+            "id": 362,
+            "name": "Stegron",
+            "type": "Character",
+            "cost": 4,
+            "power": 5,
+            "ability": "On Reveal: Move an enemy card from here to another location.",
+            "date_added": "2023-04-26 10:25:36",
+            "status": null,
+            "variants": null,
+            "pretty_url": null,
+            "method": null,
+            "slug": null
+        },
+        {
+            "id": 366,
+            "name": "Howard the Duck",
+            "type": "Character",
+            "cost": 1,
+            "power": 2,
+            "ability": "Ongoing: Tap this to see the top card of your deck.",
+            "date_added": "2023-05-26 10:25:49",
+            "status": null,
+            "variants": null,
+            "pretty_url": null,
+            "method": null,
+            "slug": null
+        },
+        {
+            "id": 367,
+            "name": "Iron Lad",
+            "type": "Character",
+            "cost": 4,
+            "power": 6,
+            "ability": "On Reveal: Copy the text of your deck's top card.",
+            "date_added": "2023-05-26 10:25:50",
+            "status": null,
+            "variants": null,
+            "pretty_url": null,
+            "method": null,
+            "slug": null
+        },
+        {
+            "id": 369,
+            "name": "High Evolutionary",
+            "type": "Character",
+            "cost": 4,
+            "power": 4,
+            "ability": "At the start of the game, unlock the potential of your cards with no abilities.",
+            "date_added": "2023-05-26 10:25:54",
+            "status": null,
+            "variants": null,
+            "pretty_url": null,
+            "method": null,
+            "slug": null
+        },
+        {
+            "id": 373,
+            "name": "Echo",
+            "type": "Character",
+            "cost": 1,
+            "power": 2,
+            "ability": "After your opponent plays an Ongoing card here, remove its abilities.",
+            "date_added": "2023-06-30 21:25:38",
+            "status": null,
+            "variants": null,
+            "pretty_url": null,
+            "method": null,
+            "slug": null
+        },
+        {
+            "id": 375,
+            "name": "Spider-Ham",
+            "type": "Character",
+            "cost": 1,
+            "power": 1,
+            "ability": "On Reveal: Transform the leftmost card in your opponent’s hand into a Pig, keeping its Power and Cost.",
+            "date_added": "2023-06-30 21:25:43",
+            "status": null,
+            "variants": null,
+            "pretty_url": null,
+            "method": null,
+            "slug": null
+        },
+        {
+            "id": 376,
+            "name": "Spider-Man 2099",
+            "type": "Character",
+            "cost": 4,
+            "power": 6,
+            "ability": "The first time this moves to a location, destroy an enemy card there.",
+            "date_added": "2023-06-30 21:25:44",
+            "status": null,
+            "variants": null,
+            "pretty_url": null,
+            "method": null,
+            "slug": null
+        },
+        {
+            "id": 383,
+            "name": "X-23",
+            "type": "Character",
+            "cost": 1,
+            "power": 2,
+            "ability": "When this is discarded or destroyed, regenerate it at a random location and you get +1 Energy next turn.",
+            "date_added": "2023-09-01 05:25:40",
+            "status": null,
+            "variants": null,
+            "pretty_url": null,
+            "method": null,
+            "slug": null
+        },
+        {
+            "id": 384,
+            "name": "Alioth",
+            "type": "Character",
+            "cost": 6,
+            "power": 5,
+            "ability": "On Reveal: Destroy ALL enemy cards played here this turn. (including unrevealed cards)",
+            "date_added": "2023-09-01 05:25:42",
+            "status": null,
+            "variants": null,
+            "pretty_url": null,
+            "method": null,
+            "slug": null
+        },
+        {
+            "id": 385,
+            "name": "Mobius M. Mobius",
+            "type": "Character",
+            "cost": 2,
+            "power": 3,
+            "ability": "Ongoing: Your Costs can't be increased. Your opponent's Costs can't be reduced.",
+            "date_added": "2023-09-01 05:25:43",
+            "status": null,
+            "variants": null,
+            "pretty_url": null,
+            "method": null,
+            "slug": null
+        },
+        {
+            "id": 386,
+            "name": "Ravonna Renslayer",
+            "type": "Character",
+            "cost": 3,
+            "power": 3,
+            "ability": "Ongoing: Your cards with 1 or less Power cost 1 less. (minimum 1)",
+            "date_added": "2023-09-01 05:25:46",
+            "status": null,
+            "variants": null,
+            "pretty_url": null,
+            "method": null,
+            "slug": null
+        },
+        {
+            "id": 387,
+            "name": "Daken",
+            "type": "Character",
+            "cost": 3,
+            "power": 4,
+            "ability": "On Reveal: Add the Muramasa Shard to your hand.",
+            "date_added": "2023-09-01 05:25:48",
+            "status": null,
+            "variants": null,
+            "pretty_url": null,
+            "method": null,
+            "slug": null
+        },
+        {
+            "id": 389,
+            "name": "Man-Thing",
+            "type": "Character",
+            "cost": 4,
+            "power": 5,
+            "ability": null,
+            "date_added": "2023-09-30 22:25:36",
+            "status": null,
+            "variants": null,
+            "pretty_url": null,
+            "method": null,
+            "slug": null
+        },
+        {
+            "id": 391,
+            "name": "Nico Minoru",
+            "type": "Character",
+            "cost": 1,
+            "power": 2,
+            "ability": "On Reveal: After you play your next card, cast a spell. (The spell changes each turn.)",
+            "date_added": "2023-09-30 22:25:40",
+            "status": null,
+            "variants": null,
+            "pretty_url": null,
+            "method": null,
+            "slug": null
+        },
+        {
+            "id": 392,
+            "name": "Werewolf By Night",
+            "type": "Character",
+            "cost": 3,
+            "power": 3,
+            "ability": "After you play an On Reveal card at another location, move there and gain +2 Power.",
+            "date_added": "2023-09-30 22:25:43",
+            "status": null,
+            "variants": null,
+            "pretty_url": null,
+            "method": null,
+            "slug": null
+        }
+    ],
+    "paging": {
+        "total_items": 255,
+        "total_pages": 13
+    }
+}</value>
+        <variable display_value="Sample payload">d335ac0787523300f917e55936cb0b1d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>63963f7f47ca751017fdc82f316d4321</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-30 03:56:48</sys_created_on>
+        <sys_id>67963f7f47ca751017fdc82f316d432e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-30 03:56:48</sys_updated_on>
+        <value>{"name":"root","children":[{"name":"card","children":[{"name":"card_object","children":[{"name":"id","children":[],"type":"string","jpath":"$.card[*].id","previewValue":"1"},{"name":"name","children":[],"type":"string","jpath":"$.card[*].name","previewValue":"Abomination"},{"name":"type","children":[],"type":"string","jpath":"$.card[*].type","previewValue":"Character"},{"name":"cost","children":[],"type":"string","jpath":"$.card[*].cost","previewValue":"5"},{"name":"power","children":[],"type":"string","jpath":"$.card[*].power","previewValue":"9"},{"name":"ability","children":[],"type":"string","jpath":"$.card[*].ability","previewValue":""},{"name":"date_added","children":[],"type":"string","jpath":"$.card[*].date_added","previewValue":"2022-05-20 08:46:03"},{"name":"status","children":[],"type":"string","jpath":"$.card[*].status","previewValue":""},{"name":"variants","children":[],"type":"string","jpath":"$.card[*].variants","previewValue":"1_526,1_525,1_524,1_521"},{"name":"pretty_url","children":[],"type":"string","jpath":"$.card[*].pretty_url","previewValue":"abomination-1"},{"name":"method","children":[],"type":"string","jpath":"$.card[*].method","previewValue":"Starter Card"},{"name":"slug","children":[],"type":"string","jpath":"$.card[*].slug","previewValue":"Abomination"}],"type":"object","jpath":"$.card[*]","previewValue":""}],"type":"array.object","jpath":"$.card[*]","previewValue":""},{"name":"paging","children":[{"name":"total_items","children":[],"type":"string","jpath":"$.paging.total_items","previewValue":"255"},{"name":"total_pages","children":[],"type":"string","jpath":"$.paging.total_pages","previewValue":"13"}],"type":"object","jpath":"$.paging","previewValue":""}],"type":"object","jpath":"$","previewValue":""}</value>
+        <variable display_value="Target">4674240787523300f917e55936cb0b0e</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>63963f7f47ca751017fdc82f316d4321</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-30 03:56:48</sys_created_on>
+        <sys_id>eb963f7f47ca751017fdc82f316d432e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-30 03:56:48</sys_updated_on>
+        <value>structured</value>
+        <variable display_value="Payload view">95d4280787523300f917e55936cb0bfe</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_63963f7f47ca751017fdc82f316d4321^id=63963f7f47ca751017fdc82f316d4321"/>
+    <sys_element_mapping action="delete_multiple" query="id=63963f7f47ca751017fdc82f316d4321"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>payload_view</field>
+        <id>63963f7f47ca751017fdc82f316d4321</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-30 03:56:48</sys_created_on>
+        <sys_id>23963f7f47ca751017fdc82f316d432e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-30 03:56:48</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>sample_payload</field>
+        <id>63963f7f47ca751017fdc82f316d4321</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-30 03:56:48</sys_created_on>
+        <sys_id>e3963f7f47ca751017fdc82f316d432e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-30 03:56:48</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>source_data</field>
+        <id>63963f7f47ca751017fdc82f316d4321</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-30 03:56:48</sys_created_on>
+        <sys_id>6f963f7f47ca751017fdc82f316d432d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-30 03:56:48</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value>{{step[8b775f3d-c042-4121-bbad-2ee8176bfb2c].response_body}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>target_schema</field>
+        <id>63963f7f47ca751017fdc82f316d4321</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-30 03:56:48</sys_created_on>
+        <sys_id>ab963f7f47ca751017fdc82f316d432d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-30 03:56:48</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_translated_text action="delete_multiple" query="documentkey=63963f7f47ca751017fdc82f316d4321"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=63963f7f47ca751017fdc82f316d4321"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=63963f7f47ca751017fdc82f316d4321^sys_idNOT IN6b963f7f47ca751017fdc82f316d4327"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>co_type_name=FD2b963f7fe1ca75104b16b5201c22ec24,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=8ccd0958-e0cb-4b51-9b85-ed8f24882067</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>root</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>root</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="JSON Parser step">63963f7f47ca751017fdc82f316d4321</model>
+        <model_id>63963f7f47ca751017fdc82f316d4321</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_63963f7f47ca751017fdc82f316d4321</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-30 03:56:48</sys_created_on>
+        <sys_id>6b963f7f47ca751017fdc82f316d4327</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Flow Designer SNUG">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-30 03:56:48</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=63963f7f47ca751017fdc82f316d4321"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_63963f7f47ca751017fdc82f316d4321^sys_idNOT INaf963f7f47ca751017fdc82f316d432a"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>root</element>
+        <help/>
+        <hint/>
+        <label>root</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_63963f7f47ca751017fdc82f316d4321</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-30 03:56:48</sys_created_on>
+        <sys_id>af963f7f47ca751017fdc82f316d432a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Flow Designer SNUG" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Flow Designer SNUG">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-30 03:56:48</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_action_input action="delete_multiple" query="model=cb107bfb478a751017fdc82f316d438d"/>
+    <sys_hub_action_output action="delete_multiple" query="model=cb107bfb478a751017fdc82f316d438d^sys_idNOT IN1006ff3f47ca751017fdc82f316d4395,9806ff3f47ca751017fdc82f316d4390,e3963f7f47ca751017fdc82f316d4333"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=2b70a71b-5ab7-42af-9735-8a53c49f237e,visible_in_ui=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>true</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__dont_treat_as_error__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Don't Treat as Error</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Retrieve Marvel Character cards">cb107bfb478a751017fdc82f316d438d</model>
+        <model_id>cb107bfb478a751017fdc82f316d438d</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_cb107bfb478a751017fdc82f316d438d</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-30 03:54:08</sys_created_on>
+        <sys_id>1006ff3f47ca751017fdc82f316d4395</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Flow Designer SNUG">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-30 23:40:11</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=1006ff3f47ca751017fdc82f316d4395"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=1006ff3f47ca751017fdc82f316d4395"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,co_type_name=FDACTIONSTATUS,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=3ba1db03-e93e-4a3c-9577-df7dee093089</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__action_status__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Action Status</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Retrieve Marvel Character cards">cb107bfb478a751017fdc82f316d438d</model>
+        <model_id>cb107bfb478a751017fdc82f316d438d</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_cb107bfb478a751017fdc82f316d438d</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-30 03:54:08</sys_created_on>
+        <sys_id>9806ff3f47ca751017fdc82f316d4390</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Flow Designer SNUG">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-30 03:56:48</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=9806ff3f47ca751017fdc82f316d4390"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=9806ff3f47ca751017fdc82f316d4390"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>co_type_name=FDab963f7fe8ca75100edd744f1e41e630,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,sourceId=63444f10-e73f-4fec-9fe3-6f21a3cdf024,sourceType=step,sourceUiUniqueId=8ccd0958-e0cb-4b51-9b85-ed8f24882067,uiType=object,uiTypeLabel=Object,uiUniqueId=bd4f074b-c7aa-4665-b3ad-1aad17b1f40e</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>response_payload</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Response Payload</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Retrieve Marvel Character cards">cb107bfb478a751017fdc82f316d438d</model>
+        <model_id>cb107bfb478a751017fdc82f316d438d</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_cb107bfb478a751017fdc82f316d438d</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-30 03:56:48</sys_created_on>
+        <sys_id>e3963f7f47ca751017fdc82f316d4333</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Flow Designer SNUG">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-30 23:40:11</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=e3963f7f47ca751017fdc82f316d4333"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=e3963f7f47ca751017fdc82f316d4333"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=cb107bfb478a751017fdc82f316d438d"/>
+    <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=cb107bfb478a751017fdc82f316d438d^sys_idNOT IN1406ff3f47ca751017fdc82f316d439e"/>
+    <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
+        <action_type_id display_value="Retrieve Marvel Character cards">cb107bfb478a751017fdc82f316d438d</action_type_id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-30 03:54:08</sys_created_on>
+        <sys_id>1406ff3f47ca751017fdc82f316d439e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-30 03:54:08</sys_updated_on>
+    </sys_hub_action_status_metadata>
+    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=1406ff3f47ca751017fdc82f316d439e"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_cb107bfb478a751017fdc82f316d438d"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_cb107bfb478a751017fdc82f316d438d"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_cb107bfb478a751017fdc82f316d438d^sys_idNOT IN5006ff3f47ca751017fdc82f316d4394,5806ff3f47ca751017fdc82f316d4399,ef963f7f47ca751017fdc82f316d435b"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__action_status__</element>
+        <help/>
+        <hint/>
+        <label>Action Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_cb107bfb478a751017fdc82f316d438d</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-30 03:54:08</sys_created_on>
+        <sys_id>5006ff3f47ca751017fdc82f316d4394</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Flow Designer SNUG" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Flow Designer SNUG">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-30 03:54:08</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__dont_treat_as_error__</element>
+        <help/>
+        <hint/>
+        <label>Don't Treat as Error</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_cb107bfb478a751017fdc82f316d438d</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-30 03:54:08</sys_created_on>
+        <sys_id>5806ff3f47ca751017fdc82f316d4399</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Flow Designer SNUG" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Flow Designer SNUG">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-30 03:54:08</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>response_payload</element>
+        <help/>
+        <hint/>
+        <label>Response Payload</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_cb107bfb478a751017fdc82f316d438d</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-30 03:56:48</sys_created_on>
+        <sys_id>ef963f7f47ca751017fdc82f316d435b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Flow Designer SNUG" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Flow Designer SNUG">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-30 03:56:48</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_cb107bfb478a751017fdc82f316d438d"/>
+    <sys_hub_action_plan action="delete_multiple" query="action_id=cb107bfb478a751017fdc82f316d438d"/>
+</record_update>

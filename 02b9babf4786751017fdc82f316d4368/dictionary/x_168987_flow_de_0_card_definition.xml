@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="c1644bbb47c6751017fdc82f316d432b" label="Card Definition" max_length="40" name="x_168987_flow_de_0_card_definition" type="collection">
+        <element label="Ability" max_length="100" name="abilitys" type="string"/>
+        <element label="Ability Subflow" max_length="32" name="ability_subflow" reference="sys_hub_flow" type="reference"/>
+        <element choice="1" label="Ability Type" max_length="40" name="ability_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="On Reveal" sequence="0" value="on_reveal"/>
+                <element inactive_on_update="false" label="Before Dealing" sequence="1" value="before_dealing"/>
+                <element inactive_on_update="false" label="Ongoing" sequence="2" value="ongoing"/>
+                <element inactive_on_update="false" label="On Specific Turn" sequence="3" value="on_specific_turn"/>
+                <element inactive_on_update="false" label="No ability" sequence="4" value="no_ability"/>
+            </choice>
+        </element>
+        <element label="Cost" max_length="40" name="cost" type="integer"/>
+        <element label="ID" max_length="40" name="id" type="string"/>
+        <element label="Name" max_length="40" name="name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Power" max_length="40" name="power" type="integer"/>
+        <element label="Specific Turn number" max_length="40" name="specific_turn_number" type="string"/>
+        <element label="status" max_length="40" name="status" type="string"/>
+        <element label="Type" max_length="40" name="type" type="string"/>
+        <index name="index">
+            <element name="ability_subflow"/>
+        </index>
+    </element>
+</database>
