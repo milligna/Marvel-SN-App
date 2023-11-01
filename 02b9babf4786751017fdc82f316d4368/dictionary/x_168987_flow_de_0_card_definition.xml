@@ -18,7 +18,14 @@
         <element label="Power" max_length="40" name="power" type="integer"/>
         <element label="Specific Turn number" max_length="40" name="specific_turn_number" type="string"/>
         <element label="status" max_length="40" name="status" type="string"/>
-        <element label="Type" max_length="40" name="type" type="string"/>
+        <element choice="3" label="Type" max_length="40" name="type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Undealable Character" sequence="0" value="undealable_character"/>
+                <element inactive_on_update="false" label="Location" sequence="1" value="location"/>
+                <element inactive_on_update="false" label="Character" sequence="2" value="character"/>
+            </choice>
+        </element>
+        <element display="true" label="Value" max_length="40" name="value" type="string"/>
         <index name="index">
             <element name="ability_subflow"/>
         </index>

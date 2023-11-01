@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="1a05f124475a391017fdc82f316d43c1" label="Player Deck Card" max_length="40" name="x_168987_flow_de_0_player_deck_card" type="collection">
+        <element label="Card Definition" max_length="32" name="card_definition" reference="x_168987_flow_de_0_card_definition" type="reference"/>
+        <element label="Card number" max_length="40" name="card_number" type="integer"/>
+        <element label="Player Deck" max_length="32" name="player_deck" reference="x_168987_flow_de_0_player_deck" type="reference"/>
+        <index name="index">
+            <element name="card_definition"/>
+        </index>
+        <index name="index2">
+            <element name="player_deck"/>
+        </index>
+    </element>
+</database>

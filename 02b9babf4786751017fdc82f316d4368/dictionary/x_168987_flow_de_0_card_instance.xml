@@ -4,12 +4,6 @@
         <element label="Current Location" max_length="32" name="current_location" reference="x_168987_flow_de_0_location_instance" type="reference"/>
         <element label="Current Power" max_length="40" name="current_power" type="integer"/>
         <element label="Hand Order" max_length="40" name="hand_order" type="integer"/>
-        <element choice="3" label="Location or Hand" max_length="40" name="location_or_hand" type="choice">
-            <choice>
-                <element inactive_on_update="false" label="Player Hand" sequence="0" value="player_hand"/>
-                <element inactive_on_update="false" label="Location" sequence="1" value="location"/>
-            </choice>
-        </element>
         <element label="Original Card Reference" max_length="32" name="original_card_reference" reference="x_168987_flow_de_0_card_definition" type="reference"/>
         <element label="Original Cost" max_length="40" name="original_cost" type="integer"/>
         <element label="Original Power" max_length="40" name="original_power" type="integer"/>
@@ -20,6 +14,7 @@
                 <element inactive_on_update="false" label="Played to Location" sequence="1" value="played_to_location"/>
                 <element inactive_on_update="false" label="Destroyed" sequence="2" value="destroyed"/>
                 <element inactive_on_update="false" label="Discarded" sequence="3" value="discarded"/>
+                <element inactive_on_update="false" label="In Deck" sequence="4" value="in_deck"/>
             </choice>
         </element>
         <element label="Turn Played" max_length="40" name="turn_played" type="integer"/>

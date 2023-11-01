@@ -1,3 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element db_object_id="f8ee9ff7474a751017fdc82f316d43fb" label="Location instance" max_length="40" name="x_168987_flow_de_0_location_instance" type="collection"/>
+    <element db_object_id="f8ee9ff7474a751017fdc82f316d43fb" label="Location instance" max_length="40" name="x_168987_flow_de_0_location_instance" type="collection">
+        <element attributes="encode_utf8=false" label="Location Card" max_length="32" name="location_card" reference="x_168987_flow_de_0_card_definition" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="Choice 1" label="Location Type" max_length="40" name="location_type" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Choice 1" sequence="0" value="Choice 1"/>
+                <element inactive_on_update="false" label="Choice 2" sequence="1" value="Choice 2"/>
+                <element inactive_on_update="false" label="Choice 3" sequence="2" value="Choice 3"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="Choice 1" label="status" max_length="40" name="status" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Choice 1" sequence="0" value="Choice 1"/>
+                <element inactive_on_update="false" label="Choice 2" sequence="1" value="Choice 2"/>
+                <element inactive_on_update="false" label="Choice 3" sequence="2" value="Choice 3"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="location_card"/>
+        </index>
+    </element>
 </database>
