@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="565475e0475a391017fdc82f316d4350" label="Player Deck" max_length="40" name="x_168987_flow_de_0_player_deck" type="collection">
-        <element label="Card Count" max_length="32" name="card_count" reference="x_168987_flow_de_0_card_definition" type="reference"/>
-        <element label="Player" max_length="40" name="player" type="string"/>
+        <element default="0" label="Card Count" max_length="32" name="card_count" type="integer"/>
+        <element display="true" label="Deck Name" max_length="80" name="deck_name" type="string"/>
+        <element label="Player" max_length="40" name="player" reference="sys_user" type="reference"/>
         <index name="index">
             <element name="card_count"/>
         </index>

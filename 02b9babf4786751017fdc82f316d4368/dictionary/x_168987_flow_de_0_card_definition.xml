@@ -14,7 +14,7 @@
         <element label="Card image" max_length="40" name="card_image" type="user_image"/>
         <element label="Cost" max_length="40" name="cost" type="integer"/>
         <element label="ID" max_length="40" name="id" type="string"/>
-        <element label="Name" max_length="40" name="name" type="string"/>
+        <element display="true" label="Name" max_length="40" name="name" type="string"/>
         <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
         <element label="Power" max_length="40" name="power" type="integer"/>
         <element label="Specific Turn number" max_length="40" name="specific_turn_number" type="string"/>
@@ -26,7 +26,7 @@
                 <element inactive_on_update="false" label="Character" sequence="2" value="character"/>
             </choice>
         </element>
-        <element display="true" label="Value" max_length="40" name="value" type="string"/>
+        <element label="Value" max_length="40" name="value" type="string"/>
         <index name="index">
             <element name="ability_subflow"/>
         </index>
