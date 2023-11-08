@@ -311,7 +311,86 @@
                                             "elementId": "card_container",
                                             "elementLabel": "Card container",
                                             "eventMappings": [
-                                                
+                                                {
+                                                    "eventMappingId": "clopqswfjjaaaaddoddbhhpebbjtiioddj",
+                                                    "isConfiguration": false,
+                                                    "offRowStorageId": null,
+                                                    "sourceEventApiName": "sn_card.NOW_CARD#CLICKED",
+                                                    "sourceEventCorrelationId": null,
+                                                    "sourceEventDefinition": {
+                                                        "apiName": "sn_card.NOW_CARD#CLICKED",
+                                                        "id": null,
+                                                        "type": "UXEVENT"
+                                                    },
+                                                    "sourceEventSysId": null,
+                                                    "targets": [
+                                                        {
+                                                            "broker": null,
+                                                            "clientScript": null,
+                                                            "conditional": null,
+                                                            "declarativeAction": null,
+                                                            "event": null,
+                                                            "operation": {
+                                                                "dataBrokerId": "beda4252770300108d070d74c810618f",
+                                                                "operationName": "EXECUTE",
+                                                                "parentResourceId": "create_mod_event",
+                                                                "payload": {
+                                                                    "container": {
+                                                                        "table": {
+                                                                            "type": "JSON_LITERAL",
+                                                                            "value": "x_168987_flow_de_0_player_deck_card"
+                                                                        },
+                                                                        "templateFields": {
+                                                                            "transform": {
+                                                                                "operands": {
+                                                                                    "container": [
+                                                                                        {
+                                                                                            "type": "JSON_LITERAL",
+                                                                                            "value": "card_definition="
+                                                                                        },
+                                                                                        {
+                                                                                            "binding": {
+                                                                                                "address": [
+                                                                                                    "_row_data",
+                                                                                                    "uniqueValue"
+                                                                                                ],
+                                                                                                "category": "value"
+                                                                                            },
+                                                                                            "type": "REPEATER_ITEM_BINDING"
+                                                                                        },
+                                                                                        {
+                                                                                            "type": "JSON_LITERAL",
+                                                                                            "value": "^player_deck="
+                                                                                        },
+                                                                                        {
+                                                                                            "binding": {
+                                                                                                "address": [
+                                                                                                    "deckid"
+                                                                                                ],
+                                                                                                "category": "props"
+                                                                                            },
+                                                                                            "type": "CONTEXT_BINDING"
+                                                                                        }
+                                                                                    ],
+                                                                                    "type": "LIST_CONTAINER"
+                                                                                },
+                                                                                "operator": "CONCAT"
+                                                                            },
+                                                                            "type": "CLIENT_TRANSFORM"
+                                                                        },
+                                                                        "useSetDisplayValue": {
+                                                                            "type": "JSON_LITERAL",
+                                                                            "value": null
+                                                                        }
+                                                                    },
+                                                                    "type": "MAP_CONTAINER"
+                                                                }
+                                                            },
+                                                            "targetId": "clopqswfjjaaaaddpddbhhpqijjhffiiix",
+                                                            "type": "DATABROKER_OP"
+                                                        }
+                                                    ]
+                                                }
                                             ],
                                             "isHidden": {
                                                 "type": "JSON_LITERAL",
@@ -418,6 +497,128 @@
                                                         },
                                                         "slot": null,
                                                         "styles": null
+                                                    },
+                                                    {
+                                                        "definition": {
+                                                            "id": "d37ce8abca89d02905fed903c8e34d8e",
+                                                            "type": "MACROPONENT"
+                                                        },
+                                                        "elementId": "button_1",
+                                                        "elementLabel": "Button 1",
+                                                        "eventMappings": [
+                                                            {
+                                                                "eventMappingId": "clopqzmsraaaabyddbhhpnbbeeyclyj",
+                                                                "isConfiguration": false,
+                                                                "offRowStorageId": null,
+                                                                "sourceEventApiName": "sn_button.NOW_BUTTON#CLICKED",
+                                                                "sourceEventCorrelationId": null,
+                                                                "sourceEventDefinition": {
+                                                                    "apiName": "sn_button.NOW_BUTTON#CLICKED",
+                                                                    "id": null,
+                                                                    "type": "UXEVENT"
+                                                                },
+                                                                "sourceEventSysId": null,
+                                                                "targets": [
+                                                                    {
+                                                                        "broker": null,
+                                                                        "clientScript": null,
+                                                                        "conditional": null,
+                                                                        "declarativeAction": null,
+                                                                        "event": null,
+                                                                        "operation": {
+                                                                            "dataBrokerId": "beda4252770300108d070d74c810618f",
+                                                                            "operationName": "EXECUTE",
+                                                                            "parentResourceId": "create_mod_event",
+                                                                            "payload": {
+                                                                                "container": {
+                                                                                    "table": {
+                                                                                        "type": "JSON_LITERAL",
+                                                                                        "value": "x_168987_flow_de_0_player_deck_card"
+                                                                                    },
+                                                                                    "templateFields": {
+                                                                                        "transform": {
+                                                                                            "operands": {
+                                                                                                "container": [
+                                                                                                    {
+                                                                                                        "type": "JSON_LITERAL",
+                                                                                                        "value": "player_deck=1b0dcc4e479ebd1017fdc82f316d43a8^card_definition="
+                                                                                                    },
+                                                                                                    {
+                                                                                                        "binding": {
+                                                                                                            "address": [
+                                                                                                                "_row_data",
+                                                                                                                "uniqueValue"
+                                                                                                            ],
+                                                                                                            "category": "value"
+                                                                                                        },
+                                                                                                        "type": "REPEATER_ITEM_BINDING"
+                                                                                                    }
+                                                                                                ],
+                                                                                                "type": "LIST_CONTAINER"
+                                                                                            },
+                                                                                            "operator": "CONCAT"
+                                                                                        },
+                                                                                        "type": "CLIENT_TRANSFORM"
+                                                                                    },
+                                                                                    "useSetDisplayValue": {
+                                                                                        "type": "JSON_LITERAL",
+                                                                                        "value": null
+                                                                                    }
+                                                                                },
+                                                                                "type": "MAP_CONTAINER"
+                                                                            }
+                                                                        },
+                                                                        "targetId": "clopqzmsraaaabzddbhhpgbbwijjzgii",
+                                                                        "type": "DATABROKER_OP"
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ],
+                                                        "isHidden": {
+                                                            "type": "JSON_LITERAL",
+                                                            "value": null
+                                                        },
+                                                        "preset": null,
+                                                        "propertyValues": {
+                                                            "configAria": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": {}
+                                                            },
+                                                            "disabled": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": false
+                                                            },
+                                                            "icon": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": null
+                                                            },
+                                                            "label": {
+                                                                "type": "TRANSLATION_LITERAL",
+                                                                "value": {
+                                                                    "code": null,
+                                                                    "comment": "",
+                                                                    "message": "Add to Deck"
+                                                                }
+                                                            },
+                                                            "size": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": "md"
+                                                            },
+                                                            "tooltipContent": {
+                                                                "type": "TRANSLATION_LITERAL",
+                                                                "value": {
+                                                                    "code": null,
+                                                                    "comment": "",
+                                                                    "message": "Enter a label"
+                                                                }
+                                                            },
+                                                            "variant": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": "secondary"
+                                                            }
+                                                        },
+                                                        "slot": null,
+                                                        "styles": null
                                                     }
                                                 ],
                                                 "layout": {
@@ -434,6 +635,10 @@
                                                                     "flex": "0 1 auto",
                                                                     "width": ""
                                                                 }
+                                                            },
+                                                            {
+                                                                "element_id": "button_1",
+                                                                "styles": {}
                                                             }
                                                         ],
                                                         "root": null,
@@ -789,7 +994,47 @@
         "elementId": "create_mod_event",
         "elementLabel": "Create Deck Modification event",
         "eventMappings": [
-            
+            {
+                "eventMappingId": "clopqwewvaaaaiiaddbhhpxddbbwqym",
+                "isConfiguration": false,
+                "offRowStorageId": null,
+                "sourceEventApiName": "sn_uxf.DATA_OP_SUCCEEDED",
+                "sourceEventCorrelationId": null,
+                "sourceEventDefinition": {
+                    "apiName": "sn_uxf.DATA_OP_SUCCEEDED",
+                    "id": null,
+                    "type": "UXEVENT"
+                },
+                "sourceEventSysId": null,
+                "targets": [
+                    {
+                        "broker": null,
+                        "clientScript": null,
+                        "conditional": null,
+                        "declarativeAction": null,
+                        "event": {
+                            "apiName": "sn_uxf_page.NOW_UXF_PAGE#ADD_NOTIFICATIONS",
+                            "payload": {
+                                "type": "JSON_LITERAL",
+                                "value": {
+                                    "items": [
+                                        {
+                                            "action": {
+                                                "message": "It worked!",
+                                                "type": "info"
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            "sysId": "49fe7d575f983bb3f8eea3fa8d40694c"
+                        },
+                        "operation": null,
+                        "targetId": "clopqwewvaaaaiibddbhhppydhpiggr",
+                        "type": "EVENT"
+                    }
+                ]
+            }
         ],
         "inputValues": {
             "table": {
@@ -882,7 +1127,13 @@
     }
 ]</props>
         <required_translations>[ {
+  "message" : "Add to Deck",
+  "comment" : ""
+}, {
   "message" : "Current Deck Container Placeholder",
+  "comment" : ""
+}, {
+  "message" : "Enter a label",
   "comment" : ""
 }, {
   "message" : "Header Container Placeholder",
@@ -909,14 +1160,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-11-07 11:21:53</sys_created_on>
         <sys_id>9d39e626479e715017fdc82f316d432a</sys_id>
-        <sys_mod_count>49</sys_mod_count>
+        <sys_mod_count>52</sys_mod_count>
         <sys_name>Default</sys_name>
         <sys_package display_value="Flow Designer Marvel SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_update_name>sys_ux_macroponent_9d39e626479e715017fdc82f316d432a</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-11-08 11:48:44</sys_updated_on>
+        <sys_updated_on>2023-11-08 12:40:51</sys_updated_on>
     </sys_ux_macroponent>
     <sys_translated_text action="delete_multiple" query="documentkey=9d39e626479e715017fdc82f316d432a"/>
 </record_update>
