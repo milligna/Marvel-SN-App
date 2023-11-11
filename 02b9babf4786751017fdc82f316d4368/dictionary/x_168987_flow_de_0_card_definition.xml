@@ -11,6 +11,7 @@
                 <element inactive_on_update="false" label="No ability" sequence="4" value="no_ability"/>
             </choice>
         </element>
+        <element label="Active" max_length="40" name="active" type="boolean"/>
         <element label="Card image" max_length="40" name="card_image" type="user_image"/>
         <element label="Cost" max_length="40" name="cost" type="integer"/>
         <element label="ID" max_length="40" name="id" type="string"/>
@@ -18,7 +19,12 @@
         <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
         <element label="Power" max_length="40" name="power" type="integer"/>
         <element label="Specific Turn number" max_length="40" name="specific_turn_number" type="string"/>
-        <element label="status" max_length="40" name="status" type="string"/>
+        <element label="Status" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Available" sequence="0" value="Available"/>
+                <element inactive_on_update="false" label="Not Processed" sequence="1" value="Not Processed"/>
+            </choice>
+        </element>
         <element choice="3" label="Type" max_length="40" name="type" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Undealable Character" sequence="0" value="undealable_character"/>
