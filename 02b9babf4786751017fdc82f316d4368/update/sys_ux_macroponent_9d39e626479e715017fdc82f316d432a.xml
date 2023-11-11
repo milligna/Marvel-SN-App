@@ -257,11 +257,11 @@
     },
     {
         "definition": {
-            "id": "d356d14b6e293a3020a244b63d278d8f",
-            "type": "MACROPONENT"
+            "id": "REPEATER",
+            "type": "REPEATER"
         },
-        "elementId": "card_selection",
-        "elementLabel": "Card Selection",
+        "elementId": "card_options",
+        "elementLabel": "Card Options",
         "eventMappings": [
             
         ],
@@ -273,13 +273,96 @@
             "composition": [
                 {
                     "definition": {
-                        "id": "b2429385cb0363208b764c151e2d1171",
+                        "id": "e772e788e32ce32b8daa2ac7b092d2c6",
                         "type": "MACROPONENT"
                     },
-                    "elementId": "carousel_1",
-                    "elementLabel": "Carousel 1",
+                    "elementId": "card_to_add",
+                    "elementLabel": "Card to Add",
                     "eventMappings": [
-                        
+                        {
+                            "eventMappingId": "clotgggjxkaabbyccddbhhpsodhnajbb",
+                            "isConfiguration": false,
+                            "offRowStorageId": null,
+                            "sourceEventApiName": "sn_card.NOW_CARD#CLICKED",
+                            "sourceEventCorrelationId": null,
+                            "sourceEventDefinition": {
+                                "apiName": "sn_card.NOW_CARD#CLICKED",
+                                "id": null,
+                                "type": "UXEVENT"
+                            },
+                            "sourceEventSysId": null,
+                            "targets": [
+                                {
+                                    "broker": null,
+                                    "clientScript": null,
+                                    "conditional": null,
+                                    "declarativeAction": null,
+                                    "event": null,
+                                    "operation": {
+                                        "dataBrokerId": "beda4252770300108d070d74c810618f",
+                                        "operationName": "EXECUTE",
+                                        "parentResourceId": "create_mod_event",
+                                        "payload": {
+                                            "container": {
+                                                "table": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": "x_168987_flow_de_0_deck_modification_event"
+                                                },
+                                                "templateFields": {
+                                                    "transform": {
+                                                        "operands": {
+                                                            "container": [
+                                                                {
+                                                                    "type": "JSON_LITERAL",
+                                                                    "value": "definition_to_add="
+                                                                },
+                                                                {
+                                                                    "binding": {
+                                                                        "address": [
+                                                                            "_row_data",
+                                                                            "uniqueValue"
+                                                                        ],
+                                                                        "category": "value"
+                                                                    },
+                                                                    "type": "REPEATER_ITEM_BINDING"
+                                                                },
+                                                                {
+                                                                    "type": "JSON_LITERAL",
+                                                                    "value": "^deck="
+                                                                },
+                                                                {
+                                                                    "binding": {
+                                                                        "address": [
+                                                                            "deckid"
+                                                                        ],
+                                                                        "category": "props"
+                                                                    },
+                                                                    "type": "CONTEXT_BINDING"
+                                                                },
+                                                                {
+                                                                    "type": "JSON_LITERAL",
+                                                                    "value": "^operation=add"
+                                                                }
+                                                            ],
+                                                            "type": "LIST_CONTAINER"
+                                                        },
+                                                        "operator": "CONCAT"
+                                                    },
+                                                    "type": "CLIENT_TRANSFORM"
+                                                },
+                                                "useSetDisplayValue": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": null
+                                                }
+                                            },
+                                            "type": "MAP_CONTAINER"
+                                        }
+                                    },
+                                    "targetId": "clotgggjxkaabbyddddbhhpbbzunddccrn",
+                                    "type": "DATABROKER_OP"
+                                }
+                            ]
+                        }
                     ],
                     "isHidden": {
                         "type": "JSON_LITERAL",
@@ -289,510 +372,119 @@
                         "composition": [
                             {
                                 "definition": {
-                                    "id": "REPEATER",
-                                    "type": "REPEATER"
+                                    "id": "15fe506403f8a98575b6df59008ea8f1",
+                                    "type": "MACROPONENT"
                                 },
-                                "elementId": "card_select_repeater",
-                                "elementLabel": "Card Selection Repeater",
+                                "elementId": "card_image",
+                                "elementLabel": "Card Image",
                                 "eventMappings": [
                                     
                                 ],
                                 "isHidden": {
                                     "type": "JSON_LITERAL",
-                                    "value": null
+                                    "value": false
                                 },
-                                "overrides": {
-                                    "composition": [
-                                        {
-                                            "definition": {
-                                                "id": "e772e788e32ce32b8daa2ac7b092d2c6",
-                                                "type": "MACROPONENT"
-                                            },
-                                            "elementId": "card_container",
-                                            "elementLabel": "Card container",
-                                            "eventMappings": [
-                                                {
-                                                    "eventMappingId": "clopqswfjjaaaaddoddbhhpebbjtiioddj",
-                                                    "isConfiguration": false,
-                                                    "offRowStorageId": null,
-                                                    "sourceEventApiName": "sn_card.NOW_CARD#CLICKED",
-                                                    "sourceEventCorrelationId": null,
-                                                    "sourceEventDefinition": {
-                                                        "apiName": "sn_card.NOW_CARD#CLICKED",
-                                                        "id": null,
-                                                        "type": "UXEVENT"
-                                                    },
-                                                    "sourceEventSysId": null,
-                                                    "targets": [
-                                                        {
-                                                            "broker": null,
-                                                            "clientScript": null,
-                                                            "conditional": null,
-                                                            "declarativeAction": null,
-                                                            "event": null,
-                                                            "operation": {
-                                                                "dataBrokerId": "beda4252770300108d070d74c810618f",
-                                                                "operationName": "EXECUTE",
-                                                                "parentResourceId": "create_mod_event",
-                                                                "payload": {
-                                                                    "container": {
-                                                                        "table": {
-                                                                            "type": "JSON_LITERAL",
-                                                                            "value": "x_168987_flow_de_0_player_deck_card"
-                                                                        },
-                                                                        "templateFields": {
-                                                                            "transform": {
-                                                                                "operands": {
-                                                                                    "container": [
-                                                                                        {
-                                                                                            "type": "JSON_LITERAL",
-                                                                                            "value": "card_definition="
-                                                                                        },
-                                                                                        {
-                                                                                            "binding": {
-                                                                                                "address": [
-                                                                                                    "_row_data",
-                                                                                                    "uniqueValue"
-                                                                                                ],
-                                                                                                "category": "value"
-                                                                                            },
-                                                                                            "type": "REPEATER_ITEM_BINDING"
-                                                                                        },
-                                                                                        {
-                                                                                            "type": "JSON_LITERAL",
-                                                                                            "value": "^player_deck="
-                                                                                        },
-                                                                                        {
-                                                                                            "binding": {
-                                                                                                "address": [
-                                                                                                    "deckid"
-                                                                                                ],
-                                                                                                "category": "props"
-                                                                                            },
-                                                                                            "type": "CONTEXT_BINDING"
-                                                                                        }
-                                                                                    ],
-                                                                                    "type": "LIST_CONTAINER"
-                                                                                },
-                                                                                "operator": "CONCAT"
-                                                                            },
-                                                                            "type": "CLIENT_TRANSFORM"
-                                                                        },
-                                                                        "useSetDisplayValue": {
-                                                                            "type": "JSON_LITERAL",
-                                                                            "value": null
-                                                                        }
-                                                                    },
-                                                                    "type": "MAP_CONTAINER"
-                                                                }
-                                                            },
-                                                            "targetId": "clopqswfjjaaaaddpddbhhpqijjhffiiix",
-                                                            "type": "DATABROKER_OP"
-                                                        }
-                                                    ]
-                                                }
-                                            ],
-                                            "isHidden": {
-                                                "type": "JSON_LITERAL",
-                                                "value": null
-                                            },
-                                            "overrides": {
-                                                "composition": [
-                                                    {
-                                                        "definition": {
-                                                            "id": "1f6e0643eca7a637e36bd7833549ec9e",
-                                                            "type": "MACROPONENT"
-                                                        },
-                                                        "elementId": "card_name",
-                                                        "elementLabel": "Card Name",
-                                                        "eventMappings": [
-                                                            
-                                                        ],
-                                                        "isHidden": {
-                                                            "type": "JSON_LITERAL",
-                                                            "value": null
-                                                        },
-                                                        "preset": null,
-                                                        "propertyValues": {
-                                                            "hasNoMargin": {
-                                                                "type": "JSON_LITERAL",
-                                                                "value": false
-                                                            },
-                                                            "label": {
-                                                                "binding": {
-                                                                    "address": [
-                                                                        "name",
-                                                                        "displayValue"
-                                                                    ],
-                                                                    "category": "value"
-                                                                },
-                                                                "type": "REPEATER_ITEM_BINDING"
-                                                            },
-                                                            "level": {
-                                                                "type": "JSON_LITERAL",
-                                                                "value": "1"
-                                                            },
-                                                            "variant": {
-                                                                "type": "JSON_LITERAL",
-                                                                "value": "header-secondary"
-                                                            },
-                                                            "wontWrap": {
-                                                                "type": "JSON_LITERAL",
-                                                                "value": false
-                                                            }
-                                                        },
-                                                        "slot": null,
-                                                        "styles": null
-                                                    },
-                                                    {
-                                                        "definition": {
-                                                            "id": "15fe506403f8a98575b6df59008ea8f1",
-                                                            "type": "MACROPONENT"
-                                                        },
-                                                        "elementId": "card_image",
-                                                        "elementLabel": "Card Image",
-                                                        "eventMappings": [
-                                                            
-                                                        ],
-                                                        "isHidden": {
-                                                            "type": "JSON_LITERAL",
-                                                            "value": false
-                                                        },
-                                                        "preset": {
-                                                            "controllerElementId": "form_1",
-                                                            "disabledEventTargetIds": [
-                                                                
-                                                            ],
-                                                            "id": "fb915bf1bad80b3097b5b2c76b35b215"
-                                                        },
-                                                        "propertyValues": {
-                                                            "fit": {
-                                                                "type": "JSON_LITERAL",
-                                                                "value": "scale-down"
-                                                            },
-                                                            "height": {
-                                                                "type": "JSON_LITERAL",
-                                                                "value": ""
-                                                            },
-                                                            "sources": {
-                                                                "type": "JSON_LITERAL",
-                                                                "value": [
-                                                                    
-                                                                ]
-                                                            },
-                                                            "src": {
-                                                                "binding": {
-                                                                    "address": [
-                                                                        "card_image",
-                                                                        "displayValue"
-                                                                    ],
-                                                                    "category": "value"
-                                                                },
-                                                                "type": "REPEATER_ITEM_BINDING"
-                                                            },
-                                                            "width": {
-                                                                "type": "JSON_LITERAL",
-                                                                "value": 150
-                                                            }
-                                                        },
-                                                        "slot": null,
-                                                        "styles": null
-                                                    },
-                                                    {
-                                                        "definition": {
-                                                            "id": "d37ce8abca89d02905fed903c8e34d8e",
-                                                            "type": "MACROPONENT"
-                                                        },
-                                                        "elementId": "button_1",
-                                                        "elementLabel": "Button 1",
-                                                        "eventMappings": [
-                                                            {
-                                                                "eventMappingId": "clopqzmsraaaabyddbhhpnbbeeyclyj",
-                                                                "isConfiguration": false,
-                                                                "offRowStorageId": null,
-                                                                "sourceEventApiName": "sn_button.NOW_BUTTON#CLICKED",
-                                                                "sourceEventCorrelationId": null,
-                                                                "sourceEventDefinition": {
-                                                                    "apiName": "sn_button.NOW_BUTTON#CLICKED",
-                                                                    "id": null,
-                                                                    "type": "UXEVENT"
-                                                                },
-                                                                "sourceEventSysId": null,
-                                                                "targets": [
-                                                                    {
-                                                                        "broker": null,
-                                                                        "clientScript": null,
-                                                                        "conditional": null,
-                                                                        "declarativeAction": null,
-                                                                        "event": null,
-                                                                        "operation": {
-                                                                            "dataBrokerId": "beda4252770300108d070d74c810618f",
-                                                                            "operationName": "EXECUTE",
-                                                                            "parentResourceId": "create_mod_event",
-                                                                            "payload": {
-                                                                                "container": {
-                                                                                    "table": {
-                                                                                        "type": "JSON_LITERAL",
-                                                                                        "value": "x_168987_flow_de_0_player_deck_card"
-                                                                                    },
-                                                                                    "templateFields": {
-                                                                                        "transform": {
-                                                                                            "operands": {
-                                                                                                "container": [
-                                                                                                    {
-                                                                                                        "type": "JSON_LITERAL",
-                                                                                                        "value": "player_deck=1b0dcc4e479ebd1017fdc82f316d43a8^card_definition="
-                                                                                                    },
-                                                                                                    {
-                                                                                                        "binding": {
-                                                                                                            "address": [
-                                                                                                                "_row_data",
-                                                                                                                "uniqueValue"
-                                                                                                            ],
-                                                                                                            "category": "value"
-                                                                                                        },
-                                                                                                        "type": "REPEATER_ITEM_BINDING"
-                                                                                                    }
-                                                                                                ],
-                                                                                                "type": "LIST_CONTAINER"
-                                                                                            },
-                                                                                            "operator": "CONCAT"
-                                                                                        },
-                                                                                        "type": "CLIENT_TRANSFORM"
-                                                                                    },
-                                                                                    "useSetDisplayValue": {
-                                                                                        "type": "JSON_LITERAL",
-                                                                                        "value": null
-                                                                                    }
-                                                                                },
-                                                                                "type": "MAP_CONTAINER"
-                                                                            }
-                                                                        },
-                                                                        "targetId": "clopqzmsraaaabzddbhhpgbbwijjzgii",
-                                                                        "type": "DATABROKER_OP"
-                                                                    }
-                                                                ]
-                                                            }
-                                                        ],
-                                                        "isHidden": {
-                                                            "type": "JSON_LITERAL",
-                                                            "value": null
-                                                        },
-                                                        "preset": null,
-                                                        "propertyValues": {
-                                                            "configAria": {
-                                                                "type": "JSON_LITERAL",
-                                                                "value": {}
-                                                            },
-                                                            "disabled": {
-                                                                "type": "JSON_LITERAL",
-                                                                "value": false
-                                                            },
-                                                            "icon": {
-                                                                "type": "JSON_LITERAL",
-                                                                "value": null
-                                                            },
-                                                            "label": {
-                                                                "type": "TRANSLATION_LITERAL",
-                                                                "value": {
-                                                                    "code": null,
-                                                                    "comment": "",
-                                                                    "message": "Add to Deck"
-                                                                }
-                                                            },
-                                                            "size": {
-                                                                "type": "JSON_LITERAL",
-                                                                "value": "md"
-                                                            },
-                                                            "tooltipContent": {
-                                                                "type": "TRANSLATION_LITERAL",
-                                                                "value": {
-                                                                    "code": null,
-                                                                    "comment": "",
-                                                                    "message": "Enter a label"
-                                                                }
-                                                            },
-                                                            "variant": {
-                                                                "type": "JSON_LITERAL",
-                                                                "value": "secondary"
-                                                            }
-                                                        },
-                                                        "slot": null,
-                                                        "styles": null
-                                                    }
-                                                ],
-                                                "layout": {
-                                                    "default": {
-                                                        "children": null,
-                                                        "items": [
-                                                            {
-                                                                "element_id": "card_name",
-                                                                "styles": {}
-                                                            },
-                                                            {
-                                                                "element_id": "card_image",
-                                                                "styles": {
-                                                                    "flex": "0 1 auto",
-                                                                    "width": ""
-                                                                }
-                                                            },
-                                                            {
-                                                                "element_id": "button_1",
-                                                                "styles": {}
-                                                            }
-                                                        ],
-                                                        "root": null,
-                                                        "rules": null,
-                                                        "styles": {
-                                                            "flex-direction": "column",
-                                                            "width": "100%"
-                                                        },
-                                                        "templateId": "5832fd4d53c31010e6bcddeeff7b12db",
-                                                        "type": "flex"
-                                                    },
-                                                    "version": "3.0.0"
-                                                }
-                                            },
-                                            "preset": null,
-                                            "propertyValues": {
-                                                "configAria": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": {}
-                                                },
-                                                "hideShadow": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": false
-                                                },
-                                                "interaction": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": "none"
-                                                },
-                                                "selected": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": false
-                                                },
-                                                "sidebar": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": {}
-                                                },
-                                                "size": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": "lg"
-                                                }
-                                            },
-                                            "slot": null,
-                                            "styles": {}
-                                        }
-                                    ]
+                                "preset": {
+                                    "controllerElementId": "form_1",
+                                    "disabledEventTargetIds": [
+                                        
+                                    ],
+                                    "id": "fb915bf1bad80b3097b5b2c76b35b215"
                                 },
-                                "preset": null,
-                                "repeatWith": {
-                                    "binding": {
-                                        "address": [
-                                            "get_card_definitions",
-                                            "results"
+                                "propertyValues": {
+                                    "fit": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "scale-down"
+                                    },
+                                    "height": {
+                                        "type": "JSON_LITERAL",
+                                        "value": ""
+                                    },
+                                    "sources": {
+                                        "type": "JSON_LITERAL",
+                                        "value": [
+                                            
                                         ]
                                     },
-                                    "type": "DATA_OUTPUT_BINDING"
+                                    "src": {
+                                        "binding": {
+                                            "address": [
+                                                "card_image",
+                                                "displayValue"
+                                            ],
+                                            "category": "value"
+                                        },
+                                        "type": "REPEATER_ITEM_BINDING"
+                                    },
+                                    "width": {
+                                        "type": "JSON_LITERAL",
+                                        "value": 150
+                                    }
                                 },
-                                "slot": "content",
-                                "styles": {}
+                                "slot": null,
+                                "styles": null
                             }
-                        ]
+                        ],
+                        "layout": {
+                            "default": {
+                                "children": null,
+                                "items": [
+                                    {
+                                        "element_id": "card_selector",
+                                        "styles": {
+                                            "width": "20%"
+                                        }
+                                    },
+                                    {
+                                        "element_id": "card_image",
+                                        "styles": {
+                                            "align-self": "center",
+                                            "border-color": "RGB(var(--now-color--neutral-5))",
+                                            "border-style": "id",
+                                            "border-width": "var(--now-static-space--xxs)",
+                                            "flex": "none",
+                                            "padding-left": "0",
+                                            "padding-right": "0",
+                                            "width": "150px"
+                                        }
+                                    }
+                                ],
+                                "root": null,
+                                "rules": null,
+                                "styles": {
+                                    "flex-direction": "column"
+                                },
+                                "templateId": "5832fd4d53c31010e6bcddeeff7b12db",
+                                "type": "flex"
+                            },
+                            "version": "3.0.0"
+                        }
                     },
                     "preset": null,
                     "propertyValues": {
-                        "carouselTitle": {
-                            "type": "TRANSLATION_LITERAL",
-                            "value": {
-                                "code": null,
-                                "comment": "",
-                                "message": "Title"
-                            }
+                        "configAria": {
+                            "type": "JSON_LITERAL",
+                            "value": {}
                         },
-                        "disableLooping": {
+                        "hideShadow": {
                             "type": "JSON_LITERAL",
                             "value": true
                         },
-                        "emptyStateContent": {
-                            "type": "TRANSLATION_LITERAL",
-                            "value": {
-                                "code": null,
-                                "comment": "",
-                                "message": "Please add components into the carousel"
-                            }
-                        },
-                        "emptyStateIllustration": {
+                        "interaction": {
                             "type": "JSON_LITERAL",
-                            "value": "completed-tasks"
+                            "value": "click"
                         },
-                        "emptyStateLabel": {
-                            "type": "TRANSLATION_LITERAL",
-                            "value": {
-                                "code": null,
-                                "comment": "",
-                                "message": "No content to display"
-                            }
-                        },
-                        "gradientStyle": {
-                            "type": "JSON_LITERAL",
-                            "value": "primary"
-                        },
-                        "hideDotIndicator": {
+                        "selected": {
                             "type": "JSON_LITERAL",
                             "value": false
                         },
-                        "hideLink": {
+                        "sidebar": {
                             "type": "JSON_LITERAL",
-                            "value": false
+                            "value": {}
                         },
-                        "hideTitle": {
+                        "size": {
                             "type": "JSON_LITERAL",
-                            "value": false
-                        },
-                        "itemsInView": {
-                            "type": "JSON_LITERAL",
-                            "value": "multiple-content-items"
-                        },
-                        "linkIcon": {
-                            "type": "JSON_LITERAL",
-                            "value": "arrow-right-fill"
-                        },
-                        "linkText": {
-                            "type": "TRANSLATION_LITERAL",
-                            "value": {
-                                "code": null,
-                                "comment": "",
-                                "message": "View all"
-                            }
-                        },
-                        "navPosition": {
-                            "type": "JSON_LITERAL",
-                            "value": "center"
-                        },
-                        "navStyle": {
-                            "type": "JSON_LITERAL",
-                            "value": "fill"
-                        },
-                        "slidingType": {
-                            "type": "JSON_LITERAL",
-                            "value": "next-set-of-items"
-                        },
-                        "startingIndex": {
-                            "type": "JSON_LITERAL",
-                            "value": 0
-                        },
-                        "titleLevel": {
-                            "type": "JSON_LITERAL",
-                            "value": "2"
-                        },
-                        "titlePosition": {
-                            "type": "JSON_LITERAL",
-                            "value": "left"
-                        },
-                        "titleVariant": {
-                            "type": "JSON_LITERAL",
-                            "value": "header-tertiary"
+                            "value": "lg"
                         }
                     },
                     "slot": null,
@@ -804,16 +496,18 @@
                     "children": null,
                     "items": [
                         {
-                            "element_id": "carousel_1",
-                            "styles": {}
+                            "element_id": "card_to_add",
+                            "styles": {
+                                "background": "#060007",
+                                "width": "16.6%"
+                            }
                         }
                     ],
                     "root": null,
                     "rules": null,
                     "styles": {
-                        "flex": "1 0 auto",
-                        "flex-direction": "column",
-                        "width": "100%"
+                        "flex-direction": "row",
+                        "flex-wrap": "wrap"
                     },
                     "templateId": "5832fd4d53c31010e6bcddeeff7b12db",
                     "type": "flex"
@@ -822,39 +516,14 @@
             }
         },
         "preset": null,
-        "propertyValues": {
-            "ariaRegionHeadingLevel": {
-                "type": "JSON_LITERAL",
-                "value": "1"
+        "repeatWith": {
+            "binding": {
+                "address": [
+                    "get_card_definitions",
+                    "results"
+                ]
             },
-            "ariaRegionName": {
-                "type": "TRANSLATION_LITERAL",
-                "value": {
-                    "code": null,
-                    "comment": "",
-                    "message": ""
-                }
-            },
-            "ariaRole": {
-                "type": "JSON_LITERAL",
-                "value": ""
-            },
-            "hideEmptyStateUi": {
-                "type": "JSON_LITERAL",
-                "value": true
-            },
-            "includeAriaHeading": {
-                "type": "JSON_LITERAL",
-                "value": false
-            },
-            "slotWrapperBehavior": {
-                "type": "JSON_LITERAL",
-                "value": "fullheight"
-            },
-            "type": {
-                "type": "JSON_LITERAL",
-                "value": "section"
-            }
+            "type": "DATA_OUTPUT_BINDING"
         },
         "slot": null,
         "styles": null
@@ -1019,10 +688,8 @@
                                 "value": {
                                     "items": [
                                         {
-                                            "action": {
-                                                "message": "It worked!",
-                                                "type": "info"
-                                            }
+                                            "message": "Adding Card to Deck",
+                                            "type": "info"
                                         }
                                     ]
                                 }
@@ -1085,14 +752,12 @@
                 }
             },
             {
-                "element_id": "card_selection",
+                "element_id": "card_options",
                 "styles": {
-                    "background": "rgb(var(--now-color--neutral-1))",
                     "border-color": "RGB(var(--now-color--neutral-5))",
-                    "border-radius": "var(--now-static-border-radius--0)",
-                    "border-style": "solid",
+                    "border-style": "hidden",
                     "border-width": "var(--now-static-space--xxs)",
-                    "box-shadow": "var(--now-static-drop-shadow--md)"
+                    "width": "100%"
                 }
             }
         ],
@@ -1127,28 +792,10 @@
     }
 ]</props>
         <required_translations>[ {
-  "message" : "Add to Deck",
-  "comment" : ""
-}, {
   "message" : "Current Deck Container Placeholder",
   "comment" : ""
 }, {
-  "message" : "Enter a label",
-  "comment" : ""
-}, {
   "message" : "Header Container Placeholder",
-  "comment" : ""
-}, {
-  "message" : "No content to display",
-  "comment" : ""
-}, {
-  "message" : "Please add components into the carousel",
-  "comment" : ""
-}, {
-  "message" : "Title",
-  "comment" : ""
-}, {
-  "message" : "View all",
   "comment" : ""
 } ]</required_translations>
         <root_component/>
@@ -1160,14 +807,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-11-07 11:21:53</sys_created_on>
         <sys_id>9d39e626479e715017fdc82f316d432a</sys_id>
-        <sys_mod_count>52</sys_mod_count>
+        <sys_mod_count>69</sys_mod_count>
         <sys_name>Default</sys_name>
         <sys_package display_value="Flow Designer Marvel SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_update_name>sys_ux_macroponent_9d39e626479e715017fdc82f316d432a</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-11-08 12:40:51</sys_updated_on>
+        <sys_updated_on>2023-11-11 03:23:00</sys_updated_on>
     </sys_ux_macroponent>
     <sys_translated_text action="delete_multiple" query="documentkey=9d39e626479e715017fdc82f316d432a"/>
 </record_update>
