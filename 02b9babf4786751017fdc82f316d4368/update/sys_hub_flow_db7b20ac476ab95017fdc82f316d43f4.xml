@@ -4,14 +4,14 @@
         <acls/>
         <active>true</active>
         <annotation/>
-        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=546000,viewActivatedIn=naturalLanguage</attributes>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=46999000,viewActivatedIn=naturalLanguage</attributes>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
         <copied_from/>
         <copied_from_name/>
         <description/>
         <internal_name>create_game_instance</internal_name>
-        <label_cache>[{"name":"62360d60-8d15-4555-88d8-6d1316c378c2.record","label":"1 - Create Record➛Game Instance Record","reference":"x_168987_flow_de_0_game_instance","reference_display":"Game Instance","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.matchmaking_session","label":"Input➛Matchmaking Session","reference":"x_168987_flow_de_0_matchmaking_queue","reference_display":"Matchmaking Queue","type":"reference","base_type":"reference","column_name":"","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"f7a2854f-bb55-420c-94cb-15b50c3d9f80","sourceUiUniqueId":"","sourceType":"","sourceId":""}}]</label_cache>
+        <label_cache>[{"name":"subflow.matchmaking_session","label":"Input➛Matchmaking Session","reference":"x_168987_flow_de_0_matchmaking_queue","reference_display":"Matchmaking Queue","type":"reference","base_type":"reference","column_name":"","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"f7a2854f-bb55-420c-94cb-15b50c3d9f80","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"62360d60-8d15-4555-88d8-6d1316c378c2.record","label":"1 - Create Record➛Game Instance Record","reference":"x_168987_flow_de_0_game_instance","reference_display":"Game Instance","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.matchmaking_session.player_1","label":"Input➛Matchmaking Session➛Player 1","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_matchmaking_queue","column_name":"player_1"},{"name":"subflow.matchmaking_session.player_2","label":"Input➛Matchmaking Session➛Player 2","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_matchmaking_queue","column_name":"player_2"}]</label_cache>
         <master_snapshot>e19ce8e447aab95017fdc82f316d4388</master_snapshot>
         <name>Create Game Instance</name>
         <natlang/>
@@ -30,7 +30,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>db7b20ac476ab95017fdc82f316d43f4</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name>Create Game Instance</sys_name>
         <sys_overrides/>
         <sys_package display_value="Flow Designer Marvel SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
@@ -38,7 +38,7 @@
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_update_name>sys_hub_flow_db7b20ac476ab95017fdc82f316d43f4</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-11-13 07:29:35</sys_updated_on>
+        <sys_updated_on>2023-11-13 20:23:49</sys_updated_on>
         <type>subflow</type>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=db7b20ac476ab95017fdc82f316d43f4"/>
@@ -246,10 +246,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-11-13 07:23:15</sys_created_on>
         <sys_id>842ceca447aab95017fdc82f316d4337</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>18</sys_mod_count>
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-11-13 07:29:35</sys_updated_on>
+        <sys_updated_on>2023-11-13 20:23:49</sys_updated_on>
         <ui_id>62360d60-8d15-4555-88d8-6d1316c378c2</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=842ceca447aab95017fdc82f316d4337"/>
@@ -300,11 +300,11 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-11-13 07:23:15</sys_created_on>
         <sys_id>c82ceca447aab95017fdc82f316d4339</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-11-13 07:29:04</sys_updated_on>
+        <sys_updated_on>2023-11-13 20:23:47</sys_updated_on>
         <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
-        <value>matchmaking_instance={{subflow.matchmaking_session}}</value>
+        <value>matchmaking_instance={{subflow.matchmaking_session}}^player_1={{subflow.matchmaking_session.player_1}}^player_2={{subflow.matchmaking_session.player_2}}</value>
     </sys_element_mapping>
     <sys_hub_input_scripts action="delete_multiple" query="instance=842ceca447aab95017fdc82f316d4337"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=842ceca447aab95017fdc82f316d4337"/>
@@ -333,10 +333,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-11-13 07:29:04</sys_created_on>
         <sys_id>257d6c2847aab95017fdc82f316d4368</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-11-13 07:29:35</sys_updated_on>
+        <sys_updated_on>2023-11-13 20:23:49</sys_updated_on>
         <ui_id>4d1aad77-3fcd-462e-a24e-1133b368c1ca</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -421,7 +421,7 @@
         <copied_from_name/>
         <description/>
         <internal_name>create_game_instance</internal_name>
-        <label_cache>[{"name":"62360d60-8d15-4555-88d8-6d1316c378c2.record","label":"1 - Create Record➛Game Instance Record","reference":"x_168987_flow_de_0_game_instance","reference_display":"Game Instance","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.matchmaking_session","label":"Input➛Matchmaking Session","reference":"x_168987_flow_de_0_matchmaking_queue","reference_display":"Matchmaking Queue","type":"reference","base_type":"reference","column_name":"","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"f7a2854f-bb55-420c-94cb-15b50c3d9f80","sourceUiUniqueId":"","sourceType":"","sourceId":""}}]</label_cache>
+        <label_cache>[{"name":"subflow.matchmaking_session","label":"Input➛Matchmaking Session","reference":"x_168987_flow_de_0_matchmaking_queue","reference_display":"Matchmaking Queue","type":"reference","base_type":"reference","column_name":"","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"f7a2854f-bb55-420c-94cb-15b50c3d9f80","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"62360d60-8d15-4555-88d8-6d1316c378c2.record","label":"1 - Create Record➛Game Instance Record","reference":"x_168987_flow_de_0_game_instance","reference_display":"Game Instance","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.matchmaking_session.player_1","label":"Input➛Matchmaking Session➛Player 1","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_matchmaking_queue","column_name":"player_1"},{"name":"subflow.matchmaking_session.player_2","label":"Input➛Matchmaking Session➛Player 2","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_matchmaking_queue","column_name":"player_2"}]</label_cache>
         <master>true</master>
         <name>Create Game Instance</name>
         <natlang/>
@@ -438,7 +438,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>e19ce8e447aab95017fdc82f316d4388</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -446,7 +446,7 @@
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-11-13 07:29:35</sys_updated_on>
+        <sys_updated_on>2023-11-13 20:23:48</sys_updated_on>
         <type>subflow</type>
     </sys_hub_flow_snapshot>
     <sys_translated_text action="delete_multiple" query="documentkey=e19ce8e447aab95017fdc82f316d4388"/>
@@ -654,10 +654,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-11-13 07:25:16</sys_created_on>
         <sys_id>6d9ce8e447aab95017fdc82f316d43bc</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-11-13 07:29:35</sys_updated_on>
+        <sys_updated_on>2023-11-13 20:23:48</sys_updated_on>
         <ui_id>62360d60-8d15-4555-88d8-6d1316c378c2</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=6d9ce8e447aab95017fdc82f316d43bc"/>
@@ -708,11 +708,11 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-11-13 07:25:16</sys_created_on>
         <sys_id>ed9ce8e447aab95017fdc82f316d43bd</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-11-13 07:29:35</sys_updated_on>
+        <sys_updated_on>2023-11-13 20:23:48</sys_updated_on>
         <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
-        <value>matchmaking_instance={{subflow.matchmaking_session}}</value>
+        <value>matchmaking_instance={{subflow.matchmaking_session}}^player_1={{subflow.matchmaking_session.player_1}}^player_2={{subflow.matchmaking_session.player_2}}</value>
     </sys_element_mapping>
     <sys_hub_input_scripts action="delete_multiple" query="instance=6d9ce8e447aab95017fdc82f316d43bc"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=6d9ce8e447aab95017fdc82f316d43bc"/>
@@ -741,10 +741,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-11-13 07:29:35</sys_created_on>
         <sys_id>749d206847aab95017fdc82f316d43a2</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-11-13 07:29:35</sys_updated_on>
+        <sys_updated_on>2023-11-13 20:23:48</sys_updated_on>
         <ui_id>4d1aad77-3fcd-462e-a24e-1133b368c1ca</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -825,7 +825,7 @@
     <sys_flow_trigger_plan action="delete_multiple" query="plan_id=db7b20ac476ab95017fdc82f316d43f4"/>
     <sys_flow_subflow_plan action="delete_multiple" query="plan_id=db7b20ac476ab95017fdc82f316d43f4^sys_idNOT INa59ce8e447aab95017fdc82f316d43c5"/>
     <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
-        <plan>com.snc.process_flow.engine.ProcessPlan@15ad624</plan>
+        <plan>com.snc.process_flow.engine.ProcessPlan@1d833e</plan>
         <plan_id display_value="Create Game Instance">db7b20ac476ab95017fdc82f316d43f4</plan_id>
         <snapshot>e19ce8e447aab95017fdc82f316d4388</snapshot>
         <sys_created_by>admin</sys_created_by>
@@ -833,10 +833,10 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>a59ce8e447aab95017fdc82f316d43c5</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-11-13 07:29:35</sys_updated_on>
+        <sys_updated_on>2023-11-13 20:23:49</sys_updated_on>
     </sys_flow_subflow_plan>
 </record_update>
