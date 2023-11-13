@@ -1,0 +1,832 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=2550000,viewActivatedIn=naturalLanguage</attributes>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Removes a card definition from a Player Deck Card instance</description>
+        <internal_name>remove_card_instance_from_deck</internal_name>
+        <label_cache>[{"name":"subflow.card_instance_to_remove","label":"Input➛Card instance to remove","reference":"x_168987_flow_de_0_player_deck_card","reference_display":"Player Deck Card","type":"reference","base_type":"reference","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"52d03984-dcfc-4a56-98db-1ea86c01f369","uiTypeLabel":"Reference"}},{"name":"subflow.card_instance_to_remove.player_deck","label":"Input➛Card instance to remove➛Player Deck","reference":"x_168987_flow_de_0_player_deck","reference_display":"Player Deck","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_player_deck_card","column_name":"player_deck"},{"name":"f2f1c823-7eca-4c67-8e6b-a8654b889f04.Count","label":"2 - Look Up Records➛Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <master_snapshot>c03c06ff475af55017fdc82f316d437a</master_snapshot>
+        <name>Remove card definition from player card instance</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-11 06:23:41</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>505b863f475af55017fdc82f316d4362</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Remove card definition from player card instance</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Flow Designer Marvel SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_update_name>sys_hub_flow_505b863f475af55017fdc82f316d4362</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-11 07:06:13</sys_updated_on>
+        <type>subflow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=505b863f475af55017fdc82f316d4362"/>
+    <sys_variable_value action="delete_multiple" query="document_key=505b863f475af55017fdc82f316d4362"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=505b863f475af55017fdc82f316d4362"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=505b863f475af55017fdc82f316d4362"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=505b863f475af55017fdc82f316d4362^sys_idNOT IN1c5b863f475af55017fdc82f316d4362"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>505b863f475af55017fdc82f316d4362</id>
+        <name>Remove Card Instance from Deck</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-11 06:23:41</sys_created_on>
+        <sys_id>1c5b863f475af55017fdc82f316d4362</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-11 06:23:41</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=1c5b863f475af55017fdc82f316d4362"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=505b863f475af55017fdc82f316d4362^sys_idNOT INf32c46bf475af55017fdc82f316d43e2"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=52d03984-dcfc-4a56-98db-1ea86c01f369</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>x_168987_flow_de_0_player_deck_card</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>card_instance_to_remove</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Card instance to remove</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Remove card definition from player card instance">505b863f475af55017fdc82f316d4362</model>
+        <model_id>505b863f475af55017fdc82f316d4362</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_505b863f475af55017fdc82f316d4362</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_168987_flow_de_0_player_deck_card">x_168987_flow_de_0_player_deck_card</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-11 06:27:29</sys_created_on>
+        <sys_id>f32c46bf475af55017fdc82f316d43e2</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-11 06:27:29</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=f32c46bf475af55017fdc82f316d43e2"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=505b863f475af55017fdc82f316d4362"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=505b863f475af55017fdc82f316d4362"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=505b863f475af55017fdc82f316d4362^sys_idNOT IN3b2c06ff475af55017fdc82f316d4336,6205d2bf479af55017fdc82f316d43cb,ae05d2bf479af55017fdc82f316d43c3"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Remove card definition from player card instance">505b863f475af55017fdc82f316d4362</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-11 06:27:29</sys_created_on>
+        <sys_id>3b2c06ff475af55017fdc82f316d4336</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-11 07:08:28</sys_updated_on>
+        <ui_id>b9d4dd07-e8e0-4eb9-8e8a-13cf3fd75d5f</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=3b2c06ff475af55017fdc82f316d4336"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>3b2c06ff475af55017fdc82f316d4336</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-11 06:27:29</sys_created_on>
+        <sys_id>3f2c06ff475af55017fdc82f316d4339</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-11 06:27:29</sys_updated_on>
+        <value>x_168987_flow_de_0_player_deck_card</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>3b2c06ff475af55017fdc82f316d4336</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-11 06:27:29</sys_created_on>
+        <sys_id>772c06ff475af55017fdc82f316d4339</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-11 06:27:29</sys_updated_on>
+        <value>card_definition=^=</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=3b2c06ff475af55017fdc82f316d4336"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>3b2c06ff475af55017fdc82f316d4336</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-11 06:27:29</sys_created_on>
+        <sys_id>f32c06ff475af55017fdc82f316d4339</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-11 06:27:29</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{subflow.card_instance_to_remove}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>3b2c06ff475af55017fdc82f316d4336</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-11 06:27:29</sys_created_on>
+        <sys_id>7b2c06ff475af55017fdc82f316d4338</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-11 06:27:29</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>3b2c06ff475af55017fdc82f316d4336</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-11 06:27:29</sys_created_on>
+        <sys_id>332c06ff475af55017fdc82f316d4339</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-11 06:27:29</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=3b2c06ff475af55017fdc82f316d4336"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=3b2c06ff475af55017fdc82f316d4336"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Remove card definition from player card instance">505b863f475af55017fdc82f316d4362</flow>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-11 07:06:11</sys_created_on>
+        <sys_id>6205d2bf479af55017fdc82f316d43cb</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-11 07:08:28</sys_updated_on>
+        <ui_id>b86bc7ad-3732-464f-ae95-3db345c4061d</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=6205d2bf479af55017fdc82f316d43cb"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>6205d2bf479af55017fdc82f316d43cb</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-11 07:06:11</sys_created_on>
+        <sys_id>ee05d2bf479af55017fdc82f316d43cc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-11 07:06:11</sys_updated_on>
+        <value>x_168987_flow_de_0_player_deck</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=6205d2bf479af55017fdc82f316d43cb"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>6205d2bf479af55017fdc82f316d43cb</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-11 07:06:11</sys_created_on>
+        <sys_id>6e05d2bf479af55017fdc82f316d43cc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-11 07:06:11</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{subflow.card_instance_to_remove.player_deck}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>6205d2bf479af55017fdc82f316d43cb</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-11 07:06:11</sys_created_on>
+        <sys_id>e605d2bf479af55017fdc82f316d43cc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-11 07:06:11</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>6205d2bf479af55017fdc82f316d43cb</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-11 07:06:11</sys_created_on>
+        <sys_id>aa05d2bf479af55017fdc82f316d43cc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-11 07:06:11</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>card_count={{f2f1c823-7eca-4c67-8e6b-a8654b889f04.Count}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=6205d2bf479af55017fdc82f316d43cb"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=6205d2bf479af55017fdc82f316d43cb"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Remove card definition from player card instance">505b863f475af55017fdc82f316d4362</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-11 07:06:11</sys_created_on>
+        <sys_id>ae05d2bf479af55017fdc82f316d43c3</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-11 07:08:28</sys_updated_on>
+        <ui_id>f2f1c823-7eca-4c67-8e6b-a8654b889f04</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=ae05d2bf479af55017fdc82f316d43c3"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>ae05d2bf479af55017fdc82f316d43c3</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-11 07:06:11</sys_created_on>
+        <sys_id>e605d2bf479af55017fdc82f316d43c6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-11 07:06:11</sys_updated_on>
+        <value>x_168987_flow_de_0_player_deck_card</value>
+        <variable display_value="Table">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=ae05d2bf479af55017fdc82f316d43c3"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>ae05d2bf479af55017fdc82f316d43c3</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-11 07:06:11</sys_created_on>
+        <sys_id>6e05d2bf479af55017fdc82f316d43c5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-11 07:06:11</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value>player_deck={{subflow.card_instance_to_remove.player_deck}}^card_definitionISNOTEMPTY</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>ae05d2bf479af55017fdc82f316d43c3</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-11 07:06:11</sys_created_on>
+        <sys_id>6605d2bf479af55017fdc82f316d43c6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-11 07:06:11</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=ae05d2bf479af55017fdc82f316d43c3"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=ae05d2bf479af55017fdc82f316d43c3"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=505b863f475af55017fdc82f316d4362"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=505b863f475af55017fdc82f316d4362"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=505b863f475af55017fdc82f316d4362"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=505b863f475af55017fdc82f316d4362"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_505b863f475af55017fdc82f316d4362^sys_idNOT IN3f2c06ff475af55017fdc82f316d432e"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>card_instance_to_remove</element>
+        <help/>
+        <hint/>
+        <label>Card instance to remove</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_505b863f475af55017fdc82f316d4362</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-11 06:27:29</sys_created_on>
+        <sys_id>3f2c06ff475af55017fdc82f316d432e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Flow Designer Marvel SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-11 06:27:29</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_505b863f475af55017fdc82f316d4362"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_505b863f475af55017fdc82f316d4362"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_505b863f475af55017fdc82f316d4362"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Removes a card definition from a Player Deck Card instance</description>
+        <internal_name>remove_card_definition_from_player_card_instance</internal_name>
+        <label_cache>[{"name":"subflow.card_instance_to_remove","label":"Input➛Card instance to remove","reference":"x_168987_flow_de_0_player_deck_card","reference_display":"Player Deck Card","type":"reference","base_type":"reference","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"52d03984-dcfc-4a56-98db-1ea86c01f369","uiTypeLabel":"Reference"}},{"name":"subflow.card_instance_to_remove.player_deck","label":"Input➛Card instance to remove➛Player Deck","reference":"x_168987_flow_de_0_player_deck","reference_display":"Player Deck","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_player_deck_card","column_name":"player_deck"},{"name":"f2f1c823-7eca-4c67-8e6b-a8654b889f04.Count","label":"2 - Look Up Records➛Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <master>true</master>
+        <name>Remove card definition from player card instance</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Remove card definition from player card instance">505b863f475af55017fdc82f316d4362</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-11 06:27:30</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c03c06ff475af55017fdc82f316d437a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-11 07:06:12</sys_updated_on>
+        <type>subflow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=c03c06ff475af55017fdc82f316d437a"/>
+    <sys_variable_value action="delete_multiple" query="document_key=c03c06ff475af55017fdc82f316d437a"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=c03c06ff475af55017fdc82f316d437a"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=c03c06ff475af55017fdc82f316d437a"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=c03c06ff475af55017fdc82f316d437a^sys_idNOT INcc3c06ff475af55017fdc82f316d437a"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>c03c06ff475af55017fdc82f316d437a</id>
+        <name>Remove card definition from player card instance</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-11 06:27:30</sys_created_on>
+        <sys_id>cc3c06ff475af55017fdc82f316d437a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-11 06:27:30</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=cc3c06ff475af55017fdc82f316d437a"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=c03c06ff475af55017fdc82f316d437a^sys_idNOT IN8c3c06ff475af55017fdc82f316d437b"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=52d03984-dcfc-4a56-98db-1ea86c01f369</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>x_168987_flow_de_0_player_deck_card</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>card_instance_to_remove</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Card instance to remove</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Remove card definition from player card instance">c03c06ff475af55017fdc82f316d437a</model>
+        <model_id>c03c06ff475af55017fdc82f316d437a</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_c03c06ff475af55017fdc82f316d437a</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_168987_flow_de_0_player_deck_card">x_168987_flow_de_0_player_deck_card</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-11 06:27:30</sys_created_on>
+        <sys_id>8c3c06ff475af55017fdc82f316d437b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-11 06:27:30</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=8c3c06ff475af55017fdc82f316d437b"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=c03c06ff475af55017fdc82f316d437a"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=c03c06ff475af55017fdc82f316d437a"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=c03c06ff475af55017fdc82f316d437a^sys_idNOT IN030516bf479af55017fdc82f316d4362,c83c46ff475af55017fdc82f316d4316,cf0516bf479af55017fdc82f316d4368"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Remove card definition from player card instance">c03c06ff475af55017fdc82f316d437a</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-11 07:06:12</sys_created_on>
+        <sys_id>030516bf479af55017fdc82f316d4362</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-11 07:06:12</sys_updated_on>
+        <ui_id>f2f1c823-7eca-4c67-8e6b-a8654b889f04</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=030516bf479af55017fdc82f316d4362"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>030516bf479af55017fdc82f316d4362</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-11 07:06:12</sys_created_on>
+        <sys_id>8b0516bf479af55017fdc82f316d4363</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-11 07:06:12</sys_updated_on>
+        <value>x_168987_flow_de_0_player_deck_card</value>
+        <variable display_value="Table">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=030516bf479af55017fdc82f316d4362"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>030516bf479af55017fdc82f316d4362</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-11 07:06:12</sys_created_on>
+        <sys_id>470516bf479af55017fdc82f316d4363</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-11 07:06:12</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value>player_deck={{subflow.card_instance_to_remove.player_deck}}^card_definitionISNOTEMPTY</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>030516bf479af55017fdc82f316d4362</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-11 07:06:12</sys_created_on>
+        <sys_id>0b0516bf479af55017fdc82f316d4363</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-11 07:06:12</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=030516bf479af55017fdc82f316d4362"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=030516bf479af55017fdc82f316d4362"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Remove card definition from player card instance">c03c06ff475af55017fdc82f316d437a</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-11 06:27:30</sys_created_on>
+        <sys_id>c83c46ff475af55017fdc82f316d4316</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-11 07:06:12</sys_updated_on>
+        <ui_id>b9d4dd07-e8e0-4eb9-8e8a-13cf3fd75d5f</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=c83c46ff475af55017fdc82f316d4316"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>c83c46ff475af55017fdc82f316d4316</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-11 06:27:30</sys_created_on>
+        <sys_id>043c46ff475af55017fdc82f316d4318</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-11 06:27:30</sys_updated_on>
+        <value>card_definition=^=</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>c83c46ff475af55017fdc82f316d4316</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-11 06:27:30</sys_created_on>
+        <sys_id>c43c46ff475af55017fdc82f316d4318</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-11 06:27:30</sys_updated_on>
+        <value>x_168987_flow_de_0_player_deck_card</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=c83c46ff475af55017fdc82f316d4316"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>c83c46ff475af55017fdc82f316d4316</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-11 06:27:30</sys_created_on>
+        <sys_id>803c46ff475af55017fdc82f316d4318</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-11 06:27:30</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{subflow.card_instance_to_remove}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>c83c46ff475af55017fdc82f316d4316</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-11 06:27:30</sys_created_on>
+        <sys_id>0c3c46ff475af55017fdc82f316d4317</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-11 06:27:30</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>c83c46ff475af55017fdc82f316d4316</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-11 06:27:30</sys_created_on>
+        <sys_id>cc3c46ff475af55017fdc82f316d4317</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-11 06:27:30</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=c83c46ff475af55017fdc82f316d4316"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=c83c46ff475af55017fdc82f316d4316"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Remove card definition from player card instance">c03c06ff475af55017fdc82f316d437a</flow>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-11 07:06:12</sys_created_on>
+        <sys_id>cf0516bf479af55017fdc82f316d4368</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-11 07:06:12</sys_updated_on>
+        <ui_id>b86bc7ad-3732-464f-ae95-3db345c4061d</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=cf0516bf479af55017fdc82f316d4368"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>cf0516bf479af55017fdc82f316d4368</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-11 07:06:12</sys_created_on>
+        <sys_id>0b0516bf479af55017fdc82f316d436a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-11 07:06:12</sys_updated_on>
+        <value>x_168987_flow_de_0_player_deck</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=cf0516bf479af55017fdc82f316d4368"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>cf0516bf479af55017fdc82f316d4368</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-11 07:06:12</sys_created_on>
+        <sys_id>870516bf479af55017fdc82f316d436a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-11 07:06:12</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{subflow.card_instance_to_remove.player_deck}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>cf0516bf479af55017fdc82f316d4368</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-11 07:06:12</sys_created_on>
+        <sys_id>030516bf479af55017fdc82f316d436a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-11 07:06:12</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>cf0516bf479af55017fdc82f316d4368</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-11 07:06:12</sys_created_on>
+        <sys_id>c30516bf479af55017fdc82f316d436a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-11 07:06:12</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>card_count={{f2f1c823-7eca-4c67-8e6b-a8654b889f04.Count}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=cf0516bf479af55017fdc82f316d4368"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=cf0516bf479af55017fdc82f316d4368"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=c03c06ff475af55017fdc82f316d437a"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=c03c06ff475af55017fdc82f316d437a"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=c03c06ff475af55017fdc82f316d437a"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=c03c06ff475af55017fdc82f316d437a"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_c03c06ff475af55017fdc82f316d437a^sys_idNOT IN8c3c06ff475af55017fdc82f316d43cc"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>card_instance_to_remove</element>
+        <help/>
+        <hint/>
+        <label>Card instance to remove</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_c03c06ff475af55017fdc82f316d437a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-11 06:27:30</sys_created_on>
+        <sys_id>8c3c06ff475af55017fdc82f316d43cc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Flow Designer Marvel SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-11 06:27:30</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_c03c06ff475af55017fdc82f316d437a"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_c03c06ff475af55017fdc82f316d437a"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_c03c06ff475af55017fdc82f316d437a"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>505b863f475af55017fdc82f316d4362</sys_id>
+        <latest_snapshot>c03c06ff475af55017fdc82f316d437a</latest_snapshot>
+        <compiler_build>glide-vancouver-07-06-2023__patch2-hotfix1-10-04-2023_10-06-2023_1235.zip</compiler_build>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=505b863f475af55017fdc82f316d4362"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=505b863f475af55017fdc82f316d4362^sys_idNOT INc03c46ff475af55017fdc82f316d431f"/>
+    <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"c03c46ff475af55017fdc82f316d431f","name":"plan","plan_signature":null}}</plan>
+        <plan_id display_value="Remove card definition from player card instance">505b863f475af55017fdc82f316d4362</plan_id>
+        <snapshot>449592ff479af55017fdc82f316d4322</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-11 06:27:30</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c03c46ff475af55017fdc82f316d431f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-11 07:06:13</sys_updated_on>
+    </sys_flow_subflow_plan>
+</record_update>
