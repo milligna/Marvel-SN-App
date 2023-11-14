@@ -2,7 +2,9 @@
     <element db_object_id="30cf537b474a751017fdc82f316d4326" label="Matchmaking Queue" max_length="40" name="x_168987_flow_de_0_matchmaking_queue" type="collection">
         <element label="Game Instance" max_length="32" name="game_instance" reference="x_168987_flow_de_0_game_instance" type="reference"/>
         <element display="true" label="Player 1" max_length="32" name="player_1" reference="sys_user" type="reference"/>
+        <element label="Player 1 Deck" max_length="32" name="player_1_deck" reference="x_168987_flow_de_0_player_deck" type="reference"/>
         <element label="Player 2" max_length="32" name="player_2" reference="sys_user" type="reference"/>
+        <element label="Player 2 deck" max_length="32" name="player_2_deck" reference="x_168987_flow_de_0_player_deck" type="reference"/>
         <element choice="3" label="Status" max_length="40" name="status" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Pending Second Player" sequence="0" value="pending_second_player"/>
@@ -17,7 +19,13 @@
             <element name="player_1"/>
         </index>
         <index name="index3">
+            <element name="player_1_deck"/>
+        </index>
+        <index name="index4">
             <element name="player_2"/>
+        </index>
+        <index name="index5">
+            <element name="player_2_deck"/>
         </index>
     </element>
 </database>
