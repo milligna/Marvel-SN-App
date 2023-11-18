@@ -11,9 +11,9 @@
         <copied_from_name/>
         <description>Removes a card definition from a Player Deck Card instance</description>
         <internal_name>remove_card_instance_from_deck</internal_name>
-        <label_cache>[{"name":"subflow.card_instance_to_remove","label":"Input➛Card instance to remove","reference":"x_168987_flow_de_0_player_deck_card","reference_display":"Player Deck Card","type":"reference","base_type":"reference","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"52d03984-dcfc-4a56-98db-1ea86c01f369","uiTypeLabel":"Reference"}},{"name":"subflow.card_instance_to_remove.player_deck","label":"Input➛Card instance to remove➛Player Deck","reference":"x_168987_flow_de_0_player_deck","reference_display":"Player Deck","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_player_deck_card","column_name":"player_deck"},{"name":"f2f1c823-7eca-4c67-8e6b-a8654b889f04.Count","label":"2 - Look Up Records➛Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <label_cache>[{"name":"subflow.card_instance_to_remove","label":"Input➛Card instance to remove","reference":"x_168987_flow_de_0_player_deck_card","reference_display":"Player Deck Card","type":"reference","base_type":"reference","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"52d03984-dcfc-4a56-98db-1ea86c01f369","uiTypeLabel":"Reference"}},{"name":"subflow.card_instance_to_remove.player_deck","label":"Input➛Card instance to remove➛Player Deck","reference":"x_168987_flow_de_0_player_deck","reference_display":"Player Deck","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_player_deck_card","column_name":"player_deck"},{"name":"f2f1c823-7eca-4c67-8e6b-a8654b889f04.Count","label":"2 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
         <master_snapshot>c03c06ff475af55017fdc82f316d437a</master_snapshot>
-        <name>Remove card definition from player card instance</name>
+        <name>DECK: Remove card definition from player deck card</name>
         <natlang/>
         <outputs/>
         <pre_compiled>false</pre_compiled>
@@ -23,22 +23,22 @@
         <sc_callable>false</sc_callable>
         <show_draft_actions>false</show_draft_actions>
         <show_triggered_flows>false</show_triggered_flows>
-        <status>published</status>
+        <status>draft</status>
         <sys_class_name>sys_hub_flow</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-11-11 06:23:41</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>505b863f475af55017fdc82f316d4362</sys_id>
-        <sys_mod_count>4</sys_mod_count>
-        <sys_name>Remove card definition from player card instance</sys_name>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>DECK: Remove card definition from player deck card</sys_name>
         <sys_overrides/>
         <sys_package display_value="Flow Designer Marvel SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_update_name>sys_hub_flow_505b863f475af55017fdc82f316d4362</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-11-11 07:06:13</sys_updated_on>
+        <sys_updated_on>2023-11-18 10:18:07</sys_updated_on>
         <type>subflow</type>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=505b863f475af55017fdc82f316d4362"/>
@@ -99,7 +99,7 @@
         <label>Card instance to remove</label>
         <mandatory>true</mandatory>
         <max_length>32</max_length>
-        <model display_value="Remove card definition from player card instance">505b863f475af55017fdc82f316d4362</model>
+        <model display_value="DECK: Remove card definition from player deck card">505b863f475af55017fdc82f316d4362</model>
         <model_id>505b863f475af55017fdc82f316d4362</model_id>
         <model_table>sys_hub_flow</model_table>
         <name>var__m_sys_hub_flow_input_505b863f475af55017fdc82f316d4362</name>
@@ -154,17 +154,17 @@
         <attributes/>
         <comment/>
         <display_text/>
-        <flow display_value="Remove card definition from player card instance">505b863f475af55017fdc82f316d4362</flow>
+        <flow display_value="DECK: Remove card definition from player deck card">505b863f475af55017fdc82f316d4362</flow>
         <order>1</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-11-11 06:27:29</sys_created_on>
         <sys_id>3b2c06ff475af55017fdc82f316d4336</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>16</sys_mod_count>
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-11-11 07:08:28</sys_updated_on>
+        <sys_updated_on>2023-11-18 10:18:07</sys_updated_on>
         <ui_id>b9d4dd07-e8e0-4eb9-8e8a-13cf3fd75d5f</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=3b2c06ff475af55017fdc82f316d4336"/>
@@ -243,17 +243,17 @@
         <attributes/>
         <comment/>
         <display_text/>
-        <flow display_value="Remove card definition from player card instance">505b863f475af55017fdc82f316d4362</flow>
+        <flow display_value="DECK: Remove card definition from player deck card">505b863f475af55017fdc82f316d4362</flow>
         <order>3</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-11-11 07:06:11</sys_created_on>
         <sys_id>6205d2bf479af55017fdc82f316d43cb</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-11-11 07:08:28</sys_updated_on>
+        <sys_updated_on>2023-11-18 10:18:07</sys_updated_on>
         <ui_id>b86bc7ad-3732-464f-ae95-3db345c4061d</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=6205d2bf479af55017fdc82f316d43cb"/>
@@ -318,17 +318,17 @@
         <attributes/>
         <comment/>
         <display_text/>
-        <flow display_value="Remove card definition from player card instance">505b863f475af55017fdc82f316d4362</flow>
+        <flow display_value="DECK: Remove card definition from player deck card">505b863f475af55017fdc82f316d4362</flow>
         <order>2</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-11-11 07:06:11</sys_created_on>
         <sys_id>ae05d2bf479af55017fdc82f316d43c3</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-11-11 07:08:28</sys_updated_on>
+        <sys_updated_on>2023-11-18 10:18:07</sys_updated_on>
         <ui_id>f2f1c823-7eca-4c67-8e6b-a8654b889f04</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=ae05d2bf479af55017fdc82f316d43c3"/>
@@ -421,7 +421,7 @@
         <name>Remove card definition from player card instance</name>
         <natlang/>
         <outputs/>
-        <parent_flow display_value="Remove card definition from player card instance">505b863f475af55017fdc82f316d4362</parent_flow>
+        <parent_flow display_value="DECK: Remove card definition from player deck card">505b863f475af55017fdc82f316d4362</parent_flow>
         <remote_trigger_id/>
         <run_as>user</run_as>
         <run_with_roles/>
@@ -816,7 +816,7 @@
     <sys_flow_subflow_plan action="delete_multiple" query="plan_id=505b863f475af55017fdc82f316d4362^sys_idNOT INc03c46ff475af55017fdc82f316d431f"/>
     <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
         <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"c03c46ff475af55017fdc82f316d431f","name":"plan","plan_signature":null}}</plan>
-        <plan_id display_value="Remove card definition from player card instance">505b863f475af55017fdc82f316d4362</plan_id>
+        <plan_id display_value="DECK: Remove card definition from player deck card">505b863f475af55017fdc82f316d4362</plan_id>
         <snapshot>449592ff479af55017fdc82f316d4322</snapshot>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-11-11 06:27:30</sys_created_on>

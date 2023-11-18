@@ -8,7 +8,13 @@
                 <element inactive_on_update="false" label="Before Dealing" sequence="1" value="before_dealing"/>
                 <element inactive_on_update="false" label="Ongoing" sequence="2" value="ongoing"/>
                 <element inactive_on_update="false" label="On Specific Turn" sequence="3" value="on_specific_turn"/>
-                <element inactive_on_update="false" label="No ability" sequence="4" value="no_ability"/>
+                <element inactive_on_update="false" label="At End of Specific turn" sequence="4" value="At End of Specific turn"/>
+                <element inactive_on_update="false" label="No ability" sequence="5" value="no_ability"/>
+                <element inactive_on_update="false" label="All turns once played" sequence="6" value="All turns once played"/>
+                <element inactive_on_update="false" label="After Specific Turn" sequence="7" value="After Specific Turn"/>
+                <element inactive_on_update="false" label="On Card Move" sequence="8" value="On Card Move"/>
+                <element inactive_on_update="false" label="After each turn" sequence="9" value="After each turn"/>
+                <element inactive_on_update="false" label="Before each card is played" sequence="10" value="Before each card is played"/>
             </choice>
         </element>
         <element label="Active" max_length="40" name="active" type="boolean"/>
@@ -18,6 +24,20 @@
         <element display="true" label="Name" max_length="40" name="name" type="string"/>
         <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
         <element label="Power" max_length="40" name="power" type="integer"/>
+        <element label="Secondary Ability Subflow" max_length="32" name="secondary_ability_subflow" reference="sys_hub_flow" type="reference"/>
+        <element choice="1" choice_field="ability_type" choice_table="x_168987_flow_de_0_card_definition" label="Secondary Ability Type" max_length="40" name="secondary_ability_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="On Reveal" sequence="0" value="on_reveal"/>
+                <element inactive_on_update="false" label="Before Dealing" sequence="1" value="before_dealing"/>
+                <element inactive_on_update="false" label="Ongoing" sequence="2" value="ongoing"/>
+                <element inactive_on_update="false" label="On Specific Turn" sequence="3" value="on_specific_turn"/>
+                <element inactive_on_update="false" label="No ability" sequence="4" value="no_ability"/>
+                <element inactive_on_update="false" label="All turns once played" sequence="5" value="All turns once played"/>
+                <element inactive_on_update="false" label="After Specific Turn" sequence="6" value="After Specific Turn"/>
+                <element inactive_on_update="false" label="On Card Move" sequence="7" value="On Card Move"/>
+                <element inactive_on_update="false" label="After each turn" sequence="8" value="After each turn"/>
+            </choice>
+        </element>
         <element label="Specific Turn number" max_length="40" name="specific_turn_number" type="string"/>
         <element label="Status" max_length="40" name="status" type="choice">
             <choice>
@@ -35,6 +55,9 @@
         <element label="Value" max_length="40" name="value" type="string"/>
         <index name="index">
             <element name="ability_subflow"/>
+        </index>
+        <index name="index2">
+            <element name="secondary_ability_subflow"/>
         </index>
     </element>
 </database>
