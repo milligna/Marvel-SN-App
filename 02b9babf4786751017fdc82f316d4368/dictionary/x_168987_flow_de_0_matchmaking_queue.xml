@@ -3,8 +3,10 @@
         <element label="Game Instance" max_length="32" name="game_instance" reference="x_168987_flow_de_0_game_instance" type="reference"/>
         <element display="true" label="Player 1" max_length="32" name="player_1" reference="sys_user" type="reference"/>
         <element label="Player 1 Deck" max_length="32" name="player_1_deck" reference="x_168987_flow_de_0_player_deck" type="reference"/>
+        <element label="Player 1 Session" max_length="32" name="player_1_session" reference="x_168987_flow_de_0_player_session" type="reference"/>
         <element label="Player 2" max_length="32" name="player_2" reference="sys_user" type="reference"/>
         <element label="Player 2 deck" max_length="32" name="player_2_deck" reference="x_168987_flow_de_0_player_deck" type="reference"/>
+        <element label="Player 2 Session" max_length="32" name="player_2_session" reference="x_168987_flow_de_0_player_session" type="reference"/>
         <element choice="3" label="Status" max_length="40" name="status" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Pending Second Player" sequence="0" value="pending_second_player"/>
@@ -22,10 +24,16 @@
             <element name="player_1_deck"/>
         </index>
         <index name="index4">
-            <element name="player_2"/>
+            <element name="player_1_session"/>
         </index>
         <index name="index5">
+            <element name="player_2"/>
+        </index>
+        <index name="index6">
             <element name="player_2_deck"/>
+        </index>
+        <index name="index7">
+            <element name="player_2_session"/>
         </index>
     </element>
 </database>

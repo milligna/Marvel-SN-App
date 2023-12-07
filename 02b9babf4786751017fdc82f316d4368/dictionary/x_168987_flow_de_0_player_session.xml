@@ -12,7 +12,7 @@
                 <element inactive_on_update="false" label="Ended" sequence="2" value="ended"/>
             </choice>
         </element>
-        <element label="User" max_length="40" name="user" type="string"/>
+        <element label="User" max_length="40" name="user" reference="sys_user" type="reference"/>
         <index name="index">
             <element name="game_instance"/>
         </index>

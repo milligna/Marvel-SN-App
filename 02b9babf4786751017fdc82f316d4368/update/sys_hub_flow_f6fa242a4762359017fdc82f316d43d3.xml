@@ -1,0 +1,2382 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=1242000,viewActivatedIn=naturalLanguage</attributes>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from>9357ea30476a3d5017fdc82f316d4375</copied_from>
+        <copied_from_name>START: Create Card Instances fro</copied_from_name>
+        <description/>
+        <internal_name>start_create_card_instances_from_a_player_deck</internal_name>
+        <label_cache>[{"name":"96bb8415-c37b-4562-bd52-7d52d94ffdc5.record","label":"3 - Create Record➛Card Instance Record","reference":"x_168987_flow_de_0_card_instance","reference_display":"Card Instance Record","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"cedbec77-f017-4e48-85e2-6d8a579034fe.__status__.message","label":"8 - Top Level Catch➛Error Status➛Message","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"cedbec77-f017-4e48-85e2-6d8a579034fe.__status__.code","label":"8 - Top Level Catch➛Error Status➛Code","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","attributes":{}},{"name":"subflow.game_instance","label":"Input➛Game Instance","reference":"x_168987_flow_de_0_game_instance","reference_display":"Game Instance","type":"reference","base_type":"reference","column_name":"","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"7465beef-a4df-4dac-a40b-defa7051b0fa","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"39e1c3c2-9a8d-4744-b8c3-de1c5ff8ca36.item.card_definition.power","label":"2 - For Each➛Player Deck Card Record➛Card Definition➛Power","reference":"","reference_display":"Power","type":"integer","base_type":"integer","parent_table_name":"x_168987_flow_de_0_card_definition","column_name":"power"},{"name":"39e1c3c2-9a8d-4744-b8c3-de1c5ff8ca36.item.card_definition","label":"2 - For Each➛Player Deck Card Record➛Card Definition","reference":"x_168987_flow_de_0_card_definition","reference_display":"Card Definition","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_player_deck_card","column_name":"card_definition"},{"name":"39e1c3c2-9a8d-4744-b8c3-de1c5ff8ca36.item.card_definition.cost","label":"2 - For Each➛Player Deck Card Record➛Card Definition➛Cost","reference":"","reference_display":"Cost","type":"integer","base_type":"integer","parent_table_name":"x_168987_flow_de_0_card_definition","column_name":"cost"},{"name":"5a642797-8db0-4b79-b69b-c431d1af6475.Records","label":"1 - Look Up Records➛Player Deck Card Records","reference":"x_168987_flow_de_0_player_deck_card","reference_display":"Player Deck Card Records","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.player_deck","label":"Input➛Player Deck","reference":"x_168987_flow_de_0_player_deck","reference_display":"Player Deck","type":"reference","base_type":"reference","column_name":"","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"08a00eec-f469-4f1a-a202-f6de671a9845","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"39e1c3c2-9a8d-4744-b8c3-de1c5ff8ca36.item.card_definition.ability_type","label":"2 - For Each➛Player Deck Card Record➛Card Definition➛Ability Type","reference":"","reference_display":"Ability Type","type":"choice","base_type":"choice","parent_table_name":"x_168987_flow_de_0_card_definition","column_name":"ability_type","choices":[{"label":"-- None --","used":false,"rawLabel":"-- None --","selected":false,"missing":false,"image":"","reference":false,"value":""},{"used":false,"label":"On Reveal","rawLabel":"On Reveal","selected":false,"missing":false,"image":"","reference":false,"value":"on_reveal","parameters":{"name":"x_168987_flow_de_0_card_definition"}},{"used":false,"label":"Before Dealing","rawLabel":"Before Dealing","selected":false,"missing":false,"image":"","reference":false,"value":"before_dealing","parameters":{"name":"x_168987_flow_de_0_card_definition"}},{"used":false,"label":"Ongoing","rawLabel":"Ongoing","selected":false,"missing":false,"image":"","reference":false,"value":"ongoing","parameters":{"name":"x_168987_flow_de_0_card_definition"}},{"used":false,"label":"On Specific Turn","rawLabel":"On Specific Turn","selected":false,"missing":false,"image":"","reference":false,"value":"on_specific_turn","parameters":{"name":"x_168987_flow_de_0_card_definition"}},{"used":false,"label":"At End of Specific turn","rawLabel":"At End of Specific turn","selected":false,"missing":false,"image":"","reference":false,"value":"At End of Specific turn","parameters":{"name":"x_168987_flow_de_0_card_definition"}},{"used":false,"label":"No ability","rawLabel":"No ability","selected":false,"missing":false,"image":"","reference":false,"value":"no_ability","parameters":{"name":"x_168987_flow_de_0_card_definition"}},{"used":false,"label":"All turns once played","rawLabel":"All turns once played","selected":false,"missing":false,"image":"","reference":false,"value":"All turns once played","parameters":{"name":"x_168987_flow_de_0_card_definition"}},{"used":false,"label":"After Specific Turn","rawLabel":"After Specific Turn","selected":false,"missing":false,"image":"","reference":false,"value":"After Specific Turn","parameters":{"name":"x_168987_flow_de_0_card_definition"}},{"used":false,"label":"On Card Move","rawLabel":"On Card Move","selected":false,"missing":false,"image":"","reference":false,"value":"On Card Move","parameters":{"name":"x_168987_flow_de_0_card_definition"}},{"used":false,"label":"After each turn","rawLabel":"After each turn","selected":false,"missing":false,"image":"","reference":false,"value":"After each turn","parameters":{"name":"x_168987_flow_de_0_card_definition"}},{"used":false,"label":"Before each card is played","rawLabel":"Before each card is played","selected":false,"missing":false,"image":"","reference":false,"value":"Before each card is played","parameters":{"name":"x_168987_flow_de_0_card_definition"}}]},{"name":"39e1c3c2-9a8d-4744-b8c3-de1c5ff8ca36.item.card_definition.ability_subflow","label":"2 - For Each➛Player Deck Card Record➛Card Definition➛Ability Subflow","reference":"sys_hub_flow","reference_display":"Flow","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_card_definition","column_name":"ability_subflow"},{"name":"39e1c3c2-9a8d-4744-b8c3-de1c5ff8ca36.item.card_definition.ability_subflow.name","label":"2 - For Each➛Player Deck Card Record➛Card Definition➛Ability Subflow➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"sys_hub_flow","column_name":"name"},{"name":"subflow.player_deck.player","label":"Input➛Player Deck➛Player","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_player_deck","column_name":"player"},{"name":"subflow.player_session","label":"Input➛Player Session","reference":"x_168987_flow_de_0_player_session","reference_display":"Player Session","type":"reference","base_type":"reference","column_name":"","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"3f37330b-c11e-487c-9d10-a17b570041d5","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"cedbec77-f017-4e48-85e2-6d8a579034fe.__status__","label":"8 - Error Handler➛Error Status","reference_display":"Error Status","type":"object","base_type":"object","attributes":{"uiType":"object","uiTypeLabel":"Object","co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"96bb8415-c37b-4562-bd52-7d52d94ffdc5.record.original_card_reference.ability_subflow.sys_id","label":"3 - Create Record➛Card Instance Record➛Original Card Reference➛Ability Subflow➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sys_hub_flow","column_name":"sys_id"}]</label_cache>
+        <master_snapshot>d2bfa02247a2359017fdc82f316d431a</master_snapshot>
+        <name>START: Create Card Instances from a Player Deck</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-19 12:26:05</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f6fa242a4762359017fdc82f316d43d3</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>START: Create Card Instances from a Player Deck</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Flow Designer Marvel SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_update_name>sys_hub_flow_f6fa242a4762359017fdc82f316d43d3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-19 12:52:26</sys_updated_on>
+        <type>subflow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=f6fa242a4762359017fdc82f316d43d3"/>
+    <sys_variable_value action="delete_multiple" query="document_key=f6fa242a4762359017fdc82f316d43d3"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=f6fa242a4762359017fdc82f316d43d3"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=f6fa242a4762359017fdc82f316d43d3"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=f6fa242a4762359017fdc82f316d43d3^sys_idNOT IN72fa242a4762359017fdc82f316d43d4"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>f6fa242a4762359017fdc82f316d43d3</id>
+        <name>START: Create Card Instances from a Player Deck</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-19 12:26:05</sys_created_on>
+        <sys_id>72fa242a4762359017fdc82f316d43d4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-19 12:26:05</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=72fa242a4762359017fdc82f316d43d4"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=f6fa242a4762359017fdc82f316d43d3^sys_idNOT IN32fa242a4762359017fdc82f316d43db,76fa242a4762359017fdc82f316d43df,fefa242a4762359017fdc82f316d43e1"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=7465beef-a4df-4dac-a40b-defa7051b0fa</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>x_168987_flow_de_0_game_instance</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>game_instance</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Game Instance</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="START: Create Card Instances from a Player Deck">f6fa242a4762359017fdc82f316d43d3</model>
+        <model_id>f6fa242a4762359017fdc82f316d43d3</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_f6fa242a4762359017fdc82f316d43d3</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_168987_flow_de_0_game_instance">x_168987_flow_de_0_game_instance</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-19 12:26:05</sys_created_on>
+        <sys_id>32fa242a4762359017fdc82f316d43db</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-19 12:26:05</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=32fa242a4762359017fdc82f316d43db"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=08a00eec-f469-4f1a-a202-f6de671a9845</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>player_deck</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Player Deck</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="START: Create Card Instances from a Player Deck">f6fa242a4762359017fdc82f316d43d3</model>
+        <model_id>f6fa242a4762359017fdc82f316d43d3</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_f6fa242a4762359017fdc82f316d43d3</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_168987_flow_de_0_player_deck">x_168987_flow_de_0_player_deck</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-19 12:26:05</sys_created_on>
+        <sys_id>76fa242a4762359017fdc82f316d43df</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-19 12:26:05</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=76fa242a4762359017fdc82f316d43df"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=3f37330b-c11e-487c-9d10-a17b570041d5</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>x_168987_flow_de_0_player_session</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>player_session</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Player Session</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="START: Create Card Instances from a Player Deck">f6fa242a4762359017fdc82f316d43d3</model>
+        <model_id>f6fa242a4762359017fdc82f316d43d3</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_f6fa242a4762359017fdc82f316d43d3</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_168987_flow_de_0_player_session">x_168987_flow_de_0_player_session</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-19 12:26:05</sys_created_on>
+        <sys_id>fefa242a4762359017fdc82f316d43e1</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-19 12:26:06</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=fefa242a4762359017fdc82f316d43e1"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=f6fa242a4762359017fdc82f316d43d3"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=f6fa242a4762359017fdc82f316d43d3"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=f6fa242a4762359017fdc82f316d43d3^sys_idNOT IN4ffa642a4762359017fdc82f316d4345,4ffa642a4762359017fdc82f316d434c,c3fa642a4762359017fdc82f316d433e"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="START: Create Card Instances from a Player Deck">f6fa242a4762359017fdc82f316d43d3</flow>
+        <order>3</order>
+        <parent_ui_id>39e1c3c2-9a8d-4744-b8c3-de1c5ff8ca36</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-19 12:26:06</sys_created_on>
+        <sys_id>4ffa642a4762359017fdc82f316d4345</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-19 12:52:26</sys_updated_on>
+        <ui_id>96bb8415-c37b-4562-bd52-7d52d94ffdc5</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=4ffa642a4762359017fdc82f316d4345"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>4ffa642a4762359017fdc82f316d4345</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-19 12:26:06</sys_created_on>
+        <sys_id>43fa642a4762359017fdc82f316d4347</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-19 12:26:06</sys_updated_on>
+        <value>x_168987_flow_de_0_card_instance</value>
+        <variable display_value="Table">61e05916c31332002841b63b12d3aee4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=4ffa642a4762359017fdc82f316d4345"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>4ffa642a4762359017fdc82f316d4345</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-19 12:26:06</sys_created_on>
+        <sys_id>0ffa642a4762359017fdc82f316d4346</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-19 12:26:06</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>4ffa642a4762359017fdc82f316d4345</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-19 12:26:06</sys_created_on>
+        <sys_id>cffa642a4762359017fdc82f316d4346</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-19 12:26:06</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value>current_cost={{39e1c3c2-9a8d-4744-b8c3-de1c5ff8ca36.item.card_definition.cost}}^current_power={{39e1c3c2-9a8d-4744-b8c3-de1c5ff8ca36.item.card_definition.power}}^original_cost={{39e1c3c2-9a8d-4744-b8c3-de1c5ff8ca36.item.card_definition.cost}}^original_power={{39e1c3c2-9a8d-4744-b8c3-de1c5ff8ca36.item.card_definition.power}}^original_card_reference={{39e1c3c2-9a8d-4744-b8c3-de1c5ff8ca36.item.card_definition}}^player_session={{subflow.player_session}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=4ffa642a4762359017fdc82f316d4345"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=4ffa642a4762359017fdc82f316d4345"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="START: Create Card Instances from a Player Deck">f6fa242a4762359017fdc82f316d43d3</flow>
+        <order>7</order>
+        <parent_ui_id>ac86adc5-5798-4b23-bde1-d4ba2434a8fc</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-19 12:26:06</sys_created_on>
+        <sys_id>4ffa642a4762359017fdc82f316d434c</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-19 12:52:26</sys_updated_on>
+        <ui_id>14de0d00-e59a-4009-b325-ea8a06383123</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=4ffa642a4762359017fdc82f316d434c"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>4ffa642a4762359017fdc82f316d434c</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-19 12:46:47</sys_created_on>
+        <sys_id>7dbf602247a2359017fdc82f316d43b9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-19 12:46:47</sys_updated_on>
+        <value>x_168987_flow_de_0_card_instance</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>4ffa642a4762359017fdc82f316d434c</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-19 12:46:47</sys_created_on>
+        <sys_id>b9bf602247a2359017fdc82f316d43b9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-19 12:46:47</sys_updated_on>
+        <value>status=in_hand</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=4ffa642a4762359017fdc82f316d434c"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>4ffa642a4762359017fdc82f316d434c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-19 12:46:47</sys_created_on>
+        <sys_id>39bf602247a2359017fdc82f316d43b9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-19 12:46:47</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{96bb8415-c37b-4562-bd52-7d52d94ffdc5.record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>4ffa642a4762359017fdc82f316d434c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-19 12:46:47</sys_created_on>
+        <sys_id>b1bf602247a2359017fdc82f316d43b9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-19 12:46:47</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>4ffa642a4762359017fdc82f316d434c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-19 12:46:47</sys_created_on>
+        <sys_id>75bf602247a2359017fdc82f316d43b9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-19 12:46:47</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=4ffa642a4762359017fdc82f316d434c"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=4ffa642a4762359017fdc82f316d434c"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <attributes/>
+        <comment>Get all the cards in the player's deck</comment>
+        <display_text/>
+        <flow display_value="START: Create Card Instances from a Player Deck">f6fa242a4762359017fdc82f316d43d3</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-19 12:26:06</sys_created_on>
+        <sys_id>c3fa642a4762359017fdc82f316d433e</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-19 12:52:26</sys_updated_on>
+        <ui_id>5a642797-8db0-4b79-b69b-c431d1af6475</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=c3fa642a4762359017fdc82f316d433e"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>c3fa642a4762359017fdc82f316d433e</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-19 12:26:06</sys_created_on>
+        <sys_id>83fa642a4762359017fdc82f316d4340</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-19 12:26:06</sys_updated_on>
+        <value>x_168987_flow_de_0_player_deck_card</value>
+        <variable display_value="Table">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=c3fa642a4762359017fdc82f316d433e"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>c3fa642a4762359017fdc82f316d433e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-19 12:26:06</sys_created_on>
+        <sys_id>4ffa642a4762359017fdc82f316d433f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-19 12:26:06</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value>player_deck={{subflow.player_deck}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>c3fa642a4762359017fdc82f316d433e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-19 12:26:06</sys_created_on>
+        <sys_id>03fa642a4762359017fdc82f316d4340</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-19 12:26:06</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=c3fa642a4762359017fdc82f316d433e"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=c3fa642a4762359017fdc82f316d433e"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=f6fa242a4762359017fdc82f316d43d3"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=f6fa242a4762359017fdc82f316d43d3^sys_idNOT IN03fa642a4762359017fdc82f316d4334,3afa242a4762359017fdc82f316d43e8,3efa242a4762359017fdc82f316d43eb,7afa242a4762359017fdc82f316d43ef"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">5e5ba2f4476a3d5017fdc82f316d4392</block>
+        <comment/>
+        <connected_to>e3ec5f26-321d-463c-b6e0-0a74dca07291</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="START: Create Card Instances from a Player Deck">f6fa242a4762359017fdc82f316d43d3</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>6</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>39e1c3c2-9a8d-4744-b8c3-de1c5ff8ca36</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-19 12:26:06</sys_created_on>
+        <sys_id>03fa642a4762359017fdc82f316d4334</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-19 12:52:26</sys_updated_on>
+        <ui_id>ac86adc5-5798-4b23-bde1-d4ba2434a8fc</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=03fa642a4762359017fdc82f316d4334"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=03fa642a4762359017fdc82f316d4334"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=03fa642a4762359017fdc82f316d4334"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">df57ea70476a3d5017fdc82f316d43ec</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="START: Create Card Instances from a Player Deck">f6fa242a4762359017fdc82f316d43d3</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-19 12:26:06</sys_created_on>
+        <sys_id>3afa242a4762359017fdc82f316d43e8</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-19 12:52:26</sys_updated_on>
+        <ui_id>39e1c3c2-9a8d-4744-b8c3-de1c5ff8ca36</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=3afa242a4762359017fdc82f316d43e8"/>
+    <sys_element_mapping action="delete_multiple" query="id=3afa242a4762359017fdc82f316d43e8"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>3afa242a4762359017fdc82f316d43e8</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-19 12:26:06</sys_created_on>
+        <sys_id>f2fa242a4762359017fdc82f316d43eb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-19 12:26:06</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{5a642797-8db0-4b79-b69b-c431d1af6475.Records}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=3afa242a4762359017fdc82f316d43e8"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=3afa242a4762359017fdc82f316d43e8"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">d25ba2f4476a3d5017fdc82f316d438a</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="START: Create Card Instances from a Player Deck">f6fa242a4762359017fdc82f316d43d3</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>39e1c3c2-9a8d-4744-b8c3-de1c5ff8ca36</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-19 12:26:06</sys_created_on>
+        <sys_id>3efa242a4762359017fdc82f316d43eb</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-19 12:52:26</sys_updated_on>
+        <ui_id>e3ec5f26-321d-463c-b6e0-0a74dca07291</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=3efa242a4762359017fdc82f316d43eb"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>3efa242a4762359017fdc82f316d43eb</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-19 12:26:06</sys_created_on>
+        <sys_id>fefa242a4762359017fdc82f316d43ee</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-19 12:26:06</sys_updated_on>
+        <value>Card executes on dealing</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=3efa242a4762359017fdc82f316d43eb"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>3efa242a4762359017fdc82f316d43eb</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-19 12:26:06</sys_created_on>
+        <sys_id>7efa242a4762359017fdc82f316d43ee</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-19 12:26:06</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{39e1c3c2-9a8d-4744-b8c3-de1c5ff8ca36.item.card_definition.ability_type}}=before_dealing</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>3efa242a4762359017fdc82f316d43eb</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-19 12:26:06</sys_created_on>
+        <sys_id>bafa242a4762359017fdc82f316d43ee</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-19 12:26:06</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=3efa242a4762359017fdc82f316d43eb"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=3efa242a4762359017fdc82f316d43eb"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">226aa4e64762359017fdc82f316d436c</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <extended_inputs/>
+        <flow display_value="START: Create Card Instances from a Player Deck">f6fa242a4762359017fdc82f316d43d3</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="Dynamic Flow">5ede711653223300414eddeeff7b1256</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>e3ec5f26-321d-463c-b6e0-0a74dca07291</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-19 12:26:06</sys_created_on>
+        <sys_id>7afa242a4762359017fdc82f316d43ef</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-19 12:52:26</sys_updated_on>
+        <ui_id>a7859a53-ce97-4f57-8902-37b984d29929</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=7afa242a4762359017fdc82f316d43ef"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>7afa242a4762359017fdc82f316d43ef</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-19 12:26:06</sys_created_on>
+        <sys_id>8ffa642a4762359017fdc82f316d4331</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-19 12:26:06</sys_updated_on>
+        <value>25bbe6f4476a3d5017fdc82f316d432c</value>
+        <variable display_value="Flow Template">6320ce1653223300414eddeeff7b1292</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=7afa242a4762359017fdc82f316d43ef"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>card_instance</field>
+        <id>7afa242a4762359017fdc82f316d43ef</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-19 12:26:06</sys_created_on>
+        <sys_id>cffa642a4762359017fdc82f316d4332</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-19 12:26:06</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_ext_input_7afa242a4762359017fdc82f316d43ef</table>
+        <value>{{de6e7adc-8c67-4a15-9955-5353c0d0707f.record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>flow</field>
+        <id>7afa242a4762359017fdc82f316d43ef</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-19 12:26:06</sys_created_on>
+        <sys_id>0ffa642a4762359017fdc82f316d4331</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-19 12:26:06</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_5ede711653223300414eddeeff7b1256</table>
+        <value>{{96bb8415-c37b-4562-bd52-7d52d94ffdc5.record.original_card_reference.ability_subflow.sys_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>flow_template</field>
+        <id>7afa242a4762359017fdc82f316d43ef</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-19 12:26:06</sys_created_on>
+        <sys_id>4bfa642a4762359017fdc82f316d4331</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-19 12:26:06</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_5ede711653223300414eddeeff7b1256</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>game_instance</field>
+        <id>7afa242a4762359017fdc82f316d43ef</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-19 12:26:06</sys_created_on>
+        <sys_id>83fa642a4762359017fdc82f316d4333</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-19 12:26:06</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_ext_input_7afa242a4762359017fdc82f316d43ef</table>
+        <value>{{subflow.game_instance}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>player_session</field>
+        <id>7afa242a4762359017fdc82f316d43ef</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-19 12:26:06</sys_created_on>
+        <sys_id>0ffa642a4762359017fdc82f316d4332</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-19 12:26:06</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_ext_input_7afa242a4762359017fdc82f316d43ef</table>
+        <value>{{subflow.player_session}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="id=7afa242a4762359017fdc82f316d43ef"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>card_instance</field>
+        <id>7afa242a4762359017fdc82f316d43ef</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-19 12:26:06</sys_created_on>
+        <sys_id>cffa642a4762359017fdc82f316d4332</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-19 12:26:06</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_ext_input_7afa242a4762359017fdc82f316d43ef</table>
+        <value>{{de6e7adc-8c67-4a15-9955-5353c0d0707f.record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>flow</field>
+        <id>7afa242a4762359017fdc82f316d43ef</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-19 12:26:06</sys_created_on>
+        <sys_id>0ffa642a4762359017fdc82f316d4331</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-19 12:26:06</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_5ede711653223300414eddeeff7b1256</table>
+        <value>{{96bb8415-c37b-4562-bd52-7d52d94ffdc5.record.original_card_reference.ability_subflow.sys_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>flow_template</field>
+        <id>7afa242a4762359017fdc82f316d43ef</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-19 12:26:06</sys_created_on>
+        <sys_id>4bfa642a4762359017fdc82f316d4331</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-19 12:26:06</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_5ede711653223300414eddeeff7b1256</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>game_instance</field>
+        <id>7afa242a4762359017fdc82f316d43ef</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-19 12:26:06</sys_created_on>
+        <sys_id>83fa642a4762359017fdc82f316d4333</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-19 12:26:06</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_ext_input_7afa242a4762359017fdc82f316d43ef</table>
+        <value>{{subflow.game_instance}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>player_session</field>
+        <id>7afa242a4762359017fdc82f316d43ef</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-19 12:26:06</sys_created_on>
+        <sys_id>0ffa642a4762359017fdc82f316d4332</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-19 12:26:06</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_ext_input_7afa242a4762359017fdc82f316d43ef</table>
+        <value>{{subflow.player_session}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=7afa242a4762359017fdc82f316d43ef^sys_idNOT IN3efa242a4762359017fdc82f316d43f1,b2fa642a4762359017fdc82f316d430f,bafa642a4762359017fdc82f316d4325"/>
+    <sys_hub_flow_logic_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=498332c7-2b6e-42b0-82a9-9f0a0d4937ea</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>x_168987_flow_de_0_player_session</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>player_session</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Player Session</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="">7afa242a4762359017fdc82f316d43ef</model>
+        <model_id>7afa242a4762359017fdc82f316d43ef</model_id>
+        <model_table>sys_hub_flow_logic_ext_input</model_table>
+        <name>var__m_sys_hub_flow_logic_ext_input_7afa242a4762359017fdc82f316d43ef</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_168987_flow_de_0_player_session">x_168987_flow_de_0_player_session</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_logic_ext_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-19 12:26:06</sys_created_on>
+        <sys_id>3efa242a4762359017fdc82f316d43f1</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-19 12:26:06</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_logic_ext_input>
+    <sys_hub_flow_logic_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=8e6c95b5-af4a-42f5-a485-481417e03d5c</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>x_168987_flow_de_0_card_instance</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>card_instance</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Card Instance</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="">7afa242a4762359017fdc82f316d43ef</model>
+        <model_id>7afa242a4762359017fdc82f316d43ef</model_id>
+        <model_table>sys_hub_flow_logic_ext_input</model_table>
+        <name>var__m_sys_hub_flow_logic_ext_input_7afa242a4762359017fdc82f316d43ef</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_168987_flow_de_0_card_instance">x_168987_flow_de_0_card_instance</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_logic_ext_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-19 12:26:06</sys_created_on>
+        <sys_id>b2fa642a4762359017fdc82f316d430f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-19 12:26:06</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_logic_ext_input>
+    <sys_hub_flow_logic_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=7a58a3f2-25f0-4114-a70d-a69edcc42766</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>x_168987_flow_de_0_game_instance</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>game_instance</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Game Instance</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="">7afa242a4762359017fdc82f316d43ef</model>
+        <model_id>7afa242a4762359017fdc82f316d43ef</model_id>
+        <model_table>sys_hub_flow_logic_ext_input</model_table>
+        <name>var__m_sys_hub_flow_logic_ext_input_7afa242a4762359017fdc82f316d43ef</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_168987_flow_de_0_game_instance">x_168987_flow_de_0_game_instance</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_logic_ext_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-19 12:26:06</sys_created_on>
+        <sys_id>bafa642a4762359017fdc82f316d4325</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-19 12:26:06</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_logic_ext_input>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=7afa242a4762359017fdc82f316d43ef"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=f6fa242a4762359017fdc82f316d43d3"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=f6fa242a4762359017fdc82f316d43d3"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_f6fa242a4762359017fdc82f316d43d3^sys_idNOT IN36fa242a4762359017fdc82f316d43e1,7afa242a4762359017fdc82f316d43e4,bafa242a4762359017fdc82f316d43de"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>player_deck</element>
+        <help/>
+        <hint/>
+        <label>Player Deck</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_f6fa242a4762359017fdc82f316d43d3</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-19 12:26:05</sys_created_on>
+        <sys_id>36fa242a4762359017fdc82f316d43e1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Flow Designer Marvel SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-19 12:26:05</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>player_session</element>
+        <help/>
+        <hint/>
+        <label>Player Session</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_f6fa242a4762359017fdc82f316d43d3</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-19 12:26:06</sys_created_on>
+        <sys_id>7afa242a4762359017fdc82f316d43e4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Flow Designer Marvel SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-19 12:26:06</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>game_instance</element>
+        <help/>
+        <hint/>
+        <label>Game Instance</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_f6fa242a4762359017fdc82f316d43d3</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-19 12:26:05</sys_created_on>
+        <sys_id>bafa242a4762359017fdc82f316d43de</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Flow Designer Marvel SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-19 12:26:05</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_f6fa242a4762359017fdc82f316d43d3"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_f6fa242a4762359017fdc82f316d43d3"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_f6fa242a4762359017fdc82f316d43d3"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=4724000,viewActivatedIn=naturalLanguage</attributes>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from>9357ea30476a3d5017fdc82f316d4375</copied_from>
+        <copied_from_name/>
+        <description/>
+        <internal_name>start_create_card_instances_from_a_player_deck</internal_name>
+        <label_cache>[{"name":"96bb8415-c37b-4562-bd52-7d52d94ffdc5.record.original_card_reference.ability_subflow.sys_id","label":"3 - Create Record➛Card Instance Record➛Original Card Reference➛Ability Subflow➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sys_hub_flow","column_name":"sys_id"},{"name":"cedbec77-f017-4e48-85e2-6d8a579034fe.__status__","label":"8 - Error Handler➛Error Status","reference_display":"Error Status","type":"object","base_type":"object","attributes":{"uiType":"object","uiTypeLabel":"Object","co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.player_session","label":"Input➛Player Session","reference":"x_168987_flow_de_0_player_session","reference_display":"Player Session","type":"reference","base_type":"reference","column_name":"","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"3f37330b-c11e-487c-9d10-a17b570041d5","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.player_deck.player","label":"Input➛Player Deck➛Player","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_player_deck","column_name":"player"},{"name":"39e1c3c2-9a8d-4744-b8c3-de1c5ff8ca36.item.card_definition.ability_subflow.name","label":"2 - For Each➛Player Deck Card Record➛Card Definition➛Ability Subflow➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"sys_hub_flow","column_name":"name"},{"name":"39e1c3c2-9a8d-4744-b8c3-de1c5ff8ca36.item.card_definition.ability_subflow","label":"2 - For Each➛Player Deck Card Record➛Card Definition➛Ability Subflow","reference":"sys_hub_flow","reference_display":"Flow","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_card_definition","column_name":"ability_subflow"},{"name":"39e1c3c2-9a8d-4744-b8c3-de1c5ff8ca36.item.card_definition.ability_type","label":"2 - For Each➛Player Deck Card Record➛Card Definition➛Ability Type","reference":"","reference_display":"Ability Type","type":"choice","base_type":"choice","parent_table_name":"x_168987_flow_de_0_card_definition","column_name":"ability_type","choices":[{"label":"-- None --","used":false,"rawLabel":"-- None --","selected":false,"missing":false,"image":"","reference":false,"value":""},{"used":false,"label":"On Reveal","rawLabel":"On Reveal","selected":false,"missing":false,"image":"","reference":false,"value":"on_reveal","parameters":{"name":"x_168987_flow_de_0_card_definition"}},{"used":false,"label":"Before Dealing","rawLabel":"Before Dealing","selected":false,"missing":false,"image":"","reference":false,"value":"before_dealing","parameters":{"name":"x_168987_flow_de_0_card_definition"}},{"used":false,"label":"Ongoing","rawLabel":"Ongoing","selected":false,"missing":false,"image":"","reference":false,"value":"ongoing","parameters":{"name":"x_168987_flow_de_0_card_definition"}},{"used":false,"label":"On Specific Turn","rawLabel":"On Specific Turn","selected":false,"missing":false,"image":"","reference":false,"value":"on_specific_turn","parameters":{"name":"x_168987_flow_de_0_card_definition"}},{"used":false,"label":"At End of Specific turn","rawLabel":"At End of Specific turn","selected":false,"missing":false,"image":"","reference":false,"value":"At End of Specific turn","parameters":{"name":"x_168987_flow_de_0_card_definition"}},{"used":false,"label":"No ability","rawLabel":"No ability","selected":false,"missing":false,"image":"","reference":false,"value":"no_ability","parameters":{"name":"x_168987_flow_de_0_card_definition"}},{"used":false,"label":"All turns once played","rawLabel":"All turns once played","selected":false,"missing":false,"image":"","reference":false,"value":"All turns once played","parameters":{"name":"x_168987_flow_de_0_card_definition"}},{"used":false,"label":"After Specific Turn","rawLabel":"After Specific Turn","selected":false,"missing":false,"image":"","reference":false,"value":"After Specific Turn","parameters":{"name":"x_168987_flow_de_0_card_definition"}},{"used":false,"label":"On Card Move","rawLabel":"On Card Move","selected":false,"missing":false,"image":"","reference":false,"value":"On Card Move","parameters":{"name":"x_168987_flow_de_0_card_definition"}},{"used":false,"label":"After each turn","rawLabel":"After each turn","selected":false,"missing":false,"image":"","reference":false,"value":"After each turn","parameters":{"name":"x_168987_flow_de_0_card_definition"}},{"used":false,"label":"Before each card is played","rawLabel":"Before each card is played","selected":false,"missing":false,"image":"","reference":false,"value":"Before each card is played","parameters":{"name":"x_168987_flow_de_0_card_definition"}}]},{"name":"subflow.player_deck","label":"Input➛Player Deck","reference":"x_168987_flow_de_0_player_deck","reference_display":"Player Deck","type":"reference","base_type":"reference","column_name":"","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"08a00eec-f469-4f1a-a202-f6de671a9845","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"5a642797-8db0-4b79-b69b-c431d1af6475.Records","label":"1 - Look Up Records➛Player Deck Card Records","reference":"x_168987_flow_de_0_player_deck_card","reference_display":"Player Deck Card","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"39e1c3c2-9a8d-4744-b8c3-de1c5ff8ca36.item.card_definition.cost","label":"2 - For Each➛Player Deck Card Record➛Card Definition➛Cost","reference":"","reference_display":"Cost","type":"integer","base_type":"integer","parent_table_name":"x_168987_flow_de_0_card_definition","column_name":"cost"},{"name":"39e1c3c2-9a8d-4744-b8c3-de1c5ff8ca36.item.card_definition","label":"2 - For Each➛Player Deck Card Record➛Card Definition","reference":"x_168987_flow_de_0_card_definition","reference_display":"Card Definition","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_player_deck_card","column_name":"card_definition"},{"name":"39e1c3c2-9a8d-4744-b8c3-de1c5ff8ca36.item.card_definition.power","label":"2 - For Each➛Player Deck Card Record➛Card Definition➛Power","reference":"","reference_display":"Power","type":"integer","base_type":"integer","parent_table_name":"x_168987_flow_de_0_card_definition","column_name":"power"},{"name":"subflow.game_instance","label":"Input➛Game Instance","reference":"x_168987_flow_de_0_game_instance","reference_display":"Game Instance","type":"reference","base_type":"reference","column_name":"","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"7465beef-a4df-4dac-a40b-defa7051b0fa","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"cedbec77-f017-4e48-85e2-6d8a579034fe.__status__.code","label":"8 - Top Level Catch➛Error Status➛Code","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","attributes":{}},{"name":"cedbec77-f017-4e48-85e2-6d8a579034fe.__status__.message","label":"8 - Top Level Catch➛Error Status➛Message","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"96bb8415-c37b-4562-bd52-7d52d94ffdc5.record","label":"3 - Create Record➛Card Instance Record","reference":"x_168987_flow_de_0_card_instance","reference_display":"Card Instance","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <master>true</master>
+        <name>START: Create Card Instances from a Player Deck</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="START: Create Card Instances from a Player Deck">f6fa242a4762359017fdc82f316d43d3</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-19 12:46:48</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d2bfa02247a2359017fdc82f316d431a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-19 12:46:48</sys_updated_on>
+        <type>subflow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=d2bfa02247a2359017fdc82f316d431a"/>
+    <sys_variable_value action="delete_multiple" query="document_key=d2bfa02247a2359017fdc82f316d431a"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=d2bfa02247a2359017fdc82f316d431a"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=d2bfa02247a2359017fdc82f316d431a"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=d2bfa02247a2359017fdc82f316d431a^sys_idNOT IN9ebfa02247a2359017fdc82f316d431a"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>d2bfa02247a2359017fdc82f316d431a</id>
+        <name>START: Create Card Instances from a Player Deck</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-19 12:46:48</sys_created_on>
+        <sys_id>9ebfa02247a2359017fdc82f316d431a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-19 12:46:48</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=9ebfa02247a2359017fdc82f316d431a"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=d2bfa02247a2359017fdc82f316d431a^sys_idNOT IN1ebfa02247a2359017fdc82f316d431b,96bfa02247a2359017fdc82f316d4335,dabfa02247a2359017fdc82f316d432d"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=7465beef-a4df-4dac-a40b-defa7051b0fa</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>x_168987_flow_de_0_game_instance</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>game_instance</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Game Instance</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="START: Create Card Instances from a Player Deck">d2bfa02247a2359017fdc82f316d431a</model>
+        <model_id>d2bfa02247a2359017fdc82f316d431a</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_d2bfa02247a2359017fdc82f316d431a</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_168987_flow_de_0_game_instance">x_168987_flow_de_0_game_instance</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-19 12:46:48</sys_created_on>
+        <sys_id>1ebfa02247a2359017fdc82f316d431b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-19 12:46:48</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=1ebfa02247a2359017fdc82f316d431b"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=3f37330b-c11e-487c-9d10-a17b570041d5</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>x_168987_flow_de_0_player_session</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>player_session</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Player Session</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="START: Create Card Instances from a Player Deck">d2bfa02247a2359017fdc82f316d431a</model>
+        <model_id>d2bfa02247a2359017fdc82f316d431a</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_d2bfa02247a2359017fdc82f316d431a</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_168987_flow_de_0_player_session">x_168987_flow_de_0_player_session</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-19 12:46:48</sys_created_on>
+        <sys_id>96bfa02247a2359017fdc82f316d4335</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-19 12:46:48</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=96bfa02247a2359017fdc82f316d4335"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=08a00eec-f469-4f1a-a202-f6de671a9845</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>player_deck</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Player Deck</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="START: Create Card Instances from a Player Deck">d2bfa02247a2359017fdc82f316d431a</model>
+        <model_id>d2bfa02247a2359017fdc82f316d431a</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_d2bfa02247a2359017fdc82f316d431a</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_168987_flow_de_0_player_deck">x_168987_flow_de_0_player_deck</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-19 12:46:48</sys_created_on>
+        <sys_id>dabfa02247a2359017fdc82f316d432d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-19 12:46:48</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=dabfa02247a2359017fdc82f316d432d"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=d2bfa02247a2359017fdc82f316d431a"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=d2bfa02247a2359017fdc82f316d431a"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=d2bfa02247a2359017fdc82f316d431a^sys_idNOT IN2abfa02247a2359017fdc82f316d438c,aabfa02247a2359017fdc82f316d43a7,eebfa02247a2359017fdc82f316d4393"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <attributes/>
+        <comment>Get all the cards in the player's deck</comment>
+        <display_text/>
+        <flow display_value="START: Create Card Instances from a Player Deck">d2bfa02247a2359017fdc82f316d431a</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-19 12:46:49</sys_created_on>
+        <sys_id>2abfa02247a2359017fdc82f316d438c</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-19 12:46:49</sys_updated_on>
+        <ui_id>5a642797-8db0-4b79-b69b-c431d1af6475</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=2abfa02247a2359017fdc82f316d438c"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>2abfa02247a2359017fdc82f316d438c</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-19 12:46:49</sys_created_on>
+        <sys_id>a2bfa02247a2359017fdc82f316d438e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-19 12:46:49</sys_updated_on>
+        <value>x_168987_flow_de_0_player_deck_card</value>
+        <variable display_value="Table">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=2abfa02247a2359017fdc82f316d438c"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>2abfa02247a2359017fdc82f316d438c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-19 12:46:49</sys_created_on>
+        <sys_id>6ebfa02247a2359017fdc82f316d438d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-19 12:46:49</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value>player_deck={{subflow.player_deck}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>2abfa02247a2359017fdc82f316d438c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-19 12:46:49</sys_created_on>
+        <sys_id>22bfa02247a2359017fdc82f316d438e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-19 12:46:49</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=2abfa02247a2359017fdc82f316d438c"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=2abfa02247a2359017fdc82f316d438c"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="START: Create Card Instances from a Player Deck">d2bfa02247a2359017fdc82f316d431a</flow>
+        <order>7</order>
+        <parent_ui_id>ac86adc5-5798-4b23-bde1-d4ba2434a8fc</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-19 12:46:49</sys_created_on>
+        <sys_id>aabfa02247a2359017fdc82f316d43a7</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-19 12:46:49</sys_updated_on>
+        <ui_id>14de0d00-e59a-4009-b325-ea8a06383123</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=aabfa02247a2359017fdc82f316d43a7"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>aabfa02247a2359017fdc82f316d43a7</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-19 12:46:49</sys_created_on>
+        <sys_id>a6bfa02247a2359017fdc82f316d43a9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-19 12:46:49</sys_updated_on>
+        <value>x_168987_flow_de_0_card_instance</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>aabfa02247a2359017fdc82f316d43a7</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-19 12:46:49</sys_created_on>
+        <sys_id>e2bfa02247a2359017fdc82f316d43a9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-19 12:46:49</sys_updated_on>
+        <value>status=in_hand</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=aabfa02247a2359017fdc82f316d43a7"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>aabfa02247a2359017fdc82f316d43a7</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-19 12:46:49</sys_created_on>
+        <sys_id>62bfa02247a2359017fdc82f316d43a9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-19 12:46:49</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{96bb8415-c37b-4562-bd52-7d52d94ffdc5.record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>aabfa02247a2359017fdc82f316d43a7</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-19 12:46:49</sys_created_on>
+        <sys_id>eabfa02247a2359017fdc82f316d43a8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-19 12:46:49</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>aabfa02247a2359017fdc82f316d43a7</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-19 12:46:49</sys_created_on>
+        <sys_id>aebfa02247a2359017fdc82f316d43a8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-19 12:46:49</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=aabfa02247a2359017fdc82f316d43a7"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=aabfa02247a2359017fdc82f316d43a7"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="START: Create Card Instances from a Player Deck">d2bfa02247a2359017fdc82f316d431a</flow>
+        <order>3</order>
+        <parent_ui_id>39e1c3c2-9a8d-4744-b8c3-de1c5ff8ca36</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-19 12:46:49</sys_created_on>
+        <sys_id>eebfa02247a2359017fdc82f316d4393</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-19 12:46:49</sys_updated_on>
+        <ui_id>96bb8415-c37b-4562-bd52-7d52d94ffdc5</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=eebfa02247a2359017fdc82f316d4393"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>eebfa02247a2359017fdc82f316d4393</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-19 12:46:49</sys_created_on>
+        <sys_id>e2bfa02247a2359017fdc82f316d4395</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-19 12:46:49</sys_updated_on>
+        <value>x_168987_flow_de_0_card_instance</value>
+        <variable display_value="Table">61e05916c31332002841b63b12d3aee4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=eebfa02247a2359017fdc82f316d4393"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>eebfa02247a2359017fdc82f316d4393</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-19 12:46:49</sys_created_on>
+        <sys_id>aebfa02247a2359017fdc82f316d4394</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-19 12:46:49</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>eebfa02247a2359017fdc82f316d4393</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-19 12:46:49</sys_created_on>
+        <sys_id>62bfa02247a2359017fdc82f316d4395</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-19 12:46:49</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value>current_cost={{39e1c3c2-9a8d-4744-b8c3-de1c5ff8ca36.item.card_definition.cost}}^current_power={{39e1c3c2-9a8d-4744-b8c3-de1c5ff8ca36.item.card_definition.power}}^original_cost={{39e1c3c2-9a8d-4744-b8c3-de1c5ff8ca36.item.card_definition.cost}}^original_power={{39e1c3c2-9a8d-4744-b8c3-de1c5ff8ca36.item.card_definition.power}}^original_card_reference={{39e1c3c2-9a8d-4744-b8c3-de1c5ff8ca36.item.card_definition}}^player_session={{subflow.player_session}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=eebfa02247a2359017fdc82f316d4393"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=eebfa02247a2359017fdc82f316d4393"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=d2bfa02247a2359017fdc82f316d431a"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=d2bfa02247a2359017fdc82f316d431a^sys_idNOT IN52bfa02247a2359017fdc82f316d4382,5abfa02247a2359017fdc82f316d434b,92bfa02247a2359017fdc82f316d4344,dabfa02247a2359017fdc82f316d4347"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">5e5ba2f4476a3d5017fdc82f316d4392</block>
+        <comment/>
+        <connected_to>e3ec5f26-321d-463c-b6e0-0a74dca07291</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="START: Create Card Instances from a Player Deck">d2bfa02247a2359017fdc82f316d431a</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>6</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>39e1c3c2-9a8d-4744-b8c3-de1c5ff8ca36</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-19 12:46:49</sys_created_on>
+        <sys_id>52bfa02247a2359017fdc82f316d4382</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-19 12:46:49</sys_updated_on>
+        <ui_id>ac86adc5-5798-4b23-bde1-d4ba2434a8fc</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=52bfa02247a2359017fdc82f316d4382"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=52bfa02247a2359017fdc82f316d4382"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=52bfa02247a2359017fdc82f316d4382"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">226aa4e64762359017fdc82f316d436c</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <extended_inputs/>
+        <flow display_value="START: Create Card Instances from a Player Deck">d2bfa02247a2359017fdc82f316d431a</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="Dynamic Flow">5ede711653223300414eddeeff7b1256</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>e3ec5f26-321d-463c-b6e0-0a74dca07291</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-19 12:46:49</sys_created_on>
+        <sys_id>5abfa02247a2359017fdc82f316d434b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-19 12:46:49</sys_updated_on>
+        <ui_id>a7859a53-ce97-4f57-8902-37b984d29929</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=5abfa02247a2359017fdc82f316d434b"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>5abfa02247a2359017fdc82f316d434b</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-19 12:46:49</sys_created_on>
+        <sys_id>1ebfa02247a2359017fdc82f316d437f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-19 12:46:49</sys_updated_on>
+        <value>25bbe6f4476a3d5017fdc82f316d432c</value>
+        <variable display_value="Flow Template">6320ce1653223300414eddeeff7b1292</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=5abfa02247a2359017fdc82f316d434b"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>card_instance</field>
+        <id>5abfa02247a2359017fdc82f316d434b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-19 12:46:49</sys_created_on>
+        <sys_id>5ebfa02247a2359017fdc82f316d4380</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-19 12:46:49</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_ext_input_5abfa02247a2359017fdc82f316d434b</table>
+        <value>{{de6e7adc-8c67-4a15-9955-5353c0d0707f.record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>flow</field>
+        <id>5abfa02247a2359017fdc82f316d434b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-19 12:46:49</sys_created_on>
+        <sys_id>9abfa02247a2359017fdc82f316d437f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-19 12:46:49</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_5ede711653223300414eddeeff7b1256</table>
+        <value>{{96bb8415-c37b-4562-bd52-7d52d94ffdc5.record.original_card_reference.ability_subflow.sys_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>flow_template</field>
+        <id>5abfa02247a2359017fdc82f316d434b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-19 12:46:49</sys_created_on>
+        <sys_id>d6bfa02247a2359017fdc82f316d437f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-19 12:46:49</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_5ede711653223300414eddeeff7b1256</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>game_instance</field>
+        <id>5abfa02247a2359017fdc82f316d434b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-19 12:46:49</sys_created_on>
+        <sys_id>12bfa02247a2359017fdc82f316d4381</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-19 12:46:49</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_ext_input_5abfa02247a2359017fdc82f316d434b</table>
+        <value>{{subflow.game_instance}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>player_session</field>
+        <id>5abfa02247a2359017fdc82f316d434b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-19 12:46:49</sys_created_on>
+        <sys_id>9abfa02247a2359017fdc82f316d4380</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-19 12:46:49</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_ext_input_5abfa02247a2359017fdc82f316d434b</table>
+        <value>{{subflow.player_session}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="id=5abfa02247a2359017fdc82f316d434b"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>card_instance</field>
+        <id>5abfa02247a2359017fdc82f316d434b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-19 12:46:49</sys_created_on>
+        <sys_id>5ebfa02247a2359017fdc82f316d4380</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-19 12:46:49</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_ext_input_5abfa02247a2359017fdc82f316d434b</table>
+        <value>{{de6e7adc-8c67-4a15-9955-5353c0d0707f.record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>flow</field>
+        <id>5abfa02247a2359017fdc82f316d434b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-19 12:46:49</sys_created_on>
+        <sys_id>9abfa02247a2359017fdc82f316d437f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-19 12:46:49</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_5ede711653223300414eddeeff7b1256</table>
+        <value>{{96bb8415-c37b-4562-bd52-7d52d94ffdc5.record.original_card_reference.ability_subflow.sys_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>flow_template</field>
+        <id>5abfa02247a2359017fdc82f316d434b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-19 12:46:49</sys_created_on>
+        <sys_id>d6bfa02247a2359017fdc82f316d437f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-19 12:46:49</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_5ede711653223300414eddeeff7b1256</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>game_instance</field>
+        <id>5abfa02247a2359017fdc82f316d434b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-19 12:46:49</sys_created_on>
+        <sys_id>12bfa02247a2359017fdc82f316d4381</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-19 12:46:49</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_ext_input_5abfa02247a2359017fdc82f316d434b</table>
+        <value>{{subflow.game_instance}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>player_session</field>
+        <id>5abfa02247a2359017fdc82f316d434b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-19 12:46:49</sys_created_on>
+        <sys_id>9abfa02247a2359017fdc82f316d4380</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-19 12:46:49</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_ext_input_5abfa02247a2359017fdc82f316d434b</table>
+        <value>{{subflow.player_session}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=5abfa02247a2359017fdc82f316d434b^sys_idNOT IN5abfa02247a2359017fdc82f316d435a,5ebfa02247a2359017fdc82f316d4372,d2bfa02247a2359017fdc82f316d4368"/>
+    <sys_hub_flow_logic_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=498332c7-2b6e-42b0-82a9-9f0a0d4937ea</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>x_168987_flow_de_0_player_session</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>player_session</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Player Session</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="">5abfa02247a2359017fdc82f316d434b</model>
+        <model_id>5abfa02247a2359017fdc82f316d434b</model_id>
+        <model_table>sys_hub_flow_logic_ext_input</model_table>
+        <name>var__m_sys_hub_flow_logic_ext_input_5abfa02247a2359017fdc82f316d434b</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_168987_flow_de_0_player_session">x_168987_flow_de_0_player_session</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_logic_ext_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-19 12:46:49</sys_created_on>
+        <sys_id>5abfa02247a2359017fdc82f316d435a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-19 12:46:49</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_logic_ext_input>
+    <sys_hub_flow_logic_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=7a58a3f2-25f0-4114-a70d-a69edcc42766</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>x_168987_flow_de_0_game_instance</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>game_instance</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Game Instance</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="">5abfa02247a2359017fdc82f316d434b</model>
+        <model_id>5abfa02247a2359017fdc82f316d434b</model_id>
+        <model_table>sys_hub_flow_logic_ext_input</model_table>
+        <name>var__m_sys_hub_flow_logic_ext_input_5abfa02247a2359017fdc82f316d434b</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_168987_flow_de_0_game_instance">x_168987_flow_de_0_game_instance</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_logic_ext_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-19 12:46:49</sys_created_on>
+        <sys_id>5ebfa02247a2359017fdc82f316d4372</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-19 12:46:49</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_logic_ext_input>
+    <sys_hub_flow_logic_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=8e6c95b5-af4a-42f5-a485-481417e03d5c</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>x_168987_flow_de_0_card_instance</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>card_instance</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Card Instance</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="">5abfa02247a2359017fdc82f316d434b</model>
+        <model_id>5abfa02247a2359017fdc82f316d434b</model_id>
+        <model_table>sys_hub_flow_logic_ext_input</model_table>
+        <name>var__m_sys_hub_flow_logic_ext_input_5abfa02247a2359017fdc82f316d434b</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_168987_flow_de_0_card_instance">x_168987_flow_de_0_card_instance</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_logic_ext_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-19 12:46:49</sys_created_on>
+        <sys_id>d2bfa02247a2359017fdc82f316d4368</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-19 12:46:49</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_logic_ext_input>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=5abfa02247a2359017fdc82f316d434b"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">df57ea70476a3d5017fdc82f316d43ec</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="START: Create Card Instances from a Player Deck">d2bfa02247a2359017fdc82f316d431a</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-19 12:46:49</sys_created_on>
+        <sys_id>92bfa02247a2359017fdc82f316d4344</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-19 12:46:49</sys_updated_on>
+        <ui_id>39e1c3c2-9a8d-4744-b8c3-de1c5ff8ca36</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=92bfa02247a2359017fdc82f316d4344"/>
+    <sys_element_mapping action="delete_multiple" query="id=92bfa02247a2359017fdc82f316d4344"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>92bfa02247a2359017fdc82f316d4344</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-19 12:46:49</sys_created_on>
+        <sys_id>52bfa02247a2359017fdc82f316d4347</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-19 12:46:49</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{5a642797-8db0-4b79-b69b-c431d1af6475.Records}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=92bfa02247a2359017fdc82f316d4344"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=92bfa02247a2359017fdc82f316d4344"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">d25ba2f4476a3d5017fdc82f316d438a</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="START: Create Card Instances from a Player Deck">d2bfa02247a2359017fdc82f316d431a</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>39e1c3c2-9a8d-4744-b8c3-de1c5ff8ca36</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-19 12:46:49</sys_created_on>
+        <sys_id>dabfa02247a2359017fdc82f316d4347</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-19 12:46:49</sys_updated_on>
+        <ui_id>e3ec5f26-321d-463c-b6e0-0a74dca07291</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=dabfa02247a2359017fdc82f316d4347"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>dabfa02247a2359017fdc82f316d4347</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-19 12:46:49</sys_created_on>
+        <sys_id>9ebfa02247a2359017fdc82f316d434a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-19 12:46:49</sys_updated_on>
+        <value>Card executes on dealing</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=dabfa02247a2359017fdc82f316d4347"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>dabfa02247a2359017fdc82f316d4347</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-19 12:46:49</sys_created_on>
+        <sys_id>1ebfa02247a2359017fdc82f316d434a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-19 12:46:49</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{39e1c3c2-9a8d-4744-b8c3-de1c5ff8ca36.item.card_definition.ability_type}}=before_dealing</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>dabfa02247a2359017fdc82f316d4347</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-19 12:46:49</sys_created_on>
+        <sys_id>5abfa02247a2359017fdc82f316d434a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-19 12:46:49</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=dabfa02247a2359017fdc82f316d4347"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=dabfa02247a2359017fdc82f316d4347"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=d2bfa02247a2359017fdc82f316d431a"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=d2bfa02247a2359017fdc82f316d431a"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_d2bfa02247a2359017fdc82f316d431a^sys_idNOT IN1ebfa02247a2359017fdc82f316d433c,9ebfa02247a2359017fdc82f316d4331,d2bfa02247a2359017fdc82f316d432a"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>player_session</element>
+        <help/>
+        <hint/>
+        <label>Player Session</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_d2bfa02247a2359017fdc82f316d431a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-19 12:46:49</sys_created_on>
+        <sys_id>1ebfa02247a2359017fdc82f316d433c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Flow Designer Marvel SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-19 12:46:49</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>player_deck</element>
+        <help/>
+        <hint/>
+        <label>Player Deck</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_d2bfa02247a2359017fdc82f316d431a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-19 12:46:48</sys_created_on>
+        <sys_id>9ebfa02247a2359017fdc82f316d4331</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Flow Designer Marvel SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-19 12:46:48</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>game_instance</element>
+        <help/>
+        <hint/>
+        <label>Game Instance</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_d2bfa02247a2359017fdc82f316d431a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-19 12:46:48</sys_created_on>
+        <sys_id>d2bfa02247a2359017fdc82f316d432a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Flow Designer Marvel SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-19 12:46:48</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_d2bfa02247a2359017fdc82f316d431a"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_d2bfa02247a2359017fdc82f316d431a"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_d2bfa02247a2359017fdc82f316d431a"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>f6fa242a4762359017fdc82f316d43d3</sys_id>
+        <latest_snapshot>d2bfa02247a2359017fdc82f316d431a</latest_snapshot>
+        <compiler_build>glide-vancouver-07-06-2023__patch2-hotfix1-10-04-2023_10-06-2023_1235.zip</compiler_build>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=f6fa242a4762359017fdc82f316d43d3"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=f6fa242a4762359017fdc82f316d43d3^sys_idNOT INaebfa02247a2359017fdc82f316d43ed"/>
+    <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"aebfa02247a2359017fdc82f316d43ed","name":"plan","plan_signature":null}}</plan>
+        <plan_id display_value="START: Create Card Instances from a Player Deck">f6fa242a4762359017fdc82f316d43d3</plan_id>
+        <snapshot>c0a0f86247a2359017fdc82f316d430d</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-19 12:46:50</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>aebfa02247a2359017fdc82f316d43ed</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-19 12:46:50</sys_updated_on>
+    </sys_flow_subflow_plan>
+</record_update>

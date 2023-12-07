@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_dictionary action="INSERT_OR_UPDATE" element="user" table="x_168987_flow_de_0_player_session">
+    <sys_dictionary action="INSERT_OR_UPDATE" element="player_1_session" table="x_168987_flow_de_0_matchmaking_queue">
         <active>true</active>
         <array>false</array>
         <attributes/>
         <audit>false</audit>
-        <calculation/>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
         <choice/>
         <choice_field/>
         <choice_table/>
-        <column_label>User</column_label>
+        <column_label>Player 1 Session</column_label>
         <comments/>
         <create_roles/>
         <default_value/>
@@ -21,7 +26,7 @@
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>user</element>
+        <element>player_1_session</element>
         <element_reference>false</element_reference>
         <foreign_database/>
         <formula/>
@@ -29,13 +34,13 @@
         <function_field>false</function_field>
         <internal_type display_value="Reference">reference</internal_type>
         <mandatory>false</mandatory>
-        <max_length>40</max_length>
-        <name>x_168987_flow_de_0_player_session</name>
+        <max_length>32</max_length>
+        <name>x_168987_flow_de_0_matchmaking_queue</name>
         <next_element/>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
-        <reference display_value="" name="sys_user">sys_user</reference>
+        <reference display_value="" name="x_168987_flow_de_0_player_session">x_168987_flow_de_0_player_session</reference>
         <reference_cascade_rule/>
         <reference_floats>false</reference_floats>
         <reference_key/>
@@ -46,14 +51,14 @@
         <staged>false</staged>
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2023-10-30 02:15:56</sys_created_on>
-        <sys_name>User</sys_name>
+        <sys_created_on>2023-11-19 12:54:26</sys_created_on>
+        <sys_name>Player 1 Session</sys_name>
         <sys_package display_value="Flow Designer Marvel SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_update_name>sys_dictionary_x_168987_flow_de_0_player_session_user</sys_update_name>
+        <sys_update_name>sys_dictionary_x_168987_flow_de_0_matchmaking_queue_player_1_session</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-11-18 23:29:55</sys_updated_on>
+        <sys_updated_on>2023-11-19 12:54:26</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
