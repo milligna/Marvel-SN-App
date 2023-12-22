@@ -5,6 +5,7 @@
         <element label="Current Turn Number" max_length="40" name="current_turn_number" type="integer"/>
         <element label="Game Instance" max_length="32" name="game_instance" reference="x_168987_flow_de_0_game_instance" type="reference"/>
         <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element display="true" label="Short Description" max_length="40" name="short_description" type="string"/>
         <element choice="3" label="Turn Status" max_length="40" name="turn_status" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Started" sequence="0" value="started"/>
