@@ -7,6 +7,112 @@
         <composition>[
     {
         "definition": {
+            "id": "d37ce8abca89d02905fed903c8e34d8e",
+            "type": "MACROPONENT"
+        },
+        "elementId": "refresh_deck",
+        "elementLabel": "Refresh Deck",
+        "eventMappings": [
+            {
+                "eventMappingId": "clotpeeyjsaaggdduddbhhpwyzyefju",
+                "isConfiguration": false,
+                "offRowStorageId": null,
+                "sourceEventApiName": "sn_button.NOW_BUTTON#CLICKED",
+                "sourceEventCorrelationId": null,
+                "sourceEventDefinition": {
+                    "apiName": "sn_button.NOW_BUTTON#CLICKED",
+                    "id": null,
+                    "type": "UXEVENT"
+                },
+                "sourceEventSysId": null,
+                "targets": [
+                    {
+                        "broker": null,
+                        "clientScript": null,
+                        "conditional": null,
+                        "declarativeAction": null,
+                        "event": null,
+                        "operation": {
+                            "dataBrokerId": "b997a84053021010cbc2ddeeff7b1228",
+                            "operationName": "REFRESH",
+                            "parentResourceId": "get_player_cards",
+                            "payload": {
+                                "type": "JSON_LITERAL",
+                                "value": {}
+                            }
+                        },
+                        "targetId": "clotpeeyjsaaggddvddbhhpffbbmnlfho",
+                        "type": "DATABROKER_OP"
+                    },
+                    {
+                        "broker": null,
+                        "clientScript": null,
+                        "conditional": null,
+                        "declarativeAction": null,
+                        "event": null,
+                        "operation": {
+                            "dataBrokerId": "9664d48053461010cbc2ddeeff7b128e",
+                            "operationName": "REFRESH",
+                            "parentResourceId": "get_deck_record",
+                            "payload": {
+                                "type": "JSON_LITERAL",
+                                "value": {}
+                            }
+                        },
+                        "targetId": "clotpgvmzaaggjjdddbhhpbbzffjaggaaq",
+                        "type": "DATABROKER_OP"
+                    }
+                ]
+            }
+        ],
+        "isHidden": {
+            "type": "JSON_LITERAL",
+            "value": null
+        },
+        "preset": null,
+        "propertyValues": {
+            "configAria": {
+                "type": "JSON_LITERAL",
+                "value": {}
+            },
+            "disabled": {
+                "type": "JSON_LITERAL",
+                "value": false
+            },
+            "icon": {
+                "type": "JSON_LITERAL",
+                "value": null
+            },
+            "label": {
+                "type": "TRANSLATION_LITERAL",
+                "value": {
+                    "code": null,
+                    "comment": "",
+                    "message": "Refresh Deck"
+                }
+            },
+            "size": {
+                "type": "JSON_LITERAL",
+                "value": "md"
+            },
+            "tooltipContent": {
+                "type": "TRANSLATION_LITERAL",
+                "value": {
+                    "code": null,
+                    "comment": "",
+                    "message": "Enter a label"
+                }
+            },
+            "variant": {
+                "type": "JSON_LITERAL",
+                "value": "secondary"
+            }
+        },
+        "slot": null,
+        "styles": null
+    },
+    {
+        "definition": {
             "id": "d356d14b6e293a3020a244b63d278d8f",
             "type": "MACROPONENT"
         },
@@ -26,11 +132,11 @@
                         "id": "d37ce8abca89d02905fed903c8e34d8e",
                         "type": "MACROPONENT"
                     },
-                    "elementId": "refresh_deck",
-                    "elementLabel": "Refresh Deck",
+                    "elementId": "deck_list",
+                    "elementLabel": "Back to Deck List button",
                     "eventMappings": [
                         {
-                            "eventMappingId": "clotpeeyjsaaggdduddbhhpwyzyefju",
+                            "eventMappingId": "clqhkgaajgaabbeccddbhhoihwrwhzff",
                             "isConfiguration": false,
                             "offRowStorageId": null,
                             "sourceEventApiName": "sn_button.NOW_BUTTON#CLICKED",
@@ -47,36 +153,70 @@
                                     "clientScript": null,
                                     "conditional": null,
                                     "declarativeAction": null,
-                                    "event": null,
-                                    "operation": {
-                                        "dataBrokerId": "b997a84053021010cbc2ddeeff7b1228",
-                                        "operationName": "REFRESH",
-                                        "parentResourceId": "get_player_cards",
+                                    "event": {
+                                        "apiName": "x_168987_flow_de_0.NAV_ITEM_SELECTED_RELAY_9d39e626479e715017fdc82f316d432a",
                                         "payload": {
-                                            "type": "JSON_LITERAL",
-                                            "value": {}
-                                        }
+                                            "container": {
+                                                "external": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": null
+                                                },
+                                                "fields": {
+                                                    "container": {
+                                                        "userid": {
+                                                            "binding": {
+                                                                "address": [
+                                                                    "get_deck_record",
+                                                                    "result",
+                                                                    "player",
+                                                                    "value"
+                                                                ]
+                                                            },
+                                                            "type": "DATA_OUTPUT_BINDING"
+                                                        }
+                                                    },
+                                                    "type": "MAP_CONTAINER"
+                                                },
+                                                "multiInstField": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": null
+                                                },
+                                                "navigationOptions": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": null
+                                                },
+                                                "params": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": null
+                                                },
+                                                "passiveNavigation": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": null
+                                                },
+                                                "redirect": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": null
+                                                },
+                                                "route": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": "decks-to-edit"
+                                                },
+                                                "targetRoute": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": null
+                                                },
+                                                "title": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": null
+                                                }
+                                            },
+                                            "type": "MAP_CONTAINER"
+                                        },
+                                        "sysId": "db140a994793711017fdc82f316d43d8"
                                     },
-                                    "targetId": "clotpeeyjsaaggddvddbhhpffbbmnlfho",
-                                    "type": "DATABROKER_OP"
-                                },
-                                {
-                                    "broker": null,
-                                    "clientScript": null,
-                                    "conditional": null,
-                                    "declarativeAction": null,
-                                    "event": null,
-                                    "operation": {
-                                        "dataBrokerId": "9664d48053461010cbc2ddeeff7b128e",
-                                        "operationName": "REFRESH",
-                                        "parentResourceId": "get_deck_record",
-                                        "payload": {
-                                            "type": "JSON_LITERAL",
-                                            "value": {}
-                                        }
-                                    },
-                                    "targetId": "clotpgvmzaaggjjdddbhhpbbzffjaggaaq",
-                                    "type": "DATABROKER_OP"
+                                    "operation": null,
+                                    "targetId": "clqhkgaajhaabbeddddbhhokquvvrbbk",
+                                    "type": "EVENT"
                                 }
                             ]
                         }
@@ -104,7 +244,7 @@
                             "value": {
                                 "code": null,
                                 "comment": "",
-                                "message": "Refresh Deck"
+                                "message": "Back to Deck list"
                             }
                         },
                         "size": {
@@ -209,7 +349,7 @@
                     "children": null,
                     "items": [
                         {
-                            "element_id": "refresh_deck",
+                            "element_id": "deck_list",
                             "styles": {}
                         },
                         {
@@ -1457,7 +1597,7 @@
     }
 ]</data>
         <description/>
-        <dispatched_events/>
+        <dispatched_events>db140a994793711017fdc82f316d43d8</dispatched_events>
         <ext_controller_dep/>
         <extends display_value="Page Template">19be392623033300f4b4c50947bf65ba</extends>
         <extension_point/>
@@ -1490,6 +1630,10 @@
     "default": {
         "children": null,
         "items": [
+            {
+                "element_id": "refresh_deck",
+                "styles": {}
+            },
             {
                 "element_id": "header",
                 "styles": {
@@ -1563,6 +1707,9 @@
     }
 ]</props>
         <required_translations>[ {
+  "message" : "Back to Deck list",
+  "comment" : ""
+}, {
   "message" : "Enter a label",
   "comment" : ""
 }, {
@@ -1581,14 +1728,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-11-07 11:21:53</sys_created_on>
         <sys_id>9d39e626479e715017fdc82f316d432a</sys_id>
-        <sys_mod_count>190</sys_mod_count>
+        <sys_mod_count>194</sys_mod_count>
         <sys_name>Default</sys_name>
         <sys_package display_value="Flow Designer Marvel SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_update_name>sys_ux_macroponent_9d39e626479e715017fdc82f316d432a</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-11-11 09:40:27</sys_updated_on>
+        <sys_updated_on>2023-12-23 04:35:28</sys_updated_on>
     </sys_ux_macroponent>
     <sys_translated_text action="delete_multiple" query="documentkey=9d39e626479e715017fdc82f316d432a"/>
 </record_update>
