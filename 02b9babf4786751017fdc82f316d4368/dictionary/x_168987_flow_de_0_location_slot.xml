@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element db_object_id="fed152b14762719017fdc82f316d43c7" label="Location Slot" max_length="40" name="x_168987_flow_de_0_location_slot" type="collection">
+    <element db_object_id="fed152b14762719017fdc82f316d43c7" label="Game Location Slot" max_length="40" name="x_168987_flow_de_0_location_slot" type="collection">
         <element default="true" label="Cards can be played here" max_length="40" name="cards_can_be_played_here" type="boolean"/>
+        <element attributes="encode_utf8=false" label="Related Card Instance" max_length="32" name="card_instance" reference="x_168987_flow_de_0_card_instance" type="reference"/>
         <element label="Location Ability Applied?" max_length="40" name="location_ability_applied" type="boolean"/>
         <element label="Location Instance" max_length="32" name="location_instance" reference="x_168987_flow_de_0_location_instance" type="reference"/>
         <element label="Player" max_length="32" name="player" reference="x_168987_flow_de_0_player_session" type="reference"/>
         <element label="Slot Number" max_length="40" name="slot_number" type="integer"/>
         <index name="index">
-            <element name="location_instance"/>
+            <element name="card_instance"/>
         </index>
         <index name="index2">
+            <element name="location_instance"/>
+        </index>
+        <index name="index3">
             <element name="player"/>
         </index>
     </element>

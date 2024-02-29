@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element db_object_id="f2d36f7f474a751017fdc82f316d4395" label="Card Instance" max_length="40" name="x_168987_flow_de_0_card_instance" type="collection">
+    <element db_object_id="f2d36f7f474a751017fdc82f316d4395" label="Game Card Instance" max_length="40" name="x_168987_flow_de_0_card_instance" type="collection">
         <element label="Can't be destroyed" max_length="40" name="can_t_be_destroyed" type="boolean"/>
         <element label="Current Cost" max_length="40" name="current_cost" type="integer"/>
         <element label="Current Location" max_length="32" name="current_location" reference="x_168987_flow_de_0_location_instance" type="reference"/>
@@ -7,6 +7,7 @@
         <element label="Deck Order" max_length="40" name="deck_order" type="integer"/>
         <element label="Draw sequence" max_length="40" name="draw_sequence" type="integer"/>
         <element label="Hand Order" max_length="40" name="hand_order" type="integer"/>
+        <element label="Order Played" max_length="40" name="order_played" type="integer"/>
         <element display="true" label="Original Card Reference" max_length="32" name="original_card_reference" reference="x_168987_flow_de_0_card_definition" type="reference"/>
         <element label="Original Cost" max_length="40" name="original_cost" type="integer"/>
         <element label="Original Power" max_length="40" name="original_power" type="integer"/>

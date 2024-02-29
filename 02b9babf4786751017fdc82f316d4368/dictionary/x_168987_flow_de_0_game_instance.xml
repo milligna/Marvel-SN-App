@@ -10,23 +10,30 @@
         <element label="Player 1" max_length="32" name="player_1" reference="x_168987_flow_de_0_player_session" type="reference"/>
         <element label="Player 2" max_length="32" name="player_2" reference="x_168987_flow_de_0_player_session" type="reference"/>
         <element display="true" label="Short Description" max_length="80" name="short_description" type="string"/>
+        <element label="Winning Player" max_length="32" name="winning_player" reference="x_168987_flow_de_0_player_session" type="reference"/>
         <index name="index">
-            <element name="location_1"/>
+            <element name="current_active_player"/>
         </index>
         <index name="index2">
-            <element name="location_2"/>
+            <element name="location_1"/>
         </index>
         <index name="index3">
-            <element name="location_3"/>
+            <element name="location_2"/>
         </index>
         <index name="index4">
-            <element name="matchmaking_instance"/>
+            <element name="location_3"/>
         </index>
         <index name="index5">
-            <element name="player_1"/>
+            <element name="matchmaking_instance"/>
         </index>
         <index name="index6">
+            <element name="player_1"/>
+        </index>
+        <index name="index7">
             <element name="player_2"/>
+        </index>
+        <index name="index8">
+            <element name="winning_player"/>
         </index>
     </element>
 </database>
