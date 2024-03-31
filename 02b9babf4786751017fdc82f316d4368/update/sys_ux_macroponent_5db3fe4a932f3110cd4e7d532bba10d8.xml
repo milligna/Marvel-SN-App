@@ -55,7 +55,7 @@
                         },
                         "variant": {
                             "type": "JSON_LITERAL",
-                            "value": "header-primary"
+                            "value": "title-primary"
                         },
                         "wontWrap": {
                             "type": "JSON_LITERAL",
@@ -102,7 +102,7 @@
                         },
                         "variant": {
                             "type": "JSON_LITERAL",
-                            "value": "header-primary"
+                            "value": "title-secondary"
                         },
                         "wontWrap": {
                             "type": "JSON_LITERAL",
@@ -146,7 +146,7 @@
                         },
                         "variant": {
                             "type": "JSON_LITERAL",
-                            "value": "header-primary"
+                            "value": "title-primary"
                         },
                         "wontWrap": {
                             "type": "JSON_LITERAL",
@@ -193,7 +193,7 @@
                         },
                         "variant": {
                             "type": "JSON_LITERAL",
-                            "value": "header-primary"
+                            "value": "title-secondary"
                         },
                         "wontWrap": {
                             "type": "JSON_LITERAL",
@@ -237,7 +237,7 @@
                         },
                         "variant": {
                             "type": "JSON_LITERAL",
-                            "value": "header-primary"
+                            "value": "title-primary"
                         },
                         "wontWrap": {
                             "type": "JSON_LITERAL",
@@ -284,7 +284,7 @@
                         },
                         "variant": {
                             "type": "JSON_LITERAL",
-                            "value": "header-primary"
+                            "value": "title-secondary"
                         },
                         "wontWrap": {
                             "type": "JSON_LITERAL",
@@ -309,37 +309,37 @@
                         {
                             "element_id": "current_player",
                             "styles": {
-                                "width": "50%"
+                                "width": ""
                             }
                         },
                         {
                             "element_id": "current_player_name",
                             "styles": {
-                                "width": "50%"
+                                "width": ""
                             }
                         },
                         {
                             "element_id": "current_turn_label",
                             "styles": {
-                                "width": "50%"
+                                "width": ""
                             }
                         },
                         {
                             "element_id": "current_turn",
                             "styles": {
-                                "width": "50%"
+                                "width": ""
                             }
                         },
                         {
                             "element_id": "number_of_turns_label",
                             "styles": {
-                                "width": "50%"
+                                "width": ""
                             }
                         },
                         {
                             "element_id": "number_of_turns",
                             "styles": {
-                                "width": "50%"
+                                "width": ""
                             }
                         }
                     ],
@@ -347,7 +347,8 @@
                     "rules": null,
                     "styles": {
                         "flex-direction": "row",
-                        "flex-wrap": "wrap"
+                        "flex-wrap": "wrap",
+                        "justify-content": "space-between"
                     },
                     "templateId": "5832fd4d53c31010e6bcddeeff7b12db",
                     "type": "flex"
@@ -443,7 +444,7 @@
                         },
                         "variant": {
                             "type": "JSON_LITERAL",
-                            "value": "header-primary"
+                            "value": "header-tertiary"
                         },
                         "wontWrap": {
                             "type": "JSON_LITERAL",
@@ -471,11 +472,11 @@
                         "composition": [
                             {
                                 "definition": {
-                                    "id": "1f6e0643eca7a637e36bd7833549ec9e",
+                                    "id": "e772e788e32ce32b8daa2ac7b092d2c6",
                                     "type": "MACROPONENT"
                                 },
-                                "elementId": "p1_hand_card_placeholder",
-                                "elementLabel": "P1 Hand card Placeholder",
+                                "elementId": "p1_hand_card",
+                                "elementLabel": "P1 hand card",
                                 "eventMappings": [
                                     
                                 ],
@@ -483,33 +484,166 @@
                                     "type": "JSON_LITERAL",
                                     "value": null
                                 },
+                                "overrides": {
+                                    "composition": [
+                                        {
+                                            "definition": {
+                                                "id": "15fe506403f8a98575b6df59008ea8f1",
+                                                "type": "MACROPONENT"
+                                            },
+                                            "elementId": "image_1",
+                                            "elementLabel": "Image 1",
+                                            "eventMappings": [
+                                                
+                                            ],
+                                            "isHidden": {
+                                                "type": "JSON_LITERAL",
+                                                "value": null
+                                            },
+                                            "preset": null,
+                                            "propertyValues": {
+                                                "alt": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": ""
+                                                },
+                                                "fit": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": "scale-down"
+                                                },
+                                                "height": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": 120
+                                                },
+                                                "position": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": "center center"
+                                                },
+                                                "sources": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": [
+                                                        
+                                                    ]
+                                                },
+                                                "src": {
+                                                    "binding": {
+                                                        "address": [
+                                                            "original_card_reference",
+                                                            "_reference",
+                                                            "card_image",
+                                                            "displayValue"
+                                                        ],
+                                                        "category": "value"
+                                                    },
+                                                    "type": "REPEATER_ITEM_BINDING"
+                                                },
+                                                "width": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": 100
+                                                }
+                                            },
+                                            "slot": null,
+                                            "styles": null
+                                        },
+                                        {
+                                            "definition": {
+                                                "id": "1f6e0643eca7a637e36bd7833549ec9e",
+                                                "type": "MACROPONENT"
+                                            },
+                                            "elementId": "p1_hand_card_placeholder",
+                                            "elementLabel": "P1 Hand card Placeholder",
+                                            "eventMappings": [
+                                                
+                                            ],
+                                            "isHidden": {
+                                                "type": "JSON_LITERAL",
+                                                "value": null
+                                            },
+                                            "preset": null,
+                                            "propertyValues": {
+                                                "hasNoMargin": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": false
+                                                },
+                                                "label": {
+                                                    "binding": {
+                                                        "address": [
+                                                            "original_card_reference",
+                                                            "displayValue"
+                                                        ],
+                                                        "category": "value"
+                                                    },
+                                                    "type": "REPEATER_ITEM_BINDING"
+                                                },
+                                                "level": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": "1"
+                                                },
+                                                "variant": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": "title-primary"
+                                                },
+                                                "wontWrap": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": false
+                                                }
+                                            },
+                                            "slot": null,
+                                            "styles": null
+                                        }
+                                    ],
+                                    "layout": {
+                                        "default": {
+                                            "children": null,
+                                            "items": [
+                                                {
+                                                    "element_id": "image_1",
+                                                    "styles": {}
+                                                },
+                                                {
+                                                    "element_id": "p1_hand_card_placeholder",
+                                                    "styles": {
+                                                        "background": "#5D6482",
+                                                        "width": "20%"
+                                                    }
+                                                }
+                                            ],
+                                            "root": null,
+                                            "rules": null,
+                                            "styles": {
+                                                "flex-direction": "column",
+                                                "width": "100%"
+                                            },
+                                            "templateId": "5832fd4d53c31010e6bcddeeff7b12db",
+                                            "type": "flex"
+                                        },
+                                        "version": "3.0.0"
+                                    }
+                                },
                                 "preset": null,
                                 "propertyValues": {
-                                    "hasNoMargin": {
+                                    "configAria": {
+                                        "type": "JSON_LITERAL",
+                                        "value": {}
+                                    },
+                                    "hideShadow": {
                                         "type": "JSON_LITERAL",
                                         "value": false
                                     },
-                                    "label": {
-                                        "binding": {
-                                            "address": [
-                                                "original_card_reference",
-                                                "displayValue"
-                                            ],
-                                            "category": "value"
-                                        },
-                                        "type": "REPEATER_ITEM_BINDING"
-                                    },
-                                    "level": {
+                                    "interaction": {
                                         "type": "JSON_LITERAL",
-                                        "value": "1"
+                                        "value": "none"
                                     },
-                                    "variant": {
-                                        "type": "JSON_LITERAL",
-                                        "value": "header-primary"
-                                    },
-                                    "wontWrap": {
+                                    "selected": {
                                         "type": "JSON_LITERAL",
                                         "value": false
+                                    },
+                                    "sidebar": {
+                                        "type": "JSON_LITERAL",
+                                        "value": {}
+                                    },
+                                    "size": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "lg"
                                     }
                                 },
                                 "slot": null,
@@ -521,10 +655,9 @@
                                 "children": null,
                                 "items": [
                                     {
-                                        "element_id": "p1_hand_card_placeholder",
+                                        "element_id": "p1_hand_card",
                                         "styles": {
-                                            "background": "#5D6482",
-                                            "width": "20%"
+                                            "height": "140px"
                                         }
                                     }
                                 ],
@@ -688,103 +821,11 @@
                                                 "composition": [
                                                     {
                                                         "definition": {
-                                                            "id": "1f6e0643eca7a637e36bd7833549ec9e",
-                                                            "type": "MACROPONENT"
-                                                        },
-                                                        "elementId": "l1_p1_slot_number",
-                                                        "elementLabel": "L1 P1 Slot Number",
-                                                        "eventMappings": [
-                                                            
-                                                        ],
-                                                        "isHidden": {
-                                                            "type": "JSON_LITERAL",
-                                                            "value": null
-                                                        },
-                                                        "preset": null,
-                                                        "propertyValues": {
-                                                            "hasNoMargin": {
-                                                                "type": "JSON_LITERAL",
-                                                                "value": false
-                                                            },
-                                                            "label": {
-                                                                "binding": {
-                                                                    "address": [
-                                                                        "slot_number",
-                                                                        "displayValue"
-                                                                    ],
-                                                                    "category": "value"
-                                                                },
-                                                                "type": "REPEATER_ITEM_BINDING"
-                                                            },
-                                                            "level": {
-                                                                "type": "JSON_LITERAL",
-                                                                "value": "1"
-                                                            },
-                                                            "variant": {
-                                                                "type": "JSON_LITERAL",
-                                                                "value": "header-primary"
-                                                            },
-                                                            "wontWrap": {
-                                                                "type": "JSON_LITERAL",
-                                                                "value": false
-                                                            }
-                                                        },
-                                                        "slot": null,
-                                                        "styles": null
-                                                    },
-                                                    {
-                                                        "definition": {
-                                                            "id": "1f6e0643eca7a637e36bd7833549ec9e",
-                                                            "type": "MACROPONENT"
-                                                        },
-                                                        "elementId": "l1_p1_card_name",
-                                                        "elementLabel": "L1 P1 card name",
-                                                        "eventMappings": [
-                                                            
-                                                        ],
-                                                        "isHidden": {
-                                                            "type": "JSON_LITERAL",
-                                                            "value": null
-                                                        },
-                                                        "preset": null,
-                                                        "propertyValues": {
-                                                            "hasNoMargin": {
-                                                                "type": "JSON_LITERAL",
-                                                                "value": false
-                                                            },
-                                                            "label": {
-                                                                "binding": {
-                                                                    "address": [
-                                                                        "card_instance",
-                                                                        "displayValue"
-                                                                    ],
-                                                                    "category": "value"
-                                                                },
-                                                                "type": "REPEATER_ITEM_BINDING"
-                                                            },
-                                                            "level": {
-                                                                "type": "JSON_LITERAL",
-                                                                "value": "1"
-                                                            },
-                                                            "variant": {
-                                                                "type": "JSON_LITERAL",
-                                                                "value": "header-primary"
-                                                            },
-                                                            "wontWrap": {
-                                                                "type": "JSON_LITERAL",
-                                                                "value": false
-                                                            }
-                                                        },
-                                                        "slot": null,
-                                                        "styles": null
-                                                    },
-                                                    {
-                                                        "definition": {
                                                             "id": "15fe506403f8a98575b6df59008ea8f1",
                                                             "type": "MACROPONENT"
                                                         },
-                                                        "elementId": "image_5",
-                                                        "elementLabel": "Image 5",
+                                                        "elementId": "l1_p1_image",
+                                                        "elementLabel": "L1 P1 Image",
                                                         "eventMappings": [
                                                             
                                                         ],
@@ -800,11 +841,11 @@
                                                             },
                                                             "fit": {
                                                                 "type": "JSON_LITERAL",
-                                                                "value": "fill"
+                                                                "value": "scale-down"
                                                             },
                                                             "height": {
                                                                 "type": "JSON_LITERAL",
-                                                                "value": null
+                                                                "value": 120
                                                             },
                                                             "position": {
                                                                 "type": "JSON_LITERAL",
@@ -823,7 +864,8 @@
                                                                         "_reference",
                                                                         "original_card_reference",
                                                                         "_reference",
-                                                                        "card_image"
+                                                                        "card_image",
+                                                                        "displayValue"
                                                                     ],
                                                                     "category": "value"
                                                                 },
@@ -843,23 +885,7 @@
                                                         "children": null,
                                                         "items": [
                                                             {
-                                                                "element_id": "l1_p1_slot_number",
-                                                                "styles": {
-                                                                    "align-self": "stretch",
-                                                                    "height": "80px",
-                                                                    "width": "25%"
-                                                                }
-                                                            },
-                                                            {
-                                                                "element_id": "l1_p1_card_name",
-                                                                "styles": {
-                                                                    "align-self": "stretch",
-                                                                    "height": "80px",
-                                                                    "width": "25%"
-                                                                }
-                                                            },
-                                                            {
-                                                                "element_id": "image_5",
+                                                                "element_id": "l1_p1_image",
                                                                 "styles": {}
                                                             }
                                                         ],
@@ -998,7 +1024,7 @@
                                                 },
                                                 "variant": {
                                                     "type": "JSON_LITERAL",
-                                                    "value": "header-primary"
+                                                    "value": "title-primary"
                                                 },
                                                 "wontWrap": {
                                                     "type": "JSON_LITERAL",
@@ -1014,7 +1040,7 @@
                                                 "type": "MACROPONENT"
                                             },
                                             "elementId": "l1_status",
-                                            "elementLabel": "Location 1 Status",
+                                            "elementLabel": "L1 Status",
                                             "eventMappings": [
                                                 
                                             ],
@@ -1045,7 +1071,7 @@
                                                 },
                                                 "variant": {
                                                     "type": "JSON_LITERAL",
-                                                    "value": "header-primary"
+                                                    "value": "title-primary"
                                                 },
                                                 "wontWrap": {
                                                     "type": "JSON_LITERAL",
@@ -1092,7 +1118,7 @@
                                                 },
                                                 "variant": {
                                                     "type": "JSON_LITERAL",
-                                                    "value": "header-primary"
+                                                    "value": "title-primary"
                                                 },
                                                 "wontWrap": {
                                                     "type": "JSON_LITERAL",
@@ -1108,7 +1134,7 @@
                                                 "type": "MACROPONENT"
                                             },
                                             "elementId": "l1_card_image",
-                                            "elementLabel": "L1 Card Image",
+                                            "elementLabel": "L1 Card image",
                                             "eventMappings": [
                                                 
                                             ],
@@ -1124,7 +1150,7 @@
                                                 },
                                                 "fit": {
                                                     "type": "JSON_LITERAL",
-                                                    "value": "fill"
+                                                    "value": "scale-down"
                                                 },
                                                 "height": {
                                                     "type": "JSON_LITERAL",
@@ -1134,21 +1160,28 @@
                                                     "type": "JSON_LITERAL",
                                                     "value": "center center"
                                                 },
-                                                "sources": null,
+                                                "sources": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": [
+                                                        
+                                                    ]
+                                                },
                                                 "src": {
                                                     "binding": {
                                                         "address": [
                                                             "get_location_1",
                                                             "result",
                                                             "location_card",
-                                                            "_reference"
+                                                            "_reference",
+                                                            "card_image",
+                                                            "displayValue"
                                                         ]
                                                     },
                                                     "type": "DATA_OUTPUT_BINDING"
                                                 },
                                                 "width": {
                                                     "type": "JSON_LITERAL",
-                                                    "value": null
+                                                    "value": ""
                                                 }
                                             },
                                             "slot": null,
@@ -1191,7 +1224,7 @@
                                                 },
                                                 "variant": {
                                                     "type": "JSON_LITERAL",
-                                                    "value": "header-primary"
+                                                    "value": "title-primary"
                                                 },
                                                 "wontWrap": {
                                                     "type": "JSON_LITERAL",
@@ -1234,7 +1267,10 @@
                                                 },
                                                 {
                                                     "element_id": "l1_card_image",
-                                                    "styles": {}
+                                                    "styles": {
+                                                        "height": "200px",
+                                                        "width": ""
+                                                    }
                                                 },
                                                 {
                                                     "element_id": "l1_p2_score",
@@ -1327,103 +1363,11 @@
                                                 "composition": [
                                                     {
                                                         "definition": {
-                                                            "id": "1f6e0643eca7a637e36bd7833549ec9e",
-                                                            "type": "MACROPONENT"
-                                                        },
-                                                        "elementId": "l1_p2_slot_number",
-                                                        "elementLabel": "L1 P2 slot number",
-                                                        "eventMappings": [
-                                                            
-                                                        ],
-                                                        "isHidden": {
-                                                            "type": "JSON_LITERAL",
-                                                            "value": null
-                                                        },
-                                                        "preset": null,
-                                                        "propertyValues": {
-                                                            "hasNoMargin": {
-                                                                "type": "JSON_LITERAL",
-                                                                "value": false
-                                                            },
-                                                            "label": {
-                                                                "binding": {
-                                                                    "address": [
-                                                                        "slot_number",
-                                                                        "displayValue"
-                                                                    ],
-                                                                    "category": "value"
-                                                                },
-                                                                "type": "REPEATER_ITEM_BINDING"
-                                                            },
-                                                            "level": {
-                                                                "type": "JSON_LITERAL",
-                                                                "value": "1"
-                                                            },
-                                                            "variant": {
-                                                                "type": "JSON_LITERAL",
-                                                                "value": "header-primary"
-                                                            },
-                                                            "wontWrap": {
-                                                                "type": "JSON_LITERAL",
-                                                                "value": false
-                                                            }
-                                                        },
-                                                        "slot": null,
-                                                        "styles": null
-                                                    },
-                                                    {
-                                                        "definition": {
-                                                            "id": "1f6e0643eca7a637e36bd7833549ec9e",
-                                                            "type": "MACROPONENT"
-                                                        },
-                                                        "elementId": "l1_p2_card_name",
-                                                        "elementLabel": "L1 P2 card name",
-                                                        "eventMappings": [
-                                                            
-                                                        ],
-                                                        "isHidden": {
-                                                            "type": "JSON_LITERAL",
-                                                            "value": null
-                                                        },
-                                                        "preset": null,
-                                                        "propertyValues": {
-                                                            "hasNoMargin": {
-                                                                "type": "JSON_LITERAL",
-                                                                "value": false
-                                                            },
-                                                            "label": {
-                                                                "binding": {
-                                                                    "address": [
-                                                                        "card_instance",
-                                                                        "displayValue"
-                                                                    ],
-                                                                    "category": "value"
-                                                                },
-                                                                "type": "REPEATER_ITEM_BINDING"
-                                                            },
-                                                            "level": {
-                                                                "type": "JSON_LITERAL",
-                                                                "value": "1"
-                                                            },
-                                                            "variant": {
-                                                                "type": "JSON_LITERAL",
-                                                                "value": "header-primary"
-                                                            },
-                                                            "wontWrap": {
-                                                                "type": "JSON_LITERAL",
-                                                                "value": false
-                                                            }
-                                                        },
-                                                        "slot": null,
-                                                        "styles": null
-                                                    },
-                                                    {
-                                                        "definition": {
                                                             "id": "15fe506403f8a98575b6df59008ea8f1",
                                                             "type": "MACROPONENT"
                                                         },
-                                                        "elementId": "image_6",
-                                                        "elementLabel": "Image 6",
+                                                        "elementId": "l1_p2_image",
+                                                        "elementLabel": "L1 P2 Image",
                                                         "eventMappings": [
                                                             
                                                         ],
@@ -1439,11 +1383,11 @@
                                                             },
                                                             "fit": {
                                                                 "type": "JSON_LITERAL",
-                                                                "value": "fill"
+                                                                "value": "scale-down"
                                                             },
                                                             "height": {
                                                                 "type": "JSON_LITERAL",
-                                                                "value": null
+                                                                "value": 120
                                                             },
                                                             "position": {
                                                                 "type": "JSON_LITERAL",
@@ -1462,7 +1406,8 @@
                                                                         "_reference",
                                                                         "original_card_reference",
                                                                         "_reference",
-                                                                        "card_image"
+                                                                        "card_image",
+                                                                        "displayValue"
                                                                     ],
                                                                     "category": "value"
                                                                 },
@@ -1470,7 +1415,7 @@
                                                             },
                                                             "width": {
                                                                 "type": "JSON_LITERAL",
-                                                                "value": null
+                                                                "value": ""
                                                             }
                                                         },
                                                         "slot": null,
@@ -1482,23 +1427,7 @@
                                                         "children": null,
                                                         "items": [
                                                             {
-                                                                "element_id": "l1_p2_slot_number",
-                                                                "styles": {
-                                                                    "align-self": "stretch",
-                                                                    "height": "80px",
-                                                                    "width": "25%"
-                                                                }
-                                                            },
-                                                            {
-                                                                "element_id": "l1_p2_card_name",
-                                                                "styles": {
-                                                                    "align-self": "stretch",
-                                                                    "height": "80px",
-                                                                    "width": "25%"
-                                                                }
-                                                            },
-                                                            {
-                                                                "element_id": "image_6",
+                                                                "element_id": "l1_p2_image",
                                                                 "styles": {}
                                                             }
                                                         ],
@@ -1704,103 +1633,11 @@
                                                 "composition": [
                                                     {
                                                         "definition": {
-                                                            "id": "1f6e0643eca7a637e36bd7833549ec9e",
-                                                            "type": "MACROPONENT"
-                                                        },
-                                                        "elementId": "l2_p1_slot_number",
-                                                        "elementLabel": "L2 P1 Slot number",
-                                                        "eventMappings": [
-                                                            
-                                                        ],
-                                                        "isHidden": {
-                                                            "type": "JSON_LITERAL",
-                                                            "value": null
-                                                        },
-                                                        "preset": null,
-                                                        "propertyValues": {
-                                                            "hasNoMargin": {
-                                                                "type": "JSON_LITERAL",
-                                                                "value": false
-                                                            },
-                                                            "label": {
-                                                                "binding": {
-                                                                    "address": [
-                                                                        "slot_number",
-                                                                        "displayValue"
-                                                                    ],
-                                                                    "category": "value"
-                                                                },
-                                                                "type": "REPEATER_ITEM_BINDING"
-                                                            },
-                                                            "level": {
-                                                                "type": "JSON_LITERAL",
-                                                                "value": "1"
-                                                            },
-                                                            "variant": {
-                                                                "type": "JSON_LITERAL",
-                                                                "value": "header-primary"
-                                                            },
-                                                            "wontWrap": {
-                                                                "type": "JSON_LITERAL",
-                                                                "value": false
-                                                            }
-                                                        },
-                                                        "slot": null,
-                                                        "styles": null
-                                                    },
-                                                    {
-                                                        "definition": {
-                                                            "id": "1f6e0643eca7a637e36bd7833549ec9e",
-                                                            "type": "MACROPONENT"
-                                                        },
-                                                        "elementId": "l2_p1_card_name",
-                                                        "elementLabel": "L2 P1 card Name",
-                                                        "eventMappings": [
-                                                            
-                                                        ],
-                                                        "isHidden": {
-                                                            "type": "JSON_LITERAL",
-                                                            "value": null
-                                                        },
-                                                        "preset": null,
-                                                        "propertyValues": {
-                                                            "hasNoMargin": {
-                                                                "type": "JSON_LITERAL",
-                                                                "value": false
-                                                            },
-                                                            "label": {
-                                                                "binding": {
-                                                                    "address": [
-                                                                        "card_instance",
-                                                                        "displayValue"
-                                                                    ],
-                                                                    "category": "value"
-                                                                },
-                                                                "type": "REPEATER_ITEM_BINDING"
-                                                            },
-                                                            "level": {
-                                                                "type": "JSON_LITERAL",
-                                                                "value": "1"
-                                                            },
-                                                            "variant": {
-                                                                "type": "JSON_LITERAL",
-                                                                "value": "header-primary"
-                                                            },
-                                                            "wontWrap": {
-                                                                "type": "JSON_LITERAL",
-                                                                "value": false
-                                                            }
-                                                        },
-                                                        "slot": null,
-                                                        "styles": null
-                                                    },
-                                                    {
-                                                        "definition": {
                                                             "id": "15fe506403f8a98575b6df59008ea8f1",
                                                             "type": "MACROPONENT"
                                                         },
-                                                        "elementId": "image_1",
-                                                        "elementLabel": "Image 1",
+                                                        "elementId": "l2_p1_image",
+                                                        "elementLabel": "L2 P1 Image",
                                                         "eventMappings": [
                                                             
                                                         ],
@@ -1816,17 +1653,22 @@
                                                             },
                                                             "fit": {
                                                                 "type": "JSON_LITERAL",
-                                                                "value": "fill"
+                                                                "value": "scale-down"
                                                             },
                                                             "height": {
                                                                 "type": "JSON_LITERAL",
-                                                                "value": null
+                                                                "value": 120
                                                             },
                                                             "position": {
                                                                 "type": "JSON_LITERAL",
                                                                 "value": "center center"
                                                             },
-                                                            "sources": null,
+                                                            "sources": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": [
+                                                                    
+                                                                ]
+                                                            },
                                                             "src": {
                                                                 "binding": {
                                                                     "address": [
@@ -1843,7 +1685,7 @@
                                                             },
                                                             "width": {
                                                                 "type": "JSON_LITERAL",
-                                                                "value": null
+                                                                "value": ""
                                                             }
                                                         },
                                                         "slot": null,
@@ -1855,23 +1697,7 @@
                                                         "children": null,
                                                         "items": [
                                                             {
-                                                                "element_id": "l2_p1_slot_number",
-                                                                "styles": {
-                                                                    "align-self": "stretch",
-                                                                    "height": "80px",
-                                                                    "width": "25%"
-                                                                }
-                                                            },
-                                                            {
-                                                                "element_id": "l2_p1_card_name",
-                                                                "styles": {
-                                                                    "align-self": "stretch",
-                                                                    "height": "80px",
-                                                                    "width": "25%"
-                                                                }
-                                                            },
-                                                            {
-                                                                "element_id": "image_1",
+                                                                "element_id": "l2_p1_image",
                                                                 "styles": {}
                                                             }
                                                         ],
@@ -2011,7 +1837,7 @@
                                                 },
                                                 "variant": {
                                                     "type": "JSON_LITERAL",
-                                                    "value": "header-primary"
+                                                    "value": "title-primary"
                                                 },
                                                 "wontWrap": {
                                                     "type": "JSON_LITERAL",
@@ -2058,7 +1884,7 @@
                                                 },
                                                 "variant": {
                                                     "type": "JSON_LITERAL",
-                                                    "value": "header-primary"
+                                                    "value": "title-primary"
                                                 },
                                                 "wontWrap": {
                                                     "type": "JSON_LITERAL",
@@ -2105,7 +1931,7 @@
                                                 },
                                                 "variant": {
                                                     "type": "JSON_LITERAL",
-                                                    "value": "header-primary"
+                                                    "value": "title-primary"
                                                 },
                                                 "wontWrap": {
                                                     "type": "JSON_LITERAL",
@@ -2120,8 +1946,8 @@
                                                 "id": "15fe506403f8a98575b6df59008ea8f1",
                                                 "type": "MACROPONENT"
                                             },
-                                            "elementId": "image_7",
-                                            "elementLabel": "Image 7",
+                                            "elementId": "l2_card_image",
+                                            "elementLabel": "L2 Card Image",
                                             "eventMappings": [
                                                 
                                             ],
@@ -2137,7 +1963,7 @@
                                                 },
                                                 "fit": {
                                                     "type": "JSON_LITERAL",
-                                                    "value": "fill"
+                                                    "value": "scale-down"
                                                 },
                                                 "height": {
                                                     "type": "JSON_LITERAL",
@@ -2168,7 +1994,7 @@
                                                 },
                                                 "width": {
                                                     "type": "JSON_LITERAL",
-                                                    "value": null
+                                                    "value": ""
                                                 }
                                             },
                                             "slot": null,
@@ -2211,7 +2037,7 @@
                                                 },
                                                 "variant": {
                                                     "type": "JSON_LITERAL",
-                                                    "value": "header-primary"
+                                                    "value": "title-primary"
                                                 },
                                                 "wontWrap": {
                                                     "type": "JSON_LITERAL",
@@ -2245,8 +2071,11 @@
                                                     }
                                                 },
                                                 {
-                                                    "element_id": "image_7",
-                                                    "styles": {}
+                                                    "element_id": "l2_card_image",
+                                                    "styles": {
+                                                        "height": "200px",
+                                                        "width": ""
+                                                    }
                                                 },
                                                 {
                                                     "element_id": "l2_p2_score",
@@ -2338,103 +2167,11 @@
                                                 "composition": [
                                                     {
                                                         "definition": {
-                                                            "id": "1f6e0643eca7a637e36bd7833549ec9e",
-                                                            "type": "MACROPONENT"
-                                                        },
-                                                        "elementId": "l2_p2_slot_number",
-                                                        "elementLabel": "L2 P2 slot number",
-                                                        "eventMappings": [
-                                                            
-                                                        ],
-                                                        "isHidden": {
-                                                            "type": "JSON_LITERAL",
-                                                            "value": null
-                                                        },
-                                                        "preset": null,
-                                                        "propertyValues": {
-                                                            "hasNoMargin": {
-                                                                "type": "JSON_LITERAL",
-                                                                "value": false
-                                                            },
-                                                            "label": {
-                                                                "binding": {
-                                                                    "address": [
-                                                                        "slot_number",
-                                                                        "displayValue"
-                                                                    ],
-                                                                    "category": "value"
-                                                                },
-                                                                "type": "REPEATER_ITEM_BINDING"
-                                                            },
-                                                            "level": {
-                                                                "type": "JSON_LITERAL",
-                                                                "value": "1"
-                                                            },
-                                                            "variant": {
-                                                                "type": "JSON_LITERAL",
-                                                                "value": "header-primary"
-                                                            },
-                                                            "wontWrap": {
-                                                                "type": "JSON_LITERAL",
-                                                                "value": false
-                                                            }
-                                                        },
-                                                        "slot": null,
-                                                        "styles": null
-                                                    },
-                                                    {
-                                                        "definition": {
-                                                            "id": "1f6e0643eca7a637e36bd7833549ec9e",
-                                                            "type": "MACROPONENT"
-                                                        },
-                                                        "elementId": "l2_p2_card_name",
-                                                        "elementLabel": "L2 P2 card name",
-                                                        "eventMappings": [
-                                                            
-                                                        ],
-                                                        "isHidden": {
-                                                            "type": "JSON_LITERAL",
-                                                            "value": null
-                                                        },
-                                                        "preset": null,
-                                                        "propertyValues": {
-                                                            "hasNoMargin": {
-                                                                "type": "JSON_LITERAL",
-                                                                "value": false
-                                                            },
-                                                            "label": {
-                                                                "binding": {
-                                                                    "address": [
-                                                                        "card_instance",
-                                                                        "displayValue"
-                                                                    ],
-                                                                    "category": "value"
-                                                                },
-                                                                "type": "REPEATER_ITEM_BINDING"
-                                                            },
-                                                            "level": {
-                                                                "type": "JSON_LITERAL",
-                                                                "value": "1"
-                                                            },
-                                                            "variant": {
-                                                                "type": "JSON_LITERAL",
-                                                                "value": "header-primary"
-                                                            },
-                                                            "wontWrap": {
-                                                                "type": "JSON_LITERAL",
-                                                                "value": false
-                                                            }
-                                                        },
-                                                        "slot": null,
-                                                        "styles": null
-                                                    },
-                                                    {
-                                                        "definition": {
                                                             "id": "15fe506403f8a98575b6df59008ea8f1",
                                                             "type": "MACROPONENT"
                                                         },
-                                                        "elementId": "image_2",
-                                                        "elementLabel": "Image 2",
+                                                        "elementId": "L2_P2_image",
+                                                        "elementLabel": "L2 P2 Image",
                                                         "eventMappings": [
                                                             
                                                         ],
@@ -2450,11 +2187,11 @@
                                                             },
                                                             "fit": {
                                                                 "type": "JSON_LITERAL",
-                                                                "value": "fill"
+                                                                "value": "scale-down"
                                                             },
                                                             "height": {
                                                                 "type": "JSON_LITERAL",
-                                                                "value": null
+                                                                "value": 120
                                                             },
                                                             "position": {
                                                                 "type": "JSON_LITERAL",
@@ -2468,7 +2205,8 @@
                                                                         "_reference",
                                                                         "original_card_reference",
                                                                         "_reference",
-                                                                        "card_image"
+                                                                        "card_image",
+                                                                        "displayValue"
                                                                     ],
                                                                     "category": "value"
                                                                 },
@@ -2476,7 +2214,7 @@
                                                             },
                                                             "width": {
                                                                 "type": "JSON_LITERAL",
-                                                                "value": null
+                                                                "value": ""
                                                             }
                                                         },
                                                         "slot": null,
@@ -2488,23 +2226,7 @@
                                                         "children": null,
                                                         "items": [
                                                             {
-                                                                "element_id": "l2_p2_slot_number",
-                                                                "styles": {
-                                                                    "align-self": "stretch",
-                                                                    "height": "80px",
-                                                                    "width": "25%"
-                                                                }
-                                                            },
-                                                            {
-                                                                "element_id": "l2_p2_card_name",
-                                                                "styles": {
-                                                                    "align-self": "stretch",
-                                                                    "height": "80px",
-                                                                    "width": "25%"
-                                                                }
-                                                            },
-                                                            {
-                                                                "element_id": "image_2",
+                                                                "element_id": "L2_P2_image",
                                                                 "styles": {}
                                                             }
                                                         ],
@@ -2709,103 +2431,11 @@
                                                 "composition": [
                                                     {
                                                         "definition": {
-                                                            "id": "1f6e0643eca7a637e36bd7833549ec9e",
-                                                            "type": "MACROPONENT"
-                                                        },
-                                                        "elementId": "L3_p1_slot_number",
-                                                        "elementLabel": "L3 P1 Slot Number",
-                                                        "eventMappings": [
-                                                            
-                                                        ],
-                                                        "isHidden": {
-                                                            "type": "JSON_LITERAL",
-                                                            "value": null
-                                                        },
-                                                        "preset": null,
-                                                        "propertyValues": {
-                                                            "hasNoMargin": {
-                                                                "type": "JSON_LITERAL",
-                                                                "value": false
-                                                            },
-                                                            "label": {
-                                                                "binding": {
-                                                                    "address": [
-                                                                        "slot_number",
-                                                                        "displayValue"
-                                                                    ],
-                                                                    "category": "value"
-                                                                },
-                                                                "type": "REPEATER_ITEM_BINDING"
-                                                            },
-                                                            "level": {
-                                                                "type": "JSON_LITERAL",
-                                                                "value": "1"
-                                                            },
-                                                            "variant": {
-                                                                "type": "JSON_LITERAL",
-                                                                "value": "header-primary"
-                                                            },
-                                                            "wontWrap": {
-                                                                "type": "JSON_LITERAL",
-                                                                "value": false
-                                                            }
-                                                        },
-                                                        "slot": null,
-                                                        "styles": null
-                                                    },
-                                                    {
-                                                        "definition": {
-                                                            "id": "1f6e0643eca7a637e36bd7833549ec9e",
-                                                            "type": "MACROPONENT"
-                                                        },
-                                                        "elementId": "l3_p1_card_name",
-                                                        "elementLabel": "L3 P1 card Name",
-                                                        "eventMappings": [
-                                                            
-                                                        ],
-                                                        "isHidden": {
-                                                            "type": "JSON_LITERAL",
-                                                            "value": null
-                                                        },
-                                                        "preset": null,
-                                                        "propertyValues": {
-                                                            "hasNoMargin": {
-                                                                "type": "JSON_LITERAL",
-                                                                "value": false
-                                                            },
-                                                            "label": {
-                                                                "binding": {
-                                                                    "address": [
-                                                                        "card_instance",
-                                                                        "displayValue"
-                                                                    ],
-                                                                    "category": "value"
-                                                                },
-                                                                "type": "REPEATER_ITEM_BINDING"
-                                                            },
-                                                            "level": {
-                                                                "type": "JSON_LITERAL",
-                                                                "value": "1"
-                                                            },
-                                                            "variant": {
-                                                                "type": "JSON_LITERAL",
-                                                                "value": "header-primary"
-                                                            },
-                                                            "wontWrap": {
-                                                                "type": "JSON_LITERAL",
-                                                                "value": false
-                                                            }
-                                                        },
-                                                        "slot": null,
-                                                        "styles": null
-                                                    },
-                                                    {
-                                                        "definition": {
                                                             "id": "15fe506403f8a98575b6df59008ea8f1",
                                                             "type": "MACROPONENT"
                                                         },
-                                                        "elementId": "image_4",
-                                                        "elementLabel": "Image 4",
+                                                        "elementId": "l3_p1_image",
+                                                        "elementLabel": "L3 P1 Image",
                                                         "eventMappings": [
                                                             
                                                         ],
@@ -2821,11 +2451,11 @@
                                                             },
                                                             "fit": {
                                                                 "type": "JSON_LITERAL",
-                                                                "value": "fill"
+                                                                "value": "scale-down"
                                                             },
                                                             "height": {
                                                                 "type": "JSON_LITERAL",
-                                                                "value": null
+                                                                "value": 120
                                                             },
                                                             "position": {
                                                                 "type": "JSON_LITERAL",
@@ -2844,7 +2474,8 @@
                                                                         "_reference",
                                                                         "original_card_reference",
                                                                         "_reference",
-                                                                        "card_image"
+                                                                        "card_image",
+                                                                        "displayValue"
                                                                     ],
                                                                     "category": "value"
                                                                 },
@@ -2852,7 +2483,7 @@
                                                             },
                                                             "width": {
                                                                 "type": "JSON_LITERAL",
-                                                                "value": null
+                                                                "value": ""
                                                             }
                                                         },
                                                         "slot": null,
@@ -2864,23 +2495,7 @@
                                                         "children": null,
                                                         "items": [
                                                             {
-                                                                "element_id": "L3_p1_slot_number",
-                                                                "styles": {
-                                                                    "align-self": "stretch",
-                                                                    "height": "80px",
-                                                                    "width": "25%"
-                                                                }
-                                                            },
-                                                            {
-                                                                "element_id": "l3_p1_card_name",
-                                                                "styles": {
-                                                                    "align-self": "stretch",
-                                                                    "height": "80px",
-                                                                    "width": "25%"
-                                                                }
-                                                            },
-                                                            {
-                                                                "element_id": "image_4",
+                                                                "element_id": "l3_p1_image",
                                                                 "styles": {}
                                                             }
                                                         ],
@@ -3020,7 +2635,7 @@
                                                 },
                                                 "variant": {
                                                     "type": "JSON_LITERAL",
-                                                    "value": "header-primary"
+                                                    "value": "title-primary"
                                                 },
                                                 "wontWrap": {
                                                     "type": "JSON_LITERAL",
@@ -3067,7 +2682,7 @@
                                                 },
                                                 "variant": {
                                                     "type": "JSON_LITERAL",
-                                                    "value": "header-primary"
+                                                    "value": "title-primary"
                                                 },
                                                 "wontWrap": {
                                                     "type": "JSON_LITERAL",
@@ -3114,7 +2729,7 @@
                                                 },
                                                 "variant": {
                                                     "type": "JSON_LITERAL",
-                                                    "value": "header-primary"
+                                                    "value": "title-primary"
                                                 },
                                                 "wontWrap": {
                                                     "type": "JSON_LITERAL",
@@ -3129,8 +2744,8 @@
                                                 "id": "15fe506403f8a98575b6df59008ea8f1",
                                                 "type": "MACROPONENT"
                                             },
-                                            "elementId": "image_8",
-                                            "elementLabel": "Image 8",
+                                            "elementId": "l3_card_image",
+                                            "elementLabel": "L3 Card Image",
                                             "eventMappings": [
                                                 
                                             ],
@@ -3146,7 +2761,7 @@
                                                 },
                                                 "fit": {
                                                     "type": "JSON_LITERAL",
-                                                    "value": "fill"
+                                                    "value": "scale-down"
                                                 },
                                                 "height": {
                                                     "type": "JSON_LITERAL",
@@ -3220,7 +2835,7 @@
                                                 },
                                                 "variant": {
                                                     "type": "JSON_LITERAL",
-                                                    "value": "header-primary"
+                                                    "value": "title-primary"
                                                 },
                                                 "wontWrap": {
                                                     "type": "JSON_LITERAL",
@@ -3254,9 +2869,10 @@
                                                     }
                                                 },
                                                 {
-                                                    "element_id": "image_8",
+                                                    "element_id": "l3_card_image",
                                                     "styles": {
                                                         "flex": "0 1 auto",
+                                                        "height": "200px",
                                                         "width": ""
                                                     }
                                                 },
@@ -3350,103 +2966,11 @@
                                                 "composition": [
                                                     {
                                                         "definition": {
-                                                            "id": "1f6e0643eca7a637e36bd7833549ec9e",
-                                                            "type": "MACROPONENT"
-                                                        },
-                                                        "elementId": "l3_p2_slot_number",
-                                                        "elementLabel": "L3 P2 Slot Number",
-                                                        "eventMappings": [
-                                                            
-                                                        ],
-                                                        "isHidden": {
-                                                            "type": "JSON_LITERAL",
-                                                            "value": null
-                                                        },
-                                                        "preset": null,
-                                                        "propertyValues": {
-                                                            "hasNoMargin": {
-                                                                "type": "JSON_LITERAL",
-                                                                "value": false
-                                                            },
-                                                            "label": {
-                                                                "binding": {
-                                                                    "address": [
-                                                                        "slot_number",
-                                                                        "displayValue"
-                                                                    ],
-                                                                    "category": "value"
-                                                                },
-                                                                "type": "REPEATER_ITEM_BINDING"
-                                                            },
-                                                            "level": {
-                                                                "type": "JSON_LITERAL",
-                                                                "value": "1"
-                                                            },
-                                                            "variant": {
-                                                                "type": "JSON_LITERAL",
-                                                                "value": "header-primary"
-                                                            },
-                                                            "wontWrap": {
-                                                                "type": "JSON_LITERAL",
-                                                                "value": false
-                                                            }
-                                                        },
-                                                        "slot": null,
-                                                        "styles": null
-                                                    },
-                                                    {
-                                                        "definition": {
-                                                            "id": "1f6e0643eca7a637e36bd7833549ec9e",
-                                                            "type": "MACROPONENT"
-                                                        },
-                                                        "elementId": "l3_p2_card_number",
-                                                        "elementLabel": "L3 P2 Card number",
-                                                        "eventMappings": [
-                                                            
-                                                        ],
-                                                        "isHidden": {
-                                                            "type": "JSON_LITERAL",
-                                                            "value": null
-                                                        },
-                                                        "preset": null,
-                                                        "propertyValues": {
-                                                            "hasNoMargin": {
-                                                                "type": "JSON_LITERAL",
-                                                                "value": false
-                                                            },
-                                                            "label": {
-                                                                "binding": {
-                                                                    "address": [
-                                                                        "card_instance",
-                                                                        "displayValue"
-                                                                    ],
-                                                                    "category": "value"
-                                                                },
-                                                                "type": "REPEATER_ITEM_BINDING"
-                                                            },
-                                                            "level": {
-                                                                "type": "JSON_LITERAL",
-                                                                "value": "1"
-                                                            },
-                                                            "variant": {
-                                                                "type": "JSON_LITERAL",
-                                                                "value": "header-primary"
-                                                            },
-                                                            "wontWrap": {
-                                                                "type": "JSON_LITERAL",
-                                                                "value": false
-                                                            }
-                                                        },
-                                                        "slot": null,
-                                                        "styles": null
-                                                    },
-                                                    {
-                                                        "definition": {
                                                             "id": "15fe506403f8a98575b6df59008ea8f1",
                                                             "type": "MACROPONENT"
                                                         },
-                                                        "elementId": "image_3",
-                                                        "elementLabel": "Image 3",
+                                                        "elementId": "l3_p2_image",
+                                                        "elementLabel": "L3 P2 Image",
                                                         "eventMappings": [
                                                             
                                                         ],
@@ -3466,7 +2990,7 @@
                                                             },
                                                             "height": {
                                                                 "type": "JSON_LITERAL",
-                                                                "value": null
+                                                                "value": 120
                                                             },
                                                             "position": {
                                                                 "type": "JSON_LITERAL",
@@ -3485,7 +3009,8 @@
                                                                         "_reference",
                                                                         "original_card_reference",
                                                                         "_reference",
-                                                                        "card_image"
+                                                                        "card_image",
+                                                                        "displayValue"
                                                                     ],
                                                                     "category": "value"
                                                                 },
@@ -3493,7 +3018,7 @@
                                                             },
                                                             "width": {
                                                                 "type": "JSON_LITERAL",
-                                                                "value": null
+                                                                "value": ""
                                                             }
                                                         },
                                                         "slot": null,
@@ -3505,23 +3030,7 @@
                                                         "children": null,
                                                         "items": [
                                                             {
-                                                                "element_id": "l3_p2_slot_number",
-                                                                "styles": {
-                                                                    "align-self": "stretch",
-                                                                    "height": "80px",
-                                                                    "width": "25%"
-                                                                }
-                                                            },
-                                                            {
-                                                                "element_id": "l3_p2_card_number",
-                                                                "styles": {
-                                                                    "align-self": "stretch",
-                                                                    "height": "80px",
-                                                                    "width": "25%"
-                                                                }
-                                                            },
-                                                            {
-                                                                "element_id": "image_3",
+                                                                "element_id": "l3_p2_image",
                                                                 "styles": {}
                                                             }
                                                         ],
@@ -3898,11 +3407,11 @@
             "composition": [
                 {
                     "definition": {
-                        "id": "1f6e0643eca7a637e36bd7833549ec9e",
+                        "id": "e772e788e32ce32b8daa2ac7b092d2c6",
                         "type": "MACROPONENT"
                     },
-                    "elementId": "p2_hand_card_placeholder",
-                    "elementLabel": "P2 Hand card Placeholder",
+                    "elementId": "p2_hand_card",
+                    "elementLabel": "P2 hand card",
                     "eventMappings": [
                         
                     ],
@@ -3910,33 +3419,166 @@
                         "type": "JSON_LITERAL",
                         "value": null
                     },
+                    "overrides": {
+                        "composition": [
+                            {
+                                "definition": {
+                                    "id": "15fe506403f8a98575b6df59008ea8f1",
+                                    "type": "MACROPONENT"
+                                },
+                                "elementId": "image_2",
+                                "elementLabel": "Image 2",
+                                "eventMappings": [
+                                    
+                                ],
+                                "isHidden": {
+                                    "type": "JSON_LITERAL",
+                                    "value": null
+                                },
+                                "preset": null,
+                                "propertyValues": {
+                                    "alt": {
+                                        "type": "JSON_LITERAL",
+                                        "value": ""
+                                    },
+                                    "fit": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "fill"
+                                    },
+                                    "height": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "position": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "center center"
+                                    },
+                                    "sources": {
+                                        "type": "JSON_LITERAL",
+                                        "value": [
+                                            
+                                        ]
+                                    },
+                                    "src": {
+                                        "binding": {
+                                            "address": [
+                                                "original_card_reference",
+                                                "_reference",
+                                                "card_image",
+                                                "displayValue"
+                                            ],
+                                            "category": "value"
+                                        },
+                                        "type": "REPEATER_ITEM_BINDING"
+                                    },
+                                    "width": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    }
+                                },
+                                "slot": null,
+                                "styles": null
+                            },
+                            {
+                                "definition": {
+                                    "id": "1f6e0643eca7a637e36bd7833549ec9e",
+                                    "type": "MACROPONENT"
+                                },
+                                "elementId": "p2_hand_card_placeholder",
+                                "elementLabel": "P2 Hand card Placeholder",
+                                "eventMappings": [
+                                    
+                                ],
+                                "isHidden": {
+                                    "type": "JSON_LITERAL",
+                                    "value": null
+                                },
+                                "preset": null,
+                                "propertyValues": {
+                                    "hasNoMargin": {
+                                        "type": "JSON_LITERAL",
+                                        "value": false
+                                    },
+                                    "label": {
+                                        "binding": {
+                                            "address": [
+                                                "original_card_reference",
+                                                "displayValue"
+                                            ],
+                                            "category": "value"
+                                        },
+                                        "type": "REPEATER_ITEM_BINDING"
+                                    },
+                                    "level": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "1"
+                                    },
+                                    "variant": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "header-tertiary"
+                                    },
+                                    "wontWrap": {
+                                        "type": "JSON_LITERAL",
+                                        "value": false
+                                    }
+                                },
+                                "slot": null,
+                                "styles": null
+                            }
+                        ],
+                        "layout": {
+                            "default": {
+                                "children": null,
+                                "items": [
+                                    {
+                                        "element_id": "image_2",
+                                        "styles": {}
+                                    },
+                                    {
+                                        "element_id": "p2_hand_card_placeholder",
+                                        "styles": {
+                                            "background": "#5D6482",
+                                            "width": "20%"
+                                        }
+                                    }
+                                ],
+                                "root": null,
+                                "rules": null,
+                                "styles": {
+                                    "flex-direction": "column",
+                                    "width": "100%"
+                                },
+                                "templateId": "5832fd4d53c31010e6bcddeeff7b12db",
+                                "type": "flex"
+                            },
+                            "version": "3.0.0"
+                        }
+                    },
                     "preset": null,
                     "propertyValues": {
-                        "hasNoMargin": {
+                        "configAria": {
+                            "type": "JSON_LITERAL",
+                            "value": {}
+                        },
+                        "hideShadow": {
                             "type": "JSON_LITERAL",
                             "value": false
                         },
-                        "label": {
-                            "binding": {
-                                "address": [
-                                    "original_card_reference",
-                                    "displayValue"
-                                ],
-                                "category": "value"
-                            },
-                            "type": "REPEATER_ITEM_BINDING"
-                        },
-                        "level": {
+                        "interaction": {
                             "type": "JSON_LITERAL",
-                            "value": "1"
+                            "value": "none"
                         },
-                        "variant": {
-                            "type": "JSON_LITERAL",
-                            "value": "header-primary"
-                        },
-                        "wontWrap": {
+                        "selected": {
                             "type": "JSON_LITERAL",
                             "value": false
+                        },
+                        "sidebar": {
+                            "type": "JSON_LITERAL",
+                            "value": {}
+                        },
+                        "size": {
+                            "type": "JSON_LITERAL",
+                            "value": "lg"
                         }
                     },
                     "slot": null,
@@ -3948,10 +3590,9 @@
                     "children": null,
                     "items": [
                         {
-                            "element_id": "p2_hand_card_placeholder",
+                            "element_id": "p2_hand_card",
                             "styles": {
-                                "background": "#5D6482",
-                                "width": "20%"
+                                "height": "120px"
                             }
                         }
                     ],
@@ -4041,7 +3682,7 @@
             },
             "returnFields": {
                 "type": "JSON_LITERAL",
-                "value": "original_card_reference,player_session,status,current_location"
+                "value": "original_card_reference,player_session,status,current_location,original_card_reference.card_image"
             },
             "sortType": {
                 "type": "JSON_LITERAL",
@@ -4052,7 +3693,7 @@
                 "value": "x_168987_flow_de_0_card_instance"
             }
         },
-        "readEvaluationMode": "EXPLICIT"
+        "readEvaluationMode": "EAGER"
     },
     {
         "definition": {
@@ -4194,24 +3835,6 @@
                         "operation": {
                             "dataBrokerId": "b997a84053021010cbc2ddeeff7b1228",
                             "operationName": "REFRESH",
-                            "parentResourceId": "l1_p2_slots",
-                            "payload": {
-                                "type": "JSON_LITERAL",
-                                "value": {}
-                            }
-                        },
-                        "targetId": "clufdddhhkgaaccebbddbhhnmetggljuq",
-                        "type": "DATABROKER_OP"
-                    },
-                    {
-                        "broker": null,
-                        "clientScript": null,
-                        "conditional": null,
-                        "declarativeAction": null,
-                        "event": null,
-                        "operation": {
-                            "dataBrokerId": "b997a84053021010cbc2ddeeff7b1228",
-                            "operationName": "REFRESH",
                             "parentResourceId": "l2_p1_slots",
                             "payload": {
                                 "type": "JSON_LITERAL",
@@ -4230,24 +3853,6 @@
                         "operation": {
                             "dataBrokerId": "b997a84053021010cbc2ddeeff7b1228",
                             "operationName": "REFRESH",
-                            "parentResourceId": "l2_p2_slots",
-                            "payload": {
-                                "type": "JSON_LITERAL",
-                                "value": {}
-                            }
-                        },
-                        "targetId": "clufddfbudaaccevddbhhnbwkkagcd",
-                        "type": "DATABROKER_OP"
-                    },
-                    {
-                        "broker": null,
-                        "clientScript": null,
-                        "conditional": null,
-                        "declarativeAction": null,
-                        "event": null,
-                        "operation": {
-                            "dataBrokerId": "b997a84053021010cbc2ddeeff7b1228",
-                            "operationName": "REFRESH",
                             "parentResourceId": "l3_p1_slots",
                             "payload": {
                                 "type": "JSON_LITERAL",
@@ -4255,24 +3860,6 @@
                             }
                         },
                         "targetId": "clufddgddsvaaccfggddbhhnzogghjjrggt",
-                        "type": "DATABROKER_OP"
-                    },
-                    {
-                        "broker": null,
-                        "clientScript": null,
-                        "conditional": null,
-                        "declarativeAction": null,
-                        "event": null,
-                        "operation": {
-                            "dataBrokerId": "b997a84053021010cbc2ddeeff7b1228",
-                            "operationName": "REFRESH",
-                            "parentResourceId": "l3_p2_slots",
-                            "payload": {
-                                "type": "JSON_LITERAL",
-                                "value": {}
-                            }
-                        },
-                        "targetId": "clufddheekhaaccfhddbhhnaahhccfjobbz",
                         "type": "DATABROKER_OP"
                     }
                 ]
@@ -4381,6 +3968,60 @@
                         },
                         "targetId": "cluewxknvaabbleddbhhmojtyjcyv",
                         "type": "DATABROKER_OP"
+                    },
+                    {
+                        "broker": null,
+                        "clientScript": null,
+                        "conditional": null,
+                        "declarativeAction": null,
+                        "event": null,
+                        "operation": {
+                            "dataBrokerId": "b997a84053021010cbc2ddeeff7b1228",
+                            "operationName": "REFRESH",
+                            "parentResourceId": "l1_p2_slots",
+                            "payload": {
+                                "type": "JSON_LITERAL",
+                                "value": {}
+                            }
+                        },
+                        "targetId": "clufcbzcjjaaaafaaddbhhnddffbntpaaz",
+                        "type": "DATABROKER_OP"
+                    },
+                    {
+                        "broker": null,
+                        "clientScript": null,
+                        "conditional": null,
+                        "declarativeAction": null,
+                        "event": null,
+                        "operation": {
+                            "dataBrokerId": "b997a84053021010cbc2ddeeff7b1228",
+                            "operationName": "REFRESH",
+                            "parentResourceId": "l2_p2_slots",
+                            "payload": {
+                                "type": "JSON_LITERAL",
+                                "value": {}
+                            }
+                        },
+                        "targetId": "clufccfrcaaaafaddbhhnutdeevddnhh",
+                        "type": "DATABROKER_OP"
+                    },
+                    {
+                        "broker": null,
+                        "clientScript": null,
+                        "conditional": null,
+                        "declarativeAction": null,
+                        "event": null,
+                        "operation": {
+                            "dataBrokerId": "b997a84053021010cbc2ddeeff7b1228",
+                            "operationName": "REFRESH",
+                            "parentResourceId": "l3_p2_slots",
+                            "payload": {
+                                "type": "JSON_LITERAL",
+                                "value": {}
+                            }
+                        },
+                        "targetId": "clufccstjaaaafkddbhhnhhtqmzgghh",
+                        "type": "DATABROKER_OP"
                     }
                 ]
             }
@@ -4472,7 +4113,7 @@
             },
             "returnFields": {
                 "type": "JSON_LITERAL",
-                "value": "original_card_reference,player_session,status,current_location"
+                "value": "original_card_reference,player_session,status,current_location,original_card_reference.card_image"
             },
             "sortType": {
                 "type": "JSON_LITERAL",
@@ -5266,14 +4907,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-01-07 02:09:17</sys_created_on>
         <sys_id>5db3fe4a932f3110cd4e7d532bba10d8</sys_id>
-        <sys_mod_count>118</sys_mod_count>
+        <sys_mod_count>186</sys_mod_count>
         <sys_name>Default</sys_name>
         <sys_package display_value="Flow Designer Marvel SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_update_name>sys_ux_macroponent_5db3fe4a932f3110cd4e7d532bba10d8</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-03-31 06:48:58</sys_updated_on>
+        <sys_updated_on>2024-03-31 11:00:55</sys_updated_on>
     </sys_ux_macroponent>
     <sys_translated_text action="delete_multiple" query="documentkey=5db3fe4a932f3110cd4e7d532bba10d8"/>
 </record_update>
