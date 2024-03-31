@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="f8ee9ff7474a751017fdc82f316d43fb" label="Game Location instance" max_length="40" name="x_168987_flow_de_0_location_instance" type="collection">
-        <element attributes="encode_utf8=false" display="true" label="Location Card" max_length="32" name="location_card" reference="x_168987_flow_de_0_card_definition" type="reference"/>
+        <element attributes="encode_utf8=false" display="true" label="Location Card" max_length="32" name="location_card" reference="x_168987_flow_de_0_card_definition" reference_qual="type=location^EQ" reference_qual_condition="type=location^EQ" type="reference"/>
         <element attributes="edge_encryption_enabled=true" choice="3" default="Choice 1" label="Location Type" max_length="40" name="location_type" type="string">
             <choice>
                 <element inactive_on_update="false" label="Choice 1" sequence="0" value="Choice 1"/>
@@ -10,7 +10,7 @@
         </element>
         <element label="Player 1 Score" max_length="40" name="player_1_score" type="integer"/>
         <element label="Player 2 Score" max_length="40" name="player_2_score" type="integer"/>
-        <element attributes="edge_encryption_enabled=true" choice="3" default="Choice 1" label="status" max_length="40" name="status" type="string">
+        <element attributes="edge_encryption_enabled=true" choice="3" default="hidden" label="status" max_length="40" name="status" type="string">
             <choice>
                 <element inactive_on_update="false" label="Revealed" sequence="0" value="revealed"/>
                 <element inactive_on_update="false" label="Hidden" sequence="1" value="hidden"/>
