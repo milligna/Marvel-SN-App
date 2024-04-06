@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="f8ee9ff7474a751017fdc82f316d43fb" label="Game Location instance" max_length="40" name="x_168987_flow_de_0_location_instance" type="collection">
+        <element label="Game Instance" max_length="32" name="game_instance" reference="x_168987_flow_de_0_game_instance" type="reference"/>
         <element attributes="encode_utf8=false" display="true" label="Location Card" max_length="32" name="location_card" reference="x_168987_flow_de_0_card_definition" reference_qual="type=location^EQ" reference_qual_condition="type=location^EQ" type="reference"/>
         <element attributes="edge_encryption_enabled=true" choice="3" default="Choice 1" label="Location Type" max_length="40" name="location_type" type="string">
             <choice>
@@ -8,6 +9,7 @@
                 <element inactive_on_update="false" label="Choice 3" sequence="2" value="Choice 3"/>
             </choice>
         </element>
+        <element label="Location Visible" max_length="40" name="location_visible" type="boolean"/>
         <element label="Player 1 Score" max_length="40" name="player_1_score" type="integer"/>
         <element label="Player 2 Score" max_length="40" name="player_2_score" type="integer"/>
         <element attributes="edge_encryption_enabled=true" choice="3" default="hidden" label="status" max_length="40" name="status" type="string">
@@ -18,6 +20,9 @@
             </choice>
         </element>
         <index name="index">
+            <element name="game_instance"/>
+        </index>
+        <index name="index2">
             <element name="location_card"/>
         </index>
     </element>
