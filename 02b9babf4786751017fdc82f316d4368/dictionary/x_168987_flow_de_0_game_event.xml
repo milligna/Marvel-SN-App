@@ -3,9 +3,9 @@
         <element attributes="encode_utf8=false" label="Card Reference" max_length="32" name="card_reference" reference="x_168987_flow_de_0_card_instance" type="reference"/>
         <element attributes="edge_encryption_enabled=true" choice="1" label="Operation" max_length="40" name="operation" type="string">
             <choice>
-                <element inactive_on_update="false" label="Choice 1" sequence="0" value="Choice 1"/>
-                <element inactive_on_update="false" label="Choice 2" sequence="1" value="Choice 2"/>
-                <element inactive_on_update="false" label="Choice 3" sequence="2" value="Choice 3"/>
+                <element inactive_on_update="false" label="play" sequence="0" value="Play to location"/>
+                <element inactive_on_update="false" label="banish" sequence="1" value="Banish from location"/>
+                <element inactive_on_update="false" label="move" sequence="2" value="Move to location"/>
             </choice>
         </element>
         <element attributes="edge_encryption_enabled=true" choice="1" label="Status" max_length="40" name="state" type="string">
@@ -16,11 +16,16 @@
                 <element inactive_on_update="false" label="Failed" sequence="3" value="failed"/>
             </choice>
         </element>
+        <element attributes="encode_utf8=false" label="Target Location" max_length="32" name="target_location" reference="x_168987_flow_de_0_location_instance" type="reference"/>
         <element attributes="encode_utf8=false" label="Target Slot" max_length="32" name="target_slot" reference="x_168987_flow_de_0_location_slot" type="reference"/>
+        <element label="Turn Played" max_length="40" name="turn_played" type="integer"/>
         <index name="index">
             <element name="card_reference"/>
         </index>
         <index name="index2">
+            <element name="target_location"/>
+        </index>
+        <index name="index3">
             <element name="target_slot"/>
         </index>
     </element>
