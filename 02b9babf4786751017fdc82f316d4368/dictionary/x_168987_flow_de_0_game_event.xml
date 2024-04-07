@@ -6,8 +6,10 @@
                 <element inactive_on_update="false" label="play" sequence="0" value="Play to location"/>
                 <element inactive_on_update="false" label="banish" sequence="1" value="Banish from location"/>
                 <element inactive_on_update="false" label="move" sequence="2" value="Move to location"/>
+                <element inactive_on_update="false" label="End Turn" sequence="4" value="end_turn"/>
             </choice>
         </element>
+        <element label="Player Session" max_length="32" name="player_session" reference="x_168987_flow_de_0_player_session" type="reference"/>
         <element attributes="edge_encryption_enabled=true" choice="1" label="Status" max_length="40" name="state" type="string">
             <choice>
                 <element inactive_on_update="false" label="Pending" sequence="0" value="pending"/>
@@ -23,9 +25,12 @@
             <element name="card_reference"/>
         </index>
         <index name="index2">
-            <element name="target_location"/>
+            <element name="player_session"/>
         </index>
         <index name="index3">
+            <element name="target_location"/>
+        </index>
+        <index name="index4">
             <element name="target_slot"/>
         </index>
     </element>
