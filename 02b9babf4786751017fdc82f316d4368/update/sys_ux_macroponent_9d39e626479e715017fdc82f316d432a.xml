@@ -7,112 +7,6 @@
         <composition>[
     {
         "definition": {
-            "id": "d37ce8abca89d02905fed903c8e34d8e",
-            "type": "MACROPONENT"
-        },
-        "elementId": "refresh_deck",
-        "elementLabel": "Refresh Deck",
-        "eventMappings": [
-            {
-                "eventMappingId": "clotpeeyjsaaggdduddbhhpwyzyefju",
-                "isConfiguration": false,
-                "offRowStorageId": null,
-                "sourceEventApiName": "sn_button.NOW_BUTTON#CLICKED",
-                "sourceEventCorrelationId": null,
-                "sourceEventDefinition": {
-                    "apiName": "sn_button.NOW_BUTTON#CLICKED",
-                    "id": null,
-                    "type": "UXEVENT"
-                },
-                "sourceEventSysId": null,
-                "targets": [
-                    {
-                        "broker": null,
-                        "clientScript": null,
-                        "conditional": null,
-                        "declarativeAction": null,
-                        "event": null,
-                        "operation": {
-                            "dataBrokerId": "b997a84053021010cbc2ddeeff7b1228",
-                            "operationName": "REFRESH",
-                            "parentResourceId": "get_player_cards",
-                            "payload": {
-                                "type": "JSON_LITERAL",
-                                "value": {}
-                            }
-                        },
-                        "targetId": "clotpeeyjsaaggddvddbhhpffbbmnlfho",
-                        "type": "DATABROKER_OP"
-                    },
-                    {
-                        "broker": null,
-                        "clientScript": null,
-                        "conditional": null,
-                        "declarativeAction": null,
-                        "event": null,
-                        "operation": {
-                            "dataBrokerId": "9664d48053461010cbc2ddeeff7b128e",
-                            "operationName": "REFRESH",
-                            "parentResourceId": "get_deck_record",
-                            "payload": {
-                                "type": "JSON_LITERAL",
-                                "value": {}
-                            }
-                        },
-                        "targetId": "clotpgvmzaaggjjdddbhhpbbzffjaggaaq",
-                        "type": "DATABROKER_OP"
-                    }
-                ]
-            }
-        ],
-        "isHidden": {
-            "type": "JSON_LITERAL",
-            "value": null
-        },
-        "preset": null,
-        "propertyValues": {
-            "configAria": {
-                "type": "JSON_LITERAL",
-                "value": {}
-            },
-            "disabled": {
-                "type": "JSON_LITERAL",
-                "value": false
-            },
-            "icon": {
-                "type": "JSON_LITERAL",
-                "value": null
-            },
-            "label": {
-                "type": "TRANSLATION_LITERAL",
-                "value": {
-                    "code": null,
-                    "comment": "",
-                    "message": "Refresh Deck"
-                }
-            },
-            "size": {
-                "type": "JSON_LITERAL",
-                "value": "md"
-            },
-            "tooltipContent": {
-                "type": "TRANSLATION_LITERAL",
-                "value": {
-                    "code": null,
-                    "comment": "",
-                    "message": "Enter a label"
-                }
-            },
-            "variant": {
-                "type": "JSON_LITERAL",
-                "value": "secondary"
-            }
-        },
-        "slot": null,
-        "styles": null
-    },
-    {
-        "definition": {
             "id": "d356d14b6e293a3020a244b63d278d8f",
             "type": "MACROPONENT"
         },
@@ -223,7 +117,7 @@
                     ],
                     "isHidden": {
                         "type": "JSON_LITERAL",
-                        "value": null
+                        "value": true
                     },
                     "preset": null,
                     "propertyValues": {
@@ -261,7 +155,7 @@
                         },
                         "variant": {
                             "type": "JSON_LITERAL",
-                            "value": "secondary"
+                            "value": "primary-positive"
                         }
                     },
                     "slot": null,
@@ -318,10 +212,10 @@
                     ],
                     "isHidden": {
                         "type": "JSON_LITERAL",
-                        "value": null
+                        "value": true
                     },
                     "preset": {
-                        "controllerElementId": "form_1",
+                        "controllerElementId": "deck_form_resource",
                         "disabledEventTargetIds": [
                             
                         ],
@@ -380,7 +274,7 @@
                     "styles": {
                         "align-items": "center",
                         "flex-direction": "row",
-                        "justify-content": "space-between",
+                        "justify-content": "center",
                         "margin-bottom": "0",
                         "margin-left": "var(--now-scalable-space--md)",
                         "margin-right": "var(--now-scalable-space--md)",
@@ -536,11 +430,53 @@
                         "composition": [
                             {
                                 "definition": {
+                                    "id": "4335ba6dca80378f7ba7a67cd6667bec",
+                                    "type": "MACROPONENT"
+                                },
+                                "elementId": "deck_card_name",
+                                "elementLabel": "Deck Card name",
+                                "eventMappings": [
+                                    
+                                ],
+                                "isHidden": {
+                                    "type": "JSON_LITERAL",
+                                    "value": null
+                                },
+                                "preset": null,
+                                "propertyValues": {
+                                    "configAria": {
+                                        "type": "JSON_LITERAL",
+                                        "value": {}
+                                    },
+                                    "css": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "* { }"
+                                    },
+                                    "tag": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "h4"
+                                    },
+                                    "text": {
+                                        "binding": {
+                                            "address": [
+                                                "card_definition",
+                                                "displayValue"
+                                            ],
+                                            "category": "value"
+                                        },
+                                        "type": "REPEATER_ITEM_BINDING"
+                                    }
+                                },
+                                "slot": null,
+                                "styles": null
+                            },
+                            {
+                                "definition": {
                                     "id": "d356d14b6e293a3020a244b63d278d8f",
                                     "type": "MACROPONENT"
                                 },
-                                "elementId": "container_1",
-                                "elementLabel": "Container 1",
+                                "elementId": "image_container",
+                                "elementLabel": "Image Container",
                                 "eventMappings": [
                                     
                                 ],
@@ -565,7 +501,7 @@
                                                 "value": null
                                             },
                                             "preset": {
-                                                "controllerElementId": "form_1",
+                                                "controllerElementId": "deck_form_resource",
                                                 "disabledEventTargetIds": [
                                                     
                                                 ],
@@ -613,18 +549,13 @@
                                                 },
                                                 {
                                                     "element_id": "player_card_image",
-                                                    "styles": {
-                                                        "margin-top": "0",
-                                                        "padding-top": "0",
-                                                        "width": "60px"
-                                                    }
+                                                    "styles": {}
                                                 }
                                             ],
                                             "root": null,
                                             "rules": null,
                                             "styles": {
-                                                "flex-direction": "column",
-                                                "width": "100%"
+                                                "flex-direction": "column"
                                             },
                                             "templateId": "5832fd4d53c31010e6bcddeeff7b12db",
                                             "type": "flex"
@@ -708,18 +639,41 @@
                                 "children": null,
                                 "items": [
                                     {
-                                        "element_id": "container_1",
+                                        "element_id": "deck_card_name",
                                         "styles": {
+                                            "align-self": "center",
+                                            "color": "#dee2fb",
+                                            "flex": "none",
+                                            "font-style": "italic",
+                                            "font-variant": "small-caps",
+                                            "padding": "0",
+                                            "padding-bottom": "0",
+                                            "padding-left": "0",
+                                            "padding-right": "0",
+                                            "padding-top": "0",
+                                            "text-shadow": "1px 1px 2px #9097b7, 0 0 1em blue, 0 0 0.2em blue"
+                                        }
+                                    },
+                                    {
+                                        "element_id": "image_container",
+                                        "styles": {
+                                            "align-self": "center",
                                             "box-shadow": "0 0 15px 5px white,  /* inner white */    0 0 10px 5px #f0f, /* middle magenta */    0 0 10px 5px #0ff",
-                                            "height": "84px"
+                                            "margin-top": "0",
+                                            "padding-top": "0",
+                                            "width": "60px"
                                         }
                                     },
                                     {
                                         "element_id": "player_card_ability",
                                         "styles": {
                                             "color": "white",
-                                            "margin-top": "var(--now-scalable-space--3xl)",
-                                            "padding-top": "20px"
+                                            "margin-top": "var(--now-scalable-space--md)",
+                                            "padding": "var(--now-scalable-space--sm)",
+                                            "padding-bottom": "var(--now-scalable-space--sm)",
+                                            "padding-left": "var(--now-scalable-space--sm)",
+                                            "padding-right": "var(--now-scalable-space--sm)",
+                                            "padding-top": "var(--now-scalable-space--sm)"
                                         }
                                     }
                                 ],
@@ -776,7 +730,7 @@
                             "element_id": "deck_card_container",
                             "styles": {
                                 "background-color": "#060007",
-                                "height": "168px",
+                                "height": "220px",
                                 "width": "16.666666%"
                             }
                         }
@@ -961,6 +915,48 @@
                         "composition": [
                             {
                                 "definition": {
+                                    "id": "4335ba6dca80378f7ba7a67cd6667bec",
+                                    "type": "MACROPONENT"
+                                },
+                                "elementId": "card_name",
+                                "elementLabel": "Card Name",
+                                "eventMappings": [
+                                    
+                                ],
+                                "isHidden": {
+                                    "type": "JSON_LITERAL",
+                                    "value": null
+                                },
+                                "preset": null,
+                                "propertyValues": {
+                                    "configAria": {
+                                        "type": "JSON_LITERAL",
+                                        "value": {}
+                                    },
+                                    "css": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "* { }"
+                                    },
+                                    "tag": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "h3"
+                                    },
+                                    "text": {
+                                        "binding": {
+                                            "address": [
+                                                "name",
+                                                "displayValue"
+                                            ],
+                                            "category": "value"
+                                        },
+                                        "type": "REPEATER_ITEM_BINDING"
+                                    }
+                                },
+                                "slot": null,
+                                "styles": null
+                            },
+                            {
+                                "definition": {
                                     "id": "15fe506403f8a98575b6df59008ea8f1",
                                     "type": "MACROPONENT"
                                 },
@@ -974,7 +970,7 @@
                                     "value": false
                                 },
                                 "preset": {
-                                    "controllerElementId": "form_1",
+                                    "controllerElementId": "deck_form_resource",
                                     "disabledEventTargetIds": [
                                         
                                     ],
@@ -1055,6 +1051,16 @@
                                         }
                                     },
                                     {
+                                        "element_id": "card_name",
+                                        "styles": {
+                                            "align-self": "center",
+                                            "color": "#dee2fb",
+                                            "font-style": "italic",
+                                            "font-variant": "small-caps",
+                                            "text-shadow": "1px 1px 2px #9097b7, 0 0 1em blue, 0 0 0.2em blue"
+                                        }
+                                    },
+                                    {
                                         "element_id": "card_image",
                                         "styles": {
                                             "align-self": "center",
@@ -1062,7 +1068,7 @@
                                             "border-style": "id",
                                             "border-width": "var(--now-static-space--xxs)",
                                             "flex": "none",
-                                            "margin-top": "var(--now-scalable-space--3xl)",
+                                            "margin-top": "0",
                                             "padding-left": "0",
                                             "padding-right": "0",
                                             "width": "150px"
@@ -1072,7 +1078,17 @@
                                         "element_id": "ability_text",
                                         "styles": {
                                             "color": "white",
-                                            "font-style": "italic"
+                                            "font-style": "italic",
+                                            "margin": "var(--now-scalable-space--xs)",
+                                            "margin-bottom": "var(--now-scalable-space--xs)",
+                                            "margin-left": "var(--now-scalable-space--xs)",
+                                            "margin-right": "var(--now-scalable-space--xs)",
+                                            "margin-top": "var(--now-scalable-space--xs)",
+                                            "padding": "var(--now-scalable-space--sm)",
+                                            "padding-bottom": "var(--now-scalable-space--sm)",
+                                            "padding-left": "var(--now-scalable-space--sm)",
+                                            "padding-right": "var(--now-scalable-space--sm)",
+                                            "padding-top": "var(--now-scalable-space--md)"
                                         }
                                     }
                                 ],
@@ -1167,8 +1183,8 @@
             "type": "CONTROLLER"
         },
         "dependencies": {},
-        "elementId": "form_1",
-        "elementLabel": "Form 1",
+        "elementId": "deck_form_resource",
+        "elementLabel": "Deck form resource",
         "eventMappings": [
             
         ],
@@ -1198,12 +1214,17 @@
                 "value": ""
             },
             "inputSysId": {
-                "type": "JSON_LITERAL",
-                "value": "ab6850e0d9b53110cedf7dffddb48f72"
+                "binding": {
+                    "address": [
+                        "deckid"
+                    ],
+                    "category": "props"
+                },
+                "type": "CONTEXT_BINDING"
             },
             "inputTable": {
                 "type": "JSON_LITERAL",
-                "value": "task"
+                "value": "x_168987_flow_de_0_player_deck"
             },
             "screen": {
                 "type": "JSON_LITERAL",
@@ -1540,45 +1561,6 @@
                         "type": "DATABROKER_OP"
                     }
                 ]
-            },
-            {
-                "eventMappingId": "clotutfiizaaggieddbhhpaasvhaakjjf",
-                "isConfiguration": false,
-                "offRowStorageId": null,
-                "sourceEventApiName": "sn_record_watcher.RECORD_WATCHER#SUBSCRIPTION_STARTED",
-                "sourceEventCorrelationId": null,
-                "sourceEventDefinition": {
-                    "apiName": "sn_record_watcher.RECORD_WATCHER#SUBSCRIPTION_STARTED",
-                    "id": null,
-                    "type": "UXEVENT"
-                },
-                "sourceEventSysId": null,
-                "targets": [
-                    {
-                        "broker": null,
-                        "clientScript": null,
-                        "conditional": null,
-                        "declarativeAction": null,
-                        "event": {
-                            "apiName": "sn_uxf_page.NOW_UXF_PAGE#ADD_NOTIFICATIONS",
-                            "payload": {
-                                "type": "JSON_LITERAL",
-                                "value": {
-                                    "items": [
-                                        {
-                                            "message": "watcher has subscribed",
-                                            "type": "info"
-                                        }
-                                    ]
-                                }
-                            },
-                            "sysId": "49fe7d575f983bb3f8eea3fa8d40694c"
-                        },
-                        "operation": null,
-                        "targetId": "clotutfiizaaggifddbhhprqffcweya",
-                        "type": "EVENT"
-                    }
-                ]
             }
         ],
         "inputValues": {
@@ -1615,6 +1597,58 @@
             "table": {
                 "type": "JSON_LITERAL",
                 "value": "x_168987_flow_de_0_player_deck"
+            }
+        },
+        "readEvaluationMode": "EAGER"
+    },
+    {
+        "definition": {
+            "id": "eebfe69877de9110960ced43ba5a99ec",
+            "type": "CONTROLLER"
+        },
+        "dependencies": {
+            "getRelatedItemsDataController": "get_related_items_1"
+        },
+        "elementId": "related_items_1",
+        "elementLabel": "Related Items 1",
+        "eventMappings": [
+            
+        ],
+        "inputValues": {
+            "relatedItemData": {
+                "type": "JSON_LITERAL",
+                "value": null
+            },
+            "relatedItemSysids": {
+                "type": "JSON_LITERAL",
+                "value": null
+            }
+        },
+        "readEvaluationMode": "EAGER"
+    },
+    {
+        "definition": {
+            "id": "6de5e4974343611017b739603ab8f2c1",
+            "type": "CONTROLLER"
+        },
+        "dependencies": {},
+        "elementId": "get_related_items_1",
+        "elementLabel": "Get Related Items 1",
+        "eventMappings": [
+            
+        ],
+        "inputValues": {
+            "allNodes": {
+                "type": "JSON_LITERAL",
+                "value": null
+            },
+            "relatedItemCategorySysId": {
+                "type": "JSON_LITERAL",
+                "value": null
+            },
+            "relatedItemSysids": {
+                "type": "JSON_LITERAL",
+                "value": null
             }
         },
         "readEvaluationMode": "EAGER"
@@ -1655,10 +1689,6 @@
         "children": null,
         "items": [
             {
-                "element_id": "refresh_deck",
-                "styles": {}
-            },
-            {
                 "element_id": "header",
                 "styles": {
                     "background": "#060007",
@@ -1670,9 +1700,10 @@
                 "styles": {
                     "background": "#060007",
                     "border-color": "#010908",
-                    "border-radius": "var(--now-static-border-radius--lg)",
+                    "border-radius": "var(--now-static-border-radius--0)",
                     "border-style": "hidden",
                     "border-width": "1px",
+                    "height": "100%",
                     "width": "100%"
                 }
             },
@@ -1704,8 +1735,11 @@
         "rules": null,
         "styles": {
             "flex-direction": "column",
-            "padding-bottom": "var(--now-scalable-space--lg)",
-            "padding-top": "var(--now-scalable-space--lg)"
+            "padding": "0",
+            "padding-bottom": "0",
+            "padding-left": "0",
+            "padding-right": "0",
+            "padding-top": "0"
         },
         "templateId": "5832fd4d53c31010e6bcddeeff7b12db",
         "type": "flex"
@@ -1737,9 +1771,6 @@
   "message" : "Enter a label",
   "comment" : ""
 }, {
-  "message" : "Refresh Deck",
-  "comment" : ""
-}, {
   "message" : "Select Cards:",
   "comment" : ""
 } ]</required_translations>
@@ -1752,14 +1783,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-11-07 11:21:53</sys_created_on>
         <sys_id>9d39e626479e715017fdc82f316d432a</sys_id>
-        <sys_mod_count>202</sys_mod_count>
+        <sys_mod_count>228</sys_mod_count>
         <sys_name>Default</sys_name>
         <sys_package display_value="Flow Designer Marvel SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_update_name>sys_ux_macroponent_9d39e626479e715017fdc82f316d432a</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-03-01 06:28:01</sys_updated_on>
+        <sys_updated_on>2024-04-08 23:18:27</sys_updated_on>
     </sys_ux_macroponent>
     <sys_translated_text action="delete_multiple" query="documentkey=9d39e626479e715017fdc82f316d432a"/>
 </record_update>
