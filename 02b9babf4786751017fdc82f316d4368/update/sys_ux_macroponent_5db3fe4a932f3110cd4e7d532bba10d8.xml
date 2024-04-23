@@ -2603,65 +2603,29 @@
                                                 "composition": [
                                                     {
                                                         "definition": {
-                                                            "id": "1f6e0643eca7a637e36bd7833549ec9e",
-                                                            "type": "MACROPONENT"
-                                                        },
-                                                        "elementId": "heading_1",
-                                                        "elementLabel": "Heading 1",
-                                                        "eventMappings": [
-                                                            
-                                                        ],
-                                                        "isHidden": {
-                                                            "type": "JSON_LITERAL",
-                                                            "value": null
-                                                        },
-                                                        "preset": null,
-                                                        "propertyValues": {
-                                                            "hasNoMargin": {
-                                                                "type": "JSON_LITERAL",
-                                                                "value": false
-                                                            },
-                                                            "label": {
-                                                                "binding": {
-                                                                    "address": [
-                                                                        "card_instance",
-                                                                        "_reference",
-                                                                        "original_card_reference",
-                                                                        "displayValue"
-                                                                    ],
-                                                                    "category": "value"
-                                                                },
-                                                                "type": "REPEATER_ITEM_BINDING"
-                                                            },
-                                                            "level": {
-                                                                "type": "JSON_LITERAL",
-                                                                "value": "1"
-                                                            },
-                                                            "variant": {
-                                                                "type": "JSON_LITERAL",
-                                                                "value": "title-secondary"
-                                                            },
-                                                            "wontWrap": {
-                                                                "type": "JSON_LITERAL",
-                                                                "value": false
-                                                            }
-                                                        },
-                                                        "slot": null,
-                                                        "styles": null
-                                                    },
-                                                    {
-                                                        "definition": {
                                                             "id": "15fe506403f8a98575b6df59008ea8f1",
                                                             "type": "MACROPONENT"
                                                         },
-                                                        "elementId": "L2_P1_image",
-                                                        "elementLabel": "L2 P2 image",
+                                                        "elementId": "image_4",
+                                                        "elementLabel": "Image 4",
                                                         "eventMappings": [
                                                             
                                                         ],
                                                         "isHidden": {
-                                                            "type": "JSON_LITERAL",
-                                                            "value": false
+                                                            "operation": {
+                                                                "operand": {
+                                                                    "binding": {
+                                                                        "address": [
+                                                                            "slot_visible",
+                                                                            "value"
+                                                                        ],
+                                                                        "category": "value"
+                                                                    },
+                                                                    "type": "REPEATER_ITEM_BINDING"
+                                                                },
+                                                                "operator": "NOT"
+                                                            },
+                                                            "type": "UNARY"
                                                         },
                                                         "preset": null,
                                                         "propertyValues": {
@@ -2675,7 +2639,7 @@
                                                             },
                                                             "height": {
                                                                 "type": "JSON_LITERAL",
-                                                                "value": 120
+                                                                "value": 150
                                                             },
                                                             "position": {
                                                                 "type": "JSON_LITERAL",
@@ -2687,36 +2651,7 @@
                                                                     
                                                                 ]
                                                             },
-                                                            "src": null,
-                                                            "width": {
-                                                                "type": "JSON_LITERAL",
-                                                                "value": null
-                                                            }
-                                                        },
-                                                        "slot": null,
-                                                        "styles": null
-                                                    },
-                                                    {
-                                                        "definition": {
-                                                            "id": "1f6e0643eca7a637e36bd7833549ec9e",
-                                                            "type": "MACROPONENT"
-                                                        },
-                                                        "elementId": "heading_2",
-                                                        "elementLabel": "Heading 2",
-                                                        "eventMappings": [
-                                                            
-                                                        ],
-                                                        "isHidden": {
-                                                            "type": "JSON_LITERAL",
-                                                            "value": null
-                                                        },
-                                                        "preset": null,
-                                                        "propertyValues": {
-                                                            "hasNoMargin": {
-                                                                "type": "JSON_LITERAL",
-                                                                "value": false
-                                                            },
-                                                            "label": {
+                                                            "src": {
                                                                 "binding": {
                                                                     "address": [
                                                                         "card_instance",
@@ -2724,23 +2659,15 @@
                                                                         "original_card_reference",
                                                                         "_reference",
                                                                         "card_image",
-                                                                        "value"
+                                                                        "displayValue"
                                                                     ],
                                                                     "category": "value"
                                                                 },
                                                                 "type": "REPEATER_ITEM_BINDING"
                                                             },
-                                                            "level": {
+                                                            "width": {
                                                                 "type": "JSON_LITERAL",
-                                                                "value": "1"
-                                                            },
-                                                            "variant": {
-                                                                "type": "JSON_LITERAL",
-                                                                "value": "title-primary"
-                                                            },
-                                                            "wontWrap": {
-                                                                "type": "JSON_LITERAL",
-                                                                "value": false
+                                                                "value": ""
                                                             }
                                                         },
                                                         "slot": null,
@@ -2752,16 +2679,11 @@
                                                         "children": null,
                                                         "items": [
                                                             {
-                                                                "element_id": "heading_1",
-                                                                "styles": {}
-                                                            },
-                                                            {
-                                                                "element_id": "L2_P1_image",
-                                                                "styles": {}
-                                                            },
-                                                            {
-                                                                "element_id": "heading_2",
-                                                                "styles": {}
+                                                                "element_id": "image_4",
+                                                                "styles": {
+                                                                    "height": "200px",
+                                                                    "width": ""
+                                                                }
                                                             }
                                                         ],
                                                         "root": null,
@@ -3071,7 +2993,7 @@
                                                 },
                                                 "interaction": {
                                                     "type": "JSON_LITERAL",
-                                                    "value": "none"
+                                                    "value": "click"
                                                 },
                                                 "selected": {
                                                     "type": "JSON_LITERAL",
@@ -3522,7 +3444,7 @@
                                                 },
                                                 "interaction": {
                                                     "type": "JSON_LITERAL",
-                                                    "value": "none"
+                                                    "value": "click"
                                                 },
                                                 "selected": {
                                                     "type": "JSON_LITERAL",
@@ -8508,7 +8430,273 @@
         "elementId": "create_game_event",
         "elementLabel": "Create Game Event",
         "eventMappings": [
-            
+            {
+                "eventMappingId": "clvbxcceenqaaaagoddbhhnvnribbepdd",
+                "isConfiguration": false,
+                "offRowStorageId": null,
+                "sourceEventApiName": "sn_uxf.DATA_OP_SUCCEEDED",
+                "sourceEventCorrelationId": null,
+                "sourceEventDefinition": {
+                    "apiName": "sn_uxf.DATA_OP_SUCCEEDED",
+                    "id": null,
+                    "type": "UXEVENT"
+                },
+                "sourceEventSysId": null,
+                "targets": [
+                    {
+                        "broker": null,
+                        "clientScript": null,
+                        "conditional": null,
+                        "declarativeAction": null,
+                        "event": null,
+                        "operation": {
+                            "dataBrokerId": "b997a84053021010cbc2ddeeff7b1228",
+                            "operationName": "REFRESH",
+                            "parentResourceId": "get_player_1_hand",
+                            "payload": {
+                                "type": "JSON_LITERAL",
+                                "value": {}
+                            }
+                        },
+                        "targetId": "clvbxcceenqaaaagpddbhhnnuccfqtjv",
+                        "type": "DATABROKER_OP"
+                    },
+                    {
+                        "broker": null,
+                        "clientScript": null,
+                        "conditional": null,
+                        "declarativeAction": null,
+                        "event": null,
+                        "operation": {
+                            "dataBrokerId": "9664d48053461010cbc2ddeeff7b128e",
+                            "operationName": "REFRESH",
+                            "parentResourceId": "get_game_instance",
+                            "payload": {
+                                "type": "JSON_LITERAL",
+                                "value": {}
+                            }
+                        },
+                        "targetId": "clvbxcckbbyaaaagzddbhhnlbuazjjbbb",
+                        "type": "DATABROKER_OP"
+                    },
+                    {
+                        "broker": null,
+                        "clientScript": null,
+                        "conditional": null,
+                        "declarativeAction": null,
+                        "event": null,
+                        "operation": {
+                            "dataBrokerId": "9664d48053461010cbc2ddeeff7b128e",
+                            "operationName": "REFRESH",
+                            "parentResourceId": "get_p1_session",
+                            "payload": {
+                                "type": "JSON_LITERAL",
+                                "value": {}
+                            }
+                        },
+                        "targetId": "clvbxccrhhhhaaaahjjddbhhndiryrkdz",
+                        "type": "DATABROKER_OP"
+                    },
+                    {
+                        "broker": null,
+                        "clientScript": null,
+                        "conditional": null,
+                        "declarativeAction": null,
+                        "event": null,
+                        "operation": {
+                            "dataBrokerId": "9664d48053461010cbc2ddeeff7b128e",
+                            "operationName": "REFRESH",
+                            "parentResourceId": "get_p2_session",
+                            "payload": {
+                                "type": "JSON_LITERAL",
+                                "value": {}
+                            }
+                        },
+                        "targetId": "clvbxccyeewaaaahjddbhhnylkddbbkyk",
+                        "type": "DATABROKER_OP"
+                    },
+                    {
+                        "broker": null,
+                        "clientScript": null,
+                        "conditional": null,
+                        "declarativeAction": null,
+                        "event": null,
+                        "operation": {
+                            "dataBrokerId": "b997a84053021010cbc2ddeeff7b1228",
+                            "operationName": "REFRESH",
+                            "parentResourceId": "get_player_2_hand",
+                            "payload": {
+                                "type": "JSON_LITERAL",
+                                "value": {}
+                            }
+                        },
+                        "targetId": "clvbxddhhqlaaaahtddbhhnaaqovbbivhh",
+                        "type": "DATABROKER_OP"
+                    },
+                    {
+                        "broker": null,
+                        "clientScript": null,
+                        "conditional": null,
+                        "declarativeAction": null,
+                        "event": null,
+                        "operation": {
+                            "dataBrokerId": "9664d48053461010cbc2ddeeff7b128e",
+                            "operationName": "REFRESH",
+                            "parentResourceId": "get_location_1",
+                            "payload": {
+                                "type": "JSON_LITERAL",
+                                "value": {}
+                            }
+                        },
+                        "targetId": "clvbxddggkaaaaiddddbhhnjshcdfjjc",
+                        "type": "DATABROKER_OP"
+                    },
+                    {
+                        "broker": null,
+                        "clientScript": null,
+                        "conditional": null,
+                        "declarativeAction": null,
+                        "event": null,
+                        "operation": {
+                            "dataBrokerId": "9664d48053461010cbc2ddeeff7b128e",
+                            "operationName": "REFRESH",
+                            "parentResourceId": "get_location_2",
+                            "payload": {
+                                "type": "JSON_LITERAL",
+                                "value": {}
+                            }
+                        },
+                        "targetId": "clvbxddowaaaaaidddbhhngpksnpdds",
+                        "type": "DATABROKER_OP"
+                    },
+                    {
+                        "broker": null,
+                        "clientScript": null,
+                        "conditional": null,
+                        "declarativeAction": null,
+                        "event": null,
+                        "operation": {
+                            "dataBrokerId": "9664d48053461010cbc2ddeeff7b128e",
+                            "operationName": "REFRESH",
+                            "parentResourceId": "get_location_3",
+                            "payload": {
+                                "type": "JSON_LITERAL",
+                                "value": {}
+                            }
+                        },
+                        "targetId": "clvbxddwhhqaaaainddbhhnxpynunku",
+                        "type": "DATABROKER_OP"
+                    },
+                    {
+                        "broker": null,
+                        "clientScript": null,
+                        "conditional": null,
+                        "declarativeAction": null,
+                        "event": null,
+                        "operation": {
+                            "dataBrokerId": "b997a84053021010cbc2ddeeff7b1228",
+                            "operationName": "REFRESH",
+                            "parentResourceId": "l1_p1_slots",
+                            "payload": {
+                                "type": "JSON_LITERAL",
+                                "value": {}
+                            }
+                        },
+                        "targetId": "clvbxeeddgbaaaaixddbhhnzbrjjkzhr",
+                        "type": "DATABROKER_OP"
+                    },
+                    {
+                        "broker": null,
+                        "clientScript": null,
+                        "conditional": null,
+                        "declarativeAction": null,
+                        "event": null,
+                        "operation": {
+                            "dataBrokerId": "b997a84053021010cbc2ddeeff7b1228",
+                            "operationName": "REFRESH",
+                            "parentResourceId": "l2_p2_slots",
+                            "payload": {
+                                "type": "JSON_LITERAL",
+                                "value": {}
+                            }
+                        },
+                        "targetId": "clvbxeebeeiiaaaajhhddbhhneuaanyqrh",
+                        "type": "DATABROKER_OP"
+                    },
+                    {
+                        "broker": null,
+                        "clientScript": null,
+                        "conditional": null,
+                        "declarativeAction": null,
+                        "event": null,
+                        "operation": {
+                            "dataBrokerId": "b997a84053021010cbc2ddeeff7b1228",
+                            "operationName": "REFRESH",
+                            "parentResourceId": "l3_p1_slots",
+                            "payload": {
+                                "type": "JSON_LITERAL",
+                                "value": {}
+                            }
+                        },
+                        "targetId": "clvbxeeioaaaaaajhddbhhneessggggkeea",
+                        "type": "DATABROKER_OP"
+                    },
+                    {
+                        "broker": null,
+                        "clientScript": null,
+                        "conditional": null,
+                        "declarativeAction": null,
+                        "event": null,
+                        "operation": {
+                            "dataBrokerId": "b997a84053021010cbc2ddeeff7b1228",
+                            "operationName": "REFRESH",
+                            "parentResourceId": "l3_p2_slots",
+                            "payload": {
+                                "type": "JSON_LITERAL",
+                                "value": {}
+                            }
+                        },
+                        "targetId": "clvbxeerijaaaajrddbhhnyxoeewjm",
+                        "type": "DATABROKER_OP"
+                    },
+                    {
+                        "broker": null,
+                        "clientScript": null,
+                        "conditional": null,
+                        "declarativeAction": null,
+                        "event": null,
+                        "operation": {
+                            "dataBrokerId": "b997a84053021010cbc2ddeeff7b1228",
+                            "operationName": "REFRESH",
+                            "parentResourceId": "l1_p2_slots",
+                            "payload": {
+                                "type": "JSON_LITERAL",
+                                "value": {}
+                            }
+                        },
+                        "targetId": "clvbxffcchhoaaaakbbddbhhnffggddffxtigg",
+                        "type": "DATABROKER_OP"
+                    },
+                    {
+                        "broker": null,
+                        "clientScript": null,
+                        "conditional": null,
+                        "declarativeAction": null,
+                        "event": null,
+                        "operation": {
+                            "dataBrokerId": "9664d48053461010cbc2ddeeff7b128e",
+                            "operationName": "REFRESH",
+                            "parentResourceId": "get_selected_record",
+                            "payload": {
+                                "type": "JSON_LITERAL",
+                                "value": {}
+                            }
+                        },
+                        "targetId": "clvbxffjjjjsaaaakbddbhhnicqccbbvsq",
+                        "type": "DATABROKER_OP"
+                    }
+                ]
+            }
         ],
         "inputValues": {
             "table": {
@@ -8760,14 +8948,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-01-07 02:09:17</sys_created_on>
         <sys_id>5db3fe4a932f3110cd4e7d532bba10d8</sys_id>
-        <sys_mod_count>393</sys_mod_count>
+        <sys_mod_count>400</sys_mod_count>
         <sys_name>Default</sys_name>
         <sys_package display_value="Flow Designer Marvel SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_update_name>sys_ux_macroponent_5db3fe4a932f3110cd4e7d532bba10d8</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-08 23:38:13</sys_updated_on>
+        <sys_updated_on>2024-04-23 05:03:01</sys_updated_on>
     </sys_ux_macroponent>
     <sys_translated_text action="delete_multiple" query="documentkey=5db3fe4a932f3110cd4e7d532bba10d8"/>
 </record_update>
