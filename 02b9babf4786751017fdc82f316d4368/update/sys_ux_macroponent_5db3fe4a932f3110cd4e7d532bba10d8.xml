@@ -444,7 +444,7 @@
                         },
                         "variant": {
                             "type": "JSON_LITERAL",
-                            "value": "header-primary"
+                            "value": "title-tertiary"
                         },
                         "wontWrap": {
                             "type": "JSON_LITERAL",
@@ -491,7 +491,7 @@
                         },
                         "variant": {
                             "type": "JSON_LITERAL",
-                            "value": "header-primary"
+                            "value": "title-tertiary"
                         },
                         "wontWrap": {
                             "type": "JSON_LITERAL",
@@ -535,7 +535,7 @@
                         },
                         "variant": {
                             "type": "JSON_LITERAL",
-                            "value": "header-primary"
+                            "value": "title-tertiary"
                         },
                         "wontWrap": {
                             "type": "JSON_LITERAL",
@@ -579,11 +579,205 @@
                         },
                         "variant": {
                             "type": "JSON_LITERAL",
-                            "value": "header-primary"
+                            "value": "title-tertiary"
                         },
                         "wontWrap": {
                             "type": "JSON_LITERAL",
                             "value": false
+                        }
+                    },
+                    "slot": null,
+                    "styles": null
+                },
+                {
+                    "definition": {
+                        "id": "d37ce8abca89d02905fed903c8e34d8e",
+                        "type": "MACROPONENT"
+                    },
+                    "elementId": "end_turn_button",
+                    "elementLabel": "End Turn Button",
+                    "eventMappings": [
+                        {
+                            "eventMappingId": "clupccqfffhhaabbpxddbhhnoryebbficc",
+                            "isConfiguration": false,
+                            "offRowStorageId": null,
+                            "sourceEventApiName": "sn_button.NOW_BUTTON#CLICKED",
+                            "sourceEventCorrelationId": null,
+                            "sourceEventDefinition": {
+                                "apiName": "sn_button.NOW_BUTTON#CLICKED",
+                                "id": null,
+                                "type": "UXEVENT"
+                            },
+                            "sourceEventSysId": null,
+                            "targets": [
+                                {
+                                    "broker": null,
+                                    "clientScript": null,
+                                    "conditional": null,
+                                    "declarativeAction": null,
+                                    "event": null,
+                                    "operation": {
+                                        "dataBrokerId": "beda4252770300108d070d74c810618f",
+                                        "operationName": "EXECUTE",
+                                        "parentResourceId": "create_game_event",
+                                        "payload": {
+                                            "container": {
+                                                "table": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": "x_168987_flow_de_0_game_event"
+                                                },
+                                                "templateFields": {
+                                                    "transform": {
+                                                        "operands": {
+                                                            "container": [
+                                                                {
+                                                                    "type": "JSON_LITERAL",
+                                                                    "value": "player_session="
+                                                                },
+                                                                {
+                                                                    "binding": {
+                                                                        "address": [
+                                                                            "get_p1_session",
+                                                                            "result",
+                                                                            "sys_id",
+                                                                            "value"
+                                                                        ]
+                                                                    },
+                                                                    "type": "DATA_OUTPUT_BINDING"
+                                                                },
+                                                                {
+                                                                    "type": "JSON_LITERAL",
+                                                                    "value": "^operation=end_turn^state=pending^turn_played="
+                                                                },
+                                                                {
+                                                                    "binding": {
+                                                                        "address": [
+                                                                            "get_game_instance",
+                                                                            "result",
+                                                                            "current_turn"
+                                                                        ]
+                                                                    },
+                                                                    "type": "DATA_OUTPUT_BINDING"
+                                                                }
+                                                            ],
+                                                            "type": "LIST_CONTAINER"
+                                                        },
+                                                        "operator": "CONCAT"
+                                                    },
+                                                    "type": "CLIENT_TRANSFORM"
+                                                },
+                                                "useSetDisplayValue": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": null
+                                                }
+                                            },
+                                            "type": "MAP_CONTAINER"
+                                        }
+                                    },
+                                    "targetId": "clupccqfffhhaabbpyddbhhnghhlhhffqmx",
+                                    "type": "DATABROKER_OP"
+                                },
+                                {
+                                    "broker": null,
+                                    "clientScript": null,
+                                    "conditional": null,
+                                    "declarativeAction": null,
+                                    "event": null,
+                                    "operation": {
+                                        "dataBrokerId": "beda4252770300108d070d74c810618f",
+                                        "operationName": "EXECUTE",
+                                        "parentResourceId": "create_game_event",
+                                        "payload": {
+                                            "container": {
+                                                "table": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": "x_168987_flow_de_0_game_event"
+                                                },
+                                                "templateFields": {
+                                                    "transform": {
+                                                        "operands": {
+                                                            "container": [
+                                                                {
+                                                                    "type": "JSON_LITERAL",
+                                                                    "value": "player_session="
+                                                                },
+                                                                {
+                                                                    "binding": {
+                                                                        "address": [
+                                                                            "get_p2_session",
+                                                                            "result",
+                                                                            "sys_id",
+                                                                            "value"
+                                                                        ]
+                                                                    },
+                                                                    "type": "DATA_OUTPUT_BINDING"
+                                                                },
+                                                                {
+                                                                    "type": "JSON_LITERAL",
+                                                                    "value": "^operation=end_turn^state=pending"
+                                                                }
+                                                            ],
+                                                            "type": "LIST_CONTAINER"
+                                                        },
+                                                        "operator": "CONCAT"
+                                                    },
+                                                    "type": "CLIENT_TRANSFORM"
+                                                },
+                                                "useSetDisplayValue": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": null
+                                                }
+                                            },
+                                            "type": "MAP_CONTAINER"
+                                        }
+                                    },
+                                    "targetId": "clupffpzkffaabbwoddbhhnrollpaazj",
+                                    "type": "DATABROKER_OP"
+                                }
+                            ]
+                        }
+                    ],
+                    "isHidden": {
+                        "type": "JSON_LITERAL",
+                        "value": null
+                    },
+                    "preset": null,
+                    "propertyValues": {
+                        "configAria": {
+                            "type": "JSON_LITERAL",
+                            "value": {}
+                        },
+                        "disabled": {
+                            "type": "JSON_LITERAL",
+                            "value": false
+                        },
+                        "icon": {
+                            "type": "JSON_LITERAL",
+                            "value": null
+                        },
+                        "label": {
+                            "type": "TRANSLATION_LITERAL",
+                            "value": {
+                                "code": null,
+                                "comment": "",
+                                "message": "End Turn"
+                            }
+                        },
+                        "size": {
+                            "type": "JSON_LITERAL",
+                            "value": "md"
+                        },
+                        "tooltipContent": {
+                            "type": "TRANSLATION_LITERAL",
+                            "value": {
+                                "code": null,
+                                "comment": "",
+                                "message": "Enter a label"
+                            }
+                        },
+                        "variant": {
+                            "type": "JSON_LITERAL",
+                            "value": "primary-negative"
                         }
                     },
                     "slot": null,
@@ -608,6 +802,10 @@
                         },
                         {
                             "element_id": "selected_card_client_value",
+                            "styles": {}
+                        },
+                        {
+                            "element_id": "end_turn_button",
                             "styles": {}
                         }
                     ],
@@ -656,200 +854,6 @@
             "type": {
                 "type": "JSON_LITERAL",
                 "value": "section"
-            }
-        },
-        "slot": null,
-        "styles": null
-    },
-    {
-        "definition": {
-            "id": "d37ce8abca89d02905fed903c8e34d8e",
-            "type": "MACROPONENT"
-        },
-        "elementId": "end_turn_button",
-        "elementLabel": "End Turn Button",
-        "eventMappings": [
-            {
-                "eventMappingId": "clupccqfffhhaabbpxddbhhnoryebbficc",
-                "isConfiguration": false,
-                "offRowStorageId": null,
-                "sourceEventApiName": "sn_button.NOW_BUTTON#CLICKED",
-                "sourceEventCorrelationId": null,
-                "sourceEventDefinition": {
-                    "apiName": "sn_button.NOW_BUTTON#CLICKED",
-                    "id": null,
-                    "type": "UXEVENT"
-                },
-                "sourceEventSysId": null,
-                "targets": [
-                    {
-                        "broker": null,
-                        "clientScript": null,
-                        "conditional": null,
-                        "declarativeAction": null,
-                        "event": null,
-                        "operation": {
-                            "dataBrokerId": "beda4252770300108d070d74c810618f",
-                            "operationName": "EXECUTE",
-                            "parentResourceId": "create_game_event",
-                            "payload": {
-                                "container": {
-                                    "table": {
-                                        "type": "JSON_LITERAL",
-                                        "value": "x_168987_flow_de_0_game_event"
-                                    },
-                                    "templateFields": {
-                                        "transform": {
-                                            "operands": {
-                                                "container": [
-                                                    {
-                                                        "type": "JSON_LITERAL",
-                                                        "value": "player_session="
-                                                    },
-                                                    {
-                                                        "binding": {
-                                                            "address": [
-                                                                "get_p1_session",
-                                                                "result",
-                                                                "sys_id",
-                                                                "value"
-                                                            ]
-                                                        },
-                                                        "type": "DATA_OUTPUT_BINDING"
-                                                    },
-                                                    {
-                                                        "type": "JSON_LITERAL",
-                                                        "value": "^operation=end_turn^state=pending^turn_played="
-                                                    },
-                                                    {
-                                                        "binding": {
-                                                            "address": [
-                                                                "get_game_instance",
-                                                                "result",
-                                                                "current_turn"
-                                                            ]
-                                                        },
-                                                        "type": "DATA_OUTPUT_BINDING"
-                                                    }
-                                                ],
-                                                "type": "LIST_CONTAINER"
-                                            },
-                                            "operator": "CONCAT"
-                                        },
-                                        "type": "CLIENT_TRANSFORM"
-                                    },
-                                    "useSetDisplayValue": {
-                                        "type": "JSON_LITERAL",
-                                        "value": null
-                                    }
-                                },
-                                "type": "MAP_CONTAINER"
-                            }
-                        },
-                        "targetId": "clupccqfffhhaabbpyddbhhnghhlhhffqmx",
-                        "type": "DATABROKER_OP"
-                    },
-                    {
-                        "broker": null,
-                        "clientScript": null,
-                        "conditional": null,
-                        "declarativeAction": null,
-                        "event": null,
-                        "operation": {
-                            "dataBrokerId": "beda4252770300108d070d74c810618f",
-                            "operationName": "EXECUTE",
-                            "parentResourceId": "create_game_event",
-                            "payload": {
-                                "container": {
-                                    "table": {
-                                        "type": "JSON_LITERAL",
-                                        "value": "x_168987_flow_de_0_game_event"
-                                    },
-                                    "templateFields": {
-                                        "transform": {
-                                            "operands": {
-                                                "container": [
-                                                    {
-                                                        "type": "JSON_LITERAL",
-                                                        "value": "player_session="
-                                                    },
-                                                    {
-                                                        "binding": {
-                                                            "address": [
-                                                                "get_p2_session",
-                                                                "result",
-                                                                "sys_id",
-                                                                "value"
-                                                            ]
-                                                        },
-                                                        "type": "DATA_OUTPUT_BINDING"
-                                                    },
-                                                    {
-                                                        "type": "JSON_LITERAL",
-                                                        "value": "^operation=end_turn^state=pending"
-                                                    }
-                                                ],
-                                                "type": "LIST_CONTAINER"
-                                            },
-                                            "operator": "CONCAT"
-                                        },
-                                        "type": "CLIENT_TRANSFORM"
-                                    },
-                                    "useSetDisplayValue": {
-                                        "type": "JSON_LITERAL",
-                                        "value": null
-                                    }
-                                },
-                                "type": "MAP_CONTAINER"
-                            }
-                        },
-                        "targetId": "clupffpzkffaabbwoddbhhnrollpaazj",
-                        "type": "DATABROKER_OP"
-                    }
-                ]
-            }
-        ],
-        "isHidden": {
-            "type": "JSON_LITERAL",
-            "value": null
-        },
-        "preset": null,
-        "propertyValues": {
-            "configAria": {
-                "type": "JSON_LITERAL",
-                "value": {}
-            },
-            "disabled": {
-                "type": "JSON_LITERAL",
-                "value": false
-            },
-            "icon": {
-                "type": "JSON_LITERAL",
-                "value": null
-            },
-            "label": {
-                "type": "TRANSLATION_LITERAL",
-                "value": {
-                    "code": null,
-                    "comment": "",
-                    "message": "End Turn"
-                }
-            },
-            "size": {
-                "type": "JSON_LITERAL",
-                "value": "md"
-            },
-            "tooltipContent": {
-                "type": "TRANSLATION_LITERAL",
-                "value": {
-                    "code": null,
-                    "comment": "",
-                    "message": "Enter a label"
-                }
-            },
-            "variant": {
-                "type": "JSON_LITERAL",
-                "value": "primary-negative"
             }
         },
         "slot": null,
@@ -2786,7 +2790,7 @@
                                             "border-color": "RGB(var(--now-color--neutral-5))",
                                             "border-style": "solid",
                                             "border-width": "var(--now-static-space--xxs)",
-                                            "height": "250px"
+                                            "height": "200px"
                                         }
                                     },
                                     {
@@ -3518,7 +3522,7 @@
                                             "border-color": "RGB(var(--now-color--neutral-5))",
                                             "border-style": "solid",
                                             "border-width": "var(--now-static-space--xxs)",
-                                            "height": "250px"
+                                            "height": "200px"
                                         }
                                     },
                                     {
@@ -4169,7 +4173,8 @@
                                 "rules": null,
                                 "styles": {
                                     "align-items": "center",
-                                    "flex-direction": "column"
+                                    "flex-direction": "column",
+                                    "gap": "0"
                                 },
                                 "templateId": "5832fd4d53c31010e6bcddeeff7b12db",
                                 "type": "flex"
@@ -4249,11 +4254,11 @@
                                     "composition": [
                                         {
                                             "definition": {
-                                                "id": "1f6e0643eca7a637e36bd7833549ec9e",
+                                                "id": "4335ba6dca80378f7ba7a67cd6667bec",
                                                 "type": "MACROPONENT"
                                             },
-                                            "elementId": "va_cost_label",
-                                            "elementLabel": "VA Cost Label",
+                                            "elementId": "va_cost_label_st",
+                                            "elementLabel": "VA Cost Label text",
                                             "eventMappings": [
                                                 
                                             ],
@@ -4263,29 +4268,25 @@
                                             },
                                             "preset": null,
                                             "propertyValues": {
-                                                "hasNoMargin": {
+                                                "configAria": {
                                                     "type": "JSON_LITERAL",
-                                                    "value": false
+                                                    "value": {}
                                                 },
-                                                "label": {
+                                                "css": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": "* { lign-self: center;\n    color: #dee2fb;\n    font-style: italic;\n    font-variant: small-caps;\n    text-shadow: 1px 1px 2px #9097b7, 0 0 1em blue, 0 0 0.2em blue;}"
+                                                },
+                                                "tag": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": "h3"
+                                                },
+                                                "text": {
                                                     "type": "TRANSLATION_LITERAL",
                                                     "value": {
                                                         "code": null,
                                                         "comment": "",
-                                                        "message": "Cost: "
+                                                        "message": "Cost:"
                                                     }
-                                                },
-                                                "level": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": "1"
-                                                },
-                                                "variant": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": "header-secondary"
-                                                },
-                                                "wontWrap": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": false
                                                 }
                                             },
                                             "slot": null,
@@ -4293,11 +4294,11 @@
                                         },
                                         {
                                             "definition": {
-                                                "id": "1f6e0643eca7a637e36bd7833549ec9e",
+                                                "id": "4335ba6dca80378f7ba7a67cd6667bec",
                                                 "type": "MACROPONENT"
                                             },
-                                            "elementId": "va_cost_value",
-                                            "elementLabel": "VA Cost Value",
+                                            "elementId": "va_cost_value_st",
+                                            "elementLabel": "VA Cost Value Text",
                                             "eventMappings": [
                                                 
                                             ],
@@ -4307,11 +4308,19 @@
                                             },
                                             "preset": null,
                                             "propertyValues": {
-                                                "hasNoMargin": {
+                                                "configAria": {
                                                     "type": "JSON_LITERAL",
-                                                    "value": false
+                                                    "value": {}
                                                 },
-                                                "label": {
+                                                "css": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": "* { lign-self: center;\n    color: #dee2fb;\n    font-style: italic;\n    font-variant: small-caps;\n    text-shadow: 1px 1px 2px #9097b7, 0 0 1em blue, 0 0 0.2em blue;}"
+                                                },
+                                                "tag": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": "h3"
+                                                },
+                                                "text": {
                                                     "binding": {
                                                         "address": [
                                                             "get_selected_record",
@@ -4321,18 +4330,6 @@
                                                         ]
                                                     },
                                                     "type": "DATA_OUTPUT_BINDING"
-                                                },
-                                                "level": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": "1"
-                                                },
-                                                "variant": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": "header-secondary"
-                                                },
-                                                "wontWrap": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": false
                                                 }
                                             },
                                             "slot": null,
@@ -4340,11 +4337,11 @@
                                         },
                                         {
                                             "definition": {
-                                                "id": "1f6e0643eca7a637e36bd7833549ec9e",
+                                                "id": "4335ba6dca80378f7ba7a67cd6667bec",
                                                 "type": "MACROPONENT"
                                             },
-                                            "elementId": "va_power_label",
-                                            "elementLabel": "VA Power Label",
+                                            "elementId": "va_power_label_st",
+                                            "elementLabel": "VA Power Label Text",
                                             "eventMappings": [
                                                 
                                             ],
@@ -4354,29 +4351,25 @@
                                             },
                                             "preset": null,
                                             "propertyValues": {
-                                                "hasNoMargin": {
+                                                "configAria": {
                                                     "type": "JSON_LITERAL",
-                                                    "value": false
+                                                    "value": {}
                                                 },
-                                                "label": {
+                                                "css": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": "* { lign-self: center;\n    color: #dee2fb;\n    font-style: italic;\n    font-variant: small-caps;\n    text-shadow: 1px 1px 2px #9097b7, 0 0 1em blue, 0 0 0.2em blue;}"
+                                                },
+                                                "tag": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": "h3"
+                                                },
+                                                "text": {
                                                     "type": "TRANSLATION_LITERAL",
                                                     "value": {
                                                         "code": null,
                                                         "comment": "",
-                                                        "message": "Value: "
+                                                        "message": "Value"
                                                     }
-                                                },
-                                                "level": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": "1"
-                                                },
-                                                "variant": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": "header-secondary"
-                                                },
-                                                "wontWrap": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": false
                                                 }
                                             },
                                             "slot": null,
@@ -4384,11 +4377,11 @@
                                         },
                                         {
                                             "definition": {
-                                                "id": "1f6e0643eca7a637e36bd7833549ec9e",
+                                                "id": "4335ba6dca80378f7ba7a67cd6667bec",
                                                 "type": "MACROPONENT"
                                             },
-                                            "elementId": "va_power_value",
-                                            "elementLabel": "VA power Value",
+                                            "elementId": "va_power_value_text",
+                                            "elementLabel": "VA Power Value text",
                                             "eventMappings": [
                                                 
                                             ],
@@ -4398,11 +4391,19 @@
                                             },
                                             "preset": null,
                                             "propertyValues": {
-                                                "hasNoMargin": {
+                                                "configAria": {
                                                     "type": "JSON_LITERAL",
-                                                    "value": false
+                                                    "value": {}
                                                 },
-                                                "label": {
+                                                "css": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": "* { lign-self: center;\n    color: #dee2fb;\n    font-style: italic;\n    font-variant: small-caps;\n    text-shadow: 1px 1px 2px #9097b7, 0 0 1em blue, 0 0 0.2em blue;}"
+                                                },
+                                                "tag": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": "h3"
+                                                },
+                                                "text": {
                                                     "binding": {
                                                         "address": [
                                                             "get_selected_record",
@@ -4412,18 +4413,6 @@
                                                         ]
                                                     },
                                                     "type": "DATA_OUTPUT_BINDING"
-                                                },
-                                                "level": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": "1"
-                                                },
-                                                "variant": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": "header-secondary"
-                                                },
-                                                "wontWrap": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": false
                                                 }
                                             },
                                             "slot": null,
@@ -4435,19 +4424,19 @@
                                             "children": null,
                                             "items": [
                                                 {
-                                                    "element_id": "va_cost_label",
+                                                    "element_id": "va_cost_label_st",
                                                     "styles": {}
                                                 },
                                                 {
-                                                    "element_id": "va_cost_value",
+                                                    "element_id": "va_cost_value_st",
                                                     "styles": {}
                                                 },
                                                 {
-                                                    "element_id": "va_power_label",
+                                                    "element_id": "va_power_label_st",
                                                     "styles": {}
                                                 },
                                                 {
-                                                    "element_id": "va_power_value",
+                                                    "element_id": "va_power_value_text",
                                                     "styles": {}
                                                 }
                                             ],
@@ -4455,6 +4444,7 @@
                                             "rules": null,
                                             "styles": {
                                                 "flex-direction": "row",
+                                                "gap": "1px",
                                                 "justify-content": "space-evenly"
                                             },
                                             "templateId": "5832fd4d53c31010e6bcddeeff7b12db",
@@ -4555,11 +4545,11 @@
                                                             },
                                                             "fit": {
                                                                 "type": "JSON_LITERAL",
-                                                                "value": "fill"
+                                                                "value": "scale-down"
                                                             },
                                                             "height": {
                                                                 "type": "JSON_LITERAL",
-                                                                "value": null
+                                                                "value": 300
                                                             },
                                                             "position": {
                                                                 "type": "JSON_LITERAL",
@@ -4671,12 +4661,15 @@
                                             "rules": null,
                                             "styles": {
                                                 "box-sizing": "border-box",
+                                                "column-gap": "0",
                                                 "grid-template-columns": "100fr",
                                                 "grid-template-rows": "1fr",
+                                                "margin-bottom": "var(--now-scalable-space--md)",
                                                 "width": "100%"
                                             },
                                             "type": "grid"
                                         },
+                                        "disableAutoReflow": true,
                                         "queries": [
                                             {
                                                 "layout": {
@@ -4689,9 +4682,11 @@
                                                     "rules": null,
                                                     "styles": {
                                                         "box-sizing": "border-box",
+                                                        "column-gap": "0",
                                                         "grid-template-columns": "1fr",
                                                         "grid-template-rows": "1fr",
                                                         "height": "fit-content",
+                                                        "margin-bottom": "var(--now-scalable-space--md)",
                                                         "max-height": "max-content",
                                                         "min-height": "min-content",
                                                         "width": "100%"
@@ -4747,7 +4742,9 @@
                                                     },
                                                     "internal": {
                                                         "box-sizing": "border-box",
+                                                        "column-gap": "0",
                                                         "grid-template-rows": "1fr",
+                                                        "margin-bottom": "var(--now-scalable-space--md)",
                                                         "width": "100%"
                                                     }
                                                 }
@@ -4782,7 +4779,8 @@
                                 "root": null,
                                 "rules": null,
                                 "styles": {
-                                    "flex-direction": "column"
+                                    "flex-direction": "column",
+                                    "gap": "1px"
                                 },
                                 "templateId": "5832fd4d53c31010e6bcddeeff7b12db",
                                 "type": "flex"
@@ -5074,7 +5072,7 @@
                                                 },
                                                 "size": {
                                                     "type": "JSON_LITERAL",
-                                                    "value": "md"
+                                                    "value": "sm"
                                                 },
                                                 "tooltipContent": {
                                                     "type": "TRANSLATION_LITERAL",
@@ -5270,7 +5268,7 @@
                                                 },
                                                 "size": {
                                                     "type": "JSON_LITERAL",
-                                                    "value": "md"
+                                                    "value": "sm"
                                                 },
                                                 "tooltipContent": {
                                                     "type": "TRANSLATION_LITERAL",
@@ -5466,7 +5464,7 @@
                                                 },
                                                 "size": {
                                                     "type": "JSON_LITERAL",
-                                                    "value": "md"
+                                                    "value": "sm"
                                                 },
                                                 "tooltipContent": {
                                                     "type": "TRANSLATION_LITERAL",
@@ -5506,7 +5504,15 @@
                                             "rules": null,
                                             "styles": {
                                                 "flex-direction": "row",
+                                                "gap": "0",
                                                 "justify-content": "space-between",
+                                                "margin-bottom": "var(--now-scalable-space--lg)",
+                                                "margin-top": "var(--now-scalable-space--md)",
+                                                "padding": "0",
+                                                "padding-bottom": "0",
+                                                "padding-left": "0",
+                                                "padding-right": "0",
+                                                "padding-top": "0",
                                                 "width": "100%"
                                             },
                                             "templateId": "5832fd4d53c31010e6bcddeeff7b12db",
@@ -5686,7 +5692,8 @@
                                 "root": null,
                                 "rules": null,
                                 "styles": {
-                                    "flex-direction": "column"
+                                    "flex-direction": "column",
+                                    "gap": "0"
                                 },
                                 "templateId": "5832fd4d53c31010e6bcddeeff7b12db",
                                 "type": "flex"
@@ -5814,7 +5821,7 @@
             }
         },
         "slot": null,
-        "styles": null
+        "styles": {}
     },
     {
         "definition": {
@@ -8694,6 +8701,29 @@
                         },
                         "targetId": "clvbxffjjjjsaaaakbddbhhnicqccbbvsq",
                         "type": "DATABROKER_OP"
+                    },
+                    {
+                        "broker": null,
+                        "clientScript": null,
+                        "conditional": null,
+                        "declarativeAction": null,
+                        "event": {
+                            "apiName": "sn_uxf_page.NOW_UXF_PAGE#ADD_NOTIFICATIONS",
+                            "payload": {
+                                "type": "JSON_LITERAL",
+                                "value": {
+                                    "items": [
+                                        {
+                                            "content": "Added a Game Event"
+                                        }
+                                    ]
+                                }
+                            },
+                            "sysId": "49fe7d575f983bb3f8eea3fa8d40694c"
+                        },
+                        "operation": null,
+                        "targetId": "clvbxoloeaaaalaaddbhhnrsyvweeqaa",
+                        "type": "EVENT"
                     }
                 ]
             }
@@ -8713,6 +8743,55 @@
             }
         },
         "readEvaluationMode": "EXPLICIT"
+    },
+    {
+        "definition": {
+            "id": "bba46ec077223010f5025df90f5a9920",
+            "type": "CLIENT_STATE"
+        },
+        "dependencies": {},
+        "elementId": "l1_slot_watcher",
+        "elementLabel": "L1 Slot Watcher",
+        "eventMappings": [
+            
+        ],
+        "inputValues": {
+            "filterConditions": {
+                "transform": {
+                    "operands": {
+                        "container": [
+                            {
+                                "type": "JSON_LITERAL",
+                                "value": "player="
+                            },
+                            {
+                                "binding": {
+                                    "address": [
+                                        "get_p1_session",
+                                        "result",
+                                        "_row_data",
+                                        "uniqueValue"
+                                    ]
+                                },
+                                "type": "DATA_OUTPUT_BINDING"
+                            }
+                        ],
+                        "type": "LIST_CONTAINER"
+                    },
+                    "operator": "CONCAT"
+                },
+                "type": "CLIENT_TRANSFORM"
+            },
+            "subscribe": {
+                "type": "JSON_LITERAL",
+                "value": true
+            },
+            "table": {
+                "type": "JSON_LITERAL",
+                "value": "x_168987_flow_de_0_location_slot"
+            }
+        },
+        "readEvaluationMode": "EAGER"
     }
 ]</data>
         <description/>
@@ -8803,10 +8882,6 @@
                 }
             },
             {
-                "element_id": "end_turn_button",
-                "styles": {}
-            },
-            {
                 "element_id": "p1_hand",
                 "styles": {
                     "background": "#05052B"
@@ -8857,6 +8932,9 @@
   "message" : "Close",
   "comment" : ""
 }, {
+  "message" : "Cost:",
+  "comment" : ""
+}, {
   "message" : "Cost: ",
   "comment" : ""
 }, {
@@ -8905,6 +8983,9 @@
   "message" : "Selected Card: ",
   "comment" : ""
 }, {
+  "message" : "Value",
+  "comment" : ""
+}, {
   "message" : "Value: ",
   "comment" : ""
 } ]</required_translations>
@@ -8948,14 +9029,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-01-07 02:09:17</sys_created_on>
         <sys_id>5db3fe4a932f3110cd4e7d532bba10d8</sys_id>
-        <sys_mod_count>400</sys_mod_count>
+        <sys_mod_count>421</sys_mod_count>
         <sys_name>Default</sys_name>
         <sys_package display_value="Flow Designer Marvel SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_update_name>sys_ux_macroponent_5db3fe4a932f3110cd4e7d532bba10d8</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-23 05:03:01</sys_updated_on>
+        <sys_updated_on>2024-04-23 09:37:50</sys_updated_on>
     </sys_ux_macroponent>
     <sys_translated_text action="delete_multiple" query="documentkey=5db3fe4a932f3110cd4e7d532bba10d8"/>
 </record_update>
