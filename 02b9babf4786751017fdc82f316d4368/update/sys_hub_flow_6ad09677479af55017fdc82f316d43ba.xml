@@ -5,11 +5,14 @@
         <active>true</active>
         <annotation/>
         <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=21047000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
         <copied_from/>
         <copied_from_name/>
         <description>Triggers when a Deck mod record is created to add a card</description>
+        <flow_priority/>
+        <generation_source/>
         <internal_name>deck_mod__add_card</internal_name>
         <label_cache>[{"name":"Created_1.current.definition_to_add","label":"Trigger - Record Created➛Deck Modification Event Record➛Definition to Add","reference":"x_168987_flow_de_0_card_definition","reference_display":"Card Definition","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_deck_modification_event","column_name":"definition_to_add"},{"name":"Created_1.current.deck","label":"Trigger - Record Created➛Deck Modification Event Record➛deck","reference":"x_168987_flow_de_0_player_deck","reference_display":"Player Deck","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_deck_modification_event","column_name":"deck"},{"name":"Created_1.current","label":"Trigger - Record Created➛Deck Modification Event Record","reference":"x_168987_flow_de_0_deck_modification_event","reference_display":"Deck Modification Event","type":"reference","base_type":"reference","attributes":{}}]</label_cache>
         <master_snapshot>65311ab7479af55017fdc82f316d4349</master_snapshot>
@@ -30,7 +33,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>6ad09677479af55017fdc82f316d43ba</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>DECK: Deck Mod - Add card</sys_name>
         <sys_overrides/>
         <sys_package display_value="Flow Designer Marvel SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
@@ -38,7 +41,7 @@
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_update_name>sys_hub_flow_6ad09677479af55017fdc82f316d43ba</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-11-18 10:12:58</sys_updated_on>
+        <sys_updated_on>2024-01-07 00:23:29</sys_updated_on>
         <type>flow</type>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=6ad09677479af55017fdc82f316d43ba"/>
@@ -329,16 +332,17 @@
         <comment/>
         <display_text/>
         <flow display_value="DECK: Deck Mod - Add card">6ad09677479af55017fdc82f316d43ba</flow>
+        <generation_source/>
         <order>2</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-11-11 06:49:27</sys_created_on>
         <sys_id>ad31d6b7479af55017fdc82f316d43fc</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>18</sys_mod_count>
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-11-18 10:12:58</sys_updated_on>
+        <sys_updated_on>2024-04-08 12:17:23</sys_updated_on>
         <ui_id>0b4ab56a-b7ce-4023-971a-e6339f4bb9bb</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=ad31d6b7479af55017fdc82f316d43fc"/>
@@ -415,6 +419,7 @@
         <comment/>
         <display_text/>
         <flow display_value="DECK: Deck Mod - Add card">6ad09677479af55017fdc82f316d43ba</flow>
+        <generation_source/>
         <inputs/>
         <inputs/>
         <order>1</order>
@@ -470,18 +475,6 @@
         <sys_updated_on>2023-11-11 06:49:27</sys_updated_on>
         <table>var__m_sys_hub_flow_input_bb4e4cce479ebd1017fdc82f316d43a6</table>
         <value>{{Created_1.current.deck}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>wait_for_completion</field>
-        <id>d531d6b7479af55017fdc82f316d43dc</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2023-11-11 06:49:27</sys_created_on>
-        <sys_id>ed31d6b7479af55017fdc82f316d43f6</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-11-11 06:49:27</sys_updated_on>
-        <table>var__m_sys_hub_sub_flow_instance_inputs_d531d6b7479af55017fdc82f316d43dc</table>
-        <value/>
     </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_sub_flow_instance_inputs_d531d6b7479af55017fdc82f316d43dc^id=d531d6b7479af55017fdc82f316d43dc"/>
     <sys_hub_sub_flow_instance_inputs action="delete_multiple" query="model=d531d6b7479af55017fdc82f316d43dc^sys_idNOT IN5d31d6b7479af55017fdc82f316d43dd"/>
@@ -586,11 +579,11 @@
         <sys_created_on>2023-11-11 06:49:26</sys_created_on>
         <sys_id>9931d6b7479af55017fdc82f316d43d4</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Record</sys_name>
         <sys_package display_value="Flow Designer Marvel SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_6ad09677479af55017fdc82f316d43ba_current_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-11-11 06:49:26</sys_updated_on>
         <url/>
@@ -609,11 +602,11 @@
         <sys_created_on>2023-11-11 06:49:26</sys_created_on>
         <sys_id>9931d6b7479af55017fdc82f316d43d7</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Table Name</sys_name>
         <sys_package display_value="Flow Designer Marvel SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_6ad09677479af55017fdc82f316d43ba_table_name_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-11-11 06:49:26</sys_updated_on>
         <url/>
@@ -628,11 +621,13 @@
         <active>true</active>
         <annotation/>
         <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
         <copied_from/>
         <copied_from_name/>
         <description>Triggers when a Deck mod record is created to add a card</description>
+        <flow_priority/>
         <internal_name>deck_mod__add_card</internal_name>
         <label_cache>[{"name":"Created_1.current","label":"Trigger - Record Created➛Deck Modification Event Record","reference":"x_168987_flow_de_0_deck_modification_event","reference_display":"Deck Modification Event","type":"reference","base_type":"reference","attributes":{}},{"name":"Created_1.current.deck","label":"Trigger - Record Created➛Deck Modification Event Record➛deck","reference":"x_168987_flow_de_0_player_deck","reference_display":"Player Deck","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_deck_modification_event","column_name":"deck"},{"name":"Created_1.current.definition_to_add","label":"Trigger - Record Created➛Deck Modification Event Record➛Definition to Add","reference":"x_168987_flow_de_0_card_definition","reference_display":"Card Definition","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_deck_modification_event","column_name":"definition_to_add"}]</label_cache>
         <master>true</master>
@@ -907,6 +902,7 @@
         <comment/>
         <display_text/>
         <flow display_value="Deck Mod - Add card">65311ab7479af55017fdc82f316d4349</flow>
+        <generation_source/>
         <order>2</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -993,6 +989,7 @@
         <comment/>
         <display_text/>
         <flow display_value="Deck Mod - Add card">65311ab7479af55017fdc82f316d4349</flow>
+        <generation_source/>
         <inputs/>
         <inputs/>
         <order>1</order>
@@ -1048,18 +1045,6 @@
         <sys_updated_on>2023-11-11 06:49:28</sys_updated_on>
         <table>var__m_sys_hub_flow_input_bb4e4cce479ebd1017fdc82f316d43a6</table>
         <value>{{Created_1.current.deck}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>wait_for_completion</field>
-        <id>79311ab7479af55017fdc82f316d4377</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2023-11-11 06:49:28</sys_created_on>
-        <sys_id>b1311ab7479af55017fdc82f316d4386</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-11-11 06:49:28</sys_updated_on>
-        <table>var__m_sys_hub_sub_flow_instance_inputs_79311ab7479af55017fdc82f316d4377</table>
-        <value/>
     </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_sub_flow_instance_inputs_79311ab7479af55017fdc82f316d4377^id=79311ab7479af55017fdc82f316d4377"/>
     <sys_hub_sub_flow_instance_inputs action="delete_multiple" query="model=79311ab7479af55017fdc82f316d4377^sys_idNOT IN35311ab7479af55017fdc82f316d4378"/>
@@ -1164,11 +1149,11 @@
         <sys_created_on>2023-11-11 06:49:28</sys_created_on>
         <sys_id>39311ab7479af55017fdc82f316d435b</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Table Name</sys_name>
         <sys_package display_value="Flow Designer Marvel SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_65311ab7479af55017fdc82f316d4349_table_name_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-11-11 06:49:28</sys_updated_on>
         <url/>
@@ -1187,11 +1172,11 @@
         <sys_created_on>2023-11-11 06:49:28</sys_created_on>
         <sys_id>7d311ab7479af55017fdc82f316d4353</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Record</sys_name>
         <sys_package display_value="Flow Designer Marvel SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_65311ab7479af55017fdc82f316d4349_current_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-11-11 06:49:28</sys_updated_on>
         <url/>
@@ -1203,14 +1188,14 @@
     <sys_hub_flow action="UPDATE">
         <sys_id>6ad09677479af55017fdc82f316d43ba</sys_id>
         <latest_snapshot>65311ab7479af55017fdc82f316d4349</latest_snapshot>
-        <compiler_build>glide-vancouver-07-06-2023__patch2-hotfix1-10-04-2023_10-06-2023_1235.zip</compiler_build>
+        <compiler_build>glide-washingtondc-12-20-2023__patch1-02-28-2024_03-09-2024_0815.zip</compiler_build>
     </sys_hub_flow>
     <sys_flow_trigger_plan action="delete_multiple" query="plan_id=6ad09677479af55017fdc82f316d43ba^sys_idNOT INf9311ab7479af55017fdc82f316d439e"/>
     <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
         <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
-        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"f9311ab7479af55017fdc82f316d439e","name":"plan","plan_signature":null}}</plan>
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"f9311ab7479af55017fdc82f316d439e","name":"plan","plan_signature":null}}</plan>
         <plan_id>6ad09677479af55017fdc82f316d43ba</plan_id>
-        <snapshot>12c96274476a3d5017fdc82f316d43cb</snapshot>
+        <snapshot>fd21befb93518210cd4e7d532bba1041</snapshot>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-11-11 06:49:28</sys_created_on>
         <sys_domain>global</sys_domain>

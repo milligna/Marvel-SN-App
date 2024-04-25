@@ -5,11 +5,14 @@
         <active>true</active>
         <annotation/>
         <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=1242000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
         <copied_from>9357ea30476a3d5017fdc82f316d4375</copied_from>
         <copied_from_name>START: Create Card Instances fro</copied_from_name>
         <description/>
+        <flow_priority/>
+        <generation_source/>
         <internal_name>start_create_card_instances_from_a_player_deck</internal_name>
         <label_cache>[{"name":"96bb8415-c37b-4562-bd52-7d52d94ffdc5.record","label":"3 - Create Record➛Card Instance Record","reference":"x_168987_flow_de_0_card_instance","reference_display":"Card Instance Record","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"cedbec77-f017-4e48-85e2-6d8a579034fe.__status__.message","label":"8 - Top Level Catch➛Error Status➛Message","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"cedbec77-f017-4e48-85e2-6d8a579034fe.__status__.code","label":"8 - Top Level Catch➛Error Status➛Code","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","attributes":{}},{"name":"subflow.game_instance","label":"Input➛Game Instance","reference":"x_168987_flow_de_0_game_instance","reference_display":"Game Instance","type":"reference","base_type":"reference","column_name":"","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"7465beef-a4df-4dac-a40b-defa7051b0fa","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"39e1c3c2-9a8d-4744-b8c3-de1c5ff8ca36.item.card_definition.power","label":"2 - For Each➛Player Deck Card Record➛Card Definition➛Power","reference":"","reference_display":"Power","type":"integer","base_type":"integer","parent_table_name":"x_168987_flow_de_0_card_definition","column_name":"power"},{"name":"39e1c3c2-9a8d-4744-b8c3-de1c5ff8ca36.item.card_definition","label":"2 - For Each➛Player Deck Card Record➛Card Definition","reference":"x_168987_flow_de_0_card_definition","reference_display":"Card Definition","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_player_deck_card","column_name":"card_definition"},{"name":"39e1c3c2-9a8d-4744-b8c3-de1c5ff8ca36.item.card_definition.cost","label":"2 - For Each➛Player Deck Card Record➛Card Definition➛Cost","reference":"","reference_display":"Cost","type":"integer","base_type":"integer","parent_table_name":"x_168987_flow_de_0_card_definition","column_name":"cost"},{"name":"5a642797-8db0-4b79-b69b-c431d1af6475.Records","label":"1 - Look Up Records➛Player Deck Card Records","reference":"x_168987_flow_de_0_player_deck_card","reference_display":"Player Deck Card Records","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.player_deck","label":"Input➛Player Deck","reference":"x_168987_flow_de_0_player_deck","reference_display":"Player Deck","type":"reference","base_type":"reference","column_name":"","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"08a00eec-f469-4f1a-a202-f6de671a9845","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"39e1c3c2-9a8d-4744-b8c3-de1c5ff8ca36.item.card_definition.ability_type","label":"2 - For Each➛Player Deck Card Record➛Card Definition➛Ability Type","reference":"","reference_display":"Ability Type","type":"choice","base_type":"choice","parent_table_name":"x_168987_flow_de_0_card_definition","column_name":"ability_type","choices":[{"label":"-- None --","rawLabel":"-- None --","selected":false,"missing":false,"used":false,"image":"","reference":false,"value":""},{"rawLabel":"On Reveal","selected":false,"label":"On Reveal","missing":false,"used":false,"image":"","reference":false,"value":"on_reveal","parameters":{"name":"x_168987_flow_de_0_card_definition"}},{"rawLabel":"Before Dealing","selected":false,"label":"Before Dealing","missing":false,"used":false,"image":"","reference":false,"value":"before_dealing","parameters":{"name":"x_168987_flow_de_0_card_definition"}},{"rawLabel":"Ongoing","selected":false,"label":"Ongoing","missing":false,"used":false,"image":"","reference":false,"value":"ongoing","parameters":{"name":"x_168987_flow_de_0_card_definition"}},{"rawLabel":"On Specific Turn","selected":false,"label":"On Specific Turn","missing":false,"used":false,"image":"","reference":false,"value":"on_specific_turn","parameters":{"name":"x_168987_flow_de_0_card_definition"}},{"rawLabel":"At End of Specific turn","selected":false,"label":"At End of Specific turn","missing":false,"used":false,"image":"","reference":false,"value":"At End of Specific turn","parameters":{"name":"x_168987_flow_de_0_card_definition"}},{"rawLabel":"No ability","selected":false,"label":"No ability","missing":false,"used":false,"image":"","reference":false,"value":"no_ability","parameters":{"name":"x_168987_flow_de_0_card_definition"}},{"rawLabel":"All turns once played","selected":false,"label":"All turns once played","missing":false,"used":false,"image":"","reference":false,"value":"All turns once played","parameters":{"name":"x_168987_flow_de_0_card_definition"}},{"rawLabel":"After Specific Turn","selected":false,"label":"After Specific Turn","missing":false,"used":false,"image":"","reference":false,"value":"After Specific Turn","parameters":{"name":"x_168987_flow_de_0_card_definition"}},{"rawLabel":"On Card Move","selected":false,"label":"On Card Move","missing":false,"used":false,"image":"","reference":false,"value":"On Card Move","parameters":{"name":"x_168987_flow_de_0_card_definition"}},{"rawLabel":"After each turn","selected":false,"label":"After each turn","missing":false,"used":false,"image":"","reference":false,"value":"After each turn","parameters":{"name":"x_168987_flow_de_0_card_definition"}},{"rawLabel":"Before each card is played","selected":false,"label":"Before each card is played","missing":false,"used":false,"image":"","reference":false,"value":"Before each card is played","parameters":{"name":"x_168987_flow_de_0_card_definition"}}]},{"name":"39e1c3c2-9a8d-4744-b8c3-de1c5ff8ca36.item.card_definition.ability_subflow","label":"2 - For Each➛Player Deck Card Record➛Card Definition➛Ability Subflow","reference":"sys_hub_flow","reference_display":"Flow","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_card_definition","column_name":"ability_subflow"},{"name":"39e1c3c2-9a8d-4744-b8c3-de1c5ff8ca36.item.card_definition.ability_subflow.name","label":"2 - For Each➛Player Deck Card Record➛Card Definition➛Ability Subflow➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"sys_hub_flow","column_name":"name"},{"name":"subflow.player_deck.player","label":"Input➛Player Deck➛Player","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_player_deck","column_name":"player"},{"name":"subflow.player_session","label":"Input➛Player Session","reference":"x_168987_flow_de_0_player_session","reference_display":"Player Session","type":"reference","base_type":"reference","column_name":"","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"3f37330b-c11e-487c-9d10-a17b570041d5","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"cedbec77-f017-4e48-85e2-6d8a579034fe.__status__","label":"8 - Error Handler➛Error Status","reference_display":"Error Status","type":"object","base_type":"object","attributes":{"uiType":"object","uiTypeLabel":"Object","co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"96bb8415-c37b-4562-bd52-7d52d94ffdc5.record.original_card_reference.ability_subflow.sys_id","label":"3 - Create Record➛Card Instance Record➛Original Card Reference➛Ability Subflow➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sys_hub_flow","column_name":"sys_id"}]</label_cache>
         <master_snapshot>d2bfa02247a2359017fdc82f316d431a</master_snapshot>
@@ -30,7 +33,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>f6fa242a4762359017fdc82f316d43d3</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>START: Create Card Instances from a Player Deck</sys_name>
         <sys_overrides/>
         <sys_package display_value="Flow Designer Marvel SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
@@ -38,7 +41,7 @@
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_update_name>sys_hub_flow_f6fa242a4762359017fdc82f316d43d3</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-12-22 12:12:23</sys_updated_on>
+        <sys_updated_on>2024-01-07 00:23:57</sys_updated_on>
         <type>subflow</type>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=f6fa242a4762359017fdc82f316d43d3"/>
@@ -323,6 +326,7 @@
         <comment/>
         <display_text/>
         <flow display_value="START: Create Card Instances from a Player Deck">f6fa242a4762359017fdc82f316d43d3</flow>
+        <generation_source/>
         <order>3</order>
         <parent_ui_id>39e1c3c2-9a8d-4744-b8c3-de1c5ff8ca36</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -386,6 +390,7 @@
         <comment>Get all the cards in the player's deck</comment>
         <display_text/>
         <flow display_value="START: Create Card Instances from a Player Deck">f6fa242a4762359017fdc82f316d43d3</flow>
+        <generation_source/>
         <order>1</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -454,6 +459,7 @@
         <flow display_value="START: Create Card Instances from a Player Deck">f6fa242a4762359017fdc82f316d43d3</flow>
         <flow_variable/>
         <flow_variables_assigned/>
+        <generation_source/>
         <inputs/>
         <inputs/>
         <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
@@ -505,11 +511,11 @@
         <sys_created_on>2023-11-19 12:26:05</sys_created_on>
         <sys_id>36fa242a4762359017fdc82f316d43e1</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Player Deck</sys_name>
         <sys_package display_value="Flow Designer Marvel SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_f6fa242a4762359017fdc82f316d43d3_player_deck_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-11-19 12:26:05</sys_updated_on>
         <url/>
@@ -528,11 +534,11 @@
         <sys_created_on>2023-11-19 12:26:06</sys_created_on>
         <sys_id>7afa242a4762359017fdc82f316d43e4</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Player Session</sys_name>
         <sys_package display_value="Flow Designer Marvel SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_f6fa242a4762359017fdc82f316d43d3_player_session_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-11-19 12:26:06</sys_updated_on>
         <url/>
@@ -551,11 +557,11 @@
         <sys_created_on>2023-11-19 12:26:05</sys_created_on>
         <sys_id>bafa242a4762359017fdc82f316d43de</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Game Instance</sys_name>
         <sys_package display_value="Flow Designer Marvel SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_f6fa242a4762359017fdc82f316d43d3_game_instance_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-11-19 12:26:05</sys_updated_on>
         <url/>
@@ -570,11 +576,13 @@
         <active>true</active>
         <annotation/>
         <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=4724000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
         <copied_from>9357ea30476a3d5017fdc82f316d4375</copied_from>
         <copied_from_name/>
         <description/>
+        <flow_priority/>
         <internal_name>start_create_card_instances_from_a_player_deck</internal_name>
         <label_cache>[{"name":"96bb8415-c37b-4562-bd52-7d52d94ffdc5.record.original_card_reference.ability_subflow.sys_id","label":"3 - Create Record➛Card Instance Record➛Original Card Reference➛Ability Subflow➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sys_hub_flow","column_name":"sys_id"},{"name":"cedbec77-f017-4e48-85e2-6d8a579034fe.__status__","label":"8 - Error Handler➛Error Status","reference_display":"Error Status","type":"object","base_type":"object","attributes":{"uiType":"object","uiTypeLabel":"Object","co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.player_session","label":"Input➛Player Session","reference":"x_168987_flow_de_0_player_session","reference_display":"Player Session","type":"reference","base_type":"reference","column_name":"","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"3f37330b-c11e-487c-9d10-a17b570041d5","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.player_deck.player","label":"Input➛Player Deck➛Player","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_player_deck","column_name":"player"},{"name":"39e1c3c2-9a8d-4744-b8c3-de1c5ff8ca36.item.card_definition.ability_subflow.name","label":"2 - For Each➛Player Deck Card Record➛Card Definition➛Ability Subflow➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"sys_hub_flow","column_name":"name"},{"name":"39e1c3c2-9a8d-4744-b8c3-de1c5ff8ca36.item.card_definition.ability_subflow","label":"2 - For Each➛Player Deck Card Record➛Card Definition➛Ability Subflow","reference":"sys_hub_flow","reference_display":"Flow","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_card_definition","column_name":"ability_subflow"},{"name":"39e1c3c2-9a8d-4744-b8c3-de1c5ff8ca36.item.card_definition.ability_type","label":"2 - For Each➛Player Deck Card Record➛Card Definition➛Ability Type","reference":"","reference_display":"Ability Type","type":"choice","base_type":"choice","parent_table_name":"x_168987_flow_de_0_card_definition","column_name":"ability_type","choices":[{"label":"-- None --","used":false,"rawLabel":"-- None --","selected":false,"missing":false,"image":"","reference":false,"value":""},{"used":false,"label":"On Reveal","rawLabel":"On Reveal","selected":false,"missing":false,"image":"","reference":false,"value":"on_reveal","parameters":{"name":"x_168987_flow_de_0_card_definition"}},{"used":false,"label":"Before Dealing","rawLabel":"Before Dealing","selected":false,"missing":false,"image":"","reference":false,"value":"before_dealing","parameters":{"name":"x_168987_flow_de_0_card_definition"}},{"used":false,"label":"Ongoing","rawLabel":"Ongoing","selected":false,"missing":false,"image":"","reference":false,"value":"ongoing","parameters":{"name":"x_168987_flow_de_0_card_definition"}},{"used":false,"label":"On Specific Turn","rawLabel":"On Specific Turn","selected":false,"missing":false,"image":"","reference":false,"value":"on_specific_turn","parameters":{"name":"x_168987_flow_de_0_card_definition"}},{"used":false,"label":"At End of Specific turn","rawLabel":"At End of Specific turn","selected":false,"missing":false,"image":"","reference":false,"value":"At End of Specific turn","parameters":{"name":"x_168987_flow_de_0_card_definition"}},{"used":false,"label":"No ability","rawLabel":"No ability","selected":false,"missing":false,"image":"","reference":false,"value":"no_ability","parameters":{"name":"x_168987_flow_de_0_card_definition"}},{"used":false,"label":"All turns once played","rawLabel":"All turns once played","selected":false,"missing":false,"image":"","reference":false,"value":"All turns once played","parameters":{"name":"x_168987_flow_de_0_card_definition"}},{"used":false,"label":"After Specific Turn","rawLabel":"After Specific Turn","selected":false,"missing":false,"image":"","reference":false,"value":"After Specific Turn","parameters":{"name":"x_168987_flow_de_0_card_definition"}},{"used":false,"label":"On Card Move","rawLabel":"On Card Move","selected":false,"missing":false,"image":"","reference":false,"value":"On Card Move","parameters":{"name":"x_168987_flow_de_0_card_definition"}},{"used":false,"label":"After each turn","rawLabel":"After each turn","selected":false,"missing":false,"image":"","reference":false,"value":"After each turn","parameters":{"name":"x_168987_flow_de_0_card_definition"}},{"used":false,"label":"Before each card is played","rawLabel":"Before each card is played","selected":false,"missing":false,"image":"","reference":false,"value":"Before each card is played","parameters":{"name":"x_168987_flow_de_0_card_definition"}}]},{"name":"subflow.player_deck","label":"Input➛Player Deck","reference":"x_168987_flow_de_0_player_deck","reference_display":"Player Deck","type":"reference","base_type":"reference","column_name":"","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"08a00eec-f469-4f1a-a202-f6de671a9845","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"5a642797-8db0-4b79-b69b-c431d1af6475.Records","label":"1 - Look Up Records➛Player Deck Card Records","reference":"x_168987_flow_de_0_player_deck_card","reference_display":"Player Deck Card","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"39e1c3c2-9a8d-4744-b8c3-de1c5ff8ca36.item.card_definition.cost","label":"2 - For Each➛Player Deck Card Record➛Card Definition➛Cost","reference":"","reference_display":"Cost","type":"integer","base_type":"integer","parent_table_name":"x_168987_flow_de_0_card_definition","column_name":"cost"},{"name":"39e1c3c2-9a8d-4744-b8c3-de1c5ff8ca36.item.card_definition","label":"2 - For Each➛Player Deck Card Record➛Card Definition","reference":"x_168987_flow_de_0_card_definition","reference_display":"Card Definition","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_player_deck_card","column_name":"card_definition"},{"name":"39e1c3c2-9a8d-4744-b8c3-de1c5ff8ca36.item.card_definition.power","label":"2 - For Each➛Player Deck Card Record➛Card Definition➛Power","reference":"","reference_display":"Power","type":"integer","base_type":"integer","parent_table_name":"x_168987_flow_de_0_card_definition","column_name":"power"},{"name":"subflow.game_instance","label":"Input➛Game Instance","reference":"x_168987_flow_de_0_game_instance","reference_display":"Game Instance","type":"reference","base_type":"reference","column_name":"","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"7465beef-a4df-4dac-a40b-defa7051b0fa","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"cedbec77-f017-4e48-85e2-6d8a579034fe.__status__.code","label":"8 - Top Level Catch➛Error Status➛Code","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","attributes":{}},{"name":"cedbec77-f017-4e48-85e2-6d8a579034fe.__status__.message","label":"8 - Top Level Catch➛Error Status➛Message","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"96bb8415-c37b-4562-bd52-7d52d94ffdc5.record","label":"3 - Create Record➛Card Instance Record","reference":"x_168987_flow_de_0_card_instance","reference_display":"Card Instance","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
         <master>true</master>
@@ -886,6 +894,7 @@
         <comment>Get all the cards in the player's deck</comment>
         <display_text/>
         <flow display_value="START: Create Card Instances from a Player Deck">d2bfa02247a2359017fdc82f316d431a</flow>
+        <generation_source/>
         <order>1</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -949,6 +958,7 @@
         <comment/>
         <display_text/>
         <flow display_value="START: Create Card Instances from a Player Deck">d2bfa02247a2359017fdc82f316d431a</flow>
+        <generation_source/>
         <order>7</order>
         <parent_ui_id>ac86adc5-5798-4b23-bde1-d4ba2434a8fc</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -1038,6 +1048,7 @@
         <comment/>
         <display_text/>
         <flow display_value="START: Create Card Instances from a Player Deck">d2bfa02247a2359017fdc82f316d431a</flow>
+        <generation_source/>
         <order>3</order>
         <parent_ui_id>39e1c3c2-9a8d-4744-b8c3-de1c5ff8ca36</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -1106,6 +1117,7 @@
         <flow display_value="START: Create Card Instances from a Player Deck">d2bfa02247a2359017fdc82f316d431a</flow>
         <flow_variable/>
         <flow_variables_assigned/>
+        <generation_source/>
         <inputs/>
         <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
         <order>6</order>
@@ -1140,6 +1152,7 @@
         <flow display_value="START: Create Card Instances from a Player Deck">d2bfa02247a2359017fdc82f316d431a</flow>
         <flow_variable/>
         <flow_variables_assigned/>
+        <generation_source/>
         <inputs/>
         <inputs/>
         <logic_definition display_value="Dynamic Flow">5ede711653223300414eddeeff7b1256</logic_definition>
@@ -1559,6 +1572,7 @@
         <flow display_value="START: Create Card Instances from a Player Deck">d2bfa02247a2359017fdc82f316d431a</flow>
         <flow_variable/>
         <flow_variables_assigned/>
+        <generation_source/>
         <inputs/>
         <inputs/>
         <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
@@ -1606,6 +1620,7 @@
         <flow display_value="START: Create Card Instances from a Player Deck">d2bfa02247a2359017fdc82f316d431a</flow>
         <flow_variable/>
         <flow_variables_assigned/>
+        <generation_source/>
         <inputs/>
         <inputs/>
         <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
@@ -1683,11 +1698,11 @@
         <sys_created_on>2023-11-19 12:46:49</sys_created_on>
         <sys_id>1ebfa02247a2359017fdc82f316d433c</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Player Session</sys_name>
         <sys_package display_value="Flow Designer Marvel SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_d2bfa02247a2359017fdc82f316d431a_player_session_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-11-19 12:46:49</sys_updated_on>
         <url/>
@@ -1706,11 +1721,11 @@
         <sys_created_on>2023-11-19 12:46:48</sys_created_on>
         <sys_id>9ebfa02247a2359017fdc82f316d4331</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Player Deck</sys_name>
         <sys_package display_value="Flow Designer Marvel SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_d2bfa02247a2359017fdc82f316d431a_player_deck_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-11-19 12:46:48</sys_updated_on>
         <url/>
@@ -1729,11 +1744,11 @@
         <sys_created_on>2023-11-19 12:46:48</sys_created_on>
         <sys_id>d2bfa02247a2359017fdc82f316d432a</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Game Instance</sys_name>
         <sys_package display_value="Flow Designer Marvel SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_d2bfa02247a2359017fdc82f316d431a_game_instance_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-11-19 12:46:48</sys_updated_on>
         <url/>

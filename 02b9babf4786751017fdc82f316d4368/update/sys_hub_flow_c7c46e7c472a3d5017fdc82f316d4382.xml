@@ -5,11 +5,14 @@
         <active>true</active>
         <annotation/>
         <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=11892285000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
         <copied_from/>
         <copied_from_name/>
         <description/>
+        <flow_priority/>
+        <generation_source/>
         <internal_name>create_game_upon_successful_match</internal_name>
         <label_cache>[{"name":"d5ee69e3-1e1a-48ac-90a2-3e159339e570.game_instance.matchmaking_instance.player_2_deck","label":"1 - SUB: Create Game Instance and Sessions➛Game Instance➛Matchmaking instance➛Player 2 deck","reference":"x_168987_flow_de_0_player_deck","reference_display":"Player Deck","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_matchmaking_queue","column_name":"player_2_deck"},{"name":"d5ee69e3-1e1a-48ac-90a2-3e159339e570.game_instance.matchmaking_instance.player_1_deck","label":"1 - SUB: Create Game Instance and Sessions➛Game Instance➛Matchmaking instance➛Player 1 Deck","reference":"x_168987_flow_de_0_player_deck","reference_display":"Player Deck","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_matchmaking_queue","column_name":"player_1_deck"},{"name":"Updated_1.current.player_1_session","label":"Trigger - Record Updated➛Matchmaking Queue Record➛Player 1 Session","reference":"x_168987_flow_de_0_player_session","reference_display":"Player Session","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_matchmaking_queue","column_name":"player_1_session"},{"name":"d1226321-d072-4d66-ac4d-ce2a342ff809.Records","label":"6 - Look Up Records➛Card Instance Records","reference":"x_168987_flow_de_0_card_instance","reference_display":"Game Card Instance","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1ae4ef7f-211e-4fa9-931f-66d290e34713.Count","label":"6 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d5ee69e3-1e1a-48ac-90a2-3e159339e570.game_instance.player_1","label":"1 - SUB: Create Game Instance and Sessions➛Game Instance➛Player 1","reference":"x_168987_flow_de_0_player_session","reference_display":"Player Session","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_game_instance","column_name":"player_1"},{"name":"Updated_1.current.player_2","label":"Trigger - Record Updated➛Matchmaking Queue Record➛Player 2","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_matchmaking_queue","column_name":"player_2"},{"name":"Updated_1.current.player_2_deck","label":"Trigger - Record Updated➛Matchmaking Queue Record➛Player 2 deck","reference":"x_168987_flow_de_0_player_deck","reference_display":"Player Deck","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_matchmaking_queue","column_name":"player_2_deck"},{"name":"d5ee69e3-1e1a-48ac-90a2-3e159339e570.game_instance","label":"1 - SUB: Create Game Instance and Sessions➛Game Instance","reference":"x_168987_flow_de_0_game_instance","reference_display":"Game Instance","type":"reference","base_type":"reference","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"b8ac3fdc-405a-494a-9572-24252548faa7"}},{"name":"Updated_1.current","label":"Trigger - Record Updated➛Matchmaking Queue Record","reference":"x_168987_flow_de_0_matchmaking_queue","reference_display":"Matchmaking Queue","type":"reference","base_type":"reference","attributes":{}},{"name":"Updated_1.current.player_1_deck","label":"Trigger - Record Updated➛Matchmaking Queue Record➛Player 1 Deck","reference":"x_168987_flow_de_0_player_deck","reference_display":"Player Deck","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_matchmaking_queue","column_name":"player_1_deck"},{"name":"fea9a6bc-cf84-4477-9ba9-96a61393e167.Records","label":"3 - Look Up Records➛Player Deck Card Records","reference":"x_168987_flow_de_0_player_deck_card","reference_display":"Player Deck Card Slots","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"436bb16b-7d7e-4775-a292-673e6683649b.item.card_definition.cost","label":"3 - For Each➛Player Deck Card Record➛Card Definition➛Cost","reference":"","reference_display":"Cost","type":"integer","base_type":"integer","parent_table_name":"x_168987_flow_de_0_card_definition","column_name":"cost"},{"name":"436bb16b-7d7e-4775-a292-673e6683649b.item.card_definition","label":"3 - For Each➛Player Deck Card Record➛Card Definition","reference":"x_168987_flow_de_0_card_definition","reference_display":"Card Definition","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_player_deck_card","column_name":"card_definition"},{"name":"436bb16b-7d7e-4775-a292-673e6683649b.item.card_definition.power","label":"3 - For Each➛Player Deck Card Record➛Card Definition➛Power","reference":"","reference_display":"Power","type":"integer","base_type":"integer","parent_table_name":"x_168987_flow_de_0_card_definition","column_name":"power"},{"name":"Updated_1.current.player_1","label":"Trigger - Record Updated➛Matchmaking Queue Record➛Player 1","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_matchmaking_queue","column_name":"player_1"},{"name":"8d44078a-9f83-4167-a16d-53756d6b400f.__status__.code","label":"6 - Top Level Catch➛Error Status➛Code","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","attributes":{}},{"name":"8d44078a-9f83-4167-a16d-53756d6b400f.__status__.message","label":"6 - Top Level Catch➛Error Status➛Message","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"Updated_1.current.game_instance","label":"Trigger - Record Updated➛Matchmaking Queue Record➛Game Instance","reference":"x_168987_flow_de_0_game_instance","reference_display":"Game Instance","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_matchmaking_queue","column_name":"game_instance"},{"name":"d5ee69e3-1e1a-48ac-90a2-3e159339e570.game_instance.matchmaking_instance.player_1_session","label":"1 - SUB: Create Game Instance and Sessions➛Game Instance➛Matchmaking instance➛Player 1 Session","reference":"x_168987_flow_de_0_player_session","reference_display":"Player Session","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_matchmaking_queue","column_name":"player_1_session"},{"name":"d5ee69e3-1e1a-48ac-90a2-3e159339e570.game_instance.matchmaking_instance.player_2_session","label":"1 - SUB: Create Game Instance and Sessions➛Game Instance➛Matchmaking instance➛Player 2 Session","reference":"x_168987_flow_de_0_player_session","reference_display":"Player Session","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_matchmaking_queue","column_name":"player_2_session"},{"name":"8c66c2cf-2889-4d09-8dee-03526e5e6afd.context","label":"2 - START-SUB: Create Card Instances from a Player Deck➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"d5ee69e3-1e1a-48ac-90a2-3e159339e570.game_instance.player_2","label":"1 - START-SUB: Create Game Instance and Sessions➛Game Instance➛Player 2","reference":"x_168987_flow_de_0_player_session","reference_display":"Player Session","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_game_instance","column_name":"player_2"}]</label_cache>
         <master_snapshot>faf0fabc476a3d5017fdc82f316d43bd</master_snapshot>
@@ -231,6 +234,29 @@
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
     <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=0fe4e2bc472a3d5017fdc82f316d4377"/>
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FDCollection</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>global</scope_name>
+        <serialized_content>{"FlowDesigner:FDCollection":{"$COCollectionField":[{"FDChangeDetails":{"previous_display_value":"String","previous_display_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Previous Display Value\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\"}"},"previous_value":"String","previous_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Previous Value\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\"}"},"current_display_value":"String","current_display_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Current Display Value\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\"}"},"current_value":"String","current_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Current Value\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\"}"},"field_name":"String","field_name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Field Name\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"pwd2droppable\":\"true\",\"default_value\":\"\",\"label\":\"Changed Fields\",\"mandatory\":\"false\",\"child_name\":\"FDChangeDetails\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDCollection\",\"child_label\":\"FDChangeDetails\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"100\",\"max_length\":\"4000\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FDCollection.$type_facets":{"SimpleMapFacet":"{\"pwd2droppable\":\"true\",\"default_value\":\"\",\"label\":\"Changed Fields\",\"mandatory\":\"false\",\"child_name\":\"FDChangeDetails\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDCollection\",\"child_label\":\"FDChangeDetails\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"100\",\"max_length\":\"4000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-06-13 23:19:20</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path/>
+        <sys_id>f4f014150f023300ecf0cc52ff767eed</sys_id>
+        <sys_mod_count>101</sys_mod_count>
+        <sys_name>FDCollection</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Flow Designer Designer Model" source="com.glide.hub.designer_backend.model">e661186cd9f13110cedf7dffddb48f71</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Global">global</sys_scope>
+        <sys_update_name>sys_complex_object_f4f014150f023300ecf0cc52ff767eed</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 05:06:11</sys_updated_on>
+        <type>complex_object_collection</type>
+    </sys_complex_object>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -411,16 +437,17 @@
         <comment/>
         <display_text/>
         <flow display_value="START: Create Game upon successful match">c7c46e7c472a3d5017fdc82f316d4382</flow>
+        <generation_source/>
         <order>7</order>
         <parent_ui_id>8d44078a-9f83-4167-a16d-53756d6b400f</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-11-14 11:09:23</sys_created_on>
         <sys_id>1e792634476a3d5017fdc82f316d43ca</sys_id>
-        <sys_mod_count>60</sys_mod_count>
+        <sys_mod_count>62</sys_mod_count>
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-03-31 03:34:50</sys_updated_on>
+        <sys_updated_on>2024-04-08 23:23:50</sys_updated_on>
         <ui_id>e26fe65b-baeb-4080-849d-0d50ea21e0c7</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=1e792634476a3d5017fdc82f316d43ca"/>
@@ -474,6 +501,7 @@ MESSAGE: {{8d44078a-9f83-4167-a16d-53756d6b400f.__status__.message}}</value>
         <comment>Create Player 2 Card instances</comment>
         <display_text/>
         <flow display_value="START: Create Game upon successful match">c7c46e7c472a3d5017fdc82f316d4382</flow>
+        <generation_source/>
         <inputs/>
         <inputs/>
         <order>3</order>
@@ -621,6 +649,7 @@ MESSAGE: {{8d44078a-9f83-4167-a16d-53756d6b400f.__status__.message}}</value>
         <comment/>
         <display_text/>
         <flow display_value="START: Create Game upon successful match">c7c46e7c472a3d5017fdc82f316d4382</flow>
+        <generation_source/>
         <inputs/>
         <inputs/>
         <order>1</order>
@@ -756,6 +785,7 @@ MESSAGE: {{8d44078a-9f83-4167-a16d-53756d6b400f.__status__.message}}</value>
         <comment>Create Player 1 Card instances</comment>
         <display_text/>
         <flow display_value="START: Create Game upon successful match">c7c46e7c472a3d5017fdc82f316d4382</flow>
+        <generation_source/>
         <inputs/>
         <inputs/>
         <order>2</order>
@@ -903,6 +933,7 @@ MESSAGE: {{8d44078a-9f83-4167-a16d-53756d6b400f.__status__.message}}</value>
         <comment>Deal Player 1</comment>
         <display_text/>
         <flow display_value="START: Create Game upon successful match">c7c46e7c472a3d5017fdc82f316d4382</flow>
+        <generation_source/>
         <inputs/>
         <inputs/>
         <order>4</order>
@@ -1038,6 +1069,7 @@ MESSAGE: {{8d44078a-9f83-4167-a16d-53756d6b400f.__status__.message}}</value>
         <comment>Deal Player 2</comment>
         <display_text/>
         <flow display_value="START: Create Game upon successful match">c7c46e7c472a3d5017fdc82f316d4382</flow>
+        <generation_source/>
         <inputs/>
         <inputs/>
         <order>5</order>
@@ -1193,6 +1225,7 @@ MESSAGE: {{8d44078a-9f83-4167-a16d-53756d6b400f.__status__.message}}</value>
         <flow display_value="START: Create Game upon successful match">c7c46e7c472a3d5017fdc82f316d4382</flow>
         <flow_variable/>
         <flow_variables_assigned/>
+        <generation_source/>
         <inputs/>
         <logic_definition display_value="Top Level Try">e9060aa2c3013010ace8b740ad40dd51</logic_definition>
         <order>0</order>
@@ -1226,6 +1259,7 @@ MESSAGE: {{8d44078a-9f83-4167-a16d-53756d6b400f.__status__.message}}</value>
         <flow display_value="START: Create Game upon successful match">c7c46e7c472a3d5017fdc82f316d4382</flow>
         <flow_variable/>
         <flow_variables_assigned/>
+        <generation_source/>
         <inputs/>
         <logic_definition display_value="Top Level Catch">35d60003e6022010a5e40cdd1254dd23</logic_definition>
         <order>6</order>
@@ -1357,11 +1391,13 @@ MESSAGE: {{8d44078a-9f83-4167-a16d-53756d6b400f.__status__.message}}</value>
         <active>true</active>
         <annotation/>
         <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
         <copied_from/>
         <copied_from_name/>
         <description/>
+        <flow_priority/>
         <internal_name>create_game_upon_successful_match</internal_name>
         <label_cache>[{"name":"d5ee69e3-1e1a-48ac-90a2-3e159339e570.game_instance.matchmaking_instance.player_2_deck","label":"1 - SUB: Create Game Instance and Sessions➛Game Instance➛Matchmaking instance➛Player 2 deck","reference":"x_168987_flow_de_0_player_deck","reference_display":"Player Deck","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_matchmaking_queue","column_name":"player_2_deck"},{"name":"d5ee69e3-1e1a-48ac-90a2-3e159339e570.game_instance.matchmaking_instance.player_1_deck","label":"1 - SUB: Create Game Instance and Sessions➛Game Instance➛Matchmaking instance➛Player 1 Deck","reference":"x_168987_flow_de_0_player_deck","reference_display":"Player Deck","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_matchmaking_queue","column_name":"player_1_deck"},{"name":"Updated_1.current.player_1_session","label":"Trigger - Record Updated➛Matchmaking Queue Record➛Player 1 Session","reference":"x_168987_flow_de_0_player_session","reference_display":"Player Session","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_matchmaking_queue","column_name":"player_1_session"},{"name":"d1226321-d072-4d66-ac4d-ce2a342ff809.Records","label":"6 - Look Up Records➛Card Instance Records","reference":"x_168987_flow_de_0_card_instance","reference_display":"Game Card Instance","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1ae4ef7f-211e-4fa9-931f-66d290e34713.Count","label":"6 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d5ee69e3-1e1a-48ac-90a2-3e159339e570.game_instance.player_1","label":"1 - SUB: Create Game Instance and Sessions➛Game Instance➛Player 1","reference":"x_168987_flow_de_0_player_session","reference_display":"Player Session","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_game_instance","column_name":"player_1"},{"name":"Updated_1.current.player_2","label":"Trigger - Record Updated➛Matchmaking Queue Record➛Player 2","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_matchmaking_queue","column_name":"player_2"},{"name":"Updated_1.current.player_2_deck","label":"Trigger - Record Updated➛Matchmaking Queue Record➛Player 2 deck","reference":"x_168987_flow_de_0_player_deck","reference_display":"Player Deck","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_matchmaking_queue","column_name":"player_2_deck"},{"name":"d5ee69e3-1e1a-48ac-90a2-3e159339e570.game_instance","label":"1 - SUB: Create Game Instance and Sessions➛Game Instance","reference":"x_168987_flow_de_0_game_instance","reference_display":"Game Instance","type":"reference","base_type":"reference","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"b8ac3fdc-405a-494a-9572-24252548faa7"}},{"name":"Updated_1.current","label":"Trigger - Record Updated➛Matchmaking Queue Record","reference":"x_168987_flow_de_0_matchmaking_queue","reference_display":"Matchmaking Queue","type":"reference","base_type":"reference","attributes":{}},{"name":"Updated_1.current.player_1_deck","label":"Trigger - Record Updated➛Matchmaking Queue Record➛Player 1 Deck","reference":"x_168987_flow_de_0_player_deck","reference_display":"Player Deck","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_matchmaking_queue","column_name":"player_1_deck"},{"name":"fea9a6bc-cf84-4477-9ba9-96a61393e167.Records","label":"3 - Look Up Records➛Player Deck Card Records","reference":"x_168987_flow_de_0_player_deck_card","reference_display":"Player Deck Card Slots","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"436bb16b-7d7e-4775-a292-673e6683649b.item.card_definition.cost","label":"3 - For Each➛Player Deck Card Record➛Card Definition➛Cost","reference":"","reference_display":"Cost","type":"integer","base_type":"integer","parent_table_name":"x_168987_flow_de_0_card_definition","column_name":"cost"},{"name":"436bb16b-7d7e-4775-a292-673e6683649b.item.card_definition","label":"3 - For Each➛Player Deck Card Record➛Card Definition","reference":"x_168987_flow_de_0_card_definition","reference_display":"Card Definition","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_player_deck_card","column_name":"card_definition"},{"name":"436bb16b-7d7e-4775-a292-673e6683649b.item.card_definition.power","label":"3 - For Each➛Player Deck Card Record➛Card Definition➛Power","reference":"","reference_display":"Power","type":"integer","base_type":"integer","parent_table_name":"x_168987_flow_de_0_card_definition","column_name":"power"},{"name":"Updated_1.current.player_1","label":"Trigger - Record Updated➛Matchmaking Queue Record➛Player 1","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_matchmaking_queue","column_name":"player_1"},{"name":"8d44078a-9f83-4167-a16d-53756d6b400f.__status__.code","label":"6 - Top Level Catch➛Error Status➛Code","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","attributes":{}},{"name":"8d44078a-9f83-4167-a16d-53756d6b400f.__status__.message","label":"6 - Top Level Catch➛Error Status➛Message","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"Updated_1.current.game_instance","label":"Trigger - Record Updated➛Matchmaking Queue Record➛Game Instance","reference":"x_168987_flow_de_0_game_instance","reference_display":"Game Instance","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_matchmaking_queue","column_name":"game_instance"},{"name":"d5ee69e3-1e1a-48ac-90a2-3e159339e570.game_instance.matchmaking_instance.player_1_session","label":"1 - SUB: Create Game Instance and Sessions➛Game Instance➛Matchmaking instance➛Player 1 Session","reference":"x_168987_flow_de_0_player_session","reference_display":"Player Session","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_matchmaking_queue","column_name":"player_1_session"},{"name":"d5ee69e3-1e1a-48ac-90a2-3e159339e570.game_instance.matchmaking_instance.player_2_session","label":"1 - SUB: Create Game Instance and Sessions➛Game Instance➛Matchmaking instance➛Player 2 Session","reference":"x_168987_flow_de_0_player_session","reference_display":"Player Session","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_matchmaking_queue","column_name":"player_2_session"},{"name":"8c66c2cf-2889-4d09-8dee-03526e5e6afd.context","label":"2 - START-SUB: Create Card Instances from a Player Deck➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"d5ee69e3-1e1a-48ac-90a2-3e159339e570.game_instance.player_2","label":"1 - START-SUB: Create Game Instance and Sessions➛Game Instance➛Player 2","reference":"x_168987_flow_de_0_player_session","reference_display":"Player Session","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_game_instance","column_name":"player_2"}]</label_cache>
         <master>true</master>
@@ -1625,6 +1661,29 @@ MESSAGE: {{8d44078a-9f83-4167-a16d-53756d6b400f.__status__.message}}</value>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
     <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=7af0fabc476a3d5017fdc82f316d43d7"/>
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FDCollection</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>global</scope_name>
+        <serialized_content>{"FlowDesigner:FDCollection":{"$COCollectionField":[{"FDChangeDetails":{"previous_display_value":"String","previous_display_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Previous Display Value\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\"}"},"previous_value":"String","previous_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Previous Value\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\"}"},"current_display_value":"String","current_display_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Current Display Value\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\"}"},"current_value":"String","current_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Current Value\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\"}"},"field_name":"String","field_name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Field Name\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"pwd2droppable\":\"true\",\"default_value\":\"\",\"label\":\"Changed Fields\",\"mandatory\":\"false\",\"child_name\":\"FDChangeDetails\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDCollection\",\"child_label\":\"FDChangeDetails\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"100\",\"max_length\":\"4000\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FDCollection.$type_facets":{"SimpleMapFacet":"{\"pwd2droppable\":\"true\",\"default_value\":\"\",\"label\":\"Changed Fields\",\"mandatory\":\"false\",\"child_name\":\"FDChangeDetails\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDCollection\",\"child_label\":\"FDChangeDetails\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"100\",\"max_length\":\"4000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-06-13 23:19:20</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path/>
+        <sys_id>f4f014150f023300ecf0cc52ff767eed</sys_id>
+        <sys_mod_count>101</sys_mod_count>
+        <sys_name>FDCollection</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Flow Designer Designer Model" source="com.glide.hub.designer_backend.model">e661186cd9f13110cedf7dffddb48f71</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Global">global</sys_scope>
+        <sys_update_name>sys_complex_object_f4f014150f023300ecf0cc52ff767eed</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 05:06:11</sys_updated_on>
+        <type>complex_object_collection</type>
+    </sys_complex_object>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -1721,6 +1780,7 @@ MESSAGE: {{8d44078a-9f83-4167-a16d-53756d6b400f.__status__.message}}</value>
         <comment/>
         <display_text/>
         <flow display_value="START: Create Game upon successful match">faf0fabc476a3d5017fdc82f316d43bd</flow>
+        <generation_source/>
         <order>7</order>
         <parent_ui_id>8d44078a-9f83-4167-a16d-53756d6b400f</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -1784,6 +1844,7 @@ MESSAGE: {{8d44078a-9f83-4167-a16d-53756d6b400f.__status__.message}}</value>
         <comment>Create Player 2 Card instances</comment>
         <display_text/>
         <flow display_value="START: Create Game upon successful match">faf0fabc476a3d5017fdc82f316d43bd</flow>
+        <generation_source/>
         <inputs/>
         <inputs/>
         <order>3</order>
@@ -1931,6 +1992,7 @@ MESSAGE: {{8d44078a-9f83-4167-a16d-53756d6b400f.__status__.message}}</value>
         <comment>Deal Player 2</comment>
         <display_text/>
         <flow display_value="START: Create Game upon successful match">faf0fabc476a3d5017fdc82f316d43bd</flow>
+        <generation_source/>
         <inputs/>
         <inputs/>
         <order>5</order>
@@ -2078,6 +2140,7 @@ MESSAGE: {{8d44078a-9f83-4167-a16d-53756d6b400f.__status__.message}}</value>
         <comment/>
         <display_text/>
         <flow display_value="START: Create Game upon successful match">faf0fabc476a3d5017fdc82f316d43bd</flow>
+        <generation_source/>
         <inputs/>
         <inputs/>
         <order>1</order>
@@ -2213,6 +2276,7 @@ MESSAGE: {{8d44078a-9f83-4167-a16d-53756d6b400f.__status__.message}}</value>
         <comment>Create Player 1 Card instances</comment>
         <display_text/>
         <flow display_value="START: Create Game upon successful match">faf0fabc476a3d5017fdc82f316d43bd</flow>
+        <generation_source/>
         <inputs/>
         <inputs/>
         <order>2</order>
@@ -2360,6 +2424,7 @@ MESSAGE: {{8d44078a-9f83-4167-a16d-53756d6b400f.__status__.message}}</value>
         <comment>Deal Player 1</comment>
         <display_text/>
         <flow display_value="START: Create Game upon successful match">faf0fabc476a3d5017fdc82f316d43bd</flow>
+        <generation_source/>
         <inputs/>
         <inputs/>
         <order>4</order>
@@ -2503,6 +2568,7 @@ MESSAGE: {{8d44078a-9f83-4167-a16d-53756d6b400f.__status__.message}}</value>
         <flow display_value="START: Create Game upon successful match">faf0fabc476a3d5017fdc82f316d43bd</flow>
         <flow_variable/>
         <flow_variables_assigned/>
+        <generation_source/>
         <inputs/>
         <logic_definition display_value="Top Level Try">e9060aa2c3013010ace8b740ad40dd51</logic_definition>
         <order>0</order>
@@ -2536,6 +2602,7 @@ MESSAGE: {{8d44078a-9f83-4167-a16d-53756d6b400f.__status__.message}}</value>
         <flow display_value="START: Create Game upon successful match">faf0fabc476a3d5017fdc82f316d43bd</flow>
         <flow_variable/>
         <flow_variables_assigned/>
+        <generation_source/>
         <inputs/>
         <logic_definition display_value="Top Level Catch">35d60003e6022010a5e40cdd1254dd23</logic_definition>
         <order>6</order>
@@ -2664,14 +2731,14 @@ MESSAGE: {{8d44078a-9f83-4167-a16d-53756d6b400f.__status__.message}}</value>
     <sys_hub_flow action="UPDATE">
         <sys_id>c7c46e7c472a3d5017fdc82f316d4382</sys_id>
         <latest_snapshot>faf0fabc476a3d5017fdc82f316d43bd</latest_snapshot>
-        <compiler_build>glide-vancouver-07-06-2023__patch2-hotfix1-10-04-2023_10-06-2023_1235.zip</compiler_build>
+        <compiler_build>glide-washingtondc-12-20-2023__patch1-02-28-2024_03-09-2024_0815.zip</compiler_build>
     </sys_hub_flow>
     <sys_flow_trigger_plan action="delete_multiple" query="plan_id=c7c46e7c472a3d5017fdc82f316d4382^sys_idNOT IN47f03ebc476a3d5017fdc82f316d4377"/>
     <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
         <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
-        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"47f03ebc476a3d5017fdc82f316d4377","name":"plan","plan_signature":null}}</plan>
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"47f03ebc476a3d5017fdc82f316d4377","name":"plan","plan_signature":null}}</plan>
         <plan_id>c7c46e7c472a3d5017fdc82f316d4382</plan_id>
-        <snapshot>51dca30593d10210cd4e7d532bba10b2</snapshot>
+        <snapshot>14b94dc093ad8210cd4e7d532bba1009</snapshot>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-11-14 11:42:12</sys_created_on>
         <sys_domain>global</sys_domain>

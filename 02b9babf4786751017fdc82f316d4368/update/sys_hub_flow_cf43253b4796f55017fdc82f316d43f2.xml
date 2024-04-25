@@ -5,11 +5,14 @@
         <active>true</active>
         <annotation/>
         <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=1149000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
         <copied_from/>
         <copied_from_name/>
         <description>When a deck is created, we create placeholder player deck cards for the maximum 12 cards we're going to need.</description>
+        <flow_priority/>
+        <generation_source/>
         <internal_name>create_placeholder_player_deck_cards</internal_name>
         <label_cache>[{"name":"54ffc81c-b0dd-46b1-93db-b63241e0b006.status","label":"1 - Create Placeholder Player Deck Cards➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":1.0},{"label":"Successful","value":"successful","order":2.0},{"label":"Failed","value":"failed","order":3.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"7e1c131d-ecfd-48ab-a4bd-a5eef477723b"}},{"name":"Created_1.current","label":"Trigger - Record Created➛Player Deck Record","reference":"x_168987_flow_de_0_player_deck","reference_display":"Player Deck","type":"reference","base_type":"reference","attributes":{}}]</label_cache>
         <master_snapshot>7ba76d7f4796f55017fdc82f316d436f</master_snapshot>
@@ -30,7 +33,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>cf43253b4796f55017fdc82f316d43f2</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>DECK: New deck Placeholders</sys_name>
         <sys_overrides/>
         <sys_package display_value="Flow Designer Marvel SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
@@ -38,7 +41,7 @@
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_update_name>sys_hub_flow_cf43253b4796f55017fdc82f316d43f2</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-11-18 10:12:40</sys_updated_on>
+        <sys_updated_on>2024-01-07 00:23:50</sys_updated_on>
         <type>flow</type>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=cf43253b4796f55017fdc82f316d43f2"/>
@@ -326,16 +329,17 @@
         <comment>Log Result of Subflow</comment>
         <display_text/>
         <flow display_value="DECK: New deck Placeholders">cf43253b4796f55017fdc82f316d43f2</flow>
+        <generation_source/>
         <order>2</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-11-11 03:48:00</sys_created_on>
         <sys_id>2ba76d7f4796f55017fdc82f316d4338</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-11-18 10:12:40</sys_updated_on>
+        <sys_updated_on>2024-01-07 01:53:32</sys_updated_on>
         <ui_id>0ca50c36-4a76-4691-b9a4-5448a1ee3e61</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=2ba76d7f4796f55017fdc82f316d4338"/>
@@ -360,6 +364,7 @@
         <comment/>
         <display_text/>
         <flow display_value="DECK: New deck Placeholders">cf43253b4796f55017fdc82f316d43f2</flow>
+        <generation_source/>
         <inputs/>
         <inputs/>
         <order>1</order>
@@ -403,18 +408,6 @@
         <sys_updated_on>2023-11-11 03:48:00</sys_updated_on>
         <table>var__m_sys_hub_flow_input_cc17217f4796f55017fdc82f316d435f</table>
         <value>{{Created_1.current}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>wait_for_completion</field>
-        <id>aba76d7f4796f55017fdc82f316d431b</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2023-11-11 03:48:00</sys_created_on>
-        <sys_id>27a76d7f4796f55017fdc82f316d4333</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-11-11 03:48:00</sys_updated_on>
-        <table>var__m_sys_hub_sub_flow_instance_inputs_aba76d7f4796f55017fdc82f316d431b</table>
-        <value/>
     </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_sub_flow_instance_inputs_aba76d7f4796f55017fdc82f316d431b^id=aba76d7f4796f55017fdc82f316d431b"/>
     <sys_hub_sub_flow_instance_inputs action="delete_multiple" query="model=aba76d7f4796f55017fdc82f316d431b^sys_idNOT INa3a76d7f4796f55017fdc82f316d431d"/>
@@ -519,11 +512,11 @@
         <sys_created_on>2023-11-11 03:48:00</sys_created_on>
         <sys_id>63a76d7f4796f55017fdc82f316d4317</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Table Name</sys_name>
         <sys_package display_value="Flow Designer Marvel SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_cf43253b4796f55017fdc82f316d43f2_table_name_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-11-11 03:48:00</sys_updated_on>
         <url/>
@@ -542,11 +535,11 @@
         <sys_created_on>2023-11-11 03:48:00</sys_created_on>
         <sys_id>efa76d7f4796f55017fdc82f316d4313</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Record</sys_name>
         <sys_package display_value="Flow Designer Marvel SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_cf43253b4796f55017fdc82f316d43f2_current_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-11-11 03:48:00</sys_updated_on>
         <url/>
@@ -561,11 +554,13 @@
         <active>true</active>
         <annotation/>
         <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
         <copied_from/>
         <copied_from_name/>
         <description>When a deck is created, we create placeholder player deck cards for the maximum 12 cards we're going to need.</description>
+        <flow_priority/>
         <internal_name>new_deck_placeholders</internal_name>
         <label_cache>[{"name":"Created_1.current","label":"Trigger - Record Created➛Player Deck Record","reference":"x_168987_flow_de_0_player_deck","reference_display":"Player Deck","type":"reference","base_type":"reference","attributes":{}},{"name":"54ffc81c-b0dd-46b1-93db-b63241e0b006.status","label":"1 - Create Placeholder Player Deck Cards➛Status","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":1.0},{"label":"Successful","value":"successful","order":2.0},{"label":"Failed","value":"failed","order":3.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"7e1c131d-ecfd-48ab-a4bd-a5eef477723b"}}]</label_cache>
         <master>true</master>
@@ -840,6 +835,7 @@
         <comment>Log Result of Subflow</comment>
         <display_text/>
         <flow display_value="New deck Placeholders">7ba76d7f4796f55017fdc82f316d436f</flow>
+        <generation_source/>
         <order>2</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -874,6 +870,7 @@
         <comment/>
         <display_text/>
         <flow display_value="New deck Placeholders">7ba76d7f4796f55017fdc82f316d436f</flow>
+        <generation_source/>
         <inputs/>
         <inputs/>
         <order>1</order>
@@ -917,18 +914,6 @@
         <sys_updated_on>2023-11-11 03:48:01</sys_updated_on>
         <table>var__m_sys_hub_flow_input_cc17217f4796f55017fdc82f316d435f</table>
         <value>{{Created_1.current}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>wait_for_completion</field>
-        <id>84b76d7f4796f55017fdc82f316d438f</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2023-11-11 03:48:01</sys_created_on>
-        <sys_id>0cb76d7f4796f55017fdc82f316d439d</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-11-11 03:48:01</sys_updated_on>
-        <table>var__m_sys_hub_sub_flow_instance_inputs_84b76d7f4796f55017fdc82f316d438f</table>
-        <value/>
     </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_sub_flow_instance_inputs_84b76d7f4796f55017fdc82f316d438f^id=84b76d7f4796f55017fdc82f316d438f"/>
     <sys_hub_sub_flow_instance_inputs action="delete_multiple" query="model=84b76d7f4796f55017fdc82f316d438f^sys_idNOT IN40b76d7f4796f55017fdc82f316d4390"/>
@@ -1033,11 +1018,11 @@
         <sys_created_on>2023-11-11 03:48:01</sys_created_on>
         <sys_id>7ba76d7f4796f55017fdc82f316d4379</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Record</sys_name>
         <sys_package display_value="Flow Designer Marvel SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_7ba76d7f4796f55017fdc82f316d436f_current_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-11-11 03:48:01</sys_updated_on>
         <url/>
@@ -1056,11 +1041,11 @@
         <sys_created_on>2023-11-11 03:48:01</sys_created_on>
         <sys_id>b7a76d7f4796f55017fdc82f316d4381</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Table Name</sys_name>
         <sys_package display_value="Flow Designer Marvel SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_7ba76d7f4796f55017fdc82f316d436f_table_name_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-11-11 03:48:01</sys_updated_on>
         <url/>
@@ -1079,7 +1064,7 @@
         <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
         <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"84b76d7f4796f55017fdc82f316d43b1","name":"plan","plan_signature":null}}</plan>
         <plan_id>cf43253b4796f55017fdc82f316d43f2</plan_id>
-        <snapshot>85c7ed7f4796f55017fdc82f316d43d6</snapshot>
+        <snapshot>a210b646932f3110cd4e7d532bba1008</snapshot>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-11-11 03:48:02</sys_created_on>
         <sys_domain>global</sys_domain>
