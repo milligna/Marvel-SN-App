@@ -884,6 +884,94 @@
                     },
                     "slot": null,
                     "styles": null
+                },
+                {
+                    "definition": {
+                        "id": "d37ce8abca89d02905fed903c8e34d8e",
+                        "type": "MACROPONENT"
+                    },
+                    "elementId": "button_1",
+                    "elementLabel": "Button 1",
+                    "eventMappings": [
+                        {
+                            "eventMappingId": "clvemeezgfaaddddeeddbhhxhiiicchpqw",
+                            "isConfiguration": false,
+                            "offRowStorageId": null,
+                            "sourceEventApiName": "sn_button.NOW_BUTTON#CLICKED",
+                            "sourceEventCorrelationId": null,
+                            "sourceEventDefinition": {
+                                "apiName": "sn_button.NOW_BUTTON#CLICKED",
+                                "id": null,
+                                "type": "UXEVENT"
+                            },
+                            "sourceEventSysId": null,
+                            "targets": [
+                                {
+                                    "broker": null,
+                                    "clientScript": null,
+                                    "conditional": null,
+                                    "declarativeAction": null,
+                                    "event": null,
+                                    "operation": {
+                                        "dataBrokerId": "9664d48053461010cbc2ddeeff7b128e",
+                                        "operationName": "REFRESH",
+                                        "parentResourceId": "get_selected_record",
+                                        "payload": {
+                                            "type": "JSON_LITERAL",
+                                            "value": {}
+                                        }
+                                    },
+                                    "targetId": "clvemeezgfaaddddffddbhhxhjjddljjddeea",
+                                    "type": "DATABROKER_OP"
+                                }
+                            ]
+                        }
+                    ],
+                    "isHidden": {
+                        "type": "JSON_LITERAL",
+                        "value": null
+                    },
+                    "preset": null,
+                    "propertyValues": {
+                        "configAria": {
+                            "type": "JSON_LITERAL",
+                            "value": {}
+                        },
+                        "disabled": {
+                            "type": "JSON_LITERAL",
+                            "value": false
+                        },
+                        "icon": {
+                            "type": "JSON_LITERAL",
+                            "value": null
+                        },
+                        "label": {
+                            "type": "TRANSLATION_LITERAL",
+                            "value": {
+                                "code": null,
+                                "comment": "",
+                                "message": "open modal"
+                            }
+                        },
+                        "size": {
+                            "type": "JSON_LITERAL",
+                            "value": "md"
+                        },
+                        "tooltipContent": {
+                            "type": "TRANSLATION_LITERAL",
+                            "value": {
+                                "code": null,
+                                "comment": "",
+                                "message": "Enter a label"
+                            }
+                        },
+                        "variant": {
+                            "type": "JSON_LITERAL",
+                            "value": "primary-negative"
+                        }
+                    },
+                    "slot": null,
+                    "styles": null
                 }
             ],
             "layout": {
@@ -908,6 +996,10 @@
                         },
                         {
                             "element_id": "end_turn_button",
+                            "styles": {}
+                        },
+                        {
+                            "element_id": "button_1",
                             "styles": {}
                         }
                     ],
@@ -8741,120 +8833,7 @@
         "elementId": "get_selected_record",
         "elementLabel": "Get Selected Record",
         "eventMappings": [
-            {
-                "eventMappingId": "clvdrpveezaaaauhhddbhhojffnxuwha",
-                "isConfiguration": false,
-                "offRowStorageId": null,
-                "sourceEventApiName": "sn_uxf.DATA_FETCH_INITIATED",
-                "sourceEventCorrelationId": null,
-                "sourceEventDefinition": {
-                    "apiName": "sn_uxf.DATA_FETCH_INITIATED",
-                    "id": null,
-                    "type": "UXEVENT"
-                },
-                "sourceEventSysId": null,
-                "targets": [
-                    {
-                        "broker": null,
-                        "clientScript": null,
-                        "conditional": null,
-                        "declarativeAction": null,
-                        "event": {
-                            "apiName": "sn_uxf_page.NOW_UXF_PAGE#ADD_NOTIFICATIONS",
-                            "payload": {
-                                "type": "JSON_LITERAL",
-                                "value": {
-                                    "items": [
-                                        {
-                                            "content": "commenced selected record retrieval"
-                                        }
-                                    ]
-                                }
-                            },
-                            "sysId": "49fe7d575f983bb3f8eea3fa8d40694c"
-                        },
-                        "operation": null,
-                        "targetId": "clvdrpveezaaaauiiddbhhoggbhhuktggv",
-                        "type": "EVENT"
-                    }
-                ]
-            },
-            {
-                "eventMappingId": "clvdrreubbaaaawaaddbhhohgiinaaciv",
-                "isConfiguration": false,
-                "offRowStorageId": null,
-                "sourceEventApiName": "sn_uxf.DATA_FETCH_SUCCEEDED",
-                "sourceEventCorrelationId": null,
-                "sourceEventDefinition": {
-                    "apiName": "sn_uxf.DATA_FETCH_SUCCEEDED",
-                    "id": null,
-                    "type": "UXEVENT"
-                },
-                "sourceEventSysId": null,
-                "targets": [
-                    {
-                        "broker": null,
-                        "clientScript": null,
-                        "conditional": null,
-                        "declarativeAction": null,
-                        "event": {
-                            "apiName": "sn_uxf_page.NOW_UXF_PAGE#ADD_NOTIFICATIONS",
-                            "payload": {
-                                "type": "JSON_LITERAL",
-                                "value": {
-                                    "items": [
-                                        {
-                                            "content": "Selected record retrieved"
-                                        }
-                                    ]
-                                }
-                            },
-                            "sysId": "49fe7d575f983bb3f8eea3fa8d40694c"
-                        },
-                        "operation": null,
-                        "targetId": "clvdrreubbaaaawbbddbhhonhhieozg",
-                        "type": "EVENT"
-                    }
-                ]
-            },
-            {
-                "eventMappingId": "clvdsccsucaaaaziddbhhoiibbiinccula",
-                "isConfiguration": false,
-                "offRowStorageId": null,
-                "sourceEventApiName": "sn_uxf.DATA_FETCH_FAILED",
-                "sourceEventCorrelationId": null,
-                "sourceEventDefinition": {
-                    "apiName": "sn_uxf.DATA_FETCH_FAILED",
-                    "id": null,
-                    "type": "UXEVENT"
-                },
-                "sourceEventSysId": null,
-                "targets": [
-                    {
-                        "broker": null,
-                        "clientScript": null,
-                        "conditional": null,
-                        "declarativeAction": null,
-                        "event": {
-                            "apiName": "sn_uxf_page.NOW_UXF_PAGE#ADD_NOTIFICATIONS",
-                            "payload": {
-                                "type": "JSON_LITERAL",
-                                "value": {
-                                    "items": [
-                                        {
-                                            "content": "Selected record retrieval failed"
-                                        }
-                                    ]
-                                }
-                            },
-                            "sysId": "49fe7d575f983bb3f8eea3fa8d40694c"
-                        },
-                        "operation": null,
-                        "targetId": "clvdsccsucaaaazjddbhhoccaalejakff",
-                        "type": "EVENT"
-                    }
-                ]
-            }
+            
         ],
         "inputValues": {
             "recordId": {
@@ -9707,6 +9686,9 @@
 }, {
   "message" : "Value: ",
   "comment" : ""
+}, {
+  "message" : "open modal",
+  "comment" : ""
 } ]</required_translations>
         <root_component/>
         <root_component_config/>
@@ -9731,7 +9713,7 @@
     {
         "initialValue": {
             "type": "JSON_LITERAL",
-            "value": "null"
+            "value": ""
         },
         "name": "selected_card",
         "shape": "",
@@ -9751,14 +9733,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-01-07 02:09:17</sys_created_on>
         <sys_id>5db3fe4a932f3110cd4e7d532bba10d8</sys_id>
-        <sys_mod_count>465</sys_mod_count>
+        <sys_mod_count>469</sys_mod_count>
         <sys_name>Default</sys_name>
         <sys_package display_value="Flow Designer Marvel SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_update_name>sys_ux_macroponent_5db3fe4a932f3110cd4e7d532bba10d8</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-24 23:14:56</sys_updated_on>
+        <sys_updated_on>2024-04-25 02:17:49</sys_updated_on>
     </sys_ux_macroponent>
     <sys_translated_text action="delete_multiple" query="documentkey=5db3fe4a932f3110cd4e7d532bba10d8"/>
 </record_update>
