@@ -3,7 +3,7 @@
         <element label="Cards Drawn" max_length="40" name="cards_drawn" type="integer"/>
         <element label="Current Energy" max_length="40" name="current_energy" type="integer"/>
         <element label="Current Turn Number" max_length="40" name="current_turn_number" type="integer"/>
-        <element label="Game Instance" max_length="32" name="game_instance" reference="x_168987_flow_de_0_game_instance" type="reference"/>
+        <element label="Game Instance" max_length="32" name="game_instance" reference="x_168987_flow_de_0_game_instance" reference_cascade_rule="delete" type="reference"/>
         <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
         <element display="true" label="Short Description" max_length="40" name="short_description" type="string"/>
         <element choice="3" label="Turn Status" max_length="40" name="turn_status" type="choice">
@@ -16,6 +16,9 @@
         <element label="User" max_length="40" name="user" reference="sys_user" type="reference"/>
         <index name="index">
             <element name="game_instance"/>
+        </index>
+        <index name="index2">
+            <element name="user"/>
         </index>
     </element>
 </database>

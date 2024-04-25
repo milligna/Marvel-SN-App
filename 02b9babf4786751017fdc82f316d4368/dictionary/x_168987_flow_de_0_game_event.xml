@@ -9,7 +9,7 @@
                 <element inactive_on_update="false" label="End Turn" sequence="4" value="end_turn"/>
             </choice>
         </element>
-        <element label="Player Session" max_length="32" name="player_session" reference="x_168987_flow_de_0_player_session" type="reference"/>
+        <element label="Player Session" max_length="32" name="player_session" reference="x_168987_flow_de_0_player_session" reference_cascade_rule="delete" type="reference"/>
         <element attributes="edge_encryption_enabled=true" choice="1" label="Status" max_length="40" name="state" type="string">
             <choice>
                 <element inactive_on_update="false" label="Pending" sequence="0" value="pending"/>

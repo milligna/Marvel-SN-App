@@ -11,7 +11,7 @@
         <element display="true" label="Original Card Reference" max_length="32" name="original_card_reference" reference="x_168987_flow_de_0_card_definition" type="reference"/>
         <element label="Original Cost" max_length="40" name="original_cost" type="integer"/>
         <element label="Original Power" max_length="40" name="original_power" type="integer"/>
-        <element label="Player session" max_length="32" name="player_session" reference="x_168987_flow_de_0_player_session" type="reference"/>
+        <element label="Player session" max_length="32" name="player_session" reference="x_168987_flow_de_0_player_session" reference_cascade_rule="delete" reference_qual="null" reference_qual_condition="null" type="reference"/>
         <element choice="3" label="Status" max_length="40" name="status" type="choice">
             <choice>
                 <element inactive_on_update="false" label="In Hand" sequence="0" value="in_hand"/>
