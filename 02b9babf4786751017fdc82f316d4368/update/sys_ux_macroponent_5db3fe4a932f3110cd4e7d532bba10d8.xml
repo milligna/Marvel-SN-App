@@ -733,6 +733,24 @@
                                     },
                                     "targetId": "clupffpzkffaabbwoddbhhnrollpaazj",
                                     "type": "DATABROKER_OP"
+                                },
+                                {
+                                    "broker": null,
+                                    "clientScript": null,
+                                    "conditional": null,
+                                    "declarativeAction": null,
+                                    "event": null,
+                                    "operation": {
+                                        "dataBrokerId": "9664d48053461010cbc2ddeeff7b128e",
+                                        "operationName": "REFRESH",
+                                        "parentResourceId": "get_game_instance",
+                                        "payload": {
+                                            "type": "JSON_LITERAL",
+                                            "value": {}
+                                        }
+                                    },
+                                    "targetId": "clvgffyjjtdaaaaxzddbhhohffaamoukj",
+                                    "type": "DATABROKER_OP"
                                 }
                             ]
                         }
@@ -1600,7 +1618,7 @@
                                     "composition": [
                                         {
                                             "definition": {
-                                                "id": "1f6e0643eca7a637e36bd7833549ec9e",
+                                                "id": "4335ba6dca80378f7ba7a67cd6667bec",
                                                 "type": "MACROPONENT"
                                             },
                                             "elementId": "l1_p1_score",
@@ -1614,11 +1632,19 @@
                                             },
                                             "preset": null,
                                             "propertyValues": {
-                                                "hasNoMargin": {
+                                                "configAria": {
                                                     "type": "JSON_LITERAL",
-                                                    "value": false
+                                                    "value": {}
                                                 },
-                                                "label": {
+                                                "css": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": "* { align-self: center;\n    color: #dee2fb;\n    font-style: italic;\n    font-variant: small-caps;\n    text-shadow: 1px 1px 2px #9097b7, 0 0 1em blue, 0 0 0.2em blue;}"
+                                                },
+                                                "tag": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": "div"
+                                                },
+                                                "text": {
                                                     "binding": {
                                                         "address": [
                                                             "get_location_1",
@@ -1628,18 +1654,6 @@
                                                         ]
                                                     },
                                                     "type": "DATA_OUTPUT_BINDING"
-                                                },
-                                                "level": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": "1"
-                                                },
-                                                "variant": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": "title-primary"
-                                                },
-                                                "wontWrap": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": false
                                                 }
                                             },
                                             "slot": null,
@@ -1647,71 +1661,150 @@
                                         },
                                         {
                                             "definition": {
-                                                "id": "15fe506403f8a98575b6df59008ea8f1",
+                                                "id": "d356d14b6e293a3020a244b63d278d8f",
                                                 "type": "MACROPONENT"
                                             },
-                                            "elementId": "l1_card_image",
-                                            "elementLabel": "L1 Card image",
+                                            "elementId": "l1_image_container",
+                                            "elementLabel": "L1 image container",
                                             "eventMappings": [
                                                 
                                             ],
                                             "isHidden": {
-                                                "operation": {
-                                                    "operand": {
-                                                        "binding": {
-                                                            "address": [
-                                                                "get_location_1",
-                                                                "result",
-                                                                "location_visible",
-                                                                "value"
-                                                            ]
+                                                "type": "JSON_LITERAL",
+                                                "value": null
+                                            },
+                                            "overrides": {
+                                                "composition": [
+                                                    {
+                                                        "definition": {
+                                                            "id": "15fe506403f8a98575b6df59008ea8f1",
+                                                            "type": "MACROPONENT"
                                                         },
-                                                        "type": "DATA_OUTPUT_BINDING"
+                                                        "elementId": "l1_card_image",
+                                                        "elementLabel": "L1 Card image",
+                                                        "eventMappings": [
+                                                            
+                                                        ],
+                                                        "isHidden": {
+                                                            "operation": {
+                                                                "operand": {
+                                                                    "binding": {
+                                                                        "address": [
+                                                                            "get_location_1",
+                                                                            "result",
+                                                                            "location_visible",
+                                                                            "value"
+                                                                        ]
+                                                                    },
+                                                                    "type": "DATA_OUTPUT_BINDING"
+                                                                },
+                                                                "operator": "NOT"
+                                                            },
+                                                            "type": "UNARY"
+                                                        },
+                                                        "preset": null,
+                                                        "propertyValues": {
+                                                            "alt": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": ""
+                                                            },
+                                                            "fit": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": "contain"
+                                                            },
+                                                            "height": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": 150
+                                                            },
+                                                            "position": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": "center center"
+                                                            },
+                                                            "sources": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": [
+                                                                    
+                                                                ]
+                                                            },
+                                                            "src": {
+                                                                "binding": {
+                                                                    "address": [
+                                                                        "get_location_1",
+                                                                        "result",
+                                                                        "location_card",
+                                                                        "_reference",
+                                                                        "card_image",
+                                                                        "displayValue"
+                                                                    ]
+                                                                },
+                                                                "type": "DATA_OUTPUT_BINDING"
+                                                            },
+                                                            "width": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": ""
+                                                            }
+                                                        },
+                                                        "slot": null,
+                                                        "styles": null
+                                                    }
+                                                ],
+                                                "layout": {
+                                                    "default": {
+                                                        "children": null,
+                                                        "items": [
+                                                            {
+                                                                "element_id": "l1_card_image",
+                                                                "styles": {
+                                                                    "height": "",
+                                                                    "width": ""
+                                                                }
+                                                            }
+                                                        ],
+                                                        "root": null,
+                                                        "rules": null,
+                                                        "styles": {
+                                                            "flex-direction": "column",
+                                                            "justify-content": "space-between"
+                                                        },
+                                                        "templateId": "5832fd4d53c31010e6bcddeeff7b12db",
+                                                        "type": "flex"
                                                     },
-                                                    "operator": "NOT"
-                                                },
-                                                "type": "UNARY"
+                                                    "version": "3.0.0"
+                                                }
                                             },
                                             "preset": null,
                                             "propertyValues": {
-                                                "alt": {
+                                                "ariaRegionHeadingLevel": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": "1"
+                                                },
+                                                "ariaRegionName": {
+                                                    "type": "TRANSLATION_LITERAL",
+                                                    "value": {
+                                                        "code": null,
+                                                        "comment": "",
+                                                        "message": ""
+                                                    }
+                                                },
+                                                "ariaRole": {
                                                     "type": "JSON_LITERAL",
                                                     "value": ""
                                                 },
-                                                "fit": {
+                                                "hideEmptyStateUi": {
                                                     "type": "JSON_LITERAL",
-                                                    "value": "contain"
+                                                    "value": true
                                                 },
-                                                "height": {
+                                                "includeAriaHeading": {
                                                     "type": "JSON_LITERAL",
-                                                    "value": 150
+                                                    "value": false
                                                 },
-                                                "position": {
+                                                "slotWrapperBehavior": {
                                                     "type": "JSON_LITERAL",
-                                                    "value": "center center"
+                                                    "value": "fullheight"
                                                 },
-                                                "sources": {
+                                                "type": {
                                                     "type": "JSON_LITERAL",
-                                                    "value": [
-                                                        
-                                                    ]
-                                                },
-                                                "src": {
-                                                    "binding": {
-                                                        "address": [
-                                                            "get_location_1",
-                                                            "result",
-                                                            "location_card",
-                                                            "_reference",
-                                                            "card_image",
-                                                            "displayValue"
-                                                        ]
-                                                    },
-                                                    "type": "DATA_OUTPUT_BINDING"
-                                                },
-                                                "width": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": ""
+                                                    "value": "section"
                                                 }
                                             },
                                             "slot": null,
@@ -1719,7 +1812,7 @@
                                         },
                                         {
                                             "definition": {
-                                                "id": "1f6e0643eca7a637e36bd7833549ec9e",
+                                                "id": "4335ba6dca80378f7ba7a67cd6667bec",
                                                 "type": "MACROPONENT"
                                             },
                                             "elementId": "l1_p2_score",
@@ -1733,11 +1826,19 @@
                                             },
                                             "preset": null,
                                             "propertyValues": {
-                                                "hasNoMargin": {
+                                                "configAria": {
                                                     "type": "JSON_LITERAL",
-                                                    "value": false
+                                                    "value": {}
                                                 },
-                                                "label": {
+                                                "css": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": "* { align-self: center;\n    color: #dee2fb;\n    font-style: italic;\n    font-variant: small-caps;\n    text-shadow: 1px 1px 2px #9097b7, 0 0 1em blue, 0 0 0.2em blue;}"
+                                                },
+                                                "tag": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": "div"
+                                                },
+                                                "text": {
                                                     "binding": {
                                                         "address": [
                                                             "get_location_1",
@@ -1747,18 +1848,6 @@
                                                         ]
                                                     },
                                                     "type": "DATA_OUTPUT_BINDING"
-                                                },
-                                                "level": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": "1"
-                                                },
-                                                "variant": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": "title-primary"
-                                                },
-                                                "wontWrap": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": false
                                                 }
                                             },
                                             "slot": null,
@@ -1776,10 +1865,14 @@
                                                     }
                                                 },
                                                 {
-                                                    "element_id": "l1_card_image",
+                                                    "element_id": "l1_image_container",
                                                     "styles": {
-                                                        "height": "",
-                                                        "width": ""
+                                                        "align-self": "stretch",
+                                                        "border-color": "RGB(var(--now-color--neutral-5))",
+                                                        "border-style": "solid",
+                                                        "border-width": "var(--now-static-space--xxs)",
+                                                        "height": "150px",
+                                                        "width": "100%"
                                                     }
                                                 },
                                                 {
@@ -1793,7 +1886,7 @@
                                             "rules": null,
                                             "styles": {
                                                 "flex-direction": "column",
-                                                "justify-content": "flex-start"
+                                                "justify-content": "space-between"
                                             },
                                             "templateId": "5832fd4d53c31010e6bcddeeff7b12db",
                                             "type": "flex"
@@ -2050,6 +2143,7 @@
                                     {
                                         "element_id": "l1_card_container",
                                         "styles": {
+                                            "align-self": "stretch",
                                             "border-color": "RGB(var(--now-color--neutral-5))",
                                             "border-style": "solid",
                                             "border-width": "var(--now-static-space--xxs)",
@@ -2337,7 +2431,7 @@
                                     "composition": [
                                         {
                                             "definition": {
-                                                "id": "1f6e0643eca7a637e36bd7833549ec9e",
+                                                "id": "4335ba6dca80378f7ba7a67cd6667bec",
                                                 "type": "MACROPONENT"
                                             },
                                             "elementId": "l2_p1_score",
@@ -2351,11 +2445,19 @@
                                             },
                                             "preset": null,
                                             "propertyValues": {
-                                                "hasNoMargin": {
+                                                "configAria": {
                                                     "type": "JSON_LITERAL",
-                                                    "value": false
+                                                    "value": {}
                                                 },
-                                                "label": {
+                                                "css": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": "* { align-self: center;\n    color: #dee2fb;\n    font-style: italic;\n    font-variant: small-caps;\n    text-shadow: 1px 1px 2px #9097b7, 0 0 1em blue, 0 0 0.2em blue;}"
+                                                },
+                                                "tag": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": "div"
+                                                },
+                                                "text": {
                                                     "binding": {
                                                         "address": [
                                                             "get_location_2",
@@ -2365,18 +2467,6 @@
                                                         ]
                                                     },
                                                     "type": "DATA_OUTPUT_BINDING"
-                                                },
-                                                "level": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": "1"
-                                                },
-                                                "variant": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": "title-primary"
-                                                },
-                                                "wontWrap": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": false
                                                 }
                                             },
                                             "slot": null,
@@ -2384,71 +2474,150 @@
                                         },
                                         {
                                             "definition": {
-                                                "id": "15fe506403f8a98575b6df59008ea8f1",
+                                                "id": "d356d14b6e293a3020a244b63d278d8f",
                                                 "type": "MACROPONENT"
                                             },
-                                            "elementId": "l2_card_image",
-                                            "elementLabel": "L2 Card Image",
+                                            "elementId": "l2_image_container",
+                                            "elementLabel": "L2 Image Container",
                                             "eventMappings": [
                                                 
                                             ],
                                             "isHidden": {
-                                                "operation": {
-                                                    "operand": {
-                                                        "binding": {
-                                                            "address": [
-                                                                "get_location_2",
-                                                                "result",
-                                                                "location_visible",
-                                                                "value"
-                                                            ]
+                                                "type": "JSON_LITERAL",
+                                                "value": null
+                                            },
+                                            "overrides": {
+                                                "composition": [
+                                                    {
+                                                        "definition": {
+                                                            "id": "15fe506403f8a98575b6df59008ea8f1",
+                                                            "type": "MACROPONENT"
                                                         },
-                                                        "type": "DATA_OUTPUT_BINDING"
+                                                        "elementId": "l2_card_image",
+                                                        "elementLabel": "L2 Card Image",
+                                                        "eventMappings": [
+                                                            
+                                                        ],
+                                                        "isHidden": {
+                                                            "operation": {
+                                                                "operand": {
+                                                                    "binding": {
+                                                                        "address": [
+                                                                            "get_location_2",
+                                                                            "result",
+                                                                            "location_visible",
+                                                                            "value"
+                                                                        ]
+                                                                    },
+                                                                    "type": "DATA_OUTPUT_BINDING"
+                                                                },
+                                                                "operator": "NOT"
+                                                            },
+                                                            "type": "UNARY"
+                                                        },
+                                                        "preset": null,
+                                                        "propertyValues": {
+                                                            "alt": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": ""
+                                                            },
+                                                            "fit": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": "scale-down"
+                                                            },
+                                                            "height": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": 150
+                                                            },
+                                                            "position": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": "center center"
+                                                            },
+                                                            "sources": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": [
+                                                                    
+                                                                ]
+                                                            },
+                                                            "src": {
+                                                                "binding": {
+                                                                    "address": [
+                                                                        "get_location_2",
+                                                                        "result",
+                                                                        "location_card",
+                                                                        "_reference",
+                                                                        "card_image",
+                                                                        "displayValue"
+                                                                    ]
+                                                                },
+                                                                "type": "DATA_OUTPUT_BINDING"
+                                                            },
+                                                            "width": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": ""
+                                                            }
+                                                        },
+                                                        "slot": null,
+                                                        "styles": null
+                                                    }
+                                                ],
+                                                "layout": {
+                                                    "default": {
+                                                        "children": null,
+                                                        "items": [
+                                                            {
+                                                                "element_id": "l2_card_image",
+                                                                "styles": {
+                                                                    "height": "200px",
+                                                                    "width": ""
+                                                                }
+                                                            }
+                                                        ],
+                                                        "root": null,
+                                                        "rules": null,
+                                                        "styles": {
+                                                            "flex-direction": "column",
+                                                            "justify-content": "space-between"
+                                                        },
+                                                        "templateId": "5832fd4d53c31010e6bcddeeff7b12db",
+                                                        "type": "flex"
                                                     },
-                                                    "operator": "NOT"
-                                                },
-                                                "type": "UNARY"
+                                                    "version": "3.0.0"
+                                                }
                                             },
                                             "preset": null,
                                             "propertyValues": {
-                                                "alt": {
+                                                "ariaRegionHeadingLevel": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": "1"
+                                                },
+                                                "ariaRegionName": {
+                                                    "type": "TRANSLATION_LITERAL",
+                                                    "value": {
+                                                        "code": null,
+                                                        "comment": "",
+                                                        "message": ""
+                                                    }
+                                                },
+                                                "ariaRole": {
                                                     "type": "JSON_LITERAL",
                                                     "value": ""
                                                 },
-                                                "fit": {
+                                                "hideEmptyStateUi": {
                                                     "type": "JSON_LITERAL",
-                                                    "value": "scale-down"
+                                                    "value": true
                                                 },
-                                                "height": {
+                                                "includeAriaHeading": {
                                                     "type": "JSON_LITERAL",
-                                                    "value": 150
+                                                    "value": false
                                                 },
-                                                "position": {
+                                                "slotWrapperBehavior": {
                                                     "type": "JSON_LITERAL",
-                                                    "value": "center center"
+                                                    "value": "fullheight"
                                                 },
-                                                "sources": {
+                                                "type": {
                                                     "type": "JSON_LITERAL",
-                                                    "value": [
-                                                        
-                                                    ]
-                                                },
-                                                "src": {
-                                                    "binding": {
-                                                        "address": [
-                                                            "get_location_2",
-                                                            "result",
-                                                            "location_card",
-                                                            "_reference",
-                                                            "card_image",
-                                                            "displayValue"
-                                                        ]
-                                                    },
-                                                    "type": "DATA_OUTPUT_BINDING"
-                                                },
-                                                "width": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": ""
+                                                    "value": "section"
                                                 }
                                             },
                                             "slot": null,
@@ -2456,7 +2625,7 @@
                                         },
                                         {
                                             "definition": {
-                                                "id": "1f6e0643eca7a637e36bd7833549ec9e",
+                                                "id": "4335ba6dca80378f7ba7a67cd6667bec",
                                                 "type": "MACROPONENT"
                                             },
                                             "elementId": "l2_p2_score",
@@ -2470,11 +2639,19 @@
                                             },
                                             "preset": null,
                                             "propertyValues": {
-                                                "hasNoMargin": {
+                                                "configAria": {
                                                     "type": "JSON_LITERAL",
-                                                    "value": false
+                                                    "value": {}
                                                 },
-                                                "label": {
+                                                "css": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": "* { align-self: center;\n    color: #dee2fb;\n    font-style: italic;\n    font-variant: small-caps;\n    text-shadow: 1px 1px 2px #9097b7, 0 0 1em blue, 0 0 0.2em blue;}"
+                                                },
+                                                "tag": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": "div"
+                                                },
+                                                "text": {
                                                     "binding": {
                                                         "address": [
                                                             "get_location_2",
@@ -2484,18 +2661,6 @@
                                                         ]
                                                     },
                                                     "type": "DATA_OUTPUT_BINDING"
-                                                },
-                                                "level": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": "1"
-                                                },
-                                                "variant": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": "title-primary"
-                                                },
-                                                "wontWrap": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": false
                                                 }
                                             },
                                             "slot": null,
@@ -2508,18 +2673,26 @@
                                             "items": [
                                                 {
                                                     "element_id": "l2_p1_score",
-                                                    "styles": {}
+                                                    "styles": {
+                                                        "align-self": "center"
+                                                    }
                                                 },
                                                 {
-                                                    "element_id": "l2_card_image",
+                                                    "element_id": "l2_image_container",
                                                     "styles": {
-                                                        "height": "200px",
-                                                        "width": ""
+                                                        "align-self": "stretch",
+                                                        "border-color": "RGB(var(--now-color--neutral-5))",
+                                                        "border-style": "solid",
+                                                        "border-width": "var(--now-static-space--xxs)",
+                                                        "height": "150px",
+                                                        "width": "100%"
                                                     }
                                                 },
                                                 {
                                                     "element_id": "l2_p2_score",
-                                                    "styles": {}
+                                                    "styles": {
+                                                        "align-self": "center"
+                                                    }
                                                 }
                                             ],
                                             "root": null,
@@ -2527,6 +2700,7 @@
                                             "styles": {
                                                 "align-items": "center",
                                                 "flex-direction": "column",
+                                                "justify-content": "space-between",
                                                 "width": "100%"
                                             },
                                             "templateId": "5832fd4d53c31010e6bcddeeff7b12db",
@@ -2787,6 +2961,7 @@
                                     {
                                         "element_id": "l2_card_container",
                                         "styles": {
+                                            "align-self": "stretch",
                                             "border-color": "RGB(var(--now-color--neutral-5))",
                                             "border-style": "solid",
                                             "border-width": "var(--now-static-space--xxs)",
@@ -3072,11 +3247,11 @@
                                     "composition": [
                                         {
                                             "definition": {
-                                                "id": "1f6e0643eca7a637e36bd7833549ec9e",
+                                                "id": "4335ba6dca80378f7ba7a67cd6667bec",
                                                 "type": "MACROPONENT"
                                             },
                                             "elementId": "l3_p1_score",
-                                            "elementLabel": "L3 P1 score",
+                                            "elementLabel": "L3 P1 Score",
                                             "eventMappings": [
                                                 
                                             ],
@@ -3086,11 +3261,19 @@
                                             },
                                             "preset": null,
                                             "propertyValues": {
-                                                "hasNoMargin": {
+                                                "configAria": {
                                                     "type": "JSON_LITERAL",
-                                                    "value": false
+                                                    "value": {}
                                                 },
-                                                "label": {
+                                                "css": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": "* { align-self: center;\n    color: #dee2fb;\n    font-style: italic;\n    font-variant: small-caps;\n    text-shadow: 1px 1px 2px #9097b7, 0 0 1em blue, 0 0 0.2em blue;}"
+                                                },
+                                                "tag": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": "div"
+                                                },
+                                                "text": {
                                                     "binding": {
                                                         "address": [
                                                             "get_location_3",
@@ -3100,18 +3283,6 @@
                                                         ]
                                                     },
                                                     "type": "DATA_OUTPUT_BINDING"
-                                                },
-                                                "level": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": "1"
-                                                },
-                                                "variant": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": "title-primary"
-                                                },
-                                                "wontWrap": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": false
                                                 }
                                             },
                                             "slot": null,
@@ -3119,71 +3290,151 @@
                                         },
                                         {
                                             "definition": {
-                                                "id": "15fe506403f8a98575b6df59008ea8f1",
+                                                "id": "d356d14b6e293a3020a244b63d278d8f",
                                                 "type": "MACROPONENT"
                                             },
-                                            "elementId": "l3_card_image",
-                                            "elementLabel": "L3 Card Image",
+                                            "elementId": "l3_image_container",
+                                            "elementLabel": "L3 image container",
                                             "eventMappings": [
                                                 
                                             ],
                                             "isHidden": {
-                                                "operation": {
-                                                    "operand": {
-                                                        "binding": {
-                                                            "address": [
-                                                                "get_location_3",
-                                                                "result",
-                                                                "location_visible",
-                                                                "value"
-                                                            ]
+                                                "type": "JSON_LITERAL",
+                                                "value": null
+                                            },
+                                            "overrides": {
+                                                "composition": [
+                                                    {
+                                                        "definition": {
+                                                            "id": "15fe506403f8a98575b6df59008ea8f1",
+                                                            "type": "MACROPONENT"
                                                         },
-                                                        "type": "DATA_OUTPUT_BINDING"
+                                                        "elementId": "l3_card_image",
+                                                        "elementLabel": "L3 Card Image",
+                                                        "eventMappings": [
+                                                            
+                                                        ],
+                                                        "isHidden": {
+                                                            "operation": {
+                                                                "operand": {
+                                                                    "binding": {
+                                                                        "address": [
+                                                                            "get_location_3",
+                                                                            "result",
+                                                                            "location_visible",
+                                                                            "value"
+                                                                        ]
+                                                                    },
+                                                                    "type": "DATA_OUTPUT_BINDING"
+                                                                },
+                                                                "operator": "NOT"
+                                                            },
+                                                            "type": "UNARY"
+                                                        },
+                                                        "preset": null,
+                                                        "propertyValues": {
+                                                            "alt": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": ""
+                                                            },
+                                                            "fit": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": "scale-down"
+                                                            },
+                                                            "height": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": 150
+                                                            },
+                                                            "position": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": "center center"
+                                                            },
+                                                            "sources": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": [
+                                                                    
+                                                                ]
+                                                            },
+                                                            "src": {
+                                                                "binding": {
+                                                                    "address": [
+                                                                        "get_location_3",
+                                                                        "result",
+                                                                        "location_card",
+                                                                        "_reference",
+                                                                        "card_image",
+                                                                        "displayValue"
+                                                                    ]
+                                                                },
+                                                                "type": "DATA_OUTPUT_BINDING"
+                                                            },
+                                                            "width": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": null
+                                                            }
+                                                        },
+                                                        "slot": null,
+                                                        "styles": null
+                                                    }
+                                                ],
+                                                "layout": {
+                                                    "default": {
+                                                        "children": null,
+                                                        "items": [
+                                                            {
+                                                                "element_id": "l3_card_image",
+                                                                "styles": {
+                                                                    "flex": "0 1 auto",
+                                                                    "height": "200px",
+                                                                    "width": ""
+                                                                }
+                                                            }
+                                                        ],
+                                                        "root": null,
+                                                        "rules": null,
+                                                        "styles": {
+                                                            "flex-direction": "column",
+                                                            "justify-content": "space-between"
+                                                        },
+                                                        "templateId": "5832fd4d53c31010e6bcddeeff7b12db",
+                                                        "type": "flex"
                                                     },
-                                                    "operator": "NOT"
-                                                },
-                                                "type": "UNARY"
+                                                    "version": "3.0.0"
+                                                }
                                             },
                                             "preset": null,
                                             "propertyValues": {
-                                                "alt": {
+                                                "ariaRegionHeadingLevel": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": "1"
+                                                },
+                                                "ariaRegionName": {
+                                                    "type": "TRANSLATION_LITERAL",
+                                                    "value": {
+                                                        "code": null,
+                                                        "comment": "",
+                                                        "message": ""
+                                                    }
+                                                },
+                                                "ariaRole": {
                                                     "type": "JSON_LITERAL",
                                                     "value": ""
                                                 },
-                                                "fit": {
+                                                "hideEmptyStateUi": {
                                                     "type": "JSON_LITERAL",
-                                                    "value": "scale-down"
+                                                    "value": true
                                                 },
-                                                "height": {
+                                                "includeAriaHeading": {
                                                     "type": "JSON_LITERAL",
-                                                    "value": 150
+                                                    "value": false
                                                 },
-                                                "position": {
+                                                "slotWrapperBehavior": {
                                                     "type": "JSON_LITERAL",
-                                                    "value": "center center"
+                                                    "value": "fullheight"
                                                 },
-                                                "sources": {
+                                                "type": {
                                                     "type": "JSON_LITERAL",
-                                                    "value": [
-                                                        
-                                                    ]
-                                                },
-                                                "src": {
-                                                    "binding": {
-                                                        "address": [
-                                                            "get_location_3",
-                                                            "result",
-                                                            "location_card",
-                                                            "_reference",
-                                                            "card_image",
-                                                            "displayValue"
-                                                        ]
-                                                    },
-                                                    "type": "DATA_OUTPUT_BINDING"
-                                                },
-                                                "width": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": null
+                                                    "value": "section"
                                                 }
                                             },
                                             "slot": null,
@@ -3191,7 +3442,7 @@
                                         },
                                         {
                                             "definition": {
-                                                "id": "1f6e0643eca7a637e36bd7833549ec9e",
+                                                "id": "4335ba6dca80378f7ba7a67cd6667bec",
                                                 "type": "MACROPONENT"
                                             },
                                             "elementId": "l3_p2_score",
@@ -3205,11 +3456,19 @@
                                             },
                                             "preset": null,
                                             "propertyValues": {
-                                                "hasNoMargin": {
+                                                "configAria": {
                                                     "type": "JSON_LITERAL",
-                                                    "value": false
+                                                    "value": {}
                                                 },
-                                                "label": {
+                                                "css": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": "* { align-self: center;\n    color: #dee2fb;\n    font-style: italic;\n    font-variant: small-caps;\n    text-shadow: 1px 1px 2px #9097b7, 0 0 1em blue, 0 0 0.2em blue;}"
+                                                },
+                                                "tag": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": "div"
+                                                },
+                                                "text": {
                                                     "binding": {
                                                         "address": [
                                                             "get_location_3",
@@ -3219,18 +3478,6 @@
                                                         ]
                                                     },
                                                     "type": "DATA_OUTPUT_BINDING"
-                                                },
-                                                "level": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": "1"
-                                                },
-                                                "variant": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": "title-primary"
-                                                },
-                                                "wontWrap": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": false
                                                 }
                                             },
                                             "slot": null,
@@ -3243,19 +3490,26 @@
                                             "items": [
                                                 {
                                                     "element_id": "l3_p1_score",
-                                                    "styles": {}
+                                                    "styles": {
+                                                        "align-self": "center"
+                                                    }
                                                 },
                                                 {
-                                                    "element_id": "l3_card_image",
+                                                    "element_id": "l3_image_container",
                                                     "styles": {
-                                                        "flex": "0 1 auto",
-                                                        "height": "200px",
-                                                        "width": ""
+                                                        "align-self": "stretch",
+                                                        "border-color": "RGB(var(--now-color--neutral-5))",
+                                                        "border-style": "solid",
+                                                        "border-width": "var(--now-static-space--xxs)",
+                                                        "height": "150px",
+                                                        "width": "100%"
                                                     }
                                                 },
                                                 {
                                                     "element_id": "l3_p2_score",
-                                                    "styles": {}
+                                                    "styles": {
+                                                        "align-self": "center"
+                                                    }
                                                 }
                                             ],
                                             "root": null,
@@ -9229,14 +9483,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-01-07 02:09:17</sys_created_on>
         <sys_id>5db3fe4a932f3110cd4e7d532bba10d8</sys_id>
-        <sys_mod_count>430</sys_mod_count>
+        <sys_mod_count>451</sys_mod_count>
         <sys_name>Default</sys_name>
         <sys_package display_value="Flow Designer Marvel SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_update_name>sys_ux_macroponent_5db3fe4a932f3110cd4e7d532bba10d8</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-25 09:34:16</sys_updated_on>
+        <sys_updated_on>2024-04-26 06:23:44</sys_updated_on>
     </sys_ux_macroponent>
     <sys_translated_text action="delete_multiple" query="documentkey=5db3fe4a932f3110cd4e7d532bba10d8"/>
 </record_update>
