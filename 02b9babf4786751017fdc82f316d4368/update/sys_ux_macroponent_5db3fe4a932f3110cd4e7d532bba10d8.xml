@@ -1015,6 +1015,161 @@
                                 },
                                 "slot": null,
                                 "styles": null
+                            },
+                            {
+                                "definition": {
+                                    "id": "d37ce8abca89d02905fed903c8e34d8e",
+                                    "type": "MACROPONENT"
+                                },
+                                "elementId": "open_p1_session",
+                                "elementLabel": "Open P1 session",
+                                "eventMappings": [
+                                    {
+                                        "eventMappingId": "clvpggfmfeaabbaaiddbhhphhnrnntobb",
+                                        "isConfiguration": false,
+                                        "offRowStorageId": null,
+                                        "sourceEventApiName": "sn_button.NOW_BUTTON#CLICKED",
+                                        "sourceEventCorrelationId": null,
+                                        "sourceEventDefinition": {
+                                            "apiName": "sn_button.NOW_BUTTON#CLICKED",
+                                            "id": null,
+                                            "type": "UXEVENT"
+                                        },
+                                        "sourceEventSysId": null,
+                                        "targets": [
+                                            {
+                                                "broker": null,
+                                                "clientScript": null,
+                                                "conditional": null,
+                                                "declarativeAction": null,
+                                                "event": {
+                                                    "apiName": "x_168987_flow_de_0.NAV_ITEM_SELECTED_RELAY_5db3fe4a932f3110cd4e7d532bba10d8",
+                                                    "payload": {
+                                                        "container": {
+                                                            "external": {
+                                                                "container": {
+                                                                    "url": {
+                                                                        "transform": {
+                                                                            "operands": {
+                                                                                "container": [
+                                                                                    {
+                                                                                        "type": "JSON_LITERAL",
+                                                                                        "value": "https://dev189661.service-now.com/x_168987_flow_de_0_player_session.do?sys_id="
+                                                                                    },
+                                                                                    {
+                                                                                        "binding": {
+                                                                                            "address": [
+                                                                                                "get_p1_session",
+                                                                                                "result",
+                                                                                                "sys_id",
+                                                                                                "value"
+                                                                                            ]
+                                                                                        },
+                                                                                        "type": "DATA_OUTPUT_BINDING"
+                                                                                    }
+                                                                                ],
+                                                                                "type": "LIST_CONTAINER"
+                                                                            },
+                                                                            "operator": "CONCAT"
+                                                                        },
+                                                                        "type": "CLIENT_TRANSFORM"
+                                                                    }
+                                                                },
+                                                                "type": "MAP_CONTAINER"
+                                                            },
+                                                            "fields": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": null
+                                                            },
+                                                            "multiInstField": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": null
+                                                            },
+                                                            "navigationOptions": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": null
+                                                            },
+                                                            "params": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": null
+                                                            },
+                                                            "passiveNavigation": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": null
+                                                            },
+                                                            "redirect": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": null
+                                                            },
+                                                            "route": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": null
+                                                            },
+                                                            "targetRoute": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": null
+                                                            },
+                                                            "title": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": null
+                                                            }
+                                                        },
+                                                        "type": "MAP_CONTAINER"
+                                                    },
+                                                    "sysId": "72b68aa393b58210cd4e7d532bba1097"
+                                                },
+                                                "operation": null,
+                                                "targetId": "clvpggfmfeaabbaajddbhhphnpiijddggz",
+                                                "type": "EVENT"
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "isHidden": {
+                                    "type": "JSON_LITERAL",
+                                    "value": null
+                                },
+                                "preset": null,
+                                "propertyValues": {
+                                    "configAria": {
+                                        "type": "JSON_LITERAL",
+                                        "value": {}
+                                    },
+                                    "disabled": {
+                                        "type": "JSON_LITERAL",
+                                        "value": false
+                                    },
+                                    "icon": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "label": {
+                                        "type": "TRANSLATION_LITERAL",
+                                        "value": {
+                                            "code": null,
+                                            "comment": "",
+                                            "message": "Open Player session"
+                                        }
+                                    },
+                                    "size": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "sm"
+                                    },
+                                    "tooltipContent": {
+                                        "type": "TRANSLATION_LITERAL",
+                                        "value": {
+                                            "code": null,
+                                            "comment": "",
+                                            "message": "Enter a label"
+                                        }
+                                    },
+                                    "variant": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "secondary-positive"
+                                    }
+                                },
+                                "slot": null,
+                                "styles": null
                             }
                         ],
                         "layout": {
@@ -1044,6 +1199,10 @@
                                         "styles": {
                                             "width": "50%"
                                         }
+                                    },
+                                    {
+                                        "element_id": "open_p1_session",
+                                        "styles": {}
                                     }
                                 ],
                                 "root": null,
@@ -5015,6 +5174,161 @@
                                 },
                                 "slot": null,
                                 "styles": null
+                            },
+                            {
+                                "definition": {
+                                    "id": "d37ce8abca89d02905fed903c8e34d8e",
+                                    "type": "MACROPONENT"
+                                },
+                                "elementId": "open_p2_session",
+                                "elementLabel": "Open P2 Session",
+                                "eventMappings": [
+                                    {
+                                        "eventMappingId": "clvpggfmfeaabbaaiddbhhphhnrnntobb",
+                                        "isConfiguration": false,
+                                        "offRowStorageId": null,
+                                        "sourceEventApiName": "sn_button.NOW_BUTTON#CLICKED",
+                                        "sourceEventCorrelationId": null,
+                                        "sourceEventDefinition": {
+                                            "apiName": "sn_button.NOW_BUTTON#CLICKED",
+                                            "id": null,
+                                            "type": "UXEVENT"
+                                        },
+                                        "sourceEventSysId": null,
+                                        "targets": [
+                                            {
+                                                "broker": null,
+                                                "clientScript": null,
+                                                "conditional": null,
+                                                "declarativeAction": null,
+                                                "event": {
+                                                    "apiName": "x_168987_flow_de_0.NAV_ITEM_SELECTED_RELAY_5db3fe4a932f3110cd4e7d532bba10d8",
+                                                    "payload": {
+                                                        "container": {
+                                                            "external": {
+                                                                "container": {
+                                                                    "url": {
+                                                                        "transform": {
+                                                                            "operands": {
+                                                                                "container": [
+                                                                                    {
+                                                                                        "type": "JSON_LITERAL",
+                                                                                        "value": "https://dev189661.service-now.com/x_168987_flow_de_0_player_session.do?sys_id="
+                                                                                    },
+                                                                                    {
+                                                                                        "binding": {
+                                                                                            "address": [
+                                                                                                "get_p2_session",
+                                                                                                "result",
+                                                                                                "sys_id",
+                                                                                                "value"
+                                                                                            ]
+                                                                                        },
+                                                                                        "type": "DATA_OUTPUT_BINDING"
+                                                                                    }
+                                                                                ],
+                                                                                "type": "LIST_CONTAINER"
+                                                                            },
+                                                                            "operator": "CONCAT"
+                                                                        },
+                                                                        "type": "CLIENT_TRANSFORM"
+                                                                    }
+                                                                },
+                                                                "type": "MAP_CONTAINER"
+                                                            },
+                                                            "fields": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": null
+                                                            },
+                                                            "multiInstField": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": null
+                                                            },
+                                                            "navigationOptions": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": null
+                                                            },
+                                                            "params": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": null
+                                                            },
+                                                            "passiveNavigation": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": null
+                                                            },
+                                                            "redirect": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": null
+                                                            },
+                                                            "route": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": null
+                                                            },
+                                                            "targetRoute": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": null
+                                                            },
+                                                            "title": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": null
+                                                            }
+                                                        },
+                                                        "type": "MAP_CONTAINER"
+                                                    },
+                                                    "sysId": "72b68aa393b58210cd4e7d532bba1097"
+                                                },
+                                                "operation": null,
+                                                "targetId": "clvpggfmfeaabbaajddbhhphnpiijddggz",
+                                                "type": "EVENT"
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "isHidden": {
+                                    "type": "JSON_LITERAL",
+                                    "value": null
+                                },
+                                "preset": null,
+                                "propertyValues": {
+                                    "configAria": {
+                                        "type": "JSON_LITERAL",
+                                        "value": {}
+                                    },
+                                    "disabled": {
+                                        "type": "JSON_LITERAL",
+                                        "value": false
+                                    },
+                                    "icon": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "label": {
+                                        "type": "TRANSLATION_LITERAL",
+                                        "value": {
+                                            "code": null,
+                                            "comment": "",
+                                            "message": "Open Player session"
+                                        }
+                                    },
+                                    "size": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "sm"
+                                    },
+                                    "tooltipContent": {
+                                        "type": "TRANSLATION_LITERAL",
+                                        "value": {
+                                            "code": null,
+                                            "comment": "",
+                                            "message": "Enter a label"
+                                        }
+                                    },
+                                    "variant": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "secondary-positive"
+                                    }
+                                },
+                                "slot": null,
+                                "styles": null
                             }
                         ],
                         "layout": {
@@ -5044,6 +5358,10 @@
                                         "styles": {
                                             "width": "50%"
                                         }
+                                    },
+                                    {
+                                        "element_id": "open_p2_session",
+                                        "styles": {}
                                     }
                                 ],
                                 "root": null,
@@ -11140,7 +11458,7 @@
     }
 ]</data>
         <description/>
-        <dispatched_events>4ce41357935d4210cd4e7d532bba10ad</dispatched_events>
+        <dispatched_events>4ce41357935d4210cd4e7d532bba10ad,72b68aa393b58210cd4e7d532bba1097</dispatched_events>
         <ext_controller_dep/>
         <extends display_value="Page Template">19be392623033300f4b4c50947bf65ba</extends>
         <extension_point/>
@@ -11305,6 +11623,9 @@
   "message" : "Number of Turns",
   "comment" : ""
 }, {
+  "message" : "Open Player session",
+  "comment" : ""
+}, {
   "message" : "Play the card to Location 1",
   "comment" : ""
 }, {
@@ -11389,14 +11710,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-01-07 02:09:17</sys_created_on>
         <sys_id>5db3fe4a932f3110cd4e7d532bba10d8</sys_id>
-        <sys_mod_count>544</sys_mod_count>
+        <sys_mod_count>548</sys_mod_count>
         <sys_name>Default</sys_name>
         <sys_package display_value="Flow Designer Marvel SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_update_name>sys_ux_macroponent_5db3fe4a932f3110cd4e7d532bba10d8</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-27 04:59:45</sys_updated_on>
+        <sys_updated_on>2024-05-02 11:47:57</sys_updated_on>
     </sys_ux_macroponent>
     <sys_translated_text action="delete_multiple" query="documentkey=5db3fe4a932f3110cd4e7d532bba10d8"/>
 </record_update>
