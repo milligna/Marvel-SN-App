@@ -5,14 +5,11 @@
         <active>true</active>
         <annotation/>
         <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=729000,viewActivatedIn=naturalLanguage</attributes>
-        <authored_on_release_version>25000</authored_on_release_version>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
         <copied_from>25bbe6f4476a3d5017fdc82f316d432c</copied_from>
         <copied_from_name>CARD-ACT: Subflow Template</copied_from_name>
         <description/>
-        <flow_priority/>
-        <generation_source/>
         <internal_name>cardact_on_reveal_destroy_your_other_cards_here_2_power_for_each_destroyed</internal_name>
         <label_cache>[{"name":"aa561d36-39a3-4f85-b173-fd458b43bf3a.calculated_number","label":"9 - PLAY-SUB: add integer to other integer➛Calculated Number","reference_display":"Calculated Number","type":"integer","base_type":"integer","usedInstances":{"7aff7499-ad03-4068-a906-70be9cdfac33":["current_power"]},"attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"cdd3ee83-6087-470d-a3b2-657b9a238de3"}},{"name":"subflow.card_instance.current_power","label":"Input➛Card Instance➛Current Power","reference":"","reference_display":"Current Power","type":"integer","base_type":"integer","parent_table_name":"x_168987_flow_de_0_card_instance","column_name":"current_power","usedInstances":{"7aff7499-ad03-4068-a906-70be9cdfac33":["current_power"],"aa561d36-39a3-4f85-b173-fd458b43bf3a":["original_integer"]}},{"name":"subflow.card_instance","label":"Input➛Card Instance","reference":"x_168987_flow_de_0_card_instance","reference_display":"Game Card Instance","type":"reference","base_type":"reference","column_name":"","usedInstances":{"7aff7499-ad03-4068-a906-70be9cdfac33":["record"]},"attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"8e6c95b5-af4a-42f5-a485-481417e03d5c","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"57037be3-49c2-41a1-8c97-c629210d7120.Record","label":"6 - Look Up Record➛Game Location Slot Record","reference":"x_168987_flow_de_0_location_slot","reference_display":"Game Location Slot","type":"reference","base_type":"reference","usedInstances":{"fa37e9fa-6d8e-4777-90d3-c36242274ebf":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a3528acf-c388-4b7f-8262-5a2347764107.item","label":"3 - For Each➛Game Card Instance Record","reference":"x_168987_flow_de_0_card_instance","reference_display":"Game Card Instance","type":"reference","base_type":"reference","usedInstances":{"96deda04-6680-4fa5-9390-4dc7126709be":["record"],"57037be3-49c2-41a1-8c97-c629210d7120":["conditions"]},"attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"flow_variable.power_to_add","label":"Flow Variables➛Power to Add","reference":"","reference_display":"","type":"integer","base_type":"integer","usedInstances":{"b942b2e8-5ef6-4f2a-baa1-b30ad07c68d9":["power_to_add-0"],"aa561d36-39a3-4f85-b173-fd458b43bf3a":["integer_to_add"],"698c82d8-97a5-4ca1-afa8-298ba8d0a6db":["condition"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"ffd48c65-9f04-48cb-af6f-de302e700f09"}},{"name":"62a2e924-2578-444a-b984-9d4edf92f9de.Records","label":"2 - Look Up Records➛Game Card Instance Records","reference":"x_168987_flow_de_0_card_instance","reference_display":"Game Card Instance","type":"records","base_type":"records","usedInstances":{"a3528acf-c388-4b7f-8262-5a2347764107":["items"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.card_instance.sys_id","label":"Input➛Card Instance➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_168987_flow_de_0_card_instance","column_name":"sys_id","usedInstances":{"62a2e924-2578-444a-b984-9d4edf92f9de":["conditions"]}},{"name":"subflow.card_instance.player_session","label":"Input➛Card Instance➛Player session","reference":"x_168987_flow_de_0_player_session","reference_display":"Player Session","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_card_instance","column_name":"player_session","usedInstances":{"62a2e924-2578-444a-b984-9d4edf92f9de":["conditions"]}},{"name":"subflow.card_instance.current_location","label":"Input➛Card Instance➛Current Location","reference":"x_168987_flow_de_0_location_instance","reference_display":"Game Location instance","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_card_instance","column_name":"current_location","usedInstances":{"62a2e924-2578-444a-b984-9d4edf92f9de":["conditions"]}}]</label_cache>
         <master_snapshot>96239a2793f58210cd4e7d532bba10cd</master_snapshot>
@@ -33,7 +30,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>5821d26393f58210cd4e7d532bba10d0</sys_id>
-        <sys_mod_count>43</sys_mod_count>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>CARD-ACT: On Reveal: Destroy your other cards here. +2 Power for each destroyed.</sys_name>
         <sys_overrides/>
         <sys_package display_value="Flow Designer Marvel SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
@@ -41,7 +38,7 @@
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_update_name>sys_hub_flow_5821d26393f58210cd4e7d532bba10d0</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-05-02 12:02:37</sys_updated_on>
+        <sys_updated_on>2024-05-02 13:41:49</sys_updated_on>
         <type>subflow</type>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=5821d26393f58210cd4e7d532bba10d0"/>
@@ -411,17 +408,16 @@
         <comment/>
         <display_text/>
         <flow display_value="CARD-ACT: On Reveal: Destroy your other cards here. +2 Power for each destroyed.">5821d26393f58210cd4e7d532bba10d0</flow>
-        <generation_source/>
         <order>2</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-05-02 11:51:07</sys_created_on>
         <sys_id>4f41966393f58210cd4e7d532bba1040</sys_id>
-        <sys_mod_count>20</sys_mod_count>
+        <sys_mod_count>22</sys_mod_count>
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-05-02 12:02:38</sys_updated_on>
+        <sys_updated_on>2024-05-04 01:24:52</sys_updated_on>
         <ui_id>62a2e924-2578-444a-b984-9d4edf92f9de</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=4f41966393f58210cd4e7d532bba1040"/>
@@ -475,17 +471,16 @@
         <comment/>
         <display_text/>
         <flow display_value="CARD-ACT: On Reveal: Destroy your other cards here. +2 Power for each destroyed.">5821d26393f58210cd4e7d532bba10d0</flow>
-        <generation_source/>
         <order>7</order>
         <parent_ui_id>a3528acf-c388-4b7f-8262-5a2347764107</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-05-02 11:55:38</sys_created_on>
         <sys_id>555216a393f58210cd4e7d532bba1095</sys_id>
-        <sys_mod_count>18</sys_mod_count>
+        <sys_mod_count>20</sys_mod_count>
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-05-02 12:02:38</sys_updated_on>
+        <sys_updated_on>2024-05-04 01:24:52</sys_updated_on>
         <ui_id>fa37e9fa-6d8e-4777-90d3-c36242274ebf</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=555216a393f58210cd4e7d532bba1095"/>
@@ -565,17 +560,16 @@
         <comment/>
         <display_text/>
         <flow display_value="CARD-ACT: On Reveal: Destroy your other cards here. +2 Power for each destroyed.">5821d26393f58210cd4e7d532bba10d0</flow>
-        <generation_source/>
         <order>10</order>
         <parent_ui_id>698c82d8-97a5-4ca1-afa8-298ba8d0a6db</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-05-02 11:56:27</sys_created_on>
         <sys_id>55821ae393f58210cd4e7d532bba1046</sys_id>
-        <sys_mod_count>22</sys_mod_count>
+        <sys_mod_count>24</sys_mod_count>
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-05-02 12:02:38</sys_updated_on>
+        <sys_updated_on>2024-05-04 01:24:52</sys_updated_on>
         <ui_id>7aff7499-ad03-4068-a906-70be9cdfac33</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=55821ae393f58210cd4e7d532bba1046"/>
@@ -641,17 +635,16 @@
         <comment/>
         <display_text/>
         <flow display_value="CARD-ACT: On Reveal: Destroy your other cards here. +2 Power for each destroyed.">5821d26393f58210cd4e7d532bba10d0</flow>
-        <generation_source/>
         <order>6</order>
         <parent_ui_id>a3528acf-c388-4b7f-8262-5a2347764107</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-05-02 11:55:14</sys_created_on>
         <sys_id>6f3212e393f58210cd4e7d532bba108f</sys_id>
-        <sys_mod_count>18</sys_mod_count>
+        <sys_mod_count>20</sys_mod_count>
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-05-02 12:02:38</sys_updated_on>
+        <sys_updated_on>2024-05-04 01:24:52</sys_updated_on>
         <ui_id>57037be3-49c2-41a1-8c97-c629210d7120</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=6f3212e393f58210cd4e7d532bba108f"/>
@@ -704,17 +697,16 @@
         <comment/>
         <display_text/>
         <flow display_value="CARD-ACT: On Reveal: Destroy your other cards here. +2 Power for each destroyed.">5821d26393f58210cd4e7d532bba10d0</flow>
-        <generation_source/>
         <order>11</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-05-02 11:50:23</sys_created_on>
         <sys_id>a821166393f58210cd4e7d532bba1013</sys_id>
-        <sys_mod_count>32</sys_mod_count>
+        <sys_mod_count>34</sys_mod_count>
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-05-02 12:02:38</sys_updated_on>
+        <sys_updated_on>2024-05-04 01:24:52</sys_updated_on>
         <ui_id>aec62c37-f906-4f3a-a6c0-21275903b0e5</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=a821166393f58210cd4e7d532bba1013"/>
@@ -744,17 +736,16 @@
         <comment>Destroy the record and remove it from location</comment>
         <display_text/>
         <flow display_value="CARD-ACT: On Reveal: Destroy your other cards here. +2 Power for each destroyed.">5821d26393f58210cd4e7d532bba10d0</flow>
-        <generation_source/>
         <order>5</order>
         <parent_ui_id>a3528acf-c388-4b7f-8262-5a2347764107</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-05-02 11:53:49</sys_created_on>
         <sys_id>b6e11aa393f58210cd4e7d532bba102c</sys_id>
-        <sys_mod_count>18</sys_mod_count>
+        <sys_mod_count>20</sys_mod_count>
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-05-02 12:02:38</sys_updated_on>
+        <sys_updated_on>2024-05-04 01:24:52</sys_updated_on>
         <ui_id>96deda04-6680-4fa5-9390-4dc7126709be</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=b6e11aa393f58210cd4e7d532bba102c"/>
@@ -831,7 +822,6 @@
         <comment/>
         <display_text/>
         <flow display_value="CARD-ACT: On Reveal: Destroy your other cards here. +2 Power for each destroyed.">5821d26393f58210cd4e7d532bba10d0</flow>
-        <generation_source/>
         <inputs/>
         <inputs/>
         <order>9</order>
@@ -915,18 +905,6 @@
         <sys_updated_on>2024-05-02 11:58:03</sys_updated_on>
         <table>var__m_sys_hub_flow_input_30952a6193b9c610cd4e7d532bba1063</table>
         <value>{{subflow.card_instance.current_power}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>wait_for_completion</field>
-        <id>74c29ee393f58210cd4e7d532bba1072</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-05-02 11:57:31</sys_created_on>
-        <sys_id>f8c29ee393f58210cd4e7d532bba10a2</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-05-02 11:57:31</sys_updated_on>
-        <table>var__m_sys_hub_sub_flow_instance_inputs_74c29ee393f58210cd4e7d532bba1072</table>
-        <value/>
     </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_sub_flow_instance_inputs_74c29ee393f58210cd4e7d532bba1072^id=74c29ee393f58210cd4e7d532bba1072"/>
     <sys_hub_sub_flow_instance_inputs action="delete_multiple" query="model=74c29ee393f58210cd4e7d532bba1072^sys_idNOT INbcc29ee393f58210cd4e7d532bba1073"/>
@@ -1028,7 +1006,6 @@
         <flow_variable/>
         <flow_variable/>
         <flow_variables_assigned>power_to_add</flow_variables_assigned>
-        <generation_source/>
         <inputs/>
         <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
         <order>4</order>
@@ -1090,7 +1067,6 @@
         <flow display_value="CARD-ACT: On Reveal: Destroy your other cards here. +2 Power for each destroyed.">5821d26393f58210cd4e7d532bba10d0</flow>
         <flow_variable/>
         <flow_variables_assigned/>
-        <generation_source/>
         <inputs/>
         <inputs/>
         <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
@@ -1140,7 +1116,6 @@
         <flow display_value="CARD-ACT: On Reveal: Destroy your other cards here. +2 Power for each destroyed.">5821d26393f58210cd4e7d532bba10d0</flow>
         <flow_variable/>
         <flow_variables_assigned/>
-        <generation_source/>
         <inputs/>
         <inputs/>
         <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
@@ -1190,7 +1165,6 @@
         <flow display_value="CARD-ACT: On Reveal: Destroy your other cards here. +2 Power for each destroyed.">5821d26393f58210cd4e7d532bba10d0</flow>
         <flow_variable/>
         <flow_variables_assigned>power_to_add</flow_variables_assigned>
-        <generation_source/>
         <inputs/>
         <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
         <order>1</order>
@@ -1361,11 +1335,11 @@
         <sys_created_on>2024-05-02 11:50:23</sys_created_on>
         <sys_id>1421d26393f58210cd4e7d532bba10ed</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Player Session</sys_name>
         <sys_package display_value="Flow Designer Marvel SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_5821d26393f58210cd4e7d532bba10d0_player_session_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-05-02 11:50:23</sys_updated_on>
         <url/>
@@ -1384,11 +1358,11 @@
         <sys_created_on>2024-05-02 11:50:23</sys_created_on>
         <sys_id>1421d26393f58210cd4e7d532bba10fe</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Card Instance</sys_name>
         <sys_package display_value="Flow Designer Marvel SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_5821d26393f58210cd4e7d532bba10d0_card_instance_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-05-02 11:50:23</sys_updated_on>
         <url/>
@@ -1407,11 +1381,11 @@
         <sys_created_on>2024-05-02 11:50:23</sys_created_on>
         <sys_id>1821166393f58210cd4e7d532bba1002</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Game Instance</sys_name>
         <sys_package display_value="Flow Designer Marvel SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_5821d26393f58210cd4e7d532bba10d0_game_instance_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-05-02 11:50:23</sys_updated_on>
         <url/>
@@ -1432,17 +1406,17 @@
         <sys_created_on>2024-05-02 11:50:23</sys_created_on>
         <sys_id>2421166393f58210cd4e7d532bba100d</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Status</sys_name>
         <sys_package display_value="Flow Designer Marvel SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_5821d26393f58210cd4e7d532bba10d0_status_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-05-02 11:50:23</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
-    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_5821d26393f58210cd4e7d532bba10d0^sys_idNOT IN9021166393f58210cd4e7d532bba1008,d821166393f58210cd4e7d532bba1009"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_5821d26393f58210cd4e7d532bba10d0^sys_idNOT IN36ea666b533102103a0891e0a0490eb7,b2ea666b533102103a0891e0a0490eb8"/>
     <sys_choice field="status" table="var__m_sys_hub_flow_output_5821d26393f58210cd4e7d532bba10d0">
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
@@ -1458,7 +1432,7 @@
             <sys_created_on>2024-05-02 11:50:23</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>9021166393f58210cd4e7d532bba1008</sys_id>
+            <sys_id>36ea666b533102103a0891e0a0490eb7</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2024-05-02 11:50:23</sys_updated_on>
@@ -1478,7 +1452,7 @@
             <sys_created_on>2024-05-02 11:50:23</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>d821166393f58210cd4e7d532bba1009</sys_id>
+            <sys_id>b2ea666b533102103a0891e0a0490eb8</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2024-05-02 11:50:23</sys_updated_on>
@@ -1491,13 +1465,11 @@
         <active>true</active>
         <annotation/>
         <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=341789000,viewActivatedIn=naturalLanguage</attributes>
-        <authored_on_release_version>25000</authored_on_release_version>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
         <copied_from>25bbe6f4476a3d5017fdc82f316d432c</copied_from>
         <copied_from_name/>
         <description/>
-        <flow_priority/>
         <internal_name>cardact_on_reveal_destroy_your_other_cards_here_2_power_for_each_destroyed</internal_name>
         <label_cache>[{"name":"aa561d36-39a3-4f85-b173-fd458b43bf3a.calculated_number","label":"9 - PLAY-SUB: add integer to other integer➛Calculated Number","reference_display":"Calculated Number","type":"integer","base_type":"integer","usedInstances":{"7aff7499-ad03-4068-a906-70be9cdfac33":["current_power"]},"attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"cdd3ee83-6087-470d-a3b2-657b9a238de3"}},{"name":"subflow.card_instance.current_power","label":"Input➛Card Instance➛Current Power","reference":"","reference_display":"Current Power","type":"integer","base_type":"integer","parent_table_name":"x_168987_flow_de_0_card_instance","column_name":"current_power","usedInstances":{"7aff7499-ad03-4068-a906-70be9cdfac33":["current_power"],"aa561d36-39a3-4f85-b173-fd458b43bf3a":["original_integer"]}},{"name":"subflow.card_instance","label":"Input➛Card Instance","reference":"x_168987_flow_de_0_card_instance","reference_display":"Game Card Instance","type":"reference","base_type":"reference","column_name":"","usedInstances":{"7aff7499-ad03-4068-a906-70be9cdfac33":["record"]},"attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"8e6c95b5-af4a-42f5-a485-481417e03d5c","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"57037be3-49c2-41a1-8c97-c629210d7120.Record","label":"6 - Look Up Record➛Game Location Slot Record","reference":"x_168987_flow_de_0_location_slot","reference_display":"Game Location Slot","type":"reference","base_type":"reference","usedInstances":{"fa37e9fa-6d8e-4777-90d3-c36242274ebf":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a3528acf-c388-4b7f-8262-5a2347764107.item","label":"3 - For Each➛Game Card Instance Record","reference":"x_168987_flow_de_0_card_instance","reference_display":"Game Card Instance","type":"reference","base_type":"reference","usedInstances":{"96deda04-6680-4fa5-9390-4dc7126709be":["record"],"57037be3-49c2-41a1-8c97-c629210d7120":["conditions"]},"attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"flow_variable.power_to_add","label":"Flow Variables➛Power to Add","reference":"","reference_display":"","type":"integer","base_type":"integer","usedInstances":{"b942b2e8-5ef6-4f2a-baa1-b30ad07c68d9":["power_to_add-0"],"aa561d36-39a3-4f85-b173-fd458b43bf3a":["integer_to_add"],"698c82d8-97a5-4ca1-afa8-298ba8d0a6db":["condition"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"ffd48c65-9f04-48cb-af6f-de302e700f09"}},{"name":"62a2e924-2578-444a-b984-9d4edf92f9de.Records","label":"2 - Look Up Records➛Game Card Instance Records","reference":"x_168987_flow_de_0_card_instance","reference_display":"Game Card Instance","type":"records","base_type":"records","usedInstances":{"a3528acf-c388-4b7f-8262-5a2347764107":["items"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.card_instance.sys_id","label":"Input➛Card Instance➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_168987_flow_de_0_card_instance","column_name":"sys_id","usedInstances":{"62a2e924-2578-444a-b984-9d4edf92f9de":["conditions"]}},{"name":"subflow.card_instance.player_session","label":"Input➛Card Instance➛Player session","reference":"x_168987_flow_de_0_player_session","reference_display":"Player Session","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_card_instance","column_name":"player_session","usedInstances":{"62a2e924-2578-444a-b984-9d4edf92f9de":["conditions"]}},{"name":"subflow.card_instance.current_location","label":"Input➛Card Instance➛Current Location","reference":"x_168987_flow_de_0_location_instance","reference_display":"Game Location instance","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_card_instance","column_name":"current_location","usedInstances":{"62a2e924-2578-444a-b984-9d4edf92f9de":["conditions"]}}]</label_cache>
         <master>true</master>
@@ -1894,7 +1866,6 @@
         <comment/>
         <display_text/>
         <flow display_value="CARD-ACT: On Reveal: Destroy your other cards here. +2 Power for each destroyed.">96239a2793f58210cd4e7d532bba10cd</flow>
-        <generation_source/>
         <order>2</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -1958,7 +1929,6 @@
         <comment>Destroy the record and remove it from location</comment>
         <display_text/>
         <flow display_value="CARD-ACT: On Reveal: Destroy your other cards here. +2 Power for each destroyed.">96239a2793f58210cd4e7d532bba10cd</flow>
-        <generation_source/>
         <order>5</order>
         <parent_ui_id>a3528acf-c388-4b7f-8262-5a2347764107</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -2048,7 +2018,6 @@
         <comment/>
         <display_text/>
         <flow display_value="CARD-ACT: On Reveal: Destroy your other cards here. +2 Power for each destroyed.">96239a2793f58210cd4e7d532bba10cd</flow>
-        <generation_source/>
         <order>7</order>
         <parent_ui_id>a3528acf-c388-4b7f-8262-5a2347764107</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -2137,7 +2106,6 @@
         <comment/>
         <display_text/>
         <flow display_value="CARD-ACT: On Reveal: Destroy your other cards here. +2 Power for each destroyed.">96239a2793f58210cd4e7d532bba10cd</flow>
-        <generation_source/>
         <order>11</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -2177,7 +2145,6 @@
         <comment/>
         <display_text/>
         <flow display_value="CARD-ACT: On Reveal: Destroy your other cards here. +2 Power for each destroyed.">96239a2793f58210cd4e7d532bba10cd</flow>
-        <generation_source/>
         <order>6</order>
         <parent_ui_id>a3528acf-c388-4b7f-8262-5a2347764107</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -2241,7 +2208,6 @@
         <comment/>
         <display_text/>
         <flow display_value="CARD-ACT: On Reveal: Destroy your other cards here. +2 Power for each destroyed.">96239a2793f58210cd4e7d532bba10cd</flow>
-        <generation_source/>
         <order>10</order>
         <parent_ui_id>698c82d8-97a5-4ca1-afa8-298ba8d0a6db</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -2314,7 +2280,6 @@
         <comment/>
         <display_text/>
         <flow display_value="CARD-ACT: On Reveal: Destroy your other cards here. +2 Power for each destroyed.">96239a2793f58210cd4e7d532bba10cd</flow>
-        <generation_source/>
         <inputs/>
         <inputs/>
         <order>9</order>
@@ -2398,18 +2363,6 @@
         <sys_updated_on>2024-05-02 11:59:17</sys_updated_on>
         <table>var__m_sys_hub_flow_input_30952a6193b9c610cd4e7d532bba1063</table>
         <value>{{subflow.card_instance.current_power}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>wait_for_completion</field>
-        <id>3223da2793f58210cd4e7d532bba1058</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-05-02 11:59:17</sys_created_on>
-        <sys_id>3623da2793f58210cd4e7d532bba1081</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-05-02 11:59:17</sys_updated_on>
-        <table>var__m_sys_hub_sub_flow_instance_inputs_3223da2793f58210cd4e7d532bba1058</table>
-        <value/>
     </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_sub_flow_instance_inputs_3223da2793f58210cd4e7d532bba1058^id=3223da2793f58210cd4e7d532bba1058"/>
     <sys_hub_sub_flow_instance_inputs action="delete_multiple" query="model=3223da2793f58210cd4e7d532bba1058^sys_idNOT IN3223da2793f58210cd4e7d532bba1059"/>
@@ -2510,7 +2463,6 @@
         <flow display_value="CARD-ACT: On Reveal: Destroy your other cards here. +2 Power for each destroyed.">96239a2793f58210cd4e7d532bba10cd</flow>
         <flow_variable/>
         <flow_variables_assigned/>
-        <generation_source/>
         <inputs/>
         <inputs/>
         <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
@@ -2560,7 +2512,6 @@
         <flow display_value="CARD-ACT: On Reveal: Destroy your other cards here. +2 Power for each destroyed.">96239a2793f58210cd4e7d532bba10cd</flow>
         <flow_variable/>
         <flow_variables_assigned>power_to_add</flow_variables_assigned>
-        <generation_source/>
         <inputs/>
         <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
         <order>1</order>
@@ -2610,7 +2561,6 @@
         <flow display_value="CARD-ACT: On Reveal: Destroy your other cards here. +2 Power for each destroyed.">96239a2793f58210cd4e7d532bba10cd</flow>
         <flow_variable/>
         <flow_variables_assigned/>
-        <generation_source/>
         <inputs/>
         <inputs/>
         <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
@@ -2661,7 +2611,6 @@
         <flow_variable/>
         <flow_variable/>
         <flow_variables_assigned>power_to_add</flow_variables_assigned>
-        <generation_source/>
         <inputs/>
         <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
         <order>4</order>
@@ -2844,11 +2793,11 @@
         <sys_created_on>2024-05-02 11:59:15</sys_created_on>
         <sys_id>96239a2793f58210cd4e7d532bba10dc</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Player Session</sys_name>
         <sys_package display_value="Flow Designer Marvel SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_96239a2793f58210cd4e7d532bba10cd_player_session_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-05-02 11:59:15</sys_updated_on>
         <url/>
@@ -2867,11 +2816,11 @@
         <sys_created_on>2024-05-02 11:59:15</sys_created_on>
         <sys_id>96239a2793f58210cd4e7d532bba10e7</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Card Instance</sys_name>
         <sys_package display_value="Flow Designer Marvel SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_96239a2793f58210cd4e7d532bba10cd_card_instance_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-05-02 11:59:15</sys_updated_on>
         <url/>
@@ -2890,11 +2839,11 @@
         <sys_created_on>2024-05-02 11:59:15</sys_created_on>
         <sys_id>9a239a2793f58210cd4e7d532bba10f2</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Game Instance</sys_name>
         <sys_package display_value="Flow Designer Marvel SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_96239a2793f58210cd4e7d532bba10cd_game_instance_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-05-02 11:59:15</sys_updated_on>
         <url/>
@@ -2915,17 +2864,17 @@
         <sys_created_on>2024-05-02 11:59:15</sys_created_on>
         <sys_id>2e23da2793f58210cd4e7d532bba1003</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Status</sys_name>
         <sys_package display_value="Flow Designer Marvel SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_96239a2793f58210cd4e7d532bba10cd_status_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-05-02 11:59:15</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
-    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_96239a2793f58210cd4e7d532bba10cd^sys_idNOT IN92239a2793f58210cd4e7d532bba10fc,6e239a2793f58210cd4e7d532bba10fd"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_96239a2793f58210cd4e7d532bba10cd^sys_idNOT IN7aeaa66b533102103a0891e0a0490e7d,f6eaa66b533102103a0891e0a0490e7e"/>
     <sys_choice field="status" table="var__m_sys_hub_flow_output_96239a2793f58210cd4e7d532bba10cd">
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
@@ -2941,7 +2890,7 @@
             <sys_created_on>2024-05-02 11:59:15</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>92239a2793f58210cd4e7d532bba10fc</sys_id>
+            <sys_id>7aeaa66b533102103a0891e0a0490e7d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2024-05-02 11:59:15</sys_updated_on>
@@ -2961,7 +2910,7 @@
             <sys_created_on>2024-05-02 11:59:15</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>6e239a2793f58210cd4e7d532bba10fd</sys_id>
+            <sys_id>f6eaa66b533102103a0891e0a0490e7e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2024-05-02 11:59:15</sys_updated_on>
@@ -2971,14 +2920,14 @@
     <sys_hub_flow action="UPDATE">
         <sys_id>5821d26393f58210cd4e7d532bba10d0</sys_id>
         <latest_snapshot>96239a2793f58210cd4e7d532bba10cd</latest_snapshot>
-        <compiler_build>glide-washingtondc-12-20-2023__patch1-02-28-2024_03-09-2024_0815.zip</compiler_build>
+        <compiler_build>glide-vancouver-07-06-2023__patch2-hotfix1-10-04-2023_10-06-2023_1235.zip</compiler_build>
     </sys_hub_flow>
     <sys_flow_trigger_plan action="delete_multiple" query="plan_id=5821d26393f58210cd4e7d532bba10d0"/>
     <sys_flow_subflow_plan action="delete_multiple" query="plan_id=5821d26393f58210cd4e7d532bba10d0^sys_idNOT IN0323da2793f58210cd4e7d532bba10b3"/>
     <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
-        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"0323da2793f58210cd4e7d532bba10b3","name":"plan","plan_signature":null}}</plan>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"0323da2793f58210cd4e7d532bba10b3","name":"plan","plan_signature":null}}</plan>
         <plan_id display_value="CARD-ACT: On Reveal: Destroy your other cards here. +2 Power for each destroyed.">5821d26393f58210cd4e7d532bba10d0</plan_id>
-        <snapshot>f7e3d2a793f58210cd4e7d532bba1061</snapshot>
+        <snapshot>f0251684538682103a0891e0a0490e11</snapshot>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-05-02 11:59:18</sys_created_on>
         <sys_domain>global</sys_domain>

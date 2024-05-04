@@ -5,14 +5,11 @@
         <active>true</active>
         <annotation>Shuffle the cards in the Player Session deck and set their Deck Order value</annotation>
         <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=2162000,viewActivatedIn=naturalLanguage</attributes>
-        <authored_on_release_version/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
         <copied_from/>
         <copied_from_name/>
         <description/>
-        <flow_priority/>
-        <generation_source/>
         <internal_name>start_shuffle_player_session_deck</internal_name>
         <label_cache>[{"name":"2999be0f-f7d0-416a-8308-82e51cccd64e.assigned_position_csv","label":"4 - Generate Random number and update CSV of used positions➛Assigned Position CSV","reference_display":"Assigned Position CSV","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"884b1cc6-2921-4199-b7fa-bd397f3bd9f2"}},{"name":"2999be0f-f7d0-416a-8308-82e51cccd64e.position_value","label":"4 - Generate Random number and update CSV of used positions➛Position Value","type":"integer","base_type":"integer","attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"94f29da6-3e17-45eb-a1b4-0ad0713fc9c7"}},{"name":"01dc5623-4dfd-4b78-90b4-c073a22276e8.item","label":"3 - For Each➛Card Instance Record","reference":"x_168987_flow_de_0_card_instance","reference_display":"Card Instance","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"flow_variable.position_csv","label":"Flow Variables➛Position CSV","type":"string","base_type":"string","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"d3348a1c-42a6-4f8f-b5cf-d9b8a0d0e78b"}},{"name":"5ff3b0c7-d0c0-442a-9703-d52a3c59a321.Count","label":"1 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5ff3b0c7-d0c0-442a-9703-d52a3c59a321.Records","label":"1 - Look Up Records➛Card Instance Records","reference":"x_168987_flow_de_0_card_instance","reference_display":"Card Instance","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.player_session","label":"Input➛Player session","reference":"x_168987_flow_de_0_player_session","reference_display":"Player Session","type":"reference","base_type":"reference","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"08071662-a6f0-4082-a5f6-2c7dcd09e9c7","uiTypeLabel":"Reference"}}]</label_cache>
         <master_snapshot>31dcc34e47e6b19017fdc82f316d43e7</master_snapshot>
@@ -41,7 +38,7 @@
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_update_name>sys_hub_flow_0167078647e6b19017fdc82f316d438e</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-01-07 00:23:18</sys_updated_on>
+        <sys_updated_on>2024-04-25 04:37:45</sys_updated_on>
         <type>subflow</type>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=0167078647e6b19017fdc82f316d438e"/>
@@ -158,7 +155,6 @@
         <comment/>
         <display_text/>
         <flow display_value="START: Shuffle Player session deck">0167078647e6b19017fdc82f316d438e</flow>
-        <generation_source/>
         <order>1</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -222,7 +218,6 @@
         <comment/>
         <display_text/>
         <flow display_value="START: Shuffle Player session deck">0167078647e6b19017fdc82f316d438e</flow>
-        <generation_source/>
         <order>4</order>
         <parent_ui_id>01dc5623-4dfd-4b78-90b4-c073a22276e8</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -286,7 +281,6 @@
         <comment/>
         <display_text/>
         <flow display_value="START: Shuffle Player session deck">0167078647e6b19017fdc82f316d438e</flow>
-        <generation_source/>
         <order>5</order>
         <parent_ui_id>01dc5623-4dfd-4b78-90b4-c073a22276e8</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -382,7 +376,6 @@
         <flow_variable/>
         <flow_variable/>
         <flow_variables_assigned>position_csv</flow_variables_assigned>
-        <generation_source/>
         <inputs/>
         <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
         <order>6</order>
@@ -429,7 +422,6 @@
         <flow display_value="START: Shuffle Player session deck">0167078647e6b19017fdc82f316d438e</flow>
         <flow_variable/>
         <flow_variables_assigned/>
-        <generation_source/>
         <inputs/>
         <inputs/>
         <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
@@ -478,7 +470,6 @@
         <flow display_value="START: Shuffle Player session deck">0167078647e6b19017fdc82f316d438e</flow>
         <flow_variable/>
         <flow_variables_assigned>position_csv</flow_variables_assigned>
-        <generation_source/>
         <inputs/>
         <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
         <order>2</order>
@@ -619,13 +610,11 @@
         <active>true</active>
         <annotation>Shuffle the cards in the Player Session deck and set their Deck Order value</annotation>
         <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
-        <authored_on_release_version/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
         <copied_from/>
         <copied_from_name/>
         <description/>
-        <flow_priority/>
         <internal_name>start_shuffle_player_session_deck</internal_name>
         <label_cache>[{"name":"2999be0f-f7d0-416a-8308-82e51cccd64e.assigned_position_csv","label":"4 - Generate Random number and update CSV of used positions➛Assigned Position CSV","reference_display":"Assigned Position CSV","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"884b1cc6-2921-4199-b7fa-bd397f3bd9f2"}},{"name":"2999be0f-f7d0-416a-8308-82e51cccd64e.position_value","label":"4 - Generate Random number and update CSV of used positions➛Position Value","type":"integer","base_type":"integer","attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"94f29da6-3e17-45eb-a1b4-0ad0713fc9c7"}},{"name":"01dc5623-4dfd-4b78-90b4-c073a22276e8.item","label":"3 - For Each➛Card Instance Record","reference":"x_168987_flow_de_0_card_instance","reference_display":"Card Instance","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"flow_variable.position_csv","label":"Flow Variables➛Position CSV","type":"string","base_type":"string","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"d3348a1c-42a6-4f8f-b5cf-d9b8a0d0e78b"}},{"name":"5ff3b0c7-d0c0-442a-9703-d52a3c59a321.Count","label":"1 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5ff3b0c7-d0c0-442a-9703-d52a3c59a321.Records","label":"1 - Look Up Records➛Card Instance Records","reference":"x_168987_flow_de_0_card_instance","reference_display":"Card Instance","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.player_session","label":"Input➛Player session","reference":"x_168987_flow_de_0_player_session","reference_display":"Player Session","type":"reference","base_type":"reference","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"08071662-a6f0-4082-a5f6-2c7dcd09e9c7","uiTypeLabel":"Reference"}}]</label_cache>
         <master>true</master>
@@ -769,7 +758,6 @@
         <comment/>
         <display_text/>
         <flow display_value="START: Shuffle Player session deck">31dcc34e47e6b19017fdc82f316d43e7</flow>
-        <generation_source/>
         <order>5</order>
         <parent_ui_id>01dc5623-4dfd-4b78-90b4-c073a22276e8</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -859,7 +847,6 @@
         <comment/>
         <display_text/>
         <flow display_value="START: Shuffle Player session deck">31dcc34e47e6b19017fdc82f316d43e7</flow>
-        <generation_source/>
         <order>1</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -923,7 +910,6 @@
         <comment/>
         <display_text/>
         <flow display_value="START: Shuffle Player session deck">31dcc34e47e6b19017fdc82f316d43e7</flow>
-        <generation_source/>
         <order>4</order>
         <parent_ui_id>01dc5623-4dfd-4b78-90b4-c073a22276e8</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -992,7 +978,6 @@
         <flow display_value="START: Shuffle Player session deck">31dcc34e47e6b19017fdc82f316d43e7</flow>
         <flow_variable/>
         <flow_variables_assigned/>
-        <generation_source/>
         <inputs/>
         <inputs/>
         <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
@@ -1041,7 +1026,6 @@
         <flow display_value="START: Shuffle Player session deck">31dcc34e47e6b19017fdc82f316d43e7</flow>
         <flow_variable/>
         <flow_variables_assigned>position_csv</flow_variables_assigned>
-        <generation_source/>
         <inputs/>
         <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
         <order>2</order>
@@ -1077,7 +1061,6 @@
         <flow_variable/>
         <flow_variable/>
         <flow_variables_assigned>position_csv</flow_variables_assigned>
-        <generation_source/>
         <inputs/>
         <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
         <order>6</order>

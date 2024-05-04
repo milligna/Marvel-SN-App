@@ -5,14 +5,11 @@
         <active>true</active>
         <annotation>Shuffles any card type from any card set and outputs to a randomised array of card IDs </annotation>
         <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=12536162000,viewActivatedIn=naturalLanguage</attributes>
-        <authored_on_release_version/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
         <copied_from/>
         <copied_from_name/>
         <description/>
-        <flow_priority/>
-        <generation_source/>
         <internal_name>shuffle_carfs</internal_name>
         <label_cache>[{"name":"subflow.game_instance.player_1","label":"Input➛Game Instance➛Player 1","reference":"x_168987_flow_de_0_player_session","reference_display":"Player Session","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_game_instance","column_name":"player_1"},{"name":"flow_variable.slot_iterator","label":"Flow Variables➛Slot Iterator","reference":"","reference_display":"","type":"integer","base_type":"integer","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"a9e73386-4335-43fb-8ee7-446ad3dfb5a3"}},{"name":"f57c9c2e-516e-467d-a9ee-21b785cf53d9.record","label":"6 - Create Record➛Game Location instance Record","reference":"x_168987_flow_de_0_location_instance","reference_display":"Game Location instance","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"flow_variable.card_location_iterator","label":"Flow Variables➛Card Location Iterator","reference":"","reference_display":"","type":"integer","base_type":"integer","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"44bb8396-7cb2-45a0-97c4-daa643a87c53"}},{"name":"subflow.game_instance","label":"Input➛Game Instance","reference":"x_168987_flow_de_0_game_instance","reference_display":"Game Instance","type":"reference","base_type":"reference","column_name":"","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"6fb56076-9b29-4566-815d-9b136541de9e","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"658b78dc-32b7-4bba-a54c-63fed5f87b64.item","label":"5 - For Each➛Card Definition Record","reference":"x_168987_flow_de_0_card_definition","reference_display":"Card Definition","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"84358afb-b2ca-4240-a933-1cf500659ac0.Records","label":"4 - Look Up Records➛Card Definition Records","reference":"x_168987_flow_de_0_card_definition","reference_display":"Card Definition","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4e3dfffa-d565-402b-9462-4d598f10f9f3.array_of_ids","label":"1 - Build Array of Location Card IDs➛array of IDs","reference_display":"array of IDs","type":"json","base_type":"json","attributes":{"uiTypeLabel":"JSON","child_label":"array of IDs_child0","child_type_label":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"json","child_type":"integer","child_name":"array_of_ids_child0","child_uiUniqueId":"3da52844-ea74-40db-9511-a0141c78ecc7","uiUniqueId":"47ade9fb-23c9-40f3-9d03-598df63e0ece"}},{"name":"flow_variable.iterator","label":"Flow Variables➛iterator","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"c7a9070b-ce64-477d-9eb5-d4270287f3c3"}},{"name":"subflow.number_of_cards_to_return","label":"Input➛number of cards to return","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"09d4f758-c665-4e0f-8aef-06512fdb3e7e","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"e9ee545e-64ec-4bdc-951a-d453a3a7e656.output_array","label":"3 - Shuffle JSON Array of ID objects to CSV➛Output CSV of Integers","reference_display":"Output CSV of Integers","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","child_label":"outputArray_child0","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","child_type":"object","child_name":"outputarray_child0","child_uiUniqueId":"010321b8-0f7f-4cc4-b760-61202eea3068","uiUniqueId":"25c80a7c-3d85-4aea-b52d-a1635cebac3c"}},{"name":"subflow.game_instance.player_2","label":"Input➛Game Instance➛Player 2","reference":"x_168987_flow_de_0_player_session","reference_display":"Player Session","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_game_instance","column_name":"player_2"}]</label_cache>
         <master_snapshot>78508ae84722f95017fdc82f316d43ff</master_snapshot>
@@ -33,7 +30,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>aadc24e447aab95017fdc82f316d439b</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>START-SUB: Shuffle Location Cards and deal them</sys_name>
         <sys_overrides/>
         <sys_package display_value="Flow Designer Marvel SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
@@ -41,7 +38,7 @@
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_update_name>sys_hub_flow_aadc24e447aab95017fdc82f316d439b</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-06 10:42:37</sys_updated_on>
+        <sys_updated_on>2024-04-25 04:38:24</sys_updated_on>
         <type>subflow</type>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=aadc24e447aab95017fdc82f316d439b"/>
@@ -327,17 +324,16 @@
         <comment>Player 2 Slot</comment>
         <display_text/>
         <flow display_value="START-SUB: Shuffle Location Cards and deal them">aadc24e447aab95017fdc82f316d439b</flow>
-        <generation_source/>
         <order>11</order>
         <parent_ui_id>75e3ff04-d6ab-4ac9-ae41-88f952a98f93</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-03-31 03:28:34</sys_created_on>
         <sys_id>256b238193d10210cd4e7d532bba1030</sys_id>
-        <sys_mod_count>24</sys_mod_count>
+        <sys_mod_count>26</sys_mod_count>
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-08 23:23:55</sys_updated_on>
+        <sys_updated_on>2024-04-25 04:47:20</sys_updated_on>
         <ui_id>c1d7adbc-82ab-47b6-87c2-e92df427fcf7</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=256b238193d10210cd4e7d532bba1030"/>
@@ -391,17 +387,16 @@
         <comment/>
         <display_text/>
         <flow display_value="START-SUB: Shuffle Location Cards and deal them">aadc24e447aab95017fdc82f316d439b</flow>
-        <generation_source/>
         <order>15</order>
         <parent_ui_id>cdbf5473-76a7-45c7-985f-91584136671d</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-04-06 05:42:24</sys_created_on>
         <sys_id>2893c78793950210cd4e7d532bba1044</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>16</sys_mod_count>
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-08 23:23:55</sys_updated_on>
+        <sys_updated_on>2024-04-25 04:47:20</sys_updated_on>
         <ui_id>16e488bd-81bc-4782-bd8c-c6f0a702fcf7</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=2893c78793950210cd4e7d532bba1044"/>
@@ -481,17 +476,16 @@
         <comment/>
         <display_text/>
         <flow display_value="START-SUB: Shuffle Location Cards and deal them">aadc24e447aab95017fdc82f316d439b</flow>
-        <generation_source/>
         <order>6</order>
         <parent_ui_id>658b78dc-32b7-4bba-a54c-63fed5f87b64</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-11-13 20:40:02</sys_created_on>
         <sys_id>3772e7a847e6f95017fdc82f316d43f9</sys_id>
-        <sys_mod_count>42</sys_mod_count>
+        <sys_mod_count>44</sys_mod_count>
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-08 23:23:55</sys_updated_on>
+        <sys_updated_on>2024-04-25 04:47:20</sys_updated_on>
         <ui_id>f57c9c2e-516e-467d-a9ee-21b785cf53d9</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=3772e7a847e6f95017fdc82f316d43f9"/>
@@ -545,17 +539,16 @@
         <comment>Set Location 1</comment>
         <display_text/>
         <flow display_value="START-SUB: Shuffle Location Cards and deal them">aadc24e447aab95017fdc82f316d439b</flow>
-        <generation_source/>
         <order>14</order>
         <parent_ui_id>cdbf5473-76a7-45c7-985f-91584136671d</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-11-13 20:40:02</sys_created_on>
         <sys_id>77722ba847e6f95017fdc82f316d4305</sys_id>
-        <sys_mod_count>42</sys_mod_count>
+        <sys_mod_count>44</sys_mod_count>
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-08 23:23:55</sys_updated_on>
+        <sys_updated_on>2024-04-25 04:47:20</sys_updated_on>
         <ui_id>ee8e2898-f66d-49b8-b1dc-e9428878e2e6</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=77722ba847e6f95017fdc82f316d4305"/>
@@ -621,17 +614,16 @@
         <comment/>
         <display_text/>
         <flow display_value="START-SUB: Shuffle Location Cards and deal them">aadc24e447aab95017fdc82f316d439b</flow>
-        <generation_source/>
         <order>4</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-11-13 13:17:50</sys_created_on>
         <sys_id>9a4db9e44722f95017fdc82f316d4352</sys_id>
-        <sys_mod_count>50</sys_mod_count>
+        <sys_mod_count>52</sys_mod_count>
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-08 23:23:55</sys_updated_on>
+        <sys_updated_on>2024-04-25 04:47:20</sys_updated_on>
         <ui_id>84358afb-b2ca-4240-a933-1cf500659ac0</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=9a4db9e44722f95017fdc82f316d4352"/>
@@ -685,17 +677,16 @@
         <comment>Player 1 Slot</comment>
         <display_text/>
         <flow display_value="START-SUB: Shuffle Location Cards and deal them">aadc24e447aab95017fdc82f316d439b</flow>
-        <generation_source/>
         <order>10</order>
         <parent_ui_id>75e3ff04-d6ab-4ac9-ae41-88f952a98f93</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-03-31 03:27:09</sys_created_on>
         <sys_id>b41b2b4193d10210cd4e7d532bba106f</sys_id>
-        <sys_mod_count>26</sys_mod_count>
+        <sys_mod_count>28</sys_mod_count>
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-08 23:23:55</sys_updated_on>
+        <sys_updated_on>2024-04-25 04:47:20</sys_updated_on>
         <ui_id>b3f09009-168d-4650-9bcb-9d83000e2302</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=b41b2b4193d10210cd4e7d532bba106f"/>
@@ -749,17 +740,16 @@
         <comment>Set Location 3</comment>
         <display_text/>
         <flow display_value="START-SUB: Shuffle Location Cards and deal them">aadc24e447aab95017fdc82f316d439b</flow>
-        <generation_source/>
         <order>19</order>
         <parent_ui_id>5c766958-c9d6-43c8-8169-8e4dd87f02a8</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-11-13 20:40:02</sys_created_on>
         <sys_id>bb722ba847e6f95017fdc82f316d4319</sys_id>
-        <sys_mod_count>42</sys_mod_count>
+        <sys_mod_count>44</sys_mod_count>
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-08 23:23:55</sys_updated_on>
+        <sys_updated_on>2024-04-25 04:47:20</sys_updated_on>
         <ui_id>434abdb3-e0ff-4776-82d6-2194e487b1a6</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=bb722ba847e6f95017fdc82f316d4319"/>
@@ -839,17 +829,16 @@
         <comment/>
         <display_text/>
         <flow display_value="START-SUB: Shuffle Location Cards and deal them">aadc24e447aab95017fdc82f316d439b</flow>
-        <generation_source/>
         <order>3</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-11-13 12:51:40</sys_created_on>
         <sys_id>cb47b9ec47eeb95017fdc82f316d435d</sys_id>
-        <sys_mod_count>56</sys_mod_count>
+        <sys_mod_count>58</sys_mod_count>
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-08 23:23:55</sys_updated_on>
+        <sys_updated_on>2024-04-25 04:47:20</sys_updated_on>
         <ui_id>e9ee545e-64ec-4bdc-951a-d453a3a7e656</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=cb47b9ec47eeb95017fdc82f316d435d"/>
@@ -903,17 +892,16 @@
         <comment>Set location 2</comment>
         <display_text/>
         <flow display_value="START-SUB: Shuffle Location Cards and deal them">aadc24e447aab95017fdc82f316d439b</flow>
-        <generation_source/>
         <order>17</order>
         <parent_ui_id>534abd49-4ba6-4c79-8e92-3f1c926d1281</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-11-13 20:40:02</sys_created_on>
         <sys_id>f3722ba847e6f95017fdc82f316d4310</sys_id>
-        <sys_mod_count>42</sys_mod_count>
+        <sys_mod_count>44</sys_mod_count>
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-08 23:23:55</sys_updated_on>
+        <sys_updated_on>2024-04-25 04:47:20</sys_updated_on>
         <ui_id>09416e70-85a7-4d9c-a47e-8ca88472f200</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=f3722ba847e6f95017fdc82f316d4310"/>
@@ -976,7 +964,6 @@
         <comment/>
         <display_text/>
         <flow display_value="START-SUB: Shuffle Location Cards and deal them">aadc24e447aab95017fdc82f316d439b</flow>
-        <generation_source/>
         <inputs/>
         <order>1</order>
         <parent_ui_id/>
@@ -1106,7 +1093,6 @@
         <flow display_value="START-SUB: Shuffle Location Cards and deal them">aadc24e447aab95017fdc82f316d439b</flow>
         <flow_variable/>
         <flow_variables_assigned>iterator,card_location_iterator,slot_iterator</flow_variables_assigned>
-        <generation_source/>
         <inputs/>
         <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
         <order>2</order>
@@ -1185,7 +1171,6 @@
         <flow_variable/>
         <flow_variable/>
         <flow_variables_assigned>slot_iterator</flow_variables_assigned>
-        <generation_source/>
         <inputs/>
         <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
         <order>9</order>
@@ -1247,7 +1232,6 @@
         <flow display_value="START-SUB: Shuffle Location Cards and deal them">aadc24e447aab95017fdc82f316d439b</flow>
         <flow_variable/>
         <flow_variables_assigned/>
-        <generation_source/>
         <inputs/>
         <inputs/>
         <logic_definition display_value="Else If">666e5545c3e232002841b63b12d3ae99</logic_definition>
@@ -1323,7 +1307,6 @@
         <flow display_value="START-SUB: Shuffle Location Cards and deal them">aadc24e447aab95017fdc82f316d439b</flow>
         <flow_variable/>
         <flow_variables_assigned/>
-        <generation_source/>
         <inputs/>
         <inputs/>
         <logic_definition display_value="Do the following until">eaeb040687210300e6c2c88fc0e3ec89</logic_definition>
@@ -1399,7 +1382,6 @@
         <flow display_value="START-SUB: Shuffle Location Cards and deal them">aadc24e447aab95017fdc82f316d439b</flow>
         <flow_variable/>
         <flow_variables_assigned/>
-        <generation_source/>
         <inputs/>
         <inputs/>
         <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
@@ -1450,7 +1432,6 @@
         <flow_variable/>
         <flow_variable/>
         <flow_variables_assigned>card_location_iterator</flow_variables_assigned>
-        <generation_source/>
         <inputs/>
         <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
         <order>20</order>
@@ -1512,7 +1493,6 @@
         <flow display_value="START-SUB: Shuffle Location Cards and deal them">aadc24e447aab95017fdc82f316d439b</flow>
         <flow_variable/>
         <flow_variables_assigned/>
-        <generation_source/>
         <inputs/>
         <inputs/>
         <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
@@ -1588,7 +1568,6 @@
         <flow display_value="START-SUB: Shuffle Location Cards and deal them">aadc24e447aab95017fdc82f316d439b</flow>
         <flow_variable/>
         <flow_variables_assigned/>
-        <generation_source/>
         <inputs/>
         <inputs/>
         <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
@@ -1664,7 +1643,6 @@
         <flow display_value="START-SUB: Shuffle Location Cards and deal them">aadc24e447aab95017fdc82f316d439b</flow>
         <flow_variable/>
         <flow_variables_assigned>slot_iterator</flow_variables_assigned>
-        <generation_source/>
         <inputs/>
         <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
         <order>7</order>
@@ -2152,11 +2130,11 @@
         <sys_created_on>2023-11-13 20:40:01</sys_created_on>
         <sys_id>2f72e7a847e6f95017fdc82f316d43ad</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Game Instance</sys_name>
         <sys_package display_value="Flow Designer Marvel SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_aadc24e447aab95017fdc82f316d439b_game_instance_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-11-13 20:40:01</sys_updated_on>
         <url/>
@@ -2175,11 +2153,11 @@
         <sys_created_on>2023-11-13 13:17:49</sys_created_on>
         <sys_id>8e4db9e44722f95017fdc82f316d4305</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>number of cards to return</sys_name>
         <sys_package display_value="Flow Designer Marvel SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_aadc24e447aab95017fdc82f316d439b_number_of_cards_to_return_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-11-13 13:17:49</sys_updated_on>
         <url/>
@@ -2262,11 +2240,11 @@
         <sys_created_on>2023-11-13 12:51:40</sys_created_on>
         <sys_id>c347b9ec47eeb95017fdc82f316d4337</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Shuffled Location Cards</sys_name>
         <sys_package display_value="Flow Designer Marvel SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_aadc24e447aab95017fdc82f316d439b_shuffled_location_cards_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-11-13 12:51:40</sys_updated_on>
         <url/>
@@ -2279,13 +2257,11 @@
         <active>true</active>
         <annotation>Shuffles any card type from any card set and outputs to a randomised array of card IDs </annotation>
         <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
-        <authored_on_release_version/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
         <copied_from/>
         <copied_from_name/>
         <description/>
-        <flow_priority/>
         <internal_name>shuffle_location_cards_and_deal_them</internal_name>
         <label_cache>[{"name":"subflow.game_instance.player_1","label":"Input➛Game Instance➛Player 1","reference":"x_168987_flow_de_0_player_session","reference_display":"Player Session","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_game_instance","column_name":"player_1"},{"name":"flow_variable.slot_iterator","label":"Flow Variables➛Slot Iterator","reference":"","reference_display":"","type":"integer","base_type":"integer","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"a9e73386-4335-43fb-8ee7-446ad3dfb5a3"}},{"name":"f57c9c2e-516e-467d-a9ee-21b785cf53d9.record","label":"6 - Create Record➛Game Location instance Record","reference":"x_168987_flow_de_0_location_instance","reference_display":"Game Location instance","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"flow_variable.card_location_iterator","label":"Flow Variables➛Card Location Iterator","reference":"","reference_display":"","type":"integer","base_type":"integer","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"44bb8396-7cb2-45a0-97c4-daa643a87c53"}},{"name":"subflow.game_instance","label":"Input➛Game Instance","reference":"x_168987_flow_de_0_game_instance","reference_display":"Game Instance","type":"reference","base_type":"reference","column_name":"","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"6fb56076-9b29-4566-815d-9b136541de9e","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"658b78dc-32b7-4bba-a54c-63fed5f87b64.item","label":"5 - For Each➛Card Definition Record","reference":"x_168987_flow_de_0_card_definition","reference_display":"Card Definition","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"84358afb-b2ca-4240-a933-1cf500659ac0.Records","label":"4 - Look Up Records➛Card Definition Records","reference":"x_168987_flow_de_0_card_definition","reference_display":"Card Definition","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4e3dfffa-d565-402b-9462-4d598f10f9f3.array_of_ids","label":"1 - Build Array of Location Card IDs➛array of IDs","reference_display":"array of IDs","type":"json","base_type":"json","attributes":{"uiTypeLabel":"JSON","child_label":"array of IDs_child0","child_type_label":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"json","child_type":"integer","child_name":"array_of_ids_child0","child_uiUniqueId":"3da52844-ea74-40db-9511-a0141c78ecc7","uiUniqueId":"47ade9fb-23c9-40f3-9d03-598df63e0ece"}},{"name":"flow_variable.iterator","label":"Flow Variables➛iterator","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"c7a9070b-ce64-477d-9eb5-d4270287f3c3"}},{"name":"subflow.number_of_cards_to_return","label":"Input➛number of cards to return","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"09d4f758-c665-4e0f-8aef-06512fdb3e7e","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"e9ee545e-64ec-4bdc-951a-d453a3a7e656.output_array","label":"3 - Shuffle JSON Array of ID objects to CSV➛Output CSV of Integers","reference_display":"Output CSV of Integers","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","child_label":"outputArray_child0","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","child_type":"object","child_name":"outputarray_child0","child_uiUniqueId":"010321b8-0f7f-4cc4-b760-61202eea3068","uiUniqueId":"25c80a7c-3d85-4aea-b52d-a1635cebac3c"}},{"name":"subflow.game_instance.player_2","label":"Input➛Game Instance➛Player 2","reference":"x_168987_flow_de_0_player_session","reference_display":"Player Session","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_game_instance","column_name":"player_2"}]</label_cache>
         <master>true</master>
@@ -2598,7 +2574,6 @@
         <comment/>
         <display_text/>
         <flow display_value="START-SUB: Shuffle Location Cards and deal them">78508ae84722f95017fdc82f316d43ff</flow>
-        <generation_source/>
         <order>3</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -2662,7 +2637,6 @@
         <comment>Set Location 1</comment>
         <display_text/>
         <flow display_value="START-SUB: Shuffle Location Cards and deal them">78508ae84722f95017fdc82f316d43ff</flow>
-        <generation_source/>
         <order>14</order>
         <parent_ui_id>cdbf5473-76a7-45c7-985f-91584136671d</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -2738,7 +2712,6 @@
         <comment/>
         <display_text/>
         <flow display_value="START-SUB: Shuffle Location Cards and deal them">78508ae84722f95017fdc82f316d43ff</flow>
-        <generation_source/>
         <order>4</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -2802,7 +2775,6 @@
         <comment>Set Location 3</comment>
         <display_text/>
         <flow display_value="START-SUB: Shuffle Location Cards and deal them">78508ae84722f95017fdc82f316d43ff</flow>
-        <generation_source/>
         <order>19</order>
         <parent_ui_id>5c766958-c9d6-43c8-8169-8e4dd87f02a8</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -2878,7 +2850,6 @@
         <comment>Set location 2</comment>
         <display_text/>
         <flow display_value="START-SUB: Shuffle Location Cards and deal them">78508ae84722f95017fdc82f316d43ff</flow>
-        <generation_source/>
         <order>17</order>
         <parent_ui_id>534abd49-4ba6-4c79-8e92-3f1c926d1281</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -2954,7 +2925,6 @@
         <comment>Player 1 Slot</comment>
         <display_text/>
         <flow display_value="START-SUB: Shuffle Location Cards and deal them">78508ae84722f95017fdc82f316d43ff</flow>
-        <generation_source/>
         <order>10</order>
         <parent_ui_id>75e3ff04-d6ab-4ac9-ae41-88f952a98f93</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -3018,7 +2988,6 @@
         <comment/>
         <display_text/>
         <flow display_value="START-SUB: Shuffle Location Cards and deal them">78508ae84722f95017fdc82f316d43ff</flow>
-        <generation_source/>
         <order>6</order>
         <parent_ui_id>658b78dc-32b7-4bba-a54c-63fed5f87b64</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -3082,7 +3051,6 @@
         <comment>Player 2 Slot</comment>
         <display_text/>
         <flow display_value="START-SUB: Shuffle Location Cards and deal them">78508ae84722f95017fdc82f316d43ff</flow>
-        <generation_source/>
         <order>11</order>
         <parent_ui_id>75e3ff04-d6ab-4ac9-ae41-88f952a98f93</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -3146,7 +3114,6 @@
         <comment/>
         <display_text/>
         <flow display_value="START-SUB: Shuffle Location Cards and deal them">78508ae84722f95017fdc82f316d43ff</flow>
-        <generation_source/>
         <order>15</order>
         <parent_ui_id>cdbf5473-76a7-45c7-985f-91584136671d</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -3233,7 +3200,6 @@
         <comment/>
         <display_text/>
         <flow display_value="START-SUB: Shuffle Location Cards and deal them">78508ae84722f95017fdc82f316d43ff</flow>
-        <generation_source/>
         <inputs/>
         <order>1</order>
         <parent_ui_id/>
@@ -3363,7 +3329,6 @@
         <flow display_value="START-SUB: Shuffle Location Cards and deal them">78508ae84722f95017fdc82f316d43ff</flow>
         <flow_variable/>
         <flow_variables_assigned/>
-        <generation_source/>
         <inputs/>
         <inputs/>
         <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
@@ -3439,7 +3404,6 @@
         <flow display_value="START-SUB: Shuffle Location Cards and deal them">78508ae84722f95017fdc82f316d43ff</flow>
         <flow_variable/>
         <flow_variables_assigned>iterator,card_location_iterator,slot_iterator</flow_variables_assigned>
-        <generation_source/>
         <inputs/>
         <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
         <order>2</order>
@@ -3518,7 +3482,6 @@
         <flow_variable/>
         <flow_variable/>
         <flow_variables_assigned>card_location_iterator</flow_variables_assigned>
-        <generation_source/>
         <inputs/>
         <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
         <order>20</order>
@@ -3580,7 +3543,6 @@
         <flow display_value="START-SUB: Shuffle Location Cards and deal them">78508ae84722f95017fdc82f316d43ff</flow>
         <flow_variable/>
         <flow_variables_assigned/>
-        <generation_source/>
         <inputs/>
         <inputs/>
         <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
@@ -3631,7 +3593,6 @@
         <flow_variable/>
         <flow_variable/>
         <flow_variables_assigned>slot_iterator</flow_variables_assigned>
-        <generation_source/>
         <inputs/>
         <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
         <order>9</order>
@@ -3693,7 +3654,6 @@
         <flow display_value="START-SUB: Shuffle Location Cards and deal them">78508ae84722f95017fdc82f316d43ff</flow>
         <flow_variable/>
         <flow_variables_assigned/>
-        <generation_source/>
         <inputs/>
         <inputs/>
         <logic_definition display_value="Do the following until">eaeb040687210300e6c2c88fc0e3ec89</logic_definition>
@@ -3769,7 +3729,6 @@
         <flow display_value="START-SUB: Shuffle Location Cards and deal them">78508ae84722f95017fdc82f316d43ff</flow>
         <flow_variable/>
         <flow_variables_assigned/>
-        <generation_source/>
         <inputs/>
         <inputs/>
         <logic_definition display_value="Else If">666e5545c3e232002841b63b12d3ae99</logic_definition>
@@ -3845,7 +3804,6 @@
         <flow display_value="START-SUB: Shuffle Location Cards and deal them">78508ae84722f95017fdc82f316d43ff</flow>
         <flow_variable/>
         <flow_variables_assigned/>
-        <generation_source/>
         <inputs/>
         <inputs/>
         <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
@@ -3921,7 +3879,6 @@
         <flow display_value="START-SUB: Shuffle Location Cards and deal them">78508ae84722f95017fdc82f316d43ff</flow>
         <flow_variable/>
         <flow_variables_assigned>slot_iterator</flow_variables_assigned>
-        <generation_source/>
         <inputs/>
         <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
         <order>7</order>
@@ -4409,11 +4366,11 @@
         <sys_created_on>2023-11-13 13:31:07</sys_created_on>
         <sys_id>3050cae84722f95017fdc82f316d430c</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>number of cards to return</sys_name>
         <sys_package display_value="Flow Designer Marvel SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_78508ae84722f95017fdc82f316d43ff_number_of_cards_to_return_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-11-13 13:31:07</sys_updated_on>
         <url/>
@@ -4432,11 +4389,11 @@
         <sys_created_on>2023-11-13 20:47:23</sys_created_on>
         <sys_id>5b24a36c47e6f95017fdc82f316d43a0</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Game Instance</sys_name>
         <sys_package display_value="Flow Designer Marvel SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_78508ae84722f95017fdc82f316d43ff_game_instance_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-11-13 20:47:23</sys_updated_on>
         <url/>
@@ -4457,11 +4414,11 @@
         <sys_created_on>2023-11-13 13:31:07</sys_created_on>
         <sys_id>4950cae84722f95017fdc82f316d4319</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Shuffled Location Cards</sys_name>
         <sys_package display_value="Flow Designer Marvel SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_78508ae84722f95017fdc82f316d43ff_shuffled_location_cards_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-11-13 13:31:07</sys_updated_on>
         <url/>
@@ -4471,14 +4428,14 @@
     <sys_hub_flow action="UPDATE">
         <sys_id>aadc24e447aab95017fdc82f316d439b</sys_id>
         <latest_snapshot>78508ae84722f95017fdc82f316d43ff</latest_snapshot>
-        <compiler_build>glide-washingtondc-12-20-2023__patch1-02-28-2024_03-09-2024_0815.zip</compiler_build>
+        <compiler_build>glide-vancouver-07-06-2023__patch2-hotfix1-10-04-2023_10-06-2023_1235.zip</compiler_build>
     </sys_hub_flow>
     <sys_flow_trigger_plan action="delete_multiple" query="plan_id=aadc24e447aab95017fdc82f316d439b"/>
     <sys_flow_subflow_plan action="delete_multiple" query="plan_id=aadc24e447aab95017fdc82f316d439b^sys_idNOT IN1950cae84722f95017fdc82f316d4387"/>
     <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
-        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"1950cae84722f95017fdc82f316d4387","name":"plan","plan_signature":null}}</plan>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"1950cae84722f95017fdc82f316d4387","name":"plan","plan_signature":null}}</plan>
         <plan_id display_value="START-SUB: Shuffle Location Cards and deal them">aadc24e447aab95017fdc82f316d439b</plan_id>
-        <snapshot>59b98dc093ad8210cd4e7d532bba10f6</snapshot>
+        <snapshot>872d20dd533102103a0891e0a0490e8f</snapshot>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-11-13 13:31:08</sys_created_on>
         <sys_domain>global</sys_domain>

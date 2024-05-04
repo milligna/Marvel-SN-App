@@ -202,6 +202,97 @@
                     },
                     "slot": null,
                     "styles": null
+                },
+                {
+                    "definition": {
+                        "id": "1f6e0643eca7a637e36bd7833549ec9e",
+                        "type": "MACROPONENT"
+                    },
+                    "elementId": "game_over_state",
+                    "elementLabel": "Game Over State",
+                    "eventMappings": [
+                        
+                    ],
+                    "isHidden": {
+                        "type": "JSON_LITERAL",
+                        "value": null
+                    },
+                    "preset": null,
+                    "propertyValues": {
+                        "hasNoMargin": {
+                            "type": "JSON_LITERAL",
+                            "value": false
+                        },
+                        "label": {
+                            "type": "TRANSLATION_LITERAL",
+                            "value": {
+                                "code": null,
+                                "comment": "",
+                                "message": "Game Instance State"
+                            }
+                        },
+                        "level": {
+                            "type": "JSON_LITERAL",
+                            "value": "1"
+                        },
+                        "variant": {
+                            "type": "JSON_LITERAL",
+                            "value": "title-primary"
+                        },
+                        "wontWrap": {
+                            "type": "JSON_LITERAL",
+                            "value": false
+                        }
+                    },
+                    "slot": null,
+                    "styles": null
+                },
+                {
+                    "definition": {
+                        "id": "1f6e0643eca7a637e36bd7833549ec9e",
+                        "type": "MACROPONENT"
+                    },
+                    "elementId": "game_over_value",
+                    "elementLabel": "Game Over Value",
+                    "eventMappings": [
+                        
+                    ],
+                    "isHidden": {
+                        "type": "JSON_LITERAL",
+                        "value": null
+                    },
+                    "preset": null,
+                    "propertyValues": {
+                        "hasNoMargin": {
+                            "type": "JSON_LITERAL",
+                            "value": false
+                        },
+                        "label": {
+                            "binding": {
+                                "address": [
+                                    "get_game_instance",
+                                    "result",
+                                    "game_over",
+                                    "displayValue"
+                                ]
+                            },
+                            "type": "DATA_OUTPUT_BINDING"
+                        },
+                        "level": {
+                            "type": "JSON_LITERAL",
+                            "value": "1"
+                        },
+                        "variant": {
+                            "type": "JSON_LITERAL",
+                            "value": "title-primary"
+                        },
+                        "wontWrap": {
+                            "type": "JSON_LITERAL",
+                            "value": false
+                        }
+                    },
+                    "slot": null,
+                    "styles": null
                 }
             ],
             "layout": {
@@ -235,6 +326,18 @@
                         },
                         {
                             "element_id": "number_of_turns",
+                            "styles": {
+                                "width": ""
+                            }
+                        },
+                        {
+                            "element_id": "game_over_state",
+                            "styles": {
+                                "width": ""
+                            }
+                        },
+                        {
+                            "element_id": "game_over_value",
                             "styles": {
                                 "width": ""
                             }
@@ -688,6 +791,32 @@
                                     },
                                     "targetId": "clvgffyjjtdaaaaxzddbhhohffaamoukj",
                                     "type": "DATABROKER_OP"
+                                },
+                                {
+                                    "broker": null,
+                                    "clientScript": null,
+                                    "conditional": null,
+                                    "declarativeAction": null,
+                                    "event": {
+                                        "apiName": "x_168987_flow_de_0.MODAL_SELECTED_RELAY_5db3fe4a932f3110cd4e7d532bba10d8",
+                                        "payload": {
+                                            "type": "JSON_LITERAL",
+                                            "value": {
+                                                "bare": true,
+                                                "displayOptions": null,
+                                                "modalId": "[component-id$='wait_modal']",
+                                                "showModal": true,
+                                                "viewportElementId": null,
+                                                "viewportFields": null,
+                                                "viewportParams": null,
+                                                "viewportRoute": null
+                                            }
+                                        },
+                                        "sysId": "4ce41357935d4210cd4e7d532bba10ad"
+                                    },
+                                    "operation": null,
+                                    "targetId": "clvrfpccbeaabbaapddbhhrjxhohddxq",
+                                    "type": "EVENT"
                                 }
                             ]
                         }
@@ -1054,7 +1183,7 @@
                                                                                 "container": [
                                                                                     {
                                                                                         "type": "JSON_LITERAL",
-                                                                                        "value": "https://dev189661.service-now.com/x_168987_flow_de_0_player_session.do?sys_id="
+                                                                                        "value": "/x_168987_flow_de_0_player_session.do?sys_id="
                                                                                     },
                                                                                     {
                                                                                         "binding": {
@@ -1777,7 +1906,7 @@
                                             "elementLabel": "L1 P1 Repeater Card",
                                             "eventMappings": [
                                                 {
-                                                    "eventMappingId": "cluovrcpaaaaaahheeddbhhnddjaaffevjjz",
+                                                    "eventMappingId": "clvgjffcmjaabbulddbhhowggplunon",
                                                     "isConfiguration": false,
                                                     "offRowStorageId": null,
                                                     "sourceEventApiName": "sn_card.NOW_CARD#CLICKED",
@@ -1818,7 +1947,7 @@
                                                                 "sysId": "32408b42ff7a10109046e490703bf176"
                                                             },
                                                             "operation": null,
-                                                            "targetId": "cluovryuggaaaahhqddbhhnjniylslm",
+                                                            "targetId": "clvgjffcmjaabbumddbhhopccqtobil",
                                                             "type": "EVENT"
                                                         },
                                                         {
@@ -1845,27 +1974,7 @@
                                                                 "sysId": "4ce41357935d4210cd4e7d532bba10ad"
                                                             },
                                                             "operation": null,
-                                                            "targetId": "clvgjdiggbaaccbbzddbhhovccggeybbhjj",
-                                                            "type": "EVENT"
-                                                        },
-                                                        {
-                                                            "broker": null,
-                                                            "clientScript": null,
-                                                            "conditional": null,
-                                                            "declarativeAction": null,
-                                                            "event": {
-                                                                "apiName": "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
-                                                                "payload": {
-                                                                    "type": "JSON_LITERAL",
-                                                                    "value": {
-                                                                        "propName": "selected_card_unplayable",
-                                                                        "value": "hide"
-                                                                    }
-                                                                },
-                                                                "sysId": "32408b42ff7a10109046e490703bf176"
-                                                            },
-                                                            "operation": null,
-                                                            "targetId": "clvgkyoezaabbaahddbhhxggryysqsw",
+                                                            "targetId": "clvgjffppvaabbvcddbhhozeexiiagccu",
                                                             "type": "EVENT"
                                                         }
                                                     ]
@@ -1943,7 +2052,7 @@
                                                             },
                                                             "width": {
                                                                 "type": "JSON_LITERAL",
-                                                                "value": null
+                                                                "value": ""
                                                             }
                                                         },
                                                         "slot": null,
@@ -2548,26 +2657,6 @@
                                                             "operation": null,
                                                             "targetId": "clvgiwheelaabboiiddbhhotcccffhhaasr",
                                                             "type": "EVENT"
-                                                        },
-                                                        {
-                                                            "broker": null,
-                                                            "clientScript": null,
-                                                            "conditional": null,
-                                                            "declarativeAction": null,
-                                                            "event": {
-                                                                "apiName": "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
-                                                                "payload": {
-                                                                    "type": "JSON_LITERAL",
-                                                                    "value": {
-                                                                        "propName": "selected_card_unplayable",
-                                                                        "value": null
-                                                                    }
-                                                                },
-                                                                "sysId": "32408b42ff7a10109046e490703bf176"
-                                                            },
-                                                            "operation": null,
-                                                            "targetId": "clvgjddfvfaabbssddbhhootjeapubb",
-                                                            "type": "EVENT"
                                                         }
                                                     ]
                                                 }
@@ -2796,7 +2885,7 @@
                         },
                         "interaction": {
                             "type": "JSON_LITERAL",
-                            "value": "click"
+                            "value": "none"
                         },
                         "selected": {
                             "type": "JSON_LITERAL",
@@ -5213,7 +5302,7 @@
                                                                                 "container": [
                                                                                     {
                                                                                         "type": "JSON_LITERAL",
-                                                                                        "value": "https://dev189661.service-now.com/x_168987_flow_de_0_player_session.do?sys_id="
+                                                                                        "value": "/x_168987_flow_de_0_player_session.do?sys_id="
                                                                                     },
                                                                                     {
                                                                                         "binding": {
@@ -7789,7 +7878,7 @@
             }
         },
         "slot": null,
-        "styles": {}
+        "styles": null
     },
     {
         "definition": {
@@ -8742,7 +8831,7 @@
             }
         },
         "slot": null,
-        "styles": {}
+        "styles": null
     },
     {
         "definition": {
@@ -9084,6 +9173,396 @@
         },
         "slot": null,
         "styles": null
+    },
+    {
+        "definition": {
+            "id": "9c2e3b0978b3250ef3081204f151026a",
+            "type": "MACROPONENT"
+        },
+        "elementId": "winner_modal",
+        "elementLabel": "Winner Modal",
+        "eventMappings": [
+            
+        ],
+        "isHidden": {
+            "type": "JSON_LITERAL",
+            "value": null
+        },
+        "overrides": {
+            "composition": [
+                {
+                    "definition": {
+                        "id": "d356d14b6e293a3020a244b63d278d8f",
+                        "type": "MACROPONENT"
+                    },
+                    "elementId": "winner_header",
+                    "elementLabel": "winner Header",
+                    "eventMappings": [
+                        
+                    ],
+                    "isHidden": {
+                        "type": "JSON_LITERAL",
+                        "value": null
+                    },
+                    "overrides": {
+                        "composition": [
+                            {
+                                "definition": {
+                                    "id": "4335ba6dca80378f7ba7a67cd6667bec",
+                                    "type": "MACROPONENT"
+                                },
+                                "elementId": "winner_label",
+                                "elementLabel": "Winner Label",
+                                "eventMappings": [
+                                    
+                                ],
+                                "isHidden": {
+                                    "type": "JSON_LITERAL",
+                                    "value": null
+                                },
+                                "preset": null,
+                                "propertyValues": {
+                                    "configAria": {
+                                        "type": "JSON_LITERAL",
+                                        "value": {}
+                                    },
+                                    "css": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "* { align-self: center;\n    color: #dee2fb;\n    font-style: italic;\n    font-variant: small-caps;\n    font-size: 20px;\n    text-shadow: 1px 1px 2px #9097b7, 0 0 1em blue, 0 0 0.2em blue;\n    }"
+                                    },
+                                    "tag": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "h1"
+                                    },
+                                    "text": {
+                                        "type": "TRANSLATION_LITERAL",
+                                        "value": {
+                                            "code": null,
+                                            "comment": "",
+                                            "message": "We have a Winner!"
+                                        }
+                                    }
+                                },
+                                "slot": null,
+                                "styles": null
+                            },
+                            {
+                                "definition": {
+                                    "id": "4335ba6dca80378f7ba7a67cd6667bec",
+                                    "type": "MACROPONENT"
+                                },
+                                "elementId": "winner_name",
+                                "elementLabel": "Winner Name",
+                                "eventMappings": [
+                                    
+                                ],
+                                "isHidden": {
+                                    "type": "JSON_LITERAL",
+                                    "value": null
+                                },
+                                "preset": null,
+                                "propertyValues": {
+                                    "configAria": {
+                                        "type": "JSON_LITERAL",
+                                        "value": {}
+                                    },
+                                    "css": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "* { align-self: center;\n    color: #dee2fb;\n    font-style: italic;\n    font-variant: small-caps;\n    font-size: 20px;\n    text-shadow: 1px 1px 2px #9097b7, 0 0 1em blue, 0 0 0.2em blue;\n    }"
+                                    },
+                                    "tag": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "h2"
+                                    },
+                                    "text": {
+                                        "binding": {
+                                            "address": [
+                                                "get_game_instance",
+                                                "result",
+                                                "winning_player",
+                                                "_reference",
+                                                "user",
+                                                "displayValue"
+                                            ]
+                                        },
+                                        "type": "DATA_OUTPUT_BINDING"
+                                    }
+                                },
+                                "slot": null,
+                                "styles": null
+                            }
+                        ],
+                        "layout": {
+                            "default": {
+                                "children": null,
+                                "items": [
+                                    {
+                                        "element_id": "winner_label",
+                                        "styles": {}
+                                    },
+                                    {
+                                        "element_id": "winner_name",
+                                        "styles": {}
+                                    }
+                                ],
+                                "root": null,
+                                "rules": null,
+                                "styles": {
+                                    "align-items": "center",
+                                    "flex-direction": "column"
+                                },
+                                "templateId": "5832fd4d53c31010e6bcddeeff7b12db",
+                                "type": "flex"
+                            },
+                            "version": "3.0.0"
+                        }
+                    },
+                    "preset": null,
+                    "propertyValues": {
+                        "ariaRegionHeadingLevel": {
+                            "type": "JSON_LITERAL",
+                            "value": "1"
+                        },
+                        "ariaRegionName": {
+                            "type": "TRANSLATION_LITERAL",
+                            "value": {
+                                "code": null,
+                                "comment": "",
+                                "message": ""
+                            }
+                        },
+                        "ariaRole": {
+                            "type": "JSON_LITERAL",
+                            "value": ""
+                        },
+                        "hideEmptyStateUi": {
+                            "type": "JSON_LITERAL",
+                            "value": true
+                        },
+                        "includeAriaHeading": {
+                            "type": "JSON_LITERAL",
+                            "value": false
+                        },
+                        "slotWrapperBehavior": {
+                            "type": "JSON_LITERAL",
+                            "value": "fullheight"
+                        },
+                        "type": {
+                            "type": "JSON_LITERAL",
+                            "value": "section"
+                        }
+                    },
+                    "slot": null,
+                    "styles": null
+                },
+                {
+                    "definition": {
+                        "id": "d356d14b6e293a3020a244b63d278d8f",
+                        "type": "MACROPONENT"
+                    },
+                    "elementId": "winner_image_container",
+                    "elementLabel": "Winner Image container",
+                    "eventMappings": [
+                        
+                    ],
+                    "isHidden": {
+                        "type": "JSON_LITERAL",
+                        "value": null
+                    },
+                    "overrides": {
+                        "composition": [
+                            {
+                                "definition": {
+                                    "id": "15fe506403f8a98575b6df59008ea8f1",
+                                    "type": "MACROPONENT"
+                                },
+                                "elementId": "win_image",
+                                "elementLabel": "Winner Image ",
+                                "eventMappings": [
+                                    
+                                ],
+                                "isHidden": {
+                                    "type": "JSON_LITERAL",
+                                    "value": null
+                                },
+                                "preset": null,
+                                "propertyValues": {
+                                    "alt": {
+                                        "type": "TRANSLATION_LITERAL",
+                                        "value": {
+                                            "code": null,
+                                            "comment": "",
+                                            "message": ""
+                                        }
+                                    },
+                                    "fit": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "scale-down"
+                                    },
+                                    "height": {
+                                        "type": "JSON_LITERAL",
+                                        "value": 300
+                                    },
+                                    "position": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "center center"
+                                    },
+                                    "sources": {
+                                        "type": "JSON_LITERAL",
+                                        "value": [
+                                            
+                                        ]
+                                    },
+                                    "src": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "/sn_app.png"
+                                    },
+                                    "width": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    }
+                                },
+                                "slot": null,
+                                "styles": null
+                            }
+                        ],
+                        "layout": {
+                            "default": {
+                                "children": null,
+                                "items": [
+                                    {
+                                        "element_id": "win_image",
+                                        "styles": {
+                                            "align-self": "center"
+                                        }
+                                    }
+                                ],
+                                "root": null,
+                                "rules": null,
+                                "styles": {
+                                    "flex-direction": "column"
+                                },
+                                "templateId": "5832fd4d53c31010e6bcddeeff7b12db",
+                                "type": "flex"
+                            },
+                            "version": "3.0.0"
+                        }
+                    },
+                    "preset": null,
+                    "propertyValues": {
+                        "ariaRegionHeadingLevel": {
+                            "type": "JSON_LITERAL",
+                            "value": "1"
+                        },
+                        "ariaRegionName": {
+                            "type": "TRANSLATION_LITERAL",
+                            "value": {
+                                "code": null,
+                                "comment": "",
+                                "message": ""
+                            }
+                        },
+                        "ariaRole": {
+                            "type": "JSON_LITERAL",
+                            "value": ""
+                        },
+                        "hideEmptyStateUi": {
+                            "type": "JSON_LITERAL",
+                            "value": true
+                        },
+                        "includeAriaHeading": {
+                            "type": "JSON_LITERAL",
+                            "value": false
+                        },
+                        "slotWrapperBehavior": {
+                            "type": "JSON_LITERAL",
+                            "value": "fullheight"
+                        },
+                        "type": {
+                            "type": "JSON_LITERAL",
+                            "value": "section"
+                        }
+                    },
+                    "slot": null,
+                    "styles": null
+                }
+            ],
+            "layout": {
+                "default": {
+                    "children": null,
+                    "items": [
+                        {
+                            "element_id": "winner_header",
+                            "styles": {
+                                "background": "#000000"
+                            }
+                        },
+                        {
+                            "element_id": "winner_image_container",
+                            "styles": {
+                                "background": "#000000"
+                            }
+                        }
+                    ],
+                    "root": null,
+                    "rules": null,
+                    "styles": {
+                        "display": "flex",
+                        "flex-direction": "column",
+                        "gap": "0",
+                        "overflow": "hidden"
+                    },
+                    "templateId": "5832fd4d53c31010e6bcddeeff7b12db",
+                    "type": "flex"
+                },
+                "version": "3.0.0"
+            }
+        },
+        "preset": null,
+        "propertyValues": {
+            "bare": {
+                "type": "JSON_LITERAL",
+                "value": true
+            },
+            "defer": {
+                "type": "JSON_LITERAL",
+                "value": true
+            },
+            "disableDismiss": {
+                "type": "JSON_LITERAL",
+                "value": true
+            },
+            "enableResizable": {
+                "type": "JSON_LITERAL",
+                "value": false
+            },
+            "labelledby": {
+                "type": "JSON_LITERAL",
+                "value": ""
+            },
+            "resizableMaxHeight": {
+                "type": "JSON_LITERAL",
+                "value": null
+            },
+            "resizableMaxWidth": {
+                "type": "JSON_LITERAL",
+                "value": null
+            },
+            "resizableMinHeight": {
+                "type": "JSON_LITERAL",
+                "value": 133
+            },
+            "resizableMinWidth": {
+                "type": "JSON_LITERAL",
+                "value": 420
+            },
+            "size": {
+                "type": "JSON_LITERAL",
+                "value": "md"
+            }
+        },
+        "slot": null,
+        "styles": null
     }
 ]</composition>
         <da_relay_models/>
@@ -9184,7 +9663,7 @@
             },
             "returnFields": {
                 "type": "JSON_LITERAL",
-                "value": "current_active_player,current_turn,location_1,location_2,location_3,number_of_turns,player_1,player_2,short_description"
+                "value": "current_active_player,current_turn,location_1,location_2,location_3,number_of_turns,player_1,player_2,short_description,winning_player,game_over,winning_player.user"
             },
             "returnTableMetadata": {
                 "type": "JSON_LITERAL",
@@ -9195,7 +9674,7 @@
                 "value": "x_168987_flow_de_0_game_instance"
             }
         },
-        "readEvaluationMode": "EAGER"
+        "readEvaluationMode": "EXPLICIT"
     },
     {
         "definition": {
@@ -11455,6 +11934,319 @@
             }
         },
         "readEvaluationMode": "EAGER"
+    },
+    {
+        "definition": {
+            "id": "bba46ec077223010f5025df90f5a9920",
+            "type": "CLIENT_STATE"
+        },
+        "dependencies": {},
+        "elementId": "game_instance_watcher",
+        "elementLabel": "Game Instance Watcher",
+        "eventMappings": [
+            {
+                "eventMappingId": "clvrfddddnfaaaafqddbhhrmffxjjeggjjcc",
+                "isConfiguration": false,
+                "offRowStorageId": null,
+                "sourceEventApiName": "sn_record_watcher.RECORD_WATCHER#MESSAGE_RECEIVED",
+                "sourceEventCorrelationId": null,
+                "sourceEventDefinition": {
+                    "apiName": "sn_record_watcher.RECORD_WATCHER#MESSAGE_RECEIVED",
+                    "id": null,
+                    "type": "UXEVENT"
+                },
+                "sourceEventSysId": null,
+                "targets": [
+                    {
+                        "broker": null,
+                        "clientScript": null,
+                        "conditional": null,
+                        "declarativeAction": null,
+                        "event": null,
+                        "operation": {
+                            "dataBrokerId": "9664d48053461010cbc2ddeeff7b128e",
+                            "operationName": "REFRESH",
+                            "parentResourceId": "get_game_instance",
+                            "payload": {
+                                "type": "JSON_LITERAL",
+                                "value": {}
+                            }
+                        },
+                        "targetId": "clvrfddddnfaaaafrddbhhrffccaxiibwd",
+                        "type": "DATABROKER_OP"
+                    },
+                    {
+                        "broker": null,
+                        "clientScript": null,
+                        "conditional": null,
+                        "declarativeAction": null,
+                        "event": {
+                            "apiName": "x_168987_flow_de_0.MODAL_SELECTED_RELAY_5db3fe4a932f3110cd4e7d532bba10d8",
+                            "payload": {
+                                "type": "JSON_LITERAL",
+                                "value": {
+                                    "bare": true,
+                                    "displayOptions": null,
+                                    "modalId": "[component-id$='wait_modal']",
+                                    "showModal": false,
+                                    "viewportElementId": null,
+                                    "viewportFields": null,
+                                    "viewportParams": null,
+                                    "viewportRoute": null
+                                }
+                            },
+                            "sysId": "4ce41357935d4210cd4e7d532bba10ad"
+                        },
+                        "operation": null,
+                        "targetId": "clvrfpohyaabbbbaddbhhrrvmsfvkbb",
+                        "type": "EVENT"
+                    },
+                    {
+                        "broker": null,
+                        "clientScript": null,
+                        "conditional": null,
+                        "declarativeAction": null,
+                        "event": {
+                            "apiName": "x_168987_flow_de_0.MODAL_SELECTED_RELAY_5db3fe4a932f3110cd4e7d532bba10d8",
+                            "payload": {
+                                "container": {
+                                    "bare": {
+                                        "type": "JSON_LITERAL",
+                                        "value": true
+                                    },
+                                    "displayOptions": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "modalId": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "[component-id$='winner_modal']"
+                                    },
+                                    "showModal": {
+                                        "binding": {
+                                            "address": [
+                                                "get_game_instance",
+                                                "result",
+                                                "game_over",
+                                                "value"
+                                            ]
+                                        },
+                                        "type": "DATA_OUTPUT_BINDING"
+                                    },
+                                    "viewportElementId": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "viewportFields": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "viewportParams": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "viewportRoute": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    }
+                                },
+                                "type": "MAP_CONTAINER"
+                            },
+                            "sysId": "4ce41357935d4210cd4e7d532bba10ad"
+                        },
+                        "operation": null,
+                        "targetId": "clvrjaawmyaaaallddbhhrjjjyeabbaap",
+                        "type": "EVENT"
+                    }
+                ]
+            }
+        ],
+        "inputValues": {
+            "filterConditions": {
+                "transform": {
+                    "operands": {
+                        "container": [
+                            {
+                                "type": "JSON_LITERAL",
+                                "value": "sys_id="
+                            },
+                            {
+                                "binding": {
+                                    "address": [
+                                        "gameInstance"
+                                    ],
+                                    "category": "props"
+                                },
+                                "type": "CONTEXT_BINDING"
+                            }
+                        ],
+                        "type": "LIST_CONTAINER"
+                    },
+                    "operator": "CONCAT"
+                },
+                "type": "CLIENT_TRANSFORM"
+            },
+            "subscribe": {
+                "type": "JSON_LITERAL",
+                "value": true
+            },
+            "table": {
+                "type": "JSON_LITERAL",
+                "value": "x_168987_flow_de_0_game_instance"
+            }
+        },
+        "readEvaluationMode": "EAGER"
+    },
+    {
+        "definition": {
+            "id": "bba46ec077223010f5025df90f5a9920",
+            "type": "CLIENT_STATE"
+        },
+        "dependencies": {},
+        "elementId": "game_over_watcher",
+        "elementLabel": "Game over Watcher",
+        "eventMappings": [
+            {
+                "eventMappingId": "clvrkbaabeaaaaggjjddbhhrphbbiiimva",
+                "isConfiguration": false,
+                "offRowStorageId": null,
+                "sourceEventApiName": "sn_record_watcher.RECORD_WATCHER#MESSAGE_RECEIVED",
+                "sourceEventCorrelationId": null,
+                "sourceEventDefinition": {
+                    "apiName": "sn_record_watcher.RECORD_WATCHER#MESSAGE_RECEIVED",
+                    "id": null,
+                    "type": "UXEVENT"
+                },
+                "sourceEventSysId": null,
+                "targets": [
+                    {
+                        "broker": null,
+                        "clientScript": null,
+                        "conditional": null,
+                        "declarativeAction": null,
+                        "event": {
+                            "apiName": "x_168987_flow_de_0.MODAL_SELECTED_RELAY_5db3fe4a932f3110cd4e7d532bba10d8",
+                            "payload": {
+                                "type": "JSON_LITERAL",
+                                "value": {
+                                    "bare": true,
+                                    "displayOptions": null,
+                                    "modalId": "[component-id$='wait_modal']",
+                                    "showModal": null,
+                                    "viewportElementId": null,
+                                    "viewportFields": null,
+                                    "viewportParams": null,
+                                    "viewportRoute": null
+                                }
+                            },
+                            "sysId": "4ce41357935d4210cd4e7d532bba10ad"
+                        },
+                        "operation": null,
+                        "targetId": "clvrkbaabeaaaaggaddbhhrccddsgohhsz",
+                        "type": "EVENT"
+                    },
+                    {
+                        "broker": null,
+                        "clientScript": null,
+                        "conditional": null,
+                        "declarativeAction": null,
+                        "event": {
+                            "apiName": "x_168987_flow_de_0.MODAL_SELECTED_RELAY_5db3fe4a932f3110cd4e7d532bba10d8",
+                            "payload": {
+                                "type": "JSON_LITERAL",
+                                "value": {
+                                    "bare": true,
+                                    "displayOptions": null,
+                                    "modalId": "[component-id$='winner_modal']",
+                                    "showModal": true,
+                                    "viewportElementId": null,
+                                    "viewportFields": null,
+                                    "viewportParams": null,
+                                    "viewportRoute": null
+                                }
+                            },
+                            "sysId": "4ce41357935d4210cd4e7d532bba10ad"
+                        },
+                        "operation": null,
+                        "targetId": "clvrkbjjfftaaaaggwddbhhruhmkqubo",
+                        "type": "EVENT"
+                    },
+                    {
+                        "broker": null,
+                        "clientScript": null,
+                        "conditional": null,
+                        "declarativeAction": null,
+                        "event": {
+                            "apiName": "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
+                            "payload": {
+                                "container": {
+                                    "propName": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "winner_name"
+                                    },
+                                    "value": {
+                                        "binding": {
+                                            "address": [
+                                                "get_game_instance",
+                                                "result",
+                                                "game_over",
+                                                "winning_player",
+                                                "displayValue"
+                                            ]
+                                        },
+                                        "type": "DATA_OUTPUT_BINDING"
+                                    }
+                                },
+                                "type": "MAP_CONTAINER"
+                            },
+                            "sysId": "32408b42ff7a10109046e490703bf176"
+                        },
+                        "operation": null,
+                        "targetId": "clvrkdjjwgaaaahhnddbhhrjiuhhhyjff",
+                        "type": "EVENT"
+                    }
+                ]
+            }
+        ],
+        "inputValues": {
+            "filterConditions": {
+                "transform": {
+                    "operands": {
+                        "container": [
+                            {
+                                "type": "JSON_LITERAL",
+                                "value": "sys_id="
+                            },
+                            {
+                                "binding": {
+                                    "address": [
+                                        "gameInstance"
+                                    ],
+                                    "category": "props"
+                                },
+                                "type": "CONTEXT_BINDING"
+                            },
+                            {
+                                "type": "JSON_LITERAL",
+                                "value": "^game_over=true"
+                            }
+                        ],
+                        "type": "LIST_CONTAINER"
+                    },
+                    "operator": "CONCAT"
+                },
+                "type": "CLIENT_TRANSFORM"
+            },
+            "subscribe": {
+                "type": "JSON_LITERAL",
+                "value": true
+            },
+            "table": {
+                "type": "JSON_LITERAL",
+                "value": "x_168987_flow_de_0_game_instance"
+            }
+        },
+        "readEvaluationMode": "EAGER"
     }
 ]</data>
         <description/>
@@ -11527,6 +12319,9 @@
     "default": {
         "children": null,
         "items": [
+            {
+                "element_id": "custom_1"
+            },
             {
                 "element_id": "game_state",
                 "styles": {
@@ -11620,6 +12415,9 @@
   "message" : "Enter a label",
   "comment" : ""
 }, {
+  "message" : "Game Instance State",
+  "comment" : ""
+}, {
   "message" : "Number of Turns",
   "comment" : ""
 }, {
@@ -11660,6 +12458,9 @@
   "comment" : ""
 }, {
   "message" : "Thinking, Please Wait",
+  "comment" : ""
+}, {
+  "message" : "We have a Winner!",
   "comment" : ""
 } ]</required_translations>
         <root_component/>
@@ -11704,20 +12505,35 @@
         "name": "selected_card_unplayable",
         "shape": "",
         "valueType": "string"
+    },
+    {
+        "initialValue": {
+            "type": "JSON_LITERAL",
+            "value": ""
+        },
+        "name": "winner_name",
+        "shape": "",
+        "valueType": "string"
+    },
+    {
+        "initialValue": null,
+        "name": "winning_player",
+        "shape": "",
+        "valueType": "string"
     }
 ]</state_properties>
         <sys_class_name>sys_ux_macroponent</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-01-07 02:09:17</sys_created_on>
         <sys_id>5db3fe4a932f3110cd4e7d532bba10d8</sys_id>
-        <sys_mod_count>548</sys_mod_count>
+        <sys_mod_count>582</sys_mod_count>
         <sys_name>Default</sys_name>
         <sys_package display_value="Flow Designer Marvel SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_update_name>sys_ux_macroponent_5db3fe4a932f3110cd4e7d532bba10d8</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-05-02 11:47:57</sys_updated_on>
+        <sys_updated_on>2024-05-04 04:01:18</sys_updated_on>
     </sys_ux_macroponent>
     <sys_translated_text action="delete_multiple" query="documentkey=5db3fe4a932f3110cd4e7d532bba10d8"/>
 </record_update>

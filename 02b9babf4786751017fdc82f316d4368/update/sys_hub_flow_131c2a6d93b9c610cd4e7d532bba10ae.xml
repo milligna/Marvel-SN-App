@@ -5,14 +5,11 @@
         <active>true</active>
         <annotation/>
         <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=66843000,viewActivatedIn=naturalLanguage</attributes>
-        <authored_on_release_version>25000</authored_on_release_version>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
         <copied_from>b744e2ad9379c610cd4e7d532bba10d5</copied_from>
         <copied_from_name>PLAY-SUB: End the turn OLD</copied_from_name>
         <description/>
-        <flow_priority/>
-        <generation_source/>
         <internal_name>playsub_end_turn</internal_name>
         <label_cache>[{"name":"b2e3adb2-6d0b-40b7-94f3-25e506d2baf7.Record","label":"13 - Look Up Record➛Game Card Instance Record","reference":"x_168987_flow_de_0_card_instance","reference_display":"Game Card Instance","type":"reference","base_type":"reference","usedInstances":{},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.game_instance.player_2","label":"Input➛Game Instance➛Player 2","reference":"x_168987_flow_de_0_player_session","reference_display":"Player Session","type":"reference","base_type":"reference","usedInstances":{"b18a2213-c6ac-4533-b0b6-eac4b65cbaab":["record"]}},{"name":"991b5182-7846-4308-af40-125dd968605b.Record","label":"12 - Look Up Record➛Game Card Instance Record","reference":"x_168987_flow_de_0_card_instance","reference_display":"Game Card Instance","type":"reference","base_type":"reference","usedInstances":{},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.game_instance.number_of_turns","label":"Input➛Game Instance➛Number of Turns","reference":"","reference_display":"Number of Turns","type":"integer","base_type":"integer","usedInstances":{}},{"name":"subflow.game_instance.current_turn","label":"Input➛Game Instance➛Current Turn","reference":"","reference_display":"Current Turn","type":"integer","base_type":"integer","usedInstances":{}},{"name":"subflow.game_instance","label":"Input➛Game Instance","reference":"x_168987_flow_de_0_game_instance","reference_display":"Game Instance","type":"reference","base_type":"reference","usedInstances":{"d56c7661-ac54-4199-a90e-69679026366d":["location"],"e1c4ce21-cee0-42cb-af38-b4422e66ae3a":["location"]}},{"name":"subflow.game_instance.player_1","label":"Input➛Game Instance➛Player 1","reference":"x_168987_flow_de_0_player_session","reference_display":"Player Session","type":"reference","base_type":"reference","usedInstances":{"f8bed1e1-bded-4918-bd42-a824ffccb357":["record"]}},{"name":"subflow.game_instance.location_2","label":"Input➛Game Instance➛Location 2","reference":"x_168987_flow_de_0_location_instance","reference_display":"Game Location instance","type":"reference","base_type":"reference","usedInstances":{"e1c4ce21-cee0-42cb-af38-b4422e66ae3a":["location"],"eb7b57d9-3b5d-45e1-87fc-36fdc9adce06":["location"]}},{"name":"subflow.game_instance.location_3","label":"Input➛Game Instance➛Location 3","reference":"x_168987_flow_de_0_location_instance","reference_display":"Game Location instance","type":"reference","base_type":"reference","usedInstances":{"d56c7661-ac54-4199-a90e-69679026366d":["location"],"89cc998e-c055-4748-8f9c-bafaac0989a8":["location"]}},{"name":"subflow.game_instance.location_1","label":"Input➛Game Instance➛Location 1","reference":"x_168987_flow_de_0_location_instance","reference_display":"Game Location instance","type":"reference","base_type":"reference","usedInstances":{"d56c7661-ac54-4199-a90e-69679026366d":["location"],"e1c4ce21-cee0-42cb-af38-b4422e66ae3a":["location"],"eb7b57d9-3b5d-45e1-87fc-36fdc9adce06":["location"],"89cc998e-c055-4748-8f9c-bafaac0989a8":["location"],"af346f55-a610-4efd-8595-dbbef1358ea5":["location"],"817cd9c2-e733-4ca1-8c89-481884986eef":["location"]}},{"name":"66bbb1c5-1eb9-41c4-b274-4767ea5430f6.record.current_turn","label":"7 - Update Record➛Game Instance Record➛Current Turn","reference":"","reference_display":"Current Turn","type":"integer","base_type":"integer","parent_table_name":"x_168987_flow_de_0_game_instance","column_name":"current_turn","usedInstances":{"f8bed1e1-bded-4918-bd42-a824ffccb357":["current_energy"],"b18a2213-c6ac-4533-b0b6-eac4b65cbaab":["current_energy"]}}]</label_cache>
         <master_snapshot>3c4cae6d93b9c610cd4e7d532bba1069</master_snapshot>
@@ -33,7 +30,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>131c2a6d93b9c610cd4e7d532bba10ae</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>PLAY-SUB: End turn</sys_name>
         <sys_overrides/>
         <sys_package display_value="Flow Designer Marvel SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
@@ -41,7 +38,7 @@
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_update_name>sys_hub_flow_131c2a6d93b9c610cd4e7d532bba10ae</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-27 03:14:35</sys_updated_on>
+        <sys_updated_on>2024-05-02 13:41:38</sys_updated_on>
         <type>subflow</type>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=131c2a6d93b9c610cd4e7d532bba10ae"/>
@@ -158,17 +155,16 @@
         <comment>Deal next Player 1 card</comment>
         <display_text/>
         <flow display_value="PLAY-SUB: End turn">131c2a6d93b9c610cd4e7d532bba10ae</flow>
-        <generation_source/>
         <order>14</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-04-26 08:40:26</sys_created_on>
         <sys_id>271c6a6d93b9c610cd4e7d532bba101a</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>16</sys_mod_count>
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2024-04-27 03:22:04</sys_updated_on>
+        <sys_updated_on>2024-05-03 11:12:51</sys_updated_on>
         <ui_id>9d7daf63-53a2-439e-9b18-f008473e295b</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=271c6a6d93b9c610cd4e7d532bba101a"/>
@@ -248,17 +244,16 @@
         <comment>Reveal location 2</comment>
         <display_text/>
         <flow display_value="PLAY-SUB: End turn">131c2a6d93b9c610cd4e7d532bba10ae</flow>
-        <generation_source/>
         <order>9</order>
         <parent_ui_id>11b8338c-f69a-4cbe-90d2-2adeca0ab021</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-04-26 08:40:26</sys_created_on>
         <sys_id>5f1c2a6d93b9c610cd4e7d532bba10d4</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>16</sys_mod_count>
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2024-04-27 03:22:04</sys_updated_on>
+        <sys_updated_on>2024-05-03 11:12:51</sys_updated_on>
         <ui_id>863bdae4-23ac-402c-9485-927151ad3b68</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=5f1c2a6d93b9c610cd4e7d532bba10d4"/>
@@ -338,17 +333,16 @@
         <comment>Play next Player 2 card</comment>
         <display_text/>
         <flow display_value="PLAY-SUB: End turn">131c2a6d93b9c610cd4e7d532bba10ae</flow>
-        <generation_source/>
         <order>15</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-04-26 08:40:26</sys_created_on>
         <sys_id>671c6a6d93b9c610cd4e7d532bba1020</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>16</sys_mod_count>
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2024-04-27 03:22:04</sys_updated_on>
+        <sys_updated_on>2024-05-03 11:12:51</sys_updated_on>
         <ui_id>f2d28743-07e6-4495-953b-958659d0c1d7</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=671c6a6d93b9c610cd4e7d532bba1020"/>
@@ -427,17 +421,16 @@
         <comment/>
         <display_text/>
         <flow display_value="PLAY-SUB: End turn">131c2a6d93b9c610cd4e7d532bba10ae</flow>
-        <generation_source/>
         <order>18</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-04-26 08:40:27</sys_created_on>
         <sys_id>6b1c6a6d93b9c610cd4e7d532bba103e</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>16</sys_mod_count>
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2024-04-27 03:22:04</sys_updated_on>
+        <sys_updated_on>2024-05-03 11:12:51</sys_updated_on>
         <ui_id>5ace5852-3a67-47b6-ade5-4f787a17a84c</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=6b1c6a6d93b9c610cd4e7d532bba103e"/>
@@ -467,17 +460,16 @@
         <comment>Set current turn and reset active player</comment>
         <display_text/>
         <flow display_value="PLAY-SUB: End turn">131c2a6d93b9c610cd4e7d532bba10ae</flow>
-        <generation_source/>
         <order>7</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-04-26 08:40:26</sys_created_on>
         <sys_id>9f1c2a6d93b9c610cd4e7d532bba10cd</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>16</sys_mod_count>
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2024-04-27 03:22:04</sys_updated_on>
+        <sys_updated_on>2024-05-03 11:12:51</sys_updated_on>
         <ui_id>66bbb1c5-1eb9-41c4-b274-4767ea5430f6</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=9f1c2a6d93b9c610cd4e7d532bba10cd"/>
@@ -543,17 +535,16 @@
         <comment>Reveal location 3</comment>
         <display_text/>
         <flow display_value="PLAY-SUB: End turn">131c2a6d93b9c610cd4e7d532bba10ae</flow>
-        <generation_source/>
         <order>11</order>
         <parent_ui_id>399865c5-47ba-4b37-91fa-5f7afe6df38a</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-04-26 08:40:26</sys_created_on>
         <sys_id>9f1c2a6d93b9c610cd4e7d532bba10da</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>16</sys_mod_count>
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2024-04-27 03:22:04</sys_updated_on>
+        <sys_updated_on>2024-05-03 11:12:51</sys_updated_on>
         <ui_id>c6561c30-2a14-4741-b311-86a7508b1e7b</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=9f1c2a6d93b9c610cd4e7d532bba10da"/>
@@ -633,17 +624,16 @@
         <comment>get next Player 2 Card from Deck</comment>
         <display_text/>
         <flow display_value="PLAY-SUB: End turn">131c2a6d93b9c610cd4e7d532bba10ae</flow>
-        <generation_source/>
         <order>13</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-04-26 08:40:26</sys_created_on>
         <sys_id>a31c2a6d93b9c610cd4e7d532bba10ee</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>16</sys_mod_count>
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2024-04-27 03:22:04</sys_updated_on>
+        <sys_updated_on>2024-05-03 11:12:51</sys_updated_on>
         <ui_id>b2e3adb2-6d0b-40b7-94f3-25e506d2baf7</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=a31c2a6d93b9c610cd4e7d532bba10ee"/>
@@ -749,17 +739,16 @@
         <comment>P1 Session to Started</comment>
         <display_text/>
         <flow display_value="PLAY-SUB: End turn">131c2a6d93b9c610cd4e7d532bba10ae</flow>
-        <generation_source/>
         <order>16</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-04-26 08:40:26</sys_created_on>
         <sys_id>a71c6a6d93b9c610cd4e7d532bba1026</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>16</sys_mod_count>
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2024-04-27 03:22:04</sys_updated_on>
+        <sys_updated_on>2024-05-03 11:12:51</sys_updated_on>
         <ui_id>f8bed1e1-bded-4918-bd42-a824ffccb357</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=a71c6a6d93b9c610cd4e7d532bba1026"/>
@@ -839,17 +828,16 @@
         <comment>get next Player 1 Card from Deck</comment>
         <display_text/>
         <flow display_value="PLAY-SUB: End turn">131c2a6d93b9c610cd4e7d532bba10ae</flow>
-        <generation_source/>
         <order>12</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-04-26 08:40:26</sys_created_on>
         <sys_id>df1c2a6d93b9c610cd4e7d532bba10e3</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>16</sys_mod_count>
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2024-04-27 03:22:04</sys_updated_on>
+        <sys_updated_on>2024-05-03 11:12:51</sys_updated_on>
         <ui_id>991b5182-7846-4308-af40-125dd968605b</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=df1c2a6d93b9c610cd4e7d532bba10e3"/>
@@ -955,17 +943,16 @@
         <comment>P2 session to Started</comment>
         <display_text/>
         <flow display_value="PLAY-SUB: End turn">131c2a6d93b9c610cd4e7d532bba10ae</flow>
-        <generation_source/>
         <order>17</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-04-26 08:40:27</sys_created_on>
         <sys_id>e71c6a6d93b9c610cd4e7d532bba102c</sys_id>
-        <sys_mod_count>16</sys_mod_count>
+        <sys_mod_count>18</sys_mod_count>
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2024-04-27 03:22:04</sys_updated_on>
+        <sys_updated_on>2024-05-03 11:12:51</sys_updated_on>
         <ui_id>b18a2213-c6ac-4533-b0b6-eac4b65cbaab</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=e71c6a6d93b9c610cd4e7d532bba102c"/>
@@ -1042,7 +1029,6 @@
         <comment>Location 3</comment>
         <display_text/>
         <flow display_value="PLAY-SUB: End turn">131c2a6d93b9c610cd4e7d532bba10ae</flow>
-        <generation_source/>
         <inputs/>
         <inputs/>
         <order>3</order>
@@ -1086,18 +1072,6 @@
         <sys_updated_on>2024-04-26 08:40:27</sys_updated_on>
         <table>var__m_sys_hub_flow_input_0f81696b93998210cd4e7d532bba1028</table>
         <value>{{subflow.game_instance.location_3}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>wait_for_completion</field>
-        <id>2b1c6a6d93b9c610cd4e7d532bba1066</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-26 08:40:27</sys_created_on>
-        <sys_id>fb1c6a6d93b9c610cd4e7d532bba1070</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-26 08:40:27</sys_updated_on>
-        <table>var__m_sys_hub_sub_flow_instance_inputs_2b1c6a6d93b9c610cd4e7d532bba1066</table>
-        <value/>
     </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_sub_flow_instance_inputs_2b1c6a6d93b9c610cd4e7d532bba1066^id=2b1c6a6d93b9c610cd4e7d532bba1066"/>
     <sys_hub_sub_flow_instance_inputs action="delete_multiple" query="model=2b1c6a6d93b9c610cd4e7d532bba1066^sys_idNOT INe31c6a6d93b9c610cd4e7d532bba1067"/>
@@ -1190,7 +1164,6 @@
         <comment>Location 2</comment>
         <display_text/>
         <flow display_value="PLAY-SUB: End turn">131c2a6d93b9c610cd4e7d532bba10ae</flow>
-        <generation_source/>
         <inputs/>
         <inputs/>
         <order>2</order>
@@ -1234,18 +1207,6 @@
         <sys_updated_on>2024-04-26 08:40:27</sys_updated_on>
         <table>var__m_sys_hub_flow_input_0f81696b93998210cd4e7d532bba1028</table>
         <value>{{subflow.game_instance.location_2}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>wait_for_completion</field>
-        <id>af1c6a6d93b9c610cd4e7d532bba105b</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-26 08:40:27</sys_created_on>
-        <sys_id>631c6a6d93b9c610cd4e7d532bba1066</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-26 08:40:27</sys_updated_on>
-        <table>var__m_sys_hub_sub_flow_instance_inputs_af1c6a6d93b9c610cd4e7d532bba105b</table>
-        <value/>
     </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_sub_flow_instance_inputs_af1c6a6d93b9c610cd4e7d532bba105b^id=af1c6a6d93b9c610cd4e7d532bba105b"/>
     <sys_hub_sub_flow_instance_inputs action="delete_multiple" query="model=af1c6a6d93b9c610cd4e7d532bba105b^sys_idNOT IN6b1c6a6d93b9c610cd4e7d532bba105c"/>
@@ -1338,7 +1299,6 @@
         <comment/>
         <display_text/>
         <flow display_value="PLAY-SUB: End turn">131c2a6d93b9c610cd4e7d532bba10ae</flow>
-        <generation_source/>
         <inputs/>
         <inputs/>
         <order>5</order>
@@ -1382,18 +1342,6 @@
         <sys_updated_on>2024-04-26 08:40:27</sys_updated_on>
         <table>var__m_sys_hub_flow_input_24a0582b93d18210cd4e7d532bba105e</table>
         <value>{{subflow.game_instance}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>wait_for_completion</field>
-        <id>b31c6a6d93b9c610cd4e7d532bba1071</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-26 08:40:27</sys_created_on>
-        <sys_id>bb1c6a6d93b9c610cd4e7d532bba107b</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-26 08:40:27</sys_updated_on>
-        <table>var__m_sys_hub_sub_flow_instance_inputs_b31c6a6d93b9c610cd4e7d532bba1071</table>
-        <value/>
     </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_sub_flow_instance_inputs_b31c6a6d93b9c610cd4e7d532bba1071^id=b31c6a6d93b9c610cd4e7d532bba1071"/>
     <sys_hub_sub_flow_instance_inputs action="delete_multiple" query="model=b31c6a6d93b9c610cd4e7d532bba1071^sys_idNOT IN7f1c6a6d93b9c610cd4e7d532bba1071"/>
@@ -1486,7 +1434,6 @@
         <comment>Location 1</comment>
         <display_text/>
         <flow display_value="PLAY-SUB: End turn">131c2a6d93b9c610cd4e7d532bba10ae</flow>
-        <generation_source/>
         <inputs/>
         <inputs/>
         <order>1</order>
@@ -1530,18 +1477,6 @@
         <sys_updated_on>2024-04-26 08:40:27</sys_updated_on>
         <table>var__m_sys_hub_flow_input_0f81696b93998210cd4e7d532bba1028</table>
         <value>{{subflow.game_instance.location_1}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>wait_for_completion</field>
-        <id>e31c6a6d93b9c610cd4e7d532bba1040</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-26 08:40:27</sys_created_on>
-        <sys_id>e71c6a6d93b9c610cd4e7d532bba105b</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-26 08:40:27</sys_updated_on>
-        <table>var__m_sys_hub_sub_flow_instance_inputs_e31c6a6d93b9c610cd4e7d532bba1040</table>
-        <value/>
     </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_sub_flow_instance_inputs_e31c6a6d93b9c610cd4e7d532bba1040^id=e31c6a6d93b9c610cd4e7d532bba1040"/>
     <sys_hub_sub_flow_instance_inputs action="delete_multiple" query="model=e31c6a6d93b9c610cd4e7d532bba1040^sys_idNOT IN6b1c6a6d93b9c610cd4e7d532bba1041"/>
@@ -1642,7 +1577,6 @@
         <flow display_value="PLAY-SUB: End turn">131c2a6d93b9c610cd4e7d532bba10ae</flow>
         <flow_variable/>
         <flow_variables_assigned/>
-        <generation_source/>
         <inputs/>
         <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
         <order>6</order>
@@ -1676,7 +1610,6 @@
         <flow display_value="PLAY-SUB: End turn">131c2a6d93b9c610cd4e7d532bba10ae</flow>
         <flow_variable/>
         <flow_variables_assigned/>
-        <generation_source/>
         <inputs/>
         <inputs/>
         <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
@@ -1750,7 +1683,6 @@
         <flow display_value="PLAY-SUB: End turn">131c2a6d93b9c610cd4e7d532bba10ae</flow>
         <flow_variable/>
         <flow_variables_assigned/>
-        <generation_source/>
         <inputs/>
         <inputs/>
         <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
@@ -1824,7 +1756,6 @@
         <flow display_value="PLAY-SUB: End turn">131c2a6d93b9c610cd4e7d532bba10ae</flow>
         <flow_variable/>
         <flow_variables_assigned/>
-        <generation_source/>
         <inputs/>
         <inputs/>
         <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
@@ -1936,11 +1867,11 @@
         <sys_created_on>2024-04-26 08:40:25</sys_created_on>
         <sys_id>571c2a6d93b9c610cd4e7d532bba10b8</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Game Instance</sys_name>
         <sys_package display_value="Flow Designer Marvel SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_131c2a6d93b9c610cd4e7d532bba10ae_game_instance_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-04-26 08:40:25</sys_updated_on>
         <url/>
@@ -1955,13 +1886,11 @@
         <active>true</active>
         <annotation/>
         <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=102000,viewActivatedIn=naturalLanguage</attributes>
-        <authored_on_release_version>25000</authored_on_release_version>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
         <copied_from>b744e2ad9379c610cd4e7d532bba10d5</copied_from>
         <copied_from_name/>
         <description/>
-        <flow_priority/>
         <internal_name>playsub_end_turn</internal_name>
         <label_cache>[{"name":"b2e3adb2-6d0b-40b7-94f3-25e506d2baf7.Record","label":"13 - Look Up Record➛Game Card Instance Record","reference":"x_168987_flow_de_0_card_instance","reference_display":"Game Card Instance","type":"reference","base_type":"reference","usedInstances":{},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.game_instance.player_2","label":"Input➛Game Instance➛Player 2","reference":"x_168987_flow_de_0_player_session","reference_display":"Player Session","type":"reference","base_type":"reference","usedInstances":{"b18a2213-c6ac-4533-b0b6-eac4b65cbaab":["record"]}},{"name":"991b5182-7846-4308-af40-125dd968605b.Record","label":"12 - Look Up Record➛Game Card Instance Record","reference":"x_168987_flow_de_0_card_instance","reference_display":"Game Card Instance","type":"reference","base_type":"reference","usedInstances":{},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.game_instance.number_of_turns","label":"Input➛Game Instance➛Number of Turns","reference":"","reference_display":"Number of Turns","type":"integer","base_type":"integer","usedInstances":{}},{"name":"subflow.game_instance.current_turn","label":"Input➛Game Instance➛Current Turn","reference":"","reference_display":"Current Turn","type":"integer","base_type":"integer","usedInstances":{}},{"name":"subflow.game_instance","label":"Input➛Game Instance","reference":"x_168987_flow_de_0_game_instance","reference_display":"Game Instance","type":"reference","base_type":"reference","usedInstances":{"d56c7661-ac54-4199-a90e-69679026366d":["location"],"e1c4ce21-cee0-42cb-af38-b4422e66ae3a":["location"]}},{"name":"subflow.game_instance.player_1","label":"Input➛Game Instance➛Player 1","reference":"x_168987_flow_de_0_player_session","reference_display":"Player Session","type":"reference","base_type":"reference","usedInstances":{"f8bed1e1-bded-4918-bd42-a824ffccb357":["record"]}},{"name":"subflow.game_instance.location_2","label":"Input➛Game Instance➛Location 2","reference":"x_168987_flow_de_0_location_instance","reference_display":"Game Location instance","type":"reference","base_type":"reference","usedInstances":{"e1c4ce21-cee0-42cb-af38-b4422e66ae3a":["location"],"eb7b57d9-3b5d-45e1-87fc-36fdc9adce06":["location"]}},{"name":"subflow.game_instance.location_3","label":"Input➛Game Instance➛Location 3","reference":"x_168987_flow_de_0_location_instance","reference_display":"Game Location instance","type":"reference","base_type":"reference","usedInstances":{"d56c7661-ac54-4199-a90e-69679026366d":["location"],"89cc998e-c055-4748-8f9c-bafaac0989a8":["location"]}},{"name":"subflow.game_instance.location_1","label":"Input➛Game Instance➛Location 1","reference":"x_168987_flow_de_0_location_instance","reference_display":"Game Location instance","type":"reference","base_type":"reference","usedInstances":{"d56c7661-ac54-4199-a90e-69679026366d":["location"],"e1c4ce21-cee0-42cb-af38-b4422e66ae3a":["location"],"eb7b57d9-3b5d-45e1-87fc-36fdc9adce06":["location"],"89cc998e-c055-4748-8f9c-bafaac0989a8":["location"],"af346f55-a610-4efd-8595-dbbef1358ea5":["location"],"817cd9c2-e733-4ca1-8c89-481884986eef":["location"]}},{"name":"66bbb1c5-1eb9-41c4-b274-4767ea5430f6.record.current_turn","label":"7 - Update Record➛Game Instance Record➛Current Turn","reference":"","reference_display":"Current Turn","type":"integer","base_type":"integer","parent_table_name":"x_168987_flow_de_0_game_instance","column_name":"current_turn","usedInstances":{"f8bed1e1-bded-4918-bd42-a824ffccb357":["current_energy"],"b18a2213-c6ac-4533-b0b6-eac4b65cbaab":["current_energy"]}}]</label_cache>
         <master>true</master>
@@ -2105,7 +2034,6 @@
         <comment>Deal next Player 1 card</comment>
         <display_text/>
         <flow display_value="PLAY-SUB: End turn">3c4cae6d93b9c610cd4e7d532bba1069</flow>
-        <generation_source/>
         <order>14</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -2195,7 +2123,6 @@
         <comment>Play next Player 2 card</comment>
         <display_text/>
         <flow display_value="PLAY-SUB: End turn">3c4cae6d93b9c610cd4e7d532bba1069</flow>
-        <generation_source/>
         <order>15</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -2285,7 +2212,6 @@
         <comment>Reveal location 2</comment>
         <display_text/>
         <flow display_value="PLAY-SUB: End turn">3c4cae6d93b9c610cd4e7d532bba1069</flow>
-        <generation_source/>
         <order>9</order>
         <parent_ui_id>11b8338c-f69a-4cbe-90d2-2adeca0ab021</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -2374,7 +2300,6 @@
         <comment/>
         <display_text/>
         <flow display_value="PLAY-SUB: End turn">3c4cae6d93b9c610cd4e7d532bba1069</flow>
-        <generation_source/>
         <order>18</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -2414,7 +2339,6 @@
         <comment>Reveal location 3</comment>
         <display_text/>
         <flow display_value="PLAY-SUB: End turn">3c4cae6d93b9c610cd4e7d532bba1069</flow>
-        <generation_source/>
         <order>11</order>
         <parent_ui_id>399865c5-47ba-4b37-91fa-5f7afe6df38a</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -2504,7 +2428,6 @@
         <comment>P1 Session to Started</comment>
         <display_text/>
         <flow display_value="PLAY-SUB: End turn">3c4cae6d93b9c610cd4e7d532bba1069</flow>
-        <generation_source/>
         <order>16</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -2594,7 +2517,6 @@
         <comment>get next Player 1 Card from Deck</comment>
         <display_text/>
         <flow display_value="PLAY-SUB: End turn">3c4cae6d93b9c610cd4e7d532bba1069</flow>
-        <generation_source/>
         <order>12</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -2710,7 +2632,6 @@
         <comment>get next Player 2 Card from Deck</comment>
         <display_text/>
         <flow display_value="PLAY-SUB: End turn">3c4cae6d93b9c610cd4e7d532bba1069</flow>
-        <generation_source/>
         <order>13</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -2826,7 +2747,6 @@
         <comment>P2 session to Started</comment>
         <display_text/>
         <flow display_value="PLAY-SUB: End turn">3c4cae6d93b9c610cd4e7d532bba1069</flow>
-        <generation_source/>
         <order>17</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -2916,7 +2836,6 @@
         <comment>Set current turn and reset active player</comment>
         <display_text/>
         <flow display_value="PLAY-SUB: End turn">3c4cae6d93b9c610cd4e7d532bba1069</flow>
-        <generation_source/>
         <order>7</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -2989,7 +2908,6 @@
         <comment>Location 2</comment>
         <display_text/>
         <flow display_value="PLAY-SUB: End turn">3c4cae6d93b9c610cd4e7d532bba1069</flow>
-        <generation_source/>
         <inputs/>
         <inputs/>
         <order>2</order>
@@ -3033,18 +2951,6 @@
         <sys_updated_on>2024-04-26 08:41:06</sys_updated_on>
         <table>var__m_sys_hub_flow_input_0f81696b93998210cd4e7d532bba1028</table>
         <value>{{subflow.game_instance.location_2}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>wait_for_completion</field>
-        <id>094cee6d93b9c610cd4e7d532bba1003</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-26 08:41:06</sys_created_on>
-        <sys_id>d94cee6d93b9c610cd4e7d532bba100d</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-26 08:41:06</sys_updated_on>
-        <table>var__m_sys_hub_sub_flow_instance_inputs_094cee6d93b9c610cd4e7d532bba1003</table>
-        <value/>
     </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_sub_flow_instance_inputs_094cee6d93b9c610cd4e7d532bba1003^id=094cee6d93b9c610cd4e7d532bba1003"/>
     <sys_hub_sub_flow_instance_inputs action="delete_multiple" query="model=094cee6d93b9c610cd4e7d532bba1003^sys_idNOT INc14cee6d93b9c610cd4e7d532bba1004"/>
@@ -3137,7 +3043,6 @@
         <comment>Location 1</comment>
         <display_text/>
         <flow display_value="PLAY-SUB: End turn">3c4cae6d93b9c610cd4e7d532bba1069</flow>
-        <generation_source/>
         <inputs/>
         <inputs/>
         <order>1</order>
@@ -3181,18 +3086,6 @@
         <sys_updated_on>2024-04-26 08:41:06</sys_updated_on>
         <table>var__m_sys_hub_flow_input_0f81696b93998210cd4e7d532bba1028</table>
         <value>{{subflow.game_instance.location_1}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>wait_for_completion</field>
-        <id>854cae6d93b9c610cd4e7d532bba10f4</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-26 08:41:06</sys_created_on>
-        <sys_id>414cee6d93b9c610cd4e7d532bba1003</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-26 08:41:06</sys_updated_on>
-        <table>var__m_sys_hub_sub_flow_instance_inputs_854cae6d93b9c610cd4e7d532bba10f4</table>
-        <value/>
     </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_sub_flow_instance_inputs_854cae6d93b9c610cd4e7d532bba10f4^id=854cae6d93b9c610cd4e7d532bba10f4"/>
     <sys_hub_sub_flow_instance_inputs action="delete_multiple" query="model=854cae6d93b9c610cd4e7d532bba10f4^sys_idNOT IN414cae6d93b9c610cd4e7d532bba10f5"/>
@@ -3285,7 +3178,6 @@
         <comment>Location 3</comment>
         <display_text/>
         <flow display_value="PLAY-SUB: End turn">3c4cae6d93b9c610cd4e7d532bba1069</flow>
-        <generation_source/>
         <inputs/>
         <inputs/>
         <order>3</order>
@@ -3329,18 +3221,6 @@
         <sys_updated_on>2024-04-26 08:41:06</sys_updated_on>
         <table>var__m_sys_hub_flow_input_0f81696b93998210cd4e7d532bba1028</table>
         <value>{{subflow.game_instance.location_3}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>wait_for_completion</field>
-        <id>914cee6d93b9c610cd4e7d532bba100e</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-26 08:41:06</sys_created_on>
-        <sys_id>1d4cee6d93b9c610cd4e7d532bba1024</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-26 08:41:06</sys_updated_on>
-        <table>var__m_sys_hub_sub_flow_instance_inputs_914cee6d93b9c610cd4e7d532bba100e</table>
-        <value/>
     </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_sub_flow_instance_inputs_914cee6d93b9c610cd4e7d532bba100e^id=914cee6d93b9c610cd4e7d532bba100e"/>
     <sys_hub_sub_flow_instance_inputs action="delete_multiple" query="model=914cee6d93b9c610cd4e7d532bba100e^sys_idNOT IN5d4cee6d93b9c610cd4e7d532bba100e"/>
@@ -3433,7 +3313,6 @@
         <comment/>
         <display_text/>
         <flow display_value="PLAY-SUB: End turn">3c4cae6d93b9c610cd4e7d532bba1069</flow>
-        <generation_source/>
         <inputs/>
         <inputs/>
         <order>5</order>
@@ -3477,18 +3356,6 @@
         <sys_updated_on>2024-04-26 08:41:06</sys_updated_on>
         <table>var__m_sys_hub_flow_input_24a0582b93d18210cd4e7d532bba105e</table>
         <value>{{subflow.game_instance}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>wait_for_completion</field>
-        <id>d14cee6d93b9c610cd4e7d532bba1025</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-26 08:41:06</sys_created_on>
-        <sys_id>954cee6d93b9c610cd4e7d532bba102f</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-26 08:41:06</sys_updated_on>
-        <table>var__m_sys_hub_sub_flow_instance_inputs_d14cee6d93b9c610cd4e7d532bba1025</table>
-        <value/>
     </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_sub_flow_instance_inputs_d14cee6d93b9c610cd4e7d532bba1025^id=d14cee6d93b9c610cd4e7d532bba1025"/>
     <sys_hub_sub_flow_instance_inputs action="delete_multiple" query="model=d14cee6d93b9c610cd4e7d532bba1025^sys_idNOT IN9d4cee6d93b9c610cd4e7d532bba1025"/>
@@ -3589,7 +3456,6 @@
         <flow display_value="PLAY-SUB: End turn">3c4cae6d93b9c610cd4e7d532bba1069</flow>
         <flow_variable/>
         <flow_variables_assigned/>
-        <generation_source/>
         <inputs/>
         <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
         <order>6</order>
@@ -3623,7 +3489,6 @@
         <flow display_value="PLAY-SUB: End turn">3c4cae6d93b9c610cd4e7d532bba1069</flow>
         <flow_variable/>
         <flow_variables_assigned/>
-        <generation_source/>
         <inputs/>
         <inputs/>
         <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
@@ -3697,7 +3562,6 @@
         <flow display_value="PLAY-SUB: End turn">3c4cae6d93b9c610cd4e7d532bba1069</flow>
         <flow_variable/>
         <flow_variables_assigned/>
-        <generation_source/>
         <inputs/>
         <inputs/>
         <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
@@ -3771,7 +3635,6 @@
         <flow display_value="PLAY-SUB: End turn">3c4cae6d93b9c610cd4e7d532bba1069</flow>
         <flow_variable/>
         <flow_variables_assigned/>
-        <generation_source/>
         <inputs/>
         <inputs/>
         <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
@@ -3883,11 +3746,11 @@
         <sys_created_on>2024-04-26 08:41:05</sys_created_on>
         <sys_id>b04cae6d93b9c610cd4e7d532bba1090</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Game Instance</sys_name>
         <sys_package display_value="Flow Designer Marvel SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_3c4cae6d93b9c610cd4e7d532bba1069_game_instance_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-04-26 08:41:05</sys_updated_on>
         <url/>
@@ -3899,14 +3762,14 @@
     <sys_hub_flow action="UPDATE">
         <sys_id>131c2a6d93b9c610cd4e7d532bba10ae</sys_id>
         <latest_snapshot>3c4cae6d93b9c610cd4e7d532bba1069</latest_snapshot>
-        <compiler_build>glide-washingtondc-12-20-2023__patch1-02-28-2024_03-09-2024_0815.zip</compiler_build>
+        <compiler_build>glide-vancouver-07-06-2023__patch2-hotfix1-10-04-2023_10-06-2023_1235.zip</compiler_build>
     </sys_hub_flow>
     <sys_flow_trigger_plan action="delete_multiple" query="plan_id=131c2a6d93b9c610cd4e7d532bba10ae"/>
     <sys_flow_subflow_plan action="delete_multiple" query="plan_id=131c2a6d93b9c610cd4e7d532bba10ae^sys_idNOT INad4cee6d93b9c610cd4e7d532bba109a"/>
     <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
-        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"ad4cee6d93b9c610cd4e7d532bba109a","name":"plan","plan_signature":null}}</plan>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"ad4cee6d93b9c610cd4e7d532bba109a","name":"plan","plan_signature":null}}</plan>
         <plan_id display_value="PLAY-SUB: End turn">131c2a6d93b9c610cd4e7d532bba10ae</plan_id>
-        <snapshot>55dcea7193714a10cd4e7d532bba102e</snapshot>
+        <snapshot>10221373537942103a0891e0a0490e79</snapshot>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-04-26 08:41:07</sys_created_on>
         <sys_domain>global</sys_domain>

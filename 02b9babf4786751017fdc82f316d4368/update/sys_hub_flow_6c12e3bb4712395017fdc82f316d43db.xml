@@ -5,14 +5,11 @@
         <active>true</active>
         <annotation/>
         <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=2918000,viewActivatedIn=naturalLanguage</attributes>
-        <authored_on_release_version/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
         <copied_from/>
         <copied_from_name/>
         <description/>
-        <flow_priority/>
-        <generation_source/>
         <internal_name>get_card_type_create_record_and_image</internal_name>
         <label_cache>[{"name":"subflow.card_type","label":"Input➛Card Type","reference":"","reference_display":"","type":"choice","base_type":"choice","column_name":"type","choices":[{"label":"Undealable Character","value":"summon","order":0.0},{"label":"Location","value":"location","order":1.0},{"label":"Character","value":"character","order":2.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"4c9833c1-392e-4d63-aae6-9d2230f9580c","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"7b2c9523-d411-4f81-9917-cf67d46c2e11.answer.result_elements.u_summon","label":"1 - Make a decision➛Decision Table Multiple Result Record➛Result elements➛Translated String","reference":"","reference_display":"Translated String","type":"choice","base_type":"choice","parent_table_name":"var__m_sys_decision_multi_result_element_9d38ebb34752395017fdc82f316d43aa","column_name":"u_summon","choices":[{"label":"-- None --","used":false,"rawLabel":"-- None --","selected":false,"missing":false,"image":"","reference":false,"value":""},{"used":false,"label":"Undealable Character","rawLabel":"Undealable Character","selected":false,"missing":false,"image":"","reference":false,"value":"summon","parameters":{"name":"x_168987_flow_de_0_card_definition"}},{"used":false,"label":"Location","rawLabel":"Location","selected":false,"missing":false,"image":"","reference":false,"value":"location","parameters":{"name":"x_168987_flow_de_0_card_definition"}},{"used":false,"label":"Character","rawLabel":"Character","selected":false,"missing":false,"image":"","reference":false,"value":"character","parameters":{"name":"x_168987_flow_de_0_card_definition"}}]},{"name":"d75f4f87-ed94-4158-af43-98100dc67c26.record","label":"5 - Create Record➛Card Definition Record","reference":"x_168987_flow_de_0_card_definition","reference_display":"Card Definition Record","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e99059bd-cb88-41dc-9564-5cf56f61e46d.item.type","label":"3 - For Each➛card_object➛type","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"e99059bd-cb88-41dc-9564-5cf56f61e46d.item.power","label":"3 - For Each➛card_object➛power","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"e99059bd-cb88-41dc-9564-5cf56f61e46d.item.name","label":"3 - For Each➛card_object➛name","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"e99059bd-cb88-41dc-9564-5cf56f61e46d.item.cost","label":"3 - For Each➛card_object➛cost","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"e99059bd-cb88-41dc-9564-5cf56f61e46d.item.ability","label":"3 - For Each➛card_object➛ability","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"e99059bd-cb88-41dc-9564-5cf56f61e46d.item.id","label":"3 - For Each➛card_object➛id","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"91ea8be4-de09-4ab1-a5e0-66585ab72aa2.response_payload.card","label":"2 - Retrieve Marvel Character cards➛Response Payload➛card","reference":"","reference_display":"","type":"array.object","base_type":"array.object","column_name":"","attributes":{}},{"name":"e99059bd-cb88-41dc-9564-5cf56f61e46d.item.slug","label":"3 - For Each➛card_object➛slug","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}}]</label_cache>
         <master_snapshot>cd12e3fb4712395017fdc82f316d43bb</master_snapshot>
@@ -41,7 +38,7 @@
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_update_name>sys_hub_flow_6c12e3bb4712395017fdc82f316d43db</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-01-07 00:44:34</sys_updated_on>
+        <sys_updated_on>2024-04-25 04:38:04</sys_updated_on>
         <type>subflow</type>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=6c12e3bb4712395017fdc82f316d43db"/>
@@ -158,7 +155,6 @@
         <comment>Get Cards by Type from API</comment>
         <display_text/>
         <flow display_value="INTEGRATE: Get Card Type, Create Record and image">6c12e3bb4712395017fdc82f316d43db</flow>
-        <generation_source/>
         <order>2</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -210,7 +206,6 @@
         <comment/>
         <display_text/>
         <flow display_value="INTEGRATE: Get Card Type, Create Record and image">6c12e3bb4712395017fdc82f316d43db</flow>
-        <generation_source/>
         <order>4</order>
         <parent_ui_id>e99059bd-cb88-41dc-9564-5cf56f61e46d</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -248,7 +243,6 @@
         <comment/>
         <display_text/>
         <flow display_value="INTEGRATE: Get Card Type, Create Record and image">6c12e3bb4712395017fdc82f316d43db</flow>
-        <generation_source/>
         <order>6</order>
         <parent_ui_id>e99059bd-cb88-41dc-9564-5cf56f61e46d</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -286,7 +280,6 @@
         <comment/>
         <display_text/>
         <flow display_value="INTEGRATE: Get Card Type, Create Record and image">6c12e3bb4712395017fdc82f316d43db</flow>
-        <generation_source/>
         <order>5</order>
         <parent_ui_id>e99059bd-cb88-41dc-9564-5cf56f61e46d</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -356,7 +349,6 @@
         <flow display_value="INTEGRATE: Get Card Type, Create Record and image">6c12e3bb4712395017fdc82f316d43db</flow>
         <flow_variable/>
         <flow_variables_assigned/>
-        <generation_source/>
         <inputs/>
         <logic_definition display_value="Make a decision">578e90270b2313009002cab937673a7d</logic_definition>
         <order>1</order>
@@ -460,7 +452,6 @@
         <flow display_value="INTEGRATE: Get Card Type, Create Record and image">6c12e3bb4712395017fdc82f316d43db</flow>
         <flow_variable/>
         <flow_variables_assigned/>
-        <generation_source/>
         <inputs/>
         <inputs/>
         <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
@@ -516,7 +507,7 @@
         <sys_package display_value="Flow Designer Marvel SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_6c12e3bb4712395017fdc82f316d43db_card_type_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-11-11 12:45:17</sys_updated_on>
         <url/>
@@ -531,13 +522,11 @@
         <active>true</active>
         <annotation/>
         <attributes>labelCacheCleanUpExecuted=true</attributes>
-        <authored_on_release_version/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
         <copied_from/>
         <copied_from_name/>
         <description/>
-        <flow_priority/>
         <internal_name>get_card_type_create_record_and_image</internal_name>
         <label_cache>[{"name":"e99059bd-cb88-41dc-9564-5cf56f61e46d.item.slug","label":"3 - For Each➛card_object➛slug","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"91ea8be4-de09-4ab1-a5e0-66585ab72aa2.response_payload.card","label":"2 - Retrieve Marvel Character cards➛Response Payload➛card","reference":"","reference_display":"","type":"array.object","base_type":"array.object","column_name":"","attributes":{}},{"name":"e99059bd-cb88-41dc-9564-5cf56f61e46d.item.id","label":"3 - For Each➛card_object➛id","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"e99059bd-cb88-41dc-9564-5cf56f61e46d.item.ability","label":"3 - For Each➛card_object➛ability","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"e99059bd-cb88-41dc-9564-5cf56f61e46d.item.cost","label":"3 - For Each➛card_object➛cost","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"e99059bd-cb88-41dc-9564-5cf56f61e46d.item.name","label":"3 - For Each➛card_object➛name","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"e99059bd-cb88-41dc-9564-5cf56f61e46d.item.power","label":"3 - For Each➛card_object➛power","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"e99059bd-cb88-41dc-9564-5cf56f61e46d.item.type","label":"3 - For Each➛card_object➛type","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"d75f4f87-ed94-4158-af43-98100dc67c26.record","label":"5 - Create Record➛Card Definition Record","reference":"x_168987_flow_de_0_card_definition","reference_display":"Card Definition","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"7b2c9523-d411-4f81-9917-cf67d46c2e11.answer.result_elements.u_summon","label":"1 - Make a decision➛Decision Table Multiple Result Record➛Result elements➛Translated String","reference":"","reference_display":"Translated String","type":"choice","base_type":"choice","parent_table_name":"var__m_sys_decision_multi_result_element_9d38ebb34752395017fdc82f316d43aa","column_name":"u_summon","choices":[{"label":"-- None --","used":false,"rawLabel":"-- None --","selected":false,"missing":false,"image":"","reference":false,"value":""},{"used":false,"label":"Undealable Character","rawLabel":"Undealable Character","selected":false,"missing":false,"image":"","reference":false,"value":"summon","parameters":{"name":"x_168987_flow_de_0_card_definition"}},{"used":false,"label":"Location","rawLabel":"Location","selected":false,"missing":false,"image":"","reference":false,"value":"location","parameters":{"name":"x_168987_flow_de_0_card_definition"}},{"used":false,"label":"Character","rawLabel":"Character","selected":false,"missing":false,"image":"","reference":false,"value":"character","parameters":{"name":"x_168987_flow_de_0_card_definition"}}]},{"name":"subflow.card_type","label":"Input➛Card Type","reference":"","reference_display":"","type":"choice","base_type":"choice","column_name":"type","choices":[{"label":"Undealable Character","value":"summon","order":0.0},{"label":"Location","value":"location","order":1.0},{"label":"Character","value":"character","order":2.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"4c9833c1-392e-4d63-aae6-9d2230f9580c","sourceUiUniqueId":"","sourceType":"","sourceId":""}}]</label_cache>
         <master>true</master>
@@ -681,7 +670,6 @@
         <comment/>
         <display_text/>
         <flow display_value="Get Card Type, Create Record and image">cd12e3fb4712395017fdc82f316d43bb</flow>
-        <generation_source/>
         <order>4</order>
         <parent_ui_id>e99059bd-cb88-41dc-9564-5cf56f61e46d</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -719,7 +707,6 @@
         <comment>Get Cards by Type from API</comment>
         <display_text/>
         <flow display_value="Get Card Type, Create Record and image">cd12e3fb4712395017fdc82f316d43bb</flow>
-        <generation_source/>
         <order>2</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -771,7 +758,6 @@
         <comment/>
         <display_text/>
         <flow display_value="Get Card Type, Create Record and image">cd12e3fb4712395017fdc82f316d43bb</flow>
-        <generation_source/>
         <order>6</order>
         <parent_ui_id>e99059bd-cb88-41dc-9564-5cf56f61e46d</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -809,7 +795,6 @@
         <comment/>
         <display_text/>
         <flow display_value="Get Card Type, Create Record and image">cd12e3fb4712395017fdc82f316d43bb</flow>
-        <generation_source/>
         <order>5</order>
         <parent_ui_id>e99059bd-cb88-41dc-9564-5cf56f61e46d</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -879,7 +864,6 @@
         <flow display_value="Get Card Type, Create Record and image">cd12e3fb4712395017fdc82f316d43bb</flow>
         <flow_variable/>
         <flow_variables_assigned/>
-        <generation_source/>
         <inputs/>
         <logic_definition display_value="Make a decision">578e90270b2313009002cab937673a7d</logic_definition>
         <order>1</order>
@@ -983,7 +967,6 @@
         <flow display_value="Get Card Type, Create Record and image">cd12e3fb4712395017fdc82f316d43bb</flow>
         <flow_variable/>
         <flow_variables_assigned/>
-        <generation_source/>
         <inputs/>
         <inputs/>
         <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
@@ -1039,13 +1022,13 @@
         <sys_package display_value="Flow Designer Marvel SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_cd12e3fb4712395017fdc82f316d43bb_card_type_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-11-11 12:47:30</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
-    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_cd12e3fb4712395017fdc82f316d43bb^sys_idNOT IN1623eb3f4712395017fdc82f316d43cf,d623eb3f4712395017fdc82f316d43ce,1e23eb3f4712395017fdc82f316d43cc"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_cd12e3fb4712395017fdc82f316d43bb^sys_idNOT INaa5be859533102103a0891e0a0490e48,2a5be859533102103a0891e0a0490e49,a65be859533102103a0891e0a0490e4a"/>
     <sys_choice field="card_type" table="var__m_sys_hub_flow_input_cd12e3fb4712395017fdc82f316d43bb">
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
@@ -1061,7 +1044,7 @@
             <sys_created_on>2023-11-11 12:47:30</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>1623eb3f4712395017fdc82f316d43cf</sys_id>
+            <sys_id>aa5be859533102103a0891e0a0490e48</sys_id>
             <sys_mod_count>7</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2023-11-11 13:31:22</sys_updated_on>
@@ -1081,7 +1064,7 @@
             <sys_created_on>2023-11-11 12:47:30</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>d623eb3f4712395017fdc82f316d43ce</sys_id>
+            <sys_id>2a5be859533102103a0891e0a0490e49</sys_id>
             <sys_mod_count>7</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2023-11-11 13:31:22</sys_updated_on>
@@ -1101,7 +1084,7 @@
             <sys_created_on>2023-11-11 12:47:29</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>1e23eb3f4712395017fdc82f316d43cc</sys_id>
+            <sys_id>a65be859533102103a0891e0a0490e4a</sys_id>
             <sys_mod_count>7</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2023-11-11 13:31:22</sys_updated_on>

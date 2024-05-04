@@ -5,14 +5,11 @@
         <active>true</active>
         <annotation/>
         <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=3994000,viewActivatedIn=naturalLanguage</attributes>
-        <authored_on_release_version>25000</authored_on_release_version>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
         <copied_from>3539c77e5376001001a3ddeeff7b1214</copied_from>
         <copied_from_name>External User Onboarding</copied_from_name>
         <description/>
-        <flow_priority/>
-        <generation_source/>
         <internal_name>sn_app_external_user_onboarding</internal_name>
         <label_cache>[{"name":"d20567a5-672c-4f66-ad83-c563715c9459.profile","label":"2 - Fetch Roles From Registration Configuration➛Profile","reference_display":"Profile","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"6db74a20-6d5c-4552-b326-a5f7e6c5ce96"}},{"name":"subflow.record_id","label":"Input➛Record ID","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"8dae6224-11bb-4a99-afb7-7a19941b4525":["conditions"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"74852099-6d1a-4d9f-8419-43c0888fd139","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"d20567a5-672c-4f66-ad83-c563715c9459.user","label":"2 - Fetch Roles From Registration Configuration➛User","reference_display":"User","type":"string","base_type":"string","usedInstances":{"2b37b5f9-397e-4b0d-8d4c-25f67493a865":["role"],"6829cc26-149d-411e-b773-43afaa4c260e":["user"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"32b1f2ca-3056-44fe-a026-5ee967a71bb4"}},{"name":"d20567a5-672c-4f66-ad83-c563715c9459.roles","label":"2 - Fetch Roles From Registration Configuration➛Roles","reference_display":"Roles","type":"array.string","base_type":"array.string","attributes":{"uiTypeLabel":"Array.String","co_type_name":"FDc15af5a1a7121010cd9a0e5fc0db4e09","child_label":"role","child_type_label":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"array.string","child_type":"string","child_name":"role","child_uiUniqueId":"11c6d775-cf42-4031-81da-04d01e0780e3","uiUniqueId":"9a285fc6-56d2-4cde-b8a1-b9213410f7a2"}},{"name":"subflow.table_name","label":"Input➛Table Name","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"2b37b5f9-397e-4b0d-8d4c-25f67493a865":["user"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"bb66ffde-e485-4f8f-9f6e-dc712fc80581","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"8dae6224-11bb-4a99-afb7-7a19941b4525.Record","label":"1 - Look Up Record➛Flow De 0 Self Reg User Profile 685910 Record","reference":"x_168987_flow_de_0_self_reg_user_profile_685910","reference_display":"Flow De 0 Self Reg User Profile 685910","type":"reference","base_type":"reference","usedInstances":{"2b00a28c-bc33-49e1-8566-9a9ba4fc181c":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
         <master_snapshot>5d3fd85c93710210cd4e7d532bba1045</master_snapshot>
@@ -33,7 +30,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>cc9d90d893710210cd4e7d532bba10ac</sys_id>
-        <sys_mod_count>36</sys_mod_count>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>SN App External User Onboarding</sys_name>
         <sys_overrides/>
         <sys_package display_value="Flow Designer Marvel SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
@@ -41,7 +38,7 @@
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_update_name>sys_hub_flow_cc9d90d893710210cd4e7d532bba10ac</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-22 02:11:52</sys_updated_on>
+        <sys_updated_on>2024-04-25 04:38:48</sys_updated_on>
         <type>subflow</type>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=cc9d90d893710210cd4e7d532bba10ac"/>
@@ -242,7 +239,6 @@
         <comment/>
         <display_text/>
         <flow display_value="SN App External User Onboarding">cc9d90d893710210cd4e7d532bba10ac</flow>
-        <generation_source/>
         <order>1</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -306,7 +302,6 @@
         <comment>Player role</comment>
         <display_text/>
         <flow display_value="SN App External User Onboarding">cc9d90d893710210cd4e7d532bba10ac</flow>
-        <generation_source/>
         <order>4</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -363,14 +358,12 @@
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=7b5e541c93710210cd4e7d532bba1043"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
-        <action_inputs/>
-        <action_type display_value="Fetch Roles From Registration Configuration">6272e4065336001001a3ddeeff7b120c</action_type>
-        <action_type_parent display_value="Fetch Roles From Registration Configuration">122064c25336001001a3ddeeff7b1226</action_type_parent>
+        <action_type display_value="">6272e4065336001001a3ddeeff7b120c</action_type>
+        <action_type_parent display_value="">122064c25336001001a3ddeeff7b1226</action_type_parent>
         <attributes/>
         <comment/>
         <display_text/>
         <flow display_value="SN App External User Onboarding">cc9d90d893710210cd4e7d532bba10ac</flow>
-        <generation_source/>
         <order>2</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -384,31 +377,6 @@
         <ui_id>d20567a5-672c-4f66-ad83-c563715c9459</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=809d90d893710210cd4e7d532bba10d6"/>
-    <sys_element_mapping action="delete_multiple" query="id=809d90d893710210cd4e7d532bba10d6"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>record_sysid</field>
-        <id>809d90d893710210cd4e7d532bba10d6</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-22 01:05:13</sys_created_on>
-        <sys_id>409d90d893710210cd4e7d532bba10d8</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-22 01:05:13</sys_updated_on>
-        <table>var__m_sys_hub_action_input_6272e4065336001001a3ddeeff7b120c</table>
-        <value>{{subflow.record_id}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>table_name</field>
-        <id>809d90d893710210cd4e7d532bba10d6</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-22 01:05:13</sys_created_on>
-        <sys_id>149d90d893710210cd4e7d532bba10d8</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-22 01:05:13</sys_updated_on>
-        <table>var__m_sys_hub_action_input_6272e4065336001001a3ddeeff7b120c</table>
-        <value>{{subflow.table_name}}</value>
-    </sys_element_mapping>
     <sys_hub_input_scripts action="delete_multiple" query="instance=809d90d893710210cd4e7d532bba10d6"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=809d90d893710210cd4e7d532bba10d6"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
@@ -420,7 +388,6 @@
         <comment>SNC External role</comment>
         <display_text/>
         <flow display_value="SN App External User Onboarding">cc9d90d893710210cd4e7d532bba10ac</flow>
-        <generation_source/>
         <order>3</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -484,7 +451,6 @@
         <comment/>
         <display_text/>
         <flow display_value="SN App External User Onboarding">cc9d90d893710210cd4e7d532bba10ac</flow>
-        <generation_source/>
         <order>5</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -583,11 +549,11 @@
         <sys_created_on>2024-04-22 01:05:13</sys_created_on>
         <sys_id>009d90d893710210cd4e7d532bba10b8</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Table Name</sys_name>
         <sys_package display_value="Flow Designer Marvel SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_cc9d90d893710210cd4e7d532bba10ac_table_name_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-04-22 01:05:13</sys_updated_on>
         <url/>
@@ -606,11 +572,11 @@
         <sys_created_on>2024-04-22 01:05:13</sys_created_on>
         <sys_id>449d90d893710210cd4e7d532bba10bb</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Record ID</sys_name>
         <sys_package display_value="Flow Designer Marvel SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_cc9d90d893710210cd4e7d532bba10ac_record_id_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-04-22 01:05:13</sys_updated_on>
         <url/>
@@ -625,13 +591,11 @@
         <active>true</active>
         <annotation/>
         <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
-        <authored_on_release_version>25000</authored_on_release_version>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
         <copied_from>3539c77e5376001001a3ddeeff7b1214</copied_from>
         <copied_from_name/>
         <description/>
-        <flow_priority/>
         <internal_name>sn_app_external_user_onboarding</internal_name>
         <label_cache>[{"name":"d20567a5-672c-4f66-ad83-c563715c9459.profile","label":"2 - Fetch Roles From Registration Configuration➛Profile","reference_display":"Profile","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"6db74a20-6d5c-4552-b326-a5f7e6c5ce96"}},{"name":"subflow.record_id","label":"Input➛Record ID","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"8dae6224-11bb-4a99-afb7-7a19941b4525":["conditions"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"74852099-6d1a-4d9f-8419-43c0888fd139","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"d20567a5-672c-4f66-ad83-c563715c9459.user","label":"2 - Fetch Roles From Registration Configuration➛User","reference_display":"User","type":"string","base_type":"string","usedInstances":{"2b37b5f9-397e-4b0d-8d4c-25f67493a865":["role"],"6829cc26-149d-411e-b773-43afaa4c260e":["user"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"32b1f2ca-3056-44fe-a026-5ee967a71bb4"}},{"name":"d20567a5-672c-4f66-ad83-c563715c9459.roles","label":"2 - Fetch Roles From Registration Configuration➛Roles","reference_display":"Roles","type":"array.string","base_type":"array.string","attributes":{"uiTypeLabel":"Array.String","co_type_name":"FDc15af5a1a7121010cd9a0e5fc0db4e09","child_label":"role","child_type_label":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"array.string","child_type":"string","child_name":"role","child_uiUniqueId":"11c6d775-cf42-4031-81da-04d01e0780e3","uiUniqueId":"9a285fc6-56d2-4cde-b8a1-b9213410f7a2"}},{"name":"subflow.table_name","label":"Input➛Table Name","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"2b37b5f9-397e-4b0d-8d4c-25f67493a865":["user"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"bb66ffde-e485-4f8f-9f6e-dc712fc80581","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"8dae6224-11bb-4a99-afb7-7a19941b4525.Record","label":"1 - Look Up Record➛Flow De 0 Self Reg User Profile 685910 Record","reference":"x_168987_flow_de_0_self_reg_user_profile_685910","reference_display":"Flow De 0 Self Reg User Profile 685910","type":"reference","base_type":"reference","usedInstances":{"2b00a28c-bc33-49e1-8566-9a9ba4fc181c":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
         <master>true</master>
@@ -859,7 +823,6 @@
         <comment/>
         <display_text/>
         <flow display_value="SN App External User Onboarding">5d3fd85c93710210cd4e7d532bba1045</flow>
-        <generation_source/>
         <order>5</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -942,14 +905,12 @@
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=293fd85c93710210cd4e7d532bba109e"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
-        <action_inputs/>
-        <action_type display_value="Fetch Roles From Registration Configuration">6272e4065336001001a3ddeeff7b120c</action_type>
-        <action_type_parent display_value="Fetch Roles From Registration Configuration">122064c25336001001a3ddeeff7b1226</action_type_parent>
+        <action_type display_value="">6272e4065336001001a3ddeeff7b120c</action_type>
+        <action_type_parent display_value="">122064c25336001001a3ddeeff7b1226</action_type_parent>
         <attributes/>
         <comment/>
         <display_text/>
         <flow display_value="SN App External User Onboarding">5d3fd85c93710210cd4e7d532bba1045</flow>
-        <generation_source/>
         <order>2</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -963,31 +924,6 @@
         <ui_id>d20567a5-672c-4f66-ad83-c563715c9459</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=2d3fd85c93710210cd4e7d532bba108c"/>
-    <sys_element_mapping action="delete_multiple" query="id=2d3fd85c93710210cd4e7d532bba108c"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>record_sysid</field>
-        <id>2d3fd85c93710210cd4e7d532bba108c</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-22 01:12:24</sys_created_on>
-        <sys_id>ed3fd85c93710210cd4e7d532bba108d</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-22 01:12:24</sys_updated_on>
-        <table>var__m_sys_hub_action_input_6272e4065336001001a3ddeeff7b120c</table>
-        <value>{{subflow.record_id}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>table_name</field>
-        <id>2d3fd85c93710210cd4e7d532bba108c</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-22 01:12:24</sys_created_on>
-        <sys_id>a13fd85c93710210cd4e7d532bba108e</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-22 01:12:24</sys_updated_on>
-        <table>var__m_sys_hub_action_input_6272e4065336001001a3ddeeff7b120c</table>
-        <value>{{subflow.table_name}}</value>
-    </sys_element_mapping>
     <sys_hub_input_scripts action="delete_multiple" query="instance=2d3fd85c93710210cd4e7d532bba108c"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=2d3fd85c93710210cd4e7d532bba108c"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
@@ -999,7 +935,6 @@
         <comment>SNC External role</comment>
         <display_text/>
         <flow display_value="SN App External User Onboarding">5d3fd85c93710210cd4e7d532bba1045</flow>
-        <generation_source/>
         <order>3</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -1063,7 +998,6 @@
         <comment>Player role</comment>
         <display_text/>
         <flow display_value="SN App External User Onboarding">5d3fd85c93710210cd4e7d532bba1045</flow>
-        <generation_source/>
         <order>4</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -1127,7 +1061,6 @@
         <comment/>
         <display_text/>
         <flow display_value="SN App External User Onboarding">5d3fd85c93710210cd4e7d532bba1045</flow>
-        <generation_source/>
         <order>1</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -1200,11 +1133,11 @@
         <sys_created_on>2024-04-22 01:12:24</sys_created_on>
         <sys_id>193fd85c93710210cd4e7d532bba1062</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Table Name</sys_name>
         <sys_package display_value="Flow Designer Marvel SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_5d3fd85c93710210cd4e7d532bba1045_table_name_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-04-22 01:12:24</sys_updated_on>
         <url/>
@@ -1223,11 +1156,11 @@
         <sys_created_on>2024-04-22 01:12:24</sys_created_on>
         <sys_id>193fd85c93710210cd4e7d532bba106a</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Record ID</sys_name>
         <sys_package display_value="Flow Designer Marvel SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_5d3fd85c93710210cd4e7d532bba1045_record_id_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-04-22 01:12:24</sys_updated_on>
         <url/>

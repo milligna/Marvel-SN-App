@@ -5,14 +5,11 @@
         <active>true</active>
         <annotation/>
         <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=1630590000,viewActivatedIn=naturalLanguage</attributes>
-        <authored_on_release_version/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
         <copied_from>f193286b93558210cd4e7d532bba1024</copied_from>
         <copied_from_name>PLAY-SUB: Calculate location sco</copied_from_name>
         <description/>
-        <flow_priority/>
-        <generation_source/>
         <internal_name>playsub_calculate_location_scores_and_update_location</internal_name>
         <label_cache>[{"name":"2dc42c2f-4db3-44cf-8025-e3069429d09b.calculated_number","label":"6 - PLAY-SUB: add integer to other integer➛Calculated Number","reference_display":"Calculated Number","type":"integer","base_type":"integer","usedInstances":{"4db4007a-7dc5-45f3-8c8c-70f7edde0b4d":["p1_score-0"]},"attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"cdd3ee83-6087-470d-a3b2-657b9a238de3"}},{"name":"1f8f9104-823b-43c4-b64f-98eaa0955161.calculated_number","label":"11 - PLAY-SUB: add integer to other integer➛Calculated Number","reference_display":"Calculated Number","type":"integer","base_type":"integer","usedInstances":{"39059d9d-5793-4494-ac1b-36bf46c13329":["p2_score-0"]},"attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"cdd3ee83-6087-470d-a3b2-657b9a238de3"}},{"name":"7d7e8440-b6ef-4ddf-abe6-4cff20791231.calculated_number","label":"9 - PLAY-SUB: add integer to other integer➛Calculated Number","reference":"","reference_display":"","type":"integer","base_type":"integer","usedInstances":{"39059d9d-5793-4494-ac1b-36bf46c13329":["p2_score-0"]}},{"name":"f35fec56-def9-45ea-a0af-8b2f80c73db7.calculated_number","label":"5 - PLAY-SUB: add integer to other integer➛Calculated Number","reference":"","reference_display":"","type":"integer","base_type":"integer","usedInstances":{"4db4007a-7dc5-45f3-8c8c-70f7edde0b4d":["p1_score-0"]}},{"name":"subflow.location.game_instance.player_2","label":"Input➛Location➛Game Instance➛Player 2","reference":"x_168987_flow_de_0_player_session","reference_display":"Player Session","type":"reference","base_type":"reference","usedInstances":{}},{"name":"96862926-1dac-49c2-85da-05c4a0fbfa17.item.card_instance.current_power","label":"9 - For Each➛Game Location Slot Record➛Related Card Instance➛Current Power","reference":"","reference_display":"Current Power","type":"integer","base_type":"integer","parent_table_name":"x_168987_flow_de_0_card_instance","column_name":"current_power","usedInstances":{"f3054ec8-88c3-484f-9910-10b376ba4b86":["integer_to_add"],"7d7e8440-b6ef-4ddf-abe6-4cff20791231":["integer_to_add"],"6fc7cb1e-95a0-42f7-93f8-9038ba73bed5":["integer_to_add"],"1f8f9104-823b-43c4-b64f-98eaa0955161":["integer_to_add"],"d18459db-966c-4340-a313-dcbaea30144d":["condition"]}},{"name":"flow_variable.p2_score","label":"Flow Variables➛P2 Score","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","usedInstances":{"7d7e8440-b6ef-4ddf-abe6-4cff20791231":["original_integer"],"39059d9d-5793-4494-ac1b-36bf46c13329":["p2_score-0"],"6fc7cb1e-95a0-42f7-93f8-9038ba73bed5":["original_integer"],"1f8f9104-823b-43c4-b64f-98eaa0955161":["original_integer"]},"attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"bbf0e713-b3bc-4de4-8b9f-18ba9e7a787c"}},{"name":"849a81d0-172a-4411-8cef-31172761bd18.Records","label":"8 - Look Up Records➛Game Location Slot Records","reference":"x_168987_flow_de_0_location_slot","reference_display":"Game Location Slot","type":"records","base_type":"records","usedInstances":{},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"2232ed4f-8d15-4541-bfcc-42e3d600611f.item.card_instance.current_power","label":"4 - For Each➛Game Location Slot Record➛Related Card Instance➛Current Power","reference":"","reference_display":"Current Power","type":"integer","base_type":"integer","parent_table_name":"x_168987_flow_de_0_card_instance","column_name":"current_power","usedInstances":{"1f70cdec-dae3-4890-b250-e199a0efdd0f":["integer_to_add"],"2b958c2c-8ee7-4430-9546-d472d7120992":["integer_to_add"],"8d9a7f12-03aa-45de-9833-651e02206379":["integer_to_add"],"3ba9a293-afdb-4328-8cdf-2b12a08b1c81":["integer_to_add"],"f35fec56-def9-45ea-a0af-8b2f80c73db7":["integer_to_add"],"2dc42c2f-4db3-44cf-8025-e3069429d09b":["integer_to_add"],"5386f5ab-e541-4f2e-a7be-9755c8b0c45e":["condition"]}},{"name":"flow_variable.p1_score","label":"Flow Variables➛P1 Score","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","usedInstances":{"1f70cdec-dae3-4890-b250-e199a0efdd0f":["original_integer"],"f3054ec8-88c3-484f-9910-10b376ba4b86":["original_integer"],"2b958c2c-8ee7-4430-9546-d472d7120992":["original_integer"],"8d9a7f12-03aa-45de-9833-651e02206379":["original_integer"],"3ba9a293-afdb-4328-8cdf-2b12a08b1c81":["original_integer"],"f35fec56-def9-45ea-a0af-8b2f80c73db7":["original_integer"],"2dc42c2f-4db3-44cf-8025-e3069429d09b":["original_integer"],"1f8f9104-823b-43c4-b64f-98eaa0955161":["original_integer"]},"attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"89c00aa5-b80a-47ff-896c-b5a033ad1b99"}},{"name":"subflow.location.game_instance.player_1","label":"Input➛Location➛Game Instance➛Player 1","reference":"x_168987_flow_de_0_player_session","reference_display":"Player Session","type":"reference","base_type":"reference","usedInstances":{}},{"name":"subflow.location","label":"Input➛Location","reference":"x_168987_flow_de_0_location_instance","reference_display":"Game Location instance","type":"reference","base_type":"reference","usedInstances":{}},{"name":"f7e1b482-a93e-48de-8bc0-3a3628e2467f.Records","label":"3 - Look Up Records➛Game Location Slot Records","reference":"x_168987_flow_de_0_location_slot","reference_display":"Game Location Slot","type":"records","base_type":"records","usedInstances":{},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.game_instance.player_1","label":"Input➛Game Instance➛Player 1","reference":"x_168987_flow_de_0_player_session","reference_display":"Player Session","type":"reference","base_type":"reference","usedInstances":{}},{"name":"subflow.game_instance.location_1","label":"Input➛Game Instance➛Location 1","reference":"x_168987_flow_de_0_location_instance","reference_display":"Game Location instance","type":"reference","base_type":"reference","usedInstances":{}},{"name":"1f70cdec-dae3-4890-b250-e199a0efdd0f.calculated_number","label":"5 - PLAY-SUB: add integer to other integer➛Calculated Number","reference":"","reference_display":"Calculated Number","type":"integer","base_type":"integer","usedInstances":{"4db4007a-7dc5-45f3-8c8c-70f7edde0b4d":["p1_score-0"]}},{"name":"3ba9a293-afdb-4328-8cdf-2b12a08b1c81.calculated_number","label":"5 - PLAY-SUB: add integer to other integer➛Calculated Number","reference":"","reference_display":"Calculated Number","type":"integer","base_type":"integer","usedInstances":{"4db4007a-7dc5-45f3-8c8c-70f7edde0b4d":["p1_score-0"]}},{"name":"f3054ec8-88c3-484f-9910-10b376ba4b86.calculated_number","label":"9 - PLAY-SUB: add integer to other integer➛Calculated Number","reference":"","reference_display":"","type":"integer","base_type":"integer","usedInstances":{"39059d9d-5793-4494-ac1b-36bf46c13329":["p2_score-0"]}}]</label_cache>
         <master_snapshot>0f81696b93998210cd4e7d532bba1028</master_snapshot>
@@ -33,7 +30,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>b761656b93998210cd4e7d532bba1037</sys_id>
-        <sys_mod_count>73</sys_mod_count>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>PLAY-SUB: Calculate location scores and update location</sys_name>
         <sys_overrides/>
         <sys_package display_value="Flow Designer Marvel SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
@@ -41,7 +38,7 @@
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_update_name>sys_hub_flow_b761656b93998210cd4e7d532bba1037</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-26 08:51:21</sys_updated_on>
+        <sys_updated_on>2024-05-02 13:42:14</sys_updated_on>
         <type>subflow</type>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=b761656b93998210cd4e7d532bba1037"/>
@@ -158,17 +155,16 @@
         <comment>Update Location Scores</comment>
         <display_text/>
         <flow display_value="PLAY-SUB: Calculate location scores and update location">b761656b93998210cd4e7d532bba1037</flow>
-        <generation_source/>
         <order>13</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-04-07 11:50:37</sys_created_on>
         <sys_id>0c71656b93998210cd4e7d532bba1082</sys_id>
-        <sys_mod_count>66</sys_mod_count>
+        <sys_mod_count>68</sys_mod_count>
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-26 08:49:38</sys_updated_on>
+        <sys_updated_on>2024-05-03 11:12:53</sys_updated_on>
         <ui_id>088aa86a-714d-480a-9bf7-7c581a963add</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=0c71656b93998210cd4e7d532bba1082"/>
@@ -233,17 +229,16 @@
         <comment/>
         <display_text/>
         <flow display_value="PLAY-SUB: Calculate location scores and update location">b761656b93998210cd4e7d532bba1037</flow>
-        <generation_source/>
         <order>1</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-04-07 11:50:36</sys_created_on>
         <sys_id>4871656b93998210cd4e7d532bba106c</sys_id>
-        <sys_mod_count>22</sys_mod_count>
+        <sys_mod_count>24</sys_mod_count>
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-26 08:49:38</sys_updated_on>
+        <sys_updated_on>2024-05-03 11:12:53</sys_updated_on>
         <ui_id>0196c8c9-001a-4af9-883b-a12a2368ff9b</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=4871656b93998210cd4e7d532bba106c"/>
@@ -273,17 +268,16 @@
         <comment>Player 1</comment>
         <display_text/>
         <flow display_value="PLAY-SUB: Calculate location scores and update location">b761656b93998210cd4e7d532bba1037</flow>
-        <generation_source/>
         <order>3</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-04-07 11:50:36</sys_created_on>
         <sys_id>c471656b93998210cd4e7d532bba1074</sys_id>
-        <sys_mod_count>22</sys_mod_count>
+        <sys_mod_count>24</sys_mod_count>
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-26 08:49:38</sys_updated_on>
+        <sys_updated_on>2024-05-03 11:12:53</sys_updated_on>
         <ui_id>f7e1b482-a93e-48de-8bc0-3a3628e2467f</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=c471656b93998210cd4e7d532bba1074"/>
@@ -363,17 +357,16 @@
         <comment>Player 2</comment>
         <display_text/>
         <flow display_value="PLAY-SUB: Calculate location scores and update location">b761656b93998210cd4e7d532bba1037</flow>
-        <generation_source/>
         <order>8</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-04-07 11:50:37</sys_created_on>
         <sys_id>cc71656b93998210cd4e7d532bba107c</sys_id>
-        <sys_mod_count>48</sys_mod_count>
+        <sys_mod_count>50</sys_mod_count>
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-26 08:49:38</sys_updated_on>
+        <sys_updated_on>2024-05-03 11:12:53</sys_updated_on>
         <ui_id>849a81d0-172a-4411-8cef-31172761bd18</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=cc71656b93998210cd4e7d532bba107c"/>
@@ -424,7 +417,6 @@
         <comment/>
         <display_text/>
         <flow display_value="PLAY-SUB: Calculate location scores and update location">b761656b93998210cd4e7d532bba1037</flow>
-        <generation_source/>
         <inputs/>
         <inputs/>
         <order>11</order>
@@ -508,18 +500,6 @@
         <sys_updated_on>2024-04-26 08:14:21</sys_updated_on>
         <table>var__m_sys_hub_flow_input_30952a6193b9c610cd4e7d532bba1063</table>
         <value>{{flow_variable.p2_score}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>wait_for_completion</field>
-        <id>0416aaa193b9c610cd4e7d532bba10de</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-26 08:14:00</sys_created_on>
-        <sys_id>5816aaa193b9c610cd4e7d532bba10ea</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-26 08:14:00</sys_updated_on>
-        <table>var__m_sys_hub_sub_flow_instance_inputs_0416aaa193b9c610cd4e7d532bba10de</table>
-        <value/>
     </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_sub_flow_instance_inputs_0416aaa193b9c610cd4e7d532bba10de^id=0416aaa193b9c610cd4e7d532bba10de"/>
     <sys_hub_sub_flow_instance_inputs action="delete_multiple" query="model=0416aaa193b9c610cd4e7d532bba10de^sys_idNOT INcc16aaa193b9c610cd4e7d532bba10de"/>
@@ -612,7 +592,6 @@
         <comment/>
         <display_text/>
         <flow display_value="PLAY-SUB: Calculate location scores and update location">b761656b93998210cd4e7d532bba1037</flow>
-        <generation_source/>
         <inputs/>
         <inputs/>
         <order>6</order>
@@ -696,18 +675,6 @@
         <sys_updated_on>2024-04-26 08:13:52</sys_updated_on>
         <table>var__m_sys_hub_flow_input_30952a6193b9c610cd4e7d532bba1063</table>
         <value>{{flow_variable.p1_score}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>wait_for_completion</field>
-        <id>26f5e6a193b9c610cd4e7d532bba106a</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-26 08:13:37</sys_created_on>
-        <sys_id>3af5e6a193b9c610cd4e7d532bba1080</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-26 08:13:37</sys_updated_on>
-        <table>var__m_sys_hub_sub_flow_instance_inputs_26f5e6a193b9c610cd4e7d532bba106a</table>
-        <value/>
     </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_sub_flow_instance_inputs_26f5e6a193b9c610cd4e7d532bba106a^id=26f5e6a193b9c610cd4e7d532bba106a"/>
     <sys_hub_sub_flow_instance_inputs action="delete_multiple" query="model=26f5e6a193b9c610cd4e7d532bba106a^sys_idNOT INaaf5e6a193b9c610cd4e7d532bba106b"/>
@@ -808,7 +775,6 @@
         <flow display_value="PLAY-SUB: Calculate location scores and update location">b761656b93998210cd4e7d532bba1037</flow>
         <flow_variable/>
         <flow_variables_assigned/>
-        <generation_source/>
         <inputs/>
         <inputs/>
         <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
@@ -883,7 +849,6 @@
         <flow display_value="PLAY-SUB: Calculate location scores and update location">b761656b93998210cd4e7d532bba1037</flow>
         <flow_variable/>
         <flow_variables_assigned/>
-        <generation_source/>
         <inputs/>
         <inputs/>
         <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
@@ -933,7 +898,6 @@
         <flow_variable/>
         <flow_variable/>
         <flow_variables_assigned>p1_score</flow_variables_assigned>
-        <generation_source/>
         <inputs/>
         <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
         <order>7</order>
@@ -994,7 +958,6 @@
         <flow display_value="PLAY-SUB: Calculate location scores and update location">b761656b93998210cd4e7d532bba1037</flow>
         <flow_variable/>
         <flow_variables_assigned/>
-        <generation_source/>
         <inputs/>
         <inputs/>
         <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
@@ -1069,7 +1032,6 @@
         <flow display_value="PLAY-SUB: Calculate location scores and update location">b761656b93998210cd4e7d532bba1037</flow>
         <flow_variable/>
         <flow_variables_assigned/>
-        <generation_source/>
         <inputs/>
         <inputs/>
         <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
@@ -1118,7 +1080,6 @@
         <flow display_value="PLAY-SUB: Calculate location scores and update location">b761656b93998210cd4e7d532bba1037</flow>
         <flow_variable/>
         <flow_variables_assigned>p1_score,p2_score</flow_variables_assigned>
-        <generation_source/>
         <inputs/>
         <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
         <order>2</order>
@@ -1182,7 +1143,6 @@
         <flow_variable/>
         <flow_variable/>
         <flow_variables_assigned>p2_score</flow_variables_assigned>
-        <generation_source/>
         <inputs/>
         <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
         <order>12</order>
@@ -1413,7 +1373,7 @@
         <sys_created_on>2024-04-07 11:50:36</sys_created_on>
         <sys_id>3b61656b93998210cd4e7d532bba104b</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Location</sys_name>
         <sys_package display_value="Flow Designer Marvel SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
@@ -1432,13 +1392,11 @@
         <active>true</active>
         <annotation/>
         <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=88000,viewActivatedIn=naturalLanguage</attributes>
-        <authored_on_release_version/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
         <copied_from>f193286b93558210cd4e7d532bba1024</copied_from>
         <copied_from_name/>
         <description/>
-        <flow_priority/>
         <internal_name>playsub_calculate_location_scores_and_update_location</internal_name>
         <label_cache>[{"name":"2dc42c2f-4db3-44cf-8025-e3069429d09b.calculated_number","label":"6 - PLAY-SUB: add integer to other integer➛Calculated Number","reference_display":"Calculated Number","type":"integer","base_type":"integer","usedInstances":{"4db4007a-7dc5-45f3-8c8c-70f7edde0b4d":["p1_score-0"]},"attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"cdd3ee83-6087-470d-a3b2-657b9a238de3"}},{"name":"1f8f9104-823b-43c4-b64f-98eaa0955161.calculated_number","label":"11 - PLAY-SUB: add integer to other integer➛Calculated Number","reference_display":"Calculated Number","type":"integer","base_type":"integer","usedInstances":{"39059d9d-5793-4494-ac1b-36bf46c13329":["p2_score-0"]},"attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"cdd3ee83-6087-470d-a3b2-657b9a238de3"}},{"name":"7d7e8440-b6ef-4ddf-abe6-4cff20791231.calculated_number","label":"9 - PLAY-SUB: add integer to other integer➛Calculated Number","reference":"","reference_display":"","type":"integer","base_type":"integer","usedInstances":{"39059d9d-5793-4494-ac1b-36bf46c13329":["p2_score-0"]}},{"name":"f35fec56-def9-45ea-a0af-8b2f80c73db7.calculated_number","label":"5 - PLAY-SUB: add integer to other integer➛Calculated Number","reference":"","reference_display":"","type":"integer","base_type":"integer","usedInstances":{"4db4007a-7dc5-45f3-8c8c-70f7edde0b4d":["p1_score-0"]}},{"name":"subflow.location.game_instance.player_2","label":"Input➛Location➛Game Instance➛Player 2","reference":"x_168987_flow_de_0_player_session","reference_display":"Player Session","type":"reference","base_type":"reference","usedInstances":{}},{"name":"96862926-1dac-49c2-85da-05c4a0fbfa17.item.card_instance.current_power","label":"9 - For Each➛Game Location Slot Record➛Related Card Instance➛Current Power","reference":"","reference_display":"Current Power","type":"integer","base_type":"integer","parent_table_name":"x_168987_flow_de_0_card_instance","column_name":"current_power","usedInstances":{"f3054ec8-88c3-484f-9910-10b376ba4b86":["integer_to_add"],"7d7e8440-b6ef-4ddf-abe6-4cff20791231":["integer_to_add"],"6fc7cb1e-95a0-42f7-93f8-9038ba73bed5":["integer_to_add"],"1f8f9104-823b-43c4-b64f-98eaa0955161":["integer_to_add"],"d18459db-966c-4340-a313-dcbaea30144d":["condition"]}},{"name":"flow_variable.p2_score","label":"Flow Variables➛P2 Score","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","usedInstances":{"7d7e8440-b6ef-4ddf-abe6-4cff20791231":["original_integer"],"39059d9d-5793-4494-ac1b-36bf46c13329":["p2_score-0"],"6fc7cb1e-95a0-42f7-93f8-9038ba73bed5":["original_integer"],"1f8f9104-823b-43c4-b64f-98eaa0955161":["original_integer"]},"attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"bbf0e713-b3bc-4de4-8b9f-18ba9e7a787c"}},{"name":"849a81d0-172a-4411-8cef-31172761bd18.Records","label":"8 - Look Up Records➛Game Location Slot Records","reference":"x_168987_flow_de_0_location_slot","reference_display":"Game Location Slot","type":"records","base_type":"records","usedInstances":{},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"2232ed4f-8d15-4541-bfcc-42e3d600611f.item.card_instance.current_power","label":"4 - For Each➛Game Location Slot Record➛Related Card Instance➛Current Power","reference":"","reference_display":"Current Power","type":"integer","base_type":"integer","parent_table_name":"x_168987_flow_de_0_card_instance","column_name":"current_power","usedInstances":{"1f70cdec-dae3-4890-b250-e199a0efdd0f":["integer_to_add"],"2b958c2c-8ee7-4430-9546-d472d7120992":["integer_to_add"],"8d9a7f12-03aa-45de-9833-651e02206379":["integer_to_add"],"3ba9a293-afdb-4328-8cdf-2b12a08b1c81":["integer_to_add"],"f35fec56-def9-45ea-a0af-8b2f80c73db7":["integer_to_add"],"2dc42c2f-4db3-44cf-8025-e3069429d09b":["integer_to_add"],"5386f5ab-e541-4f2e-a7be-9755c8b0c45e":["condition"]}},{"name":"flow_variable.p1_score","label":"Flow Variables➛P1 Score","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","usedInstances":{"1f70cdec-dae3-4890-b250-e199a0efdd0f":["original_integer"],"f3054ec8-88c3-484f-9910-10b376ba4b86":["original_integer"],"2b958c2c-8ee7-4430-9546-d472d7120992":["original_integer"],"8d9a7f12-03aa-45de-9833-651e02206379":["original_integer"],"3ba9a293-afdb-4328-8cdf-2b12a08b1c81":["original_integer"],"f35fec56-def9-45ea-a0af-8b2f80c73db7":["original_integer"],"2dc42c2f-4db3-44cf-8025-e3069429d09b":["original_integer"],"1f8f9104-823b-43c4-b64f-98eaa0955161":["original_integer"]},"attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"89c00aa5-b80a-47ff-896c-b5a033ad1b99"}},{"name":"subflow.location.game_instance.player_1","label":"Input➛Location➛Game Instance➛Player 1","reference":"x_168987_flow_de_0_player_session","reference_display":"Player Session","type":"reference","base_type":"reference","usedInstances":{}},{"name":"subflow.location","label":"Input➛Location","reference":"x_168987_flow_de_0_location_instance","reference_display":"Game Location instance","type":"reference","base_type":"reference","usedInstances":{}},{"name":"f7e1b482-a93e-48de-8bc0-3a3628e2467f.Records","label":"3 - Look Up Records➛Game Location Slot Records","reference":"x_168987_flow_de_0_location_slot","reference_display":"Game Location Slot","type":"records","base_type":"records","usedInstances":{},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.game_instance.player_1","label":"Input➛Game Instance➛Player 1","reference":"x_168987_flow_de_0_player_session","reference_display":"Player Session","type":"reference","base_type":"reference","usedInstances":{}},{"name":"subflow.game_instance.location_1","label":"Input➛Game Instance➛Location 1","reference":"x_168987_flow_de_0_location_instance","reference_display":"Game Location instance","type":"reference","base_type":"reference","usedInstances":{}},{"name":"1f70cdec-dae3-4890-b250-e199a0efdd0f.calculated_number","label":"5 - PLAY-SUB: add integer to other integer➛Calculated Number","reference":"","reference_display":"Calculated Number","type":"integer","base_type":"integer","usedInstances":{"4db4007a-7dc5-45f3-8c8c-70f7edde0b4d":["p1_score-0"]}},{"name":"3ba9a293-afdb-4328-8cdf-2b12a08b1c81.calculated_number","label":"5 - PLAY-SUB: add integer to other integer➛Calculated Number","reference":"","reference_display":"Calculated Number","type":"integer","base_type":"integer","usedInstances":{"4db4007a-7dc5-45f3-8c8c-70f7edde0b4d":["p1_score-0"]}},{"name":"f3054ec8-88c3-484f-9910-10b376ba4b86.calculated_number","label":"9 - PLAY-SUB: add integer to other integer➛Calculated Number","reference":"","reference_display":"","type":"integer","base_type":"integer","usedInstances":{"39059d9d-5793-4494-ac1b-36bf46c13329":["p2_score-0"]}}]</label_cache>
         <master>true</master>
@@ -1582,7 +1540,6 @@
         <comment>Player 2</comment>
         <display_text/>
         <flow display_value="PLAY-SUB: Calculate location scores and update location">0f81696b93998210cd4e7d532bba1028</flow>
-        <generation_source/>
         <order>8</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -1646,7 +1603,6 @@
         <comment>Player 1</comment>
         <display_text/>
         <flow display_value="PLAY-SUB: Calculate location scores and update location">0f81696b93998210cd4e7d532bba1028</flow>
-        <generation_source/>
         <order>3</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -1735,7 +1691,6 @@
         <comment/>
         <display_text/>
         <flow display_value="PLAY-SUB: Calculate location scores and update location">0f81696b93998210cd4e7d532bba1028</flow>
-        <generation_source/>
         <order>1</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -1775,7 +1730,6 @@
         <comment>Update Location Scores</comment>
         <display_text/>
         <flow display_value="PLAY-SUB: Calculate location scores and update location">0f81696b93998210cd4e7d532bba1028</flow>
-        <generation_source/>
         <order>13</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -1848,7 +1802,6 @@
         <comment/>
         <display_text/>
         <flow display_value="PLAY-SUB: Calculate location scores and update location">0f81696b93998210cd4e7d532bba1028</flow>
-        <generation_source/>
         <inputs/>
         <inputs/>
         <order>11</order>
@@ -1932,18 +1885,6 @@
         <sys_updated_on>2024-04-26 08:15:00</sys_updated_on>
         <table>var__m_sys_hub_flow_input_30952a6193b9c610cd4e7d532bba1063</table>
         <value>{{flow_variable.p2_score}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>wait_for_completion</field>
-        <id>764626e193b9c610cd4e7d532bba10de</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-26 08:15:00</sys_created_on>
-        <sys_id>cb4626e193b9c610cd4e7d532bba10e9</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-26 08:15:00</sys_updated_on>
-        <table>var__m_sys_hub_sub_flow_instance_inputs_764626e193b9c610cd4e7d532bba10de</table>
-        <value/>
     </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_sub_flow_instance_inputs_764626e193b9c610cd4e7d532bba10de^id=764626e193b9c610cd4e7d532bba10de"/>
     <sys_hub_sub_flow_instance_inputs action="delete_multiple" query="model=764626e193b9c610cd4e7d532bba10de^sys_idNOT IN324626e193b9c610cd4e7d532bba10df"/>
@@ -2036,7 +1977,6 @@
         <comment/>
         <display_text/>
         <flow display_value="PLAY-SUB: Calculate location scores and update location">0f81696b93998210cd4e7d532bba1028</flow>
-        <generation_source/>
         <inputs/>
         <inputs/>
         <order>6</order>
@@ -2120,18 +2060,6 @@
         <sys_updated_on>2024-04-26 08:15:00</sys_updated_on>
         <table>var__m_sys_hub_flow_input_30952a6193b9c610cd4e7d532bba1063</table>
         <value>{{flow_variable.p1_score}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>wait_for_completion</field>
-        <id>ba4626e193b9c610cd4e7d532bba10c3</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-26 08:15:00</sys_created_on>
-        <sys_id>be4626e193b9c610cd4e7d532bba10dd</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-26 08:15:00</sys_updated_on>
-        <table>var__m_sys_hub_sub_flow_instance_inputs_ba4626e193b9c610cd4e7d532bba10c3</table>
-        <value/>
     </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_sub_flow_instance_inputs_ba4626e193b9c610cd4e7d532bba10c3^id=ba4626e193b9c610cd4e7d532bba10c3"/>
     <sys_hub_sub_flow_instance_inputs action="delete_multiple" query="model=ba4626e193b9c610cd4e7d532bba10c3^sys_idNOT IN764626e193b9c610cd4e7d532bba10c4"/>
@@ -2232,7 +2160,6 @@
         <flow display_value="PLAY-SUB: Calculate location scores and update location">0f81696b93998210cd4e7d532bba1028</flow>
         <flow_variable/>
         <flow_variables_assigned/>
-        <generation_source/>
         <inputs/>
         <inputs/>
         <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
@@ -2307,7 +2234,6 @@
         <flow display_value="PLAY-SUB: Calculate location scores and update location">0f81696b93998210cd4e7d532bba1028</flow>
         <flow_variable/>
         <flow_variables_assigned/>
-        <generation_source/>
         <inputs/>
         <inputs/>
         <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
@@ -2356,7 +2282,6 @@
         <flow display_value="PLAY-SUB: Calculate location scores and update location">0f81696b93998210cd4e7d532bba1028</flow>
         <flow_variable/>
         <flow_variables_assigned/>
-        <generation_source/>
         <inputs/>
         <inputs/>
         <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
@@ -2405,7 +2330,6 @@
         <flow display_value="PLAY-SUB: Calculate location scores and update location">0f81696b93998210cd4e7d532bba1028</flow>
         <flow_variable/>
         <flow_variables_assigned>p1_score,p2_score</flow_variables_assigned>
-        <generation_source/>
         <inputs/>
         <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
         <order>2</order>
@@ -2469,7 +2393,6 @@
         <flow_variable/>
         <flow_variable/>
         <flow_variables_assigned>p2_score</flow_variables_assigned>
-        <generation_source/>
         <inputs/>
         <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
         <order>12</order>
@@ -2531,7 +2454,6 @@
         <flow_variable/>
         <flow_variable/>
         <flow_variables_assigned>p1_score</flow_variables_assigned>
-        <generation_source/>
         <inputs/>
         <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
         <order>7</order>
@@ -2592,7 +2514,6 @@
         <flow display_value="PLAY-SUB: Calculate location scores and update location">0f81696b93998210cd4e7d532bba1028</flow>
         <flow_variable/>
         <flow_variables_assigned/>
-        <generation_source/>
         <inputs/>
         <inputs/>
         <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
@@ -2837,7 +2758,7 @@
         <sys_created_on>2024-04-07 11:51:06</sys_created_on>
         <sys_id>cb81696b93998210cd4e7d532bba1039</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Location</sys_name>
         <sys_package display_value="Flow Designer Marvel SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
@@ -2853,14 +2774,14 @@
     <sys_hub_flow action="UPDATE">
         <sys_id>b761656b93998210cd4e7d532bba1037</sys_id>
         <latest_snapshot>0f81696b93998210cd4e7d532bba1028</latest_snapshot>
-        <compiler_build>glide-washingtondc-12-20-2023__patch1-02-28-2024_03-09-2024_0815.zip</compiler_build>
+        <compiler_build>glide-vancouver-07-06-2023__patch2-hotfix1-10-04-2023_10-06-2023_1235.zip</compiler_build>
     </sys_hub_flow>
     <sys_flow_trigger_plan action="delete_multiple" query="plan_id=b761656b93998210cd4e7d532bba1037"/>
     <sys_flow_subflow_plan action="delete_multiple" query="plan_id=b761656b93998210cd4e7d532bba1037^sys_idNOT IN3b81a96b93998210cd4e7d532bba102b"/>
     <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
-        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"3b81a96b93998210cd4e7d532bba102b","name":"plan","plan_signature":null}}</plan>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"3b81a96b93998210cd4e7d532bba102b","name":"plan","plan_signature":null}}</plan>
         <plan_id display_value="PLAY-SUB: Calculate location scores and update location">b761656b93998210cd4e7d532bba1037</plan_id>
-        <snapshot>8a3e62a193f9c610cd4e7d532bba105e</snapshot>
+        <snapshot>f0225373537942103a0891e0a0490ec8</snapshot>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-04-07 11:51:08</sys_created_on>
         <sys_domain>global</sys_domain>

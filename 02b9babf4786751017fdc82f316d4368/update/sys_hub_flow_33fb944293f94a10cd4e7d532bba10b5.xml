@@ -5,14 +5,11 @@
         <active>true</active>
         <annotation/>
         <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=106000,viewActivatedIn=naturalLanguage</attributes>
-        <authored_on_release_version>25000</authored_on_release_version>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
         <copied_from>25bbe6f4476a3d5017fdc82f316d432c</copied_from>
         <copied_from_name>CARD-ACT: Subflow Template</copied_from_name>
         <description/>
-        <flow_priority/>
-        <generation_source/>
         <internal_name>cardact_on_reveal_give_every_card_in_your_deck_1_power</internal_name>
         <label_cache>[{"name":"subflow.player_session","label":"Input➛Player Session","reference":"x_168987_flow_de_0_player_session","reference_display":"Player Session","type":"reference","base_type":"reference","column_name":"","usedInstances":{"0be9d15f-8a11-41d0-84af-a6236bc2eec4":["conditions"]},"attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"498332c7-2b6e-42b0-82a9-9f0a0d4937ea","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"0be9d15f-8a11-41d0-84af-a6236bc2eec4.Records","label":"1 - Look Up Records➛Game Card Instance Records","reference":"x_168987_flow_de_0_card_instance","reference_display":"Game Card Instance","type":"records","base_type":"records","usedInstances":{"559f296a-50e2-413c-b12a-fd58eb1ad599":["items"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"559f296a-50e2-413c-b12a-fd58eb1ad599.item","label":"2 - For Each➛Game Card Instance Record","reference":"x_168987_flow_de_0_card_instance","reference_display":"Game Card Instance","type":"reference","base_type":"reference","usedInstances":{"579785c8-ef19-4602-97ec-9a100ece1ca0":["record"]},"attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"559f296a-50e2-413c-b12a-fd58eb1ad599.item.current_power","label":"2 - For Each➛Game Card Instance Record➛Current Power","reference":"","reference_display":"Current Power","type":"integer","base_type":"integer","parent_table_name":"x_168987_flow_de_0_card_instance","column_name":"current_power","usedInstances":{"579785c8-ef19-4602-97ec-9a100ece1ca0":["current_power"]}}]</label_cache>
         <master_snapshot>e16c908293f94a10cd4e7d532bba1060</master_snapshot>
@@ -33,7 +30,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>33fb944293f94a10cd4e7d532bba10b5</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>CARD-ACT: On Reveal: Give every card in your deck +1 Power.</sys_name>
         <sys_overrides/>
         <sys_package display_value="Flow Designer Marvel SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
@@ -41,7 +38,7 @@
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_update_name>sys_hub_flow_33fb944293f94a10cd4e7d532bba10b5</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-27 11:29:31</sys_updated_on>
+        <sys_updated_on>2024-05-02 13:41:41</sys_updated_on>
         <type>subflow</type>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=33fb944293f94a10cd4e7d532bba10b5"/>
@@ -411,7 +408,6 @@
         <comment/>
         <display_text/>
         <flow display_value="CARD-ACT: On Reveal: Give every card in your deck +1 Power.">33fb944293f94a10cd4e7d532bba10b5</flow>
-        <generation_source/>
         <order>1</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -475,7 +471,6 @@
         <comment/>
         <display_text/>
         <flow display_value="CARD-ACT: On Reveal: Give every card in your deck +1 Power.">33fb944293f94a10cd4e7d532bba10b5</flow>
-        <generation_source/>
         <order>3</order>
         <parent_ui_id>559f296a-50e2-413c-b12a-fd58eb1ad599</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -550,7 +545,6 @@
         <comment/>
         <display_text/>
         <flow display_value="CARD-ACT: On Reveal: Give every card in your deck +1 Power.">33fb944293f94a10cd4e7d532bba10b5</flow>
-        <generation_source/>
         <order>4</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -595,7 +589,6 @@
         <flow display_value="CARD-ACT: On Reveal: Give every card in your deck +1 Power.">33fb944293f94a10cd4e7d532bba10b5</flow>
         <flow_variable/>
         <flow_variables_assigned/>
-        <generation_source/>
         <inputs/>
         <inputs/>
         <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
@@ -682,11 +675,11 @@
         <sys_created_on>2024-04-27 11:27:44</sys_created_on>
         <sys_id>3bfb944293f94a10cd4e7d532bba10ef</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Card Instance</sys_name>
         <sys_package display_value="Flow Designer Marvel SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_33fb944293f94a10cd4e7d532bba10b5_card_instance_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-04-27 11:27:44</sys_updated_on>
         <url/>
@@ -705,11 +698,11 @@
         <sys_created_on>2024-04-27 11:27:44</sys_created_on>
         <sys_id>7bfb944293f94a10cd4e7d532bba10f3</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Game Instance</sys_name>
         <sys_package display_value="Flow Designer Marvel SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_33fb944293f94a10cd4e7d532bba10b5_game_instance_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-04-27 11:27:44</sys_updated_on>
         <url/>
@@ -728,11 +721,11 @@
         <sys_created_on>2024-04-27 11:27:44</sys_created_on>
         <sys_id>fbfb944293f94a10cd4e7d532bba10de</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Player Session</sys_name>
         <sys_package display_value="Flow Designer Marvel SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_33fb944293f94a10cd4e7d532bba10b5_player_session_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-04-27 11:27:44</sys_updated_on>
         <url/>
@@ -753,17 +746,17 @@
         <sys_created_on>2024-04-27 11:27:44</sys_created_on>
         <sys_id>b3fb944293f94a10cd4e7d532bba10fe</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Status</sys_name>
         <sys_package display_value="Flow Designer Marvel SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_33fb944293f94a10cd4e7d532bba10b5_status_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-04-27 11:27:44</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
-    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_33fb944293f94a10cd4e7d532bba10b5^sys_idNOT IN73fb944293f94a10cd4e7d532bba10f9,bbfb944293f94a10cd4e7d532bba10fa"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_33fb944293f94a10cd4e7d532bba10b5^sys_idNOT IN7eea666b533102103a0891e0a0490e81,faea666b533102103a0891e0a0490e82"/>
     <sys_choice field="status" table="var__m_sys_hub_flow_output_33fb944293f94a10cd4e7d532bba10b5">
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
@@ -779,7 +772,7 @@
             <sys_created_on>2024-04-27 11:27:44</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>73fb944293f94a10cd4e7d532bba10f9</sys_id>
+            <sys_id>7eea666b533102103a0891e0a0490e81</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2024-04-27 11:27:44</sys_updated_on>
@@ -799,7 +792,7 @@
             <sys_created_on>2024-04-27 11:27:44</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>bbfb944293f94a10cd4e7d532bba10fa</sys_id>
+            <sys_id>faea666b533102103a0891e0a0490e82</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2024-04-27 11:27:44</sys_updated_on>
@@ -812,13 +805,11 @@
         <active>true</active>
         <annotation/>
         <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=341789000,viewActivatedIn=naturalLanguage</attributes>
-        <authored_on_release_version>25000</authored_on_release_version>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
         <copied_from>25bbe6f4476a3d5017fdc82f316d432c</copied_from>
         <copied_from_name/>
         <description/>
-        <flow_priority/>
         <internal_name>cardact_on_reveal_give_every_card_in_your_deck_1_power</internal_name>
         <label_cache>[{"name":"subflow.player_session","label":"Input➛Player Session","reference":"x_168987_flow_de_0_player_session","reference_display":"Player Session","type":"reference","base_type":"reference","column_name":"","usedInstances":{"0be9d15f-8a11-41d0-84af-a6236bc2eec4":["conditions"]},"attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"498332c7-2b6e-42b0-82a9-9f0a0d4937ea","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"0be9d15f-8a11-41d0-84af-a6236bc2eec4.Records","label":"1 - Look Up Records➛Game Card Instance Records","reference":"x_168987_flow_de_0_card_instance","reference_display":"Game Card Instance","type":"records","base_type":"records","usedInstances":{"559f296a-50e2-413c-b12a-fd58eb1ad599":["items"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"559f296a-50e2-413c-b12a-fd58eb1ad599.item","label":"2 - For Each➛Game Card Instance Record","reference":"x_168987_flow_de_0_card_instance","reference_display":"Game Card Instance","type":"reference","base_type":"reference","usedInstances":{"579785c8-ef19-4602-97ec-9a100ece1ca0":["record"]},"attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"559f296a-50e2-413c-b12a-fd58eb1ad599.item.current_power","label":"2 - For Each➛Game Card Instance Record➛Current Power","reference":"","reference_display":"Current Power","type":"integer","base_type":"integer","parent_table_name":"x_168987_flow_de_0_card_instance","column_name":"current_power","usedInstances":{"579785c8-ef19-4602-97ec-9a100ece1ca0":["current_power"]}}]</label_cache>
         <master>true</master>
@@ -1215,7 +1206,6 @@
         <comment/>
         <display_text/>
         <flow display_value="CARD-ACT: On Reveal: Give every card in your deck +1 Power.">e16c908293f94a10cd4e7d532bba1060</flow>
-        <generation_source/>
         <order>1</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -1279,7 +1269,6 @@
         <comment/>
         <display_text/>
         <flow display_value="CARD-ACT: On Reveal: Give every card in your deck +1 Power.">e16c908293f94a10cd4e7d532bba1060</flow>
-        <generation_source/>
         <order>3</order>
         <parent_ui_id>559f296a-50e2-413c-b12a-fd58eb1ad599</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -1354,7 +1343,6 @@
         <comment/>
         <display_text/>
         <flow display_value="CARD-ACT: On Reveal: Give every card in your deck +1 Power.">e16c908293f94a10cd4e7d532bba1060</flow>
-        <generation_source/>
         <order>4</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -1399,7 +1387,6 @@
         <flow display_value="CARD-ACT: On Reveal: Give every card in your deck +1 Power.">e16c908293f94a10cd4e7d532bba1060</flow>
         <flow_variable/>
         <flow_variables_assigned/>
-        <generation_source/>
         <inputs/>
         <inputs/>
         <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
@@ -1486,11 +1473,11 @@
         <sys_created_on>2024-04-27 11:29:30</sys_created_on>
         <sys_id>3d6c908293f94a10cd4e7d532bba1097</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Game Instance</sys_name>
         <sys_package display_value="Flow Designer Marvel SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_e16c908293f94a10cd4e7d532bba1060_game_instance_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-04-27 11:29:30</sys_updated_on>
         <url/>
@@ -1509,11 +1496,11 @@
         <sys_created_on>2024-04-27 11:29:30</sys_created_on>
         <sys_id>796c908293f94a10cd4e7d532bba1075</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Player Session</sys_name>
         <sys_package display_value="Flow Designer Marvel SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_e16c908293f94a10cd4e7d532bba1060_player_session_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-04-27 11:29:30</sys_updated_on>
         <url/>
@@ -1532,11 +1519,11 @@
         <sys_created_on>2024-04-27 11:29:30</sys_created_on>
         <sys_id>7d6c908293f94a10cd4e7d532bba108c</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Card Instance</sys_name>
         <sys_package display_value="Flow Designer Marvel SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_e16c908293f94a10cd4e7d532bba1060_card_instance_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-04-27 11:29:30</sys_updated_on>
         <url/>
@@ -1557,17 +1544,17 @@
         <sys_created_on>2024-04-27 11:29:30</sys_created_on>
         <sys_id>f96c908293f94a10cd4e7d532bba10a8</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Status</sys_name>
         <sys_package display_value="Flow Designer Marvel SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_e16c908293f94a10cd4e7d532bba1060_status_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-04-27 11:29:30</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
-    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_e16c908293f94a10cd4e7d532bba1060^sys_idNOT INb16c908293f94a10cd4e7d532bba10a1,7d6c908293f94a10cd4e7d532bba10a2"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_e16c908293f94a10cd4e7d532bba1060^sys_idNOT IN8feae66b533102103a0891e0a0490e4f,0feae66b533102103a0891e0a0490e50"/>
     <sys_choice field="status" table="var__m_sys_hub_flow_output_e16c908293f94a10cd4e7d532bba1060">
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
@@ -1583,7 +1570,7 @@
             <sys_created_on>2024-04-27 11:29:30</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>b16c908293f94a10cd4e7d532bba10a1</sys_id>
+            <sys_id>8feae66b533102103a0891e0a0490e4f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2024-04-27 11:29:30</sys_updated_on>
@@ -1603,7 +1590,7 @@
             <sys_created_on>2024-04-27 11:29:30</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>7d6c908293f94a10cd4e7d532bba10a2</sys_id>
+            <sys_id>0feae66b533102103a0891e0a0490e50</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2024-04-27 11:29:30</sys_updated_on>
