@@ -473,6 +473,342 @@
                                                         },
                                                         "slot": null,
                                                         "styles": null
+                                                    },
+                                                    {
+                                                        "definition": {
+                                                            "id": "d37ce8abca89d02905fed903c8e34d8e",
+                                                            "type": "MACROPONENT"
+                                                        },
+                                                        "elementId": "launch_p1_button",
+                                                        "elementLabel": "Launch Player 1 button",
+                                                        "eventMappings": [
+                                                            {
+                                                                "eventMappingId": "cluicjffpqaaddkrddbhhnajjgeetftjj",
+                                                                "isConfiguration": false,
+                                                                "offRowStorageId": null,
+                                                                "sourceEventApiName": "sn_button.NOW_BUTTON#CLICKED",
+                                                                "sourceEventCorrelationId": null,
+                                                                "sourceEventDefinition": {
+                                                                    "apiName": "sn_button.NOW_BUTTON#CLICKED",
+                                                                    "id": null,
+                                                                    "type": "UXEVENT"
+                                                                },
+                                                                "sourceEventSysId": null,
+                                                                "targets": [
+                                                                    {
+                                                                        "broker": null,
+                                                                        "clientScript": null,
+                                                                        "conditional": null,
+                                                                        "declarativeAction": null,
+                                                                        "event": {
+                                                                            "apiName": "x_168987_flow_de_0.NAV_ITEM_SELECTED_RELAY_3ca327b993110210cd4e7d532bba10be",
+                                                                            "payload": {
+                                                                                "container": {
+                                                                                    "external": {
+                                                                                        "type": "JSON_LITERAL",
+                                                                                        "value": null
+                                                                                    },
+                                                                                    "fields": {
+                                                                                        "container": {
+                                                                                            "gameInstance": {
+                                                                                                "binding": {
+                                                                                                    "address": [
+                                                                                                        "matchmaking_record_lookup",
+                                                                                                        "result",
+                                                                                                        "game_instance",
+                                                                                                        "value"
+                                                                                                    ]
+                                                                                                },
+                                                                                                "type": "DATA_OUTPUT_BINDING"
+                                                                                            },
+                                                                                            "page": {
+                                                                                                "type": "JSON_LITERAL",
+                                                                                                "value": "player1"
+                                                                                            },
+                                                                                            "playerSession": {
+                                                                                                "binding": {
+                                                                                                    "address": [
+                                                                                                        "matchmaking_record_lookup",
+                                                                                                        "result",
+                                                                                                        "player_1_session",
+                                                                                                        "value"
+                                                                                                    ]
+                                                                                                },
+                                                                                                "type": "DATA_OUTPUT_BINDING"
+                                                                                            }
+                                                                                        },
+                                                                                        "type": "MAP_CONTAINER"
+                                                                                    },
+                                                                                    "multiInstField": {
+                                                                                        "type": "JSON_LITERAL",
+                                                                                        "value": null
+                                                                                    },
+                                                                                    "navigationOptions": {
+                                                                                        "type": "JSON_LITERAL",
+                                                                                        "value": null
+                                                                                    },
+                                                                                    "params": {
+                                                                                        "type": "JSON_LITERAL",
+                                                                                        "value": null
+                                                                                    },
+                                                                                    "passiveNavigation": {
+                                                                                        "type": "JSON_LITERAL",
+                                                                                        "value": false
+                                                                                    },
+                                                                                    "redirect": {
+                                                                                        "type": "JSON_LITERAL",
+                                                                                        "value": null
+                                                                                    },
+                                                                                    "route": {
+                                                                                        "type": "JSON_LITERAL",
+                                                                                        "value": "debug-play-space"
+                                                                                    },
+                                                                                    "targetRoute": {
+                                                                                        "type": "JSON_LITERAL",
+                                                                                        "value": ""
+                                                                                    },
+                                                                                    "title": {
+                                                                                        "type": "JSON_LITERAL",
+                                                                                        "value": null
+                                                                                    }
+                                                                                },
+                                                                                "type": "MAP_CONTAINER"
+                                                                            },
+                                                                            "sysId": "0fb3e7b993110210cd4e7d532bba1092"
+                                                                        },
+                                                                        "operation": null,
+                                                                        "targetId": "cluicjffpqaaddksddbhhnaajggzhhlvi",
+                                                                        "type": "EVENT"
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ],
+                                                        "isHidden": {
+                                                            "operation": {
+                                                                "operand": {
+                                                                    "binding": {
+                                                                        "address": [
+                                                                            "matchmaking_record_lookup",
+                                                                            "result",
+                                                                            "game_instance",
+                                                                            "value"
+                                                                        ]
+                                                                    },
+                                                                    "type": "DATA_OUTPUT_BINDING"
+                                                                },
+                                                                "operator": "NOT"
+                                                            },
+                                                            "type": "UNARY"
+                                                        },
+                                                        "preset": null,
+                                                        "propertyValues": {
+                                                            "configAria": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": {}
+                                                            },
+                                                            "disabled": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": false
+                                                            },
+                                                            "icon": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": null
+                                                            },
+                                                            "label": {
+                                                                "type": "TRANSLATION_LITERAL",
+                                                                "value": {
+                                                                    "code": null,
+                                                                    "comment": "",
+                                                                    "message": "Launch P1 Game"
+                                                                }
+                                                            },
+                                                            "size": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": "md"
+                                                            },
+                                                            "tooltipContent": {
+                                                                "type": "TRANSLATION_LITERAL",
+                                                                "value": {
+                                                                    "code": null,
+                                                                    "comment": "",
+                                                                    "message": "Enter a label"
+                                                                }
+                                                            },
+                                                            "variant": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": "secondary"
+                                                            }
+                                                        },
+                                                        "slot": null,
+                                                        "styles": null
+                                                    },
+                                                    {
+                                                        "definition": {
+                                                            "id": "d37ce8abca89d02905fed903c8e34d8e",
+                                                            "type": "MACROPONENT"
+                                                        },
+                                                        "elementId": "launch_p2_button",
+                                                        "elementLabel": "Launch Player 2 Button",
+                                                        "eventMappings": [
+                                                            {
+                                                                "eventMappingId": "cluicjffpqaaddkrddbhhnajjgeetftjj",
+                                                                "isConfiguration": false,
+                                                                "offRowStorageId": null,
+                                                                "sourceEventApiName": "sn_button.NOW_BUTTON#CLICKED",
+                                                                "sourceEventCorrelationId": null,
+                                                                "sourceEventDefinition": {
+                                                                    "apiName": "sn_button.NOW_BUTTON#CLICKED",
+                                                                    "id": null,
+                                                                    "type": "UXEVENT"
+                                                                },
+                                                                "sourceEventSysId": null,
+                                                                "targets": [
+                                                                    {
+                                                                        "broker": null,
+                                                                        "clientScript": null,
+                                                                        "conditional": null,
+                                                                        "declarativeAction": null,
+                                                                        "event": {
+                                                                            "apiName": "x_168987_flow_de_0.NAV_ITEM_SELECTED_RELAY_3ca327b993110210cd4e7d532bba10be",
+                                                                            "payload": {
+                                                                                "container": {
+                                                                                    "external": {
+                                                                                        "type": "JSON_LITERAL",
+                                                                                        "value": null
+                                                                                    },
+                                                                                    "fields": {
+                                                                                        "container": {
+                                                                                            "gameInstance": {
+                                                                                                "binding": {
+                                                                                                    "address": [
+                                                                                                        "matchmaking_record_lookup",
+                                                                                                        "result",
+                                                                                                        "game_instance",
+                                                                                                        "value"
+                                                                                                    ]
+                                                                                                },
+                                                                                                "type": "DATA_OUTPUT_BINDING"
+                                                                                            },
+                                                                                            "page": {
+                                                                                                "type": "JSON_LITERAL",
+                                                                                                "value": "player2"
+                                                                                            },
+                                                                                            "playerSession": {
+                                                                                                "binding": {
+                                                                                                    "address": [
+                                                                                                        "matchmaking_record_lookup",
+                                                                                                        "result",
+                                                                                                        "player_1_session",
+                                                                                                        "value"
+                                                                                                    ]
+                                                                                                },
+                                                                                                "type": "DATA_OUTPUT_BINDING"
+                                                                                            }
+                                                                                        },
+                                                                                        "type": "MAP_CONTAINER"
+                                                                                    },
+                                                                                    "multiInstField": {
+                                                                                        "type": "JSON_LITERAL",
+                                                                                        "value": null
+                                                                                    },
+                                                                                    "navigationOptions": {
+                                                                                        "type": "JSON_LITERAL",
+                                                                                        "value": null
+                                                                                    },
+                                                                                    "params": {
+                                                                                        "type": "JSON_LITERAL",
+                                                                                        "value": null
+                                                                                    },
+                                                                                    "passiveNavigation": {
+                                                                                        "type": "JSON_LITERAL",
+                                                                                        "value": false
+                                                                                    },
+                                                                                    "redirect": {
+                                                                                        "type": "JSON_LITERAL",
+                                                                                        "value": null
+                                                                                    },
+                                                                                    "route": {
+                                                                                        "type": "JSON_LITERAL",
+                                                                                        "value": "debug-play-space"
+                                                                                    },
+                                                                                    "targetRoute": {
+                                                                                        "type": "JSON_LITERAL",
+                                                                                        "value": ""
+                                                                                    },
+                                                                                    "title": {
+                                                                                        "type": "JSON_LITERAL",
+                                                                                        "value": null
+                                                                                    }
+                                                                                },
+                                                                                "type": "MAP_CONTAINER"
+                                                                            },
+                                                                            "sysId": "0fb3e7b993110210cd4e7d532bba1092"
+                                                                        },
+                                                                        "operation": null,
+                                                                        "targetId": "cluicjffpqaaddksddbhhnaajggzhhlvi",
+                                                                        "type": "EVENT"
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ],
+                                                        "isHidden": {
+                                                            "operation": {
+                                                                "operand": {
+                                                                    "binding": {
+                                                                        "address": [
+                                                                            "matchmaking_record_lookup",
+                                                                            "result",
+                                                                            "game_instance",
+                                                                            "value"
+                                                                        ]
+                                                                    },
+                                                                    "type": "DATA_OUTPUT_BINDING"
+                                                                },
+                                                                "operator": "NOT"
+                                                            },
+                                                            "type": "UNARY"
+                                                        },
+                                                        "preset": null,
+                                                        "propertyValues": {
+                                                            "configAria": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": {}
+                                                            },
+                                                            "disabled": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": false
+                                                            },
+                                                            "icon": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": null
+                                                            },
+                                                            "label": {
+                                                                "type": "TRANSLATION_LITERAL",
+                                                                "value": {
+                                                                    "code": null,
+                                                                    "comment": "",
+                                                                    "message": "Launch P2 Game"
+                                                                }
+                                                            },
+                                                            "size": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": "md"
+                                                            },
+                                                            "tooltipContent": {
+                                                                "type": "TRANSLATION_LITERAL",
+                                                                "value": {
+                                                                    "code": null,
+                                                                    "comment": "",
+                                                                    "message": "Enter a label"
+                                                                }
+                                                            },
+                                                            "variant": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": "secondary"
+                                                            }
+                                                        },
+                                                        "slot": null,
+                                                        "styles": null
                                                     }
                                                 ],
                                                 "layout": {
@@ -489,6 +825,14 @@
                                                             },
                                                             {
                                                                 "element_id": "launch_game_button",
+                                                                "styles": {}
+                                                            },
+                                                            {
+                                                                "element_id": "launch_p1_button",
+                                                                "styles": {}
+                                                            },
+                                                            {
+                                                                "element_id": "launch_p2_button",
                                                                 "styles": {}
                                                             }
                                                         ],
@@ -1161,6 +1505,75 @@
                                                             "wontWrap": {
                                                                 "type": "JSON_LITERAL",
                                                                 "value": false
+                                                            }
+                                                        },
+                                                        "slot": null,
+                                                        "styles": null
+                                                    },
+                                                    {
+                                                        "definition": {
+                                                            "id": "d37ce8abca89d02905fed903c8e34d8e",
+                                                            "type": "MACROPONENT"
+                                                        },
+                                                        "elementId": "button_1",
+                                                        "elementLabel": "Button 1",
+                                                        "eventMappings": [
+                                                            
+                                                        ],
+                                                        "isHidden": {
+                                                            "operation": {
+                                                                "operand": {
+                                                                    "binding": {
+                                                                        "address": [
+                                                                            "matchmaking_record_lookup",
+                                                                            "result",
+                                                                            "game_instance",
+                                                                            "value"
+                                                                        ]
+                                                                    },
+                                                                    "type": "DATA_OUTPUT_BINDING"
+                                                                },
+                                                                "operator": "NOT"
+                                                            },
+                                                            "type": "UNARY"
+                                                        },
+                                                        "preset": null,
+                                                        "propertyValues": {
+                                                            "configAria": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": {}
+                                                            },
+                                                            "disabled": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": false
+                                                            },
+                                                            "icon": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": null
+                                                            },
+                                                            "label": {
+                                                                "type": "TRANSLATION_LITERAL",
+                                                                "value": {
+                                                                    "code": null,
+                                                                    "comment": "",
+                                                                    "message": "Launch Player 1"
+                                                                }
+                                                            },
+                                                            "size": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": "md"
+                                                            },
+                                                            "tooltipContent": {
+                                                                "type": "TRANSLATION_LITERAL",
+                                                                "value": {
+                                                                    "code": null,
+                                                                    "comment": "",
+                                                                    "message": "Enter a label"
+                                                                }
+                                                            },
+                                                            "variant": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": "primary-positive"
                                                             }
                                                         },
                                                         "slot": null,
@@ -1931,6 +2344,10 @@
                                                         "items": [
                                                             {
                                                                 "element_id": "select_p1_label",
+                                                                "styles": {}
+                                                            },
+                                                            {
+                                                                "element_id": "button_1",
                                                                 "styles": {}
                                                             },
                                                             {
@@ -3844,6 +4261,15 @@
   "message" : "Launch Game in Debug Mode",
   "comment" : ""
 }, {
+  "message" : "Launch P1 Game",
+  "comment" : ""
+}, {
+  "message" : "Launch P2 Game",
+  "comment" : ""
+}, {
+  "message" : "Launch Player 1",
+  "comment" : ""
+}, {
   "message" : "Matchmaking Queue record: ",
   "comment" : ""
 }, {
@@ -3945,14 +4371,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-04-02 10:50:05</sys_created_on>
         <sys_id>3ca327b993110210cd4e7d532bba10be</sys_id>
-        <sys_mod_count>47</sys_mod_count>
+        <sys_mod_count>49</sys_mod_count>
         <sys_name>Default</sys_name>
         <sys_package display_value="Flow Designer Marvel SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_update_name>sys_ux_macroponent_3ca327b993110210cd4e7d532bba10be</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-27 01:56:08</sys_updated_on>
+        <sys_updated_on>2024-05-06 23:10:36</sys_updated_on>
     </sys_ux_macroponent>
     <sys_translated_text action="delete_multiple" query="documentkey=3ca327b993110210cd4e7d532bba10be"/>
 </record_update>
