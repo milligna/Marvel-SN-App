@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_macroponent">
     <sys_ux_macroponent action="INSERT_OR_UPDATE">
         <associated_types/>
-        <bundles/>
+        <bundles>[]</bundles>
         <category>page</category>
         <component_dependencies/>
         <composition>[
@@ -12,9 +12,7 @@
         },
         "elementId": "header",
         "elementLabel": "Header",
-        "eventMappings": [
-            
-        ],
+        "eventMappings": [],
         "isHidden": {
             "type": "JSON_LITERAL",
             "value": null
@@ -117,7 +115,7 @@
                     ],
                     "isHidden": {
                         "type": "JSON_LITERAL",
-                        "value": true
+                        "value": false
                     },
                     "preset": null,
                     "propertyValues": {
@@ -155,7 +153,7 @@
                         },
                         "variant": {
                             "type": "JSON_LITERAL",
-                            "value": "primary-positive"
+                            "value": "primary"
                         }
                     },
                     "slot": null,
@@ -168,9 +166,7 @@
                     },
                     "elementId": "deck_name",
                     "elementLabel": "Deck Name",
-                    "eventMappings": [
-                        
-                    ],
+                    "eventMappings": [],
                     "isHidden": {
                         "type": "JSON_LITERAL",
                         "value": null
@@ -207,18 +203,14 @@
                     },
                     "elementId": "debug_resource",
                     "elementLabel": "debug data resource",
-                    "eventMappings": [
-                        
-                    ],
+                    "eventMappings": [],
                     "isHidden": {
                         "type": "JSON_LITERAL",
                         "value": true
                     },
                     "preset": {
                         "controllerElementId": "deck_form_resource",
-                        "disabledEventTargetIds": [
-                            
-                        ],
+                        "disabledEventTargetIds": [],
                         "id": "e61aa04af8f8f7b18abc73e3f61ab4e8"
                     },
                     "propertyValues": {
@@ -253,6 +245,8 @@
                                 "color": "#dee2fb",
                                 "font-style": "italic",
                                 "font-variant": "small-caps",
+                                "margin-bottom": "0px",
+                                "margin-top": "0px",
                                 "text-shadow": "1px 1px 2px #9097b7, 0 0 1em blue, 0 0 0.2em blue"
                             }
                         },
@@ -272,9 +266,12 @@
                     "root": null,
                     "rules": null,
                     "styles": {
-                        "align-items": "center",
-                        "flex-direction": "row",
-                        "justify-content": "center",
+                        "display": "grid",
+                        "grid-auto-columns": "1fr",
+                        "grid-auto-rows": "1fr",
+                        "grid-template-columns": "1fr 1fr 1fr",
+                        "grid-template-rows": "1fr",
+                        "justify-content": "flex-start",
                         "margin-bottom": "0",
                         "margin-left": "var(--now-scalable-space--md)",
                         "margin-right": "var(--now-scalable-space--md)",
@@ -283,7 +280,7 @@
                         "padding-top": "var(--now-scalable-space--sm)"
                     },
                     "templateId": "5832fd4d53c31010e6bcddeeff7b12db",
-                    "type": "flex"
+                    "type": "grid"
                 },
                 "version": "3.0.0"
             }
@@ -333,9 +330,7 @@
         },
         "elementId": "current_deck_repeater",
         "elementLabel": "Current Deck repeater",
-        "eventMappings": [
-            
-        ],
+        "eventMappings": [],
         "isHidden": {
             "type": "JSON_LITERAL",
             "value": null
@@ -438,9 +433,7 @@
                                 },
                                 "elementId": "deck_card_name",
                                 "elementLabel": "Deck Card name",
-                                "eventMappings": [
-                                    
-                                ],
+                                "eventMappings": [],
                                 "isHidden": {
                                     "type": "JSON_LITERAL",
                                     "value": null
@@ -453,7 +446,7 @@
                                     },
                                     "css": {
                                         "type": "JSON_LITERAL",
-                                        "value": "* { }"
+                                        "value": "* { display: inline-block;\n    white-space: nowrap;\n    font-size: 16px; /* Start with default font size */\n    line-height: 1;\n    text-align: center;\n    transform: scale(1);\n    width: 100%;\n    height: auto;\n    text-overflow: ellipsis; /* For any overflow content */}"
                                     },
                                     "tag": {
                                         "type": "JSON_LITERAL",
@@ -480,9 +473,7 @@
                                 },
                                 "elementId": "image_container",
                                 "elementLabel": "Image Container",
-                                "eventMappings": [
-                                    
-                                ],
+                                "eventMappings": [],
                                 "isHidden": {
                                     "type": "JSON_LITERAL",
                                     "value": null
@@ -496,18 +487,14 @@
                                             },
                                             "elementId": "player_card_image",
                                             "elementLabel": "Player card image",
-                                            "eventMappings": [
-                                                
-                                            ],
+                                            "eventMappings": [],
                                             "isHidden": {
                                                 "type": "JSON_LITERAL",
                                                 "value": null
                                             },
                                             "preset": {
                                                 "controllerElementId": "deck_form_resource",
-                                                "disabledEventTargetIds": [
-                                                    
-                                                ],
+                                                "disabledEventTargetIds": [],
                                                 "id": "fb915bf1bad80b3097b5b2c76b35b215"
                                             },
                                             "propertyValues": {
@@ -518,6 +505,10 @@
                                                 "position": {
                                                     "type": "JSON_LITERAL",
                                                     "value": "center center"
+                                                },
+                                                "sources": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": []
                                                 },
                                                 "src": {
                                                     "binding": {
@@ -611,9 +602,7 @@
                                 },
                                 "elementId": "player_card_ability",
                                 "elementLabel": "Player card ability",
-                                "eventMappings": [
-                                    
-                                ],
+                                "eventMappings": [],
                                 "isHidden": {
                                     "type": "JSON_LITERAL",
                                     "value": null
@@ -773,9 +762,7 @@
         },
         "elementId": "select_card_sep",
         "elementLabel": "Select Cards separator",
-        "eventMappings": [
-            
-        ],
+        "eventMappings": [],
         "isHidden": {
             "type": "JSON_LITERAL",
             "value": null
@@ -809,9 +796,7 @@
         },
         "elementId": "card_options",
         "elementLabel": "Card Options",
-        "eventMappings": [
-            
-        ],
+        "eventMappings": [],
         "isHidden": {
             "type": "JSON_LITERAL",
             "value": null
@@ -914,9 +899,7 @@
                                 },
                                 "elementId": "card_name",
                                 "elementLabel": "Card Name",
-                                "eventMappings": [
-                                    
-                                ],
+                                "eventMappings": [],
                                 "isHidden": {
                                     "type": "JSON_LITERAL",
                                     "value": null
@@ -929,7 +912,7 @@
                                     },
                                     "css": {
                                         "type": "JSON_LITERAL",
-                                        "value": "* { align-self: center;\n    color: #dee2fb;\n    font-style: italic;\n    font-variant: small-caps;\n    text-shadow: 1px 1px 2px #9097b7, 0 0 1em blue, 0 0 0.2em blue;\n    font-size: 29px;\n    }"
+                                        "value": "* { align-self: center;\n    color: #dee2fb;\n    font-style: italic;\n    font-variant: small-caps;\n    text-shadow: 1px 1px 2px #9097b7, 0 0 1em blue, 0 0 0.2em blue;\n    display: inline-block;\n    white-space: nowrap;\n    font-size: 16px; /* Start with default font size */\n    line-height: 1;\n    text-align: center;\n    transform: scale(1);\n    width: 100%;\n    height: auto;\n    text-overflow: ellipsis; /* For any overflow content */\n    }"
                                     },
                                     "tag": {
                                         "type": "JSON_LITERAL",
@@ -956,18 +939,14 @@
                                 },
                                 "elementId": "card_image",
                                 "elementLabel": "Card Image",
-                                "eventMappings": [
-                                    
-                                ],
+                                "eventMappings": [],
                                 "isHidden": {
                                     "type": "JSON_LITERAL",
                                     "value": false
                                 },
                                 "preset": {
                                     "controllerElementId": "deck_form_resource",
-                                    "disabledEventTargetIds": [
-                                        
-                                    ],
+                                    "disabledEventTargetIds": [],
                                     "id": "fb915bf1bad80b3097b5b2c76b35b215"
                                 },
                                 "propertyValues": {
@@ -981,9 +960,7 @@
                                     },
                                     "sources": {
                                         "type": "JSON_LITERAL",
-                                        "value": [
-                                            
-                                        ]
+                                        "value": []
                                     },
                                     "src": {
                                         "binding": {
@@ -1010,9 +987,7 @@
                                 },
                                 "elementId": "ability_text",
                                 "elementLabel": "Ability",
-                                "eventMappings": [
-                                    
-                                ],
+                                "eventMappings": [],
                                 "isHidden": {
                                     "type": "JSON_LITERAL",
                                     "value": null
@@ -1047,7 +1022,8 @@
                                     {
                                         "element_id": "card_name",
                                         "styles": {
-                                            "align-self": "center"
+                                            "align-self": "center",
+                                            "flex": "none"
                                         }
                                     },
                                     {
@@ -1061,7 +1037,7 @@
                                             "margin-top": "0",
                                             "padding-left": "0",
                                             "padding-right": "0",
-                                            "width": "200px"
+                                            "width": "140px"
                                         }
                                     },
                                     {
@@ -1069,16 +1045,16 @@
                                         "styles": {
                                             "color": "white",
                                             "font-style": "italic",
-                                            "margin": "var(--now-scalable-space--xs)",
-                                            "margin-bottom": "var(--now-scalable-space--xs)",
-                                            "margin-left": "var(--now-scalable-space--xs)",
-                                            "margin-right": "var(--now-scalable-space--xs)",
-                                            "margin-top": "var(--now-scalable-space--xs)",
-                                            "padding": "var(--now-scalable-space--sm)",
-                                            "padding-bottom": "var(--now-scalable-space--sm)",
-                                            "padding-left": "var(--now-scalable-space--sm)",
-                                            "padding-right": "var(--now-scalable-space--sm)",
-                                            "padding-top": "var(--now-scalable-space--md)"
+                                            "margin": "1px",
+                                            "margin-bottom": "1px",
+                                            "margin-left": "1px",
+                                            "margin-right": "1px",
+                                            "margin-top": "1px",
+                                            "padding": "1px",
+                                            "padding-bottom": "1px",
+                                            "padding-left": "1px",
+                                            "padding-right": "1px",
+                                            "padding-top": "1px"
                                         }
                                     }
                                 ],
@@ -1086,6 +1062,7 @@
                                 "rules": null,
                                 "styles": {
                                     "align-items": "stretch",
+                                    "display": "flex",
                                     "flex-direction": "column",
                                     "justify-content": "center"
                                 },
@@ -1134,7 +1111,7 @@
                             "element_id": "card_to_add",
                             "styles": {
                                 "background": "#060007",
-                                "height": "310px",
+                                "height": "300px",
                                 "width": "16.6666666%"
                             }
                         }
@@ -1221,9 +1198,7 @@
                     },
                     "elementId": "header_1",
                     "elementLabel": "Header 1",
-                    "eventMappings": [
-                        
-                    ],
+                    "eventMappings": [],
                     "isHidden": {
                         "type": "JSON_LITERAL",
                         "value": null
@@ -1237,18 +1212,14 @@
                                 },
                                 "elementId": "modal_card_name",
                                 "elementLabel": "Modal Card Name",
-                                "eventMappings": [
-                                    
-                                ],
+                                "eventMappings": [],
                                 "isHidden": {
                                     "type": "JSON_LITERAL",
                                     "value": null
                                 },
                                 "preset": {
                                     "controllerElementId": "related_items_1",
-                                    "disabledEventTargetIds": [
-                                        
-                                    ],
+                                    "disabledEventTargetIds": [],
                                     "id": "250f04287752d110960ced43ba5a993a"
                                 },
                                 "propertyValues": {
@@ -1348,9 +1319,7 @@
                     },
                     "elementId": "body_1",
                     "elementLabel": "Body 1",
-                    "eventMappings": [
-                        
-                    ],
+                    "eventMappings": [],
                     "isHidden": {
                         "type": "JSON_LITERAL",
                         "value": null
@@ -1364,9 +1333,7 @@
                                 },
                                 "elementId": "cost_container",
                                 "elementLabel": "Cost Container",
-                                "eventMappings": [
-                                    
-                                ],
+                                "eventMappings": [],
                                 "isHidden": {
                                     "type": "JSON_LITERAL",
                                     "value": null
@@ -1380,18 +1347,14 @@
                                             },
                                             "elementId": "stylized_text_3",
                                             "elementLabel": "Stylized text 3",
-                                            "eventMappings": [
-                                                
-                                            ],
+                                            "eventMappings": [],
                                             "isHidden": {
                                                 "type": "JSON_LITERAL",
                                                 "value": null
                                             },
                                             "preset": {
                                                 "controllerElementId": "related_items_1",
-                                                "disabledEventTargetIds": [
-                                                    
-                                                ],
+                                                "disabledEventTargetIds": [],
                                                 "id": "250f04287752d110960ced43ba5a993a"
                                             },
                                             "propertyValues": {
@@ -1426,18 +1389,14 @@
                                             },
                                             "elementId": "stylized_text_4",
                                             "elementLabel": "Stylized text 4",
-                                            "eventMappings": [
-                                                
-                                            ],
+                                            "eventMappings": [],
                                             "isHidden": {
                                                 "type": "JSON_LITERAL",
                                                 "value": null
                                             },
                                             "preset": {
                                                 "controllerElementId": "related_items_1",
-                                                "disabledEventTargetIds": [
-                                                    
-                                                ],
+                                                "disabledEventTargetIds": [],
                                                 "id": "250f04287752d110960ced43ba5a993a"
                                             },
                                             "propertyValues": {
@@ -1505,9 +1464,7 @@
                                 },
                                 "preset": {
                                     "controllerElementId": "related_items_1",
-                                    "disabledEventTargetIds": [
-                                        
-                                    ],
+                                    "disabledEventTargetIds": [],
                                     "id": "d2c9700d07a3111017b703767cd300dc"
                                 },
                                 "propertyValues": {
@@ -1530,9 +1487,7 @@
                                 },
                                 "elementId": "power_container",
                                 "elementLabel": "Power Container",
-                                "eventMappings": [
-                                    
-                                ],
+                                "eventMappings": [],
                                 "isHidden": {
                                     "type": "JSON_LITERAL",
                                     "value": null
@@ -1546,18 +1501,14 @@
                                             },
                                             "elementId": "stylized_text_5",
                                             "elementLabel": "Stylized text 5",
-                                            "eventMappings": [
-                                                
-                                            ],
+                                            "eventMappings": [],
                                             "isHidden": {
                                                 "type": "JSON_LITERAL",
                                                 "value": null
                                             },
                                             "preset": {
                                                 "controllerElementId": "related_items_1",
-                                                "disabledEventTargetIds": [
-                                                    
-                                                ],
+                                                "disabledEventTargetIds": [],
                                                 "id": "250f04287752d110960ced43ba5a993a"
                                             },
                                             "propertyValues": {
@@ -1592,18 +1543,14 @@
                                             },
                                             "elementId": "stylized_text_6",
                                             "elementLabel": "Stylized text 6",
-                                            "eventMappings": [
-                                                
-                                            ],
+                                            "eventMappings": [],
                                             "isHidden": {
                                                 "type": "JSON_LITERAL",
                                                 "value": null
                                             },
                                             "preset": {
                                                 "controllerElementId": "related_items_1",
-                                                "disabledEventTargetIds": [
-                                                    
-                                                ],
+                                                "disabledEventTargetIds": [],
                                                 "id": "250f04287752d110960ced43ba5a993a"
                                             },
                                             "propertyValues": {
@@ -1664,9 +1611,7 @@
                                 },
                                 "preset": {
                                     "controllerElementId": "related_items_1",
-                                    "disabledEventTargetIds": [
-                                        
-                                    ],
+                                    "disabledEventTargetIds": [],
                                     "id": "d2c9700d07a3111017b703767cd300dc"
                                 },
                                 "propertyValues": {
@@ -1760,9 +1705,7 @@
                     },
                     "elementId": "container_2",
                     "elementLabel": "Container 2",
-                    "eventMappings": [
-                        
-                    ],
+                    "eventMappings": [],
                     "isHidden": {
                         "type": "JSON_LITERAL",
                         "value": null
@@ -1776,9 +1719,7 @@
                                 },
                                 "elementId": "image_2",
                                 "elementLabel": "Image 2",
-                                "eventMappings": [
-                                    
-                                ],
+                                "eventMappings": [],
                                 "isHidden": {
                                     "type": "JSON_LITERAL",
                                     "value": null
@@ -1807,9 +1748,7 @@
                                     },
                                     "sources": {
                                         "type": "JSON_LITERAL",
-                                        "value": [
-                                            
-                                        ]
+                                        "value": []
                                     },
                                     "src": {
                                         "binding": {
@@ -1853,9 +1792,7 @@
                     },
                     "preset": {
                         "controllerElementId": "related_items_1",
-                        "disabledEventTargetIds": [
-                            
-                        ],
+                        "disabledEventTargetIds": [],
                         "id": "d2c9700d07a3111017b703767cd300dc"
                     },
                     "propertyValues": {
@@ -1878,9 +1815,7 @@
                     },
                     "elementId": "container_3",
                     "elementLabel": "Container 3",
-                    "eventMappings": [
-                        
-                    ],
+                    "eventMappings": [],
                     "isHidden": {
                         "type": "JSON_LITERAL",
                         "value": null
@@ -1894,18 +1829,14 @@
                                 },
                                 "elementId": "stylized_text_7",
                                 "elementLabel": "Stylized text 7",
-                                "eventMappings": [
-                                    
-                                ],
+                                "eventMappings": [],
                                 "isHidden": {
                                     "type": "JSON_LITERAL",
                                     "value": null
                                 },
                                 "preset": {
                                     "controllerElementId": "related_items_1",
-                                    "disabledEventTargetIds": [
-                                        
-                                    ],
+                                    "disabledEventTargetIds": [],
                                     "id": "250f04287752d110960ced43ba5a993a"
                                 },
                                 "propertyValues": {
@@ -1960,9 +1891,7 @@
                     },
                     "preset": {
                         "controllerElementId": "related_items_1",
-                        "disabledEventTargetIds": [
-                            
-                        ],
+                        "disabledEventTargetIds": [],
                         "id": "d2c9700d07a3111017b703767cd300dc"
                     },
                     "propertyValues": {
@@ -1985,9 +1914,7 @@
                     },
                     "elementId": "footer_1",
                     "elementLabel": "Footer 1",
-                    "eventMappings": [
-                        
-                    ],
+                    "eventMappings": [],
                     "isHidden": {
                         "type": "JSON_LITERAL",
                         "value": null
@@ -2535,9 +2462,7 @@
                     },
                     "elementId": "container_4",
                     "elementLabel": "Container 4",
-                    "eventMappings": [
-                        
-                    ],
+                    "eventMappings": [],
                     "isHidden": {
                         "type": "JSON_LITERAL",
                         "value": null
@@ -2551,18 +2476,14 @@
                                 },
                                 "elementId": "stylized_text_8",
                                 "elementLabel": "Stylized text 8",
-                                "eventMappings": [
-                                    
-                                ],
+                                "eventMappings": [],
                                 "isHidden": {
                                     "type": "JSON_LITERAL",
                                     "value": null
                                 },
                                 "preset": {
                                     "controllerElementId": "related_items_1",
-                                    "disabledEventTargetIds": [
-                                        
-                                    ],
+                                    "disabledEventTargetIds": [],
                                     "id": "250f04287752d110960ced43ba5a993a"
                                 },
                                 "propertyValues": {
@@ -2664,9 +2585,7 @@
                     },
                     "elementId": "container_5",
                     "elementLabel": "Container 5",
-                    "eventMappings": [
-                        
-                    ],
+                    "eventMappings": [],
                     "isHidden": {
                         "type": "JSON_LITERAL",
                         "value": null
@@ -2680,9 +2599,7 @@
                                 },
                                 "elementId": "container_6",
                                 "elementLabel": "Container 6",
-                                "eventMappings": [
-                                    
-                                ],
+                                "eventMappings": [],
                                 "isHidden": {
                                     "type": "JSON_LITERAL",
                                     "value": null
@@ -2696,18 +2613,14 @@
                                             },
                                             "elementId": "stylized_text_9",
                                             "elementLabel": "Stylized text 9",
-                                            "eventMappings": [
-                                                
-                                            ],
+                                            "eventMappings": [],
                                             "isHidden": {
                                                 "type": "JSON_LITERAL",
                                                 "value": null
                                             },
                                             "preset": {
                                                 "controllerElementId": "related_items_1",
-                                                "disabledEventTargetIds": [
-                                                    
-                                                ],
+                                                "disabledEventTargetIds": [],
                                                 "id": "250f04287752d110960ced43ba5a993a"
                                             },
                                             "propertyValues": {
@@ -2742,18 +2655,14 @@
                                             },
                                             "elementId": "stylized_text_10",
                                             "elementLabel": "Stylized text 10",
-                                            "eventMappings": [
-                                                
-                                            ],
+                                            "eventMappings": [],
                                             "isHidden": {
                                                 "type": "JSON_LITERAL",
                                                 "value": null
                                             },
                                             "preset": {
                                                 "controllerElementId": "related_items_1",
-                                                "disabledEventTargetIds": [
-                                                    
-                                                ],
+                                                "disabledEventTargetIds": [],
                                                 "id": "250f04287752d110960ced43ba5a993a"
                                             },
                                             "propertyValues": {
@@ -2823,9 +2732,7 @@
                                 },
                                 "preset": {
                                     "controllerElementId": "related_items_1",
-                                    "disabledEventTargetIds": [
-                                        
-                                    ],
+                                    "disabledEventTargetIds": [],
                                     "id": "d2c9700d07a3111017b703767cd300dc"
                                 },
                                 "propertyValues": {
@@ -2848,9 +2755,7 @@
                                 },
                                 "elementId": "container_7",
                                 "elementLabel": "Container 7",
-                                "eventMappings": [
-                                    
-                                ],
+                                "eventMappings": [],
                                 "isHidden": {
                                     "type": "JSON_LITERAL",
                                     "value": null
@@ -2864,18 +2769,14 @@
                                             },
                                             "elementId": "stylized_text_11",
                                             "elementLabel": "Stylized text 11",
-                                            "eventMappings": [
-                                                
-                                            ],
+                                            "eventMappings": [],
                                             "isHidden": {
                                                 "type": "JSON_LITERAL",
                                                 "value": null
                                             },
                                             "preset": {
                                                 "controllerElementId": "related_items_1",
-                                                "disabledEventTargetIds": [
-                                                    
-                                                ],
+                                                "disabledEventTargetIds": [],
                                                 "id": "250f04287752d110960ced43ba5a993a"
                                             },
                                             "propertyValues": {
@@ -2910,18 +2811,14 @@
                                             },
                                             "elementId": "stylized_text_12",
                                             "elementLabel": "Stylized text 12",
-                                            "eventMappings": [
-                                                
-                                            ],
+                                            "eventMappings": [],
                                             "isHidden": {
                                                 "type": "JSON_LITERAL",
                                                 "value": null
                                             },
                                             "preset": {
                                                 "controllerElementId": "related_items_1",
-                                                "disabledEventTargetIds": [
-                                                    
-                                                ],
+                                                "disabledEventTargetIds": [],
                                                 "id": "250f04287752d110960ced43ba5a993a"
                                             },
                                             "propertyValues": {
@@ -2984,9 +2881,7 @@
                                 },
                                 "preset": {
                                     "controllerElementId": "related_items_1",
-                                    "disabledEventTargetIds": [
-                                        
-                                    ],
+                                    "disabledEventTargetIds": [],
                                     "id": "d2c9700d07a3111017b703767cd300dc"
                                 },
                                 "propertyValues": {
@@ -3080,9 +2975,7 @@
                     },
                     "elementId": "container_8",
                     "elementLabel": "Container 8",
-                    "eventMappings": [
-                        
-                    ],
+                    "eventMappings": [],
                     "isHidden": {
                         "type": "JSON_LITERAL",
                         "value": null
@@ -3096,9 +2989,7 @@
                                 },
                                 "elementId": "image_3",
                                 "elementLabel": "Image 3",
-                                "eventMappings": [
-                                    
-                                ],
+                                "eventMappings": [],
                                 "isHidden": {
                                     "type": "JSON_LITERAL",
                                     "value": null
@@ -3127,9 +3018,7 @@
                                     },
                                     "sources": {
                                         "type": "JSON_LITERAL",
-                                        "value": [
-                                            
-                                        ]
+                                        "value": []
                                     },
                                     "src": {
                                         "binding": {
@@ -3175,9 +3064,7 @@
                     },
                     "preset": {
                         "controllerElementId": "related_items_1",
-                        "disabledEventTargetIds": [
-                            
-                        ],
+                        "disabledEventTargetIds": [],
                         "id": "d2c9700d07a3111017b703767cd300dc"
                     },
                     "propertyValues": {
@@ -3200,9 +3087,7 @@
                     },
                     "elementId": "container_9",
                     "elementLabel": "Container 9",
-                    "eventMappings": [
-                        
-                    ],
+                    "eventMappings": [],
                     "isHidden": {
                         "type": "JSON_LITERAL",
                         "value": null
@@ -3216,18 +3101,14 @@
                                 },
                                 "elementId": "stylized_text_13",
                                 "elementLabel": "Stylized text 13",
-                                "eventMappings": [
-                                    
-                                ],
+                                "eventMappings": [],
                                 "isHidden": {
                                     "type": "JSON_LITERAL",
                                     "value": null
                                 },
                                 "preset": {
                                     "controllerElementId": "related_items_1",
-                                    "disabledEventTargetIds": [
-                                        
-                                    ],
+                                    "disabledEventTargetIds": [],
                                     "id": "250f04287752d110960ced43ba5a993a"
                                 },
                                 "propertyValues": {
@@ -3284,9 +3165,7 @@
                     },
                     "preset": {
                         "controllerElementId": "related_items_1",
-                        "disabledEventTargetIds": [
-                            
-                        ],
+                        "disabledEventTargetIds": [],
                         "id": "d2c9700d07a3111017b703767cd300dc"
                     },
                     "propertyValues": {
@@ -3309,9 +3188,7 @@
                     },
                     "elementId": "container_10",
                     "elementLabel": "Container 10",
-                    "eventMappings": [
-                        
-                    ],
+                    "eventMappings": [],
                     "isHidden": {
                         "type": "JSON_LITERAL",
                         "value": null
@@ -3802,9 +3679,7 @@
         "dependencies": {},
         "elementId": "deck_form_resource",
         "elementLabel": "Deck form resource",
-        "eventMappings": [
-            
-        ],
+        "eventMappings": [],
         "inputValues": {
             "activityLogs": {
                 "type": "JSON_LITERAL",
@@ -3879,9 +3754,7 @@
         "dependencies": {},
         "elementId": "get_card_definitions",
         "elementLabel": "Get Card Definitions",
-        "eventMappings": [
-            
-        ],
+        "eventMappings": [],
         "inputValues": {
             "encodedQuery": {
                 "type": "JSON_LITERAL",
@@ -4031,9 +3904,7 @@
         "dependencies": {},
         "elementId": "get_player_cards",
         "elementLabel": "Get player deck cards",
-        "eventMappings": [
-            
-        ],
+        "eventMappings": [],
         "inputValues": {
             "encodedQuery": {
                 "transform": {
@@ -4105,9 +3976,7 @@
         "dependencies": {},
         "elementId": "get_deck_record",
         "elementLabel": "Get Deck Record",
-        "eventMappings": [
-            
-        ],
+        "eventMappings": [],
         "inputValues": {
             "recordId": {
                 "binding": {
@@ -4228,9 +4097,7 @@
         },
         "elementId": "related_items_1",
         "elementLabel": "Related Items 1",
-        "eventMappings": [
-            
-        ],
+        "eventMappings": [],
         "inputValues": {
             "relatedItemData": {
                 "type": "JSON_LITERAL",
@@ -4251,9 +4118,7 @@
         "dependencies": {},
         "elementId": "get_related_items_1",
         "elementLabel": "Get Related Items 1",
-        "eventMappings": [
-            
-        ],
+        "eventMappings": [],
         "inputValues": {
             "allNodes": {
                 "type": "JSON_LITERAL",
@@ -4278,9 +4143,7 @@
         "dependencies": {},
         "elementId": "get_selected_card",
         "elementLabel": "Get Selected Card",
-        "eventMappings": [
-            
-        ],
+        "eventMappings": [],
         "inputValues": {
             "recordId": {
                 "binding": {
@@ -4317,9 +4180,7 @@
         "dependencies": {},
         "elementId": "get_selected_deck_item",
         "elementLabel": "Get Selected Deck Item",
-        "eventMappings": [
-            
-        ],
+        "eventMappings": [],
         "inputValues": {
             "recordId": {
                 "binding": {
@@ -4350,10 +4211,12 @@
     }
 ]</data>
         <description/>
+        <disable_auto_reflow>false</disable_auto_reflow>
         <dispatched_events>db140a994793711017fdc82f316d43d8,d9f5a34493210210cd4e7d532bba10c4</dispatched_events>
         <ext_controller_dep/>
         <extends display_value="Page Template">19be392623033300f4b4c50947bf65ba</extends>
         <extension_point/>
+        <form_factors>{}</form_factors>
         <handled_events/>
         <interactions/>
         <interfaces/>
@@ -4488,6 +4351,7 @@
         <root_component_config/>
         <root_component_definition/>
         <schema_version>1.0.0</schema_version>
+        <state_persistence_config/>
         <state_properties>[
     {
         "initialValue": {
@@ -4509,14 +4373,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-11-07 11:21:53</sys_created_on>
         <sys_id>9d39e626479e715017fdc82f316d432a</sys_id>
-        <sys_mod_count>290</sys_mod_count>
+        <sys_mod_count>301</sys_mod_count>
         <sys_name>Default</sys_name>
-        <sys_package display_value="Flow Designer Marvel SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
+        <sys_package display_value="SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_update_name>sys_ux_macroponent_9d39e626479e715017fdc82f316d432a</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-09 13:54:50</sys_updated_on>
+        <sys_updated_on>2024-12-23 09:23:41</sys_updated_on>
     </sys_ux_macroponent>
     <sys_translated_text action="delete_multiple" query="documentkey=9d39e626479e715017fdc82f316d432a"/>
 </record_update>
