@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <controller_preset/>
+        <includes/>
+        <macroponent display_value="Player View">6e07bb9bc3a2d210ff1f33bc05013164</macroponent>
+        <name>game_over_state/label</name>
+        <preset/>
+        <required_translations>[]</required_translations>
+        <script><![CDATA[/**
+  * @param {params} params
+  * @param {api} params.api
+  * @param {TransformApiHelpers} params.helpers
+  */
+function evaluateProperty({api, helpers}) { 
+  let value = api.item.value.card_instance.value;
+var returnValue = "Value is: "+value+" and evaluation is :";
+  // Check for null, undefined, or empty string
+  if (value === null || value === undefined || value === '') {
+    return returnValue+="true";
+  }
+else {return returnValue+="false";}
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-12-24 03:35:25</sys_created_on>
+        <sys_id>be0777dbc3a2d210ff1f33bc05013162</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>game_over_state/label</sys_name>
+        <sys_package display_value="SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_update_name>sys_ux_client_script_be0777dbc3a2d210ff1f33bc05013162</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-12-24 03:35:25</sys_updated_on>
+        <target>macroponent</target>
+        <type>transform</type>
+    </sys_ux_client_script>
+</record_update>
