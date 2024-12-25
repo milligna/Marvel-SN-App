@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="f2d36f7f474a751017fdc82f316d4395" label="Game Card Instance" max_length="40" name="x_168987_flow_de_0_card_instance" type="collection">
-        <element label="Can't be destroyed" max_length="40" name="can_t_be_destroyed" type="boolean"/>
-        <element label="Current Cost" max_length="40" name="current_cost" type="integer"/>
-        <element label="Current Location" max_length="32" name="current_location" reference="x_168987_flow_de_0_location_instance" type="reference"/>
         <element label="Current Power" max_length="40" name="current_power" type="integer"/>
-        <element label="Deck Order" max_length="40" name="deck_order" type="integer"/>
-        <element label="Draw sequence" max_length="40" name="draw_sequence" type="integer"/>
-        <element label="Hand Order" max_length="40" name="hand_order" type="integer"/>
         <element default="true" label="Hide Cards (not enough power)" max_length="40" name="hide_cards" type="boolean"/>
-        <element label="Order Played" max_length="40" name="order_played" type="integer"/>
-        <element display="true" label="Original Card Reference" max_length="32" name="original_card_reference" reference="x_168987_flow_de_0_card_definition" type="reference"/>
-        <element label="Original Cost" max_length="40" name="original_cost" type="integer"/>
         <element label="Original Power" max_length="40" name="original_power" type="integer"/>
         <element label="Player session" max_length="32" name="player_session" reference="x_168987_flow_de_0_player_session" reference_cascade_rule="delete" reference_qual="null" reference_qual_condition="null" type="reference"/>
+        <element label="Can't be destroyed" max_length="40" name="can_t_be_destroyed" type="boolean"/>
+        <element label="Deck Order" max_length="40" name="deck_order" type="integer"/>
         <element choice="3" label="Status" max_length="40" name="status" type="choice">
             <choice>
-                <element inactive_on_update="false" label="In Hand" sequence="0" value="in_hand"/>
-                <element inactive_on_update="false" label="Played to Location" sequence="1" value="played_to_location"/>
                 <element inactive_on_update="false" label="Destroyed" sequence="2" value="destroyed"/>
                 <element inactive_on_update="false" label="Discarded" sequence="3" value="discarded"/>
+                <element inactive_on_update="false" label="In Hand" sequence="0" value="in_hand"/>
+                <element inactive_on_update="false" label="Played to Location" sequence="1" value="played_to_location"/>
                 <element inactive_on_update="false" label="In Deck" sequence="4" value="in_deck"/>
             </choice>
         </element>
+        <element label="Order Played" max_length="40" name="order_played" type="integer"/>
+        <element display="true" label="Original Card Reference" max_length="32" name="original_card_reference" reference="x_168987_flow_de_0_card_definition" type="reference"/>
+        <element label="Current Cost" max_length="40" name="current_cost" type="integer"/>
+        <element label="Draw sequence" max_length="40" name="draw_sequence" type="integer"/>
         <element label="Turn Played" max_length="40" name="turn_played" type="integer"/>
+        <element label="Hand Order" max_length="40" name="hand_order" type="integer"/>
+        <element label="Original Cost" max_length="40" name="original_cost" type="integer"/>
+        <element label="Current Location" max_length="32" name="current_location" reference="x_168987_flow_de_0_location_instance" type="reference"/>
         <index name="index">
             <element name="current_location"/>
         </index>

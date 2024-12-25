@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="fed152b14762719017fdc82f316d43c7" label="Game Location Slot" max_length="40" name="x_168987_flow_de_0_location_slot" type="collection">
-        <element default="true" label="Cards can be played here" max_length="40" name="cards_can_be_played_here" type="boolean"/>
-        <element attributes="encode_utf8=false" dependent="player" dependent_on_field="player" label="Related Card Instance" max_length="32" name="card_instance" reference="x_168987_flow_de_0_card_instance" reference_qual="player_sessionSAMEASplayer_session^EQ" reference_qual_condition="player_sessionSAMEASplayer_session^EQ" type="reference" use_dependent_field="true"/>
         <element label="Location Ability Applied?" max_length="40" name="location_ability_applied" type="boolean"/>
+        <element default="true" label="Cards can be played here" max_length="40" name="cards_can_be_played_here" type="boolean"/>
+        <element label="Slot Visible" max_length="40" name="slot_visible" type="boolean"/>
         <element label="Location Instance" max_length="32" name="location_instance" reference="x_168987_flow_de_0_location_instance" type="reference"/>
+        <element attributes="encode_utf8=false" dependent="player" dependent_on_field="player" label="Related Card Instance" max_length="32" name="card_instance" reference="x_168987_flow_de_0_card_instance" reference_qual="player_sessionSAMEASplayer_session^EQ" reference_qual_condition="player_sessionSAMEASplayer_session^EQ" type="reference" use_dependent_field="true"/>
+        <element label="Slot Committed" max_length="40" name="slot_committed" type="boolean"/>
         <element label="Player" max_length="32" name="player" reference="x_168987_flow_de_0_player_session" type="reference"/>
         <element display="true" label="Slot Number" max_length="40" name="slot_number" type="integer"/>
-        <element label="Slot Visible" max_length="40" name="slot_visible" type="boolean"/>
         <index name="index">
             <element name="card_instance"/>
         </index>
