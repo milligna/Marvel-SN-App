@@ -5,14 +5,19 @@
         <active>true</active>
         <annotation/>
         <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=1630590000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
         <copied_from>f193286b93558210cd4e7d532bba1024</copied_from>
         <copied_from_name>PLAY-SUB: Calculate location sco</copied_from_name>
         <description/>
+        <display_name_after_preview/>
+        <flow_priority/>
+        <generation_source/>
         <internal_name>playsub_calculate_location_scores_and_update_location</internal_name>
         <label_cache>[{"name":"2dc42c2f-4db3-44cf-8025-e3069429d09b.calculated_number","label":"6 - PLAY-SUB: add integer to other integer➛Calculated Number","reference_display":"Calculated Number","type":"integer","base_type":"integer","usedInstances":{"4db4007a-7dc5-45f3-8c8c-70f7edde0b4d":["p1_score-0"]},"attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"cdd3ee83-6087-470d-a3b2-657b9a238de3"}},{"name":"1f8f9104-823b-43c4-b64f-98eaa0955161.calculated_number","label":"11 - PLAY-SUB: add integer to other integer➛Calculated Number","reference_display":"Calculated Number","type":"integer","base_type":"integer","usedInstances":{"39059d9d-5793-4494-ac1b-36bf46c13329":["p2_score-0"]},"attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"cdd3ee83-6087-470d-a3b2-657b9a238de3"}},{"name":"7d7e8440-b6ef-4ddf-abe6-4cff20791231.calculated_number","label":"9 - PLAY-SUB: add integer to other integer➛Calculated Number","reference":"","reference_display":"","type":"integer","base_type":"integer","usedInstances":{"39059d9d-5793-4494-ac1b-36bf46c13329":["p2_score-0"]}},{"name":"f35fec56-def9-45ea-a0af-8b2f80c73db7.calculated_number","label":"5 - PLAY-SUB: add integer to other integer➛Calculated Number","reference":"","reference_display":"","type":"integer","base_type":"integer","usedInstances":{"4db4007a-7dc5-45f3-8c8c-70f7edde0b4d":["p1_score-0"]}},{"name":"subflow.location.game_instance.player_2","label":"Input➛Location➛Game Instance➛Player 2","reference":"x_168987_flow_de_0_player_session","reference_display":"Player Session","type":"reference","base_type":"reference","usedInstances":{}},{"name":"96862926-1dac-49c2-85da-05c4a0fbfa17.item.card_instance.current_power","label":"9 - For Each➛Game Location Slot Record➛Related Card Instance➛Current Power","reference":"","reference_display":"Current Power","type":"integer","base_type":"integer","parent_table_name":"x_168987_flow_de_0_card_instance","column_name":"current_power","usedInstances":{"f3054ec8-88c3-484f-9910-10b376ba4b86":["integer_to_add"],"7d7e8440-b6ef-4ddf-abe6-4cff20791231":["integer_to_add"],"6fc7cb1e-95a0-42f7-93f8-9038ba73bed5":["integer_to_add"],"1f8f9104-823b-43c4-b64f-98eaa0955161":["integer_to_add"],"d18459db-966c-4340-a313-dcbaea30144d":["condition"]}},{"name":"flow_variable.p2_score","label":"Flow Variables➛P2 Score","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","usedInstances":{"7d7e8440-b6ef-4ddf-abe6-4cff20791231":["original_integer"],"39059d9d-5793-4494-ac1b-36bf46c13329":["p2_score-0"],"6fc7cb1e-95a0-42f7-93f8-9038ba73bed5":["original_integer"],"1f8f9104-823b-43c4-b64f-98eaa0955161":["original_integer"]},"attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"bbf0e713-b3bc-4de4-8b9f-18ba9e7a787c"}},{"name":"849a81d0-172a-4411-8cef-31172761bd18.Records","label":"8 - Look Up Records➛Game Location Slot Records","reference":"x_168987_flow_de_0_location_slot","reference_display":"Game Location Slot","type":"records","base_type":"records","usedInstances":{},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"2232ed4f-8d15-4541-bfcc-42e3d600611f.item.card_instance.current_power","label":"4 - For Each➛Game Location Slot Record➛Related Card Instance➛Current Power","reference":"","reference_display":"Current Power","type":"integer","base_type":"integer","parent_table_name":"x_168987_flow_de_0_card_instance","column_name":"current_power","usedInstances":{"1f70cdec-dae3-4890-b250-e199a0efdd0f":["integer_to_add"],"2b958c2c-8ee7-4430-9546-d472d7120992":["integer_to_add"],"8d9a7f12-03aa-45de-9833-651e02206379":["integer_to_add"],"3ba9a293-afdb-4328-8cdf-2b12a08b1c81":["integer_to_add"],"f35fec56-def9-45ea-a0af-8b2f80c73db7":["integer_to_add"],"2dc42c2f-4db3-44cf-8025-e3069429d09b":["integer_to_add"],"5386f5ab-e541-4f2e-a7be-9755c8b0c45e":["condition"]}},{"name":"flow_variable.p1_score","label":"Flow Variables➛P1 Score","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","usedInstances":{"1f70cdec-dae3-4890-b250-e199a0efdd0f":["original_integer"],"f3054ec8-88c3-484f-9910-10b376ba4b86":["original_integer"],"2b958c2c-8ee7-4430-9546-d472d7120992":["original_integer"],"8d9a7f12-03aa-45de-9833-651e02206379":["original_integer"],"3ba9a293-afdb-4328-8cdf-2b12a08b1c81":["original_integer"],"f35fec56-def9-45ea-a0af-8b2f80c73db7":["original_integer"],"2dc42c2f-4db3-44cf-8025-e3069429d09b":["original_integer"],"1f8f9104-823b-43c4-b64f-98eaa0955161":["original_integer"]},"attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"89c00aa5-b80a-47ff-896c-b5a033ad1b99"}},{"name":"subflow.location.game_instance.player_1","label":"Input➛Location➛Game Instance➛Player 1","reference":"x_168987_flow_de_0_player_session","reference_display":"Player Session","type":"reference","base_type":"reference","usedInstances":{}},{"name":"subflow.location","label":"Input➛Location","reference":"x_168987_flow_de_0_location_instance","reference_display":"Game Location instance","type":"reference","base_type":"reference","usedInstances":{}},{"name":"f7e1b482-a93e-48de-8bc0-3a3628e2467f.Records","label":"3 - Look Up Records➛Game Location Slot Records","reference":"x_168987_flow_de_0_location_slot","reference_display":"Game Location Slot","type":"records","base_type":"records","usedInstances":{},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.game_instance.player_1","label":"Input➛Game Instance➛Player 1","reference":"x_168987_flow_de_0_player_session","reference_display":"Player Session","type":"reference","base_type":"reference","usedInstances":{}},{"name":"subflow.game_instance.location_1","label":"Input➛Game Instance➛Location 1","reference":"x_168987_flow_de_0_location_instance","reference_display":"Game Location instance","type":"reference","base_type":"reference","usedInstances":{}},{"name":"1f70cdec-dae3-4890-b250-e199a0efdd0f.calculated_number","label":"5 - PLAY-SUB: add integer to other integer➛Calculated Number","reference":"","reference_display":"Calculated Number","type":"integer","base_type":"integer","usedInstances":{"4db4007a-7dc5-45f3-8c8c-70f7edde0b4d":["p1_score-0"]}},{"name":"3ba9a293-afdb-4328-8cdf-2b12a08b1c81.calculated_number","label":"5 - PLAY-SUB: add integer to other integer➛Calculated Number","reference":"","reference_display":"Calculated Number","type":"integer","base_type":"integer","usedInstances":{"4db4007a-7dc5-45f3-8c8c-70f7edde0b4d":["p1_score-0"]}},{"name":"f3054ec8-88c3-484f-9910-10b376ba4b86.calculated_number","label":"9 - PLAY-SUB: add integer to other integer➛Calculated Number","reference":"","reference_display":"","type":"integer","base_type":"integer","usedInstances":{"39059d9d-5793-4494-ac1b-36bf46c13329":["p2_score-0"]}}]</label_cache>
         <master_snapshot>0f81696b93998210cd4e7d532bba1028</master_snapshot>
+        <master_snapshot_digest/>
         <name>PLAY-SUB: Calculate location scores and update location</name>
         <natlang/>
         <outputs/>
@@ -24,6 +29,7 @@
         <show_draft_actions>false</show_draft_actions>
         <show_triggered_flows>false</show_triggered_flows>
         <status>published</status>
+        <substatus/>
         <sys_class_name>sys_hub_flow</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-04-07 11:50:35</sys_created_on>
@@ -33,17 +39,17 @@
         <sys_mod_count>0</sys_mod_count>
         <sys_name>PLAY-SUB: Calculate location scores and update location</sys_name>
         <sys_overrides/>
-        <sys_package display_value="Flow Designer Marvel SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
+        <sys_package display_value="SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_update_name>sys_hub_flow_b761656b93998210cd4e7d532bba1037</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-05-02 13:42:14</sys_updated_on>
+        <sys_updated_on>2024-12-22 11:10:28</sys_updated_on>
         <type>subflow</type>
+        <version/>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=b761656b93998210cd4e7d532bba1037"/>
     <sys_variable_value action="delete_multiple" query="document_key=b761656b93998210cd4e7d532bba1037"/>
-    <sys_hub_trigger_instance action="delete_multiple" query="flow=b761656b93998210cd4e7d532bba1037"/>
     <sys_hub_flow_stage action="delete_multiple" query="flow=b761656b93998210cd4e7d532bba1037"/>
     <sys_flow_cat_variable_model action="delete_multiple" query="id=b761656b93998210cd4e7d532bba1037^sys_idNOT IN7761656b93998210cd4e7d532bba1038"/>
     <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
@@ -126,7 +132,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-04-07 11:50:36</sys_updated_on>
@@ -145,6 +151,7 @@
     <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=f761656b93998210cd4e7d532bba1047"/>
     <sys_hub_flow_output action="delete_multiple" query="model=b761656b93998210cd4e7d532bba1037"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=b761656b93998210cd4e7d532bba1037"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=b761656b93998210cd4e7d532bba1037"/>
     <sys_hub_action_instance action="delete_multiple" query="flow=b761656b93998210cd4e7d532bba1037^sys_idNOT IN0c71656b93998210cd4e7d532bba1082,4871656b93998210cd4e7d532bba106c,c471656b93998210cd4e7d532bba1074,cc71656b93998210cd4e7d532bba107c"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
@@ -155,16 +162,17 @@
         <comment>Update Location Scores</comment>
         <display_text/>
         <flow display_value="PLAY-SUB: Calculate location scores and update location">b761656b93998210cd4e7d532bba1037</flow>
+        <generation_source/>
         <order>13</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-04-07 11:50:37</sys_created_on>
         <sys_id>0c71656b93998210cd4e7d532bba1082</sys_id>
-        <sys_mod_count>68</sys_mod_count>
-        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_mod_count>70</sys_mod_count>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-05-03 11:12:53</sys_updated_on>
+        <sys_updated_on>2024-12-24 02:15:35</sys_updated_on>
         <ui_id>088aa86a-714d-480a-9bf7-7c581a963add</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=0c71656b93998210cd4e7d532bba1082"/>
@@ -229,16 +237,17 @@
         <comment/>
         <display_text/>
         <flow display_value="PLAY-SUB: Calculate location scores and update location">b761656b93998210cd4e7d532bba1037</flow>
+        <generation_source/>
         <order>1</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-04-07 11:50:36</sys_created_on>
         <sys_id>4871656b93998210cd4e7d532bba106c</sys_id>
-        <sys_mod_count>24</sys_mod_count>
-        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_mod_count>26</sys_mod_count>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-05-03 11:12:53</sys_updated_on>
+        <sys_updated_on>2024-12-24 02:15:35</sys_updated_on>
         <ui_id>0196c8c9-001a-4af9-883b-a12a2368ff9b</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=4871656b93998210cd4e7d532bba106c"/>
@@ -268,16 +277,17 @@
         <comment>Player 1</comment>
         <display_text/>
         <flow display_value="PLAY-SUB: Calculate location scores and update location">b761656b93998210cd4e7d532bba1037</flow>
+        <generation_source/>
         <order>3</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-04-07 11:50:36</sys_created_on>
         <sys_id>c471656b93998210cd4e7d532bba1074</sys_id>
-        <sys_mod_count>24</sys_mod_count>
-        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_mod_count>26</sys_mod_count>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-05-03 11:12:53</sys_updated_on>
+        <sys_updated_on>2024-12-24 02:15:35</sys_updated_on>
         <ui_id>f7e1b482-a93e-48de-8bc0-3a3628e2467f</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=c471656b93998210cd4e7d532bba1074"/>
@@ -357,16 +367,17 @@
         <comment>Player 2</comment>
         <display_text/>
         <flow display_value="PLAY-SUB: Calculate location scores and update location">b761656b93998210cd4e7d532bba1037</flow>
+        <generation_source/>
         <order>8</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-04-07 11:50:37</sys_created_on>
         <sys_id>cc71656b93998210cd4e7d532bba107c</sys_id>
-        <sys_mod_count>50</sys_mod_count>
-        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_mod_count>52</sys_mod_count>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-05-03 11:12:53</sys_updated_on>
+        <sys_updated_on>2024-12-24 02:15:35</sys_updated_on>
         <ui_id>849a81d0-172a-4411-8cef-31172761bd18</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=cc71656b93998210cd4e7d532bba107c"/>
@@ -411,12 +422,449 @@
     </sys_element_mapping>
     <sys_hub_input_scripts action="delete_multiple" query="instance=cc71656b93998210cd4e7d532bba107c"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=cc71656b93998210cd4e7d532bba107c"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=b761656b93998210cd4e7d532bba1037^sys_idNOT IN2f4da62193f9c610cd4e7d532bba100d,3761656b93998210cd4e7d532bba1066,7361656b93998210cd4e7d532bba1063,828daa2193f9c610cd4e7d532bba10c9,bb61656b93998210cd4e7d532bba105f,bf61656b93998210cd4e7d532bba104e,ee81296b93998210cd4e7d532bba1089"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">60ad226193f9c610cd4e7d532bba10e4</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="PLAY-SUB: Calculate location scores and update location">b761656b93998210cd4e7d532bba1037</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>2232ed4f-8d15-4541-bfcc-42e3d600611f</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-26 08:45:37</sys_created_on>
+        <sys_id>2f4da62193f9c610cd4e7d532bba100d</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-26 08:51:11</sys_updated_on>
+        <ui_id>5386f5ab-e541-4f2e-a7be-9755c8b0c45e</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=2f4da62193f9c610cd4e7d532bba100d"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>2f4da62193f9c610cd4e7d532bba100d</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-26 08:46:09</sys_created_on>
+        <sys_id>0f6da62193f9c610cd4e7d532bba1081</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-26 08:46:09</sys_updated_on>
+        <value>If integer is not 0</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_b761656b93998210cd4e7d532bba1037^id=2f4da62193f9c610cd4e7d532bba100d"/>
+    <sys_element_mapping action="delete_multiple" query="id=2f4da62193f9c610cd4e7d532bba100d"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>2f4da62193f9c610cd4e7d532bba100d</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-26 08:46:09</sys_created_on>
+        <sys_id>8b6da62193f9c610cd4e7d532bba1081</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-26 08:46:09</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{2232ed4f-8d15-4541-bfcc-42e3d600611f.item.card_instance.current_power}}&gt;0</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>2f4da62193f9c610cd4e7d532bba100d</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-26 08:46:09</sys_created_on>
+        <sys_id>c36da62193f9c610cd4e7d532bba1081</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-26 08:46:09</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=2f4da62193f9c610cd4e7d532bba100d"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=2f4da62193f9c610cd4e7d532bba100d"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">fc7758a393158210cd4e7d532bba1001</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="PLAY-SUB: Calculate location scores and update location">b761656b93998210cd4e7d532bba1037</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>9</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-07 11:50:36</sys_created_on>
+        <sys_id>3761656b93998210cd4e7d532bba1066</sys_id>
+        <sys_mod_count>45</sys_mod_count>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-26 08:51:07</sys_updated_on>
+        <ui_id>96862926-1dac-49c2-85da-05c4a0fbfa17</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=3761656b93998210cd4e7d532bba1066"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_b761656b93998210cd4e7d532bba1037^id=3761656b93998210cd4e7d532bba1066"/>
+    <sys_element_mapping action="delete_multiple" query="id=3761656b93998210cd4e7d532bba1066"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>3761656b93998210cd4e7d532bba1066</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-07 11:50:36</sys_created_on>
+        <sys_id>fb61656b93998210cd4e7d532bba1068</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-07 11:50:36</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{849a81d0-172a-4411-8cef-31172761bd18.Records}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=3761656b93998210cd4e7d532bba1066"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=3761656b93998210cd4e7d532bba1066"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">b141216b93998210cd4e7d532bba107c</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="PLAY-SUB: Calculate location scores and update location">b761656b93998210cd4e7d532bba1037</flow>
+        <flow_variable/>
+        <flow_variable/>
+        <flow_variables_assigned>p1_score</flow_variables_assigned>
+        <generation_source/>
+        <inputs/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>7</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>5386f5ab-e541-4f2e-a7be-9755c8b0c45e</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-07 11:50:36</sys_created_on>
+        <sys_id>7361656b93998210cd4e7d532bba1063</sys_id>
+        <sys_mod_count>44</sys_mod_count>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-26 08:51:11</sys_updated_on>
+        <ui_id>4db4007a-7dc5-45f3-8c8c-70f7edde0b4d</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=7361656b93998210cd4e7d532bba1063"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>7361656b93998210cd4e7d532bba1063</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-07 11:50:36</sys_created_on>
+        <sys_id>7b61656b93998210cd4e7d532bba1065</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-07 11:50:36</sys_updated_on>
+        <value/>
+        <variable display_value="P1 Score">7361656b93998210cd4e7d532bba1043</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=7361656b93998210cd4e7d532bba1063"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>p1_score</field>
+        <id>7361656b93998210cd4e7d532bba1063</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-07 11:50:36</sys_created_on>
+        <sys_id>f761656b93998210cd4e7d532bba1065</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-26 08:14:40</sys_updated_on>
+        <table>var__m_sys_hub_flow_variable_b761656b93998210cd4e7d532bba1037</table>
+        <value>{{2dc42c2f-4db3-44cf-8025-e3069429d09b.calculated_number}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=7361656b93998210cd4e7d532bba1063"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=7361656b93998210cd4e7d532bba1063"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">f8ad226193f9c610cd4e7d532bba10ff</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="PLAY-SUB: Calculate location scores and update location">b761656b93998210cd4e7d532bba1037</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>10</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>96862926-1dac-49c2-85da-05c4a0fbfa17</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-26 08:46:38</sys_created_on>
+        <sys_id>828daa2193f9c610cd4e7d532bba10c9</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-26 08:51:07</sys_updated_on>
+        <ui_id>d18459db-966c-4340-a313-dcbaea30144d</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=828daa2193f9c610cd4e7d532bba10c9"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>828daa2193f9c610cd4e7d532bba10c9</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-26 08:46:59</sys_created_on>
+        <sys_id>679d662193f9c610cd4e7d532bba106f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-26 08:46:59</sys_updated_on>
+        <value>If integer is greater than 0</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_b761656b93998210cd4e7d532bba1037^id=828daa2193f9c610cd4e7d532bba10c9"/>
+    <sys_element_mapping action="delete_multiple" query="id=828daa2193f9c610cd4e7d532bba10c9"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>828daa2193f9c610cd4e7d532bba10c9</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-26 08:46:59</sys_created_on>
+        <sys_id>e39d662193f9c610cd4e7d532bba106f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-26 08:46:59</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{96862926-1dac-49c2-85da-05c4a0fbfa17.item.card_instance.current_power}}&gt;0</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>828daa2193f9c610cd4e7d532bba10c9</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-26 08:46:59</sys_created_on>
+        <sys_id>239d662193f9c610cd4e7d532bba106f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-26 08:46:59</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=828daa2193f9c610cd4e7d532bba10c9"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=828daa2193f9c610cd4e7d532bba10c9"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">207718a393158210cd4e7d532bba10cf</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="PLAY-SUB: Calculate location scores and update location">b761656b93998210cd4e7d532bba1037</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-07 11:50:36</sys_created_on>
+        <sys_id>bb61656b93998210cd4e7d532bba105f</sys_id>
+        <sys_mod_count>23</sys_mod_count>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-26 08:51:11</sys_updated_on>
+        <ui_id>2232ed4f-8d15-4541-bfcc-42e3d600611f</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=bb61656b93998210cd4e7d532bba105f"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_b761656b93998210cd4e7d532bba1037^id=bb61656b93998210cd4e7d532bba105f"/>
+    <sys_element_mapping action="delete_multiple" query="id=bb61656b93998210cd4e7d532bba105f"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>bb61656b93998210cd4e7d532bba105f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-07 11:50:36</sys_created_on>
+        <sys_id>7761656b93998210cd4e7d532bba1062</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-07 11:50:36</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{f7e1b482-a93e-48de-8bc0-3a3628e2467f.Records}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=bb61656b93998210cd4e7d532bba105f"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=bb61656b93998210cd4e7d532bba105f"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">6c7718a393158210cd4e7d532bba108e</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="PLAY-SUB: Calculate location scores and update location">b761656b93998210cd4e7d532bba1037</flow>
+        <flow_variable/>
+        <flow_variables_assigned>p1_score,p2_score</flow_variables_assigned>
+        <generation_source/>
+        <inputs/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-07 11:50:36</sys_created_on>
+        <sys_id>bf61656b93998210cd4e7d532bba104e</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-26 08:47:10</sys_updated_on>
+        <ui_id>a868c9df-301a-4cf5-a137-69e33fcb004e</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=bf61656b93998210cd4e7d532bba104e"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>bf61656b93998210cd4e7d532bba104e</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-07 11:50:36</sys_created_on>
+        <sys_id>b761656b93998210cd4e7d532bba1052</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-07 11:50:36</sys_updated_on>
+        <value>0</value>
+        <variable display_value="P2 Score">3361656b93998210cd4e7d532bba103f</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>bf61656b93998210cd4e7d532bba104e</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-07 11:50:36</sys_created_on>
+        <sys_id>f361656b93998210cd4e7d532bba1052</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-07 11:50:36</sys_updated_on>
+        <value>0</value>
+        <variable display_value="P1 Score">7361656b93998210cd4e7d532bba1043</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_b761656b93998210cd4e7d532bba1037^id=bf61656b93998210cd4e7d532bba104e"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=bf61656b93998210cd4e7d532bba104e"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=bf61656b93998210cd4e7d532bba104e"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">6a81296b93998210cd4e7d532bba1089</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="PLAY-SUB: Calculate location scores and update location">b761656b93998210cd4e7d532bba1037</flow>
+        <flow_variable/>
+        <flow_variable/>
+        <flow_variables_assigned>p2_score</flow_variables_assigned>
+        <generation_source/>
+        <inputs/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>12</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>d18459db-966c-4340-a313-dcbaea30144d</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-07 11:51:04</sys_created_on>
+        <sys_id>ee81296b93998210cd4e7d532bba1089</sys_id>
+        <sys_mod_count>61</sys_mod_count>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-26 08:51:11</sys_updated_on>
+        <ui_id>39059d9d-5793-4494-ac1b-36bf46c13329</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=ee81296b93998210cd4e7d532bba1089"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>ee81296b93998210cd4e7d532bba1089</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-07 11:51:04</sys_created_on>
+        <sys_id>a681296b93998210cd4e7d532bba108d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-07 11:51:04</sys_updated_on>
+        <value/>
+        <variable display_value="P2 Score">3361656b93998210cd4e7d532bba103f</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=ee81296b93998210cd4e7d532bba1089"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>p2_score</field>
+        <id>ee81296b93998210cd4e7d532bba1089</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-07 11:51:04</sys_created_on>
+        <sys_id>2681296b93998210cd4e7d532bba108d</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-26 08:14:30</sys_updated_on>
+        <table>var__m_sys_hub_flow_variable_b761656b93998210cd4e7d532bba1037</table>
+        <value>{{1f8f9104-823b-43c4-b64f-98eaa0955161.calculated_number}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=ee81296b93998210cd4e7d532bba1089"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=ee81296b93998210cd4e7d532bba1089"/>
     <sys_hub_sub_flow_instance action="delete_multiple" query="flow=b761656b93998210cd4e7d532bba1037^sys_idNOT IN0416aaa193b9c610cd4e7d532bba10de,26f5e6a193b9c610cd4e7d532bba106a"/>
     <sys_hub_sub_flow_instance action="INSERT_OR_UPDATE">
         <attributes/>
         <comment/>
         <display_text/>
         <flow display_value="PLAY-SUB: Calculate location scores and update location">b761656b93998210cd4e7d532bba1037</flow>
+        <generation_source/>
         <inputs/>
         <inputs/>
         <order>11</order>
@@ -428,7 +876,7 @@
         <sys_created_on>2024-04-26 08:14:00</sys_created_on>
         <sys_id>0416aaa193b9c610cd4e7d532bba10de</sys_id>
         <sys_mod_count>24</sys_mod_count>
-        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-04-26 08:51:11</sys_updated_on>
         <ui_id>1f8f9104-823b-43c4-b64f-98eaa0955161</ui_id>
@@ -570,7 +1018,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-04-26 08:14:57</sys_updated_on>
@@ -592,6 +1040,7 @@
         <comment/>
         <display_text/>
         <flow display_value="PLAY-SUB: Calculate location scores and update location">b761656b93998210cd4e7d532bba1037</flow>
+        <generation_source/>
         <inputs/>
         <inputs/>
         <order>6</order>
@@ -603,7 +1052,7 @@
         <sys_created_on>2024-04-26 08:13:37</sys_created_on>
         <sys_id>26f5e6a193b9c610cd4e7d532bba106a</sys_id>
         <sys_mod_count>22</sys_mod_count>
-        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-04-26 08:51:11</sys_updated_on>
         <ui_id>2dc42c2f-4db3-44cf-8025-e3069429d09b</ui_id>
@@ -745,7 +1194,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-04-26 08:14:57</sys_updated_on>
@@ -762,435 +1211,6 @@
         <xml_view>false</xml_view>
     </sys_hub_sub_flow_instance_inputs>
     <sys_hub_input_scripts action="delete_multiple" query="instance=26f5e6a193b9c610cd4e7d532bba106a"/>
-    <sys_hub_flow_logic action="delete_multiple" query="flow=b761656b93998210cd4e7d532bba1037^sys_idNOT IN2f4da62193f9c610cd4e7d532bba100d,3761656b93998210cd4e7d532bba1066,7361656b93998210cd4e7d532bba1063,828daa2193f9c610cd4e7d532bba10c9,bb61656b93998210cd4e7d532bba105f,bf61656b93998210cd4e7d532bba104e,ee81296b93998210cd4e7d532bba1089"/>
-    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <attributes/>
-        <block display_value="">60ad226193f9c610cd4e7d532bba10e4</block>
-        <comment/>
-        <connected_to/>
-        <decision_table/>
-        <decision_table_inputs/>
-        <display_text/>
-        <extended_inputs/>
-        <flow display_value="PLAY-SUB: Calculate location scores and update location">b761656b93998210cd4e7d532bba1037</flow>
-        <flow_variable/>
-        <flow_variables_assigned/>
-        <inputs/>
-        <inputs/>
-        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
-        <order>5</order>
-        <outputs_assigned/>
-        <outputs_to_assign/>
-        <parent_ui_id>2232ed4f-8d15-4541-bfcc-42e3d600611f</parent_ui_id>
-        <sys_class_name>sys_hub_flow_logic</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-26 08:45:37</sys_created_on>
-        <sys_id>2f4da62193f9c610cd4e7d532bba100d</sys_id>
-        <sys_mod_count>10</sys_mod_count>
-        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-26 08:51:11</sys_updated_on>
-        <ui_id>5386f5ab-e541-4f2e-a7be-9755c8b0c45e</ui_id>
-        <workflow_inputs/>
-        <workflow_reference/>
-    </sys_hub_flow_logic>
-    <sys_variable_value action="delete_multiple" query="document_key=2f4da62193f9c610cd4e7d532bba100d"/>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_flow_logic</document>
-        <document_key>2f4da62193f9c610cd4e7d532bba100d</document_key>
-        <order>10</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-26 08:46:09</sys_created_on>
-        <sys_id>0f6da62193f9c610cd4e7d532bba1081</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-26 08:46:09</sys_updated_on>
-        <value>If integer is not 0</value>
-        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
-    </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_b761656b93998210cd4e7d532bba1037^id=2f4da62193f9c610cd4e7d532bba100d"/>
-    <sys_element_mapping action="delete_multiple" query="id=2f4da62193f9c610cd4e7d532bba100d"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>condition</field>
-        <id>2f4da62193f9c610cd4e7d532bba100d</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-26 08:46:09</sys_created_on>
-        <sys_id>8b6da62193f9c610cd4e7d532bba1081</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-26 08:46:09</sys_updated_on>
-        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
-        <value>{{2232ed4f-8d15-4541-bfcc-42e3d600611f.item.card_instance.current_power}}&gt;0</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>condition_name</field>
-        <id>2f4da62193f9c610cd4e7d532bba100d</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-26 08:46:09</sys_created_on>
-        <sys_id>c36da62193f9c610cd4e7d532bba1081</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-26 08:46:09</sys_updated_on>
-        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=2f4da62193f9c610cd4e7d532bba100d"/>
-    <sys_hub_input_scripts action="delete_multiple" query="instance=2f4da62193f9c610cd4e7d532bba100d"/>
-    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <attributes/>
-        <block display_value="">fc7758a393158210cd4e7d532bba1001</block>
-        <comment/>
-        <connected_to/>
-        <decision_table/>
-        <decision_table_inputs/>
-        <display_text/>
-        <extended_inputs/>
-        <flow display_value="PLAY-SUB: Calculate location scores and update location">b761656b93998210cd4e7d532bba1037</flow>
-        <flow_variable/>
-        <flow_variables_assigned/>
-        <inputs/>
-        <inputs/>
-        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
-        <order>9</order>
-        <outputs_assigned/>
-        <outputs_to_assign/>
-        <parent_ui_id/>
-        <sys_class_name>sys_hub_flow_logic</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-07 11:50:36</sys_created_on>
-        <sys_id>3761656b93998210cd4e7d532bba1066</sys_id>
-        <sys_mod_count>45</sys_mod_count>
-        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-26 08:51:07</sys_updated_on>
-        <ui_id>96862926-1dac-49c2-85da-05c4a0fbfa17</ui_id>
-        <workflow_inputs/>
-        <workflow_reference/>
-    </sys_hub_flow_logic>
-    <sys_variable_value action="delete_multiple" query="document_key=3761656b93998210cd4e7d532bba1066"/>
-    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_b761656b93998210cd4e7d532bba1037^id=3761656b93998210cd4e7d532bba1066"/>
-    <sys_element_mapping action="delete_multiple" query="id=3761656b93998210cd4e7d532bba1066"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>items</field>
-        <id>3761656b93998210cd4e7d532bba1066</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-07 11:50:36</sys_created_on>
-        <sys_id>fb61656b93998210cd4e7d532bba1068</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-07 11:50:36</sys_updated_on>
-        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
-        <value>{{849a81d0-172a-4411-8cef-31172761bd18.Records}}</value>
-    </sys_element_mapping>
-    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=3761656b93998210cd4e7d532bba1066"/>
-    <sys_hub_input_scripts action="delete_multiple" query="instance=3761656b93998210cd4e7d532bba1066"/>
-    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <attributes/>
-        <block display_value="">b141216b93998210cd4e7d532bba107c</block>
-        <comment/>
-        <connected_to/>
-        <decision_table/>
-        <decision_table_inputs/>
-        <display_text/>
-        <extended_inputs/>
-        <flow display_value="PLAY-SUB: Calculate location scores and update location">b761656b93998210cd4e7d532bba1037</flow>
-        <flow_variable/>
-        <flow_variable/>
-        <flow_variables_assigned>p1_score</flow_variables_assigned>
-        <inputs/>
-        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
-        <order>7</order>
-        <outputs_assigned/>
-        <outputs_to_assign/>
-        <parent_ui_id>5386f5ab-e541-4f2e-a7be-9755c8b0c45e</parent_ui_id>
-        <sys_class_name>sys_hub_flow_logic</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-07 11:50:36</sys_created_on>
-        <sys_id>7361656b93998210cd4e7d532bba1063</sys_id>
-        <sys_mod_count>44</sys_mod_count>
-        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-26 08:51:11</sys_updated_on>
-        <ui_id>4db4007a-7dc5-45f3-8c8c-70f7edde0b4d</ui_id>
-        <workflow_inputs/>
-        <workflow_reference/>
-    </sys_hub_flow_logic>
-    <sys_variable_value action="delete_multiple" query="document_key=7361656b93998210cd4e7d532bba1063"/>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_flow_logic</document>
-        <document_key>7361656b93998210cd4e7d532bba1063</document_key>
-        <order>0</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-07 11:50:36</sys_created_on>
-        <sys_id>7b61656b93998210cd4e7d532bba1065</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-07 11:50:36</sys_updated_on>
-        <value/>
-        <variable display_value="P1 Score">7361656b93998210cd4e7d532bba1043</variable>
-    </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="id=7361656b93998210cd4e7d532bba1063"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>p1_score</field>
-        <id>7361656b93998210cd4e7d532bba1063</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-07 11:50:36</sys_created_on>
-        <sys_id>f761656b93998210cd4e7d532bba1065</sys_id>
-        <sys_mod_count>4</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-26 08:14:40</sys_updated_on>
-        <table>var__m_sys_hub_flow_variable_b761656b93998210cd4e7d532bba1037</table>
-        <value>{{2dc42c2f-4db3-44cf-8025-e3069429d09b.calculated_number}}</value>
-    </sys_element_mapping>
-    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=7361656b93998210cd4e7d532bba1063"/>
-    <sys_hub_input_scripts action="delete_multiple" query="instance=7361656b93998210cd4e7d532bba1063"/>
-    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <attributes/>
-        <block display_value="">f8ad226193f9c610cd4e7d532bba10ff</block>
-        <comment/>
-        <connected_to/>
-        <decision_table/>
-        <decision_table_inputs/>
-        <display_text/>
-        <extended_inputs/>
-        <flow display_value="PLAY-SUB: Calculate location scores and update location">b761656b93998210cd4e7d532bba1037</flow>
-        <flow_variable/>
-        <flow_variables_assigned/>
-        <inputs/>
-        <inputs/>
-        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
-        <order>10</order>
-        <outputs_assigned/>
-        <outputs_to_assign/>
-        <parent_ui_id>96862926-1dac-49c2-85da-05c4a0fbfa17</parent_ui_id>
-        <sys_class_name>sys_hub_flow_logic</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-26 08:46:38</sys_created_on>
-        <sys_id>828daa2193f9c610cd4e7d532bba10c9</sys_id>
-        <sys_mod_count>8</sys_mod_count>
-        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-26 08:51:07</sys_updated_on>
-        <ui_id>d18459db-966c-4340-a313-dcbaea30144d</ui_id>
-        <workflow_inputs/>
-        <workflow_reference/>
-    </sys_hub_flow_logic>
-    <sys_variable_value action="delete_multiple" query="document_key=828daa2193f9c610cd4e7d532bba10c9"/>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_flow_logic</document>
-        <document_key>828daa2193f9c610cd4e7d532bba10c9</document_key>
-        <order>10</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-26 08:46:59</sys_created_on>
-        <sys_id>679d662193f9c610cd4e7d532bba106f</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-26 08:46:59</sys_updated_on>
-        <value>If integer is greater than 0</value>
-        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
-    </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_b761656b93998210cd4e7d532bba1037^id=828daa2193f9c610cd4e7d532bba10c9"/>
-    <sys_element_mapping action="delete_multiple" query="id=828daa2193f9c610cd4e7d532bba10c9"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>condition</field>
-        <id>828daa2193f9c610cd4e7d532bba10c9</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-26 08:46:59</sys_created_on>
-        <sys_id>e39d662193f9c610cd4e7d532bba106f</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-26 08:46:59</sys_updated_on>
-        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
-        <value>{{96862926-1dac-49c2-85da-05c4a0fbfa17.item.card_instance.current_power}}&gt;0</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>condition_name</field>
-        <id>828daa2193f9c610cd4e7d532bba10c9</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-26 08:46:59</sys_created_on>
-        <sys_id>239d662193f9c610cd4e7d532bba106f</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-26 08:46:59</sys_updated_on>
-        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=828daa2193f9c610cd4e7d532bba10c9"/>
-    <sys_hub_input_scripts action="delete_multiple" query="instance=828daa2193f9c610cd4e7d532bba10c9"/>
-    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <attributes/>
-        <block display_value="">207718a393158210cd4e7d532bba10cf</block>
-        <comment/>
-        <connected_to/>
-        <decision_table/>
-        <decision_table_inputs/>
-        <display_text/>
-        <extended_inputs/>
-        <flow display_value="PLAY-SUB: Calculate location scores and update location">b761656b93998210cd4e7d532bba1037</flow>
-        <flow_variable/>
-        <flow_variables_assigned/>
-        <inputs/>
-        <inputs/>
-        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
-        <order>4</order>
-        <outputs_assigned/>
-        <outputs_to_assign/>
-        <parent_ui_id/>
-        <sys_class_name>sys_hub_flow_logic</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-07 11:50:36</sys_created_on>
-        <sys_id>bb61656b93998210cd4e7d532bba105f</sys_id>
-        <sys_mod_count>23</sys_mod_count>
-        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-26 08:51:11</sys_updated_on>
-        <ui_id>2232ed4f-8d15-4541-bfcc-42e3d600611f</ui_id>
-        <workflow_inputs/>
-        <workflow_reference/>
-    </sys_hub_flow_logic>
-    <sys_variable_value action="delete_multiple" query="document_key=bb61656b93998210cd4e7d532bba105f"/>
-    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_b761656b93998210cd4e7d532bba1037^id=bb61656b93998210cd4e7d532bba105f"/>
-    <sys_element_mapping action="delete_multiple" query="id=bb61656b93998210cd4e7d532bba105f"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>items</field>
-        <id>bb61656b93998210cd4e7d532bba105f</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-07 11:50:36</sys_created_on>
-        <sys_id>7761656b93998210cd4e7d532bba1062</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-07 11:50:36</sys_updated_on>
-        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
-        <value>{{f7e1b482-a93e-48de-8bc0-3a3628e2467f.Records}}</value>
-    </sys_element_mapping>
-    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=bb61656b93998210cd4e7d532bba105f"/>
-    <sys_hub_input_scripts action="delete_multiple" query="instance=bb61656b93998210cd4e7d532bba105f"/>
-    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <attributes/>
-        <block display_value="">6c7718a393158210cd4e7d532bba108e</block>
-        <comment/>
-        <connected_to/>
-        <decision_table/>
-        <decision_table_inputs/>
-        <display_text/>
-        <extended_inputs/>
-        <flow display_value="PLAY-SUB: Calculate location scores and update location">b761656b93998210cd4e7d532bba1037</flow>
-        <flow_variable/>
-        <flow_variables_assigned>p1_score,p2_score</flow_variables_assigned>
-        <inputs/>
-        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
-        <order>2</order>
-        <outputs_assigned/>
-        <outputs_to_assign/>
-        <parent_ui_id/>
-        <sys_class_name>sys_hub_flow_logic</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-07 11:50:36</sys_created_on>
-        <sys_id>bf61656b93998210cd4e7d532bba104e</sys_id>
-        <sys_mod_count>8</sys_mod_count>
-        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-26 08:47:10</sys_updated_on>
-        <ui_id>a868c9df-301a-4cf5-a137-69e33fcb004e</ui_id>
-        <workflow_inputs/>
-        <workflow_reference/>
-    </sys_hub_flow_logic>
-    <sys_variable_value action="delete_multiple" query="document_key=bf61656b93998210cd4e7d532bba104e"/>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_flow_logic</document>
-        <document_key>bf61656b93998210cd4e7d532bba104e</document_key>
-        <order>0</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-07 11:50:36</sys_created_on>
-        <sys_id>b761656b93998210cd4e7d532bba1052</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-07 11:50:36</sys_updated_on>
-        <value>0</value>
-        <variable display_value="P2 Score">3361656b93998210cd4e7d532bba103f</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_flow_logic</document>
-        <document_key>bf61656b93998210cd4e7d532bba104e</document_key>
-        <order>0</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-07 11:50:36</sys_created_on>
-        <sys_id>f361656b93998210cd4e7d532bba1052</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-07 11:50:36</sys_updated_on>
-        <value>0</value>
-        <variable display_value="P1 Score">7361656b93998210cd4e7d532bba1043</variable>
-    </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_b761656b93998210cd4e7d532bba1037^id=bf61656b93998210cd4e7d532bba104e"/>
-    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=bf61656b93998210cd4e7d532bba104e"/>
-    <sys_hub_input_scripts action="delete_multiple" query="instance=bf61656b93998210cd4e7d532bba104e"/>
-    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <attributes/>
-        <block display_value="">6a81296b93998210cd4e7d532bba1089</block>
-        <comment/>
-        <connected_to/>
-        <decision_table/>
-        <decision_table_inputs/>
-        <display_text/>
-        <extended_inputs/>
-        <flow display_value="PLAY-SUB: Calculate location scores and update location">b761656b93998210cd4e7d532bba1037</flow>
-        <flow_variable/>
-        <flow_variable/>
-        <flow_variables_assigned>p2_score</flow_variables_assigned>
-        <inputs/>
-        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
-        <order>12</order>
-        <outputs_assigned/>
-        <outputs_to_assign/>
-        <parent_ui_id>d18459db-966c-4340-a313-dcbaea30144d</parent_ui_id>
-        <sys_class_name>sys_hub_flow_logic</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-07 11:51:04</sys_created_on>
-        <sys_id>ee81296b93998210cd4e7d532bba1089</sys_id>
-        <sys_mod_count>61</sys_mod_count>
-        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-26 08:51:11</sys_updated_on>
-        <ui_id>39059d9d-5793-4494-ac1b-36bf46c13329</ui_id>
-        <workflow_inputs/>
-        <workflow_reference/>
-    </sys_hub_flow_logic>
-    <sys_variable_value action="delete_multiple" query="document_key=ee81296b93998210cd4e7d532bba1089"/>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_flow_logic</document>
-        <document_key>ee81296b93998210cd4e7d532bba1089</document_key>
-        <order>0</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-07 11:51:04</sys_created_on>
-        <sys_id>a681296b93998210cd4e7d532bba108d</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-07 11:51:04</sys_updated_on>
-        <value/>
-        <variable display_value="P2 Score">3361656b93998210cd4e7d532bba103f</variable>
-    </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="id=ee81296b93998210cd4e7d532bba1089"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>p2_score</field>
-        <id>ee81296b93998210cd4e7d532bba1089</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-07 11:51:04</sys_created_on>
-        <sys_id>2681296b93998210cd4e7d532bba108d</sys_id>
-        <sys_mod_count>5</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-26 08:14:30</sys_updated_on>
-        <table>var__m_sys_hub_flow_variable_b761656b93998210cd4e7d532bba1037</table>
-        <value>{{1f8f9104-823b-43c4-b64f-98eaa0955161.calculated_number}}</value>
-    </sys_element_mapping>
-    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=ee81296b93998210cd4e7d532bba1089"/>
-    <sys_hub_input_scripts action="delete_multiple" query="instance=ee81296b93998210cd4e7d532bba1089"/>
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=b761656b93998210cd4e7d532bba1037"/>
     <sys_hub_flow_variable action="delete_multiple" query="model=b761656b93998210cd4e7d532bba1037^sys_idNOT IN3361656b93998210cd4e7d532bba103f,7361656b93998210cd4e7d532bba1043"/>
     <sys_hub_flow_variable action="INSERT_OR_UPDATE">
@@ -1260,7 +1280,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-04-07 11:50:36</sys_updated_on>
@@ -1343,7 +1363,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-04-07 11:50:36</sys_updated_on>
@@ -1374,10 +1394,10 @@
         <sys_id>3b61656b93998210cd4e7d532bba104b</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Location</sys_name>
-        <sys_package display_value="Flow Designer Marvel SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
+        <sys_package display_value="SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_update_name/>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_b761656b93998210cd4e7d532bba1037_location_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-04-07 11:50:36</sys_updated_on>
         <url/>
@@ -1392,11 +1412,13 @@
         <active>true</active>
         <annotation/>
         <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=88000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
         <copied_from>f193286b93558210cd4e7d532bba1024</copied_from>
         <copied_from_name/>
         <description/>
+        <flow_priority/>
         <internal_name>playsub_calculate_location_scores_and_update_location</internal_name>
         <label_cache>[{"name":"2dc42c2f-4db3-44cf-8025-e3069429d09b.calculated_number","label":"6 - PLAY-SUB: add integer to other integer➛Calculated Number","reference_display":"Calculated Number","type":"integer","base_type":"integer","usedInstances":{"4db4007a-7dc5-45f3-8c8c-70f7edde0b4d":["p1_score-0"]},"attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"cdd3ee83-6087-470d-a3b2-657b9a238de3"}},{"name":"1f8f9104-823b-43c4-b64f-98eaa0955161.calculated_number","label":"11 - PLAY-SUB: add integer to other integer➛Calculated Number","reference_display":"Calculated Number","type":"integer","base_type":"integer","usedInstances":{"39059d9d-5793-4494-ac1b-36bf46c13329":["p2_score-0"]},"attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"cdd3ee83-6087-470d-a3b2-657b9a238de3"}},{"name":"7d7e8440-b6ef-4ddf-abe6-4cff20791231.calculated_number","label":"9 - PLAY-SUB: add integer to other integer➛Calculated Number","reference":"","reference_display":"","type":"integer","base_type":"integer","usedInstances":{"39059d9d-5793-4494-ac1b-36bf46c13329":["p2_score-0"]}},{"name":"f35fec56-def9-45ea-a0af-8b2f80c73db7.calculated_number","label":"5 - PLAY-SUB: add integer to other integer➛Calculated Number","reference":"","reference_display":"","type":"integer","base_type":"integer","usedInstances":{"4db4007a-7dc5-45f3-8c8c-70f7edde0b4d":["p1_score-0"]}},{"name":"subflow.location.game_instance.player_2","label":"Input➛Location➛Game Instance➛Player 2","reference":"x_168987_flow_de_0_player_session","reference_display":"Player Session","type":"reference","base_type":"reference","usedInstances":{}},{"name":"96862926-1dac-49c2-85da-05c4a0fbfa17.item.card_instance.current_power","label":"9 - For Each➛Game Location Slot Record➛Related Card Instance➛Current Power","reference":"","reference_display":"Current Power","type":"integer","base_type":"integer","parent_table_name":"x_168987_flow_de_0_card_instance","column_name":"current_power","usedInstances":{"f3054ec8-88c3-484f-9910-10b376ba4b86":["integer_to_add"],"7d7e8440-b6ef-4ddf-abe6-4cff20791231":["integer_to_add"],"6fc7cb1e-95a0-42f7-93f8-9038ba73bed5":["integer_to_add"],"1f8f9104-823b-43c4-b64f-98eaa0955161":["integer_to_add"],"d18459db-966c-4340-a313-dcbaea30144d":["condition"]}},{"name":"flow_variable.p2_score","label":"Flow Variables➛P2 Score","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","usedInstances":{"7d7e8440-b6ef-4ddf-abe6-4cff20791231":["original_integer"],"39059d9d-5793-4494-ac1b-36bf46c13329":["p2_score-0"],"6fc7cb1e-95a0-42f7-93f8-9038ba73bed5":["original_integer"],"1f8f9104-823b-43c4-b64f-98eaa0955161":["original_integer"]},"attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"bbf0e713-b3bc-4de4-8b9f-18ba9e7a787c"}},{"name":"849a81d0-172a-4411-8cef-31172761bd18.Records","label":"8 - Look Up Records➛Game Location Slot Records","reference":"x_168987_flow_de_0_location_slot","reference_display":"Game Location Slot","type":"records","base_type":"records","usedInstances":{},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"2232ed4f-8d15-4541-bfcc-42e3d600611f.item.card_instance.current_power","label":"4 - For Each➛Game Location Slot Record➛Related Card Instance➛Current Power","reference":"","reference_display":"Current Power","type":"integer","base_type":"integer","parent_table_name":"x_168987_flow_de_0_card_instance","column_name":"current_power","usedInstances":{"1f70cdec-dae3-4890-b250-e199a0efdd0f":["integer_to_add"],"2b958c2c-8ee7-4430-9546-d472d7120992":["integer_to_add"],"8d9a7f12-03aa-45de-9833-651e02206379":["integer_to_add"],"3ba9a293-afdb-4328-8cdf-2b12a08b1c81":["integer_to_add"],"f35fec56-def9-45ea-a0af-8b2f80c73db7":["integer_to_add"],"2dc42c2f-4db3-44cf-8025-e3069429d09b":["integer_to_add"],"5386f5ab-e541-4f2e-a7be-9755c8b0c45e":["condition"]}},{"name":"flow_variable.p1_score","label":"Flow Variables➛P1 Score","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","usedInstances":{"1f70cdec-dae3-4890-b250-e199a0efdd0f":["original_integer"],"f3054ec8-88c3-484f-9910-10b376ba4b86":["original_integer"],"2b958c2c-8ee7-4430-9546-d472d7120992":["original_integer"],"8d9a7f12-03aa-45de-9833-651e02206379":["original_integer"],"3ba9a293-afdb-4328-8cdf-2b12a08b1c81":["original_integer"],"f35fec56-def9-45ea-a0af-8b2f80c73db7":["original_integer"],"2dc42c2f-4db3-44cf-8025-e3069429d09b":["original_integer"],"1f8f9104-823b-43c4-b64f-98eaa0955161":["original_integer"]},"attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"89c00aa5-b80a-47ff-896c-b5a033ad1b99"}},{"name":"subflow.location.game_instance.player_1","label":"Input➛Location➛Game Instance➛Player 1","reference":"x_168987_flow_de_0_player_session","reference_display":"Player Session","type":"reference","base_type":"reference","usedInstances":{}},{"name":"subflow.location","label":"Input➛Location","reference":"x_168987_flow_de_0_location_instance","reference_display":"Game Location instance","type":"reference","base_type":"reference","usedInstances":{}},{"name":"f7e1b482-a93e-48de-8bc0-3a3628e2467f.Records","label":"3 - Look Up Records➛Game Location Slot Records","reference":"x_168987_flow_de_0_location_slot","reference_display":"Game Location Slot","type":"records","base_type":"records","usedInstances":{},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.game_instance.player_1","label":"Input➛Game Instance➛Player 1","reference":"x_168987_flow_de_0_player_session","reference_display":"Player Session","type":"reference","base_type":"reference","usedInstances":{}},{"name":"subflow.game_instance.location_1","label":"Input➛Game Instance➛Location 1","reference":"x_168987_flow_de_0_location_instance","reference_display":"Game Location instance","type":"reference","base_type":"reference","usedInstances":{}},{"name":"1f70cdec-dae3-4890-b250-e199a0efdd0f.calculated_number","label":"5 - PLAY-SUB: add integer to other integer➛Calculated Number","reference":"","reference_display":"Calculated Number","type":"integer","base_type":"integer","usedInstances":{"4db4007a-7dc5-45f3-8c8c-70f7edde0b4d":["p1_score-0"]}},{"name":"3ba9a293-afdb-4328-8cdf-2b12a08b1c81.calculated_number","label":"5 - PLAY-SUB: add integer to other integer➛Calculated Number","reference":"","reference_display":"Calculated Number","type":"integer","base_type":"integer","usedInstances":{"4db4007a-7dc5-45f3-8c8c-70f7edde0b4d":["p1_score-0"]}},{"name":"f3054ec8-88c3-484f-9910-10b376ba4b86.calculated_number","label":"9 - PLAY-SUB: add integer to other integer➛Calculated Number","reference":"","reference_display":"","type":"integer","base_type":"integer","usedInstances":{"39059d9d-5793-4494-ac1b-36bf46c13329":["p2_score-0"]}}]</label_cache>
         <master>true</master>
@@ -1420,15 +1442,15 @@
         <sys_overrides/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-04-26 08:47:09</sys_updated_on>
         <type>subflow</type>
+        <version/>
     </sys_hub_flow_snapshot>
     <sys_translated_text action="delete_multiple" query="documentkey=0f81696b93998210cd4e7d532bba1028"/>
     <sys_variable_value action="delete_multiple" query="document_key=0f81696b93998210cd4e7d532bba1028"/>
-    <sys_hub_trigger_instance action="delete_multiple" query="flow=0f81696b93998210cd4e7d532bba1028"/>
     <sys_hub_flow_stage action="delete_multiple" query="flow=0f81696b93998210cd4e7d532bba1028"/>
     <sys_flow_cat_variable_model action="delete_multiple" query="id=0f81696b93998210cd4e7d532bba1028^sys_idNOT IN0f81696b93998210cd4e7d532bba1029"/>
     <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
@@ -1511,7 +1533,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-04-07 11:51:06</sys_updated_on>
@@ -1530,6 +1552,7 @@
     <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=cb81696b93998210cd4e7d532bba102a"/>
     <sys_hub_flow_output action="delete_multiple" query="model=0f81696b93998210cd4e7d532bba1028"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=0f81696b93998210cd4e7d532bba1028"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=0f81696b93998210cd4e7d532bba1028"/>
     <sys_hub_action_instance action="delete_multiple" query="flow=0f81696b93998210cd4e7d532bba1028^sys_idNOT IN1781696b93998210cd4e7d532bba1098,9381696b93998210cd4e7d532bba1090,9f81696b93998210cd4e7d532bba1086,9f81696b93998210cd4e7d532bba109f"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
@@ -1540,6 +1563,7 @@
         <comment>Player 2</comment>
         <display_text/>
         <flow display_value="PLAY-SUB: Calculate location scores and update location">0f81696b93998210cd4e7d532bba1028</flow>
+        <generation_source/>
         <order>8</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -1547,7 +1571,7 @@
         <sys_created_on>2024-04-07 11:51:07</sys_created_on>
         <sys_id>1781696b93998210cd4e7d532bba1098</sys_id>
         <sys_mod_count>10</sys_mod_count>
-        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-04-26 08:47:08</sys_updated_on>
         <ui_id>849a81d0-172a-4411-8cef-31172761bd18</ui_id>
@@ -1603,6 +1627,7 @@
         <comment>Player 1</comment>
         <display_text/>
         <flow display_value="PLAY-SUB: Calculate location scores and update location">0f81696b93998210cd4e7d532bba1028</flow>
+        <generation_source/>
         <order>3</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -1610,7 +1635,7 @@
         <sys_created_on>2024-04-07 11:51:07</sys_created_on>
         <sys_id>9381696b93998210cd4e7d532bba1090</sys_id>
         <sys_mod_count>10</sys_mod_count>
-        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-04-26 08:47:08</sys_updated_on>
         <ui_id>f7e1b482-a93e-48de-8bc0-3a3628e2467f</ui_id>
@@ -1691,6 +1716,7 @@
         <comment/>
         <display_text/>
         <flow display_value="PLAY-SUB: Calculate location scores and update location">0f81696b93998210cd4e7d532bba1028</flow>
+        <generation_source/>
         <order>1</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -1698,7 +1724,7 @@
         <sys_created_on>2024-04-07 11:51:06</sys_created_on>
         <sys_id>9f81696b93998210cd4e7d532bba1086</sys_id>
         <sys_mod_count>10</sys_mod_count>
-        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-04-26 08:47:08</sys_updated_on>
         <ui_id>0196c8c9-001a-4af9-883b-a12a2368ff9b</ui_id>
@@ -1730,6 +1756,7 @@
         <comment>Update Location Scores</comment>
         <display_text/>
         <flow display_value="PLAY-SUB: Calculate location scores and update location">0f81696b93998210cd4e7d532bba1028</flow>
+        <generation_source/>
         <order>13</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -1737,7 +1764,7 @@
         <sys_created_on>2024-04-07 11:51:07</sys_created_on>
         <sys_id>9f81696b93998210cd4e7d532bba109f</sys_id>
         <sys_mod_count>10</sys_mod_count>
-        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-04-26 08:47:09</sys_updated_on>
         <ui_id>088aa86a-714d-480a-9bf7-7c581a963add</ui_id>
@@ -1796,12 +1823,449 @@
     </sys_element_mapping>
     <sys_hub_input_scripts action="delete_multiple" query="instance=9f81696b93998210cd4e7d532bba109f"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=9f81696b93998210cd4e7d532bba109f"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=0f81696b93998210cd4e7d532bba1028^sys_idNOT IN15ada26193f9c610cd4e7d532bba1065,1b81696b93998210cd4e7d532bba105c,5381696b93998210cd4e7d532bba1063,5f81696b93998210cd4e7d532bba1057,9381696b93998210cd4e7d532bba1066,9f81696b93998210cd4e7d532bba105f,e9ada26193f9c610cd4e7d532bba1072"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">60ad226193f9c610cd4e7d532bba10e4</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="PLAY-SUB: Calculate location scores and update location">0f81696b93998210cd4e7d532bba1028</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>2232ed4f-8d15-4541-bfcc-42e3d600611f</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-26 08:47:07</sys_created_on>
+        <sys_id>15ada26193f9c610cd4e7d532bba1065</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-26 08:47:08</sys_updated_on>
+        <ui_id>5386f5ab-e541-4f2e-a7be-9755c8b0c45e</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=15ada26193f9c610cd4e7d532bba1065"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>15ada26193f9c610cd4e7d532bba1065</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-26 08:47:07</sys_created_on>
+        <sys_id>15ada26193f9c610cd4e7d532bba1068</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-26 08:47:07</sys_updated_on>
+        <value>If integer is not 0</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_0f81696b93998210cd4e7d532bba1028^id=15ada26193f9c610cd4e7d532bba1065"/>
+    <sys_element_mapping action="delete_multiple" query="id=15ada26193f9c610cd4e7d532bba1065"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>15ada26193f9c610cd4e7d532bba1065</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-26 08:47:07</sys_created_on>
+        <sys_id>91ada26193f9c610cd4e7d532bba1068</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-26 08:47:07</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{2232ed4f-8d15-4541-bfcc-42e3d600611f.item.card_instance.current_power}}&gt;0</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>15ada26193f9c610cd4e7d532bba1065</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-26 08:47:07</sys_created_on>
+        <sys_id>ddada26193f9c610cd4e7d532bba1067</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-26 08:47:07</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=15ada26193f9c610cd4e7d532bba1065"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=15ada26193f9c610cd4e7d532bba1065"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">207718a393158210cd4e7d532bba10cf</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="PLAY-SUB: Calculate location scores and update location">0f81696b93998210cd4e7d532bba1028</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-07 11:51:06</sys_created_on>
+        <sys_id>1b81696b93998210cd4e7d532bba105c</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-26 08:47:08</sys_updated_on>
+        <ui_id>2232ed4f-8d15-4541-bfcc-42e3d600611f</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=1b81696b93998210cd4e7d532bba105c"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_0f81696b93998210cd4e7d532bba1028^id=1b81696b93998210cd4e7d532bba105c"/>
+    <sys_element_mapping action="delete_multiple" query="id=1b81696b93998210cd4e7d532bba105c"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>1b81696b93998210cd4e7d532bba105c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-07 11:51:06</sys_created_on>
+        <sys_id>1781696b93998210cd4e7d532bba105f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-07 11:51:06</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{f7e1b482-a93e-48de-8bc0-3a3628e2467f.Records}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=1b81696b93998210cd4e7d532bba105c"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=1b81696b93998210cd4e7d532bba105c"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">fc7758a393158210cd4e7d532bba1001</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="PLAY-SUB: Calculate location scores and update location">0f81696b93998210cd4e7d532bba1028</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>9</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-07 11:51:06</sys_created_on>
+        <sys_id>5381696b93998210cd4e7d532bba1063</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-26 08:47:08</sys_updated_on>
+        <ui_id>96862926-1dac-49c2-85da-05c4a0fbfa17</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=5381696b93998210cd4e7d532bba1063"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_0f81696b93998210cd4e7d532bba1028^id=5381696b93998210cd4e7d532bba1063"/>
+    <sys_element_mapping action="delete_multiple" query="id=5381696b93998210cd4e7d532bba1063"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>5381696b93998210cd4e7d532bba1063</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-07 11:51:06</sys_created_on>
+        <sys_id>1b81696b93998210cd4e7d532bba1065</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-07 11:51:06</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{849a81d0-172a-4411-8cef-31172761bd18.Records}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=5381696b93998210cd4e7d532bba1063"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=5381696b93998210cd4e7d532bba1063"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">6c7718a393158210cd4e7d532bba108e</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="PLAY-SUB: Calculate location scores and update location">0f81696b93998210cd4e7d532bba1028</flow>
+        <flow_variable/>
+        <flow_variables_assigned>p1_score,p2_score</flow_variables_assigned>
+        <generation_source/>
+        <inputs/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-07 11:51:06</sys_created_on>
+        <sys_id>5f81696b93998210cd4e7d532bba1057</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-26 08:47:08</sys_updated_on>
+        <ui_id>a868c9df-301a-4cf5-a137-69e33fcb004e</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=5f81696b93998210cd4e7d532bba1057"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>5f81696b93998210cd4e7d532bba1057</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-07 11:51:06</sys_created_on>
+        <sys_id>1b81696b93998210cd4e7d532bba105b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-07 11:51:06</sys_updated_on>
+        <value>0</value>
+        <variable display_value="P1 Score">d381696b93998210cd4e7d532bba1053</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>5f81696b93998210cd4e7d532bba1057</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-07 11:51:06</sys_created_on>
+        <sys_id>db81696b93998210cd4e7d532bba105b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-07 11:51:06</sys_updated_on>
+        <value>0</value>
+        <variable display_value="P2 Score">db81696b93998210cd4e7d532bba104f</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_0f81696b93998210cd4e7d532bba1028^id=5f81696b93998210cd4e7d532bba1057"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=5f81696b93998210cd4e7d532bba1057"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=5f81696b93998210cd4e7d532bba1057"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">6a81296b93998210cd4e7d532bba1089</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="PLAY-SUB: Calculate location scores and update location">0f81696b93998210cd4e7d532bba1028</flow>
+        <flow_variable/>
+        <flow_variable/>
+        <flow_variables_assigned>p2_score</flow_variables_assigned>
+        <generation_source/>
+        <inputs/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>12</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>96862926-1dac-49c2-85da-05c4a0fbfa17</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-07 11:51:06</sys_created_on>
+        <sys_id>9381696b93998210cd4e7d532bba1066</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-26 08:47:09</sys_updated_on>
+        <ui_id>39059d9d-5793-4494-ac1b-36bf46c13329</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=9381696b93998210cd4e7d532bba1066"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>9381696b93998210cd4e7d532bba1066</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-07 11:51:06</sys_created_on>
+        <sys_id>1b81696b93998210cd4e7d532bba1081</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-07 11:51:06</sys_updated_on>
+        <value/>
+        <variable display_value="P2 Score">db81696b93998210cd4e7d532bba104f</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=9381696b93998210cd4e7d532bba1066"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>p2_score</field>
+        <id>9381696b93998210cd4e7d532bba1066</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-07 11:51:06</sys_created_on>
+        <sys_id>9781696b93998210cd4e7d532bba1081</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-26 08:15:00</sys_updated_on>
+        <table>var__m_sys_hub_flow_variable_0f81696b93998210cd4e7d532bba1028</table>
+        <value>{{1f8f9104-823b-43c4-b64f-98eaa0955161.calculated_number}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=9381696b93998210cd4e7d532bba1066"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=9381696b93998210cd4e7d532bba1066"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">b141216b93998210cd4e7d532bba107c</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="PLAY-SUB: Calculate location scores and update location">0f81696b93998210cd4e7d532bba1028</flow>
+        <flow_variable/>
+        <flow_variable/>
+        <flow_variables_assigned>p1_score</flow_variables_assigned>
+        <generation_source/>
+        <inputs/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>7</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>2232ed4f-8d15-4541-bfcc-42e3d600611f</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-07 11:51:06</sys_created_on>
+        <sys_id>9f81696b93998210cd4e7d532bba105f</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-26 08:47:08</sys_updated_on>
+        <ui_id>4db4007a-7dc5-45f3-8c8c-70f7edde0b4d</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=9f81696b93998210cd4e7d532bba105f"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>9f81696b93998210cd4e7d532bba105f</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-07 11:51:06</sys_created_on>
+        <sys_id>9781696b93998210cd4e7d532bba1062</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-07 11:51:06</sys_updated_on>
+        <value/>
+        <variable display_value="P1 Score">d381696b93998210cd4e7d532bba1053</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=9f81696b93998210cd4e7d532bba105f"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>p1_score</field>
+        <id>9f81696b93998210cd4e7d532bba105f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-07 11:51:06</sys_created_on>
+        <sys_id>1781696b93998210cd4e7d532bba1062</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-26 08:15:00</sys_updated_on>
+        <table>var__m_sys_hub_flow_variable_0f81696b93998210cd4e7d532bba1028</table>
+        <value>{{2dc42c2f-4db3-44cf-8025-e3069429d09b.calculated_number}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=9f81696b93998210cd4e7d532bba105f"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=9f81696b93998210cd4e7d532bba105f"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">f8ad226193f9c610cd4e7d532bba10ff</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="PLAY-SUB: Calculate location scores and update location">0f81696b93998210cd4e7d532bba1028</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>10</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>96862926-1dac-49c2-85da-05c4a0fbfa17</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-26 08:47:08</sys_created_on>
+        <sys_id>e9ada26193f9c610cd4e7d532bba1072</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-26 08:47:08</sys_updated_on>
+        <ui_id>d18459db-966c-4340-a313-dcbaea30144d</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=e9ada26193f9c610cd4e7d532bba1072"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>e9ada26193f9c610cd4e7d532bba1072</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-26 08:47:08</sys_created_on>
+        <sys_id>e9ada26193f9c610cd4e7d532bba1075</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-26 08:47:08</sys_updated_on>
+        <value>If integer is greater than 0</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_0f81696b93998210cd4e7d532bba1028^id=e9ada26193f9c610cd4e7d532bba1072"/>
+    <sys_element_mapping action="delete_multiple" query="id=e9ada26193f9c610cd4e7d532bba1072"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>e9ada26193f9c610cd4e7d532bba1072</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-26 08:47:08</sys_created_on>
+        <sys_id>69ada26193f9c610cd4e7d532bba1075</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-26 08:47:08</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{96862926-1dac-49c2-85da-05c4a0fbfa17.item.card_instance.current_power}}&gt;0</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>e9ada26193f9c610cd4e7d532bba1072</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-26 08:47:08</sys_created_on>
+        <sys_id>a5ada26193f9c610cd4e7d532bba1075</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-26 08:47:08</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=e9ada26193f9c610cd4e7d532bba1072"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=e9ada26193f9c610cd4e7d532bba1072"/>
     <sys_hub_sub_flow_instance action="delete_multiple" query="flow=0f81696b93998210cd4e7d532bba1028^sys_idNOT IN764626e193b9c610cd4e7d532bba10de,ba4626e193b9c610cd4e7d532bba10c3"/>
     <sys_hub_sub_flow_instance action="INSERT_OR_UPDATE">
         <attributes/>
         <comment/>
         <display_text/>
         <flow display_value="PLAY-SUB: Calculate location scores and update location">0f81696b93998210cd4e7d532bba1028</flow>
+        <generation_source/>
         <inputs/>
         <inputs/>
         <order>11</order>
@@ -1813,7 +2277,7 @@
         <sys_created_on>2024-04-26 08:15:00</sys_created_on>
         <sys_id>764626e193b9c610cd4e7d532bba10de</sys_id>
         <sys_mod_count>8</sys_mod_count>
-        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-04-26 08:47:08</sys_updated_on>
         <ui_id>1f8f9104-823b-43c4-b64f-98eaa0955161</ui_id>
@@ -1955,7 +2419,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-04-26 08:15:00</sys_updated_on>
@@ -1977,6 +2441,7 @@
         <comment/>
         <display_text/>
         <flow display_value="PLAY-SUB: Calculate location scores and update location">0f81696b93998210cd4e7d532bba1028</flow>
+        <generation_source/>
         <inputs/>
         <inputs/>
         <order>6</order>
@@ -1988,7 +2453,7 @@
         <sys_created_on>2024-04-26 08:15:00</sys_created_on>
         <sys_id>ba4626e193b9c610cd4e7d532bba10c3</sys_id>
         <sys_mod_count>8</sys_mod_count>
-        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-04-26 08:47:08</sys_updated_on>
         <ui_id>2dc42c2f-4db3-44cf-8025-e3069429d09b</ui_id>
@@ -2130,7 +2595,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-04-26 08:15:00</sys_updated_on>
@@ -2147,435 +2612,6 @@
         <xml_view>false</xml_view>
     </sys_hub_sub_flow_instance_inputs>
     <sys_hub_input_scripts action="delete_multiple" query="instance=ba4626e193b9c610cd4e7d532bba10c3"/>
-    <sys_hub_flow_logic action="delete_multiple" query="flow=0f81696b93998210cd4e7d532bba1028^sys_idNOT IN15ada26193f9c610cd4e7d532bba1065,1b81696b93998210cd4e7d532bba105c,5381696b93998210cd4e7d532bba1063,5f81696b93998210cd4e7d532bba1057,9381696b93998210cd4e7d532bba1066,9f81696b93998210cd4e7d532bba105f,e9ada26193f9c610cd4e7d532bba1072"/>
-    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <attributes/>
-        <block display_value="">60ad226193f9c610cd4e7d532bba10e4</block>
-        <comment/>
-        <connected_to/>
-        <decision_table/>
-        <decision_table_inputs/>
-        <display_text/>
-        <extended_inputs/>
-        <flow display_value="PLAY-SUB: Calculate location scores and update location">0f81696b93998210cd4e7d532bba1028</flow>
-        <flow_variable/>
-        <flow_variables_assigned/>
-        <inputs/>
-        <inputs/>
-        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
-        <order>5</order>
-        <outputs_assigned/>
-        <outputs_to_assign/>
-        <parent_ui_id>2232ed4f-8d15-4541-bfcc-42e3d600611f</parent_ui_id>
-        <sys_class_name>sys_hub_flow_logic</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-26 08:47:07</sys_created_on>
-        <sys_id>15ada26193f9c610cd4e7d532bba1065</sys_id>
-        <sys_mod_count>3</sys_mod_count>
-        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-26 08:47:08</sys_updated_on>
-        <ui_id>5386f5ab-e541-4f2e-a7be-9755c8b0c45e</ui_id>
-        <workflow_inputs/>
-        <workflow_reference/>
-    </sys_hub_flow_logic>
-    <sys_variable_value action="delete_multiple" query="document_key=15ada26193f9c610cd4e7d532bba1065"/>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_flow_logic</document>
-        <document_key>15ada26193f9c610cd4e7d532bba1065</document_key>
-        <order>10</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-26 08:47:07</sys_created_on>
-        <sys_id>15ada26193f9c610cd4e7d532bba1068</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-26 08:47:07</sys_updated_on>
-        <value>If integer is not 0</value>
-        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
-    </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_0f81696b93998210cd4e7d532bba1028^id=15ada26193f9c610cd4e7d532bba1065"/>
-    <sys_element_mapping action="delete_multiple" query="id=15ada26193f9c610cd4e7d532bba1065"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>condition</field>
-        <id>15ada26193f9c610cd4e7d532bba1065</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-26 08:47:07</sys_created_on>
-        <sys_id>91ada26193f9c610cd4e7d532bba1068</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-26 08:47:07</sys_updated_on>
-        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
-        <value>{{2232ed4f-8d15-4541-bfcc-42e3d600611f.item.card_instance.current_power}}&gt;0</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>condition_name</field>
-        <id>15ada26193f9c610cd4e7d532bba1065</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-26 08:47:07</sys_created_on>
-        <sys_id>ddada26193f9c610cd4e7d532bba1067</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-26 08:47:07</sys_updated_on>
-        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=15ada26193f9c610cd4e7d532bba1065"/>
-    <sys_hub_input_scripts action="delete_multiple" query="instance=15ada26193f9c610cd4e7d532bba1065"/>
-    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <attributes/>
-        <block display_value="">207718a393158210cd4e7d532bba10cf</block>
-        <comment/>
-        <connected_to/>
-        <decision_table/>
-        <decision_table_inputs/>
-        <display_text/>
-        <extended_inputs/>
-        <flow display_value="PLAY-SUB: Calculate location scores and update location">0f81696b93998210cd4e7d532bba1028</flow>
-        <flow_variable/>
-        <flow_variables_assigned/>
-        <inputs/>
-        <inputs/>
-        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
-        <order>4</order>
-        <outputs_assigned/>
-        <outputs_to_assign/>
-        <parent_ui_id/>
-        <sys_class_name>sys_hub_flow_logic</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-07 11:51:06</sys_created_on>
-        <sys_id>1b81696b93998210cd4e7d532bba105c</sys_id>
-        <sys_mod_count>6</sys_mod_count>
-        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-26 08:47:08</sys_updated_on>
-        <ui_id>2232ed4f-8d15-4541-bfcc-42e3d600611f</ui_id>
-        <workflow_inputs/>
-        <workflow_reference/>
-    </sys_hub_flow_logic>
-    <sys_variable_value action="delete_multiple" query="document_key=1b81696b93998210cd4e7d532bba105c"/>
-    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_0f81696b93998210cd4e7d532bba1028^id=1b81696b93998210cd4e7d532bba105c"/>
-    <sys_element_mapping action="delete_multiple" query="id=1b81696b93998210cd4e7d532bba105c"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>items</field>
-        <id>1b81696b93998210cd4e7d532bba105c</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-07 11:51:06</sys_created_on>
-        <sys_id>1781696b93998210cd4e7d532bba105f</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-07 11:51:06</sys_updated_on>
-        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
-        <value>{{f7e1b482-a93e-48de-8bc0-3a3628e2467f.Records}}</value>
-    </sys_element_mapping>
-    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=1b81696b93998210cd4e7d532bba105c"/>
-    <sys_hub_input_scripts action="delete_multiple" query="instance=1b81696b93998210cd4e7d532bba105c"/>
-    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <attributes/>
-        <block display_value="">fc7758a393158210cd4e7d532bba1001</block>
-        <comment/>
-        <connected_to/>
-        <decision_table/>
-        <decision_table_inputs/>
-        <display_text/>
-        <extended_inputs/>
-        <flow display_value="PLAY-SUB: Calculate location scores and update location">0f81696b93998210cd4e7d532bba1028</flow>
-        <flow_variable/>
-        <flow_variables_assigned/>
-        <inputs/>
-        <inputs/>
-        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
-        <order>9</order>
-        <outputs_assigned/>
-        <outputs_to_assign/>
-        <parent_ui_id/>
-        <sys_class_name>sys_hub_flow_logic</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-07 11:51:06</sys_created_on>
-        <sys_id>5381696b93998210cd4e7d532bba1063</sys_id>
-        <sys_mod_count>7</sys_mod_count>
-        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-26 08:47:08</sys_updated_on>
-        <ui_id>96862926-1dac-49c2-85da-05c4a0fbfa17</ui_id>
-        <workflow_inputs/>
-        <workflow_reference/>
-    </sys_hub_flow_logic>
-    <sys_variable_value action="delete_multiple" query="document_key=5381696b93998210cd4e7d532bba1063"/>
-    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_0f81696b93998210cd4e7d532bba1028^id=5381696b93998210cd4e7d532bba1063"/>
-    <sys_element_mapping action="delete_multiple" query="id=5381696b93998210cd4e7d532bba1063"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>items</field>
-        <id>5381696b93998210cd4e7d532bba1063</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-07 11:51:06</sys_created_on>
-        <sys_id>1b81696b93998210cd4e7d532bba1065</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-07 11:51:06</sys_updated_on>
-        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
-        <value>{{849a81d0-172a-4411-8cef-31172761bd18.Records}}</value>
-    </sys_element_mapping>
-    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=5381696b93998210cd4e7d532bba1063"/>
-    <sys_hub_input_scripts action="delete_multiple" query="instance=5381696b93998210cd4e7d532bba1063"/>
-    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <attributes/>
-        <block display_value="">6c7718a393158210cd4e7d532bba108e</block>
-        <comment/>
-        <connected_to/>
-        <decision_table/>
-        <decision_table_inputs/>
-        <display_text/>
-        <extended_inputs/>
-        <flow display_value="PLAY-SUB: Calculate location scores and update location">0f81696b93998210cd4e7d532bba1028</flow>
-        <flow_variable/>
-        <flow_variables_assigned>p1_score,p2_score</flow_variables_assigned>
-        <inputs/>
-        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
-        <order>2</order>
-        <outputs_assigned/>
-        <outputs_to_assign/>
-        <parent_ui_id/>
-        <sys_class_name>sys_hub_flow_logic</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-07 11:51:06</sys_created_on>
-        <sys_id>5f81696b93998210cd4e7d532bba1057</sys_id>
-        <sys_mod_count>6</sys_mod_count>
-        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-26 08:47:08</sys_updated_on>
-        <ui_id>a868c9df-301a-4cf5-a137-69e33fcb004e</ui_id>
-        <workflow_inputs/>
-        <workflow_reference/>
-    </sys_hub_flow_logic>
-    <sys_variable_value action="delete_multiple" query="document_key=5f81696b93998210cd4e7d532bba1057"/>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_flow_logic</document>
-        <document_key>5f81696b93998210cd4e7d532bba1057</document_key>
-        <order>0</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-07 11:51:06</sys_created_on>
-        <sys_id>1b81696b93998210cd4e7d532bba105b</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-07 11:51:06</sys_updated_on>
-        <value>0</value>
-        <variable display_value="P1 Score">d381696b93998210cd4e7d532bba1053</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_flow_logic</document>
-        <document_key>5f81696b93998210cd4e7d532bba1057</document_key>
-        <order>0</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-07 11:51:06</sys_created_on>
-        <sys_id>db81696b93998210cd4e7d532bba105b</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-07 11:51:06</sys_updated_on>
-        <value>0</value>
-        <variable display_value="P2 Score">db81696b93998210cd4e7d532bba104f</variable>
-    </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_0f81696b93998210cd4e7d532bba1028^id=5f81696b93998210cd4e7d532bba1057"/>
-    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=5f81696b93998210cd4e7d532bba1057"/>
-    <sys_hub_input_scripts action="delete_multiple" query="instance=5f81696b93998210cd4e7d532bba1057"/>
-    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <attributes/>
-        <block display_value="">6a81296b93998210cd4e7d532bba1089</block>
-        <comment/>
-        <connected_to/>
-        <decision_table/>
-        <decision_table_inputs/>
-        <display_text/>
-        <extended_inputs/>
-        <flow display_value="PLAY-SUB: Calculate location scores and update location">0f81696b93998210cd4e7d532bba1028</flow>
-        <flow_variable/>
-        <flow_variable/>
-        <flow_variables_assigned>p2_score</flow_variables_assigned>
-        <inputs/>
-        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
-        <order>12</order>
-        <outputs_assigned/>
-        <outputs_to_assign/>
-        <parent_ui_id>96862926-1dac-49c2-85da-05c4a0fbfa17</parent_ui_id>
-        <sys_class_name>sys_hub_flow_logic</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-07 11:51:06</sys_created_on>
-        <sys_id>9381696b93998210cd4e7d532bba1066</sys_id>
-        <sys_mod_count>7</sys_mod_count>
-        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-26 08:47:09</sys_updated_on>
-        <ui_id>39059d9d-5793-4494-ac1b-36bf46c13329</ui_id>
-        <workflow_inputs/>
-        <workflow_reference/>
-    </sys_hub_flow_logic>
-    <sys_variable_value action="delete_multiple" query="document_key=9381696b93998210cd4e7d532bba1066"/>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_flow_logic</document>
-        <document_key>9381696b93998210cd4e7d532bba1066</document_key>
-        <order>0</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-07 11:51:06</sys_created_on>
-        <sys_id>1b81696b93998210cd4e7d532bba1081</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-07 11:51:06</sys_updated_on>
-        <value/>
-        <variable display_value="P2 Score">db81696b93998210cd4e7d532bba104f</variable>
-    </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="id=9381696b93998210cd4e7d532bba1066"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>p2_score</field>
-        <id>9381696b93998210cd4e7d532bba1066</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-07 11:51:06</sys_created_on>
-        <sys_id>9781696b93998210cd4e7d532bba1081</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-26 08:15:00</sys_updated_on>
-        <table>var__m_sys_hub_flow_variable_0f81696b93998210cd4e7d532bba1028</table>
-        <value>{{1f8f9104-823b-43c4-b64f-98eaa0955161.calculated_number}}</value>
-    </sys_element_mapping>
-    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=9381696b93998210cd4e7d532bba1066"/>
-    <sys_hub_input_scripts action="delete_multiple" query="instance=9381696b93998210cd4e7d532bba1066"/>
-    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <attributes/>
-        <block display_value="">b141216b93998210cd4e7d532bba107c</block>
-        <comment/>
-        <connected_to/>
-        <decision_table/>
-        <decision_table_inputs/>
-        <display_text/>
-        <extended_inputs/>
-        <flow display_value="PLAY-SUB: Calculate location scores and update location">0f81696b93998210cd4e7d532bba1028</flow>
-        <flow_variable/>
-        <flow_variable/>
-        <flow_variables_assigned>p1_score</flow_variables_assigned>
-        <inputs/>
-        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
-        <order>7</order>
-        <outputs_assigned/>
-        <outputs_to_assign/>
-        <parent_ui_id>2232ed4f-8d15-4541-bfcc-42e3d600611f</parent_ui_id>
-        <sys_class_name>sys_hub_flow_logic</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-07 11:51:06</sys_created_on>
-        <sys_id>9f81696b93998210cd4e7d532bba105f</sys_id>
-        <sys_mod_count>7</sys_mod_count>
-        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-26 08:47:08</sys_updated_on>
-        <ui_id>4db4007a-7dc5-45f3-8c8c-70f7edde0b4d</ui_id>
-        <workflow_inputs/>
-        <workflow_reference/>
-    </sys_hub_flow_logic>
-    <sys_variable_value action="delete_multiple" query="document_key=9f81696b93998210cd4e7d532bba105f"/>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_flow_logic</document>
-        <document_key>9f81696b93998210cd4e7d532bba105f</document_key>
-        <order>0</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-07 11:51:06</sys_created_on>
-        <sys_id>9781696b93998210cd4e7d532bba1062</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-07 11:51:06</sys_updated_on>
-        <value/>
-        <variable display_value="P1 Score">d381696b93998210cd4e7d532bba1053</variable>
-    </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="id=9f81696b93998210cd4e7d532bba105f"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>p1_score</field>
-        <id>9f81696b93998210cd4e7d532bba105f</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-07 11:51:06</sys_created_on>
-        <sys_id>1781696b93998210cd4e7d532bba1062</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-26 08:15:00</sys_updated_on>
-        <table>var__m_sys_hub_flow_variable_0f81696b93998210cd4e7d532bba1028</table>
-        <value>{{2dc42c2f-4db3-44cf-8025-e3069429d09b.calculated_number}}</value>
-    </sys_element_mapping>
-    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=9f81696b93998210cd4e7d532bba105f"/>
-    <sys_hub_input_scripts action="delete_multiple" query="instance=9f81696b93998210cd4e7d532bba105f"/>
-    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <attributes/>
-        <block display_value="">f8ad226193f9c610cd4e7d532bba10ff</block>
-        <comment/>
-        <connected_to/>
-        <decision_table/>
-        <decision_table_inputs/>
-        <display_text/>
-        <extended_inputs/>
-        <flow display_value="PLAY-SUB: Calculate location scores and update location">0f81696b93998210cd4e7d532bba1028</flow>
-        <flow_variable/>
-        <flow_variables_assigned/>
-        <inputs/>
-        <inputs/>
-        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
-        <order>10</order>
-        <outputs_assigned/>
-        <outputs_to_assign/>
-        <parent_ui_id>96862926-1dac-49c2-85da-05c4a0fbfa17</parent_ui_id>
-        <sys_class_name>sys_hub_flow_logic</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-26 08:47:08</sys_created_on>
-        <sys_id>e9ada26193f9c610cd4e7d532bba1072</sys_id>
-        <sys_mod_count>3</sys_mod_count>
-        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-26 08:47:08</sys_updated_on>
-        <ui_id>d18459db-966c-4340-a313-dcbaea30144d</ui_id>
-        <workflow_inputs/>
-        <workflow_reference/>
-    </sys_hub_flow_logic>
-    <sys_variable_value action="delete_multiple" query="document_key=e9ada26193f9c610cd4e7d532bba1072"/>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_flow_logic</document>
-        <document_key>e9ada26193f9c610cd4e7d532bba1072</document_key>
-        <order>10</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-26 08:47:08</sys_created_on>
-        <sys_id>e9ada26193f9c610cd4e7d532bba1075</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-26 08:47:08</sys_updated_on>
-        <value>If integer is greater than 0</value>
-        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
-    </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_0f81696b93998210cd4e7d532bba1028^id=e9ada26193f9c610cd4e7d532bba1072"/>
-    <sys_element_mapping action="delete_multiple" query="id=e9ada26193f9c610cd4e7d532bba1072"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>condition</field>
-        <id>e9ada26193f9c610cd4e7d532bba1072</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-26 08:47:08</sys_created_on>
-        <sys_id>69ada26193f9c610cd4e7d532bba1075</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-26 08:47:08</sys_updated_on>
-        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
-        <value>{{96862926-1dac-49c2-85da-05c4a0fbfa17.item.card_instance.current_power}}&gt;0</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>condition_name</field>
-        <id>e9ada26193f9c610cd4e7d532bba1072</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-26 08:47:08</sys_created_on>
-        <sys_id>a5ada26193f9c610cd4e7d532bba1075</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-26 08:47:08</sys_updated_on>
-        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=e9ada26193f9c610cd4e7d532bba1072"/>
-    <sys_hub_input_scripts action="delete_multiple" query="instance=e9ada26193f9c610cd4e7d532bba1072"/>
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=0f81696b93998210cd4e7d532bba1028"/>
     <sys_hub_flow_variable action="delete_multiple" query="model=0f81696b93998210cd4e7d532bba1028^sys_idNOT INd381696b93998210cd4e7d532bba1053,db81696b93998210cd4e7d532bba104f"/>
     <sys_hub_flow_variable action="INSERT_OR_UPDATE">
@@ -2645,7 +2681,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-04-07 11:51:06</sys_updated_on>
@@ -2728,7 +2764,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-04-07 11:51:06</sys_updated_on>
@@ -2759,10 +2795,10 @@
         <sys_id>cb81696b93998210cd4e7d532bba1039</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Location</sys_name>
-        <sys_package display_value="Flow Designer Marvel SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
+        <sys_package display_value="SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_update_name/>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_0f81696b93998210cd4e7d532bba1028_location_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-04-07 11:51:06</sys_updated_on>
         <url/>
@@ -2774,14 +2810,14 @@
     <sys_hub_flow action="UPDATE">
         <sys_id>b761656b93998210cd4e7d532bba1037</sys_id>
         <latest_snapshot>0f81696b93998210cd4e7d532bba1028</latest_snapshot>
-        <compiler_build>glide-vancouver-07-06-2023__patch2-hotfix1-10-04-2023_10-06-2023_1235.zip</compiler_build>
+        <compiler_build>glide-xanadu-07-02-2024__patch4-11-22-2024_12-02-2024_1408.zip</compiler_build>
     </sys_hub_flow>
     <sys_flow_trigger_plan action="delete_multiple" query="plan_id=b761656b93998210cd4e7d532bba1037"/>
     <sys_flow_subflow_plan action="delete_multiple" query="plan_id=b761656b93998210cd4e7d532bba1037^sys_idNOT IN3b81a96b93998210cd4e7d532bba102b"/>
     <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
-        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"3b81a96b93998210cd4e7d532bba102b","name":"plan","plan_signature":null}}</plan>
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"3b81a96b93998210cd4e7d532bba102b","name":"plan","plan_signature":null}}</plan>
         <plan_id display_value="PLAY-SUB: Calculate location scores and update location">b761656b93998210cd4e7d532bba1037</plan_id>
-        <snapshot>f0225373537942103a0891e0a0490ec8</snapshot>
+        <snapshot>e1c46b17c362d210ff1f33bc0501313a</snapshot>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-04-07 11:51:08</sys_created_on>
         <sys_domain>global</sys_domain>

@@ -5,14 +5,19 @@
         <active>true</active>
         <annotation/>
         <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=1797000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
         <copied_from>25bbe6f4476a3d5017fdc82f316d432c</copied_from>
         <copied_from_name>CARD-ACT: Subflow Template</copied_from_name>
         <description/>
+        <display_name_after_preview/>
+        <flow_priority/>
+        <generation_source/>
         <internal_name>cardact_on_reveal_add_the_top_card_of_your_deck_to_this_location</internal_name>
         <label_cache>[{"name":"subflow.player_session","label":"Input➛Player Session","reference":"x_168987_flow_de_0_player_session","reference_display":"Player Session","type":"reference","base_type":"reference","column_name":"","usedInstances":{"60f86c52-9e9d-4346-adcb-71efebe393ff":["conditions"],"6333f281-c278-4cd8-ad89-da96c9170d2a":["conditions"]},"attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"498332c7-2b6e-42b0-82a9-9f0a0d4937ea","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.card_instance.current_location","label":"Input➛Card Instance➛Current Location","reference":"x_168987_flow_de_0_location_instance","reference_display":"Game Location instance","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_card_instance","column_name":"current_location","usedInstances":{"6333f281-c278-4cd8-ad89-da96c9170d2a":["conditions"]}},{"name":"6333f281-c278-4cd8-ad89-da96c9170d2a.Record","label":"2 - Look Up Record➛Game Location Slot Record","reference":"x_168987_flow_de_0_location_slot","reference_display":"Game Location Slot","type":"reference","base_type":"reference","usedInstances":{"acb33211-8827-45e4-b980-f168d49f5ac1":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"60f86c52-9e9d-4346-adcb-71efebe393ff.Record","label":"1 - Look Up Record➛Game Card Instance Record","reference":"x_168987_flow_de_0_card_instance","reference_display":"Game Card Instance","type":"reference","base_type":"reference","usedInstances":{"acb33211-8827-45e4-b980-f168d49f5ac1":["card_instance"],"2a3ec9cf-d1d9-4c49-af25-8b5cd8bfeb3b":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"acb33211-8827-45e4-b980-f168d49f5ac1.record","label":"3 - Update Record➛Game Location Slot Record","reference":"x_168987_flow_de_0_location_slot","reference_display":"Game Location Slot","type":"reference","base_type":"reference","usedInstances":{"2a3ec9cf-d1d9-4c49-af25-8b5cd8bfeb3b":["current_location"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.game_instance.current_turn","label":"Input➛Game Instance➛Current Turn","reference":"","reference_display":"Current Turn","type":"integer","base_type":"integer","parent_table_name":"x_168987_flow_de_0_game_instance","column_name":"current_turn","usedInstances":{"2a3ec9cf-d1d9-4c49-af25-8b5cd8bfeb3b":["turn_played"]}}]</label_cache>
         <master_snapshot>fbad804e93794a10cd4e7d532bba1017</master_snapshot>
+        <master_snapshot_digest/>
         <name>CARD-ACT: On Reveal: Add the top card of your deck to this location.</name>
         <natlang/>
         <outputs/>
@@ -24,6 +29,7 @@
         <show_draft_actions>false</show_draft_actions>
         <show_triggered_flows>false</show_triggered_flows>
         <status>published</status>
+        <substatus/>
         <sys_class_name>sys_hub_flow</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-04-27 10:00:20</sys_created_on>
@@ -33,18 +39,18 @@
         <sys_mod_count>0</sys_mod_count>
         <sys_name>CARD-ACT: On Reveal: Add the top card of your deck to this location.</sys_name>
         <sys_overrides/>
-        <sys_package display_value="Flow Designer Marvel SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
+        <sys_package display_value="SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_update_name>sys_hub_flow_abf7084693794a10cd4e7d532bba1025</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-05-02 13:42:07</sys_updated_on>
+        <sys_updated_on>2024-12-22 11:10:20</sys_updated_on>
         <type>subflow</type>
+        <version/>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=abf7084693794a10cd4e7d532bba1025"/>
     <sys_variable_value action="delete_multiple" query="document_key=abf7084693794a10cd4e7d532bba1025"/>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_abf7084693794a10cd4e7d532bba1025^id=abf7084693794a10cd4e7d532bba1025"/>
-    <sys_hub_trigger_instance action="delete_multiple" query="flow=abf7084693794a10cd4e7d532bba1025"/>
     <sys_hub_flow_stage action="delete_multiple" query="flow=abf7084693794a10cd4e7d532bba1025"/>
     <sys_flow_cat_variable_model action="delete_multiple" query="id=abf7084693794a10cd4e7d532bba1025^sys_idNOT IN2bf7084693794a10cd4e7d532bba1026"/>
     <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
@@ -127,7 +133,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-04-27 10:00:20</sys_updated_on>
@@ -211,7 +217,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-04-27 10:00:20</sys_updated_on>
@@ -295,7 +301,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-04-27 10:00:20</sys_updated_on>
@@ -349,6 +355,7 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
+        <internal_link/>
         <internal_type display_value="Choice">choice</internal_type>
         <label>Status</label>
         <mandatory>false</mandatory>
@@ -380,7 +387,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-04-27 10:00:21</sys_updated_on>
@@ -398,6 +405,7 @@
     </sys_hub_flow_output>
     <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=33f7084693794a10cd4e7d532bba1049"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=abf7084693794a10cd4e7d532bba1025"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=abf7084693794a10cd4e7d532bba1025"/>
     <sys_hub_action_instance action="delete_multiple" query="flow=abf7084693794a10cd4e7d532bba1025^sys_idNOT IN3b2d440e93794a10cd4e7d532bba10a1,99fc000e93794a10cd4e7d532bba1077,e0ccc8ca93794a10cd4e7d532bba1094,e36dc80e93794a10cd4e7d532bba10bc,f7f7084693794a10cd4e7d532bba106f"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
@@ -408,16 +416,17 @@
         <comment>Add the next card to the location</comment>
         <display_text/>
         <flow display_value="CARD-ACT: On Reveal: Add the top card of your deck to this location.">abf7084693794a10cd4e7d532bba1025</flow>
+        <generation_source/>
         <order>3</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-04-27 10:23:01</sys_created_on>
         <sys_id>3b2d440e93794a10cd4e7d532bba10a1</sys_id>
-        <sys_mod_count>24</sys_mod_count>
-        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_mod_count>26</sys_mod_count>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-05-04 03:59:39</sys_updated_on>
+        <sys_updated_on>2024-12-25 21:25:26</sys_updated_on>
         <ui_id>acb33211-8827-45e4-b980-f168d49f5ac1</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=3b2d440e93794a10cd4e7d532bba10a1"/>
@@ -483,16 +492,17 @@
         <comment>find the next slot in this location</comment>
         <display_text/>
         <flow display_value="CARD-ACT: On Reveal: Add the top card of your deck to this location.">abf7084693794a10cd4e7d532bba1025</flow>
+        <generation_source/>
         <order>2</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-04-27 10:22:01</sys_created_on>
         <sys_id>99fc000e93794a10cd4e7d532bba1077</sys_id>
-        <sys_mod_count>24</sys_mod_count>
-        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_mod_count>26</sys_mod_count>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-05-04 03:59:39</sys_updated_on>
+        <sys_updated_on>2024-12-25 21:25:26</sys_updated_on>
         <ui_id>6333f281-c278-4cd8-ad89-da96c9170d2a</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=99fc000e93794a10cd4e7d532bba1077"/>
@@ -572,16 +582,17 @@
         <comment>Look up the top deck card</comment>
         <display_text/>
         <flow display_value="CARD-ACT: On Reveal: Add the top card of your deck to this location.">abf7084693794a10cd4e7d532bba1025</flow>
+        <generation_source/>
         <order>1</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-04-27 10:21:09</sys_created_on>
         <sys_id>e0ccc8ca93794a10cd4e7d532bba1094</sys_id>
-        <sys_mod_count>24</sys_mod_count>
-        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_mod_count>26</sys_mod_count>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-05-04 03:59:39</sys_updated_on>
+        <sys_updated_on>2024-12-25 21:25:25</sys_updated_on>
         <ui_id>60f86c52-9e9d-4346-adcb-71efebe393ff</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=e0ccc8ca93794a10cd4e7d532bba1094"/>
@@ -661,16 +672,17 @@
         <comment>Update the game instance card to set the status</comment>
         <display_text/>
         <flow display_value="CARD-ACT: On Reveal: Add the top card of your deck to this location.">abf7084693794a10cd4e7d532bba1025</flow>
+        <generation_source/>
         <order>4</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-04-27 10:24:05</sys_created_on>
         <sys_id>e36dc80e93794a10cd4e7d532bba10bc</sys_id>
-        <sys_mod_count>24</sys_mod_count>
-        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_mod_count>26</sys_mod_count>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-05-04 03:59:39</sys_updated_on>
+        <sys_updated_on>2024-12-25 21:25:26</sys_updated_on>
         <ui_id>2a3ec9cf-d1d9-4c49-af25-8b5cd8bfeb3b</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=e36dc80e93794a10cd4e7d532bba10bc"/>
@@ -735,16 +747,17 @@
         <comment/>
         <display_text/>
         <flow display_value="CARD-ACT: On Reveal: Add the top card of your deck to this location.">abf7084693794a10cd4e7d532bba1025</flow>
+        <generation_source/>
         <order>5</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-04-27 10:00:21</sys_created_on>
         <sys_id>f7f7084693794a10cd4e7d532bba106f</sys_id>
-        <sys_mod_count>28</sys_mod_count>
-        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_mod_count>30</sys_mod_count>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-05-04 03:59:39</sys_updated_on>
+        <sys_updated_on>2024-12-25 21:25:26</sys_updated_on>
         <ui_id>aec62c37-f906-4f3a-a6c0-21275903b0e5</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=f7f7084693794a10cd4e7d532bba106f"/>
@@ -765,8 +778,8 @@
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_input_5bc1bcc6531003003bf1d9109ec587d4^id=f7f7084693794a10cd4e7d532bba106f"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=f7f7084693794a10cd4e7d532bba106f"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=f7f7084693794a10cd4e7d532bba106f"/>
-    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=abf7084693794a10cd4e7d532bba1025"/>
     <sys_hub_flow_logic action="delete_multiple" query="flow=abf7084693794a10cd4e7d532bba1025"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=abf7084693794a10cd4e7d532bba1025"/>
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=abf7084693794a10cd4e7d532bba1025"/>
     <sys_hub_flow_variable action="delete_multiple" query="model=abf7084693794a10cd4e7d532bba1025"/>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_abf7084693794a10cd4e7d532bba1025^sys_idNOT IN23f7084693794a10cd4e7d532bba1042,2bf7084693794a10cd4e7d532bba1031,63f7084693794a10cd4e7d532bba1046"/>
@@ -784,9 +797,9 @@
         <sys_id>23f7084693794a10cd4e7d532bba1042</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Card Instance</sys_name>
-        <sys_package display_value="Flow Designer Marvel SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
+        <sys_package display_value="SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_abf7084693794a10cd4e7d532bba1025_card_instance_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-04-27 10:00:20</sys_updated_on>
@@ -807,9 +820,9 @@
         <sys_id>2bf7084693794a10cd4e7d532bba1031</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Player Session</sys_name>
-        <sys_package display_value="Flow Designer Marvel SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
+        <sys_package display_value="SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_abf7084693794a10cd4e7d532bba1025_player_session_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-04-27 10:00:20</sys_updated_on>
@@ -830,9 +843,9 @@
         <sys_id>63f7084693794a10cd4e7d532bba1046</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Game Instance</sys_name>
-        <sys_package display_value="Flow Designer Marvel SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
+        <sys_package display_value="SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_abf7084693794a10cd4e7d532bba1025_game_instance_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-04-27 10:00:20</sys_updated_on>
@@ -855,16 +868,16 @@
         <sys_id>b3f7084693794a10cd4e7d532bba1069</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Status</sys_name>
-        <sys_package display_value="Flow Designer Marvel SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
+        <sys_package display_value="SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_abf7084693794a10cd4e7d532bba1025_status_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-04-27 10:00:21</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
-    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_abf7084693794a10cd4e7d532bba1025^sys_idNOT INf6eaa66b533102103a0891e0a0490eb7,76eaa66b533102103a0891e0a0490eb8"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_abf7084693794a10cd4e7d532bba1025^sys_idNOT IN4e4ccb72c3a61210ff1f33bc05013109,ca4ccb72c3a61210ff1f33bc0501310a"/>
     <sys_choice field="status" table="var__m_sys_hub_flow_output_abf7084693794a10cd4e7d532bba1025">
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
@@ -880,7 +893,7 @@
             <sys_created_on>2024-04-27 10:00:21</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>f6eaa66b533102103a0891e0a0490eb7</sys_id>
+            <sys_id>4e4ccb72c3a61210ff1f33bc05013109</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2024-04-27 10:00:21</sys_updated_on>
@@ -900,7 +913,7 @@
             <sys_created_on>2024-04-27 10:00:21</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>76eaa66b533102103a0891e0a0490eb8</sys_id>
+            <sys_id>ca4ccb72c3a61210ff1f33bc0501310a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2024-04-27 10:00:21</sys_updated_on>
@@ -913,11 +926,13 @@
         <active>true</active>
         <annotation/>
         <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=341789000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
         <copied_from>25bbe6f4476a3d5017fdc82f316d432c</copied_from>
         <copied_from_name/>
         <description/>
+        <flow_priority/>
         <internal_name>cardact_on_reveal_add_the_top_card_of_your_deck_to_this_location</internal_name>
         <label_cache>[{"name":"subflow.player_session","label":"Input➛Player Session","reference":"x_168987_flow_de_0_player_session","reference_display":"Player Session","type":"reference","base_type":"reference","column_name":"","usedInstances":{"60f86c52-9e9d-4346-adcb-71efebe393ff":["conditions"],"6333f281-c278-4cd8-ad89-da96c9170d2a":["conditions"]},"attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"498332c7-2b6e-42b0-82a9-9f0a0d4937ea","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.card_instance.current_location","label":"Input➛Card Instance➛Current Location","reference":"x_168987_flow_de_0_location_instance","reference_display":"Game Location instance","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_card_instance","column_name":"current_location","usedInstances":{"6333f281-c278-4cd8-ad89-da96c9170d2a":["conditions"]}},{"name":"6333f281-c278-4cd8-ad89-da96c9170d2a.Record","label":"2 - Look Up Record➛Game Location Slot Record","reference":"x_168987_flow_de_0_location_slot","reference_display":"Game Location Slot","type":"reference","base_type":"reference","usedInstances":{"acb33211-8827-45e4-b980-f168d49f5ac1":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"60f86c52-9e9d-4346-adcb-71efebe393ff.Record","label":"1 - Look Up Record➛Game Card Instance Record","reference":"x_168987_flow_de_0_card_instance","reference_display":"Game Card Instance","type":"reference","base_type":"reference","usedInstances":{"acb33211-8827-45e4-b980-f168d49f5ac1":["card_instance"],"2a3ec9cf-d1d9-4c49-af25-8b5cd8bfeb3b":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"acb33211-8827-45e4-b980-f168d49f5ac1.record","label":"3 - Update Record➛Game Location Slot Record","reference":"x_168987_flow_de_0_location_slot","reference_display":"Game Location Slot","type":"reference","base_type":"reference","usedInstances":{"2a3ec9cf-d1d9-4c49-af25-8b5cd8bfeb3b":["current_location"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.game_instance.current_turn","label":"Input➛Game Instance➛Current Turn","reference":"","reference_display":"Current Turn","type":"integer","base_type":"integer","parent_table_name":"x_168987_flow_de_0_game_instance","column_name":"current_turn","usedInstances":{"2a3ec9cf-d1d9-4c49-af25-8b5cd8bfeb3b":["turn_played"]}}]</label_cache>
         <master>true</master>
@@ -941,16 +956,16 @@
         <sys_overrides/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-04-27 10:30:19</sys_updated_on>
         <type>subflow</type>
+        <version/>
     </sys_hub_flow_snapshot>
     <sys_translated_text action="delete_multiple" query="documentkey=fbad804e93794a10cd4e7d532bba1017"/>
     <sys_variable_value action="delete_multiple" query="document_key=fbad804e93794a10cd4e7d532bba1017"/>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_fbad804e93794a10cd4e7d532bba1017^id=fbad804e93794a10cd4e7d532bba1017"/>
-    <sys_hub_trigger_instance action="delete_multiple" query="flow=fbad804e93794a10cd4e7d532bba1017"/>
     <sys_hub_flow_stage action="delete_multiple" query="flow=fbad804e93794a10cd4e7d532bba1017"/>
     <sys_flow_cat_variable_model action="delete_multiple" query="id=fbad804e93794a10cd4e7d532bba1017^sys_idNOT INbbad804e93794a10cd4e7d532bba1018"/>
     <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
@@ -1033,7 +1048,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-04-27 10:25:12</sys_updated_on>
@@ -1117,7 +1132,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-04-27 10:25:12</sys_updated_on>
@@ -1201,7 +1216,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-04-27 10:25:13</sys_updated_on>
@@ -1255,6 +1270,7 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
+        <internal_link/>
         <internal_type display_value="Choice">choice</internal_type>
         <label>Status</label>
         <mandatory>false</mandatory>
@@ -1286,7 +1302,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-04-27 10:25:13</sys_updated_on>
@@ -1304,6 +1320,7 @@
     </sys_hub_flow_output>
     <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=48bd804e93794a10cd4e7d532bba1082"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=fbad804e93794a10cd4e7d532bba1017"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=fbad804e93794a10cd4e7d532bba1017"/>
     <sys_hub_action_instance action="delete_multiple" query="flow=fbad804e93794a10cd4e7d532bba1017^sys_idNOT IN08bd804e93794a10cd4e7d532bba10dc,8cbd804e93794a10cd4e7d532bba10b0,c4bd804e93794a10cd4e7d532bba10a7,c4bd804e93794a10cd4e7d532bba10d6,c8bd804e93794a10cd4e7d532bba10b7"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
@@ -1313,6 +1330,7 @@
         <comment/>
         <display_text/>
         <flow display_value="CARD-ACT: On Reveal: Add the top card of your deck to this location.">fbad804e93794a10cd4e7d532bba1017</flow>
+        <generation_source/>
         <order>5</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -1320,7 +1338,7 @@
         <sys_created_on>2024-04-27 10:25:13</sys_created_on>
         <sys_id>08bd804e93794a10cd4e7d532bba10dc</sys_id>
         <sys_mod_count>10</sys_mod_count>
-        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-04-27 10:30:19</sys_updated_on>
         <ui_id>aec62c37-f906-4f3a-a6c0-21275903b0e5</ui_id>
@@ -1352,6 +1370,7 @@
         <comment>find the next slot in this location</comment>
         <display_text/>
         <flow display_value="CARD-ACT: On Reveal: Add the top card of your deck to this location.">fbad804e93794a10cd4e7d532bba1017</flow>
+        <generation_source/>
         <order>2</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -1359,7 +1378,7 @@
         <sys_created_on>2024-04-27 10:25:13</sys_created_on>
         <sys_id>8cbd804e93794a10cd4e7d532bba10b0</sys_id>
         <sys_mod_count>10</sys_mod_count>
-        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-04-27 10:30:18</sys_updated_on>
         <ui_id>6333f281-c278-4cd8-ad89-da96c9170d2a</ui_id>
@@ -1441,6 +1460,7 @@
         <comment>Look up the top deck card</comment>
         <display_text/>
         <flow display_value="CARD-ACT: On Reveal: Add the top card of your deck to this location.">fbad804e93794a10cd4e7d532bba1017</flow>
+        <generation_source/>
         <order>1</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -1448,7 +1468,7 @@
         <sys_created_on>2024-04-27 10:25:13</sys_created_on>
         <sys_id>c4bd804e93794a10cd4e7d532bba10a7</sys_id>
         <sys_mod_count>10</sys_mod_count>
-        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-04-27 10:30:18</sys_updated_on>
         <ui_id>60f86c52-9e9d-4346-adcb-71efebe393ff</ui_id>
@@ -1530,6 +1550,7 @@
         <comment>Update the game instance card to set the status</comment>
         <display_text/>
         <flow display_value="CARD-ACT: On Reveal: Add the top card of your deck to this location.">fbad804e93794a10cd4e7d532bba1017</flow>
+        <generation_source/>
         <order>4</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -1537,7 +1558,7 @@
         <sys_created_on>2024-04-27 10:25:13</sys_created_on>
         <sys_id>c4bd804e93794a10cd4e7d532bba10d6</sys_id>
         <sys_mod_count>10</sys_mod_count>
-        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-04-27 10:30:18</sys_updated_on>
         <ui_id>2a3ec9cf-d1d9-4c49-af25-8b5cd8bfeb3b</ui_id>
@@ -1605,6 +1626,7 @@
         <comment>Add the next card to the location</comment>
         <display_text/>
         <flow display_value="CARD-ACT: On Reveal: Add the top card of your deck to this location.">fbad804e93794a10cd4e7d532bba1017</flow>
+        <generation_source/>
         <order>3</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -1612,7 +1634,7 @@
         <sys_created_on>2024-04-27 10:25:13</sys_created_on>
         <sys_id>c8bd804e93794a10cd4e7d532bba10b7</sys_id>
         <sys_mod_count>10</sys_mod_count>
-        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-04-27 10:30:18</sys_updated_on>
         <ui_id>acb33211-8827-45e4-b980-f168d49f5ac1</ui_id>
@@ -1671,8 +1693,8 @@
     </sys_element_mapping>
     <sys_hub_input_scripts action="delete_multiple" query="instance=c8bd804e93794a10cd4e7d532bba10b7"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=c8bd804e93794a10cd4e7d532bba10b7"/>
-    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=fbad804e93794a10cd4e7d532bba1017"/>
     <sys_hub_flow_logic action="delete_multiple" query="flow=fbad804e93794a10cd4e7d532bba1017"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=fbad804e93794a10cd4e7d532bba1017"/>
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=fbad804e93794a10cd4e7d532bba1017"/>
     <sys_hub_flow_variable action="delete_multiple" query="model=fbad804e93794a10cd4e7d532bba1017"/>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_fbad804e93794a10cd4e7d532bba1017^sys_idNOT IN40bd804e93794a10cd4e7d532bba107d,7bad804e93794a10cd4e7d532bba1035,84bd804e93794a10cd4e7d532bba1040"/>
@@ -1690,9 +1712,9 @@
         <sys_id>40bd804e93794a10cd4e7d532bba107d</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Game Instance</sys_name>
-        <sys_package display_value="Flow Designer Marvel SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
+        <sys_package display_value="SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_fbad804e93794a10cd4e7d532bba1017_game_instance_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-04-27 10:25:13</sys_updated_on>
@@ -1713,9 +1735,9 @@
         <sys_id>7bad804e93794a10cd4e7d532bba1035</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Player Session</sys_name>
-        <sys_package display_value="Flow Designer Marvel SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
+        <sys_package display_value="SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_fbad804e93794a10cd4e7d532bba1017_player_session_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-04-27 10:25:12</sys_updated_on>
@@ -1736,9 +1758,9 @@
         <sys_id>84bd804e93794a10cd4e7d532bba1040</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Card Instance</sys_name>
-        <sys_package display_value="Flow Designer Marvel SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
+        <sys_package display_value="SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_fbad804e93794a10cd4e7d532bba1017_card_instance_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-04-27 10:25:13</sys_updated_on>
@@ -1761,16 +1783,16 @@
         <sys_id>00bd804e93794a10cd4e7d532bba108e</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Status</sys_name>
-        <sys_package display_value="Flow Designer Marvel SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
+        <sys_package display_value="SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_fbad804e93794a10cd4e7d532bba1017_status_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-04-27 10:25:13</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
-    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_fbad804e93794a10cd4e7d532bba1017^sys_idNOT INc3ea2a6b533102103a0891e0a0490e15,43ea2a6b533102103a0891e0a0490e16"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_fbad804e93794a10cd4e7d532bba1017^sys_idNOT IN5a4c0f72c3a61210ff1f33bc0501319e,d64c0f72c3a61210ff1f33bc0501319f"/>
     <sys_choice field="status" table="var__m_sys_hub_flow_output_fbad804e93794a10cd4e7d532bba1017">
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
@@ -1786,7 +1808,7 @@
             <sys_created_on>2024-04-27 10:25:13</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>c3ea2a6b533102103a0891e0a0490e15</sys_id>
+            <sys_id>5a4c0f72c3a61210ff1f33bc0501319e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2024-04-27 10:25:13</sys_updated_on>
@@ -1806,7 +1828,7 @@
             <sys_created_on>2024-04-27 10:25:13</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>43ea2a6b533102103a0891e0a0490e16</sys_id>
+            <sys_id>d64c0f72c3a61210ff1f33bc0501319f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2024-04-27 10:25:13</sys_updated_on>
@@ -1816,14 +1838,14 @@
     <sys_hub_flow action="UPDATE">
         <sys_id>abf7084693794a10cd4e7d532bba1025</sys_id>
         <latest_snapshot>fbad804e93794a10cd4e7d532bba1017</latest_snapshot>
-        <compiler_build>glide-vancouver-07-06-2023__patch2-hotfix1-10-04-2023_10-06-2023_1235.zip</compiler_build>
+        <compiler_build>glide-xanadu-07-02-2024__patch4-11-22-2024_12-02-2024_1408.zip</compiler_build>
     </sys_hub_flow>
     <sys_flow_trigger_plan action="delete_multiple" query="plan_id=abf7084693794a10cd4e7d532bba1025"/>
     <sys_flow_subflow_plan action="delete_multiple" query="plan_id=abf7084693794a10cd4e7d532bba1025^sys_idNOT IN10bd804e93794a10cd4e7d532bba10f9"/>
     <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
-        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"10bd804e93794a10cd4e7d532bba10f9","name":"plan","plan_signature":null}}</plan>
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"10bd804e93794a10cd4e7d532bba10f9","name":"plan","plan_signature":null}}</plan>
         <plan_id display_value="CARD-ACT: On Reveal: Add the top card of your deck to this location.">abf7084693794a10cd4e7d532bba1025</plan_id>
-        <snapshot>18987a84534a82103a0891e0a0490eb8</snapshot>
+        <snapshot>ea857c48c33e5610ff1f33bc05013199</snapshot>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-04-27 10:25:14</sys_created_on>
         <sys_domain>global</sys_domain>

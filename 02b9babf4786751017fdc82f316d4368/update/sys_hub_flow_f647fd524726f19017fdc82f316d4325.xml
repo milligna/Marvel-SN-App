@@ -5,14 +5,19 @@
         <active>true</active>
         <annotation/>
         <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=2950021000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
         <copied_from/>
         <copied_from_name/>
         <description/>
+        <display_name_after_preview/>
+        <flow_priority/>
+        <generation_source/>
         <internal_name>deal_hand_for_player</internal_name>
         <label_cache>[{"name":"e4a41467-456e-4b4b-8ee0-9f9047b15bb2.Records","label":"1 - Look Up Records➛Card Instance Records","reference":"x_168987_flow_de_0_card_instance","reference_display":"Card Instance","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ecd1bf86-dbab-4e01-9a8e-8cb2ab688c0e.Count","label":"2 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.player_session","label":"Input➛Player Session","reference":"x_168987_flow_de_0_player_session","reference_display":"Player Session","type":"reference","base_type":"reference","column_name":"","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"f6bffe8e-d1bc-42e3-9bed-5764b557bc90","sourceUiUniqueId":"","sourceType":"","sourceId":""}}]</label_cache>
         <master_snapshot>4f47bd924726f19017fdc82f316d4346</master_snapshot>
+        <master_snapshot_digest/>
         <name>START-SUB: Deal Hand for Player</name>
         <natlang/>
         <outputs/>
@@ -24,6 +29,7 @@
         <show_draft_actions>false</show_draft_actions>
         <show_triggered_flows>false</show_triggered_flows>
         <status>published</status>
+        <substatus/>
         <sys_class_name>sys_hub_flow</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-11-18 23:21:01</sys_created_on>
@@ -33,17 +39,17 @@
         <sys_mod_count>0</sys_mod_count>
         <sys_name>START-SUB: Deal Hand for Player</sys_name>
         <sys_overrides/>
-        <sys_package display_value="Flow Designer Marvel SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
+        <sys_package display_value="SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_update_name>sys_hub_flow_f647fd524726f19017fdc82f316d4325</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-25 04:39:01</sys_updated_on>
+        <sys_updated_on>2024-12-22 11:10:55</sys_updated_on>
         <type>subflow</type>
+        <version/>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=f647fd524726f19017fdc82f316d4325"/>
     <sys_variable_value action="delete_multiple" query="document_key=f647fd524726f19017fdc82f316d4325"/>
-    <sys_hub_trigger_instance action="delete_multiple" query="flow=f647fd524726f19017fdc82f316d4325"/>
     <sys_hub_flow_stage action="delete_multiple" query="flow=f647fd524726f19017fdc82f316d4325"/>
     <sys_flow_cat_variable_model action="delete_multiple" query="id=f647fd524726f19017fdc82f316d4325^sys_idNOT INb247fd524726f19017fdc82f316d4326"/>
     <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
@@ -126,7 +132,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-11-18 23:22:37</sys_updated_on>
@@ -145,6 +151,7 @@
     <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=c6a7b5d24726f19017fdc82f316d4312"/>
     <sys_hub_flow_output action="delete_multiple" query="model=f647fd524726f19017fdc82f316d4325"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=f647fd524726f19017fdc82f316d4325"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=f647fd524726f19017fdc82f316d4325"/>
     <sys_hub_action_instance action="delete_multiple" query="flow=f647fd524726f19017fdc82f316d4325^sys_idNOT IN47477d924726f19017fdc82f316d43e1,4f477d924726f19017fdc82f316d43e9"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
@@ -155,16 +162,17 @@
         <comment>Get Player's in deck card instances</comment>
         <display_text/>
         <flow display_value="START-SUB: Deal Hand for Player">f647fd524726f19017fdc82f316d4325</flow>
+        <generation_source/>
         <order>1</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-11-18 23:21:02</sys_created_on>
         <sys_id>47477d924726f19017fdc82f316d43e1</sys_id>
-        <sys_mod_count>26</sys_mod_count>
-        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_mod_count>28</sys_mod_count>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-25 04:47:25</sys_updated_on>
+        <sys_updated_on>2024-12-24 02:09:04</sys_updated_on>
         <ui_id>e4a41467-456e-4b4b-8ee0-9f9047b15bb2</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=47477d924726f19017fdc82f316d43e1"/>
@@ -244,16 +252,17 @@
         <comment>Get Player's in hand card instances</comment>
         <display_text/>
         <flow display_value="START-SUB: Deal Hand for Player">f647fd524726f19017fdc82f316d4325</flow>
+        <generation_source/>
         <order>2</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-11-18 23:21:02</sys_created_on>
         <sys_id>4f477d924726f19017fdc82f316d43e9</sys_id>
-        <sys_mod_count>26</sys_mod_count>
-        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_mod_count>28</sys_mod_count>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-25 04:47:25</sys_updated_on>
+        <sys_updated_on>2024-12-24 02:09:04</sys_updated_on>
         <ui_id>ecd1bf86-dbab-4e01-9a8e-8cb2ab688c0e</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=4f477d924726f19017fdc82f316d43e9"/>
@@ -324,12 +333,14 @@
     </sys_element_mapping>
     <sys_hub_input_scripts action="delete_multiple" query="instance=4f477d924726f19017fdc82f316d43e9"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=4f477d924726f19017fdc82f316d43e9"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=f647fd524726f19017fdc82f316d4325"/>
     <sys_hub_sub_flow_instance action="delete_multiple" query="flow=f647fd524726f19017fdc82f316d4325^sys_idNOT IN43477d924726f19017fdc82f316d43ec"/>
     <sys_hub_sub_flow_instance action="INSERT_OR_UPDATE">
         <attributes/>
         <comment/>
         <display_text/>
         <flow display_value="START-SUB: Deal Hand for Player">f647fd524726f19017fdc82f316d4325</flow>
+        <generation_source/>
         <inputs/>
         <inputs/>
         <order>3</order>
@@ -341,7 +352,7 @@
         <sys_created_on>2023-11-18 23:21:02</sys_created_on>
         <sys_id>43477d924726f19017fdc82f316d43ec</sys_id>
         <sys_mod_count>18</sys_mod_count>
-        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-12-23 02:48:04</sys_updated_on>
         <ui_id>f58f30bc-4c62-4d04-9782-5cef9ef4953a</ui_id>
@@ -469,7 +480,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-11-18 23:21:02</sys_updated_on>
@@ -486,7 +497,6 @@
         <xml_view>false</xml_view>
     </sys_hub_sub_flow_instance_inputs>
     <sys_hub_input_scripts action="delete_multiple" query="instance=43477d924726f19017fdc82f316d43ec"/>
-    <sys_hub_flow_logic action="delete_multiple" query="flow=f647fd524726f19017fdc82f316d4325"/>
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=f647fd524726f19017fdc82f316d4325"/>
     <sys_hub_flow_variable action="delete_multiple" query="model=f647fd524726f19017fdc82f316d4325"/>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_f647fd524726f19017fdc82f316d4325^sys_idNOT IN02a7b5d24726f19017fdc82f316d4316"/>
@@ -504,9 +514,9 @@
         <sys_id>02a7b5d24726f19017fdc82f316d4316</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Player Session</sys_name>
-        <sys_package display_value="Flow Designer Marvel SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
+        <sys_package display_value="SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_f647fd524726f19017fdc82f316d4325_player_session_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-11-18 23:22:37</sys_updated_on>
@@ -522,11 +532,13 @@
         <active>true</active>
         <annotation/>
         <attributes>labelCacheCleanUpExecuted=true</attributes>
+        <authored_on_release_version/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
         <copied_from/>
         <copied_from_name/>
         <description/>
+        <flow_priority/>
         <internal_name>deal_hand_for_player</internal_name>
         <label_cache>[{"name":"e4a41467-456e-4b4b-8ee0-9f9047b15bb2.Records","label":"1 - Look Up Records➛Card Instance Records","reference":"x_168987_flow_de_0_card_instance","reference_display":"Card Instance","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ecd1bf86-dbab-4e01-9a8e-8cb2ab688c0e.Count","label":"2 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.player_session","label":"Input➛Player Session","reference":"x_168987_flow_de_0_player_session","reference_display":"Player Session","type":"reference","base_type":"reference","column_name":"","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"f6bffe8e-d1bc-42e3-9bed-5764b557bc90","sourceUiUniqueId":"","sourceType":"","sourceId":""}}]</label_cache>
         <master>true</master>
@@ -550,15 +562,15 @@
         <sys_overrides/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-12-23 02:48:04</sys_updated_on>
         <type>subflow</type>
+        <version/>
     </sys_hub_flow_snapshot>
     <sys_translated_text action="delete_multiple" query="documentkey=4f47bd924726f19017fdc82f316d4346"/>
     <sys_variable_value action="delete_multiple" query="document_key=4f47bd924726f19017fdc82f316d4346"/>
-    <sys_hub_trigger_instance action="delete_multiple" query="flow=4f47bd924726f19017fdc82f316d4346"/>
     <sys_hub_flow_stage action="delete_multiple" query="flow=4f47bd924726f19017fdc82f316d4346"/>
     <sys_flow_cat_variable_model action="delete_multiple" query="id=4f47bd924726f19017fdc82f316d4346^sys_idNOT IN4b47bd924726f19017fdc82f316d4347"/>
     <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
@@ -641,7 +653,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-11-18 23:27:18</sys_updated_on>
@@ -660,6 +672,7 @@
     <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=76b871564726f19017fdc82f316d4340"/>
     <sys_hub_flow_output action="delete_multiple" query="model=4f47bd924726f19017fdc82f316d4346"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=4f47bd924726f19017fdc82f316d4346"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=4f47bd924726f19017fdc82f316d4346"/>
     <sys_hub_action_instance action="delete_multiple" query="flow=4f47bd924726f19017fdc82f316d4346^sys_idNOT IN9f47bd924726f19017fdc82f316d435d,d747bd924726f19017fdc82f316d4372"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
@@ -670,6 +683,7 @@
         <comment>Get Player's in deck card instances</comment>
         <display_text/>
         <flow display_value="START-SUB: Deal Hand for Player">4f47bd924726f19017fdc82f316d4346</flow>
+        <generation_source/>
         <order>1</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -677,7 +691,7 @@
         <sys_created_on>2023-11-18 23:21:03</sys_created_on>
         <sys_id>9f47bd924726f19017fdc82f316d435d</sys_id>
         <sys_mod_count>10</sys_mod_count>
-        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-12-23 02:48:03</sys_updated_on>
         <ui_id>e4a41467-456e-4b4b-8ee0-9f9047b15bb2</ui_id>
@@ -759,6 +773,7 @@
         <comment>Get Player's in hand card instances</comment>
         <display_text/>
         <flow display_value="START-SUB: Deal Hand for Player">4f47bd924726f19017fdc82f316d4346</flow>
+        <generation_source/>
         <order>2</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -766,7 +781,7 @@
         <sys_created_on>2023-11-18 23:21:03</sys_created_on>
         <sys_id>d747bd924726f19017fdc82f316d4372</sys_id>
         <sys_mod_count>10</sys_mod_count>
-        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-12-23 02:48:03</sys_updated_on>
         <ui_id>ecd1bf86-dbab-4e01-9a8e-8cb2ab688c0e</ui_id>
@@ -839,12 +854,14 @@
     </sys_element_mapping>
     <sys_hub_input_scripts action="delete_multiple" query="instance=d747bd924726f19017fdc82f316d4372"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=d747bd924726f19017fdc82f316d4372"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=4f47bd924726f19017fdc82f316d4346"/>
     <sys_hub_sub_flow_instance action="delete_multiple" query="flow=4f47bd924726f19017fdc82f316d4346^sys_idNOT IN9b47bd924726f19017fdc82f316d4374"/>
     <sys_hub_sub_flow_instance action="INSERT_OR_UPDATE">
         <attributes/>
         <comment/>
         <display_text/>
         <flow display_value="START-SUB: Deal Hand for Player">4f47bd924726f19017fdc82f316d4346</flow>
+        <generation_source/>
         <inputs/>
         <inputs/>
         <order>3</order>
@@ -856,7 +873,7 @@
         <sys_created_on>2023-11-18 23:21:03</sys_created_on>
         <sys_id>9b47bd924726f19017fdc82f316d4374</sys_id>
         <sys_mod_count>10</sys_mod_count>
-        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-12-23 02:48:04</sys_updated_on>
         <ui_id>f58f30bc-4c62-4d04-9782-5cef9ef4953a</ui_id>
@@ -984,7 +1001,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-11-18 23:21:03</sys_updated_on>
@@ -1001,7 +1018,6 @@
         <xml_view>false</xml_view>
     </sys_hub_sub_flow_instance_inputs>
     <sys_hub_input_scripts action="delete_multiple" query="instance=9b47bd924726f19017fdc82f316d4374"/>
-    <sys_hub_flow_logic action="delete_multiple" query="flow=4f47bd924726f19017fdc82f316d4346"/>
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=4f47bd924726f19017fdc82f316d4346"/>
     <sys_hub_flow_variable action="delete_multiple" query="model=4f47bd924726f19017fdc82f316d4346"/>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_4f47bd924726f19017fdc82f316d4346^sys_idNOT INf6b871564726f19017fdc82f316d4347"/>
@@ -1019,9 +1035,9 @@
         <sys_id>f6b871564726f19017fdc82f316d4347</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Player Session</sys_name>
-        <sys_package display_value="Flow Designer Marvel SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
+        <sys_package display_value="SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Flow Designer Marvel SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_4f47bd924726f19017fdc82f316d4346_player_session_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-11-18 23:27:18</sys_updated_on>
@@ -1034,14 +1050,14 @@
     <sys_hub_flow action="UPDATE">
         <sys_id>f647fd524726f19017fdc82f316d4325</sys_id>
         <latest_snapshot>4f47bd924726f19017fdc82f316d4346</latest_snapshot>
-        <compiler_build>glide-vancouver-07-06-2023__patch2-hotfix1-10-04-2023_10-06-2023_1235.zip</compiler_build>
+        <compiler_build>glide-xanadu-07-02-2024__patch4-11-22-2024_12-02-2024_1408.zip</compiler_build>
     </sys_hub_flow>
     <sys_flow_trigger_plan action="delete_multiple" query="plan_id=f647fd524726f19017fdc82f316d4325"/>
     <sys_flow_subflow_plan action="delete_multiple" query="plan_id=f647fd524726f19017fdc82f316d4325^sys_idNOT IN5347bd924726f19017fdc82f316d43ac"/>
     <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
-        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"5347bd924726f19017fdc82f316d43ac","name":"plan","plan_signature":null}}</plan>
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"5347bd924726f19017fdc82f316d43ac","name":"plan","plan_signature":null}}</plan>
         <plan_id display_value="START-SUB: Deal Hand for Player">f647fd524726f19017fdc82f316d4325</plan_id>
-        <snapshot>a43de0dd533102103a0891e0a0490eee</snapshot>
+        <snapshot>3d43e793c362d210ff1f33bc0501319e</snapshot>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-11-18 23:21:04</sys_created_on>
         <sys_domain>global</sys_domain>

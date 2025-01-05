@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function widgetControl($scope, spUtil) {
+  var c = this;
+
+  // Create Player function (fired when the button is clicked)
+  c.createPlayer = function() {
+    // Basic client-side check for matching passwords
+    if (c.data.password !== c.data.confirmPassword) {
+      c.data.resultMessage = 'Passwords do not match.';
+      return;
+    }
+
+    // We set an action so our server script knows what to do
+    $scope.data.action = 'createPlayer';
+
+    // Trigger server.update() to call our Server Script
+    $scope.server.update().then(function(response) {
+      if (response.data.result === 'success') {
+        // Display a success message
+        c.data.resultMessage = 'Player created successfully!';
+
+        // Optionally clear the form
+        c.data.firstName = '';
+        c.data.lastName = '';
+        c.data.email = '';
+        c.data.password = '';
+        c.data.confirmPassword = '';
+      } else {
+        // Display error
+        c.data.resultMessage =
+          'Error: ' + (response.data.errorMessage || 'Unknown error');
+      }
+    });
+  };
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.form-group {&#13;
+  margin-bottom: 10px;&#13;
+}&#13;
+&#13;
+.btn-primary {&#13;
+  margin-top: 10px;&#13;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description>Registration form Widget for SN App</description>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>sn-app-registration-form</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>SN App Registration Form</name>
+        <option_schema/>
+        <public>true</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  if (input && input.action === 'createPlayer') {
+    try {
+      // 1. Verify the passwords match
+      if (input.password !== input.confirmPassword) {
+        data.result = 'error';
+        data.errorMessage = 'Passwords do not match.';
+        return; // Stop further processing
+      }
+
+      // 2. Check if a user with this email already exists
+      var existingUser = new GlideRecord('sys_user');
+      existingUser.addQuery('email', input.email);
+      existingUser.query();
+
+      if (existingUser.next()) {
+        data.result = 'error';
+        data.errorMessage =
+          'A user with this email (' + input.email + ') already exists.';
+        return; // Stop further processing
+      }
+
+      // 3. Create the sys_user record if no duplicate found
+      var userGR = new GlideRecord('sys_user');
+      userGR.initialize();
+      userGR.user_name = input.email; // match email to user_name
+      userGR.first_name = input.firstName;
+      userGR.last_name = input.lastName;
+      userGR.email = input.email;
+
+      // Set the user's password (encrypted in 'user_password' field)
+      userGR.user_password.setDisplayValue(input.password);
+
+      var userSysId = userGR.insert();
+
+      // 4. Add user to a specific sys_user_group
+      var groupSysId = '84c90b93c3721210ff1f33bc050131a7'; // Replace with your actual group sys_id
+      var grMember = new GlideRecord('sys_user_grmember');
+      grMember.initialize();
+      grMember.user = userSysId;
+      grMember.group = groupSysId;
+      grMember.insert();
+
+      // Return success
+      data.result = 'success';
+    } catch (ex) {
+      // Return error details if something goes wrong
+      data.result = 'error';
+      data.errorMessage = ex.toString();
+    }
+  }
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-05 11:46:11</sys_created_on>
+        <sys_id>11489b1bc3b21210ff1f33bc050131a3</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name>SN App Registration Form</sys_name>
+        <sys_package display_value="SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_update_name>sp_widget_11489b1bc3b21210ff1f33bc050131a3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-05 12:40:17</sys_updated_on>
+        <template><![CDATA[<div class="widget-body">
+  <form>
+    <!-- First Name -->
+    <div class="form-group">
+      <label for="firstName">First Name</label>
+      <input
+        type="text"
+        id="firstName"
+        class="form-control"
+        ng-model="c.data.firstName"
+        placeholder="Enter first name"
+      />
+    </div>
+
+    <!-- Last Name -->
+    <div class="form-group">
+      <label for="lastName">Last Name</label>
+      <input
+        type="text"
+        id="lastName"
+        class="form-control"
+        ng-model="c.data.lastName"
+        placeholder="Enter last name"
+      />
+    </div>
+
+    <!-- Email -->
+    <div class="form-group">
+      <label for="email">Email (used as username)</label>
+      <input
+        type="email"
+        id="email"
+        class="form-control"
+        ng-model="c.data.email"
+        placeholder="Enter email address"
+      />
+    </div>
+
+    <!-- Password -->
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input
+        type="password"
+        id="password"
+        class="form-control"
+        ng-model="c.data.password"
+        placeholder="Enter password"
+      />
+    </div>
+
+    <!-- Confirm Password -->
+    <div class="form-group">
+      <label for="confirmPassword">Confirm Password</label>
+      <input
+        type="password"
+        id="confirmPassword"
+        class="form-control"
+        ng-model="c.data.confirmPassword"
+        placeholder="Confirm password"
+      />
+    </div>
+
+    <!-- Create Player Button -->
+    <button
+      class="btn btn-primary"
+      type="button"
+      ng-click="c.createPlayer()"
+    >
+      Create Player
+    </button>
+  </form>
+
+  <!-- Result/Summary Message -->
+  <div ng-if="c.data.resultMessage">
+    <p>{{ c.data.resultMessage }}</p>
+  </div>
+</div>]]></template>
+    </sp_widget>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>11489b1bc3b21210ff1f33bc050131a3</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-05 11:42:26</sys_created_on>
+        <sys_id>4299dbd7c3b21210ff1f33bc05013191</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-05 11:42:26</sys_updated_on>
+        <table>sp_widget</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>
