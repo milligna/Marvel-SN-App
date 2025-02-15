@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
     <sp_widget action="INSERT_OR_UPDATE">
         <category>custom</category>
-        <client_script><![CDATA[function widgetControl($scope, spUtil) {
+        <client_script><![CDATA[function widgetControl($scope, spUtil, $window) {
   var c = this;
 
   // Create Player function (fired when the button is clicked)
@@ -16,10 +16,11 @@
     $scope.data.action = 'createPlayer';
 
     // Trigger server.update() to call our Server Script
-    $scope.server.update().then(function(response) {
-      if (response.data.result === 'success') {
+		$scope.server.update().then(function(response) {
+console.log(response);
+      if (response.result === 'success') {
         // Display a success message
-        c.data.resultMessage = 'Player created successfully!';
+        c.data.resultMessage = 'Player created successfully! Redirecting...';
 
         // Optionally clear the form
         c.data.firstName = '';
@@ -27,6 +28,13 @@
         c.data.email = '';
         c.data.password = '';
         c.data.confirmPassword = '';
+				
+				// Redirect to login page after a brief delay (optional)
+        setTimeout(function() {
+					console.log("we got into the timeout");
+          $window.location.href = '/snapp?id=login'; // Replace with actual login page URL
+        }, 2000); // Redirect after 2 seconds for better UX
+				
       } else {
         // Display error
         c.data.resultMessage =
@@ -34,7 +42,14 @@
       }
     });
   };
-}]]></client_script>
+	  // New function to handle login redirection
+  c.goToLogin = function() {
+    $window.location.href = '/snapp?id=login';
+  };
+
+}
+
+]]></client_script>
         <controller_as>c</controller_as>
         <css>.form-group {&#13;
   margin-bottom: 10px;&#13;
@@ -88,8 +103,8 @@
       userGR.last_name = input.lastName;
       userGR.email = input.email;
 
-      // Set the user's password (encrypted in 'user_password' field)
-      userGR.user_password.setDisplayValue(input.password);
+				// Set the user's password (encrypted in 'user_password' field)
+				userGR.user_password.setDisplayValue(input.password);
 
       var userSysId = userGR.insert();
 
@@ -115,14 +130,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-01-05 11:46:11</sys_created_on>
         <sys_id>11489b1bc3b21210ff1f33bc050131a3</sys_id>
-        <sys_mod_count>13</sys_mod_count>
+        <sys_mod_count>27</sys_mod_count>
         <sys_name>SN App Registration Form</sys_name>
         <sys_package display_value="SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_update_name>sp_widget_11489b1bc3b21210ff1f33bc050131a3</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-05 12:40:17</sys_updated_on>
+        <sys_updated_on>2025-02-08 22:58:08</sys_updated_on>
         <template><![CDATA[<div class="widget-body">
   <form>
     <!-- First Name -->
@@ -194,6 +209,14 @@
       Create Player
     </button>
   </form>
+  
+   <!-- New 'Go to Login' Button -->
+  <button class="btn btn-secondary" 
+          type="button"
+          ng-click="c.goToLogin()"
+          >Go to Login
+  </button>
+
 
   <!-- Result/Summary Message -->
   <div ng-if="c.data.resultMessage">
