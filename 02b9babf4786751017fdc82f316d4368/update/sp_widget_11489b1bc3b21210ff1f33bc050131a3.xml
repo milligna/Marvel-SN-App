@@ -29,11 +29,6 @@ console.log(response);
         c.data.password = '';
         c.data.confirmPassword = '';
 				
-				// Redirect to login page after a brief delay (optional)
-        setTimeout(function() {
-					console.log("we got into the timeout");
-          $window.location.href = '/snapp?id=login'; // Replace with actual login page URL
-        }, 2000); // Redirect after 2 seconds for better UX
 				
       } else {
         // Display error
@@ -42,10 +37,7 @@ console.log(response);
       }
     });
   };
-	  // New function to handle login redirection
-  c.goToLogin = function() {
-    $window.location.href = '/snapp?id=login';
-  };
+
 
 }
 
@@ -74,6 +66,8 @@ console.log(response);
         <public>true</public>
         <roles/>
         <script><![CDATA[(function() {
+	data.isUserCreated = false;
+	
   if (input && input.action === 'createPlayer') {
     try {
       // 1. Verify the passwords match
@@ -118,6 +112,7 @@ console.log(response);
 
       // Return success
       data.result = 'success';
+			data.isUserCreated = true;
     } catch (ex) {
       // Return error details if something goes wrong
       data.result = 'error';
@@ -130,14 +125,14 @@ console.log(response);
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-01-05 11:46:11</sys_created_on>
         <sys_id>11489b1bc3b21210ff1f33bc050131a3</sys_id>
-        <sys_mod_count>27</sys_mod_count>
+        <sys_mod_count>31</sys_mod_count>
         <sys_name>SN App Registration Form</sys_name>
         <sys_package display_value="SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_update_name>sp_widget_11489b1bc3b21210ff1f33bc050131a3</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-02-08 22:58:08</sys_updated_on>
+        <sys_updated_on>2025-02-15 23:11:02</sys_updated_on>
         <template><![CDATA[<div class="widget-body">
   <form>
     <!-- First Name -->
@@ -148,6 +143,7 @@ console.log(response);
         id="firstName"
         class="form-control"
         ng-model="c.data.firstName"
+        ng-disabled="data.isUserCreated"
         placeholder="Enter first name"
       />
     </div>
@@ -160,6 +156,7 @@ console.log(response);
         id="lastName"
         class="form-control"
         ng-model="c.data.lastName"
+        ng-disabled="data.isUserCreated"
         placeholder="Enter last name"
       />
     </div>
@@ -172,6 +169,7 @@ console.log(response);
         id="email"
         class="form-control"
         ng-model="c.data.email"
+        ng-disabled="data.isUserCreated"
         placeholder="Enter email address"
       />
     </div>
@@ -184,6 +182,7 @@ console.log(response);
         id="password"
         class="form-control"
         ng-model="c.data.password"
+        ng-disabled="data.isUserCreated"
         placeholder="Enter password"
       />
     </div>
@@ -196,6 +195,7 @@ console.log(response);
         id="confirmPassword"
         class="form-control"
         ng-model="c.data.confirmPassword"
+        ng-disabled="data.isUserCreated"
         placeholder="Confirm password"
       />
     </div>
@@ -205,18 +205,14 @@ console.log(response);
       class="btn btn-primary"
       type="button"
       ng-click="c.createPlayer()"
+      ng-disabled="data.isUserCreated"
+      ng-disabled="data.isUserCreated"
     >
       Create Player
     </button>
   </form>
   
-   <!-- New 'Go to Login' Button -->
-  <button class="btn btn-secondary" 
-          type="button"
-          ng-click="c.goToLogin()"
-          >Go to Login
-  </button>
-
+ 
 
   <!-- Result/Summary Message -->
   <div ng-if="c.data.resultMessage">
