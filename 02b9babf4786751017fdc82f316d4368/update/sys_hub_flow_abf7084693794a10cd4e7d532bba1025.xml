@@ -4,7 +4,7 @@
         <acls/>
         <active>true</active>
         <annotation/>
-        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=1797000,viewActivatedIn=naturalLanguage</attributes>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=26681954000,viewActivatedIn=naturalLanguage</attributes>
         <authored_on_release_version/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
@@ -12,10 +12,10 @@
         <copied_from_name>CARD-ACT: Subflow Template</copied_from_name>
         <description/>
         <display_name_after_preview/>
-        <flow_priority/>
+        <flow_priority>MEDIUM</flow_priority>
         <generation_source/>
         <internal_name>cardact_on_reveal_add_the_top_card_of_your_deck_to_this_location</internal_name>
-        <label_cache>[{"name":"subflow.player_session","label":"Input➛Player Session","reference":"x_168987_flow_de_0_player_session","reference_display":"Player Session","type":"reference","base_type":"reference","column_name":"","usedInstances":{"60f86c52-9e9d-4346-adcb-71efebe393ff":["conditions"],"6333f281-c278-4cd8-ad89-da96c9170d2a":["conditions"]},"attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"498332c7-2b6e-42b0-82a9-9f0a0d4937ea","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.card_instance.current_location","label":"Input➛Card Instance➛Current Location","reference":"x_168987_flow_de_0_location_instance","reference_display":"Game Location instance","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_card_instance","column_name":"current_location","usedInstances":{"6333f281-c278-4cd8-ad89-da96c9170d2a":["conditions"]}},{"name":"6333f281-c278-4cd8-ad89-da96c9170d2a.Record","label":"2 - Look Up Record➛Game Location Slot Record","reference":"x_168987_flow_de_0_location_slot","reference_display":"Game Location Slot","type":"reference","base_type":"reference","usedInstances":{"acb33211-8827-45e4-b980-f168d49f5ac1":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"60f86c52-9e9d-4346-adcb-71efebe393ff.Record","label":"1 - Look Up Record➛Game Card Instance Record","reference":"x_168987_flow_de_0_card_instance","reference_display":"Game Card Instance","type":"reference","base_type":"reference","usedInstances":{"acb33211-8827-45e4-b980-f168d49f5ac1":["card_instance"],"2a3ec9cf-d1d9-4c49-af25-8b5cd8bfeb3b":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"acb33211-8827-45e4-b980-f168d49f5ac1.record","label":"3 - Update Record➛Game Location Slot Record","reference":"x_168987_flow_de_0_location_slot","reference_display":"Game Location Slot","type":"reference","base_type":"reference","usedInstances":{"2a3ec9cf-d1d9-4c49-af25-8b5cd8bfeb3b":["current_location"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.game_instance.current_turn","label":"Input➛Game Instance➛Current Turn","reference":"","reference_display":"Current Turn","type":"integer","base_type":"integer","parent_table_name":"x_168987_flow_de_0_game_instance","column_name":"current_turn","usedInstances":{"2a3ec9cf-d1d9-4c49-af25-8b5cd8bfeb3b":["turn_played"]}}]</label_cache>
+        <label_cache>[{"name":"subflow.game_instance.current_turn","label":"Input➛Game Instance➛Current Turn","reference":"","reference_display":"Current Turn","type":"integer","base_type":"integer","parent_table_name":"x_168987_flow_de_0_game_instance","column_name":"current_turn","usedInstances":{"2a3ec9cf-d1d9-4c49-af25-8b5cd8bfeb3b":["turn_played"]}},{"name":"acb33211-8827-45e4-b980-f168d49f5ac1.record","label":"3 - Update Record➛Game Location Slot Record","reference":"x_168987_flow_de_0_location_slot","reference_display":"Game Location Slot","type":"reference","base_type":"reference","usedInstances":{"2a3ec9cf-d1d9-4c49-af25-8b5cd8bfeb3b":["current_location"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"60f86c52-9e9d-4346-adcb-71efebe393ff.Record","label":"1 - Look Up Record➛Game Card Instance Record","reference":"x_168987_flow_de_0_card_instance","reference_display":"Game Card Instance","type":"reference","base_type":"reference","usedInstances":{"acb33211-8827-45e4-b980-f168d49f5ac1":["card_instance"],"2a3ec9cf-d1d9-4c49-af25-8b5cd8bfeb3b":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"6333f281-c278-4cd8-ad89-da96c9170d2a.Record","label":"2 - Look Up Record➛Game Location Slot Record","reference":"x_168987_flow_de_0_location_slot","reference_display":"Game Location Slot","type":"reference","base_type":"reference","usedInstances":{"acb33211-8827-45e4-b980-f168d49f5ac1":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.card_instance.current_location","label":"Input➛Card Instance➛Current Location","reference":"x_168987_flow_de_0_location_instance","reference_display":"Game Location instance","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_card_instance","column_name":"current_location","usedInstances":{"6333f281-c278-4cd8-ad89-da96c9170d2a":["conditions"]}},{"name":"subflow.player_session","label":"Input➛Player Session","reference":"x_168987_flow_de_0_player_session","reference_display":"Player Session","type":"reference","base_type":"reference","column_name":"","usedInstances":{"60f86c52-9e9d-4346-adcb-71efebe393ff":["conditions"],"6333f281-c278-4cd8-ad89-da96c9170d2a":["conditions"]},"attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"498332c7-2b6e-42b0-82a9-9f0a0d4937ea","sourceUiUniqueId":"","sourceType":"","sourceId":""}}]</label_cache>
         <master_snapshot>fbad804e93794a10cd4e7d532bba1017</master_snapshot>
         <master_snapshot_digest/>
         <name>CARD-ACT: On Reveal: Add the top card of your deck to this location.</name>
@@ -23,7 +23,7 @@
         <outputs/>
         <pre_compiled>false</pre_compiled>
         <remote_trigger_id/>
-        <run_as>user</run_as>
+        <run_as>system</run_as>
         <run_with_roles/>
         <sc_callable>false</sc_callable>
         <show_draft_actions>false</show_draft_actions>
@@ -36,7 +36,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>abf7084693794a10cd4e7d532bba1025</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>CARD-ACT: On Reveal: Add the top card of your deck to this location.</sys_name>
         <sys_overrides/>
         <sys_package display_value="SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
@@ -44,9 +44,9 @@
         <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_update_name>sys_hub_flow_abf7084693794a10cd4e7d532bba1025</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-12-22 11:10:20</sys_updated_on>
+        <sys_updated_on>2025-03-02 04:39:36</sys_updated_on>
         <type>subflow</type>
-        <version/>
+        <version>2</version>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=abf7084693794a10cd4e7d532bba1025"/>
     <sys_variable_value action="delete_multiple" query="document_key=abf7084693794a10cd4e7d532bba1025"/>
@@ -405,384 +405,122 @@
     </sys_hub_flow_output>
     <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=33f7084693794a10cd4e7d532bba1049"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=abf7084693794a10cd4e7d532bba1025"/>
-    <sys_hub_trigger_instance action="delete_multiple" query="flow=abf7084693794a10cd4e7d532bba1025"/>
-    <sys_hub_action_instance action="delete_multiple" query="flow=abf7084693794a10cd4e7d532bba1025^sys_idNOT IN3b2d440e93794a10cd4e7d532bba10a1,99fc000e93794a10cd4e7d532bba1077,e0ccc8ca93794a10cd4e7d532bba1094,e36dc80e93794a10cd4e7d532bba10bc,f7f7084693794a10cd4e7d532bba106f"/>
-    <sys_hub_action_instance action="INSERT_OR_UPDATE">
-        <action_inputs/>
-        <action_inputs/>
-        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
-        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
-        <attributes/>
-        <comment>Add the next card to the location</comment>
-        <display_text/>
-        <flow display_value="CARD-ACT: On Reveal: Add the top card of your deck to this location.">abf7084693794a10cd4e7d532bba1025</flow>
-        <generation_source/>
-        <order>3</order>
-        <parent_ui_id/>
-        <sys_class_name>sys_hub_action_instance</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-27 10:23:01</sys_created_on>
-        <sys_id>3b2d440e93794a10cd4e7d532bba10a1</sys_id>
-        <sys_mod_count>26</sys_mod_count>
-        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-12-25 21:25:26</sys_updated_on>
-        <ui_id>acb33211-8827-45e4-b980-f168d49f5ac1</ui_id>
-    </sys_hub_action_instance>
-    <sys_variable_value action="delete_multiple" query="document_key=3b2d440e93794a10cd4e7d532bba10a1"/>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_action_instance</document>
-        <document_key>3b2d440e93794a10cd4e7d532bba10a1</document_key>
-        <order>50</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-27 10:23:45</sys_created_on>
-        <sys_id>a25dc40e93794a10cd4e7d532bba10a6</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-27 10:23:45</sys_updated_on>
-        <value>x_168987_flow_de_0_location_slot</value>
-        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
-    </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="id=3b2d440e93794a10cd4e7d532bba10a1"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>record</field>
-        <id>3b2d440e93794a10cd4e7d532bba10a1</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-27 10:23:45</sys_created_on>
-        <sys_id>225dc40e93794a10cd4e7d532bba10a6</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-27 10:23:45</sys_updated_on>
-        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
-        <value>{{6333f281-c278-4cd8-ad89-da96c9170d2a.Record}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>table_name</field>
-        <id>3b2d440e93794a10cd4e7d532bba10a1</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-27 10:23:45</sys_created_on>
-        <sys_id>aa5dc40e93794a10cd4e7d532bba10a5</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-27 10:23:45</sys_updated_on>
-        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>values</field>
-        <id>3b2d440e93794a10cd4e7d532bba10a1</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-27 10:23:45</sys_created_on>
-        <sys_id>6e5dc40e93794a10cd4e7d532bba10a5</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-27 10:23:45</sys_updated_on>
-        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
-        <value>card_instance={{60f86c52-9e9d-4346-adcb-71efebe393ff.Record}}^slot_visible=true</value>
-    </sys_element_mapping>
-    <sys_hub_input_scripts action="delete_multiple" query="instance=3b2d440e93794a10cd4e7d532bba10a1"/>
-    <sys_hub_alias_mapping action="delete_multiple" query="source_id=3b2d440e93794a10cd4e7d532bba10a1"/>
-    <sys_hub_action_instance action="INSERT_OR_UPDATE">
-        <action_inputs/>
-        <action_inputs/>
-        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
-        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
-        <attributes/>
-        <comment>find the next slot in this location</comment>
-        <display_text/>
-        <flow display_value="CARD-ACT: On Reveal: Add the top card of your deck to this location.">abf7084693794a10cd4e7d532bba1025</flow>
-        <generation_source/>
-        <order>2</order>
-        <parent_ui_id/>
-        <sys_class_name>sys_hub_action_instance</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-27 10:22:01</sys_created_on>
-        <sys_id>99fc000e93794a10cd4e7d532bba1077</sys_id>
-        <sys_mod_count>26</sys_mod_count>
-        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-12-25 21:25:26</sys_updated_on>
-        <ui_id>6333f281-c278-4cd8-ad89-da96c9170d2a</ui_id>
-    </sys_hub_action_instance>
-    <sys_variable_value action="delete_multiple" query="document_key=99fc000e93794a10cd4e7d532bba1077"/>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_action_instance</document>
-        <document_key>99fc000e93794a10cd4e7d532bba1077</document_key>
-        <order>0</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-27 10:22:52</sys_created_on>
-        <sys_id>612d040e93794a10cd4e7d532bba10e4</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-27 10:22:52</sys_updated_on>
-        <value>x_168987_flow_de_0_location_slot</value>
-        <variable display_value="Table">d909f99587003300663ca1bb36cb0ba4</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_action_instance</document>
-        <document_key>99fc000e93794a10cd4e7d532bba1077</document_key>
-        <order>2</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-27 10:22:52</sys_created_on>
-        <sys_id>ad2d040e93794a10cd4e7d532bba10e3</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-27 10:22:52</sys_updated_on>
-        <value>slot_number</value>
-        <variable display_value="Order by">1d09f99587003300663ca1bb36cb0bad</variable>
-    </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="id=99fc000e93794a10cd4e7d532bba1077"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>conditions</field>
-        <id>99fc000e93794a10cd4e7d532bba1077</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-27 10:22:52</sys_created_on>
-        <sys_id>692d040e93794a10cd4e7d532bba10e3</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-27 10:30:17</sys_updated_on>
-        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
-        <value>location_instance={{subflow.card_instance.current_location}}^card_instanceISEMPTY^player={{subflow.player_session}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>sort_column</field>
-        <id>99fc000e93794a10cd4e7d532bba1077</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-27 10:22:52</sys_created_on>
-        <sys_id>a52d040e93794a10cd4e7d532bba10e3</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-27 10:22:52</sys_updated_on>
-        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>table</field>
-        <id>99fc000e93794a10cd4e7d532bba1077</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-27 10:22:52</sys_created_on>
-        <sys_id>2d2d040e93794a10cd4e7d532bba10e3</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-27 10:22:52</sys_updated_on>
-        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_hub_input_scripts action="delete_multiple" query="instance=99fc000e93794a10cd4e7d532bba1077"/>
-    <sys_hub_alias_mapping action="delete_multiple" query="source_id=99fc000e93794a10cd4e7d532bba1077"/>
-    <sys_hub_action_instance action="INSERT_OR_UPDATE">
-        <action_inputs/>
-        <action_inputs/>
-        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
-        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
-        <attributes/>
-        <comment>Look up the top deck card</comment>
-        <display_text/>
-        <flow display_value="CARD-ACT: On Reveal: Add the top card of your deck to this location.">abf7084693794a10cd4e7d532bba1025</flow>
-        <generation_source/>
-        <order>1</order>
-        <parent_ui_id/>
-        <sys_class_name>sys_hub_action_instance</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-27 10:21:09</sys_created_on>
-        <sys_id>e0ccc8ca93794a10cd4e7d532bba1094</sys_id>
-        <sys_mod_count>26</sys_mod_count>
-        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-12-25 21:25:25</sys_updated_on>
-        <ui_id>60f86c52-9e9d-4346-adcb-71efebe393ff</ui_id>
-    </sys_hub_action_instance>
-    <sys_variable_value action="delete_multiple" query="document_key=e0ccc8ca93794a10cd4e7d532bba1094"/>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_action_instance</document>
-        <document_key>e0ccc8ca93794a10cd4e7d532bba1094</document_key>
-        <order>0</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-27 10:21:51</sys_created_on>
-        <sys_id>f6ec04c293794a10cd4e7d532bba10b8</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-27 10:21:51</sys_updated_on>
-        <value>x_168987_flow_de_0_card_instance</value>
-        <variable display_value="Table">d909f99587003300663ca1bb36cb0ba4</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_action_instance</document>
-        <document_key>e0ccc8ca93794a10cd4e7d532bba1094</document_key>
-        <order>2</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-27 10:21:51</sys_created_on>
-        <sys_id>feec04c293794a10cd4e7d532bba10b7</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-27 10:21:51</sys_updated_on>
-        <value>deck_order</value>
-        <variable display_value="Order by">1d09f99587003300663ca1bb36cb0bad</variable>
-    </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="id=e0ccc8ca93794a10cd4e7d532bba1094"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>conditions</field>
-        <id>e0ccc8ca93794a10cd4e7d532bba1094</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-27 10:21:51</sys_created_on>
-        <sys_id>baec04c293794a10cd4e7d532bba10b7</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-27 10:21:51</sys_updated_on>
-        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
-        <value>player_session={{subflow.player_session}}^status=in_deck</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>sort_column</field>
-        <id>e0ccc8ca93794a10cd4e7d532bba1094</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-27 10:21:51</sys_created_on>
-        <sys_id>f2ec04c293794a10cd4e7d532bba10b7</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-27 10:21:51</sys_updated_on>
-        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>table</field>
-        <id>e0ccc8ca93794a10cd4e7d532bba1094</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-27 10:21:51</sys_created_on>
-        <sys_id>7eec04c293794a10cd4e7d532bba10b7</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-27 10:21:51</sys_updated_on>
-        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_hub_input_scripts action="delete_multiple" query="instance=e0ccc8ca93794a10cd4e7d532bba1094"/>
-    <sys_hub_alias_mapping action="delete_multiple" query="source_id=e0ccc8ca93794a10cd4e7d532bba1094"/>
-    <sys_hub_action_instance action="INSERT_OR_UPDATE">
-        <action_inputs/>
-        <action_inputs/>
-        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
-        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
-        <attributes/>
-        <comment>Update the game instance card to set the status</comment>
-        <display_text/>
-        <flow display_value="CARD-ACT: On Reveal: Add the top card of your deck to this location.">abf7084693794a10cd4e7d532bba1025</flow>
-        <generation_source/>
-        <order>4</order>
-        <parent_ui_id/>
-        <sys_class_name>sys_hub_action_instance</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-27 10:24:05</sys_created_on>
-        <sys_id>e36dc80e93794a10cd4e7d532bba10bc</sys_id>
-        <sys_mod_count>26</sys_mod_count>
-        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-12-25 21:25:26</sys_updated_on>
-        <ui_id>2a3ec9cf-d1d9-4c49-af25-8b5cd8bfeb3b</ui_id>
-    </sys_hub_action_instance>
-    <sys_variable_value action="delete_multiple" query="document_key=e36dc80e93794a10cd4e7d532bba10bc"/>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_action_instance</document>
-        <document_key>e36dc80e93794a10cd4e7d532bba10bc</document_key>
-        <order>50</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-27 10:25:05</sys_created_on>
-        <sys_id>82adc80e93794a10cd4e7d532bba10b5</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-27 10:25:05</sys_updated_on>
-        <value>x_168987_flow_de_0_card_instance</value>
-        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
-    </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="id=e36dc80e93794a10cd4e7d532bba10bc"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>record</field>
-        <id>e36dc80e93794a10cd4e7d532bba10bc</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-27 10:25:05</sys_created_on>
-        <sys_id>02adc80e93794a10cd4e7d532bba10b5</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-27 10:25:05</sys_updated_on>
-        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
-        <value>{{60f86c52-9e9d-4346-adcb-71efebe393ff.Record}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>table_name</field>
-        <id>e36dc80e93794a10cd4e7d532bba10bc</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-27 10:25:05</sys_created_on>
-        <sys_id>8aadc80e93794a10cd4e7d532bba10b4</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-27 10:25:05</sys_updated_on>
-        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>values</field>
-        <id>e36dc80e93794a10cd4e7d532bba10bc</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-27 10:25:05</sys_created_on>
-        <sys_id>4eadc80e93794a10cd4e7d532bba10b4</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-27 10:25:05</sys_updated_on>
-        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
-        <value>current_location={{acb33211-8827-45e4-b980-f168d49f5ac1.record}}^status=played_to_location^turn_played={{subflow.game_instance.current_turn}}</value>
-    </sys_element_mapping>
-    <sys_hub_input_scripts action="delete_multiple" query="instance=e36dc80e93794a10cd4e7d532bba10bc"/>
-    <sys_hub_alias_mapping action="delete_multiple" query="source_id=e36dc80e93794a10cd4e7d532bba10bc"/>
-    <sys_hub_action_instance action="INSERT_OR_UPDATE">
-        <action_inputs/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=abf7084693794a10cd4e7d532bba1025"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=abf7084693794a10cd4e7d532bba1025^sys_idNOT IN29d1d659c3406210ff1f33bc050131f1,a1d1d659c3406210ff1f33bc050131ef,a1d1d659c3406210ff1f33bc050131f0,a9d1d659c3406210ff1f33bc050131ee,a9d1d659c3406210ff1f33bc050131f0"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
         <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
         <action_type_parent display_value="Log">0e0ae8c2531003003bf1d9109ec587c8</action_type_parent>
         <attributes/>
         <comment/>
+        <compiled_snapshot>5bc1bcc6531003003bf1d9109ec587d4</compiled_snapshot>
         <display_text/>
         <flow display_value="CARD-ACT: On Reveal: Add the top card of your deck to this location.">abf7084693794a10cd4e7d532bba1025</flow>
         <generation_source/>
         <order>5</order>
         <parent_ui_id/>
-        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-27 10:00:21</sys_created_on>
-        <sys_id>f7f7084693794a10cd4e7d532bba106f</sys_id>
-        <sys_mod_count>30</sys_mod_count>
+        <sys_created_on>2025-03-02 04:39:34</sys_created_on>
+        <sys_id>29d1d659c3406210ff1f33bc050131f1</sys_id>
+        <sys_mod_count>1</sys_mod_count>
         <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-12-25 21:25:26</sys_updated_on>
+        <sys_updated_on>2025-03-02 04:39:34</sys_updated_on>
         <ui_id>aec62c37-f906-4f3a-a6c0-21275903b0e5</ui_id>
-    </sys_hub_action_instance>
-    <sys_variable_value action="delete_multiple" query="document_key=f7f7084693794a10cd4e7d532bba106f"/>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_action_instance</document>
-        <document_key>f7f7084693794a10cd4e7d532bba106f</document_key>
-        <order>1</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
+        <values>H4sIAAAAAAAA/91UUW/aMBD+K8jPgBJCoPA20VVCWttpTPShqiLHvoAlx84cB8oQ/31nYtKsQxNse5qUl/vy+fx957t73hPKrNBqrkpLFYPFrpxzMiXZOBsHN8PRJBpPhjQMGB/CmMfRIE0xGmWkS4TjxSkLU8ZGcRQGQYRfmoV8EgYTYPHNmI+Rp2gOyJR6lUjYgERoQ2XlMKEyjSEXZSHpbunReY2ytZDcgCLT55cuKajBPBYMme7f/bK7AhJJU0w9JbO1FgyukHc6+MlrOyPXXYAQO6XWhjsdQZfAqwXFAa/KqCyhS3KqOLXa7BrEAOWPSr4Ba6EsZiOO/FqK75h6GDheBmiJQf2vCRNfnRquNZRofN8o7/U6D1pBp9drlbYl89B94/ravnsAzwzbzCdqlFCrFnmLyBt50CZ/NEabFhV87LnRAZ+JQ0YraWfXOwgvdjC4xkF0hYOhc1AX/7FwA4OU0LUGTaUXy7SscvVQtw9p/C7f9XqN3p5t+arE54bCtZTrEd8w2WKtt19O/XAn1FGR/yk1o7KJqLVGpJV19d0TkJBjoiSnRYGFSAqjN+J4GMXm/ZXEoJ9JvcVLS7FS/XoX9LGDaf8O8dsjvKRGOJv3mAYPH47NmXyr3L21Ua84OZbFEUpmRGE/YLoNeHGu2H+3awbR74YZ4p+HN4eypCtoPemMGt5ZVKlz3PkKOT6Ahc5nSRmstXR1+WUVXXLkz/bUAh/q2JuXWjsdvG98nTXrd1V5Sn8aoX+2qwZxfN2yaublqnH536fh5QfcAV17ewcAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment>find the next slot in this location</comment>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="CARD-ACT: On Reveal: Add the top card of your deck to this location.">abf7084693794a10cd4e7d532bba1025</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-27 10:00:21</sys_created_on>
-        <sys_id>fbf7084693794a10cd4e7d532bba1071</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_created_on>2025-03-02 04:39:34</sys_created_on>
+        <sys_id>a1d1d659c3406210ff1f33bc050131ef</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-27 10:00:21</sys_updated_on>
-        <value>Card Subflow Template Placeholder</value>
-        <variable display_value="Message">23c1bcc6531003003bf1d9109ec587e5</variable>
-    </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_input_5bc1bcc6531003003bf1d9109ec587d4^id=f7f7084693794a10cd4e7d532bba106f"/>
-    <sys_hub_input_scripts action="delete_multiple" query="instance=f7f7084693794a10cd4e7d532bba106f"/>
-    <sys_hub_alias_mapping action="delete_multiple" query="source_id=f7f7084693794a10cd4e7d532bba106f"/>
-    <sys_hub_flow_logic action="delete_multiple" query="flow=abf7084693794a10cd4e7d532bba1025"/>
-    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=abf7084693794a10cd4e7d532bba1025"/>
+        <sys_updated_on>2025-03-02 04:39:34</sys_updated_on>
+        <ui_id>6333f281-c278-4cd8-ad89-da96c9170d2a</ui_id>
+        <values>H4sIAAAAAAAA/9VYbU/jOBD+K1E+l17StE3Dt9NynJB2l9PCrXTiWMuxHWqda2dth1fx328cJ2kpBUopKvsx9sz4mZnnmTg5uwsxsVzJI2ksloSd3JgjGu6HWVaQKIpYlqTZEMcRoUOW0lEyyHN4StOwF3JnR7MoK7JsNEmjKEmiaDxOCI7zPBmTPMrxEOwknjGwtDgXDB4vsajc8zWKx5NskqJCqCtEGYqQUAQ7MMgIZcGUclMKfPO98fgTAgWfG5vgxNuQKRdUMxnun533whJrMLJMh/t3S1v2pmRI4JwJCHXqwARfHbL1E3ng/Dgxd0D7iKQPrTR1WKJeyK4tk5TBUQUWhvXCGZYUW6VvuhXNMD2WYr4w5dJCxNAZXxt+C+EnkbMrGKRFmN/rHlFTL79MpooTdly6YvkVD9RvKlHN5FefgKs0K3AlbFtpWKkMxGOlw+xANIiKk6m6+tYeeMhlnV6z6donuidsreZ5ZZlxvWCCzSAQmuGy5PIClVpd8toZsMz6FwIe+g0TDL+QfU/LPpQI9w9h/aBe/o41d1l8gTDgDIC4gG4jX3SjKl1X5RIRUZl6Q2NpfKzwvq4V+lk5lD7rJj/kSwQGhmhe2t/B4ZI1qdz33iyS0bPcyuZcIkpS7o4yC0rpZMGb8/+tIA69uzNV7krWJ1jTbrNPKq1dTq3b/f2PBwZHJ398+ev0nx+OKkwvx/KryDBjat/HMtw1nM0U/2mxsut2ZaXzqlY12n+w1mg/3pr2h8C13ajf6urjif8lOfuE30vTMX2WPXROFKO0Rb7kC6J2rzgkq1lej7EliT3c3Izwh5wJ+uAVtwbk1vnYcTfIb57KouF74c5YetcNfvl33YdkOwCiyNebS8FlfdUAoDuWwehZTuXxEoFq3iyIwK1hQx4rAAdWBbebT/uaEK8A2TqeAKLg1KNcAbyd8234hvPJ1jifDF7HeWDc2V2HvqvaigK3V1HX89b+1tnjZXug5YJDfH/eaebTZmfGrz1z4M5cEnXyKlUvMsvvHDxBsC1fdJ9Qae89x8IUXJvzkFc5uuL0gtn56a0VVfYKi/9W7Tfs6jRUp7e7S3P87AdZvnBp5gWaQYN5CZ8AmhHgkEFYM1SoSlLUXP7nfHMNL7g2tjF+PHy+MVtpGSjQamCnLKitg856GyNpjexax6MiaNNrMJgA0gvq9IIuvdcV44lBNtziZfUtg+wQc1GXHj7iyoXeMa2VfmKYvdC1Z9q/5qRbE1S8VVBvH4Wr+L5yJL6A9Zf4I7CzcUUYzocDPE6TOI6iOKJpNEnTeDLOizFOh8VcoQgZSWAQA6QCGAW4UMuglg7R45nkp/HG/7tgyv922IRYF2/rfKCk+ywfpDZwgIEgQQv45ZSaQZMrJRiWc16PdjZpPsovsYqfLtfGL31e1bT3uj5U/G/Jf1asJvuERYNJTMneJI3TvWFBx3sZxaM9nOWjNKGMDIvNbwTn/wPciLo1bRYAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment>Add the next card to the location</comment>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="CARD-ACT: On Reveal: Add the top card of your deck to this location.">abf7084693794a10cd4e7d532bba1025</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-02 04:39:34</sys_created_on>
+        <sys_id>a1d1d659c3406210ff1f33bc050131f0</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-02 04:39:34</sys_updated_on>
+        <ui_id>acb33211-8827-45e4-b980-f168d49f5ac1</ui_id>
+        <values>H4sIAAAAAAAA/+1VXU/bMBT9K1WemyqJ0zTp2yTEhLSBBBMvDCzHvgFLjpMlTqGr+t93nTilwIYYA02T9ujb+3HOyT29FxuPcSMrfaRbwzSHs3V7JLylR/JIxHEAGVlkMQsDLmJYiDmJ8hxfLPSmnrR5MYggzMKEk5CQKAiiNA7zhORhJAgDsHmalYCZDfCqEfheMdXZwGaTEEKKKA19Hi1SP+Yi9ZlIM1+wLOFZuAhExGanfd12i5VCtrVi63PXACP8RirRgPaWF5dTr2YNzjLQeMvNo5/MugaqWA4KCw8q3pWgzeTo4Dd4jNWnI5HHxOwMfAvXnUobxJ8snjCYenBnQAvAcQVTLUy9kmnBTNWsvaVpOgw0wMSJVutdxo3UZmBasrtWfsf+cWDzCkBq3Kmwe1Kn0ChOJTmc1Pb7DhHDcjUqV6mu1McDBastFKxTZk/brsV+UFvIFsSAsDi7qW5Px3mHUvfsHFpVcaZ2L2ZMI/POQGs/ByjoRSlZXUt9TeumWsm+GKGUs2uFj1mhqluc2cprPRv2coYCsdkhxg/68DlrpCXxGdtg8bYnT791du5AwwGmPeeeMO0/FKa2vJG1+YCNV+Bgbqd/6oB8/tzm8Ox+UfbA3LvgjoZJmqUL6rjTgFoZLSLaqso8XfuP2GDyyeVMzoac1xnhi0U0OR4QvZTNg+JfsHNWeBBzTpi/mRPSv+QEh+gfs8K7GSCInv3r3FuRfufbveXnrBFUurlfuyAgAq9CUKQJn0d+BpnwYxIneBV47i9C1DoHkpGi2F2FK+sRupKtRCWGDnaBnrrmPUe90nxQIkADkwHiy9UcGxxKUKL9ibyj+9wAunIDdrfoDY9R8P8cveU5uvwBWgcTfJIJAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment>Look up the top deck card</comment>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="CARD-ACT: On Reveal: Add the top card of your deck to this location.">abf7084693794a10cd4e7d532bba1025</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-02 04:39:34</sys_created_on>
+        <sys_id>a9d1d659c3406210ff1f33bc050131ee</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-02 04:39:34</sys_updated_on>
+        <ui_id>60f86c52-9e9d-4346-adcb-71efebe393ff</ui_id>
+        <values>H4sIAAAAAAAA/9VYXW/jKhD9K5af01w7TmK7b6tWWVW6dytte/eltxdhwA1agr2A+6n+9x2Mne+0SZqq3UdgZjgznDMGXz35mBheyDOpDZaEXTzoM+of+ywghCQEp1Gc9nEYENpnMR1EvSyDUdr3Oz63djQN0jxNB0kcBFEUBMNhRHCYZdGQZEGGrZ3EEwaWBmeCwfAWi8qO71E4TNIkRrko7hBlKEAEK4p4gwRMKdelwA8/Go+vEMg7ARvvbGZDxlxQxaR/fHXd8UuswMgw5R8/LS2Zh5IhgTMmINSlBeN9s8i2T2TBeTUxu0E7RNKFLhS1WIKOz+4Nk5TBVjkWmnX8CZYUm0I9TGcUw/RcitnEmEsDEX1rfK/5I4RPAmuXM0iLMLc2HaKmXm6ajAtO2HlpT9fNOKBusRDVRH5zCdhKsxxXwrSVhplKQzxWWswWRIMovxgXd9/bDUdc1uk1i6IgWExH2BjFs8owbc+CCTaBQGiCy5LLG1Sq4pbXzoBl0r0RMOg2TND8RnYdLbtQItwdwfxpPf0DK26z+AfCgDMA4gJOG7mi66JSdVVuERGVrhcUltrF8p/rWqFflUXpsm7yQ65EYKCJ4qX5Ag63rEnlufNmkQxe5FY64xIpJOV2Kz2nFHumkIpmWsPKfxUEoU9PuspsvbqLq8/P/wNGU2lnxiXUk/xc1dJBYu6nvZP5HLetz1rndUVrVLgw16gwPJgK+0HwQTo0qvp8MnxNWC7h91JXSF9kD50RRRfKIFfyOXlZMiNHkRWZLKztR/cRZ4IufGq2ANw6n9utvexhUw4N23O7x9I3p/fHf3M+JdcBEEWu3lwKLutPPgD9YBEMXuRUFi4RqObNTAL1HNZkVQDYM4X3uH+vrwmxA8jW8QIQeZcO5RrgbZdvwzecjw7G+ai3G+eBcVdPU/TTqq0pcHsltGfe2j9ae7xsD7Sccwifr6eaOdlvz3DXPXt2zyVRRzupep5ZbuV0A8EOfOHcoNLOe7aFMbg2+yGncnTH6Q0zs91bK1qYOyx+rltv2DXVUJ3ex11ewxcfRtnc5ZXnaAIHzEu4iitGgEMaYcVQXlSSouYSPuObPfCcK20a49Xm852ZSkmvAK16Zsy82tqbWh+iJW2RXet4lntteg0G7UF6Xp2eN01vt2JsaGT9A15V39LIRpiLuvTwmCrnzo4pVagNzeyVU3vh+LfsdFuCCg8K6u2tcB3f17bEV7D+ES/zD2tXhOGs38PDOArDIAgDGgdJHIfJMMuHOO7nM4UipCWBRgyQcmAU4EItg1o6BKs9yXXjvf87QZf/a9SE2BZv63zqHuq92HgWMBDEawG/nlLTaLKiEAzLGa8HH9ZpPsuvqYpfLtfGTf297tDe6/pQ8X8l/1WxmuwJC3pJSMlREofxUT+nw6OU4sERTrNBHMGjtJ/vfyO4/g2niF4P9RUAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment>Update the game instance card to set the status</comment>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="CARD-ACT: On Reveal: Add the top card of your deck to this location.">abf7084693794a10cd4e7d532bba1025</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-02 04:39:34</sys_created_on>
+        <sys_id>a9d1d659c3406210ff1f33bc050131f0</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-02 04:39:34</sys_updated_on>
+        <ui_id>2a3ec9cf-d1d9-4c49-af25-8b5cd8bfeb3b</ui_id>
+        <values>H4sIAAAAAAAA/+1V3U/bMBD/V6o8N1HSpG3St2mIqQ8DCSZeGFiOfSmWHCdznEJX9X/fOXFKYQwxxrRN2uOd7+P3uw/f5dajzIhKLVVjqGJwvmmW3Ft4EM84S0PI4nmW0ChkPIE5n8aTPEcpZ97YE9YuAR5GWTRjcRTHkzCcpEmUz+I8mvCYAkRop2gJaKmBVZqjvKaytYrtdhYW6YxNJ34GGfeTOJn5lLPcn0dQQA5xFhdFcNb57XboyUVTS7q5cAFQw26E5BqUt7i8Gns11ZjLgPYW20dPZlMDkTQHiY5HFWtLUGa0PPoJHoP32UDkMTGbA2XuohNhlfhk8UTh2IM7A4oDpiuobGDslVRxaiq98RZGt6jQQPmpkpu9xY1Qpmda0rtGfMX4SWjtCkBqzFVhLxJXoaE4lWBwWtv+9hpDczlUrpJtqU56Cra2UNBWmoPatg3Gg9pCtiB6hMX5TXV7NuQ7Fqpj59DKilG5l6gxWuStgca2AyR0RSlpXQu1IrWu1qJzRihlsJIoBIWsbjFnI1Yq6OcywALR4Bj1R536gmphSXzEMOi868iTL63N29NwgEnHuSNMukahacO0qM07DLwGB3M3/tUNyKfPTQ7L7gflAMz9FtyRaJZm6Zw47iQkjGpOhIPz/dh/wACj92gzWt7bvG4RPllEo5Me0UvZPHD+ATu3Cg90bhOmb7YJ6R/aBIfoH1uF37YA4eTZr/NgRLqZbw6Gn7VaW4C2WhbC5zYMY77dUpZjqCjy03Qy95MpJH6epaFf4K7wJCumlEWBdofhGmGbtul9bc+BE1PtY16bVivS64f4TZvb+gYrxLXftGBAYx2eujd/OdpXfgFQYjYDo57ly3s6BDgWIHnzRJOHP8AlIGuXYH8R3/Akhv+P4lsexatvU0nyLxgKAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=abf7084693794a10cd4e7d532bba1025"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=abf7084693794a10cd4e7d532bba1025"/>
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=abf7084693794a10cd4e7d532bba1025"/>
     <sys_hub_flow_variable action="delete_multiple" query="model=abf7084693794a10cd4e7d532bba1025"/>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_abf7084693794a10cd4e7d532bba1025^sys_idNOT IN23f7084693794a10cd4e7d532bba1042,2bf7084693794a10cd4e7d532bba1031,63f7084693794a10cd4e7d532bba1046"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>card_instance</element>
         <help/>
@@ -796,11 +534,11 @@
         <sys_created_on>2024-04-27 10:00:20</sys_created_on>
         <sys_id>23f7084693794a10cd4e7d532bba1042</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Card Instance</sys_name>
+        <sys_name/>
         <sys_package display_value="SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_abf7084693794a10cd4e7d532bba1025_card_instance_en</sys_update_name>
+        <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-04-27 10:00:20</sys_updated_on>
         <url/>
@@ -819,11 +557,11 @@
         <sys_created_on>2024-04-27 10:00:20</sys_created_on>
         <sys_id>2bf7084693794a10cd4e7d532bba1031</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Player Session</sys_name>
+        <sys_name/>
         <sys_package display_value="SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_abf7084693794a10cd4e7d532bba1025_player_session_en</sys_update_name>
+        <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-04-27 10:00:20</sys_updated_on>
         <url/>
@@ -842,18 +580,17 @@
         <sys_created_on>2024-04-27 10:00:20</sys_created_on>
         <sys_id>63f7084693794a10cd4e7d532bba1046</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Game Instance</sys_name>
+        <sys_name/>
         <sys_package display_value="SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_abf7084693794a10cd4e7d532bba1025_game_instance_en</sys_update_name>
+        <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-04-27 10:00:20</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_abf7084693794a10cd4e7d532bba1025"/>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_abf7084693794a10cd4e7d532bba1025^sys_idNOT INb3f7084693794a10cd4e7d532bba1069"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>status</element>
         <help/>
@@ -867,11 +604,11 @@
         <sys_created_on>2024-04-27 10:00:21</sys_created_on>
         <sys_id>b3f7084693794a10cd4e7d532bba1069</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Status</sys_name>
+        <sys_name/>
         <sys_package display_value="SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_abf7084693794a10cd4e7d532bba1025_status_en</sys_update_name>
+        <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-04-27 10:00:21</sys_updated_on>
         <url/>
@@ -932,16 +669,16 @@
         <copied_from>25bbe6f4476a3d5017fdc82f316d432c</copied_from>
         <copied_from_name/>
         <description/>
-        <flow_priority/>
+        <flow_priority>MEDIUM</flow_priority>
         <internal_name>cardact_on_reveal_add_the_top_card_of_your_deck_to_this_location</internal_name>
-        <label_cache>[{"name":"subflow.player_session","label":"Input➛Player Session","reference":"x_168987_flow_de_0_player_session","reference_display":"Player Session","type":"reference","base_type":"reference","column_name":"","usedInstances":{"60f86c52-9e9d-4346-adcb-71efebe393ff":["conditions"],"6333f281-c278-4cd8-ad89-da96c9170d2a":["conditions"]},"attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"498332c7-2b6e-42b0-82a9-9f0a0d4937ea","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.card_instance.current_location","label":"Input➛Card Instance➛Current Location","reference":"x_168987_flow_de_0_location_instance","reference_display":"Game Location instance","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_card_instance","column_name":"current_location","usedInstances":{"6333f281-c278-4cd8-ad89-da96c9170d2a":["conditions"]}},{"name":"6333f281-c278-4cd8-ad89-da96c9170d2a.Record","label":"2 - Look Up Record➛Game Location Slot Record","reference":"x_168987_flow_de_0_location_slot","reference_display":"Game Location Slot","type":"reference","base_type":"reference","usedInstances":{"acb33211-8827-45e4-b980-f168d49f5ac1":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"60f86c52-9e9d-4346-adcb-71efebe393ff.Record","label":"1 - Look Up Record➛Game Card Instance Record","reference":"x_168987_flow_de_0_card_instance","reference_display":"Game Card Instance","type":"reference","base_type":"reference","usedInstances":{"acb33211-8827-45e4-b980-f168d49f5ac1":["card_instance"],"2a3ec9cf-d1d9-4c49-af25-8b5cd8bfeb3b":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"acb33211-8827-45e4-b980-f168d49f5ac1.record","label":"3 - Update Record➛Game Location Slot Record","reference":"x_168987_flow_de_0_location_slot","reference_display":"Game Location Slot","type":"reference","base_type":"reference","usedInstances":{"2a3ec9cf-d1d9-4c49-af25-8b5cd8bfeb3b":["current_location"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.game_instance.current_turn","label":"Input➛Game Instance➛Current Turn","reference":"","reference_display":"Current Turn","type":"integer","base_type":"integer","parent_table_name":"x_168987_flow_de_0_game_instance","column_name":"current_turn","usedInstances":{"2a3ec9cf-d1d9-4c49-af25-8b5cd8bfeb3b":["turn_played"]}}]</label_cache>
+        <label_cache>[{"name":"subflow.game_instance.current_turn","label":"Input➛Game Instance➛Current Turn","reference":"","reference_display":"Current Turn","type":"integer","base_type":"integer","parent_table_name":"x_168987_flow_de_0_game_instance","column_name":"current_turn","usedInstances":{"2a3ec9cf-d1d9-4c49-af25-8b5cd8bfeb3b":["turn_played"]}},{"name":"acb33211-8827-45e4-b980-f168d49f5ac1.record","label":"3 - Update Record➛Game Location Slot Record","reference":"x_168987_flow_de_0_location_slot","reference_display":"Game Location Slot","type":"reference","base_type":"reference","usedInstances":{"2a3ec9cf-d1d9-4c49-af25-8b5cd8bfeb3b":["current_location"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"60f86c52-9e9d-4346-adcb-71efebe393ff.Record","label":"1 - Look Up Record➛Game Card Instance Record","reference":"x_168987_flow_de_0_card_instance","reference_display":"Game Card Instance","type":"reference","base_type":"reference","usedInstances":{"acb33211-8827-45e4-b980-f168d49f5ac1":["card_instance"],"2a3ec9cf-d1d9-4c49-af25-8b5cd8bfeb3b":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"6333f281-c278-4cd8-ad89-da96c9170d2a.Record","label":"2 - Look Up Record➛Game Location Slot Record","reference":"x_168987_flow_de_0_location_slot","reference_display":"Game Location Slot","type":"reference","base_type":"reference","usedInstances":{"acb33211-8827-45e4-b980-f168d49f5ac1":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.card_instance.current_location","label":"Input➛Card Instance➛Current Location","reference":"x_168987_flow_de_0_location_instance","reference_display":"Game Location instance","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_card_instance","column_name":"current_location","usedInstances":{"6333f281-c278-4cd8-ad89-da96c9170d2a":["conditions"]}},{"name":"subflow.player_session","label":"Input➛Player Session","reference":"x_168987_flow_de_0_player_session","reference_display":"Player Session","type":"reference","base_type":"reference","column_name":"","usedInstances":{"60f86c52-9e9d-4346-adcb-71efebe393ff":["conditions"],"6333f281-c278-4cd8-ad89-da96c9170d2a":["conditions"]},"attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"498332c7-2b6e-42b0-82a9-9f0a0d4937ea","sourceUiUniqueId":"","sourceType":"","sourceId":""}}]</label_cache>
         <master>true</master>
         <name>CARD-ACT: On Reveal: Add the top card of your deck to this location.</name>
         <natlang/>
         <outputs/>
         <parent_flow display_value="CARD-ACT: On Reveal: Add the top card of your deck to this location.">abf7084693794a10cd4e7d532bba1025</parent_flow>
         <remote_trigger_id/>
-        <run_as>user</run_as>
+        <run_as>system</run_as>
         <run_with_roles/>
         <sc_callable>false</sc_callable>
         <status>published</status>
@@ -951,7 +688,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>fbad804e93794a10cd4e7d532bba1017</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -959,9 +696,9 @@
         <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-27 10:30:19</sys_updated_on>
+        <sys_updated_on>2025-03-02 04:39:35</sys_updated_on>
         <type>subflow</type>
-        <version/>
+        <version>2</version>
     </sys_hub_flow_snapshot>
     <sys_translated_text action="delete_multiple" query="documentkey=fbad804e93794a10cd4e7d532bba1017"/>
     <sys_variable_value action="delete_multiple" query="document_key=fbad804e93794a10cd4e7d532bba1017"/>
@@ -1320,384 +1057,122 @@
     </sys_hub_flow_output>
     <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=48bd804e93794a10cd4e7d532bba1082"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=fbad804e93794a10cd4e7d532bba1017"/>
-    <sys_hub_trigger_instance action="delete_multiple" query="flow=fbad804e93794a10cd4e7d532bba1017"/>
-    <sys_hub_action_instance action="delete_multiple" query="flow=fbad804e93794a10cd4e7d532bba1017^sys_idNOT IN08bd804e93794a10cd4e7d532bba10dc,8cbd804e93794a10cd4e7d532bba10b0,c4bd804e93794a10cd4e7d532bba10a7,c4bd804e93794a10cd4e7d532bba10d6,c8bd804e93794a10cd4e7d532bba10b7"/>
-    <sys_hub_action_instance action="INSERT_OR_UPDATE">
-        <action_inputs/>
-        <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
-        <action_type_parent display_value="Log">0e0ae8c2531003003bf1d9109ec587c8</action_type_parent>
-        <attributes/>
-        <comment/>
-        <display_text/>
-        <flow display_value="CARD-ACT: On Reveal: Add the top card of your deck to this location.">fbad804e93794a10cd4e7d532bba1017</flow>
-        <generation_source/>
-        <order>5</order>
-        <parent_ui_id/>
-        <sys_class_name>sys_hub_action_instance</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-27 10:25:13</sys_created_on>
-        <sys_id>08bd804e93794a10cd4e7d532bba10dc</sys_id>
-        <sys_mod_count>10</sys_mod_count>
-        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-27 10:30:19</sys_updated_on>
-        <ui_id>aec62c37-f906-4f3a-a6c0-21275903b0e5</ui_id>
-    </sys_hub_action_instance>
-    <sys_variable_value action="delete_multiple" query="document_key=08bd804e93794a10cd4e7d532bba10dc"/>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_action_instance</document>
-        <document_key>08bd804e93794a10cd4e7d532bba10dc</document_key>
-        <order>1</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-27 10:25:13</sys_created_on>
-        <sys_id>4cbd804e93794a10cd4e7d532bba10dd</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-27 10:25:13</sys_updated_on>
-        <value>Card Subflow Template Placeholder</value>
-        <variable display_value="Message">23c1bcc6531003003bf1d9109ec587e5</variable>
-    </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_input_5bc1bcc6531003003bf1d9109ec587d4^id=08bd804e93794a10cd4e7d532bba10dc"/>
-    <sys_hub_input_scripts action="delete_multiple" query="instance=08bd804e93794a10cd4e7d532bba10dc"/>
-    <sys_hub_alias_mapping action="delete_multiple" query="source_id=08bd804e93794a10cd4e7d532bba10dc"/>
-    <sys_hub_action_instance action="INSERT_OR_UPDATE">
-        <action_inputs/>
-        <action_inputs/>
-        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
-        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
-        <attributes/>
-        <comment>find the next slot in this location</comment>
-        <display_text/>
-        <flow display_value="CARD-ACT: On Reveal: Add the top card of your deck to this location.">fbad804e93794a10cd4e7d532bba1017</flow>
-        <generation_source/>
-        <order>2</order>
-        <parent_ui_id/>
-        <sys_class_name>sys_hub_action_instance</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-27 10:25:13</sys_created_on>
-        <sys_id>8cbd804e93794a10cd4e7d532bba10b0</sys_id>
-        <sys_mod_count>10</sys_mod_count>
-        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-27 10:30:18</sys_updated_on>
-        <ui_id>6333f281-c278-4cd8-ad89-da96c9170d2a</ui_id>
-    </sys_hub_action_instance>
-    <sys_variable_value action="delete_multiple" query="document_key=8cbd804e93794a10cd4e7d532bba10b0"/>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_action_instance</document>
-        <document_key>8cbd804e93794a10cd4e7d532bba10b0</document_key>
-        <order>0</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-27 10:25:13</sys_created_on>
-        <sys_id>00bd804e93794a10cd4e7d532bba10b3</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-27 10:25:13</sys_updated_on>
-        <value>x_168987_flow_de_0_location_slot</value>
-        <variable display_value="Table">d909f99587003300663ca1bb36cb0ba4</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_action_instance</document>
-        <document_key>8cbd804e93794a10cd4e7d532bba10b0</document_key>
-        <order>2</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-27 10:25:13</sys_created_on>
-        <sys_id>4cbd804e93794a10cd4e7d532bba10b2</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-27 10:25:13</sys_updated_on>
-        <value>slot_number</value>
-        <variable display_value="Order by">1d09f99587003300663ca1bb36cb0bad</variable>
-    </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="id=8cbd804e93794a10cd4e7d532bba10b0"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>conditions</field>
-        <id>8cbd804e93794a10cd4e7d532bba10b0</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-27 10:25:13</sys_created_on>
-        <sys_id>08bd804e93794a10cd4e7d532bba10b2</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-27 10:30:18</sys_updated_on>
-        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
-        <value>location_instance={{subflow.card_instance.current_location}}^card_instanceISEMPTY^player={{subflow.player_session}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>sort_column</field>
-        <id>8cbd804e93794a10cd4e7d532bba10b0</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-27 10:25:13</sys_created_on>
-        <sys_id>44bd804e93794a10cd4e7d532bba10b2</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-27 10:25:13</sys_updated_on>
-        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>table</field>
-        <id>8cbd804e93794a10cd4e7d532bba10b0</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-27 10:25:13</sys_created_on>
-        <sys_id>c8bd804e93794a10cd4e7d532bba10b2</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-27 10:25:13</sys_updated_on>
-        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_hub_input_scripts action="delete_multiple" query="instance=8cbd804e93794a10cd4e7d532bba10b0"/>
-    <sys_hub_alias_mapping action="delete_multiple" query="source_id=8cbd804e93794a10cd4e7d532bba10b0"/>
-    <sys_hub_action_instance action="INSERT_OR_UPDATE">
-        <action_inputs/>
-        <action_inputs/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=fbad804e93794a10cd4e7d532bba1017"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=fbad804e93794a10cd4e7d532bba1017^sys_idNOT IN42d11a59c3406210ff1f33bc0501315c,42d11a59c3406210ff1f33bc0501315e,4ad11a59c3406210ff1f33bc0501315c,4ad11a59c3406210ff1f33bc0501315d,ced11a59c3406210ff1f33bc0501315e"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
         <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
         <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
         <attributes/>
         <comment>Look up the top deck card</comment>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
         <display_text/>
         <flow display_value="CARD-ACT: On Reveal: Add the top card of your deck to this location.">fbad804e93794a10cd4e7d532bba1017</flow>
         <generation_source/>
         <order>1</order>
         <parent_ui_id/>
-        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-27 10:25:13</sys_created_on>
-        <sys_id>c4bd804e93794a10cd4e7d532bba10a7</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_created_on>2025-03-02 04:39:35</sys_created_on>
+        <sys_id>42d11a59c3406210ff1f33bc0501315c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
         <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-27 10:30:18</sys_updated_on>
+        <sys_updated_on>2025-03-02 04:39:35</sys_updated_on>
         <ui_id>60f86c52-9e9d-4346-adcb-71efebe393ff</ui_id>
-    </sys_hub_action_instance>
-    <sys_variable_value action="delete_multiple" query="document_key=c4bd804e93794a10cd4e7d532bba10a7"/>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_action_instance</document>
-        <document_key>c4bd804e93794a10cd4e7d532bba10a7</document_key>
-        <order>0</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-27 10:25:13</sys_created_on>
-        <sys_id>48bd804e93794a10cd4e7d532bba10a9</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-27 10:25:13</sys_updated_on>
-        <value>x_168987_flow_de_0_card_instance</value>
-        <variable display_value="Table">d909f99587003300663ca1bb36cb0ba4</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_action_instance</document>
-        <document_key>c4bd804e93794a10cd4e7d532bba10a7</document_key>
-        <order>2</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-27 10:25:13</sys_created_on>
-        <sys_id>84bd804e93794a10cd4e7d532bba10a9</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-27 10:25:13</sys_updated_on>
-        <value>deck_order</value>
-        <variable display_value="Order by">1d09f99587003300663ca1bb36cb0bad</variable>
-    </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="id=c4bd804e93794a10cd4e7d532bba10a7"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>conditions</field>
-        <id>c4bd804e93794a10cd4e7d532bba10a7</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-27 10:25:13</sys_created_on>
-        <sys_id>40bd804e93794a10cd4e7d532bba10a9</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-27 10:25:13</sys_updated_on>
-        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
-        <value>player_session={{subflow.player_session}}^status=in_deck</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>sort_column</field>
-        <id>c4bd804e93794a10cd4e7d532bba10a7</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-27 10:25:13</sys_created_on>
-        <sys_id>8cbd804e93794a10cd4e7d532bba10a8</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-27 10:25:13</sys_updated_on>
-        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>table</field>
-        <id>c4bd804e93794a10cd4e7d532bba10a7</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-27 10:25:13</sys_created_on>
-        <sys_id>04bd804e93794a10cd4e7d532bba10a9</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-27 10:25:13</sys_updated_on>
-        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_hub_input_scripts action="delete_multiple" query="instance=c4bd804e93794a10cd4e7d532bba10a7"/>
-    <sys_hub_alias_mapping action="delete_multiple" query="source_id=c4bd804e93794a10cd4e7d532bba10a7"/>
-    <sys_hub_action_instance action="INSERT_OR_UPDATE">
-        <action_inputs/>
-        <action_inputs/>
+        <values>H4sIAAAAAAAA/+VYwW7bOBD9FUFnxytZtmXltkiQRYBuAzTZXrpdgiKpmChNqSSVxDX87x2KlO3aTmKhDuBgj5wZkm+G7w0pfVmEmBheymupDZaE3c71NQ3PQxYRQiYEZ0maDXEcETpkKR0lgzyHUTYMeyG3cTSLsiLLRpM0ipIkisbjhOA4z5MxyaMc2ziJZwwiDc4Fg+EDFrUdP6F4PMkmKSpE+YgoQxEiWFHEPRIIpVxXAs8/+xl/wULBBcQE1+sYMuWCKibD8y9fe2GFFQQZpsLzxZbrULgC50xA6J3HuwXfzKvVEDU+Z/uwOS346BylohZK1AvZk2GSMsBQYKFZL5xhSbEp1XxlUQzTGynWhimXBlYMbfCT5j9g30lk4woGWRHmfKsh8uVy5uISG3xrVE1MrXwomZacMO3qQVmBa2EuNm0u4KayjHBTXNpudinqmfzoyhGuFmhPByy1BhCssola5D6N4nZaPn5qUV5x2dTEO0VJsFiNsDGK57WxeBYhE2wGC6EZriou71GlygfeTAYss/69gEHfs0fze9l3VO5DXXH/CuyXjfkzVtxm8TcsA5MBEBfAEOSOUJe1akr5gIiodeNQWGq3VrjshXquLwTWep05lBx9ry1uVwefMXJFs1OI4pX5E5Z4YD65Ze+3pTZ6kbvZmquklJTbrfSG3iw1IDnNtAbPvzUsQhcLXee2gv1fvcvlf4DR1NqFcQkVJt92FXmUNTsq+PUqtAq+2CzDvtJ4Le/YPuxbwGs5PpqWh1H0ntQMm5+emLvL05XgrTQa0xfZSddE1KUyyB3ChkitJJBj2o7YfvF1E80BsFrR3NgNgnz+HFKvmYIzQffdf1fWsXX/Df6f999JKgYAUeROj0vBZfOYAaAnJ6XRi5zN4y2CNrxcC6mxYU12ZYQDUwY/OkvoADithG5h7+DO4dkDsb11Gq5t3zit0SsnOZpyksFxlLNYpbkq5J6atw9fS4M2/oeNx9vxwN2NCfFynzI77Rl33XOw3FV+0kn6m2RznstnOHfkF/IzUu69Ze+YwlS/H3LCR4+c3jOz3r2NoqV5xOLbPr9nHGoPqknvlF7b8YtfivnGa5sXaAZHziv4mlCMAKs0woqhoqwlRf47Ys1AS4GCK2188G6H+sRAeDIoQdGBmbKgiQ5W0R2v/tfzaM/gugjaRPxuOoBEgiaRYJVIt7S7dLvhEd/Wx+52V5iL5jTgE7HaOE6mVKme6XivHOQLjDiwHR4IKj4qqN/vl/sksLdvvoL1XfxvOKGeRhjOhwM8TpM4jqI4omk0SdN4Ms6LMU6HxVrcCGlJoH8DpAI4BrhQy6mWINFu43JNvGuHOgBVy91L95NhkJrAwgJiBC2s14H7TpSXpWBYbrWiO7iZ/rjy+D3RRyfXjt7Fb7ua321X2pn21vqtXio1/0fy7zVrBDJh0WASU3I2SeP0bFjQ8VlG8egMZ/koTeDDelgc8/Hx9SdzdLHTVxcAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
         <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
         <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
         <attributes/>
         <comment>Update the game instance card to set the status</comment>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
         <display_text/>
         <flow display_value="CARD-ACT: On Reveal: Add the top card of your deck to this location.">fbad804e93794a10cd4e7d532bba1017</flow>
         <generation_source/>
         <order>4</order>
         <parent_ui_id/>
-        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-27 10:25:13</sys_created_on>
-        <sys_id>c4bd804e93794a10cd4e7d532bba10d6</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_created_on>2025-03-02 04:39:35</sys_created_on>
+        <sys_id>42d11a59c3406210ff1f33bc0501315e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
         <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-27 10:30:18</sys_updated_on>
+        <sys_updated_on>2025-03-02 04:39:35</sys_updated_on>
         <ui_id>2a3ec9cf-d1d9-4c49-af25-8b5cd8bfeb3b</ui_id>
-    </sys_hub_action_instance>
-    <sys_variable_value action="delete_multiple" query="document_key=c4bd804e93794a10cd4e7d532bba10d6"/>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_action_instance</document>
-        <document_key>c4bd804e93794a10cd4e7d532bba10d6</document_key>
-        <order>50</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
+        <values>H4sIAAAAAAAA/+VVXU/bMBT9K1Wemyhp0jbp20TFVImBBBMvDCLHvimWnI/ZDtBV/e+7Tpy0KgiBxqShPfp++dzje65vtg6hmlflqlSalBSuNmrFnIUD4YzR2IcknCcRCXzKIpizaTjJMjxl1Bk73MRFwPwgCWY0DMJw4vuTOAqyWZgFExYSgADjSlIARkqglWR4fiCiMYbtdubn8YxOJ24CCXOjMJq5hNHMnQeQQwZhEua5d9nm7XaYybiqBdlc2wJoofdcMAmls7i5HTs1kXiXBukstkeut4IVJAOBoZc92mP0elObM6toU0CpU94bz2zm0npGqyV6MMnACfyxA08aSgYIJCdCwdgpSMmIruTGWWjZoEECYRel2AwR97zUXaMFeVL8F94c+SYuB+yMWhKGY2oJ6sz5kmhyhZWpbuTAV8UpqI4TBjlphD45tHUBF7WZiS5Fk0z02ZVoivK8Y8QZChy8R6MQBNSmT4O8ayu/uq8eL3uQp7xsKbEtiooSMZyI1pJnjTZwtg4IaDkuSF3zcp3WsnrgbTJCKby1wIOXi+oR71R8XXrdLHvIKvFO0b5szddEctPENyyDybuxozbqRBCl9q0gh+nPxiDpGrMtpC0LLQVpOwkmmUpe6y941QNY4Lvxn+oom742mjTZT+IBmL2WntJgFifxPLVspH5KiWQpt3Cei+crFhidYMxotY95n5zegLmX0/d2iF7uwSrqme3sMHd03jmsnqYfpqf4M+nJtvHpBfXXZORPXt3wByPYKkcdSIg2UhqAhj8D4Ufj+yHbbgnNsFQQuHE8mbvRFCI3S2LfzVFxLEryKaGBJ+0ndYewdaO6XDM6wFJdDTXvcHLKtLP39VWTGca9NeIa9Or1aEzCS3/fP472fYvkDa/WL5JTDoKpF56x3yJQIGANafesR5vEOkfX1jn8zh/4PfufaaH8Nx/07W92ZfJa6goAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment>find the next slot in this location</comment>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="CARD-ACT: On Reveal: Add the top card of your deck to this location.">fbad804e93794a10cd4e7d532bba1017</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-27 10:25:13</sys_created_on>
-        <sys_id>00bd804e93794a10cd4e7d532bba10d8</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_created_on>2025-03-02 04:39:35</sys_created_on>
+        <sys_id>4ad11a59c3406210ff1f33bc0501315c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-27 10:25:13</sys_updated_on>
-        <value>x_168987_flow_de_0_card_instance</value>
-        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
-    </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="id=c4bd804e93794a10cd4e7d532bba10d6"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>record</field>
-        <id>c4bd804e93794a10cd4e7d532bba10d6</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-27 10:25:13</sys_created_on>
-        <sys_id>8cbd804e93794a10cd4e7d532bba10d7</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-27 10:25:13</sys_updated_on>
-        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
-        <value>{{60f86c52-9e9d-4346-adcb-71efebe393ff.Record}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>table_name</field>
-        <id>c4bd804e93794a10cd4e7d532bba10d6</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-27 10:25:13</sys_created_on>
-        <sys_id>08bd804e93794a10cd4e7d532bba10d7</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-27 10:25:13</sys_updated_on>
-        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>values</field>
-        <id>c4bd804e93794a10cd4e7d532bba10d6</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-27 10:25:13</sys_created_on>
-        <sys_id>c8bd804e93794a10cd4e7d532bba10d7</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-27 10:25:13</sys_updated_on>
-        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
-        <value>current_location={{acb33211-8827-45e4-b980-f168d49f5ac1.record}}^status=played_to_location^turn_played={{subflow.game_instance.current_turn}}</value>
-    </sys_element_mapping>
-    <sys_hub_input_scripts action="delete_multiple" query="instance=c4bd804e93794a10cd4e7d532bba10d6"/>
-    <sys_hub_alias_mapping action="delete_multiple" query="source_id=c4bd804e93794a10cd4e7d532bba10d6"/>
-    <sys_hub_action_instance action="INSERT_OR_UPDATE">
-        <action_inputs/>
-        <action_inputs/>
+        <sys_updated_on>2025-03-02 04:39:35</sys_updated_on>
+        <ui_id>6333f281-c278-4cd8-ad89-da96c9170d2a</ui_id>
+        <values>H4sIAAAAAAAA/+VY0W7iOBT9lSjPlE0IENK3VbtdVepMVwM70mp2xnJsp1hrHMZ22lLEv+917AADtAUN1VLto+1r+9zrc46dfJmHmBheymupDZaEDWf6mobnYZYVJIoiliVp1sVxRGiXpbSXdPIcWmkatkJu42gWZUWW9QZpFCVJFPX7CcFxnid9kkc57kKcxBMGkQbngkHzHovKth9R3B9kgxQVonxAlKEIiZJgCwZpURoIpVxPBZ599jN+h4WCGx8TDF0MGXNBFZPh+ZevrXCKFQQZpsLz+cbQvnAFzpmA0JHHuwHfzKbLJqrHXN/N+rTgoxsoFbVQolbIHg2TlAGGAgvNWuEES4pNqWbLHsUwvZVi1THm0sCKoQ1+1PwJ9h1ENq5gkBVhbmzZRL5crru4xAYPjaqIqZQPJeOSE6ZdPSgrcCXMxXqfC7id2gK7KS5tN7sU1UR+dOUIlws0pwM9lQYQbGoTtch9GsVwXD58alBecVnXxA/aIxfLFjZG8bwyFs88ZIJNYCE0wdMpl3doqsp7Xk8GLJP2nYBG27NH8zvZdlRuQ11x+wr6L+vuz1hxm8UHWAYmAyAugCHIHaEuK1WX8h4RUel6QGGp3VrhohXqmb4QWOtV5lBy9L2yuF0dfMbIFc1OIYpPza+wxD3zyS1aPy213ovczVZcJaWk3G6l1/S2FBf3+/9dwTp0PtdVbovYJljR5WCbVErZnJppi8W3HwKuh799+GP01zfLOKY213K9SDOt67nbYv6v4RzoG6/XvvGNi/Xi7zoQ7yBbfTe7FvAOEh/NQbpAtXfkIbD56VnI4abgSvBWzhDTF9lJV0TUpTLIHcKaNdjrFslqktf2uCHUHwcPk80ewBrZ3FqiB/nsOaxeNQVngu66d6/swMa92/l/3rsnqRkARJE7PS4Fl/UjCoCenJh6L3I2jzcIWvNyTUq2D2uyrSMcmDJ4OlhCe8BpJDSEvYORw7MDYnPv1FzbvHOaTq+c5GjKSTrHUc58meaykDtq3jy4LQ2a+CcbjzfjgbtrE+LFLmUetGd86J6dxbbyk4Okv042N3L5DOeO/DJ/Rsqtt/SOMUz1+yEnfPTA6R0zq92bKFqaByz+2TXuGYeag6rTO6VXfvziF2q+9srnBZrAkfMpfMUoRoBVGmHFUFFWkiL//bJioKVAwZU2PnjboT4xEJ4MSlB0YMYsqKODZfSBV//reTRncF0ETSJ+Nx1AIkGdSLBM5LC0D3G77hFf18d2uyvMRX0a8Gk6XTtOplSpnnG8Vw7yBUbsaYd7goqPCurn/XKXBHb65itY38V/jhPyNMJw3u3gfprEcRTFEU2jQZrGg35e9HHaLVbiRkhLAv4NkArgGOBCDacagkTbxuVM/FCH2gNVw93LUtpfCp3UBBYWECNoYL0O3DtRXpaCYblhRSO4mX658vg90XsnZ0fv4ndhxUeblXZdO2v9Vi+Viv8p+feK1QIZsKgziCk5G6RxetYtaP8so7h3hrO8lyaUkW5xzMfH138Bh5Vb088XAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
         <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
         <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
         <attributes/>
         <comment>Add the next card to the location</comment>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
         <display_text/>
         <flow display_value="CARD-ACT: On Reveal: Add the top card of your deck to this location.">fbad804e93794a10cd4e7d532bba1017</flow>
         <generation_source/>
         <order>3</order>
         <parent_ui_id/>
-        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-27 10:25:13</sys_created_on>
-        <sys_id>c8bd804e93794a10cd4e7d532bba10b7</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_created_on>2025-03-02 04:39:35</sys_created_on>
+        <sys_id>4ad11a59c3406210ff1f33bc0501315d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
         <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-27 10:30:18</sys_updated_on>
+        <sys_updated_on>2025-03-02 04:39:35</sys_updated_on>
         <ui_id>acb33211-8827-45e4-b980-f168d49f5ac1</ui_id>
-    </sys_hub_action_instance>
-    <sys_variable_value action="delete_multiple" query="document_key=c8bd804e93794a10cd4e7d532bba10b7"/>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_action_instance</document>
-        <document_key>c8bd804e93794a10cd4e7d532bba10b7</document_key>
-        <order>50</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
+        <values>H4sIAAAAAAAA/+VVTU/bQBD9K5HPSWR7ncTOrSKiQqIgkYoLUGu8O4aV1h/1rgNplP/eWXsTIkAIVDigHudz3zzP81xtPOBGVuVJqQ2UHJdrfSK8uceyUESRjwmbJREEPhcRzsSEhVlGFgTe0JM2L0LhB0kw5SxgLPT9MI6CbMqyIBQMEG1eCQVSZoO8agTZK1CtdWw2U8ZYHsbBiIezeBRxEY9AxMlIQDLlSTDzRQjji65uu6VKIXWtYH3pGpCH30klGiy9+dXN0KuhobcMNt588yT0VrAKMlSUerFD+xS9WdfWFhVvCyxNKnfOU1e5cJHByYIiVGThBP7QwweDpUACkoPSOPQKKAWYqll7c9O05GgQxHmp1vuMO1maftACHrT8Qy9Hvs3LkSbjjoS9mTqCene+AANL6sxN2+z5qiRH3XMiMIdWmaNDX59wXtud6EsMZGpXXam2KM96Rrx9g4Pv0WoCgbWd0yLvx8qXd9X9xQ7ksSw7StyIquKg9hYY08isNRbOxkOFHccF1LUsb9O6qVayKyYoxfhWkTHOVXVPb2p5W477XR4TqzA+Jv+ic19CI+0QP6gNFW+Hnl7rIwVaP45CHKa/W4ukH8yNkHYsdBSk3SbYYt7I2nyjp1bogG+H/6qjbPLaavLkcRMPwDxq6SENpnESz1LHRuqnlliLKNWqMs/F850aDE5dzmDZ57xPTm/AvJPTz26JXp7BKeqZ7/SwdnDWB5yeJh+mp/gr6cmN8eUF9Wky8sNX//AHK9gpRx9IiEMjUunevW59nwm6UH4eT/kkHCWYiFHEoildKJ6NZgGxnyFLWJ7vL9Qvq7R0JbUkbvoOdg+fa+8zn3qfhN/A107CxxKV0C8QuNMvFjSjwbQn9ImGXXBw6YL7u/iBh9H/SlL+b07jzV88FDWAZAoAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
+        <action_type_parent display_value="Log">0e0ae8c2531003003bf1d9109ec587c8</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>5bc1bcc6531003003bf1d9109ec587d4</compiled_snapshot>
+        <display_text/>
+        <flow display_value="CARD-ACT: On Reveal: Add the top card of your deck to this location.">fbad804e93794a10cd4e7d532bba1017</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-27 10:25:13</sys_created_on>
-        <sys_id>04bd804e93794a10cd4e7d532bba10b9</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_created_on>2025-03-02 04:39:35</sys_created_on>
+        <sys_id>ced11a59c3406210ff1f33bc0501315e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-27 10:25:13</sys_updated_on>
-        <value>x_168987_flow_de_0_location_slot</value>
-        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
-    </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="id=c8bd804e93794a10cd4e7d532bba10b7"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>record</field>
-        <id>c8bd804e93794a10cd4e7d532bba10b7</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-27 10:25:13</sys_created_on>
-        <sys_id>80bd804e93794a10cd4e7d532bba10b9</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-27 10:25:13</sys_updated_on>
-        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
-        <value>{{6333f281-c278-4cd8-ad89-da96c9170d2a.Record}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>table_name</field>
-        <id>c8bd804e93794a10cd4e7d532bba10b7</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-27 10:25:13</sys_created_on>
-        <sys_id>0cbd804e93794a10cd4e7d532bba10b8</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-27 10:25:13</sys_updated_on>
-        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>values</field>
-        <id>c8bd804e93794a10cd4e7d532bba10b7</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-27 10:25:13</sys_created_on>
-        <sys_id>ccbd804e93794a10cd4e7d532bba10b8</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-27 10:25:13</sys_updated_on>
-        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
-        <value>card_instance={{60f86c52-9e9d-4346-adcb-71efebe393ff.Record}}^slot_visible=true</value>
-    </sys_element_mapping>
-    <sys_hub_input_scripts action="delete_multiple" query="instance=c8bd804e93794a10cd4e7d532bba10b7"/>
-    <sys_hub_alias_mapping action="delete_multiple" query="source_id=c8bd804e93794a10cd4e7d532bba10b7"/>
-    <sys_hub_flow_logic action="delete_multiple" query="flow=fbad804e93794a10cd4e7d532bba1017"/>
-    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=fbad804e93794a10cd4e7d532bba1017"/>
+        <sys_updated_on>2025-03-02 04:39:35</sys_updated_on>
+        <ui_id>aec62c37-f906-4f3a-a6c0-21275903b0e5</ui_id>
+        <values>H4sIAAAAAAAA/+VU32/aMBD+V5CfASWElMHbRFepUn9MY+oeqgpdnAtYcuzMdmgZ6v++MzGQtWgCrW+T8nJfPvvuO393jxsG3AmtrpV1oDjO1vY6ZxNWjIpR9Gl4MU5G4yHEEc+HOMrTZJBlFF0UrMuE56UZjzPOL9IkjqKEvqyI83EcjZGnn0b5iHgKSiSm1Iu5xBVKglYga48JVWgKc2ErCeuHgF43KF8KmRtUbPL41GUVGLrHoWGTzZtfpxYiIaPsE3YTqjhSmFtXHuJLLTiG+CYcm+5AbXJfRtRl+OJQ5Uj5C5AWu6wElYPTZr1HDEJ+r+QBWArl6DbmyS9W/KJ8w8jzCiRFHJt/+3AemtPAxSU4mDlTc1ebQG2KtdSLzV5ir9e50wo7vV6r263SX7sHbmj3mzcJzLjN/AFGCbVokZ8JOZAHbfIXY7RpUTHEgZu80svlWEAt3fR8BfHJCgbnKEjOUDD0Cprm31d+hogSe89AJndPo2VdqrvGZ2yv9+GN/Rv08ugU1JYsgJW3mfdNMFExW+rnbzuPXAm1rSj8lJqD3EfgnBFZ7Xx/NwwllnTRvISqokbMK6NXYnuYii37C0lBv5D6mZJasVD9Zj30ydXQvyL8cgs/gBFe5i1dQ4dfu8yu7VSCtQexZOH5z9pX0kgPGubbRm2PcCMq95kSrDCU69v/bwtpkPxtD2D659yXaC0ssPXIUzB5Z1Znvged71jSkzjsfJXAcaml79S7fXXKkfOW2Qkidia93Ss4KissNEse2Nq+vdBmO3A3Ux+20AZp+jEb7diOeD91Zw3d/zdTT78B6NX7MuYHAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=fbad804e93794a10cd4e7d532bba1017"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=fbad804e93794a10cd4e7d532bba1017"/>
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=fbad804e93794a10cd4e7d532bba1017"/>
     <sys_hub_flow_variable action="delete_multiple" query="model=fbad804e93794a10cd4e7d532bba1017"/>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_fbad804e93794a10cd4e7d532bba1017^sys_idNOT IN40bd804e93794a10cd4e7d532bba107d,7bad804e93794a10cd4e7d532bba1035,84bd804e93794a10cd4e7d532bba1040"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>game_instance</element>
         <help/>
@@ -1711,11 +1186,11 @@
         <sys_created_on>2024-04-27 10:25:13</sys_created_on>
         <sys_id>40bd804e93794a10cd4e7d532bba107d</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Game Instance</sys_name>
+        <sys_name/>
         <sys_package display_value="SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_fbad804e93794a10cd4e7d532bba1017_game_instance_en</sys_update_name>
+        <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-04-27 10:25:13</sys_updated_on>
         <url/>
@@ -1734,11 +1209,11 @@
         <sys_created_on>2024-04-27 10:25:12</sys_created_on>
         <sys_id>7bad804e93794a10cd4e7d532bba1035</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Player Session</sys_name>
+        <sys_name/>
         <sys_package display_value="SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_fbad804e93794a10cd4e7d532bba1017_player_session_en</sys_update_name>
+        <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-04-27 10:25:12</sys_updated_on>
         <url/>
@@ -1757,18 +1232,17 @@
         <sys_created_on>2024-04-27 10:25:13</sys_created_on>
         <sys_id>84bd804e93794a10cd4e7d532bba1040</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Card Instance</sys_name>
+        <sys_name/>
         <sys_package display_value="SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_fbad804e93794a10cd4e7d532bba1017_card_instance_en</sys_update_name>
+        <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-04-27 10:25:13</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_fbad804e93794a10cd4e7d532bba1017"/>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_fbad804e93794a10cd4e7d532bba1017^sys_idNOT IN00bd804e93794a10cd4e7d532bba108e"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>status</element>
         <help/>
@@ -1782,11 +1256,11 @@
         <sys_created_on>2024-04-27 10:25:13</sys_created_on>
         <sys_id>00bd804e93794a10cd4e7d532bba108e</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Status</sys_name>
+        <sys_name/>
         <sys_package display_value="SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_fbad804e93794a10cd4e7d532bba1017_status_en</sys_update_name>
+        <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-04-27 10:25:13</sys_updated_on>
         <url/>
@@ -1843,18 +1317,18 @@
     <sys_flow_trigger_plan action="delete_multiple" query="plan_id=abf7084693794a10cd4e7d532bba1025"/>
     <sys_flow_subflow_plan action="delete_multiple" query="plan_id=abf7084693794a10cd4e7d532bba1025^sys_idNOT IN10bd804e93794a10cd4e7d532bba10f9"/>
     <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
-        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"10bd804e93794a10cd4e7d532bba10f9","name":"plan","plan_signature":null}}</plan>
+        <plan>com.snc.process_flow.engine.ProcessPlan@3921336f</plan>
         <plan_id display_value="CARD-ACT: On Reveal: Add the top card of your deck to this location.">abf7084693794a10cd4e7d532bba1025</plan_id>
-        <snapshot>ea857c48c33e5610ff1f33bc05013199</snapshot>
+        <snapshot>fbad804e93794a10cd4e7d532bba1017</snapshot>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-04-27 10:25:14</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>10bd804e93794a10cd4e7d532bba10f9</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-27 10:30:19</sys_updated_on>
+        <sys_updated_on>2025-03-02 04:39:36</sys_updated_on>
     </sys_flow_subflow_plan>
 </record_update>

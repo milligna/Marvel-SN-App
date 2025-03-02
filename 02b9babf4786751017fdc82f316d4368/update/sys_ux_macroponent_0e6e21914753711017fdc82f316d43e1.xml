@@ -11,7 +11,7 @@
             "type": "MACROPONENT"
         },
         "elementId": "column_layout_1",
-        "elementLabel": "Column layout 1",
+        "elementLabel": "Header box",
         "eventMappings": [],
         "isHidden": {
             "type": "JSON_LITERAL",
@@ -25,7 +25,7 @@
                         "type": "MACROPONENT"
                     },
                     "elementId": "__clqhgykgwaaaaddyddbhhoqzjoayob__column_1",
-                    "elementLabel": "__clqhgykgwaaaaddyddbhhoqzjoayob__Column 1",
+                    "elementLabel": "header column",
                     "eventMappings": [],
                     "isHidden": {
                         "type": "JSON_LITERAL",
@@ -35,11 +35,11 @@
                         "composition": [
                             {
                                 "definition": {
-                                    "id": "1f6e0643eca7a637e36bd7833549ec9e",
+                                    "id": "4335ba6dca80378f7ba7a67cd6667bec",
                                     "type": "MACROPONENT"
                                 },
-                                "elementId": "heading_2",
-                                "elementLabel": "Heading 2",
+                                "elementId": "welcome_message",
+                                "elementLabel": "Welcome Message",
                                 "eventMappings": [],
                                 "isHidden": {
                                     "type": "JSON_LITERAL",
@@ -47,17 +47,25 @@
                                 },
                                 "preset": null,
                                 "propertyValues": {
-                                    "hasNoMargin": {
-                                        "type": "JSON_LITERAL",
-                                        "value": false
+                                    "configAria": {
+                                        "container": {},
+                                        "type": "MAP_CONTAINER"
                                     },
-                                    "label": {
+                                    "css": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "* { align-self: center;\n    color: #dee2fb;\n    font-style: italic;\n    font-variant: small-caps;\n    text-shadow: 1px 1px 2px #9097b7, 0 0 1em blue, 0 0 0.2em blue;\n    display: inline-block;\n    white-space: nowrap;\n    font-size: 16px; /* Start with default font size */\n    line-height: 1;\n    text-align: center;\n    transform: scale(1);\n    width: 100%;\n    height: auto;\n    text-overflow: ellipsis; /* For any overflow content */\n    }"
+                                    },
+                                    "tag": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "h1"
+                                    },
+                                    "text": {
                                         "transform": {
                                             "operands": {
                                                 "container": [
                                                     {
                                                         "type": "JSON_LITERAL",
-                                                        "value": "Welcome, "
+                                                        "value": "Welcome "
                                                     },
                                                     {
                                                         "binding": {
@@ -71,7 +79,7 @@
                                                     },
                                                     {
                                                         "type": "JSON_LITERAL",
-                                                        "value": "!  You can manage your decks below:"
+                                                        "value": "! You can manage your decks below:"
                                                     }
                                                 ],
                                                 "type": "LIST_CONTAINER"
@@ -79,18 +87,199 @@
                                             "operator": "CONCAT"
                                         },
                                         "type": "CLIENT_TRANSFORM"
+                                    }
+                                },
+                                "slot": null,
+                                "styles": null
+                            },
+                            {
+                                "definition": {
+                                    "id": "4335ba6dca80378f7ba7a67cd6667bec",
+                                    "type": "MACROPONENT"
+                                },
+                                "elementId": "debug_event_id",
+                                "elementLabel": "Debug Event ID",
+                                "eventMappings": [],
+                                "isHidden": {
+                                    "type": "JSON_LITERAL",
+                                    "value": true
+                                },
+                                "preset": null,
+                                "propertyValues": {
+                                    "configAria": {
+                                        "container": {},
+                                        "type": "MAP_CONTAINER"
                                     },
-                                    "level": {
+                                    "css": {
                                         "type": "JSON_LITERAL",
-                                        "value": "1"
+                                        "value": "* { align-self: center;\n    color: #dee2fb;\n    font-style: italic;\n    font-variant: small-caps;\n    text-shadow: 1px 1px 2px #9097b7, 0 0 1em blue, 0 0 0.2em blue;\n    display: inline-block;\n    white-space: nowrap;\n    font-size: 16px; /* Start with default font size */\n    line-height: 1;\n    text-align: center;\n    transform: scale(1);\n    width: 100%;\n    height: auto;\n    text-overflow: ellipsis; /* For any overflow content */\n    }"
                                     },
-                                    "variant": {
+                                    "tag": {
                                         "type": "JSON_LITERAL",
-                                        "value": "header-primary"
+                                        "value": "h1"
                                     },
-                                    "wontWrap": {
+                                    "text": {
+                                        "binding": {
+                                            "address": [
+                                                "Matchmaking Event"
+                                            ]
+                                        },
+                                        "type": "STATE_BINDING"
+                                    }
+                                },
+                                "slot": null,
+                                "styles": null
+                            },
+                            {
+                                "definition": {
+                                    "id": "4335ba6dca80378f7ba7a67cd6667bec",
+                                    "type": "MACROPONENT"
+                                },
+                                "elementId": "stylized_text_4",
+                                "elementLabel": "Debug Queue",
+                                "eventMappings": [],
+                                "isHidden": {
+                                    "type": "JSON_LITERAL",
+                                    "value": true
+                                },
+                                "preset": null,
+                                "propertyValues": {
+                                    "configAria": {
+                                        "container": {},
+                                        "type": "MAP_CONTAINER"
+                                    },
+                                    "css": {
                                         "type": "JSON_LITERAL",
-                                        "value": false
+                                        "value": "* { align-self: center;\n    color: #dee2fb;\n    font-style: italic;\n    font-variant: small-caps;\n    text-shadow: 1px 1px 2px #9097b7, 0 0 1em blue, 0 0 0.2em blue;\n    display: inline-block;\n    white-space: nowrap;\n    font-size: 16px; /* Start with default font size */\n    line-height: 1;\n    text-align: center;\n    transform: scale(1);\n    width: 100%;\n    height: auto;\n    text-overflow: ellipsis; /* For any overflow content */\n    }"
+                                    },
+                                    "tag": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "h1"
+                                    },
+                                    "text": {
+                                        "binding": {
+                                            "address": [
+                                                "Matchmaking Queue"
+                                            ]
+                                        },
+                                        "type": "STATE_BINDING"
+                                    }
+                                },
+                                "slot": null,
+                                "styles": null
+                            },
+                            {
+                                "definition": {
+                                    "id": "4335ba6dca80378f7ba7a67cd6667bec",
+                                    "type": "MACROPONENT"
+                                },
+                                "elementId": "stylized_text_5",
+                                "elementLabel": "Debug Instance",
+                                "eventMappings": [],
+                                "isHidden": {
+                                    "type": "JSON_LITERAL",
+                                    "value": true
+                                },
+                                "preset": null,
+                                "propertyValues": {
+                                    "configAria": {
+                                        "container": {},
+                                        "type": "MAP_CONTAINER"
+                                    },
+                                    "css": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "* { align-self: center;\n    color: #dee2fb;\n    font-style: italic;\n    font-variant: small-caps;\n    text-shadow: 1px 1px 2px #9097b7, 0 0 1em blue, 0 0 0.2em blue;\n    display: inline-block;\n    white-space: nowrap;\n    font-size: 16px; /* Start with default font size */\n    line-height: 1;\n    text-align: center;\n    transform: scale(1);\n    width: 100%;\n    height: auto;\n    text-overflow: ellipsis; /* For any overflow content */\n    }"
+                                    },
+                                    "tag": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "h1"
+                                    },
+                                    "text": {
+                                        "binding": {
+                                            "address": [
+                                                "Game Instance"
+                                            ]
+                                        },
+                                        "type": "STATE_BINDING"
+                                    }
+                                },
+                                "slot": null,
+                                "styles": null
+                            },
+                            {
+                                "definition": {
+                                    "id": "4335ba6dca80378f7ba7a67cd6667bec",
+                                    "type": "MACROPONENT"
+                                },
+                                "elementId": "stylized_text_6",
+                                "elementLabel": "My Session debug",
+                                "eventMappings": [],
+                                "isHidden": {
+                                    "type": "JSON_LITERAL",
+                                    "value": true
+                                },
+                                "preset": null,
+                                "propertyValues": {
+                                    "configAria": {
+                                        "container": {},
+                                        "type": "MAP_CONTAINER"
+                                    },
+                                    "css": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "* { align-self: center;\n    color: #dee2fb;\n    font-style: italic;\n    font-variant: small-caps;\n    text-shadow: 1px 1px 2px #9097b7, 0 0 1em blue, 0 0 0.2em blue;\n    display: inline-block;\n    white-space: nowrap;\n    font-size: 16px; /* Start with default font size */\n    line-height: 1;\n    text-align: center;\n    transform: scale(1);\n    width: 100%;\n    height: auto;\n    text-overflow: ellipsis; /* For any overflow content */\n    }"
+                                    },
+                                    "tag": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "h1"
+                                    },
+                                    "text": {
+                                        "binding": {
+                                            "address": [
+                                                "MyPlayerSesison"
+                                            ]
+                                        },
+                                        "type": "STATE_BINDING"
+                                    }
+                                },
+                                "slot": null,
+                                "styles": null
+                            },
+                            {
+                                "definition": {
+                                    "id": "4335ba6dca80378f7ba7a67cd6667bec",
+                                    "type": "MACROPONENT"
+                                },
+                                "elementId": "startstate",
+                                "elementLabel": "Game Start",
+                                "eventMappings": [],
+                                "isHidden": {
+                                    "type": "JSON_LITERAL",
+                                    "value": true
+                                },
+                                "preset": null,
+                                "propertyValues": {
+                                    "configAria": {
+                                        "container": {},
+                                        "type": "MAP_CONTAINER"
+                                    },
+                                    "css": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "* { align-self: center;\n    color: #dee2fb;\n    font-style: italic;\n    font-variant: small-caps;\n    text-shadow: 1px 1px 2px #9097b7, 0 0 1em blue, 0 0 0.2em blue;\n    display: inline-block;\n    white-space: nowrap;\n    font-size: 16px; /* Start with default font size */\n    line-height: 1;\n    text-align: center;\n    transform: scale(1);\n    width: 100%;\n    height: auto;\n    text-overflow: ellipsis; /* For any overflow content */\n    }"
+                                    },
+                                    "tag": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "h1"
+                                    },
+                                    "text": {
+                                        "binding": {
+                                            "address": [
+                                                "look_up_event",
+                                                "result",
+                                                "ready_to_start_game",
+                                                "value"
+                                            ]
+                                        },
+                                        "type": "DATA_OUTPUT_BINDING"
                                     }
                                 },
                                 "slot": null,
@@ -102,7 +291,27 @@
                                 "children": null,
                                 "items": [
                                     {
-                                        "element_id": "heading_2",
+                                        "element_id": "welcome_message",
+                                        "styles": {}
+                                    },
+                                    {
+                                        "element_id": "debug_event_id",
+                                        "styles": {}
+                                    },
+                                    {
+                                        "element_id": "stylized_text_4",
+                                        "styles": {}
+                                    },
+                                    {
+                                        "element_id": "stylized_text_5",
+                                        "styles": {}
+                                    },
+                                    {
+                                        "element_id": "stylized_text_6",
+                                        "styles": {}
+                                    },
+                                    {
+                                        "element_id": "startstate",
                                         "styles": {}
                                     }
                                 ],
@@ -174,7 +383,11 @@
                     "root": null,
                     "rules": null,
                     "styles": {
+                        "background": "rgb(var(--now-color--neutral-19))",
                         "box-sizing": "border-box",
+                        "display": "grid",
+                        "grid-auto-columns": "1fr",
+                        "grid-auto-rows": "1fr",
                         "grid-template-columns": "100fr",
                         "grid-template-rows": "1fr",
                         "width": "100%"
@@ -680,7 +893,7 @@
                                                 "operation": {
                                                     "dataBrokerId": "beda4252770300108d070d74c810618f",
                                                     "operationName": "EXECUTE",
-                                                    "parentResourceId": "create_record_1",
+                                                    "parentResourceId": "create_deck_record",
                                                     "payload": {
                                                         "container": {
                                                             "table": {
@@ -980,7 +1193,7 @@
                         "type": "MACROPONENT"
                     },
                     "elementId": "__tgYosPggaaCUzFeeddFMHQCDtzjjPT__column_1",
-                    "elementLabel": "Column 1",
+                    "elementLabel": "button container",
                     "eventMappings": [],
                     "isHidden": {
                         "type": "JSON_LITERAL",
@@ -1162,7 +1375,11 @@
                     "root": null,
                     "rules": null,
                     "styles": {
+                        "background": "rgb(var(--now-color--neutral-19))",
                         "box-sizing": "border-box",
+                        "display": "grid",
+                        "grid-auto-columns": "1fr",
+                        "grid-auto-rows": "1fr",
                         "grid-template-columns": "100fr",
                         "grid-template-rows": "1fr",
                         "width": "auto"
@@ -1262,7 +1479,7 @@
                         "type": "MACROPONENT"
                     },
                     "elementId": "__iCoghheehhzEAkFLjjfMPbrRNXaaTeedd__column_1",
-                    "elementLabel": "Column 1",
+                    "elementLabel": "deck column",
                     "eventMappings": [],
                     "isHidden": {
                         "type": "JSON_LITERAL",
@@ -1276,7 +1493,7 @@
                                     "type": "REPEATER"
                                 },
                                 "elementId": "repeater_1",
-                                "elementLabel": "Repeater 1",
+                                "elementLabel": "Deck repeater",
                                 "eventMappings": [],
                                 "isHidden": {
                                     "type": "JSON_LITERAL",
@@ -1290,7 +1507,7 @@
                                                 "type": "MACROPONENT"
                                             },
                                             "elementId": "card_base_container_1",
-                                            "elementLabel": "Card Base Container 1",
+                                            "elementLabel": "deck repeater container",
                                             "eventMappings": [
                                                 {
                                                     "eventMappingId": "wSkggUfxbCUggggeeddOwLILidiiXvq",
@@ -1389,7 +1606,7 @@
                                                             "type": "MACROPONENT"
                                                         },
                                                         "elementId": "stylized_text_2",
-                                                        "elementLabel": "Stylized text 2",
+                                                        "elementLabel": "deck name",
                                                         "eventMappings": [],
                                                         "isHidden": {
                                                             "type": "JSON_LITERAL",
@@ -1403,7 +1620,7 @@
                                                             },
                                                             "css": {
                                                                 "type": "JSON_LITERAL",
-                                                                "value": "* { }"
+                                                                "value": "* { align-self: center;\n    color: #dee2fb;\n    font-style: italic;\n    font-variant: small-caps;\n    text-shadow: 1px 1px 2px #9097b7, 0 0 1em blue, 0 0 0.2em blue;\n    display: inline-block;\n    white-space: nowrap;\n    font-size: 16px; /* Start with default font size */\n    line-height: 1;\n    text-align: center;\n    transform: scale(1);\n    width: 100%;\n    height: auto;\n    text-overflow: ellipsis; /* For any overflow content */\n    }"
                                                             },
                                                             "tag": {
                                                                 "type": "JSON_LITERAL",
@@ -1422,6 +1639,177 @@
                                                         },
                                                         "slot": null,
                                                         "styles": null
+                                                    },
+                                                    {
+                                                        "definition": {
+                                                            "id": "d37ce8abca89d02905fed903c8e34d8e",
+                                                            "type": "MACROPONENT"
+                                                        },
+                                                        "elementId": "start_game",
+                                                        "elementLabel": "Start Game Button",
+                                                        "eventMappings": [
+                                                            {
+                                                                "eventMappingId": "xCbxYvaaDAERQjjwALjjjaaCigIR",
+                                                                "isConfiguration": false,
+                                                                "offRowStorageId": null,
+                                                                "sourceEventApiName": "sn_button.NOW_BUTTON#CLICKED",
+                                                                "sourceEventCorrelationId": null,
+                                                                "sourceEventDefinition": {
+                                                                    "apiName": "sn_button.NOW_BUTTON#CLICKED",
+                                                                    "id": null,
+                                                                    "type": "UXEVENT"
+                                                                },
+                                                                "sourceEventSysId": null,
+                                                                "targets": [
+                                                                    {
+                                                                        "broker": null,
+                                                                        "clientScript": null,
+                                                                        "conditional": null,
+                                                                        "declarativeAction": null,
+                                                                        "event": null,
+                                                                        "operation": {
+                                                                            "dataBrokerId": "beda4252770300108d070d74c810618f",
+                                                                            "operationName": "EXECUTE",
+                                                                            "parentResourceId": "create_event",
+                                                                            "payload": {
+                                                                                "container": {
+                                                                                    "table": {
+                                                                                        "type": "JSON_LITERAL",
+                                                                                        "value": "x_168987_flow_de_0_matchmaking_event"
+                                                                                    },
+                                                                                    "templateFields": {
+                                                                                        "transform": {
+                                                                                            "operands": {
+                                                                                                "container": [
+                                                                                                    {
+                                                                                                        "type": "JSON_LITERAL",
+                                                                                                        "value": "player="
+                                                                                                    },
+                                                                                                    {
+                                                                                                        "binding": {
+                                                                                                            "address": [
+                                                                                                                "userid"
+                                                                                                            ],
+                                                                                                            "category": "props"
+                                                                                                        },
+                                                                                                        "type": "CONTEXT_BINDING"
+                                                                                                    },
+                                                                                                    {
+                                                                                                        "type": "JSON_LITERAL",
+                                                                                                        "value": "^deck_to_play="
+                                                                                                    },
+                                                                                                    {
+                                                                                                        "binding": {
+                                                                                                            "address": [
+                                                                                                                "_row_data",
+                                                                                                                "uniqueValue"
+                                                                                                            ],
+                                                                                                            "category": "value"
+                                                                                                        },
+                                                                                                        "type": "REPEATER_ITEM_BINDING"
+                                                                                                    },
+                                                                                                    {
+                                                                                                        "type": "JSON_LITERAL",
+                                                                                                        "value": "^event_state=in progress"
+                                                                                                    }
+                                                                                                ],
+                                                                                                "type": "LIST_CONTAINER"
+                                                                                            },
+                                                                                            "operator": "CONCAT"
+                                                                                        },
+                                                                                        "type": "CLIENT_TRANSFORM"
+                                                                                    },
+                                                                                    "useSetDisplayValue": {
+                                                                                        "type": "JSON_LITERAL",
+                                                                                        "value": null
+                                                                                    }
+                                                                                },
+                                                                                "type": "MAP_CONTAINER"
+                                                                            }
+                                                                        },
+                                                                        "targetId": "ZneeddhhaavaaoCkLteeddBUMCKeeddXhbOn",
+                                                                        "type": "DATABROKER_OP"
+                                                                    },
+                                                                    {
+                                                                        "broker": null,
+                                                                        "clientScript": null,
+                                                                        "conditional": null,
+                                                                        "declarativeAction": null,
+                                                                        "event": {
+                                                                            "apiName": "x_168987_flow_de_0.MODAL_SELECTED_RELAY_0e6e21914753711017fdc82f316d43e1",
+                                                                            "payload": {
+                                                                                "type": "JSON_LITERAL",
+                                                                                "value": {
+                                                                                    "bare": false,
+                                                                                    "displayOptions": null,
+                                                                                    "headerLabel": null,
+                                                                                    "modalId": "[component-id$='custom_1']",
+                                                                                    "preserveState": false,
+                                                                                    "showModal": true,
+                                                                                    "viewportElementId": null,
+                                                                                    "viewportFields": null,
+                                                                                    "viewportParams": null,
+                                                                                    "viewportRoute": null
+                                                                                }
+                                                                            },
+                                                                            "sysId": "d07e61914753711017fdc82f316d4327"
+                                                                        },
+                                                                        "operation": null,
+                                                                        "targetId": "LOEOiPoffCknIjjWeeBANzVSFOd",
+                                                                        "type": "EVENT"
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ],
+                                                        "isHidden": {
+                                                            "type": "JSON_LITERAL",
+                                                            "value": null
+                                                        },
+                                                        "preset": null,
+                                                        "propertyValues": {
+                                                            "configAria": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": null
+                                                            },
+                                                            "disabled": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": false
+                                                            },
+                                                            "icon": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": "circle-play-fill"
+                                                            },
+                                                            "label": {
+                                                                "type": "TRANSLATION_LITERAL",
+                                                                "value": {
+                                                                    "code": null,
+                                                                    "comment": "",
+                                                                    "message": "Start Game with this Deck"
+                                                                }
+                                                            },
+                                                            "landmark": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": null
+                                                            },
+                                                            "size": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": "lg"
+                                                            },
+                                                            "tooltipContent": {
+                                                                "type": "TRANSLATION_LITERAL",
+                                                                "value": {
+                                                                    "code": null,
+                                                                    "comment": "",
+                                                                    "message": "Enter a label"
+                                                                }
+                                                            },
+                                                            "variant": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": "secondary-positive"
+                                                            }
+                                                        },
+                                                        "slot": null,
+                                                        "styles": null
                                                     }
                                                 ],
                                                 "layout": {
@@ -1431,13 +1819,19 @@
                                                             {
                                                                 "element_id": "stylized_text_2",
                                                                 "styles": {}
+                                                            },
+                                                            {
+                                                                "element_id": "start_game",
+                                                                "styles": {}
                                                             }
                                                         ],
                                                         "root": null,
                                                         "rules": null,
                                                         "styles": {
+                                                            "align-items": "center",
                                                             "display": "flex",
-                                                            "flex-direction": "column"
+                                                            "flex-direction": "row",
+                                                            "justify-content": "space-around"
                                                         },
                                                         "templateId": "5832fd4d53c31010e6bcddeeff7b12db",
                                                         "type": "flex"
@@ -1477,7 +1871,7 @@
                                                 }
                                             },
                                             "slot": null,
-                                            "styles": null
+                                            "styles": {}
                                         }
                                     ]
                                 },
@@ -1566,7 +1960,11 @@
                     "root": null,
                     "rules": null,
                     "styles": {
+                        "background": "rgb(var(--now-color--neutral-19))",
                         "box-sizing": "border-box",
+                        "display": "grid",
+                        "grid-auto-columns": "1fr",
+                        "grid-auto-rows": "1fr",
                         "grid-template-columns": "100fr",
                         "grid-template-rows": "1fr",
                         "width": "auto"
@@ -1645,6 +2043,832 @@
         },
         "slot": null,
         "styles": null
+    },
+    {
+        "definition": {
+            "id": "9c2e3b0978b3250ef3081204f151026a",
+            "type": "MACROPONENT"
+        },
+        "elementId": "custom_1",
+        "elementLabel": "Waiting for game modal",
+        "eventMappings": [],
+        "isHidden": {
+            "type": "JSON_LITERAL",
+            "value": null
+        },
+        "overrides": {
+            "composition": [
+                {
+                    "definition": {
+                        "id": "d356d14b6e293a3020a244b63d278d8f",
+                        "type": "MACROPONENT"
+                    },
+                    "elementId": "header_2",
+                    "elementLabel": "waiting header",
+                    "eventMappings": [],
+                    "isHidden": {
+                        "type": "JSON_LITERAL",
+                        "value": null
+                    },
+                    "overrides": {
+                        "composition": [
+                            {
+                                "definition": {
+                                    "id": "4335ba6dca80378f7ba7a67cd6667bec",
+                                    "type": "MACROPONENT"
+                                },
+                                "elementId": "waiting_header",
+                                "elementLabel": "Waiting Header",
+                                "eventMappings": [],
+                                "isHidden": {
+                                    "type": "JSON_LITERAL",
+                                    "value": null
+                                },
+                                "preset": null,
+                                "propertyValues": {
+                                    "configAria": {
+                                        "container": {},
+                                        "type": "MAP_CONTAINER"
+                                    },
+                                    "css": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "* { align-self: center;\n    color: #dee2fb;\n    font-style: italic;\n    font-variant: small-caps;\n    text-shadow: 1px 1px 2px #9097b7, 0 0 1em blue, 0 0 0.2em blue;\n    display: inline-block;\n    white-space: nowrap;\n    font-size: 16px; /* Start with default font size */\n    line-height: 1;\n    text-align: center;\n    transform: scale(1);\n    width: 100%;\n    height: auto;\n    text-overflow: ellipsis; /* For any overflow content */\n    }"
+                                    },
+                                    "tag": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "h1"
+                                    },
+                                    "text": {
+                                        "type": "TRANSLATION_LITERAL",
+                                        "value": {
+                                            "code": null,
+                                            "comment": "",
+                                            "message": "Waiting for Other Player"
+                                        }
+                                    }
+                                },
+                                "slot": null,
+                                "styles": null
+                            }
+                        ],
+                        "layout": {
+                            "default": {
+                                "children": null,
+                                "items": [
+                                    {
+                                        "element_id": "waiting_header",
+                                        "styles": {}
+                                    }
+                                ],
+                                "root": null,
+                                "rules": null,
+                                "styles": {
+                                    "display": "flex",
+                                    "flex-direction": "column"
+                                },
+                                "templateId": "5832fd4d53c31010e6bcddeeff7b12db",
+                                "type": "flex"
+                            },
+                            "version": "3.0.0"
+                        }
+                    },
+                    "preset": null,
+                    "propertyValues": {
+                        "ariaRegionHeadingLevel": {
+                            "type": "JSON_LITERAL",
+                            "value": "1"
+                        },
+                        "ariaRegionName": {
+                            "type": "TRANSLATION_LITERAL",
+                            "value": {
+                                "code": null,
+                                "comment": "",
+                                "message": ""
+                            }
+                        },
+                        "ariaRole": {
+                            "type": "JSON_LITERAL",
+                            "value": ""
+                        },
+                        "hideEmptyStateUi": {
+                            "type": "JSON_LITERAL",
+                            "value": true
+                        },
+                        "includeAriaHeading": {
+                            "type": "JSON_LITERAL",
+                            "value": false
+                        },
+                        "slotWrapperBehavior": {
+                            "type": "JSON_LITERAL",
+                            "value": "fullheight"
+                        },
+                        "type": {
+                            "type": "JSON_LITERAL",
+                            "value": "section"
+                        }
+                    },
+                    "slot": null,
+                    "styles": null
+                },
+                {
+                    "definition": {
+                        "id": "d356d14b6e293a3020a244b63d278d8f",
+                        "type": "MACROPONENT"
+                    },
+                    "elementId": "body_2",
+                    "elementLabel": "waiting body",
+                    "eventMappings": [],
+                    "isHidden": {
+                        "type": "JSON_LITERAL",
+                        "value": null
+                    },
+                    "overrides": {
+                        "composition": [
+                            {
+                                "definition": {
+                                    "id": "15fe506403f8a98575b6df59008ea8f1",
+                                    "type": "MACROPONENT"
+                                },
+                                "elementId": "image_1",
+                                "elementLabel": "Image 1",
+                                "eventMappings": [],
+                                "isHidden": {
+                                    "type": "JSON_LITERAL",
+                                    "value": null
+                                },
+                                "preset": null,
+                                "propertyValues": {
+                                    "alt": {
+                                        "type": "TRANSLATION_LITERAL",
+                                        "value": {
+                                            "code": null,
+                                            "comment": "",
+                                            "message": ""
+                                        }
+                                    },
+                                    "configAria": {
+                                        "container": {
+                                            "link": {
+                                                "container": {},
+                                                "type": "MAP_CONTAINER"
+                                            }
+                                        },
+                                        "type": "MAP_CONTAINER"
+                                    },
+                                    "fit": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "scale-down"
+                                    },
+                                    "height": {
+                                        "type": "JSON_LITERAL",
+                                        "value": 200
+                                    },
+                                    "href": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "landmark": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "position": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "center center"
+                                    },
+                                    "sources": {
+                                        "type": "JSON_LITERAL",
+                                        "value": []
+                                    },
+                                    "src": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "sn_app.png"
+                                    },
+                                    "supportRtl": {
+                                        "type": "JSON_LITERAL",
+                                        "value": false
+                                    },
+                                    "width": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    }
+                                },
+                                "slot": null,
+                                "styles": null
+                            }
+                        ],
+                        "layout": {
+                            "default": {
+                                "children": null,
+                                "items": [
+                                    {
+                                        "element_id": "image_1",
+                                        "styles": {
+                                            "background": "#040404"
+                                        }
+                                    }
+                                ],
+                                "root": null,
+                                "rules": null,
+                                "styles": {
+                                    "display": "flex",
+                                    "flex-direction": "column"
+                                },
+                                "templateId": "5832fd4d53c31010e6bcddeeff7b12db",
+                                "type": "flex"
+                            },
+                            "version": "3.0.0"
+                        }
+                    },
+                    "preset": null,
+                    "propertyValues": {
+                        "ariaRegionHeadingLevel": {
+                            "type": "JSON_LITERAL",
+                            "value": "1"
+                        },
+                        "ariaRegionName": {
+                            "type": "TRANSLATION_LITERAL",
+                            "value": {
+                                "code": null,
+                                "comment": "",
+                                "message": ""
+                            }
+                        },
+                        "ariaRole": {
+                            "type": "JSON_LITERAL",
+                            "value": ""
+                        },
+                        "hideEmptyStateUi": {
+                            "type": "JSON_LITERAL",
+                            "value": true
+                        },
+                        "includeAriaHeading": {
+                            "type": "JSON_LITERAL",
+                            "value": false
+                        },
+                        "slotWrapperBehavior": {
+                            "type": "JSON_LITERAL",
+                            "value": "fullheight"
+                        },
+                        "type": {
+                            "type": "JSON_LITERAL",
+                            "value": "section"
+                        }
+                    },
+                    "slot": null,
+                    "styles": null
+                },
+                {
+                    "definition": {
+                        "id": "d356d14b6e293a3020a244b63d278d8f",
+                        "type": "MACROPONENT"
+                    },
+                    "elementId": "footer_2",
+                    "elementLabel": "waiting footer",
+                    "eventMappings": [],
+                    "isHidden": {
+                        "type": "JSON_LITERAL",
+                        "value": null
+                    },
+                    "overrides": {
+                        "composition": [
+                            {
+                                "definition": {
+                                    "id": "d37ce8abca89d02905fed903c8e34d8e",
+                                    "type": "MACROPONENT"
+                                },
+                                "elementId": "button_1",
+                                "elementLabel": "cancel button",
+                                "eventMappings": [
+                                    {
+                                        "eventMappingId": "ffQfeeddivdLAkdSjjioIYGBaadbbOt",
+                                        "isConfiguration": false,
+                                        "offRowStorageId": null,
+                                        "sourceEventApiName": "sn_button.NOW_BUTTON#CLICKED",
+                                        "sourceEventCorrelationId": null,
+                                        "sourceEventDefinition": {
+                                            "apiName": "sn_button.NOW_BUTTON#CLICKED",
+                                            "id": null,
+                                            "type": "UXEVENT"
+                                        },
+                                        "sourceEventSysId": null,
+                                        "targets": [
+                                            {
+                                                "broker": null,
+                                                "clientScript": null,
+                                                "conditional": null,
+                                                "declarativeAction": null,
+                                                "event": {
+                                                    "apiName": "x_168987_flow_de_0.MODAL_SELECTED_RELAY_0e6e21914753711017fdc82f316d43e1",
+                                                    "payload": {
+                                                        "type": "JSON_LITERAL",
+                                                        "value": {
+                                                            "bare": false,
+                                                            "displayOptions": null,
+                                                            "headerLabel": null,
+                                                            "modalId": "[component-id$='custom_1']",
+                                                            "preserveState": false,
+                                                            "showModal": false,
+                                                            "viewportElementId": null,
+                                                            "viewportFields": null,
+                                                            "viewportParams": null,
+                                                            "viewportRoute": null
+                                                        }
+                                                    },
+                                                    "sysId": "d07e61914753711017fdc82f316d4327"
+                                                },
+                                                "operation": null,
+                                                "targetId": "bbtGzGPrUCEBUjjpMFddomsJiitI",
+                                                "type": "EVENT"
+                                            },
+                                            {
+                                                "broker": null,
+                                                "clientScript": null,
+                                                "conditional": null,
+                                                "declarativeAction": null,
+                                                "event": {
+                                                    "apiName": "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
+                                                    "payload": {
+                                                        "type": "JSON_LITERAL",
+                                                        "value": {
+                                                            "propName": "Matchmaking Event",
+                                                            "value": "Cleared Event"
+                                                        }
+                                                    },
+                                                    "sysId": "32408b42ff7a10109046e490703bf176"
+                                                },
+                                                "operation": null,
+                                                "targetId": "STLutPVcAEUveeddFQKEeeddbbteeENM",
+                                                "type": "EVENT"
+                                            },
+                                            {
+                                                "broker": null,
+                                                "clientScript": null,
+                                                "conditional": null,
+                                                "declarativeAction": null,
+                                                "event": {
+                                                    "apiName": "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
+                                                    "payload": {
+                                                        "type": "JSON_LITERAL",
+                                                        "value": {
+                                                            "propName": "Game Instance",
+                                                            "value": "Cleared Instance"
+                                                        }
+                                                    },
+                                                    "sysId": "32408b42ff7a10109046e490703bf176"
+                                                },
+                                                "operation": null,
+                                                "targetId": "EfAIcPpFCkoggjjoUOgKQElmfff",
+                                                "type": "EVENT"
+                                            },
+                                            {
+                                                "broker": null,
+                                                "clientScript": null,
+                                                "conditional": null,
+                                                "declarativeAction": null,
+                                                "event": null,
+                                                "operation": {
+                                                    "dataBrokerId": "9b4b978353211010cbc2ddeeff7b1245",
+                                                    "operationName": "EXECUTE",
+                                                    "parentResourceId": "cancel_queue",
+                                                    "payload": {
+                                                        "container": {
+                                                            "recordId": {
+                                                                "binding": {
+                                                                    "address": [
+                                                                        "Matchmaking Queue"
+                                                                    ]
+                                                                },
+                                                                "type": "STATE_BINDING"
+                                                            },
+                                                            "table": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": "x_168987_flow_de_0_matchmaking_queue"
+                                                            },
+                                                            "templateFields": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": "status=abandoned"
+                                                            },
+                                                            "useSetDisplayValue": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": null
+                                                            }
+                                                        },
+                                                        "type": "MAP_CONTAINER"
+                                                    }
+                                                },
+                                                "targetId": "lkuPDfpIDaankeeddIMLqLeeddZeeddwjS",
+                                                "type": "DATABROKER_OP"
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "isHidden": {
+                                    "binding": {
+                                        "address": [
+                                            "look_up_event",
+                                            "result",
+                                            "ready_to_start_game",
+                                            "value"
+                                        ]
+                                    },
+                                    "type": "DATA_OUTPUT_BINDING"
+                                },
+                                "preset": null,
+                                "propertyValues": {
+                                    "configAria": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "disabled": {
+                                        "type": "JSON_LITERAL",
+                                        "value": false
+                                    },
+                                    "icon": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "label": {
+                                        "type": "TRANSLATION_LITERAL",
+                                        "value": {
+                                            "code": null,
+                                            "comment": "",
+                                            "message": "Cancel Game"
+                                        }
+                                    },
+                                    "landmark": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "size": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "lg"
+                                    },
+                                    "tooltipContent": {
+                                        "type": "TRANSLATION_LITERAL",
+                                        "value": {
+                                            "code": null,
+                                            "comment": "",
+                                            "message": "Enter a label"
+                                        }
+                                    },
+                                    "variant": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "primary-negative"
+                                    }
+                                },
+                                "slot": null,
+                                "styles": null
+                            },
+                            {
+                                "definition": {
+                                    "id": "d37ce8abca89d02905fed903c8e34d8e",
+                                    "type": "MACROPONENT"
+                                },
+                                "elementId": "start_button",
+                                "elementLabel": "Start Button",
+                                "eventMappings": [
+                                    {
+                                        "eventMappingId": "ffQfeeddivdLAkdSjjioIYGBaadbbOt",
+                                        "isConfiguration": false,
+                                        "offRowStorageId": null,
+                                        "sourceEventApiName": "sn_button.NOW_BUTTON#CLICKED",
+                                        "sourceEventCorrelationId": null,
+                                        "sourceEventDefinition": {
+                                            "apiName": "sn_button.NOW_BUTTON#CLICKED",
+                                            "id": null,
+                                            "type": "UXEVENT"
+                                        },
+                                        "sourceEventSysId": null,
+                                        "targets": [
+                                            {
+                                                "broker": null,
+                                                "clientScript": null,
+                                                "conditional": null,
+                                                "declarativeAction": null,
+                                                "event": {
+                                                    "apiName": "x_168987_flow_de_0.MODAL_SELECTED_RELAY_0e6e21914753711017fdc82f316d43e1",
+                                                    "payload": {
+                                                        "type": "JSON_LITERAL",
+                                                        "value": {
+                                                            "bare": false,
+                                                            "displayOptions": null,
+                                                            "headerLabel": null,
+                                                            "modalId": "[component-id$='custom_1']",
+                                                            "preserveState": false,
+                                                            "showModal": false,
+                                                            "viewportElementId": null,
+                                                            "viewportFields": null,
+                                                            "viewportParams": null,
+                                                            "viewportRoute": null
+                                                        }
+                                                    },
+                                                    "sysId": "d07e61914753711017fdc82f316d4327"
+                                                },
+                                                "operation": null,
+                                                "targetId": "bbtGzGPrUCEBUjjpMFddomsJiitI",
+                                                "type": "EVENT"
+                                            },
+                                            {
+                                                "broker": null,
+                                                "clientScript": null,
+                                                "conditional": null,
+                                                "declarativeAction": null,
+                                                "event": {
+                                                    "apiName": "x_168987_flow_de_0.NAV_ITEM_SELECTED_RELAY_0e6e21914753711017fdc82f316d43e1",
+                                                    "payload": {
+                                                        "container": {
+                                                            "external": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": null
+                                                            },
+                                                            "fields": {
+                                                                "container": {
+                                                                    "gameInstance": {
+                                                                        "binding": {
+                                                                            "address": [
+                                                                                "Game Instance"
+                                                                            ]
+                                                                        },
+                                                                        "type": "STATE_BINDING"
+                                                                    },
+                                                                    "page": {
+                                                                        "type": "JSON_LITERAL",
+                                                                        "value": "player"
+                                                                    },
+                                                                    "playerSession": {
+                                                                        "binding": {
+                                                                            "address": [
+                                                                                "MyPlayerSesison"
+                                                                            ]
+                                                                        },
+                                                                        "type": "STATE_BINDING"
+                                                                    }
+                                                                },
+                                                                "type": "MAP_CONTAINER"
+                                                            },
+                                                            "multiInstField": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": null
+                                                            },
+                                                            "navigationOptions": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": null
+                                                            },
+                                                            "params": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": {}
+                                                            },
+                                                            "passiveNavigation": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": null
+                                                            },
+                                                            "redirect": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": null
+                                                            },
+                                                            "route": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": "debug-play-space"
+                                                            },
+                                                            "targetRoute": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": null
+                                                            },
+                                                            "title": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": null
+                                                            }
+                                                        },
+                                                        "type": "MAP_CONTAINER"
+                                                    },
+                                                    "sysId": "547e61914753711017fdc82f316d4327"
+                                                },
+                                                "operation": null,
+                                                "targetId": "SiiaaDuPhFDkiipjjRcNebbLakDIV",
+                                                "type": "EVENT"
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "isHidden": {
+                                    "operation": {
+                                        "operand": {
+                                            "binding": {
+                                                "address": [
+                                                    "look_up_event",
+                                                    "result",
+                                                    "ready_to_start_game",
+                                                    "value"
+                                                ]
+                                            },
+                                            "type": "DATA_OUTPUT_BINDING"
+                                        },
+                                        "operator": "NOT"
+                                    },
+                                    "type": "UNARY"
+                                },
+                                "preset": null,
+                                "propertyValues": {
+                                    "configAria": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "disabled": {
+                                        "type": "JSON_LITERAL",
+                                        "value": false
+                                    },
+                                    "icon": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "label": {
+                                        "type": "TRANSLATION_LITERAL",
+                                        "value": {
+                                            "code": null,
+                                            "comment": "",
+                                            "message": "Proceed to Game"
+                                        }
+                                    },
+                                    "landmark": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "size": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "lg"
+                                    },
+                                    "tooltipContent": {
+                                        "type": "TRANSLATION_LITERAL",
+                                        "value": {
+                                            "code": null,
+                                            "comment": "",
+                                            "message": "Enter a label"
+                                        }
+                                    },
+                                    "variant": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "primary-positive"
+                                    }
+                                },
+                                "slot": null,
+                                "styles": null
+                            }
+                        ],
+                        "layout": {
+                            "default": {
+                                "children": null,
+                                "items": [
+                                    {
+                                        "element_id": "button_1",
+                                        "styles": {
+                                            "align-self": "center",
+                                            "background": "#070707"
+                                        }
+                                    },
+                                    {
+                                        "element_id": "start_button",
+                                        "styles": {
+                                            "align-self": "center",
+                                            "background": "#070707"
+                                        }
+                                    }
+                                ],
+                                "root": null,
+                                "rules": null,
+                                "styles": {
+                                    "display": "flex",
+                                    "flex-direction": "column"
+                                },
+                                "templateId": "5832fd4d53c31010e6bcddeeff7b12db",
+                                "type": "flex"
+                            },
+                            "version": "3.0.0"
+                        }
+                    },
+                    "preset": null,
+                    "propertyValues": {
+                        "ariaRegionHeadingLevel": {
+                            "type": "JSON_LITERAL",
+                            "value": "1"
+                        },
+                        "ariaRegionName": {
+                            "type": "TRANSLATION_LITERAL",
+                            "value": {
+                                "code": null,
+                                "comment": "",
+                                "message": ""
+                            }
+                        },
+                        "ariaRole": {
+                            "type": "JSON_LITERAL",
+                            "value": ""
+                        },
+                        "hideEmptyStateUi": {
+                            "type": "JSON_LITERAL",
+                            "value": true
+                        },
+                        "includeAriaHeading": {
+                            "type": "JSON_LITERAL",
+                            "value": false
+                        },
+                        "slotWrapperBehavior": {
+                            "type": "JSON_LITERAL",
+                            "value": "fullheight"
+                        },
+                        "type": {
+                            "type": "JSON_LITERAL",
+                            "value": "section"
+                        }
+                    },
+                    "slot": null,
+                    "styles": null
+                }
+            ],
+            "layout": {
+                "default": {
+                    "children": null,
+                    "items": [
+                        {
+                            "element_id": "header_2",
+                            "styles": {
+                                "background": "#070707"
+                            }
+                        },
+                        {
+                            "element_id": "body_2",
+                            "styles": {}
+                        },
+                        {
+                            "element_id": "footer_2",
+                            "styles": {
+                                "background": "#020202",
+                                "padding": "var(--now-scalable-space--lg)",
+                                "padding-bottom": "var(--now-scalable-space--lg)",
+                                "padding-left": "var(--now-scalable-space--lg)",
+                                "padding-right": "var(--now-scalable-space--lg)",
+                                "padding-top": "var(--now-scalable-space--lg)"
+                            }
+                        }
+                    ],
+                    "root": null,
+                    "rules": null,
+                    "styles": {
+                        "display": "flex",
+                        "flex-direction": "column",
+                        "gap": "var(--now-static-space--lg)",
+                        "overflow": "hidden"
+                    },
+                    "templateId": "5832fd4d53c31010e6bcddeeff7b12db",
+                    "type": "flex"
+                },
+                "version": "3.0.0"
+            }
+        },
+        "preset": null,
+        "propertyValues": {
+            "bare": {
+                "type": "JSON_LITERAL",
+                "value": false
+            },
+            "defer": {
+                "type": "JSON_LITERAL",
+                "value": true
+            },
+            "disableDismiss": {
+                "type": "JSON_LITERAL",
+                "value": false
+            },
+            "enableResizable": {
+                "type": "JSON_LITERAL",
+                "value": false
+            },
+            "labelledby": {
+                "type": "JSON_LITERAL",
+                "value": ""
+            },
+            "resizableMaxHeight": {
+                "type": "JSON_LITERAL",
+                "value": null
+            },
+            "resizableMaxWidth": {
+                "type": "JSON_LITERAL",
+                "value": null
+            },
+            "resizableMinHeight": {
+                "type": "JSON_LITERAL",
+                "value": 133
+            },
+            "resizableMinWidth": {
+                "type": "JSON_LITERAL",
+                "value": 420
+            },
+            "size": {
+                "type": "JSON_LITERAL",
+                "value": "md"
+            }
+        },
+        "slot": null,
+        "styles": null
     }
 ]</composition>
         <da_relay_models/>
@@ -1655,8 +2879,8 @@
             "type": "GRAPHQL"
         },
         "dependencies": {},
-        "elementId": "create_record_1",
-        "elementLabel": "Create Record 1",
+        "elementId": "create_deck_record",
+        "elementLabel": "Create Deck Record",
         "eventMappings": [
             {
                 "eventMappingId": "clqhhoajmaaaazdddbhhoffddmtjjayhh",
@@ -1671,42 +2895,6 @@
                 },
                 "sourceEventSysId": null,
                 "targets": [
-                    {
-                        "broker": null,
-                        "clientScript": null,
-                        "conditional": null,
-                        "declarativeAction": null,
-                        "event": {
-                            "apiName": "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
-                            "payload": {
-                                "container": {
-                                    "propName": {
-                                        "type": "JSON_LITERAL",
-                                        "value": "createdDeckID"
-                                    },
-                                    "value": {
-                                        "binding": {
-                                            "address": [
-                                                "data",
-                                                "output",
-                                                "data",
-                                                "GlideRecord_Mutation",
-                                                "insert_x_168987_flow_de_0_player_deck",
-                                                "sys_id",
-                                                "value"
-                                            ]
-                                        },
-                                        "type": "EVENT_PAYLOAD_BINDING"
-                                    }
-                                },
-                                "type": "MAP_CONTAINER"
-                            },
-                            "sysId": "32408b42ff7a10109046e490703bf176"
-                        },
-                        "operation": null,
-                        "targetId": "clqhiezddkaaaafflddbhhogaabbdibtaa",
-                        "type": "EVENT"
-                    },
                     {
                         "broker": null,
                         "clientScript": null,
@@ -1908,6 +3096,735 @@
             }
         },
         "readEvaluationMode": "EAGER"
+    },
+    {
+        "definition": {
+            "id": "beda4252770300108d070d74c810618f",
+            "type": "GRAPHQL"
+        },
+        "elementId": "create_event",
+        "elementLabel": "Create Matchmaking Event",
+        "eventMappings": [
+            {
+                "eventMappingId": "eiVcchveeddNAkqFjjxoCNcyqNUac",
+                "isConfiguration": false,
+                "offRowStorageId": null,
+                "sourceEventApiName": "sn_uxf.DATA_OP_SUCCEEDED",
+                "sourceEventCorrelationId": null,
+                "sourceEventDefinition": {
+                    "apiName": "sn_uxf.DATA_OP_SUCCEEDED",
+                    "id": null,
+                    "type": "UXEVENT"
+                },
+                "sourceEventSysId": null,
+                "targets": [
+                    {
+                        "broker": null,
+                        "clientScript": null,
+                        "conditional": null,
+                        "declarativeAction": null,
+                        "event": {
+                            "apiName": "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
+                            "payload": {
+                                "container": {
+                                    "propName": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "Matchmaking Event"
+                                    },
+                                    "value": {
+                                        "binding": {
+                                            "address": [
+                                                "data",
+                                                "output",
+                                                "data",
+                                                "GlideRecord_Mutation",
+                                                "insert_x_168987_flow_de_0_matchmaking_event",
+                                                "sys_id",
+                                                "value"
+                                            ]
+                                        },
+                                        "type": "EVENT_PAYLOAD_BINDING"
+                                    }
+                                },
+                                "type": "MAP_CONTAINER"
+                            },
+                            "sysId": "32408b42ff7a10109046e490703bf176"
+                        },
+                        "operation": null,
+                        "targetId": "gpxnYvYUDaamzjjRQCUjjbbFgZDh",
+                        "type": "EVENT"
+                    }
+                ]
+            }
+        ],
+        "inputValues": {
+            "table": {
+                "type": "JSON_LITERAL",
+                "value": ""
+            },
+            "templateFields": {
+                "type": "JSON_LITERAL",
+                "value": ""
+            },
+            "useSetDisplayValue": {
+                "type": "JSON_LITERAL",
+                "value": null
+            }
+        },
+        "readEvaluationMode": "EXPLICIT"
+    },
+    {
+        "definition": {
+            "id": "9664d48053461010cbc2ddeeff7b128e",
+            "type": "COMPOSITE"
+        },
+        "elementId": "look_up_event",
+        "elementLabel": "Look up Event",
+        "eventMappings": [
+            {
+                "eventMappingId": "hhcdiieehhflbbBEccljjykNrYeehhPZTti",
+                "isConfiguration": false,
+                "offRowStorageId": null,
+                "sourceEventApiName": "sn_uxf.DATA_FETCH_SUCCEEDED",
+                "sourceEventCorrelationId": null,
+                "sourceEventDefinition": {
+                    "apiName": "sn_uxf.DATA_FETCH_SUCCEEDED",
+                    "id": null,
+                    "type": "UXEVENT"
+                },
+                "sourceEventSysId": null,
+                "targets": [
+                    {
+                        "broker": null,
+                        "clientScript": null,
+                        "conditional": null,
+                        "declarativeAction": null,
+                        "event": {
+                            "apiName": "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
+                            "payload": {
+                                "container": {
+                                    "propName": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "Matchmaking Queue"
+                                    },
+                                    "value": {
+                                        "binding": {
+                                            "address": [
+                                                "look_up_event",
+                                                "result",
+                                                "matchmaking_queue",
+                                                "value"
+                                            ]
+                                        },
+                                        "type": "DATA_OUTPUT_BINDING"
+                                    }
+                                },
+                                "type": "MAP_CONTAINER"
+                            },
+                            "sysId": "32408b42ff7a10109046e490703bf176"
+                        },
+                        "operation": null,
+                        "targetId": "iddjjwgvGqCaagrjjgEMsQjhhyhzV",
+                        "type": "EVENT"
+                    },
+                    {
+                        "broker": null,
+                        "clientScript": null,
+                        "conditional": null,
+                        "declarativeAction": null,
+                        "event": {
+                            "apiName": "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
+                            "payload": {
+                                "container": {
+                                    "propName": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "MyPlayerSesison"
+                                    },
+                                    "value": {
+                                        "binding": {
+                                            "address": [
+                                                "look_up_event",
+                                                "result",
+                                                "my_player_session",
+                                                "value"
+                                            ]
+                                        },
+                                        "type": "DATA_OUTPUT_BINDING"
+                                    }
+                                },
+                                "type": "MAP_CONTAINER"
+                            },
+                            "sysId": "32408b42ff7a10109046e490703bf176"
+                        },
+                        "operation": null,
+                        "targetId": "DOyJOeehhOeeCEggiieeddOwHwlhjjggZXQ",
+                        "type": "EVENT"
+                    }
+                ]
+            }
+        ],
+        "inputValues": {
+            "recordId": {
+                "binding": {
+                    "address": [
+                        "Matchmaking Event"
+                    ]
+                },
+                "type": "STATE_BINDING"
+            },
+            "returnFieldMetadata": {
+                "type": "JSON_LITERAL",
+                "value": false
+            },
+            "returnFields": {
+                "type": "JSON_LITERAL",
+                "value": "deck_to_play,event_state,matchmaking_queue,number,player,my_player_session,ready_to_start_game"
+            },
+            "returnTableMetadata": {
+                "type": "JSON_LITERAL",
+                "value": false
+            },
+            "table": {
+                "type": "JSON_LITERAL",
+                "value": "x_168987_flow_de_0_matchmaking_event"
+            }
+        },
+        "readEvaluationMode": "EXPLICIT"
+    },
+    {
+        "definition": {
+            "id": "9664d48053461010cbc2ddeeff7b128e",
+            "type": "COMPOSITE"
+        },
+        "elementId": "look_up_queue",
+        "elementLabel": "Look up Queue",
+        "eventMappings": [
+            {
+                "eventMappingId": "EbbsyqeehhccQAaaovjjccUCdWoDtbDV",
+                "isConfiguration": false,
+                "offRowStorageId": null,
+                "sourceEventApiName": "sn_uxf.DATA_FETCH_SUCCEEDED",
+                "sourceEventCorrelationId": null,
+                "sourceEventDefinition": {
+                    "apiName": "sn_uxf.DATA_FETCH_SUCCEEDED",
+                    "id": null,
+                    "type": "UXEVENT"
+                },
+                "sourceEventSysId": null,
+                "targets": [
+                    {
+                        "broker": null,
+                        "clientScript": null,
+                        "conditional": null,
+                        "declarativeAction": null,
+                        "event": {
+                            "apiName": "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
+                            "payload": {
+                                "container": {
+                                    "propName": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "Game Instance"
+                                    },
+                                    "value": {
+                                        "binding": {
+                                            "address": [
+                                                "look_up_queue",
+                                                "result",
+                                                "game_instance",
+                                                "value"
+                                            ]
+                                        },
+                                        "type": "DATA_OUTPUT_BINDING"
+                                    }
+                                },
+                                "type": "MAP_CONTAINER"
+                            },
+                            "sysId": "32408b42ff7a10109046e490703bf176"
+                        },
+                        "operation": null,
+                        "targetId": "ccMNLHPYYCUXJjjxYMKknqRKIcc",
+                        "type": "EVENT"
+                    }
+                ]
+            }
+        ],
+        "inputValues": {
+            "recordId": {
+                "binding": {
+                    "address": [
+                        "Matchmaking Queue"
+                    ]
+                },
+                "type": "STATE_BINDING"
+            },
+            "returnFieldMetadata": {
+                "type": "JSON_LITERAL",
+                "value": false
+            },
+            "returnFields": {
+                "type": "JSON_LITERAL",
+                "value": "game_instance,player_1,player_1_deck,player_1_session,player_2,player_2_session,player_2_deck,short_description,status"
+            },
+            "returnTableMetadata": {
+                "type": "JSON_LITERAL",
+                "value": false
+            },
+            "table": {
+                "type": "JSON_LITERAL",
+                "value": "x_168987_flow_de_0_matchmaking_queue"
+            }
+        },
+        "readEvaluationMode": "EXPLICIT"
+    },
+    {
+        "definition": {
+            "id": "9b4b978353211010cbc2ddeeff7b1245",
+            "type": "GRAPHQL"
+        },
+        "elementId": "cancel_queue",
+        "elementLabel": "Cancel Queue",
+        "eventMappings": [],
+        "inputValues": {
+            "recordId": {
+                "type": "JSON_LITERAL",
+                "value": ""
+            },
+            "table": {
+                "type": "JSON_LITERAL",
+                "value": ""
+            },
+            "templateFields": {
+                "type": "JSON_LITERAL",
+                "value": ""
+            },
+            "useSetDisplayValue": {
+                "type": "JSON_LITERAL",
+                "value": null
+            }
+        },
+        "readEvaluationMode": "EXPLICIT"
+    },
+    {
+        "definition": {
+            "id": "9664d48053461010cbc2ddeeff7b128e",
+            "type": "COMPOSITE"
+        },
+        "elementId": "look_up_game_instance",
+        "elementLabel": "Look up Game instance",
+        "eventMappings": [],
+        "inputValues": {
+            "recordId": {
+                "binding": {
+                    "address": [
+                        "Game Instance"
+                    ]
+                },
+                "type": "STATE_BINDING"
+            },
+            "returnFieldMetadata": {
+                "type": "JSON_LITERAL",
+                "value": false
+            },
+            "returnFields": {
+                "type": "JSON_LITERAL",
+                "value": "matchmaking_instance,short_description,player_1,player_2"
+            },
+            "returnTableMetadata": {
+                "type": "JSON_LITERAL",
+                "value": false
+            },
+            "table": {
+                "type": "JSON_LITERAL",
+                "value": "x_168987_flow_de_0_game_instance"
+            }
+        },
+        "readEvaluationMode": "EXPLICIT"
+    },
+    {
+        "definition": {
+            "id": "bba46ec077223010f5025df90f5a9920",
+            "type": "CLIENT_STATE"
+        },
+        "elementId": "watch_queue",
+        "elementLabel": "Watch Queue for Game Instance",
+        "eventMappings": [
+            {
+                "eventMappingId": "pMZbbvPoeehhAkEJjjpMGLOciiNyaaE",
+                "isConfiguration": false,
+                "offRowStorageId": null,
+                "sourceEventApiName": "sn_record_watcher.RECORD_WATCHER#MESSAGE_RECEIVED",
+                "sourceEventCorrelationId": null,
+                "sourceEventDefinition": {
+                    "apiName": "sn_record_watcher.RECORD_WATCHER#MESSAGE_RECEIVED",
+                    "id": null,
+                    "type": "UXEVENT"
+                },
+                "sourceEventSysId": null,
+                "targets": [
+                    {
+                        "broker": null,
+                        "clientScript": null,
+                        "conditional": null,
+                        "declarativeAction": null,
+                        "event": {
+                            "apiName": "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
+                            "payload": {
+                                "container": {
+                                    "propName": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "Game Instance"
+                                    },
+                                    "value": {
+                                        "binding": {
+                                            "address": [
+                                                "look_up_queue",
+                                                "result",
+                                                "game_instance",
+                                                "value"
+                                            ]
+                                        },
+                                        "type": "DATA_OUTPUT_BINDING"
+                                    }
+                                },
+                                "type": "MAP_CONTAINER"
+                            },
+                            "sysId": "32408b42ff7a10109046e490703bf176"
+                        },
+                        "operation": null,
+                        "targetId": "TilAkeehhklCUDUjjbkLNaaaaDBpwg",
+                        "type": "EVENT"
+                    },
+                    {
+                        "broker": null,
+                        "clientScript": null,
+                        "conditional": null,
+                        "declarativeAction": null,
+                        "event": null,
+                        "operation": {
+                            "dataBrokerId": "9664d48053461010cbc2ddeeff7b128e",
+                            "operationName": "REFRESH",
+                            "parentResourceId": "look_up_queue",
+                            "payload": {
+                                "type": "JSON_LITERAL",
+                                "value": {}
+                            }
+                        },
+                        "targetId": "ffpZxpfReeAEPmeeddOeeIjjqhhccTeehhwB",
+                        "type": "DATABROKER_OP"
+                    },
+                    {
+                        "broker": null,
+                        "clientScript": null,
+                        "conditional": null,
+                        "declarativeAction": null,
+                        "event": null,
+                        "operation": {
+                            "dataBrokerId": "9664d48053461010cbc2ddeeff7b128e",
+                            "operationName": "REFRESH",
+                            "parentResourceId": "look_up_event",
+                            "payload": {
+                                "type": "JSON_LITERAL",
+                                "value": {}
+                            }
+                        },
+                        "targetId": "SIUKcceehhhhWAaaqiijjQkJDkbbxQZeer",
+                        "type": "DATABROKER_OP"
+                    },
+                    {
+                        "broker": null,
+                        "clientScript": null,
+                        "conditional": null,
+                        "declarativeAction": null,
+                        "event": null,
+                        "operation": {
+                            "dataBrokerId": "9664d48053461010cbc2ddeeff7b128e",
+                            "operationName": "REFRESH",
+                            "parentResourceId": "look_up_game_instance",
+                            "payload": {
+                                "type": "JSON_LITERAL",
+                                "value": {}
+                            }
+                        },
+                        "targetId": "woheeddyfhhYBkrgjjWgIeeHHsVwxO",
+                        "type": "DATABROKER_OP"
+                    }
+                ]
+            }
+        ],
+        "inputValues": {
+            "filterConditions": {
+                "transform": {
+                    "operands": {
+                        "container": [
+                            {
+                                "type": "JSON_LITERAL",
+                                "value": "sys_id="
+                            },
+                            {
+                                "binding": {
+                                    "address": [
+                                        "Matchmaking Queue"
+                                    ]
+                                },
+                                "type": "STATE_BINDING"
+                            }
+                        ],
+                        "type": "LIST_CONTAINER"
+                    },
+                    "operator": "CONCAT"
+                },
+                "type": "CLIENT_TRANSFORM"
+            },
+            "subscribe": {
+                "type": "JSON_LITERAL",
+                "value": true
+            },
+            "table": {
+                "type": "JSON_LITERAL",
+                "value": "x_168987_flow_de_0_matchmaking_queue"
+            }
+        },
+        "readEvaluationMode": "EAGER"
+    },
+    {
+        "definition": {
+            "id": "bba46ec077223010f5025df90f5a9920",
+            "type": "CLIENT_STATE"
+        },
+        "elementId": "watch_event",
+        "elementLabel": "Watch event for queue",
+        "eventMappings": [
+            {
+                "eventMappingId": "ggxPIBeehhweeddCETnjjpgAphhvERvjjee",
+                "isConfiguration": false,
+                "offRowStorageId": null,
+                "sourceEventApiName": "sn_record_watcher.RECORD_WATCHER#MESSAGE_RECEIVED",
+                "sourceEventCorrelationId": null,
+                "sourceEventDefinition": {
+                    "apiName": "sn_record_watcher.RECORD_WATCHER#MESSAGE_RECEIVED",
+                    "id": null,
+                    "type": "UXEVENT"
+                },
+                "sourceEventSysId": null,
+                "targets": [
+                    {
+                        "broker": null,
+                        "clientScript": null,
+                        "conditional": null,
+                        "declarativeAction": null,
+                        "event": null,
+                        "operation": {
+                            "dataBrokerId": "9664d48053461010cbc2ddeeff7b128e",
+                            "operationName": "REFRESH",
+                            "parentResourceId": "look_up_event",
+                            "payload": {
+                                "type": "JSON_LITERAL",
+                                "value": {}
+                            }
+                        },
+                        "targetId": "UffEJxviwDaaRccjjpgCTOzALjVcc",
+                        "type": "DATABROKER_OP"
+                    },
+                    {
+                        "broker": null,
+                        "clientScript": null,
+                        "conditional": null,
+                        "declarativeAction": null,
+                        "event": null,
+                        "operation": {
+                            "dataBrokerId": "9664d48053461010cbc2ddeeff7b128e",
+                            "operationName": "REFRESH",
+                            "parentResourceId": "look_up_queue",
+                            "payload": {
+                                "type": "JSON_LITERAL",
+                                "value": {}
+                            }
+                        },
+                        "targetId": "ZcWadQBKBkSSeeddJgECblGeeddeeddW",
+                        "type": "DATABROKER_OP"
+                    },
+                    {
+                        "broker": null,
+                        "clientScript": null,
+                        "conditional": null,
+                        "declarativeAction": null,
+                        "event": null,
+                        "operation": {
+                            "dataBrokerId": "9664d48053461010cbc2ddeeff7b128e",
+                            "operationName": "REFRESH",
+                            "parentResourceId": "look_up_game_instance",
+                            "payload": {
+                                "type": "JSON_LITERAL",
+                                "value": {}
+                            }
+                        },
+                        "targetId": "eeddccYOQviiRAUJhhjjvcKfPccgTUnq",
+                        "type": "DATABROKER_OP"
+                    },
+                    {
+                        "broker": null,
+                        "clientScript": null,
+                        "conditional": null,
+                        "declarativeAction": null,
+                        "event": {
+                            "apiName": "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
+                            "payload": {
+                                "type": "JSON_LITERAL",
+                                "value": {
+                                    "propName": "MyPlayerSesison",
+                                    "value": "Update received from watcher"
+                                }
+                            },
+                            "sysId": "32408b42ff7a10109046e490703bf176"
+                        },
+                        "operation": null,
+                        "targetId": "dccjjgXveKCaaddmjjyMBeeXMbbVlJaa",
+                        "type": "EVENT"
+                    }
+                ]
+            }
+        ],
+        "inputValues": {
+            "filterConditions": {
+                "transform": {
+                    "operands": {
+                        "container": [
+                            {
+                                "type": "JSON_LITERAL",
+                                "value": "sys_id="
+                            },
+                            {
+                                "binding": {
+                                    "address": [
+                                        "Matchmaking Event"
+                                    ]
+                                },
+                                "type": "STATE_BINDING"
+                            }
+                        ],
+                        "type": "LIST_CONTAINER"
+                    },
+                    "operator": "CONCAT"
+                },
+                "type": "CLIENT_TRANSFORM"
+            },
+            "subscribe": {
+                "type": "JSON_LITERAL",
+                "value": true
+            },
+            "table": {
+                "type": "JSON_LITERAL",
+                "value": "x_168987_flow_de_0_matchmaking_event"
+            }
+        },
+        "readEvaluationMode": "EAGER"
+    },
+    {
+        "definition": {
+            "id": "9664d48053461010cbc2ddeeff7b128e",
+            "type": "COMPOSITE"
+        },
+        "elementId": "look_up_session",
+        "elementLabel": "look up session",
+        "eventMappings": [
+            {
+                "eventMappingId": "ccXUxQfqDAUjWjjmAGjaaKLLKyh",
+                "isConfiguration": false,
+                "offRowStorageId": null,
+                "sourceEventApiName": "sn_uxf.DATA_FETCH_SUCCEEDED",
+                "sourceEventCorrelationId": null,
+                "sourceEventDefinition": {
+                    "apiName": "sn_uxf.DATA_FETCH_SUCCEEDED",
+                    "id": null,
+                    "type": "UXEVENT"
+                },
+                "sourceEventSysId": null,
+                "targets": [
+                    {
+                        "broker": null,
+                        "clientScript": null,
+                        "conditional": null,
+                        "declarativeAction": null,
+                        "event": {
+                            "apiName": "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
+                            "payload": {
+                                "container": {
+                                    "propName": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "GAME START?"
+                                    },
+                                    "value": {
+                                        "transform": {
+                                            "operands": {
+                                                "container": [
+                                                    {
+                                                        "type": "JSON_LITERAL",
+                                                        "value": "Game start - yep: session: "
+                                                    },
+                                                    {
+                                                        "binding": {
+                                                            "address": [
+                                                                "look_up_session",
+                                                                "result",
+                                                                "_row_data",
+                                                                "uniqueValue"
+                                                            ]
+                                                        },
+                                                        "type": "DATA_OUTPUT_BINDING"
+                                                    }
+                                                ],
+                                                "type": "LIST_CONTAINER"
+                                            },
+                                            "operator": "CONCAT"
+                                        },
+                                        "type": "CLIENT_TRANSFORM"
+                                    }
+                                },
+                                "type": "MAP_CONTAINER"
+                            },
+                            "sysId": "32408b42ff7a10109046e490703bf176"
+                        },
+                        "operation": null,
+                        "targetId": "NwkBlflgAaaWijjmwArRjjEeehheehhCs",
+                        "type": "EVENT"
+                    }
+                ]
+            }
+        ],
+        "inputValues": {
+            "recordId": {
+                "transform": {
+                    "operands": {
+                        "container": [
+                            {
+                                "type": "JSON_LITERAL",
+                                "value": "test"
+                            }
+                        ],
+                        "type": "LIST_CONTAINER"
+                    },
+                    "operator": "CONCAT"
+                },
+                "type": "CLIENT_TRANSFORM"
+            },
+            "returnFieldMetadata": {
+                "type": "JSON_LITERAL",
+                "value": false
+            },
+            "returnFields": {
+                "type": "JSON_LITERAL",
+                "value": "game_instance,sys_created_on,sys_created_by,cards_drawn,current_energy,current_turn_number,hide_buttons,number"
+            },
+            "returnTableMetadata": {
+                "type": "JSON_LITERAL",
+                "value": false
+            },
+            "table": {
+                "type": "JSON_LITERAL",
+                "value": "x_168987_flow_de_0_player_session"
+            }
+        },
+        "readEvaluationMode": "EXPLICIT"
     }
 ]</data>
         <description/>
@@ -1948,6 +3865,9 @@
         "root": null,
         "rules": null,
         "styles": {
+            "background": "#060007",
+            "background-image": "x_168987_flow_de_0.sn-app-background.jpg",
+            "display": "flex",
             "flex-direction": "column"
         },
         "templateId": "5832fd4d53c31010e6bcddeeff7b12db",
@@ -1974,6 +3894,9 @@
     }
 ]</props>
         <required_translations>[ {
+  "message" : "Cancel Game",
+  "comment" : ""
+}, {
   "message" : "Create Deck",
   "comment" : ""
 }, {
@@ -1987,6 +3910,15 @@
   "comment" : ""
 }, {
   "message" : "Enter a label",
+  "comment" : ""
+}, {
+  "message" : "Proceed to Game",
+  "comment" : ""
+}, {
+  "message" : "Start Game with this Deck",
+  "comment" : ""
+}, {
+  "message" : "Waiting for Other Player",
   "comment" : ""
 } ]</required_translations>
         <root_component/>
@@ -2006,21 +3938,81 @@
         "name": "deckName",
         "shape": "",
         "valueType": "string"
+    },
+    {
+        "id": "SWyJifMbC0mi9fQF47Kek7Vts",
+        "initialValue": {
+            "type": "JSON_LITERAL",
+            "value": "Event not set"
+        },
+        "name": "Matchmaking Event",
+        "shape": "",
+        "valueType": "string"
+    },
+    {
+        "id": "3C0HDvbrBknR9SAGYdcE86wZ",
+        "initialValue": {
+            "type": "JSON_LITERAL",
+            "value": "Queue not set"
+        },
+        "name": "Matchmaking Queue",
+        "shape": "",
+        "valueType": "string"
+    },
+    {
+        "id": "K43L47zPgdAUgq9fIB8txnZHAh",
+        "initialValue": {
+            "type": "JSON_LITERAL",
+            "value": "No instance set"
+        },
+        "name": "Game Instance",
+        "shape": "",
+        "valueType": "string"
+    },
+    {
+        "id": "wDWYQfn5C0E196AA6Dxm74tm",
+        "initialValue": {
+            "type": "JSON_LITERAL",
+            "value": ""
+        },
+        "name": "MyPlayerSesison",
+        "shape": "",
+        "valueType": "string"
+    },
+    {
+        "id": "mf18lvJ1B0gg9XQE06LPL47aT",
+        "initialValue": {
+            "type": "JSON_LITERAL",
+            "value": "NOPE"
+        },
+        "name": "GAME START?",
+        "shape": "",
+        "valueType": "string"
     }
 ]</state_properties>
-        <style_config>{}</style_config>
+        <style_config>{
+    "classes": [
+        {
+            "default": {
+                "base": {}
+            },
+            "name": "style-class-1"
+        }
+    ],
+    "rules": []
+}</style_config>
         <sys_class_name>sys_ux_macroponent</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-12-23 02:55:22</sys_created_on>
         <sys_id>0e6e21914753711017fdc82f316d43e1</sys_id>
-        <sys_mod_count>43</sys_mod_count>
+        <sys_mod_count>114</sys_mod_count>
         <sys_name>Default</sys_name>
         <sys_package display_value="SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_update_name>sys_ux_macroponent_0e6e21914753711017fdc82f316d43e1</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-02-22 23:05:08</sys_updated_on>
+        <sys_updated_on>2025-03-02 04:58:53</sys_updated_on>
     </sys_ux_macroponent>
     <sys_translated_text action="delete_multiple" query="documentkey=0e6e21914753711017fdc82f316d43e1"/>
 </record_update>

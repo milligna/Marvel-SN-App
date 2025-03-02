@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="51724119c3c02210ff1f33bc05013160" label="Matchmaking Event" max_length="40" name="x_168987_flow_de_0_matchmaking_event" type="collection">
+        <element choice="1" label="Event State" max_length="40" name="event_state" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Completed" sequence="1" value="completed"/>
+                <element inactive_on_update="false" label="Failed" sequence="2" value="failed"/>
+                <element inactive_on_update="false" label="In Progress" sequence="0" value="in progress"/>
+            </choice>
+        </element>
+        <element label="Deck to Play" max_length="32" name="deck_to_play" reference="x_168987_flow_de_0_player_deck" type="reference"/>
+        <element label="Matchmaking Queue" max_length="32" name="matchmaking_queue" reference="x_168987_flow_de_0_matchmaking_queue" type="reference"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="My Player Session" max_length="32" name="my_player_session" reference="x_168987_flow_de_0_player_session" type="reference"/>
+        <element label="Ready to Start Game" max_length="40" name="ready_to_start_game" type="boolean"/>
+        <element label="Player" max_length="32" name="player" reference="sys_user" type="reference"/>
+        <index name="index">
+            <element name="deck_to_play"/>
+        </index>
+        <index name="index2">
+            <element name="matchmaking_queue"/>
+        </index>
+        <index name="index3">
+            <element name="my_player_session"/>
+        </index>
+        <index name="index4">
+            <element name="player"/>
+        </index>
+    </element>
+</database>

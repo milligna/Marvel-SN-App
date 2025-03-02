@@ -4,7 +4,7 @@
         <acls/>
         <active>true</active>
         <annotation/>
-        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=21047000,viewActivatedIn=naturalLanguage</attributes>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=41192451000,viewActivatedIn=naturalLanguage</attributes>
         <authored_on_release_version/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
@@ -12,10 +12,10 @@
         <copied_from_name/>
         <description>Triggers when a Deck mod record is created to add a card</description>
         <display_name_after_preview/>
-        <flow_priority/>
+        <flow_priority>MEDIUM</flow_priority>
         <generation_source/>
         <internal_name>deck_mod__add_card</internal_name>
-        <label_cache>[{"name":"Created_1.current.definition_to_add","label":"Trigger - Record Created➛Deck Modification Event Record➛Definition to Add","reference":"x_168987_flow_de_0_card_definition","reference_display":"Card Definition","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_deck_modification_event","column_name":"definition_to_add"},{"name":"Created_1.current.deck","label":"Trigger - Record Created➛Deck Modification Event Record➛deck","reference":"x_168987_flow_de_0_player_deck","reference_display":"Player Deck","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_deck_modification_event","column_name":"deck"},{"name":"Created_1.current","label":"Trigger - Record Created➛Deck Modification Event Record","reference":"x_168987_flow_de_0_deck_modification_event","reference_display":"Deck Modification Event","type":"reference","base_type":"reference","attributes":{}}]</label_cache>
+        <label_cache>[{"name":"Created_1.current","label":"Trigger - Record Created➛Deck Modification Event Record","reference":"x_168987_flow_de_0_deck_modification_event","reference_display":"Deck Modification Event","type":"reference","base_type":"reference","attributes":{}},{"name":"Created_1.current.deck","label":"Trigger - Record Created➛Deck Modification Event Record➛deck","reference":"x_168987_flow_de_0_player_deck","reference_display":"Player Deck","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_deck_modification_event","column_name":"deck"},{"name":"Created_1.current.definition_to_add","label":"Trigger - Record Created➛Deck Modification Event Record➛Definition to Add","reference":"x_168987_flow_de_0_card_definition","reference_display":"Card Definition","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_deck_modification_event","column_name":"definition_to_add"}]</label_cache>
         <master_snapshot>65311ab7479af55017fdc82f316d4349</master_snapshot>
         <master_snapshot_digest/>
         <name>DECK: Deck Mod - Add card</name>
@@ -23,12 +23,12 @@
         <outputs/>
         <pre_compiled>false</pre_compiled>
         <remote_trigger_id>3d311ab7479af55017fdc82f316d439c</remote_trigger_id>
-        <run_as>user</run_as>
+        <run_as>system</run_as>
         <run_with_roles/>
         <sc_callable>false</sc_callable>
         <show_draft_actions>false</show_draft_actions>
         <show_triggered_flows>false</show_triggered_flows>
-        <status>draft</status>
+        <status>published</status>
         <substatus/>
         <sys_class_name>sys_hub_flow</sys_class_name>
         <sys_created_by>admin</sys_created_by>
@@ -36,7 +36,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>6ad09677479af55017fdc82f316d43ba</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>DECK: Deck Mod - Add card</sys_name>
         <sys_overrides/>
         <sys_package display_value="SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
@@ -44,9 +44,9 @@
         <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_update_name>sys_hub_flow_6ad09677479af55017fdc82f316d43ba</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-12-22 11:10:00</sys_updated_on>
+        <sys_updated_on>2025-03-02 01:08:46</sys_updated_on>
         <type>flow</type>
-        <version/>
+        <version>2</version>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=6ad09677479af55017fdc82f316d43ba"/>
     <sys_variable_value action="delete_multiple" query="document_key=6ad09677479af55017fdc82f316d43ba"/>
@@ -61,6 +61,7 @@
         <on_delete>false</on_delete>
         <on_insert>true</on_insert>
         <on_update>false</on_update>
+        <published_version/>
         <run_flow_in>background</run_flow_in>
         <run_on_extended>false</run_on_extended>
         <run_when_setting>both</run_when_setting>
@@ -78,6 +79,7 @@
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-11-11 06:49:28</sys_updated_on>
         <table>x_168987_flow_de_0_deck_modification_event</table>
+        <trigger_definition/>
     </sys_flow_record_trigger>
     <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
         <active>true</active>
@@ -85,14 +87,14 @@
         <identifier>6ad09677479af55017fdc82f316d43ba</identifier>
         <runner>FDTriggerRunner</runner>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2023-11-11 12:38:42</sys_created_on>
-        <sys_id>e521ef7b4712395017fdc82f316d4378</sys_id>
+        <sys_created_on>2025-03-02 01:08:46</sys_created_on>
+        <sys_id>f191e191c3482210ff1f33bc050131d2</sys_id>
         <sys_mod_count>2</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-11-11 12:38:42</sys_updated_on>
+        <sys_updated_on>2025-03-02 01:08:46</sys_updated_on>
         <trigger display_value="">3d311ab7479af55017fdc82f316d439c</trigger>
     </sys_trigger_runner_mapping>
-    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=6ad09677479af55017fdc82f316d43ba^sys_idNOT INe521ef7b4712395017fdc82f316d4378"/>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=6ad09677479af55017fdc82f316d43ba^sys_idNOT INf191e191c3482210ff1f33bc050131d2"/>
     <sys_hub_flow_stage action="delete_multiple" query="flow=6ad09677479af55017fdc82f316d43ba"/>
     <sys_flow_cat_variable_model action="delete_multiple" query="id=6ad09677479af55017fdc82f316d43ba^sys_idNOT IN26d09677479af55017fdc82f316d43bb"/>
     <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
@@ -278,298 +280,74 @@
     <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=9931d6b7479af55017fdc82f316d43d1"/>
     <sys_hub_flow_output action="delete_multiple" query="model=6ad09677479af55017fdc82f316d43ba"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=6ad09677479af55017fdc82f316d43ba"/>
-    <sys_hub_trigger_instance action="delete_multiple" query="flow=6ad09677479af55017fdc82f316d43ba^sys_idNOT IN9d31d6b7479af55017fdc82f316d43d9"/>
-    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=6ad09677479af55017fdc82f316d43ba^sys_idNOT INc191a191c3482210ff1f33bc050131e5"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
         <comment/>
         <display_text/>
         <flow display_value="DECK: Deck Mod - Add card">6ad09677479af55017fdc82f316d43ba</flow>
         <name>Created</name>
+        <published_version/>
         <remote_sys_id/>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2023-11-11 06:49:26</sys_created_on>
-        <sys_id>9d31d6b7479af55017fdc82f316d43d9</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_created_on>2025-03-02 01:08:43</sys_created_on>
+        <sys_id>c191a191c3482210ff1f33bc050131e5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-11-18 10:12:58</sys_updated_on>
+        <sys_updated_on>2025-03-02 01:08:43</sys_updated_on>
         <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
-        <trigger_inputs/>
+        <trigger_inputs>H4sIAAAAAAAA/+VY2W7jNhT9FUFPLZACWmzLytvUzqABsgwcT4siTQhKJGNiZMqVKCWeQf69l1psWZb3pBMnLwZE0uQ95567kLc/dBnxhwcanYtYYuHTm2l8TvRT3SW2STqe03JczNptw3QY8bsWs80OadnE1U/0AHs0gKVD7AUUvrmQNBI4GE4nFIalGkYCj9XcGAuCZRhN9VMZJfREZ1E4HtLxJMASFjMcxDAYRoRG+ql5omd/K/aAv6c4SNT3EzI7XbfrIBaEj4hQZMCP/w2NQ8IZ97HkoUA0pULCnwiPYfvpn8V/+7BQu6ws1M6KhRMcwXFSHf1D90c8IBEV+unt3YkuAQtaAKpd5Yi4YslnPnYtavi2aVuWYVjdlul1bM+0iI2pYTSwVEMmG8ia00CfJBWEkhlDSzxGFJNrEUxnK0bgBtgw4/wp5t9h966h1jEKqHyaz80+UcFSPuyPQu7T64miJx/J7cwnwyAZi6vcfsUvZTgJZMkvjCQx7EcnymRlRGERuxmFj4PywM9cZOiKySD0cTD7whLk6CWSxsoVjAfgFJRzE4dJlFk/OOtdD/ror0/D3h9nAzQ4uxkOznvDs77+nOFC/yZqx9zCwhaUw3meieIzp4FyYDyNEXjyRI/9iE/kJ1/ytNTj88lLREcvFIRnfC5FiF9OxVVbK+KoeLvkcl3YGMZMXn7l1DJ4wgmNMuH/kxiGTTAh94BKJnH+rY7n4uEe3MpF9l8kQwSrzm+urodnl1+Gf9+rYJt/LsfYaxyxbXT2qmxm0dnpYEwoXhGdHlvhpQYKZYPDqqyvi9NiZJtAbRnGTwrVIinvG6mQf2nQryo4jxvExSSRiq1HLGRceBtVeFRLwaZNoZtje37FOI0SgVTxKD25HK0Z4TPmL3gMQG8hS5WsZsbAPLsothwkQgvB5fCj+UkEpEqtDG12PsYPhS/Yl1LiGZmF/lIcITRGKkONEg8tMIoct+uanVXSdvwFBrMEAFvf6vrds/IyDagvK2plX+Pq1yWPYwjTCr0zjJmzliDO0IHqtZLBHGp8XFjvDkm6yxJKa9Kopct1Atk67ZWyzFKeaTLmUWYZjmLKNGyPmYZjtDEjtmH41lrBr4QhaxHwKqlvt8QXZ7EXbBFpdR+UxitdB7vIOF2MgWIfS2mmyK+9N2harU7YOxWKmW7z4f728n3hVhCTVOV1sm29ePVSkV1AeFNTt6lMeNj/9hCFiSD1RKr21LjQ5iu0Xwrmfz2uNFotGSyM6Hq8iyuOB+XBxWIuojKAsZgul4l8cL+CYDPTc2mLGlAHbCgBXtt1PR9bjDkdh1rmSlk3mnkUhWBDGKVNcbgq8zZKNG1S9g7l4OcbeFBRKDTaWBLyufee/B9HVCAAGaFApfelGvAQcELLucNSxNJR6fwOV0sTO+SIi8JshZ11Xb9tOo7vQLaEDMFa1MNmy2pj1+nY3fYm7OuMlQ18/C/3ZlUclCErssfXfOptPXe9TZnHVEpV83ZvdARcIrL/4Ny8SvVXDtWy9BVG2lUofjufr9NuKFTZ7NnliHqBasezDWilQO1dofZCOVrq8ADp7zC+gFRdYVb4/KO9FtQiLF2ksuG1YB9C93xJoK1u22V2c1lgG3LFaoxvvoXcMjelK7NcU6u2beynjSlk1rrVm7891FDTWLG1vaFt/bikHNQql4G88vlkH2M/RNuRdZGH9B7KWopCVi1J/VCDCQ0O0TjTCmsp0bypJkcUnBHAbQoO1NTpR1aLqqV4Gfks1N417vz2udSBwLBWXAaOCNjLNBe1OFr7ztTA1369AyUObrftFVdKt/7o1GToBhxvvovYOdWkTZlrbdXcbd/6no11s+L5RaVs2Sa8Y9Sv9mTWYMUbrfB3/wFI20ldLyYAAA==</trigger_inputs>
         <trigger_outputs/>
         <trigger_type>record_create</trigger_type>
-    </sys_hub_trigger_instance>
-    <sys_variable_value action="delete_multiple" query="document_key=9d31d6b7479af55017fdc82f316d43d9"/>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_trigger_instance</document>
-        <document_key>9d31d6b7479af55017fdc82f316d43d9</document_key>
-        <order>1</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2023-11-11 06:49:26</sys_created_on>
-        <sys_id>1531d6b7479af55017fdc82f316d43db</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-11-11 06:49:26</sys_updated_on>
-        <value>x_168987_flow_de_0_deck_modification_event</value>
-        <variable display_value="Table">cfca92e0c31322002841b63b12d3ae00</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_trigger_instance</document>
-        <document_key>9d31d6b7479af55017fdc82f316d43d9</document_key>
-        <order>100</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2023-11-11 06:49:26</sys_created_on>
-        <sys_id>5d31d6b7479af55017fdc82f316d43da</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-11-11 06:49:26</sys_updated_on>
-        <value>operation=add^status=pending^definition_to_addISNOTEMPTY^deckISNOTEMPTY</value>
-        <variable display_value="Condition">66aadea0c31322002841b63b12d3aebf</variable>
-    </sys_variable_value>
-    <sys_hub_action_instance action="delete_multiple" query="flow=6ad09677479af55017fdc82f316d43ba^sys_idNOT INad31d6b7479af55017fdc82f316d43fc"/>
-    <sys_hub_action_instance action="INSERT_OR_UPDATE">
-        <action_inputs/>
-        <action_inputs/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=6ad09677479af55017fdc82f316d43ba^sys_idNOT INc191a191c3482210ff1f33bc050131ea"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
         <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
         <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
         <attributes/>
         <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
         <display_text/>
         <flow display_value="DECK: Deck Mod - Add card">6ad09677479af55017fdc82f316d43ba</flow>
         <generation_source/>
         <order>2</order>
         <parent_ui_id/>
-        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2023-11-11 06:49:27</sys_created_on>
-        <sys_id>ad31d6b7479af55017fdc82f316d43fc</sys_id>
-        <sys_mod_count>22</sys_mod_count>
+        <sys_created_on>2025-03-02 01:08:43</sys_created_on>
+        <sys_id>c191a191c3482210ff1f33bc050131ea</sys_id>
+        <sys_mod_count>2</sys_mod_count>
         <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-12-22 11:54:04</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-03-02 02:15:28</sys_updated_on>
         <ui_id>0b4ab56a-b7ce-4023-971a-e6339f4bb9bb</ui_id>
-    </sys_hub_action_instance>
-    <sys_variable_value action="delete_multiple" query="document_key=ad31d6b7479af55017fdc82f316d43fc"/>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_action_instance</document>
-        <document_key>ad31d6b7479af55017fdc82f316d43fc</document_key>
-        <order>50</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2023-11-11 06:49:27</sys_created_on>
-        <sys_id>2931d6b7479af55017fdc82f316d43ff</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-11-11 06:49:27</sys_updated_on>
-        <value>x_168987_flow_de_0_deck_modification_event</value>
-        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_action_instance</document>
-        <document_key>ad31d6b7479af55017fdc82f316d43fc</document_key>
-        <order>100</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2023-11-11 06:49:27</sys_created_on>
-        <sys_id>6531d6b7479af55017fdc82f316d43ff</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-11-11 06:49:27</sys_updated_on>
-        <value>status=completed</value>
-        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
-    </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="id=ad31d6b7479af55017fdc82f316d43fc"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>record</field>
-        <id>ad31d6b7479af55017fdc82f316d43fc</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2023-11-11 06:49:27</sys_created_on>
-        <sys_id>e131d6b7479af55017fdc82f316d43ff</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-11-11 06:49:27</sys_updated_on>
-        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
-        <value>{{Created_1.current}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>table_name</field>
-        <id>ad31d6b7479af55017fdc82f316d43fc</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2023-11-11 06:49:27</sys_created_on>
-        <sys_id>6d31d6b7479af55017fdc82f316d43fe</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-11-11 06:49:27</sys_updated_on>
-        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>values</field>
-        <id>ad31d6b7479af55017fdc82f316d43fc</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2023-11-11 06:49:27</sys_created_on>
-        <sys_id>2131d6b7479af55017fdc82f316d43ff</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-11-11 06:49:27</sys_updated_on>
-        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_hub_input_scripts action="delete_multiple" query="instance=ad31d6b7479af55017fdc82f316d43fc"/>
-    <sys_hub_alias_mapping action="delete_multiple" query="source_id=ad31d6b7479af55017fdc82f316d43fc"/>
-    <sys_hub_flow_logic action="delete_multiple" query="flow=6ad09677479af55017fdc82f316d43ba"/>
-    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=6ad09677479af55017fdc82f316d43ba^sys_idNOT INd531d6b7479af55017fdc82f316d43dc"/>
-    <sys_hub_sub_flow_instance action="INSERT_OR_UPDATE">
+        <values>H4sIAAAAAAAA/+VVXWvbMBT9K0HPIdhxvt9Gs0ChH9COvnRFXEtyIybLniSnzUL++65sOTFtV1rWPZS9GHQ/pHOO7rFudwSYk4U+1daBZuJ6a085WRDgScwn6XQ0nUM2HkfxNONsNsySeMJHScZIn0hfNxI8iufxhCVxkgyjaDgbxekkSeMhT0CIGOs05AIrjWCF4bjegKp8YLc7MQKc4DQesMoYod1+j3kubalgexPKMMLWUnHMk8XtXZ+UYHBHJwxZ7J6k3gpJQSoUll61mJ5idNvSr3nBqhxxUdkGz0LnMmR6p0vMYJOHE0d9Ih6d0FwgkAyUFX2Sg+bgCrMlC2cqDCBpfqnV9lCxlto1RHN4tPIXnjyKfF0mkBkLIhyWNAjUhLMlOLjGnZmrzEGvQjJhG024yKBS7qQbawouS3/zTYuDVLXdhapyfdEoQg4bdO6jsghClJ6nR97Qyq7XxcNVC3IldS1JoKgKBuqwAueMTCvn4eyIUKLWOIeylPqelqbYyLoZoeSDe4WLQaaKBzzTyns9aCZ2gKrCYIXxZR2+ASM9iXPcBpv3fWK39kSBtUcqqCH9WXkkDbFAgdYq1BLQehJ8MzOydF/wqI0IwPf9v3VLOn5tNNn8OIkdMEfHPNJ4MpvPpjSoQSP8sB80L7jMJAMPjYqNv5RnNlpiYe+8U9j7Ggrf5643UGjd9a2eqZcpBYM9i511e3sXTSLYa/xh9pp9JnsFGp/eX//MVdHw1R9+ZwRrI9mOo/BAV9nvVRQlHMUoFU4+f26eP5W9zzpvwNlaZyWF4vYF4K1vBILAt5M2RJ54JyR7NyF5eJ4+8H2KPpOF/psX6u43++1M0dEJAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=6ad09677479af55017fdc82f316d43ba^sys_idNOT IN4591a191c3482210ff1f33bc050131e8"/>
+    <sys_hub_sub_flow_instance_v2 action="INSERT_OR_UPDATE">
         <attributes/>
         <comment/>
         <display_text/>
         <flow display_value="DECK: Deck Mod - Add card">6ad09677479af55017fdc82f316d43ba</flow>
         <generation_source/>
-        <inputs/>
-        <inputs/>
         <order>1</order>
         <parent_ui_id/>
-        <subflow display_value="Add card to Player Deck">bb4e4cce479ebd1017fdc82f316d43a6</subflow>
-        <subflow_instance_inputs/>
-        <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
+        <subflow display_value="DECK: Add card to Player Deck">bb4e4cce479ebd1017fdc82f316d43a6</subflow>
+        <subflow_inputs>H4sIAAAAAAAA/+1T207cMBD9FeTnTZTs5rpvFQgJqS1VL7wgZE3sMWvhOMFxgO1q/712EpaF0hZatU99nPFczjnjc74hXV8dq+b2RHcWNMMTTpaEp4uYZ1We5CWINI3iXHBWzMUizniy4IzMiPR1lUgwYQxdHVY8flLHKlenoUZXycBwF92A6n242RwaBIucxiHrjUFtQ45Camllo6ltKHC+3boOLrtWwfpsanQZtpKKuw6yPL+YkRaM22DRkOXmyZNdt0gVVKhc40cU6F4YvgL7fe/hCP4xFT/dRWZvbmO4xxHPCN5Z1BzdHgGqwxmpQXOwjVmTpTW9Szj6/FSr9a5iJbUdCdZw18mvbvhiPtubvyR3NM6KssipcAejHGlEPRj6oBzZa6CTdBOBg6P9KrZqJMPTdgiHrRYq9eIlrFF9rd+PgvgroYBe2b0r9Z0DgK1XwfOaSIpPq+Z2d4pjqQfBpkfVMFC7CKw1suotdv6yvfz8vd5j8u0zF0aFtdtLa2hbqS9pa5obOexy0OvwUrkgnAh28lKHwDyz0N0IQm+HoyF9BkZ6Wd65Ma7Zb/yi5XU/uiQSZcXmeRnkUSGCRORpUAqYB4uqiHKoRJZBTLbDReh176mNUk2i0FF5V9AxI1v7xkG4wYn/dvZnzhTVz343zx6+M0d29Utnsqu/a8YXwL3vPRrxPkb/YzPO/6EZvTZo6ITpOSN+GCoOJg6vMuHj4f8N6CbleRWnUQYBxGkZJJixoExLCAoRJUVaxXwB6W8b8OIbF2whzRwHAAA=</subflow_inputs>
+        <sys_class_name>sys_hub_sub_flow_instance_v2</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2023-11-11 06:49:26</sys_created_on>
-        <sys_id>d531d6b7479af55017fdc82f316d43dc</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_created_on>2025-03-02 01:08:43</sys_created_on>
+        <sys_id>4591a191c3482210ff1f33bc050131e8</sys_id>
+        <sys_mod_count>1</sys_mod_count>
         <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-11-18 10:12:58</sys_updated_on>
+        <sys_updated_on>2025-03-02 01:08:43</sys_updated_on>
         <ui_id>5d7ec8d7-e24a-48d9-b728-fdeaf9afbdad</ui_id>
-    </sys_hub_sub_flow_instance>
-    <sys_variable_value action="delete_multiple" query="document_key=d531d6b7479af55017fdc82f316d43dc"/>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_sub_flow_instance</document>
-        <document_key>d531d6b7479af55017fdc82f316d43dc</document_key>
-        <order>0</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2023-11-11 06:49:27</sys_created_on>
-        <sys_id>6131d6b7479af55017fdc82f316d43f7</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-11-11 06:49:27</sys_updated_on>
-        <value>1</value>
-        <variable display_value="Wait For Completion">5d31d6b7479af55017fdc82f316d43dd</variable>
-    </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="id=d531d6b7479af55017fdc82f316d43dc"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>card</field>
-        <id>d531d6b7479af55017fdc82f316d43dc</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2023-11-11 06:49:27</sys_created_on>
-        <sys_id>ad31d6b7479af55017fdc82f316d43f5</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-11-11 06:49:27</sys_updated_on>
-        <table>var__m_sys_hub_flow_input_bb4e4cce479ebd1017fdc82f316d43a6</table>
-        <value>{{Created_1.current.definition_to_add}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>deck</field>
-        <id>d531d6b7479af55017fdc82f316d43dc</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2023-11-11 06:49:27</sys_created_on>
-        <sys_id>6531d6b7479af55017fdc82f316d43f6</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-11-11 06:49:27</sys_updated_on>
-        <table>var__m_sys_hub_flow_input_bb4e4cce479ebd1017fdc82f316d43a6</table>
-        <value>{{Created_1.current.deck}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_sub_flow_instance_inputs_d531d6b7479af55017fdc82f316d43dc^id=d531d6b7479af55017fdc82f316d43dc"/>
-    <sys_hub_sub_flow_instance_inputs action="delete_multiple" query="model=d531d6b7479af55017fdc82f316d43dc^sys_idNOT IN5d31d6b7479af55017fdc82f316d43dd"/>
-    <sys_hub_sub_flow_instance_inputs action="INSERT_OR_UPDATE">
-        <active>true</active>
-        <array>false</array>
-        <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,fd_hide_inline_script_widget=true,uiType=boolean,uiTypeLabel=True/False</attributes>
-        <audit>false</audit>
-        <calculation><![CDATA[(function calculatedFieldValue(current) {
-
-	// Add your code here
-	return '';  // return the calculated value
-
-})(current);]]></calculation>
-        <choice/>
-        <choice_field/>
-        <choice_table/>
-        <column_label/>
-        <comments/>
-        <create_roles/>
-        <default_value/>
-        <defaultsort/>
-        <delete_roles/>
-        <dependent/>
-        <dependent_on_field/>
-        <display>false</display>
-        <dynamic_creation>false</dynamic_creation>
-        <dynamic_creation_script/>
-        <dynamic_default_value/>
-        <dynamic_ref_qual/>
-        <element>wait_for_completion</element>
-        <element_reference>false</element_reference>
-        <foreign_database/>
-        <formula/>
-        <function_definition/>
-        <function_field>false</function_field>
-        <help/>
-        <hint/>
-        <internal_type display_value="">boolean</internal_type>
-        <label>Wait For Completion</label>
-        <mandatory>false</mandatory>
-        <max_length>40</max_length>
-        <model display_value="">d531d6b7479af55017fdc82f316d43dc</model>
-        <model_id>d531d6b7479af55017fdc82f316d43dc</model_id>
-        <model_table>sys_hub_flow_logic_ext_input</model_table>
-        <name>var__m_sys_hub_sub_flow_instance_inputs_d531d6b7479af55017fdc82f316d43dc</name>
-        <next_element/>
-        <order>0</order>
-        <primary>false</primary>
-        <read_only>false</read_only>
-        <read_roles/>
-        <reference/>
-        <reference_cascade_rule/>
-        <reference_floats>false</reference_floats>
-        <reference_key/>
-        <reference_qual/>
-        <reference_qual_condition/>
-        <reference_type/>
-        <sizeclass/>
-        <spell_check>false</spell_check>
-        <staged>false</staged>
-        <sys_class_name>sys_hub_sub_flow_instance_inputs</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2023-11-11 06:49:26</sys_created_on>
-        <sys_id>5d31d6b7479af55017fdc82f316d43dd</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
-        <sys_package/>
-        <sys_policy/>
-        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-11-11 06:49:26</sys_updated_on>
-        <table_reference>false</table_reference>
-        <text_index>false</text_index>
-        <unique>false</unique>
-        <use_dependent_field>false</use_dependent_field>
-        <use_dynamic_default>false</use_dynamic_default>
-        <use_reference_qualifier>simple</use_reference_qualifier>
-        <virtual>false</virtual>
-        <virtual_type>script</virtual_type>
-        <widget/>
-        <write_roles/>
-        <xml_view>false</xml_view>
-    </sys_hub_sub_flow_instance_inputs>
-    <sys_hub_input_scripts action="delete_multiple" query="instance=d531d6b7479af55017fdc82f316d43dc"/>
+        <wait_for_completion>true</wait_for_completion>
+    </sys_hub_sub_flow_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=6ad09677479af55017fdc82f316d43ba"/>
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=6ad09677479af55017fdc82f316d43ba"/>
     <sys_hub_flow_variable action="delete_multiple" query="model=6ad09677479af55017fdc82f316d43ba"/>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_6ad09677479af55017fdc82f316d43ba^sys_idNOT IN9931d6b7479af55017fdc82f316d43d4,9931d6b7479af55017fdc82f316d43d7"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>current</element>
         <help/>
@@ -583,11 +361,11 @@
         <sys_created_on>2023-11-11 06:49:26</sys_created_on>
         <sys_id>9931d6b7479af55017fdc82f316d43d4</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Record</sys_name>
+        <sys_name/>
         <sys_package display_value="SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_6ad09677479af55017fdc82f316d43ba_current_en</sys_update_name>
+        <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-11-11 06:49:26</sys_updated_on>
         <url/>
@@ -606,18 +384,17 @@
         <sys_created_on>2023-11-11 06:49:26</sys_created_on>
         <sys_id>9931d6b7479af55017fdc82f316d43d7</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Table Name</sys_name>
+        <sys_name/>
         <sys_package display_value="SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_6ad09677479af55017fdc82f316d43ba_table_name_en</sys_update_name>
+        <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-11-11 06:49:26</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_6ad09677479af55017fdc82f316d43ba"/>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_6ad09677479af55017fdc82f316d43ba"/>
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_6ad09677479af55017fdc82f316d43ba"/>
     <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -631,16 +408,16 @@
         <copied_from/>
         <copied_from_name/>
         <description>Triggers when a Deck mod record is created to add a card</description>
-        <flow_priority/>
+        <flow_priority>MEDIUM</flow_priority>
         <internal_name>deck_mod__add_card</internal_name>
         <label_cache>[{"name":"Created_1.current","label":"Trigger - Record Created➛Deck Modification Event Record","reference":"x_168987_flow_de_0_deck_modification_event","reference_display":"Deck Modification Event","type":"reference","base_type":"reference","attributes":{}},{"name":"Created_1.current.deck","label":"Trigger - Record Created➛Deck Modification Event Record➛deck","reference":"x_168987_flow_de_0_player_deck","reference_display":"Player Deck","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_deck_modification_event","column_name":"deck"},{"name":"Created_1.current.definition_to_add","label":"Trigger - Record Created➛Deck Modification Event Record➛Definition to Add","reference":"x_168987_flow_de_0_card_definition","reference_display":"Card Definition","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_deck_modification_event","column_name":"definition_to_add"}]</label_cache>
         <master>true</master>
-        <name>Deck Mod - Add card</name>
+        <name>DECK: Deck Mod - Add card</name>
         <natlang/>
         <outputs/>
         <parent_flow display_value="DECK: Deck Mod - Add card">6ad09677479af55017fdc82f316d43ba</parent_flow>
         <remote_trigger_id/>
-        <run_as>user</run_as>
+        <run_as>system</run_as>
         <run_with_roles/>
         <sc_callable>false</sc_callable>
         <status>published</status>
@@ -650,7 +427,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>65311ab7479af55017fdc82f316d4349</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -658,9 +435,9 @@
         <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-11-11 12:38:42</sys_updated_on>
+        <sys_updated_on>2025-03-02 01:08:46</sys_updated_on>
         <type>flow</type>
-        <version/>
+        <version>2</version>
     </sys_hub_flow_snapshot>
     <sys_translated_text action="delete_multiple" query="documentkey=65311ab7479af55017fdc82f316d4349"/>
     <sys_variable_value action="delete_multiple" query="document_key=65311ab7479af55017fdc82f316d4349"/>
@@ -719,7 +496,7 @@
         <label>Record</label>
         <mandatory>true</mandatory>
         <max_length>200</max_length>
-        <model display_value="Deck Mod - Add card">65311ab7479af55017fdc82f316d4349</model>
+        <model display_value="DECK: Deck Mod - Add card">65311ab7479af55017fdc82f316d4349</model>
         <model_id>65311ab7479af55017fdc82f316d4349</model_id>
         <model_table>sys_hub_flow_snapshot</model_table>
         <name>var__m_sys_hub_flow_input_65311ab7479af55017fdc82f316d4349</name>
@@ -742,14 +519,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-11-11 06:49:27</sys_created_on>
         <sys_id>21311ab7479af55017fdc82f316d434b</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-11-11 12:38:41</sys_updated_on>
+        <sys_updated_on>2025-03-02 01:08:45</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -803,7 +580,7 @@
         <label>Table Name</label>
         <mandatory>false</mandatory>
         <max_length>200</max_length>
-        <model display_value="Deck Mod - Add card">65311ab7479af55017fdc82f316d4349</model>
+        <model display_value="DECK: Deck Mod - Add card">65311ab7479af55017fdc82f316d4349</model>
         <model_id>65311ab7479af55017fdc82f316d4349</model_id>
         <model_table>sys_hub_flow_snapshot</model_table>
         <name>var__m_sys_hub_flow_input_65311ab7479af55017fdc82f316d4349</name>
@@ -826,14 +603,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-11-11 06:49:28</sys_created_on>
         <sys_id>75311ab7479af55017fdc82f316d4357</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-11-11 12:38:41</sys_updated_on>
+        <sys_updated_on>2025-03-02 01:08:45</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -849,298 +626,74 @@
     <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=75311ab7479af55017fdc82f316d4357"/>
     <sys_hub_flow_output action="delete_multiple" query="model=65311ab7479af55017fdc82f316d4349"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=65311ab7479af55017fdc82f316d4349"/>
-    <sys_hub_trigger_instance action="delete_multiple" query="flow=65311ab7479af55017fdc82f316d4349^sys_idNOT INbd311ab7479af55017fdc82f316d4375"/>
-    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=65311ab7479af55017fdc82f316d4349^sys_idNOT INa191e191c3482210ff1f33bc0501317f"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
         <comment/>
         <display_text/>
-        <flow display_value="Deck Mod - Add card">65311ab7479af55017fdc82f316d4349</flow>
+        <flow display_value="DECK: Deck Mod - Add card">65311ab7479af55017fdc82f316d4349</flow>
         <name>Created</name>
+        <published_version/>
         <remote_sys_id/>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2023-11-11 06:49:28</sys_created_on>
-        <sys_id>bd311ab7479af55017fdc82f316d4375</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_created_on>2025-03-02 01:08:45</sys_created_on>
+        <sys_id>a191e191c3482210ff1f33bc0501317f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-11-11 12:38:42</sys_updated_on>
+        <sys_updated_on>2025-03-02 01:08:45</sys_updated_on>
         <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
-        <trigger_inputs/>
+        <trigger_inputs>H4sIAAAAAAAA/+VY2W7jNhT9FUFPLZACWmzLytvUzqABsgwcT4siTQhKJGNiZMqVKCWeQf69l1psWZb3pBMnLwZE0uQ95567kLc/dBnxhwcanYtYYuHTm2l8TvRT3SW2STqe03JczNptw3QY8bsWs80OadnE1U/0AHs0gKVD7AUUvrmQNBI4GE4nFIalGkYCj9XcGAuCZRhN9VMZJfREZ1E4HtLxJMASFjMcxDAYRoRG+ql5omd/K/aAv6c4SNT3EzI7XbfrIBaEj4hQZMCP/w2NQ8IZ97HkoUA0pULCnwiPYfvpn8V/+7BQu6ws1M6KhRMcwXFSHf1D90c8IBEV+unt3YkuAQtaAKpd5Yi4YslnPnYtavi2aVuWYVjdlul1bM+0iI2pYTSwVEMmG8ia00CfJBWEkhlDSzxGFJNrEUxnK0bgBtgw4/wp5t9h966h1jEKqHyaz80+UcFSPuyPQu7T64miJx/J7cwnwyAZi6vcfsUvZTgJZMkvjCQx7EcnymRlRGERuxmFj4PywM9cZOiKySD0cTD7whLk6CWSxsoVjAfgFJRzE4dJlFk/OOtdD/ror0/D3h9nAzQ4uxkOznvDs77+nOFC/yZqx9zCwhaUw3meieIzp4FyYDyNEXjyRI/9iE/kJ1/ytNTj88lLREcvFIRnfC5FiF9OxVVbK+KoeLvkcl3YGMZMXn7l1DJ4wgmNMuH/kxiGTTAh94BKJnH+rY7n4uEe3MpF9l8kQwSrzm+urodnl1+Gf9+rYJt/LsfYaxyxbXT2qmxm0dnpYEwoXhGdHlvhpQYKZYPDqqyvi9NiZJtAbRnGTwrVIinvG6mQf2nQryo4jxvExSSRiq1HLGRceBtVeFRLwaZNoZtje37FOI0SgVTxKD25HK0Z4TPmL3gMQG8hS5WsZsbAPLsothwkQgvB5fCj+UkEpEqtDG12PsYPhS/Yl1LiGZmF/lIcITRGKkONEg8tMIoct+uanVXSdvwFBrMEAFvf6vrds/IyDagvK2plX+Pq1yWPYwjTCr0zjJmzliDO0IHqtZLBHGp8XFjvDkm6yxJKa9Kopct1Atk67ZWyzFKeaTLmUWYZjmLKNGyPmYZjtDEjtmH41lrBr4QhaxHwKqlvt8QXZ7EXbBFpdR+UxitdB7vIOF2MgWIfS2mmyK+9N2harU7YOxWKmW7z4f728n3hVhCTVOV1sm29ePVSkV1AeFNTt6lMeNj/9hCFiSD1RKr21LjQ5iu0Xwrmfz2uNFotGSyM6Hq8iyuOB+XBxWIuojKAsZgul4l8cL+CYDPTc2mLGlAHbCgBXtt1PR9bjDkdh1rmSlk3mnkUhWBDGKVNcbgq8zZKNG1S9g7l4OcbeFBRKDTaWBLyufee/B9HVCAAGaFApfelGvAQcELLucNSxNJR6fwOV0sTO+SIi8JshZ11Xb9tOo7vQLaEDMFa1MNmy2pj1+nY3fYm7OuMlQ18/C/3ZlUclCErssfXfOptPXe9TZnHVEpV83ZvdARcIrL/4Ny8SvVXDtWy9BVG2lUofjufr9NuKFTZ7NnliHqBasezDWilQO1dofZCOVrq8ADp7zC+gFRdYVb4/KO9FtQiLF2ksuG1YB9C93xJoK1u22V2c1lgG3LFaoxvvoXcMjelK7NcU6u2beynjSlk1rrVm7891FDTWLG1vaFt/bikHNQql4G88vlkH2M/RNuRdZGH9B7KWopCVi1J/VCDCQ0O0TjTCmsp0bypJkcUnBHAbQoO1NTpR1aLqqV4Gfks1N417vz2udSBwLBWXAaOCNjLNBe1OFr7ztTA1369AyUObrftFVdKt/7o1GToBhxvvovYOdWkTZlrbdXcbd/6no11s+L5RaVs2Sa8Y9Sv9mTWYMUbrfB3/wFI20ldLyYAAA==</trigger_inputs>
         <trigger_outputs/>
         <trigger_type>record_create</trigger_type>
-    </sys_hub_trigger_instance>
-    <sys_variable_value action="delete_multiple" query="document_key=bd311ab7479af55017fdc82f316d4375"/>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_trigger_instance</document>
-        <document_key>bd311ab7479af55017fdc82f316d4375</document_key>
-        <order>1</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2023-11-11 06:49:28</sys_created_on>
-        <sys_id>b5311ab7479af55017fdc82f316d4377</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-11-11 06:49:28</sys_updated_on>
-        <value>x_168987_flow_de_0_deck_modification_event</value>
-        <variable display_value="Table">cfca92e0c31322002841b63b12d3ae00</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_trigger_instance</document>
-        <document_key>bd311ab7479af55017fdc82f316d4375</document_key>
-        <order>100</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2023-11-11 06:49:28</sys_created_on>
-        <sys_id>f1311ab7479af55017fdc82f316d4377</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-11-11 06:49:28</sys_updated_on>
-        <value>operation=add^status=pending^definition_to_addISNOTEMPTY^deckISNOTEMPTY</value>
-        <variable display_value="Condition">66aadea0c31322002841b63b12d3aebf</variable>
-    </sys_variable_value>
-    <sys_hub_action_instance action="delete_multiple" query="flow=65311ab7479af55017fdc82f316d4349^sys_idNOT INbd311ab7479af55017fdc82f316d4373"/>
-    <sys_hub_action_instance action="INSERT_OR_UPDATE">
-        <action_inputs/>
-        <action_inputs/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=65311ab7479af55017fdc82f316d4349^sys_idNOT IN6991e191c3482210ff1f33bc050131a8"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
         <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
         <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
         <attributes/>
         <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
         <display_text/>
-        <flow display_value="Deck Mod - Add card">65311ab7479af55017fdc82f316d4349</flow>
+        <flow display_value="DECK: Deck Mod - Add card">65311ab7479af55017fdc82f316d4349</flow>
         <generation_source/>
         <order>2</order>
         <parent_ui_id/>
-        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2023-11-11 06:49:28</sys_created_on>
-        <sys_id>bd311ab7479af55017fdc82f316d4373</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_created_on>2025-03-02 01:08:45</sys_created_on>
+        <sys_id>6991e191c3482210ff1f33bc050131a8</sys_id>
+        <sys_mod_count>1</sys_mod_count>
         <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-11-11 12:38:42</sys_updated_on>
+        <sys_updated_on>2025-03-02 01:08:45</sys_updated_on>
         <ui_id>0b4ab56a-b7ce-4023-971a-e6339f4bb9bb</ui_id>
-    </sys_hub_action_instance>
-    <sys_variable_value action="delete_multiple" query="document_key=bd311ab7479af55017fdc82f316d4373"/>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_action_instance</document>
-        <document_key>bd311ab7479af55017fdc82f316d4373</document_key>
-        <order>50</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2023-11-11 06:49:28</sys_created_on>
-        <sys_id>b9311ab7479af55017fdc82f316d4375</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-11-11 06:49:28</sys_updated_on>
-        <value>x_168987_flow_de_0_deck_modification_event</value>
-        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_action_instance</document>
-        <document_key>bd311ab7479af55017fdc82f316d4373</document_key>
-        <order>100</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2023-11-11 06:49:28</sys_created_on>
-        <sys_id>f5311ab7479af55017fdc82f316d4375</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-11-11 06:49:28</sys_updated_on>
-        <value>status=completed</value>
-        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
-    </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="id=bd311ab7479af55017fdc82f316d4373"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>record</field>
-        <id>bd311ab7479af55017fdc82f316d4373</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2023-11-11 06:49:28</sys_created_on>
-        <sys_id>75311ab7479af55017fdc82f316d4375</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-11-11 06:49:28</sys_updated_on>
-        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
-        <value>{{Created_1.current}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>table_name</field>
-        <id>bd311ab7479af55017fdc82f316d4373</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2023-11-11 06:49:28</sys_created_on>
-        <sys_id>fd311ab7479af55017fdc82f316d4374</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-11-11 06:49:28</sys_updated_on>
-        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>values</field>
-        <id>bd311ab7479af55017fdc82f316d4373</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2023-11-11 06:49:28</sys_created_on>
-        <sys_id>b1311ab7479af55017fdc82f316d4375</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-11-11 06:49:28</sys_updated_on>
-        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_hub_input_scripts action="delete_multiple" query="instance=bd311ab7479af55017fdc82f316d4373"/>
-    <sys_hub_alias_mapping action="delete_multiple" query="source_id=bd311ab7479af55017fdc82f316d4373"/>
-    <sys_hub_flow_logic action="delete_multiple" query="flow=65311ab7479af55017fdc82f316d4349"/>
-    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=65311ab7479af55017fdc82f316d4349^sys_idNOT IN79311ab7479af55017fdc82f316d4377"/>
-    <sys_hub_sub_flow_instance action="INSERT_OR_UPDATE">
+        <values>H4sIAAAAAAAA/+VVXWvbMBT9K0HPIdhxvt9Gs0ChH9COvnRFXEtyIybLniSnzUL++65sOTFtV1rWPZS9GHQ/pHOO7rFudwSYk4U+1daBZuJ6a085WRDgScwn6XQ0nUM2HkfxNONsNsySeMJHScZIn0hfNxI8iufxhCVxkgyjaDgbxekkSeMhT0CIGOs05AIrjWCF4bjegKp8YLc7MQKc4DQesMoYod1+j3kubalgexPKMMLWUnHMk8XtXZ+UYHBHJwxZ7J6k3gpJQSoUll61mJ5idNvSr3nBqhxxUdkGz0LnMmR6p0vMYJOHE0d9Ih6d0FwgkAyUFX2Sg+bgCrMlC2cqDCBpfqnV9lCxlto1RHN4tPIXnjyKfF0mkBkLIhyWNAjUhLMlOLjGnZmrzEGvQjJhG024yKBS7qQbawouS3/zTYuDVLXdhapyfdEoQg4bdO6jsghClJ6nR97Qyq7XxcNVC3IldS1JoKgKBuqwAueMTCvn4eyIUKLWOIeylPqelqbYyLoZoeSDe4WLQaaKBzzTyns9aCZ2gKrCYIXxZR2+ASM9iXPcBpv3fWK39kSBtUcqqCH9WXkkDbFAgdYq1BLQehJ8MzOydF/wqI0IwPf9v3VLOn5tNNn8OIkdMEfHPNJ4MpvPpjSoQSP8sB80L7jMJAMPjYqNv5RnNlpiYe+8U9j7Ggrf5643UGjd9a2eqZcpBYM9i511e3sXTSLYa/xh9pp9JnsFGp/eX//MVdHw1R9+ZwRrI9mOo/BAV9nvVRQlHMUoFU4+f26eP5W9zzpvwNlaZyWF4vYF4K1vBILAt5M2RJ54JyR7NyF5eJ4+8H2KPpOF/psX6u43++1M0dEJAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=65311ab7479af55017fdc82f316d4349^sys_idNOT IN6991e191c3482210ff1f33bc050131a7"/>
+    <sys_hub_sub_flow_instance_v2 action="INSERT_OR_UPDATE">
         <attributes/>
         <comment/>
         <display_text/>
-        <flow display_value="Deck Mod - Add card">65311ab7479af55017fdc82f316d4349</flow>
+        <flow display_value="DECK: Deck Mod - Add card">65311ab7479af55017fdc82f316d4349</flow>
         <generation_source/>
-        <inputs/>
-        <inputs/>
         <order>1</order>
         <parent_ui_id/>
-        <subflow display_value="Add card to Player Deck">bb4e4cce479ebd1017fdc82f316d43a6</subflow>
-        <subflow_instance_inputs/>
-        <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
+        <subflow display_value="DECK: Add card to Player Deck">bb4e4cce479ebd1017fdc82f316d43a6</subflow>
+        <subflow_inputs>H4sIAAAAAAAA/9VTYU/bMBD9K8ifk6ppm6Tpt6kVEtI2prHxBSHrbJ+phesExwG6qv99dpKVwNDGNIa0jz6/u3vvnd7FjtQNO9bl3YmpHRiOJ4IsiEinichYPssLkGk6TnIp+Hwip0kmZlPBSURUwDE5wxnn6HHIRPIEx5nHGdigR3Kwwr9uQTfhudstLYJDQZMRb6xF40YCpTLKqdJQV1IQYr/3HULVlYbted/oK3yttPAdZHFxGZEKrN/g0JLF7snXSylqYKg9dNlxfMzYbavwsijRD+bYl973PZ8H9dKKQCOJCN47NAL9fgm6xohswAhwpd2ShbONL3j14tTo7QGxVsZ1+jZwX6tvful0Eg32Lsg9TbJ5Mc+p9PeiAumYBpL0wTgyaKC9c72wo9UQJVfg4MxT4a6xB19LxbHuvPMzodFuOax1gNOqndG2OGD6xcx4qZuN+di5Sw4rBpdtas8aq2BdMKN3Rp6ty7uDz8fKtC73n7rkoAdQBMvXxwp1uH17yYiAc1axxgUdO9KoLz+ftCs+d1TUuPFs6AaqSpkrWtnyVrUMvKDN6Er7x6iXXasrMwIe9I78uWEUgrVqy+dgVTDrgx/jm8PGr0bdNF3exrJgfJIXcT6ey3gm8zQuJEziKZuPc2AyyyAh+4jU23qpoa4fTPQi6E0TLOgs7c2j3YVCC7eqcu88qVvsfdpHf5d6yX4VKZE9ZEggv/5t6vn1qwT9Bax+BH3V0XpM8s+DPnnDoAdr0NKe63Mh/9Qijnpt/z7gjxm9fbjDYvrfJDzPWZKOM4ghSYt4hhmPi7SAeC7Hs3nKEjGF9BUTfvkdwkHindkHAAA=</subflow_inputs>
+        <sys_class_name>sys_hub_sub_flow_instance_v2</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2023-11-11 06:49:28</sys_created_on>
-        <sys_id>79311ab7479af55017fdc82f316d4377</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_created_on>2025-03-02 01:08:45</sys_created_on>
+        <sys_id>6991e191c3482210ff1f33bc050131a7</sys_id>
+        <sys_mod_count>1</sys_mod_count>
         <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-11-11 12:38:42</sys_updated_on>
+        <sys_updated_on>2025-03-02 01:08:45</sys_updated_on>
         <ui_id>5d7ec8d7-e24a-48d9-b728-fdeaf9afbdad</ui_id>
-    </sys_hub_sub_flow_instance>
-    <sys_variable_value action="delete_multiple" query="document_key=79311ab7479af55017fdc82f316d4377"/>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_sub_flow_instance</document>
-        <document_key>79311ab7479af55017fdc82f316d4377</document_key>
-        <order>0</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2023-11-11 06:49:28</sys_created_on>
-        <sys_id>35311ab7479af55017fdc82f316d4386</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-11-11 06:49:28</sys_updated_on>
-        <value>1</value>
-        <variable display_value="Wait For Completion">35311ab7479af55017fdc82f316d4378</variable>
-    </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="id=79311ab7479af55017fdc82f316d4377"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>card</field>
-        <id>79311ab7479af55017fdc82f316d4377</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2023-11-11 06:49:28</sys_created_on>
-        <sys_id>f5311ab7479af55017fdc82f316d4385</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-11-11 06:49:28</sys_updated_on>
-        <table>var__m_sys_hub_flow_input_bb4e4cce479ebd1017fdc82f316d43a6</table>
-        <value>{{Created_1.current.definition_to_add}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>deck</field>
-        <id>79311ab7479af55017fdc82f316d4377</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2023-11-11 06:49:28</sys_created_on>
-        <sys_id>b9311ab7479af55017fdc82f316d4385</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-11-11 06:49:28</sys_updated_on>
-        <table>var__m_sys_hub_flow_input_bb4e4cce479ebd1017fdc82f316d43a6</table>
-        <value>{{Created_1.current.deck}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_sub_flow_instance_inputs_79311ab7479af55017fdc82f316d4377^id=79311ab7479af55017fdc82f316d4377"/>
-    <sys_hub_sub_flow_instance_inputs action="delete_multiple" query="model=79311ab7479af55017fdc82f316d4377^sys_idNOT IN35311ab7479af55017fdc82f316d4378"/>
-    <sys_hub_sub_flow_instance_inputs action="INSERT_OR_UPDATE">
-        <active>true</active>
-        <array>false</array>
-        <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,fd_hide_inline_script_widget=true,uiType=boolean,uiTypeLabel=True/False</attributes>
-        <audit>false</audit>
-        <calculation><![CDATA[(function calculatedFieldValue(current) {
-
-	// Add your code here
-	return '';  // return the calculated value
-
-})(current);]]></calculation>
-        <choice/>
-        <choice_field/>
-        <choice_table/>
-        <column_label/>
-        <comments/>
-        <create_roles/>
-        <default_value/>
-        <defaultsort/>
-        <delete_roles/>
-        <dependent/>
-        <dependent_on_field/>
-        <display>false</display>
-        <dynamic_creation>false</dynamic_creation>
-        <dynamic_creation_script/>
-        <dynamic_default_value/>
-        <dynamic_ref_qual/>
-        <element>wait_for_completion</element>
-        <element_reference>false</element_reference>
-        <foreign_database/>
-        <formula/>
-        <function_definition/>
-        <function_field>false</function_field>
-        <help/>
-        <hint/>
-        <internal_type display_value="">boolean</internal_type>
-        <label>Wait For Completion</label>
-        <mandatory>false</mandatory>
-        <max_length>40</max_length>
-        <model display_value="">79311ab7479af55017fdc82f316d4377</model>
-        <model_id>79311ab7479af55017fdc82f316d4377</model_id>
-        <model_table>sys_hub_flow_logic_ext_input</model_table>
-        <name>var__m_sys_hub_sub_flow_instance_inputs_79311ab7479af55017fdc82f316d4377</name>
-        <next_element/>
-        <order>0</order>
-        <primary>false</primary>
-        <read_only>false</read_only>
-        <read_roles/>
-        <reference/>
-        <reference_cascade_rule/>
-        <reference_floats>false</reference_floats>
-        <reference_key/>
-        <reference_qual/>
-        <reference_qual_condition/>
-        <reference_type/>
-        <sizeclass/>
-        <spell_check>false</spell_check>
-        <staged>false</staged>
-        <sys_class_name>sys_hub_sub_flow_instance_inputs</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2023-11-11 06:49:28</sys_created_on>
-        <sys_id>35311ab7479af55017fdc82f316d4378</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
-        <sys_package/>
-        <sys_policy/>
-        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-11-11 06:49:28</sys_updated_on>
-        <table_reference>false</table_reference>
-        <text_index>false</text_index>
-        <unique>false</unique>
-        <use_dependent_field>false</use_dependent_field>
-        <use_dynamic_default>false</use_dynamic_default>
-        <use_reference_qualifier>simple</use_reference_qualifier>
-        <virtual>false</virtual>
-        <virtual_type>script</virtual_type>
-        <widget/>
-        <write_roles/>
-        <xml_view>false</xml_view>
-    </sys_hub_sub_flow_instance_inputs>
-    <sys_hub_input_scripts action="delete_multiple" query="instance=79311ab7479af55017fdc82f316d4377"/>
+        <wait_for_completion>true</wait_for_completion>
+    </sys_hub_sub_flow_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=65311ab7479af55017fdc82f316d4349"/>
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=65311ab7479af55017fdc82f316d4349"/>
     <sys_hub_flow_variable action="delete_multiple" query="model=65311ab7479af55017fdc82f316d4349"/>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_65311ab7479af55017fdc82f316d4349^sys_idNOT IN39311ab7479af55017fdc82f316d435b,7d311ab7479af55017fdc82f316d4353"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>table_name</element>
         <help/>
@@ -1154,11 +707,11 @@
         <sys_created_on>2023-11-11 06:49:28</sys_created_on>
         <sys_id>39311ab7479af55017fdc82f316d435b</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Table Name</sys_name>
+        <sys_name/>
         <sys_package display_value="SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_65311ab7479af55017fdc82f316d4349_table_name_en</sys_update_name>
+        <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-11-11 06:49:28</sys_updated_on>
         <url/>
@@ -1177,40 +730,39 @@
         <sys_created_on>2023-11-11 06:49:28</sys_created_on>
         <sys_id>7d311ab7479af55017fdc82f316d4353</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Record</sys_name>
+        <sys_name/>
         <sys_package display_value="SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_65311ab7479af55017fdc82f316d4349_current_en</sys_update_name>
+        <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-11-11 06:49:28</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_65311ab7479af55017fdc82f316d4349"/>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_65311ab7479af55017fdc82f316d4349"/>
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_65311ab7479af55017fdc82f316d4349"/>
     <sys_hub_flow action="UPDATE">
         <sys_id>6ad09677479af55017fdc82f316d43ba</sys_id>
         <latest_snapshot>65311ab7479af55017fdc82f316d4349</latest_snapshot>
-        <compiler_build>glide-xanadu-07-02-2024__patch4-11-22-2024_12-02-2024_1408.zip</compiler_build>
+        <compiler_build>glide-yokohama-12-18-2024__patch0-01-14-2025_01-22-2025_0439.zip</compiler_build>
     </sys_hub_flow>
     <sys_flow_trigger_plan action="delete_multiple" query="plan_id=6ad09677479af55017fdc82f316d43ba^sys_idNOT INf9311ab7479af55017fdc82f316d439e"/>
     <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
         <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
         <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"f9311ab7479af55017fdc82f316d439e","name":"plan","plan_signature":null}}</plan>
         <plan_id>6ad09677479af55017fdc82f316d43ba</plan_id>
-        <snapshot>7ff5dbbec3aa1210ff1f33bc05013199</snapshot>
+        <snapshot>76d03dd9c3c82210ff1f33bc050131d8</snapshot>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-11-11 06:49:28</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>f9311ab7479af55017fdc82f316d439e</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-11-11 12:38:42</sys_updated_on>
+        <sys_updated_on>2025-03-02 01:08:46</sys_updated_on>
         <trigger display_value="">3d311ab7479af55017fdc82f316d439c</trigger>
     </sys_flow_trigger_plan>
     <sys_flow_subflow_plan action="delete_multiple" query="plan_id=6ad09677479af55017fdc82f316d43ba"/>

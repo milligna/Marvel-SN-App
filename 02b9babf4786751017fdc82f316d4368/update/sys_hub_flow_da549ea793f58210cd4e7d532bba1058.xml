@@ -4,7 +4,7 @@
         <acls/>
         <active>true</active>
         <annotation/>
-        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=328000,viewActivatedIn=naturalLanguage</attributes>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=26242793000,viewActivatedIn=naturalLanguage</attributes>
         <authored_on_release_version/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
@@ -12,10 +12,10 @@
         <copied_from_name>CARD-ACT: Subflow Template</copied_from_name>
         <description/>
         <display_name_after_preview/>
-        <flow_priority/>
+        <flow_priority>MEDIUM</flow_priority>
         <generation_source/>
         <internal_name>cardact_on_reveal_if_your_opponent_played_a_card_here_this_turn_2_power</internal_name>
-        <label_cache>[{"name":"subflow.player_session","label":"Input➛Player Session","reference":"x_168987_flow_de_0_player_session","reference_display":"Player Session","type":"reference","base_type":"reference","column_name":"","usedInstances":{"fd57ca12-c5e0-4641-8611-b9e31dbad906":["condition"]},"attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"498332c7-2b6e-42b0-82a9-9f0a0d4937ea","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.game_instance.player_1","label":"Input➛Game Instance➛Player 1","reference":"x_168987_flow_de_0_player_session","reference_display":"Player Session","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_game_instance","column_name":"player_1","usedInstances":{"fd57ca12-c5e0-4641-8611-b9e31dbad906":["condition"]}},{"name":"subflow.game_instance.player_2","label":"Input➛Game Instance➛Player 2","reference":"x_168987_flow_de_0_player_session","reference_display":"Player Session","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_game_instance","column_name":"player_2","usedInstances":{"7c646327-7657-4167-8c70-df52227c0484":["target_player_id-0"]}},{"name":"subflow.game_instance.player_2.sys_id","label":"Input➛Game Instance➛Player 2➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_168987_flow_de_0_player_session","column_name":"sys_id","usedInstances":{"7c646327-7657-4167-8c70-df52227c0484":["target_player_id-0"]}},{"name":"subflow.game_instance","label":"Input➛Game Instance","reference":"x_168987_flow_de_0_game_instance","reference_display":"Game Instance","type":"reference","base_type":"reference","column_name":"","usedInstances":{"6e85d64f-e5be-4227-86fe-8921b9e856ec":["target_player_id-0"]},"attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"7a58a3f2-25f0-4114-a70d-a69edcc42766","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.game_instance.player_1.sys_id","label":"Input➛Game Instance➛Player 1➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_168987_flow_de_0_player_session","column_name":"sys_id","usedInstances":{"6e85d64f-e5be-4227-86fe-8921b9e856ec":["target_player_id-0"]}},{"name":"flow_variable.target_player_id","label":"Flow Variables➛Target Player ID","type":"string","base_type":"string","usedInstances":{"a647a964-ca4e-41f3-b6a1-8c7f9855addb":["conditions"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"59748ad0-82e7-48af-896c-9f6e34f7e3aa"}},{"name":"subflow.card_instance.turn_played","label":"Input➛Card Instance➛Turn Played","reference":"","reference_display":"Turn Played","type":"integer","base_type":"integer","parent_table_name":"x_168987_flow_de_0_card_instance","column_name":"turn_played","usedInstances":{"a647a964-ca4e-41f3-b6a1-8c7f9855addb":["conditions"]}},{"name":"a647a964-ca4e-41f3-b6a1-8c7f9855addb.Count","label":"5 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","usedInstances":{"2ac08fd7-af33-4d18-8502-53e5f5fb4a97":["condition"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.card_instance.current_location","label":"Input➛Card Instance➛Current Location","reference":"x_168987_flow_de_0_location_instance","reference_display":"Game Location instance","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_card_instance","column_name":"current_location","usedInstances":{"a647a964-ca4e-41f3-b6a1-8c7f9855addb":["conditions"]}},{"name":"subflow.card_instance","label":"Input➛Card Instance","reference":"x_168987_flow_de_0_card_instance","reference_display":"Game Card Instance","type":"reference","base_type":"reference","column_name":"","usedInstances":{"a60f6e33-6210-46f9-8392-6db345bdc24f":["record"]},"attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"8e6c95b5-af4a-42f5-a485-481417e03d5c","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.card_instance.current_power","label":"Input➛Card Instance➛Current Power","reference":"","reference_display":"Current Power","type":"integer","base_type":"integer","parent_table_name":"x_168987_flow_de_0_card_instance","column_name":"current_power","usedInstances":{"a60f6e33-6210-46f9-8392-6db345bdc24f":["current_power"]}}]</label_cache>
+        <label_cache>[{"name":"subflow.card_instance.current_power","label":"Input➛Card Instance➛Current Power","reference":"","reference_display":"Current Power","type":"integer","base_type":"integer","parent_table_name":"x_168987_flow_de_0_card_instance","column_name":"current_power","usedInstances":{"a60f6e33-6210-46f9-8392-6db345bdc24f":["current_power"]}},{"name":"subflow.card_instance","label":"Input➛Card Instance","reference":"x_168987_flow_de_0_card_instance","reference_display":"Game Card Instance","type":"reference","base_type":"reference","column_name":"","usedInstances":{"a60f6e33-6210-46f9-8392-6db345bdc24f":["record"]},"attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"8e6c95b5-af4a-42f5-a485-481417e03d5c","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.card_instance.current_location","label":"Input➛Card Instance➛Current Location","reference":"x_168987_flow_de_0_location_instance","reference_display":"Game Location instance","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_card_instance","column_name":"current_location","usedInstances":{"a647a964-ca4e-41f3-b6a1-8c7f9855addb":["conditions"]}},{"name":"a647a964-ca4e-41f3-b6a1-8c7f9855addb.Count","label":"5 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","usedInstances":{"2ac08fd7-af33-4d18-8502-53e5f5fb4a97":["condition"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.card_instance.turn_played","label":"Input➛Card Instance➛Turn Played","reference":"","reference_display":"Turn Played","type":"integer","base_type":"integer","parent_table_name":"x_168987_flow_de_0_card_instance","column_name":"turn_played","usedInstances":{"a647a964-ca4e-41f3-b6a1-8c7f9855addb":["conditions"]}},{"name":"flow_variable.target_player_id","label":"Flow Variables➛Target Player ID","type":"string","base_type":"string","usedInstances":{"a647a964-ca4e-41f3-b6a1-8c7f9855addb":["conditions"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"59748ad0-82e7-48af-896c-9f6e34f7e3aa"}},{"name":"subflow.game_instance.player_1.sys_id","label":"Input➛Game Instance➛Player 1➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_168987_flow_de_0_player_session","column_name":"sys_id","usedInstances":{"6e85d64f-e5be-4227-86fe-8921b9e856ec":["target_player_id-0"]}},{"name":"subflow.game_instance","label":"Input➛Game Instance","reference":"x_168987_flow_de_0_game_instance","reference_display":"Game Instance","type":"reference","base_type":"reference","column_name":"","usedInstances":{"6e85d64f-e5be-4227-86fe-8921b9e856ec":["target_player_id-0"]},"attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"7a58a3f2-25f0-4114-a70d-a69edcc42766","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.game_instance.player_2.sys_id","label":"Input➛Game Instance➛Player 2➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_168987_flow_de_0_player_session","column_name":"sys_id","usedInstances":{"7c646327-7657-4167-8c70-df52227c0484":["target_player_id-0"]}},{"name":"subflow.game_instance.player_2","label":"Input➛Game Instance➛Player 2","reference":"x_168987_flow_de_0_player_session","reference_display":"Player Session","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_game_instance","column_name":"player_2","usedInstances":{"7c646327-7657-4167-8c70-df52227c0484":["target_player_id-0"]}},{"name":"subflow.game_instance.player_1","label":"Input➛Game Instance➛Player 1","reference":"x_168987_flow_de_0_player_session","reference_display":"Player Session","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_game_instance","column_name":"player_1","usedInstances":{"fd57ca12-c5e0-4641-8611-b9e31dbad906":["condition"]}},{"name":"subflow.player_session","label":"Input➛Player Session","reference":"x_168987_flow_de_0_player_session","reference_display":"Player Session","type":"reference","base_type":"reference","column_name":"","usedInstances":{"fd57ca12-c5e0-4641-8611-b9e31dbad906":["condition"]},"attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"498332c7-2b6e-42b0-82a9-9f0a0d4937ea","sourceUiUniqueId":"","sourceType":"","sourceId":""}}]</label_cache>
         <master_snapshot>ea95526b93f58210cd4e7d532bba1032</master_snapshot>
         <master_snapshot_digest/>
         <name>CARD-ACT: On Reveal: If your opponent played a card here this turn, +2 Power.</name>
@@ -23,7 +23,7 @@
         <outputs/>
         <pre_compiled>false</pre_compiled>
         <remote_trigger_id/>
-        <run_as>user</run_as>
+        <run_as>system</run_as>
         <run_with_roles/>
         <sc_callable>false</sc_callable>
         <show_draft_actions>false</show_draft_actions>
@@ -36,7 +36,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>da549ea793f58210cd4e7d532bba1058</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>CARD-ACT: On Reveal: If your opponent played a card here this turn, +2 Power.</sys_name>
         <sys_overrides/>
         <sys_package display_value="SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
@@ -44,9 +44,9 @@
         <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_update_name>sys_hub_flow_da549ea793f58210cd4e7d532bba1058</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-12-22 11:10:45</sys_updated_on>
+        <sys_updated_on>2025-03-02 04:44:21</sys_updated_on>
         <type>subflow</type>
-        <version/>
+        <version>2</version>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=da549ea793f58210cd4e7d532bba1058"/>
     <sys_variable_value action="delete_multiple" query="document_key=da549ea793f58210cd4e7d532bba1058"/>
@@ -405,501 +405,206 @@
     </sys_hub_flow_output>
     <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=22549ea793f58210cd4e7d532bba1070"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=da549ea793f58210cd4e7d532bba1058"/>
-    <sys_hub_trigger_instance action="delete_multiple" query="flow=da549ea793f58210cd4e7d532bba1058"/>
-    <sys_hub_action_instance action="delete_multiple" query="flow=da549ea793f58210cd4e7d532bba1058^sys_idNOT IN2a549ea793f58210cd4e7d532bba10af,6c75d62b93f58210cd4e7d532bba10f1,daf4dae793f58210cd4e7d532bba1067"/>
-    <sys_hub_action_instance action="INSERT_OR_UPDATE">
-        <action_inputs/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=da549ea793f58210cd4e7d532bba1058"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=da549ea793f58210cd4e7d532bba1058^sys_idNOT IN0fe2de1dc3406210ff1f33bc0501311d,8be2de1dc3406210ff1f33bc05013118,8fe2de1dc3406210ff1f33bc0501311c"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
         <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
         <action_type_parent display_value="Log">0e0ae8c2531003003bf1d9109ec587c8</action_type_parent>
         <attributes/>
         <comment/>
+        <compiled_snapshot>5bc1bcc6531003003bf1d9109ec587d4</compiled_snapshot>
         <display_text/>
         <flow display_value="CARD-ACT: On Reveal: If your opponent played a card here this turn, +2 Power.">da549ea793f58210cd4e7d532bba1058</flow>
         <generation_source/>
         <order>8</order>
         <parent_ui_id/>
-        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-05-02 12:04:27</sys_created_on>
-        <sys_id>2a549ea793f58210cd4e7d532bba10af</sys_id>
-        <sys_mod_count>30</sys_mod_count>
+        <sys_created_on>2025-03-02 04:44:19</sys_created_on>
+        <sys_id>0fe2de1dc3406210ff1f33bc0501311d</sys_id>
+        <sys_mod_count>2</sys_mod_count>
         <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-12-25 22:32:50</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-03-02 04:57:13</sys_updated_on>
         <ui_id>aec62c37-f906-4f3a-a6c0-21275903b0e5</ui_id>
-    </sys_hub_action_instance>
-    <sys_variable_value action="delete_multiple" query="document_key=2a549ea793f58210cd4e7d532bba10af"/>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_action_instance</document>
-        <document_key>2a549ea793f58210cd4e7d532bba10af</document_key>
-        <order>1</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-05-02 12:04:27</sys_created_on>
-        <sys_id>2e549ea793f58210cd4e7d532bba10b1</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-05-02 12:04:27</sys_updated_on>
-        <value>Card Subflow Template Placeholder</value>
-        <variable display_value="Message">23c1bcc6531003003bf1d9109ec587e5</variable>
-    </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_input_5bc1bcc6531003003bf1d9109ec587d4^id=2a549ea793f58210cd4e7d532bba10af"/>
-    <sys_hub_input_scripts action="delete_multiple" query="instance=2a549ea793f58210cd4e7d532bba10af"/>
-    <sys_hub_alias_mapping action="delete_multiple" query="source_id=2a549ea793f58210cd4e7d532bba10af"/>
-    <sys_hub_action_instance action="INSERT_OR_UPDATE">
-        <action_inputs/>
-        <action_inputs/>
-        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
-        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
-        <attributes/>
-        <comment/>
-        <display_text/>
-        <flow display_value="CARD-ACT: On Reveal: If your opponent played a card here this turn, +2 Power.">da549ea793f58210cd4e7d532bba1058</flow>
-        <generation_source/>
-        <order>7</order>
-        <parent_ui_id>2ac08fd7-af33-4d18-8502-53e5f5fb4a97</parent_ui_id>
-        <sys_class_name>sys_hub_action_instance</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-05-02 12:09:14</sys_created_on>
-        <sys_id>6c75d62b93f58210cd4e7d532bba10f1</sys_id>
-        <sys_mod_count>14</sys_mod_count>
-        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-12-25 22:32:50</sys_updated_on>
-        <ui_id>a60f6e33-6210-46f9-8392-6db345bdc24f</ui_id>
-    </sys_hub_action_instance>
-    <sys_variable_value action="delete_multiple" query="document_key=6c75d62b93f58210cd4e7d532bba10f1"/>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_action_instance</document>
-        <document_key>6c75d62b93f58210cd4e7d532bba10f1</document_key>
-        <order>50</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-05-02 12:09:48</sys_created_on>
-        <sys_id>09959e2b93f58210cd4e7d532bba10c7</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-05-02 12:09:48</sys_updated_on>
-        <value>x_168987_flow_de_0_card_instance</value>
-        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
-    </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="id=6c75d62b93f58210cd4e7d532bba10f1"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>record</field>
-        <id>6c75d62b93f58210cd4e7d532bba10f1</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-05-02 12:09:48</sys_created_on>
-        <sys_id>85959e2b93f58210cd4e7d532bba10c7</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-05-02 12:09:48</sys_updated_on>
-        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
-        <value>{{subflow.card_instance}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>table_name</field>
-        <id>6c75d62b93f58210cd4e7d532bba10f1</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-05-02 12:09:48</sys_created_on>
-        <sys_id>01959e2b93f58210cd4e7d532bba10c7</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-05-02 12:09:48</sys_updated_on>
-        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>values</field>
-        <id>6c75d62b93f58210cd4e7d532bba10f1</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-05-02 12:09:48</sys_created_on>
-        <sys_id>c1959e2b93f58210cd4e7d532bba10c7</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-05-02 12:09:48</sys_updated_on>
-        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
-        <value>current_power={{fd_transform:04e9146b-c157-4bcf-809c-92869a3cc424}}</value>
-    </sys_element_mapping>
-    <sys_hub_input_scripts action="delete_multiple" query="instance=6c75d62b93f58210cd4e7d532bba10f1"/>
-    <sys_hub_alias_mapping action="delete_multiple" query="source_id=6c75d62b93f58210cd4e7d532bba10f1"/>
-    <sys_hub_action_instance action="INSERT_OR_UPDATE">
-        <action_inputs/>
-        <action_inputs/>
+        <values>H4sIAAAAAAAA/+VU32/aMBD+V5CfAZGEjMLbRFepUn9MY+oeqgpdnAtYcuzMdmgZ6v++MzGQtWgCrW+T8nJfPvvuO393jxsG3AmtrpV1oDjO1vY6ZxMWQzocI4zGSZFexNGA50Mc5WkSZxlEAyhYlwnPSzMeZZx/SpNoMEjoy4ooH0eDMfL0YpSPiKegRGJKvZhLXKEkaAWy9phQhaYwF7aSsH4I6HWD8qWQuUHFJo9PXVaBoXscGjbZvPl1aiESMso+YTehiiOFuXXlIb7UgmOIb8Kx6Q7UJvdlDLoMXxyqHCl/AdJil5WgcnDarPeIQcjvlTwAS6Ec3cY8+cWKX5RvOPC8AkkRx+bfPpyH5jRwcQkOZs7U3NUmUJtiLfVis5fY63XutMJOr9fqdqv01+6BG9r95k0CM2ozf4BRQi1a5GdCDuS4Tf5ijDYtKoY4cJNXerkcC6ilm56vIDpZQXyOguQMBUOvoGn+feVniCiR9wxkcvc0Wtalumt8xvZ6H97Yv0Evj05BbckCWHmbed8EExWzpX7+tvPIlVDbisJPqTnIfQTOGZHVzvd3w1BiSRfNS6gqasS8Mnoltoep2LK/kBT0C6mfKakVC9Vv1kOfXA39K8Ivt/ADGOFl3tI1dPi1y+zaTiVYexBLFp7/rH0ljfSgYb5t1PYIN6JynynBCkO5vv3/tpDi5G97ANM/575Ea2GBrUeegsk7szrzPeh8x5KexGHnqwSOSy19p97tq1OOnLfMThCxM+ntXsFRWWGhWfLA1vbthTbbgbuZ+rCFFqfpx2y0Yzvi/dSdNXT/30w9/QZ7oLPU5gcAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
         <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
         <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
         <attributes/>
         <comment/>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
         <display_text/>
         <flow display_value="CARD-ACT: On Reveal: If your opponent played a card here this turn, +2 Power.">da549ea793f58210cd4e7d532bba1058</flow>
         <generation_source/>
         <order>5</order>
         <parent_ui_id/>
-        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-05-02 12:07:10</sys_created_on>
-        <sys_id>daf4dae793f58210cd4e7d532bba1067</sys_id>
-        <sys_mod_count>16</sys_mod_count>
+        <sys_created_on>2025-03-02 04:44:19</sys_created_on>
+        <sys_id>8be2de1dc3406210ff1f33bc05013118</sys_id>
+        <sys_mod_count>2</sys_mod_count>
         <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-12-25 22:32:50</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-03-02 04:57:13</sys_updated_on>
         <ui_id>a647a964-ca4e-41f3-b6a1-8c7f9855addb</ui_id>
-    </sys_hub_action_instance>
-    <sys_variable_value action="delete_multiple" query="document_key=daf4dae793f58210cd4e7d532bba1067"/>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_action_instance</document>
-        <document_key>daf4dae793f58210cd4e7d532bba1067</document_key>
-        <order>0</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-05-02 12:08:25</sys_created_on>
-        <sys_id>a44592e793f58210cd4e7d532bba1099</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-05-02 12:08:25</sys_updated_on>
-        <value>x_168987_flow_de_0_card_instance</value>
-        <variable display_value="Table">8f400a1587003300663ca1bb36cb0b4b</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_action_instance</document>
-        <document_key>daf4dae793f58210cd4e7d532bba1067</document_key>
-        <order>4</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-05-02 12:08:25</sys_created_on>
-        <sys_id>e04592e793f58210cd4e7d532bba1099</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-05-02 12:08:25</sys_updated_on>
-        <value>1</value>
-        <variable display_value="Max Results">4f400a1587003300663ca1bb36cb0b61</variable>
-    </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="id=daf4dae793f58210cd4e7d532bba1067"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>conditions</field>
-        <id>daf4dae793f58210cd4e7d532bba1067</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-05-02 12:08:25</sys_created_on>
-        <sys_id>ac4592e793f58210cd4e7d532bba1098</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-05-02 12:09:03</sys_updated_on>
-        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
-        <value>player_session.sys_id={{flow_variable.target_player_id}}^turn_played={{subflow.card_instance.turn_played}}^current_location={{subflow.card_instance.current_location}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>max_results</field>
-        <id>daf4dae793f58210cd4e7d532bba1067</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-05-02 12:08:25</sys_created_on>
-        <sys_id>e84592e793f58210cd4e7d532bba1098</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-05-02 12:08:25</sys_updated_on>
-        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>table</field>
-        <id>daf4dae793f58210cd4e7d532bba1067</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-05-02 12:08:25</sys_created_on>
-        <sys_id>604592e793f58210cd4e7d532bba1099</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-05-02 12:08:25</sys_updated_on>
-        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_hub_input_scripts action="delete_multiple" query="instance=daf4dae793f58210cd4e7d532bba1067"/>
-    <sys_hub_alias_mapping action="delete_multiple" query="source_id=daf4dae793f58210cd4e7d532bba1067"/>
-    <sys_hub_flow_logic action="delete_multiple" query="flow=da549ea793f58210cd4e7d532bba1058^sys_idNOT IN01a4dea793f58210cd4e7d532bba101d,7fc492e793f58210cd4e7d532bba1081,8184dea793f58210cd4e7d532bba1049,bab4d2e793f58210cd4e7d532bba10f9,d145d22b93f58210cd4e7d532bba105a"/>
-    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <values>H4sIAAAAAAAA/+VX227bOBD9FUPPhiFZviVviwQpArQN0BR9aVNiRFI2sTTlJSknjuF/71CkZK3tBDHgAA76yLmQZy5nSP5cR0CtKNStMhYU5fcrc8uiy4hBPmDAxxdpPpz0k5iyAR+zYdrPMkji0TjqRsLZTfJBHEMynIzjOE3jeDRKKSRZlo5oFmeDDO0UzDlaWsgkx+USZOnWTyQZTS4mY5LL4pEwTmJCQTMiAhI0ZcIsJKx+BI9PuFHnCm06t1sbOhOSaa6iy58P3WgBGo0s19Hlekf1VrgSMi7R9HvAuwPfrhbNklQ6L/vcdut89YpCMwcl7kb8yXLFOGLIQRrejeagGNhCrxqJ5sDulNwKZkJZ3DFyxk9GPOO5k9jZ5RyjotzrmiUJ6fLi/Bos3FtdUlvqYEpnhaDc+HwwnkMp7VVb5g3uFq4jvIsP23sXspyrrz4dUbNBXR2UlAZB8IUL1CEPYeT3s+LxW43yRqgqJ0EpCwqyWYG1WmSldXjWEZd8jhuROSwWQk3JQhdLUTkjlnlvKnHRC91jxFT1fCv3MK/Qu0H5dSX+AVq4KL7gNuiMgITEDiG+hKYodZXKJaGyNJVCgzJ+r2jTjczKXEkwZhs5ppz8VzrcPg8hYuKT5lyoFgv7D26x5CG4Tfd9qTaMt71KC8WEO8q0+OZaA4Mz3BiXJIyKCParxL3Yel1lcRkS1bOgp9yS4CHYZvMbm0h5QeNjysy59f7H2l7LEN1oqbXLjCuzA/S67671ZrM/BD5qGKecU1Wt6zl11S72oQYIE2tP9vnQBmFiJSebWBjHR5pZePj5jazjh5BPwXtNIjp+tTuH20Y0hbbEF6E1ivZZfTRB3gChJsida+lOtnoJVeBHLrhkh270G6fYudH7f+eNfpbsQECM+OoJJYWqnmcI9OxoE78+1C92GrTqyy1pKhkYuk8e6Nii83w0hd4Ap6bQPZ7d+e7xHIBY3zBVr+3eLrUwMCc9GXPS/mmYs27CbBJ5IOf1U961QW3/7Oxh1x57t+WQbA4x86gzk2PP7G/2mZ8eRf12s3nN9Qs9d+I3/wtU7r7n7JihaziPeOKTR8Hw6bg9vbZihX0E+e8hfeg4UheqCu+c/g+DV/k+SrbcRooRzQ1Wvf2BSPYnT3L00HkDiDqBX+Cp861BcRBaGDw4G/i0qmZ78tw20kCLwQkftWd7aSf43n6RtUnXaz/ER/101Hn4A98EsUjnEgAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
         <attributes/>
-        <block display_value="">d295126b93f58210cd4e7d532bba1096</block>
         <comment/>
-        <connected_to/>
-        <decision_table/>
-        <decision_table_inputs/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
         <display_text/>
-        <extended_inputs/>
         <flow display_value="CARD-ACT: On Reveal: If your opponent played a card here this turn, +2 Power.">da549ea793f58210cd4e7d532bba1058</flow>
-        <flow_variable/>
-        <flow_variable/>
-        <flow_variables_assigned>target_player_id</flow_variables_assigned>
         <generation_source/>
-        <inputs/>
-        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
-        <order>2</order>
-        <outputs_assigned/>
-        <outputs_to_assign/>
-        <parent_ui_id>fd57ca12-c5e0-4641-8611-b9e31dbad906</parent_ui_id>
-        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <order>7</order>
+        <parent_ui_id>2ac08fd7-af33-4d18-8502-53e5f5fb4a97</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-05-02 12:05:43</sys_created_on>
-        <sys_id>01a4dea793f58210cd4e7d532bba101d</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_created_on>2025-03-02 04:44:19</sys_created_on>
+        <sys_id>8fe2de1dc3406210ff1f33bc0501311c</sys_id>
+        <sys_mod_count>2</sys_mod_count>
         <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-05-02 12:09:57</sys_updated_on>
-        <ui_id>7c646327-7657-4167-8c70-df52227c0484</ui_id>
-        <workflow_inputs/>
-        <workflow_reference/>
-    </sys_hub_flow_logic>
-    <sys_variable_value action="delete_multiple" query="document_key=01a4dea793f58210cd4e7d532bba101d"/>
-    <sys_element_mapping action="delete_multiple" query="id=01a4dea793f58210cd4e7d532bba101d"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>target_player_id</field>
-        <id>01a4dea793f58210cd4e7d532bba101d</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-05-02 12:06:02</sys_created_on>
-        <sys_id>edb45aa793f58210cd4e7d532bba103c</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-05-02 12:06:02</sys_updated_on>
-        <table>var__m_sys_hub_flow_variable_da549ea793f58210cd4e7d532bba1058</table>
-        <value>{{subflow.game_instance.player_2.sys_id}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_da549ea793f58210cd4e7d532bba1058^id=01a4dea793f58210cd4e7d532bba101d"/>
-    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=01a4dea793f58210cd4e7d532bba101d"/>
-    <sys_hub_input_scripts action="delete_multiple" query="instance=01a4dea793f58210cd4e7d532bba101d"/>
-    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-03-02 04:57:13</sys_updated_on>
+        <ui_id>a60f6e33-6210-46f9-8392-6db345bdc24f</ui_id>
+        <values>H4sIAAAAAAAA/+VVXU/bMBT9K5Wf28r5aJr0baJiqsRAgokXhiLHvgFLjpPZDtBV/e+zE6ftCkKgsQe0R98vn3NyT3yzQYQaXsuV1IZICldrvWJogRI6n7EkLLKonKVhgCmLYc5mUVgUJMBlgMaIu7oYGA6yIKFREEUhxmEaB0USFUHIIgLg6iSpwFYqoLVi9vxAROsCm41ui1LUj1NKFMu5R7Dd2hrGdSPI+tqX2gi954IpkGhxcztGDVF2qgGFFpuj1FthCVKAsKWXA65jnGbduDOraVuBNDkfgme+c+kzo9XSZmyTgxPgMYInA5KBBVISoWGMKiIZMbVao4VRrQ0oIOxCivWu4p5L0xOtyJPmv+zNMXZ1JVhm1IuwO+ZeoD5cLokhV3YyNa3a6VVzCrrXhEFJWmFODmN9wUXjvn7fYkghhu5atJU87xVBuwEH36PVFgQ0jqdD3tMqr+7rx8sB5CmXnSSeoqgpEbsTMUbxojUOzgaBgE7jijQNl3d5o+oH3jVbKNX0TtjD1O2KvVPzOzntt3ZqVSXTUxtfduFrorgj8c2Osc3bMdJrfSKI1nsqVsP8Z+uQ9MQ8hbxToZMg7zbBNVPFG/PFXvUAHvh2/LeOKWavrSbN9pt4AGbvmqc8SNIsnedejRznf9jnuXm+2gGjE1szWu1r3menN2Ae7PS9W6KXOXhHPYudHfaOzvuE99Psw/yUfiY/eRqf3lD/zEY4fPUPf7CCnXP0gYVoq5QD2NSPoH60GEdssylZbhSRuqxVtcAxZEGcFBMazOaTuKDlJMUZnWRhmmQkojQO45feqQ+c/D6DvkGNwaCnHATTL8gzuBMqS8lA3st15FCfHF375O7V+8BnD38mo/43D9/tb+h1C4ksCgAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=da549ea793f58210cd4e7d532bba1058"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=da549ea793f58210cd4e7d532bba1058^sys_idNOT IN03e2de1dc3406210ff1f33bc0501311c,4be29e1dc3406210ff1f33bc050131f5,8be2de1dc3406210ff1f33bc05013114,cbe2de1dc3406210ff1f33bc05013117,cfe29e1dc3406210ff1f33bc050131f8"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
         <attributes/>
-        <block display_value="">1e95126b93f58210cd4e7d532bba109f</block>
+        <block display_value="">0be2de1dc3406210ff1f33bc0501311b</block>
         <comment/>
         <connected_to/>
         <decision_table/>
-        <decision_table_inputs/>
         <display_text/>
-        <extended_inputs/>
         <flow display_value="CARD-ACT: On Reveal: If your opponent played a card here this turn, +2 Power.">da549ea793f58210cd4e7d532bba1058</flow>
-        <flow_variable/>
-        <flow_variable/>
-        <flow_variables_assigned>target_player_id</flow_variables_assigned>
-        <generation_source/>
-        <inputs/>
-        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
-        <order>4</order>
-        <outputs_assigned/>
-        <outputs_to_assign/>
-        <parent_ui_id>3f5bf481-3efd-4034-b57d-3913a55edc05</parent_ui_id>
-        <sys_class_name>sys_hub_flow_logic</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-05-02 12:06:27</sys_created_on>
-        <sys_id>7fc492e793f58210cd4e7d532bba1081</sys_id>
-        <sys_mod_count>6</sys_mod_count>
-        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-05-02 12:09:57</sys_updated_on>
-        <ui_id>6e85d64f-e5be-4227-86fe-8921b9e856ec</ui_id>
-        <workflow_inputs/>
-        <workflow_reference/>
-    </sys_hub_flow_logic>
-    <sys_variable_value action="delete_multiple" query="document_key=7fc492e793f58210cd4e7d532bba1081"/>
-    <sys_element_mapping action="delete_multiple" query="id=7fc492e793f58210cd4e7d532bba1081"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>target_player_id</field>
-        <id>7fc492e793f58210cd4e7d532bba1081</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-05-02 12:06:50</sys_created_on>
-        <sys_id>99e45ee793f58210cd4e7d532bba1099</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-05-02 12:06:50</sys_updated_on>
-        <table>var__m_sys_hub_flow_variable_da549ea793f58210cd4e7d532bba1058</table>
-        <value>{{subflow.game_instance.player_1.sys_id}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_da549ea793f58210cd4e7d532bba1058^id=7fc492e793f58210cd4e7d532bba1081"/>
-    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=7fc492e793f58210cd4e7d532bba1081"/>
-    <sys_hub_input_scripts action="delete_multiple" query="instance=7fc492e793f58210cd4e7d532bba1081"/>
-    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <attributes/>
-        <block display_value="">da95126b93f58210cd4e7d532bba1090</block>
-        <comment/>
-        <connected_to/>
-        <decision_table/>
-        <decision_table_inputs/>
-        <display_text/>
-        <extended_inputs/>
-        <flow display_value="CARD-ACT: On Reveal: If your opponent played a card here this turn, +2 Power.">da549ea793f58210cd4e7d532bba1058</flow>
-        <flow_variable/>
         <flow_variables_assigned/>
         <generation_source/>
-        <inputs/>
-        <inputs/>
-        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
-        <order>1</order>
-        <outputs_assigned/>
-        <outputs_to_assign/>
-        <parent_ui_id/>
-        <sys_class_name>sys_hub_flow_logic</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-05-02 12:05:10</sys_created_on>
-        <sys_id>8184dea793f58210cd4e7d532bba1049</sys_id>
-        <sys_mod_count>8</sys_mod_count>
-        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-05-02 12:09:57</sys_updated_on>
-        <ui_id>fd57ca12-c5e0-4641-8611-b9e31dbad906</ui_id>
-        <workflow_inputs/>
-        <workflow_reference/>
-    </sys_hub_flow_logic>
-    <sys_variable_value action="delete_multiple" query="document_key=8184dea793f58210cd4e7d532bba1049"/>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_flow_logic</document>
-        <document_key>8184dea793f58210cd4e7d532bba1049</document_key>
-        <order>10</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-05-02 12:05:33</sys_created_on>
-        <sys_id>aa9456e793f58210cd4e7d532bba1033</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-05-02 12:05:33</sys_updated_on>
-        <value>If Player is Player 1, target Player 2</value>
-        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
-    </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_da549ea793f58210cd4e7d532bba1058^id=8184dea793f58210cd4e7d532bba1049"/>
-    <sys_element_mapping action="delete_multiple" query="id=8184dea793f58210cd4e7d532bba1049"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>condition</field>
-        <id>8184dea793f58210cd4e7d532bba1049</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-05-02 12:05:33</sys_created_on>
-        <sys_id>2a9456e793f58210cd4e7d532bba1033</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-05-02 12:05:33</sys_updated_on>
-        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
-        <value>{{subflow.player_session}}={{subflow.game_instance.player_1}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>condition_name</field>
-        <id>8184dea793f58210cd4e7d532bba1049</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-05-02 12:05:33</sys_created_on>
-        <sys_id>669456e793f58210cd4e7d532bba1033</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-05-02 12:05:33</sys_updated_on>
-        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_da549ea793f58210cd4e7d532bba1058^id=8184dea793f58210cd4e7d532bba1049"/>
-    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=8184dea793f58210cd4e7d532bba1049"/>
-    <sys_hub_input_scripts action="delete_multiple" query="instance=8184dea793f58210cd4e7d532bba1049"/>
-    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <attributes/>
-        <block display_value="">5e95126b93f58210cd4e7d532bba109a</block>
-        <comment/>
-        <connected_to>fd57ca12-c5e0-4641-8611-b9e31dbad906</connected_to>
-        <decision_table/>
-        <decision_table_inputs/>
-        <display_text/>
-        <extended_inputs/>
-        <flow display_value="CARD-ACT: On Reveal: If your opponent played a card here this turn, +2 Power.">da549ea793f58210cd4e7d532bba1058</flow>
-        <flow_variable/>
-        <flow_variables_assigned/>
-        <generation_source/>
-        <inputs/>
-        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
-        <order>3</order>
-        <outputs_assigned/>
-        <outputs_to_assign/>
-        <parent_ui_id/>
-        <sys_class_name>sys_hub_flow_logic</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-05-02 12:06:07</sys_created_on>
-        <sys_id>bab4d2e793f58210cd4e7d532bba10f9</sys_id>
-        <sys_mod_count>10</sys_mod_count>
-        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-05-02 12:09:57</sys_updated_on>
-        <ui_id>3f5bf481-3efd-4034-b57d-3913a55edc05</ui_id>
-        <workflow_inputs/>
-        <workflow_reference/>
-    </sys_hub_flow_logic>
-    <sys_variable_value action="delete_multiple" query="document_key=bab4d2e793f58210cd4e7d532bba10f9"/>
-    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_da549ea793f58210cd4e7d532bba1058^id=bab4d2e793f58210cd4e7d532bba10f9"/>
-    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_da549ea793f58210cd4e7d532bba1058^id=bab4d2e793f58210cd4e7d532bba10f9"/>
-    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=bab4d2e793f58210cd4e7d532bba10f9"/>
-    <sys_hub_input_scripts action="delete_multiple" query="instance=bab4d2e793f58210cd4e7d532bba10f9"/>
-    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <attributes/>
-        <block display_value="">5295126b93f58210cd4e7d532bba10b3</block>
-        <comment/>
-        <connected_to/>
-        <decision_table/>
-        <decision_table_inputs/>
-        <display_text/>
-        <extended_inputs/>
-        <flow display_value="CARD-ACT: On Reveal: If your opponent played a card here this turn, +2 Power.">da549ea793f58210cd4e7d532bba1058</flow>
-        <flow_variable/>
-        <flow_variables_assigned/>
-        <generation_source/>
-        <inputs/>
-        <inputs/>
         <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
         <order>6</order>
         <outputs_assigned/>
-        <outputs_to_assign/>
         <parent_ui_id/>
-        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-05-02 12:08:28</sys_created_on>
-        <sys_id>d145d22b93f58210cd4e7d532bba105a</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_created_on>2025-03-02 04:44:19</sys_created_on>
+        <sys_id>03e2de1dc3406210ff1f33bc0501311c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
         <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-05-02 12:09:57</sys_updated_on>
+        <sys_updated_on>2025-03-02 04:44:19</sys_updated_on>
         <ui_id>2ac08fd7-af33-4d18-8502-53e5f5fb4a97</ui_id>
-        <workflow_inputs/>
+        <values>H4sIAAAAAAAA/+1UXW/TMBT9K1We0yjfa/uCqqJJSMAQm/YCU3RjO62FYwfbaVeq/neu89FVrAM08chb7rlf51wf5eCp1jatNXdqaQxfS2/x5cH3uHQYfh88CTXzFh5RknLLlSw6wPe2IFqXWMr9ZAWamsknAXtG32COctNgcP+bErLhgmo27GtA41TLtLc4/JKy+4YVAkomcNKt1VyusZ1TjKoQqmhOIpLEeRKHYTxLozJPyiimCTBIsG5sXI30J+87xH9Rl9uHuBk3KU0drSj0PfZomaQMV1cgDPO9GiQFq/T+hGgG9EaKJ2DDpcVxnit+NPwHzo6zzBVWDDUS1idPYTHcrofJRnHCbhpHsEcslGLoIUq0tfzY63BXZxW0wo5XR6Q1OI81jrRjMVCqbjdq93lceM1lJ3BICkVAnCKweIaytcy4h2GC1TioqKFp8DhFo9WWd83IpQ7WAoOgEmqHS52XAiCOeIA3guAa8bcdfA+aOxUfcAw29zRLMJwUne9wnNUo4didpfjeOkK9wEFK0V8DCwzRvLFL3LNlA+uj/9y0Z349HCBPr2Cep1MCKZumUZVMyxyi6YxcVfNZlgGlZbBSrbTH49c2DBMWPvf0a8f8C9/PIauyKMwu+z7NL/n+guNfNnv8B7O75/lLr4dh+N/s52bnpuhNO2jrlr/a6w/O2P0G0/uGMsINErlz2LvxP+4SezQAJ+fQTulvTsITdvwJyVnGlhEGAAA=</values>
         <workflow_reference/>
-    </sys_hub_flow_logic>
-    <sys_variable_value action="delete_multiple" query="document_key=d145d22b93f58210cd4e7d532bba105a"/>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_flow_logic</document>
-        <document_key>d145d22b93f58210cd4e7d532bba105a</document_key>
-        <order>10</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">43e29e1dc3406210ff1f33bc050131f5</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="CARD-ACT: On Reveal: If your opponent played a card here this turn, +2 Power.">da549ea793f58210cd4e7d532bba1058</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-05-02 12:09:14</sys_created_on>
-        <sys_id>ec751e2b93f58210cd4e7d532bba10a3</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_created_on>2025-03-02 04:44:18</sys_created_on>
+        <sys_id>4be29e1dc3406210ff1f33bc050131f5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-05-02 12:09:14</sys_updated_on>
-        <value>Any Cards Played?</value>
-        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
-    </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_da549ea793f58210cd4e7d532bba1058^id=d145d22b93f58210cd4e7d532bba105a"/>
-    <sys_element_mapping action="delete_multiple" query="id=d145d22b93f58210cd4e7d532bba105a"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>condition</field>
-        <id>d145d22b93f58210cd4e7d532bba105a</id>
+        <sys_updated_on>2025-03-02 04:44:18</sys_updated_on>
+        <ui_id>fd57ca12-c5e0-4641-8611-b9e31dbad906</ui_id>
+        <values>H4sIAAAAAAAA/+1Vy27bMBD8FYNnQdAjNhrfghYBArRN0QS5tIGwolY2UYpkScqOa+jfu9TDNhoHfSDH3sRZ7u7scgbaM91603p3r6+cEyvFll8eIyZUwOh7zxQ0yJaMa1UJL7QqeiBiG5BtCNzUs08Sdmhnwk1faTTzYFfoJyCjhEo4Q6eHv83jayEriyMzA5b6e7Rsuf8l5HcGCwklSip/561QK0oXFZ3qBOr0kqc8zxZ5liTZm4u0XORlmlU5IOR0b0p8Ow06e98j0YsbCP0Id1MnbatAK00ihk8eVYXUugbpMGINqAq8trsDYhGqWyWPwFooT+VYuPzkxA+qnc3n4WKNNCPHIXg4FuNCB5ivteB4awLBAfFQyjGHa9k26uMwR3gKrKGVfnoKQlpH9dAE0oHFSKm+W+vt56nhtVD9gGNQag7ycAJPayhbjy48DEpsqFDRgDG0nMJYvRF9MnFp4pWkQ1xLvaWmQXUx8EA8ph1BfE34ux5+ACvCFB+oDCUPNEtwghe9QqmctzRC16+l+N4GQsOA4yjFsA264LgVxl9Rnw2OrLvoubxPlL3fu7YMJGPTq7FwSBbRquu+tkmSV8f4iooQI+eB1jTdTrvuuepfpeZrOOIS5vU8TebnHXGxOOeIM1542QbZb2wQHu4PXZAkyX8bnNpAuGKQ8zhb3/yfXfAYJD90cINuKuQiqPI+YDfTvyAEdiQAwU+hrbbfwghHrPsJSt9IRlUGAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">83e2de1dc3406210ff1f33bc05013114</block>
+        <comment/>
+        <connected_to>fd57ca12-c5e0-4641-8611-b9e31dbad906</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="CARD-ACT: On Reveal: If your opponent played a card here this turn, +2 Power.">da549ea793f58210cd4e7d532bba1058</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-05-02 12:09:14</sys_created_on>
-        <sys_id>6c751e2b93f58210cd4e7d532bba10a3</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_created_on>2025-03-02 04:44:19</sys_created_on>
+        <sys_id>8be2de1dc3406210ff1f33bc05013114</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-05-02 12:09:14</sys_updated_on>
-        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
-        <value>{{a647a964-ca4e-41f3-b6a1-8c7f9855addb.Count}}&gt;0</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>condition_name</field>
-        <id>d145d22b93f58210cd4e7d532bba105a</id>
+        <sys_updated_on>2025-03-02 04:44:19</sys_updated_on>
+        <ui_id>3f5bf481-3efd-4034-b57d-3913a55edc05</ui_id>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">c3e2de1dc3406210ff1f33bc05013117</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="CARD-ACT: On Reveal: If your opponent played a card here this turn, +2 Power.">da549ea793f58210cd4e7d532bba1058</flow>
+        <flow_variables_assigned>target_player_id</flow_variables_assigned>
+        <generation_source/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <parent_ui_id>3f5bf481-3efd-4034-b57d-3913a55edc05</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-05-02 12:09:14</sys_created_on>
-        <sys_id>a8751e2b93f58210cd4e7d532bba10a3</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_created_on>2025-03-02 04:44:19</sys_created_on>
+        <sys_id>cbe2de1dc3406210ff1f33bc05013117</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-05-02 12:09:14</sys_updated_on>
-        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_da549ea793f58210cd4e7d532bba1058^id=d145d22b93f58210cd4e7d532bba105a"/>
-    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=d145d22b93f58210cd4e7d532bba105a"/>
-    <sys_hub_input_scripts action="delete_multiple" query="instance=d145d22b93f58210cd4e7d532bba105a"/>
-    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=da549ea793f58210cd4e7d532bba1058"/>
+        <sys_updated_on>2025-03-02 04:44:19</sys_updated_on>
+        <ui_id>6e85d64f-e5be-4227-86fe-8921b9e856ec</ui_id>
+        <values>H4sIAAAAAAAA/+1VTYvbMBD9Lzonxvla27ktlIXAtgtNupeyGFkeO6Ky5JXkZF2T/96Z2E4gtIX2UHrYm/VmRvPe0wzumGl83Xi3M/fOyVKz9deXCZOaMPzumOYVsDXz3Jbg01rxFmwqczZhB64aCnWda7JCmWNQYm4qtfNcCwiG3FngWocVpxPW5NIR/PwXpWIvVW5hYFhzixUeLFt3NyHf1pAqnoHCDltvpS6xHCmvWZZFy2QOUbIoVvF8Fop8CVG+WsyzjM/CKMG8sfAngn9tBbXEiBubGZsTs3DC4M2DzgGbF1w5mLCK65x7Y9sLYoHnT1pdgb3UHm9jlPzm5He8Og7DkDILQJkC+ujlmA629rDYGyngqfbS6B7xPFNDjTCqqfSnXgk9CBS8UX58EEQah/dBTayJxsCp2O7N8fPY8EHqs8AhqIzg6nLiHm3IGg+O3qaRuxtzeuTx9oFAQYUd04rXNSJpbc1Bnrsg6SooFR4CmhVkR5MacEEKA3STBw+IfzjDz9xKkvsRr8FiavdFy9cGNjQAqyRaxjwPpzFOwRQ/i2mc3IlpUtzBYllEsOCcnc7Wpq8NiepNGuxIe0cxwQkra3+PFA4wKD+90E703fvdIbaPppRiMwz2tnVnGlEhfjOH8Wyc1z8awn+8j+8b+L6B/+EG5iCkQ1Y7orAZ/2MUaHF6aBWv0NHYb6Tnip1+AIv8kbIRBwAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">c7e29e1dc3406210ff1f33bc050131f8</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="CARD-ACT: On Reveal: If your opponent played a card here this turn, +2 Power.">da549ea793f58210cd4e7d532bba1058</flow>
+        <flow_variables_assigned>target_player_id</flow_variables_assigned>
+        <generation_source/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id>fd57ca12-c5e0-4641-8611-b9e31dbad906</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-02 04:44:19</sys_created_on>
+        <sys_id>cfe29e1dc3406210ff1f33bc050131f8</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-02 04:44:19</sys_updated_on>
+        <ui_id>7c646327-7657-4167-8c70-df52227c0484</ui_id>
+        <values>H4sIAAAAAAAA/+1VTW/bMAz9LzonhvNVx7kVGAoE6FZgyXoZCoOWaEeYLLmSnNQL8t9HxXYCBOthOww79GY9kuJ7TyR8ZKbxdePd1tw7J0vNVt9fRkzqgNH3kWmokK2YB1uiz2oFLdpMCjZie1BNCB2PrskLZQ5RSbmZ1M6D5hj1udPItY4qTieqEdIF+PkvSvlOKmGxZ1iDpQqPlq2ONyHf1pgpyFFRh423UpdUTpRXLM+TeTrFJJ0Vi+V0EnMxx0QsZtM8h0mcpJQ3FP5G8PtWhJYUcUMzY0VgFo8YvnnUAql5AcrhiFWgBXhj2wtiEcSTVldgJ7Wn21hIfnPyJ129jOM4ZBZIMjl20csx623tYL4zkuNT7aXRHeIhV30NN6qp9JdOSXgQLKBRfngQQhpH92EdWAcaPadiszOHr0PDB6nPAvugMhzU5QSebMgbjy68TSO3N+Z0yOPtA6HCijpmFdQ1IVltzV6euxDpKioVHaIwK8QuTGoEPCiMyE2IHgj/dIafwcog9zNdQ8Wh3TctXxtchwFYpMl8CSIeL2kKxvRZjJfpHR+nxR3O5kWCMwB2OlubvTZBVGdSb0fWOUoJjltZ+3uisMde+ekl7ETXvdudwPbRlJKv+8HetO5MI57AXCC8M4cTMczrHw3hP97Hjw382MD/cAMFcumI1TZQWA//sRBoaXrCKl6hg7E/gp4rdvoFhib+nREHAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=da549ea793f58210cd4e7d532bba1058^sys_idNOT INa6851e2b93f58210cd4e7d532bba104c,ae851e2b93f58210cd4e7d532bba104b"/>
     <sys_hub_pill_compound action="INSERT_OR_UPDATE">
         <attached_to>da549ea793f58210cd4e7d532bba1058</attached_to>
@@ -1019,7 +724,6 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_variable>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_da549ea793f58210cd4e7d532bba1058^sys_idNOT IN22549ea793f58210cd4e7d532bba106d,2a549ea793f58210cd4e7d532bba1064,2e549ea793f58210cd4e7d532bba1068"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>game_instance</element>
         <help/>
@@ -1033,11 +737,11 @@
         <sys_created_on>2024-05-02 12:04:27</sys_created_on>
         <sys_id>22549ea793f58210cd4e7d532bba106d</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Game Instance</sys_name>
+        <sys_name/>
         <sys_package display_value="SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_da549ea793f58210cd4e7d532bba1058_game_instance_en</sys_update_name>
+        <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-05-02 12:04:27</sys_updated_on>
         <url/>
@@ -1056,11 +760,11 @@
         <sys_created_on>2024-05-02 12:04:27</sys_created_on>
         <sys_id>2a549ea793f58210cd4e7d532bba1064</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Player Session</sys_name>
+        <sys_name/>
         <sys_package display_value="SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_da549ea793f58210cd4e7d532bba1058_player_session_en</sys_update_name>
+        <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-05-02 12:04:27</sys_updated_on>
         <url/>
@@ -1079,18 +783,17 @@
         <sys_created_on>2024-05-02 12:04:27</sys_created_on>
         <sys_id>2e549ea793f58210cd4e7d532bba1068</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Card Instance</sys_name>
+        <sys_name/>
         <sys_package display_value="SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_da549ea793f58210cd4e7d532bba1058_card_instance_en</sys_update_name>
+        <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-05-02 12:04:27</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_da549ea793f58210cd4e7d532bba1058"/>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_da549ea793f58210cd4e7d532bba1058^sys_idNOT INa2549ea793f58210cd4e7d532bba10a9"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>status</element>
         <help/>
@@ -1104,11 +807,11 @@
         <sys_created_on>2024-05-02 12:04:27</sys_created_on>
         <sys_id>a2549ea793f58210cd4e7d532bba10a9</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Status</sys_name>
+        <sys_name/>
         <sys_package display_value="SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_da549ea793f58210cd4e7d532bba1058_status_en</sys_update_name>
+        <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-05-02 12:04:27</sys_updated_on>
         <url/>
@@ -1169,16 +872,16 @@
         <copied_from>25bbe6f4476a3d5017fdc82f316d432c</copied_from>
         <copied_from_name/>
         <description/>
-        <flow_priority/>
+        <flow_priority>MEDIUM</flow_priority>
         <internal_name>cardact_on_reveal_if_your_opponent_played_a_card_here_this_turn_2_power</internal_name>
-        <label_cache>[{"name":"subflow.player_session","label":"Input➛Player Session","reference":"x_168987_flow_de_0_player_session","reference_display":"Player Session","type":"reference","base_type":"reference","column_name":"","usedInstances":{"fd57ca12-c5e0-4641-8611-b9e31dbad906":["condition"]},"attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"498332c7-2b6e-42b0-82a9-9f0a0d4937ea","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.game_instance.player_1","label":"Input➛Game Instance➛Player 1","reference":"x_168987_flow_de_0_player_session","reference_display":"Player Session","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_game_instance","column_name":"player_1","usedInstances":{"fd57ca12-c5e0-4641-8611-b9e31dbad906":["condition"]}},{"name":"subflow.game_instance.player_2","label":"Input➛Game Instance➛Player 2","reference":"x_168987_flow_de_0_player_session","reference_display":"Player Session","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_game_instance","column_name":"player_2","usedInstances":{"7c646327-7657-4167-8c70-df52227c0484":["target_player_id-0"]}},{"name":"subflow.game_instance.player_2.sys_id","label":"Input➛Game Instance➛Player 2➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_168987_flow_de_0_player_session","column_name":"sys_id","usedInstances":{"7c646327-7657-4167-8c70-df52227c0484":["target_player_id-0"]}},{"name":"subflow.game_instance","label":"Input➛Game Instance","reference":"x_168987_flow_de_0_game_instance","reference_display":"Game Instance","type":"reference","base_type":"reference","column_name":"","usedInstances":{"6e85d64f-e5be-4227-86fe-8921b9e856ec":["target_player_id-0"]},"attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"7a58a3f2-25f0-4114-a70d-a69edcc42766","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.game_instance.player_1.sys_id","label":"Input➛Game Instance➛Player 1➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_168987_flow_de_0_player_session","column_name":"sys_id","usedInstances":{"6e85d64f-e5be-4227-86fe-8921b9e856ec":["target_player_id-0"]}},{"name":"flow_variable.target_player_id","label":"Flow Variables➛Target Player ID","type":"string","base_type":"string","usedInstances":{"a647a964-ca4e-41f3-b6a1-8c7f9855addb":["conditions"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"59748ad0-82e7-48af-896c-9f6e34f7e3aa"}},{"name":"subflow.card_instance.turn_played","label":"Input➛Card Instance➛Turn Played","reference":"","reference_display":"Turn Played","type":"integer","base_type":"integer","parent_table_name":"x_168987_flow_de_0_card_instance","column_name":"turn_played","usedInstances":{"a647a964-ca4e-41f3-b6a1-8c7f9855addb":["conditions"]}},{"name":"a647a964-ca4e-41f3-b6a1-8c7f9855addb.Count","label":"5 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","usedInstances":{"2ac08fd7-af33-4d18-8502-53e5f5fb4a97":["condition"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.card_instance.current_location","label":"Input➛Card Instance➛Current Location","reference":"x_168987_flow_de_0_location_instance","reference_display":"Game Location instance","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_card_instance","column_name":"current_location","usedInstances":{"a647a964-ca4e-41f3-b6a1-8c7f9855addb":["conditions"]}},{"name":"subflow.card_instance","label":"Input➛Card Instance","reference":"x_168987_flow_de_0_card_instance","reference_display":"Game Card Instance","type":"reference","base_type":"reference","column_name":"","usedInstances":{"a60f6e33-6210-46f9-8392-6db345bdc24f":["record"]},"attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"8e6c95b5-af4a-42f5-a485-481417e03d5c","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.card_instance.current_power","label":"Input➛Card Instance➛Current Power","reference":"","reference_display":"Current Power","type":"integer","base_type":"integer","parent_table_name":"x_168987_flow_de_0_card_instance","column_name":"current_power","usedInstances":{"a60f6e33-6210-46f9-8392-6db345bdc24f":["current_power"]}}]</label_cache>
+        <label_cache>[{"name":"subflow.card_instance.current_power","label":"Input➛Card Instance➛Current Power","reference":"","reference_display":"Current Power","type":"integer","base_type":"integer","parent_table_name":"x_168987_flow_de_0_card_instance","column_name":"current_power","usedInstances":{"a60f6e33-6210-46f9-8392-6db345bdc24f":["current_power"]}},{"name":"subflow.card_instance","label":"Input➛Card Instance","reference":"x_168987_flow_de_0_card_instance","reference_display":"Game Card Instance","type":"reference","base_type":"reference","column_name":"","usedInstances":{"a60f6e33-6210-46f9-8392-6db345bdc24f":["record"]},"attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"8e6c95b5-af4a-42f5-a485-481417e03d5c","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.card_instance.current_location","label":"Input➛Card Instance➛Current Location","reference":"x_168987_flow_de_0_location_instance","reference_display":"Game Location instance","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_card_instance","column_name":"current_location","usedInstances":{"a647a964-ca4e-41f3-b6a1-8c7f9855addb":["conditions"]}},{"name":"a647a964-ca4e-41f3-b6a1-8c7f9855addb.Count","label":"5 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","usedInstances":{"2ac08fd7-af33-4d18-8502-53e5f5fb4a97":["condition"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.card_instance.turn_played","label":"Input➛Card Instance➛Turn Played","reference":"","reference_display":"Turn Played","type":"integer","base_type":"integer","parent_table_name":"x_168987_flow_de_0_card_instance","column_name":"turn_played","usedInstances":{"a647a964-ca4e-41f3-b6a1-8c7f9855addb":["conditions"]}},{"name":"flow_variable.target_player_id","label":"Flow Variables➛Target Player ID","type":"string","base_type":"string","usedInstances":{"a647a964-ca4e-41f3-b6a1-8c7f9855addb":["conditions"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"59748ad0-82e7-48af-896c-9f6e34f7e3aa"}},{"name":"subflow.game_instance.player_1.sys_id","label":"Input➛Game Instance➛Player 1➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_168987_flow_de_0_player_session","column_name":"sys_id","usedInstances":{"6e85d64f-e5be-4227-86fe-8921b9e856ec":["target_player_id-0"]}},{"name":"subflow.game_instance","label":"Input➛Game Instance","reference":"x_168987_flow_de_0_game_instance","reference_display":"Game Instance","type":"reference","base_type":"reference","column_name":"","usedInstances":{"6e85d64f-e5be-4227-86fe-8921b9e856ec":["target_player_id-0"]},"attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"7a58a3f2-25f0-4114-a70d-a69edcc42766","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.game_instance.player_2.sys_id","label":"Input➛Game Instance➛Player 2➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_168987_flow_de_0_player_session","column_name":"sys_id","usedInstances":{"7c646327-7657-4167-8c70-df52227c0484":["target_player_id-0"]}},{"name":"subflow.game_instance.player_2","label":"Input➛Game Instance➛Player 2","reference":"x_168987_flow_de_0_player_session","reference_display":"Player Session","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_game_instance","column_name":"player_2","usedInstances":{"7c646327-7657-4167-8c70-df52227c0484":["target_player_id-0"]}},{"name":"subflow.game_instance.player_1","label":"Input➛Game Instance➛Player 1","reference":"x_168987_flow_de_0_player_session","reference_display":"Player Session","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_game_instance","column_name":"player_1","usedInstances":{"fd57ca12-c5e0-4641-8611-b9e31dbad906":["condition"]}},{"name":"subflow.player_session","label":"Input➛Player Session","reference":"x_168987_flow_de_0_player_session","reference_display":"Player Session","type":"reference","base_type":"reference","column_name":"","usedInstances":{"fd57ca12-c5e0-4641-8611-b9e31dbad906":["condition"]},"attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"498332c7-2b6e-42b0-82a9-9f0a0d4937ea","sourceUiUniqueId":"","sourceType":"","sourceId":""}}]</label_cache>
         <master>true</master>
         <name>CARD-ACT: On Reveal: If your opponent played a card here this turn, +2 Power.</name>
         <natlang/>
         <outputs/>
         <parent_flow display_value="CARD-ACT: On Reveal: If your opponent played a card here this turn, +2 Power.">da549ea793f58210cd4e7d532bba1058</parent_flow>
         <remote_trigger_id/>
-        <run_as>user</run_as>
+        <run_as>system</run_as>
         <run_with_roles/>
         <sc_callable>false</sc_callable>
         <status>published</status>
@@ -1188,7 +891,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>ea95526b93f58210cd4e7d532bba1032</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -1196,9 +899,9 @@
         <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-05-02 12:09:55</sys_updated_on>
+        <sys_updated_on>2025-03-02 04:44:21</sys_updated_on>
         <type>subflow</type>
-        <version/>
+        <version>2</version>
     </sys_hub_flow_snapshot>
     <sys_translated_text action="delete_multiple" query="documentkey=ea95526b93f58210cd4e7d532bba1032"/>
     <sys_variable_value action="delete_multiple" query="document_key=ea95526b93f58210cd4e7d532bba1032"/>
@@ -1557,501 +1260,206 @@
     </sys_hub_flow_output>
     <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=be95526b93f58210cd4e7d532bba107b"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=ea95526b93f58210cd4e7d532bba1032"/>
-    <sys_hub_trigger_instance action="delete_multiple" query="flow=ea95526b93f58210cd4e7d532bba1032"/>
-    <sys_hub_action_instance action="delete_multiple" query="flow=ea95526b93f58210cd4e7d532bba1032^sys_idNOT IN0795926b93f58210cd4e7d532bba1023,7695926b93f58210cd4e7d532bba101c,8795926b93f58210cd4e7d532bba1042"/>
-    <sys_hub_action_instance action="INSERT_OR_UPDATE">
-        <action_inputs/>
-        <action_inputs/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=ea95526b93f58210cd4e7d532bba1032"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=ea95526b93f58210cd4e7d532bba1032^sys_idNOT IN77e2125dc3406210ff1f33bc05013140,a3e2125dc3406210ff1f33bc05013123,f3e2125dc3406210ff1f33bc05013141"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
         <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
         <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
         <attributes/>
         <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
         <display_text/>
         <flow display_value="CARD-ACT: On Reveal: If your opponent played a card here this turn, +2 Power.">ea95526b93f58210cd4e7d532bba1032</flow>
         <generation_source/>
         <order>7</order>
         <parent_ui_id>2ac08fd7-af33-4d18-8502-53e5f5fb4a97</parent_ui_id>
-        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-05-02 12:09:56</sys_created_on>
-        <sys_id>0795926b93f58210cd4e7d532bba1023</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_created_on>2025-03-02 04:44:21</sys_created_on>
+        <sys_id>77e2125dc3406210ff1f33bc05013140</sys_id>
+        <sys_mod_count>1</sys_mod_count>
         <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-05-02 12:09:56</sys_updated_on>
+        <sys_updated_on>2025-03-02 04:44:21</sys_updated_on>
         <ui_id>a60f6e33-6210-46f9-8392-6db345bdc24f</ui_id>
-    </sys_hub_action_instance>
-    <sys_variable_value action="delete_multiple" query="document_key=0795926b93f58210cd4e7d532bba1023"/>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_action_instance</document>
-        <document_key>0795926b93f58210cd4e7d532bba1023</document_key>
-        <order>50</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-05-02 12:09:56</sys_created_on>
-        <sys_id>4f95926b93f58210cd4e7d532bba1024</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-05-02 12:09:56</sys_updated_on>
-        <value>x_168987_flow_de_0_card_instance</value>
-        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
-    </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="id=0795926b93f58210cd4e7d532bba1023"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>record</field>
-        <id>0795926b93f58210cd4e7d532bba1023</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-05-02 12:09:56</sys_created_on>
-        <sys_id>cb95926b93f58210cd4e7d532bba1024</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-05-02 12:09:56</sys_updated_on>
-        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
-        <value>{{subflow.card_instance}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>table_name</field>
-        <id>0795926b93f58210cd4e7d532bba1023</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-05-02 12:09:56</sys_created_on>
-        <sys_id>4795926b93f58210cd4e7d532bba1024</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-05-02 12:09:56</sys_updated_on>
-        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>values</field>
-        <id>0795926b93f58210cd4e7d532bba1023</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-05-02 12:09:56</sys_created_on>
-        <sys_id>0b95926b93f58210cd4e7d532bba1024</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-05-02 12:09:56</sys_updated_on>
-        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
-        <value>current_power={{fd_transform:04e9146b-c157-4bcf-809c-92869a3cc424}}</value>
-    </sys_element_mapping>
-    <sys_hub_input_scripts action="delete_multiple" query="instance=0795926b93f58210cd4e7d532bba1023"/>
-    <sys_hub_alias_mapping action="delete_multiple" query="source_id=0795926b93f58210cd4e7d532bba1023"/>
-    <sys_hub_action_instance action="INSERT_OR_UPDATE">
-        <action_inputs/>
-        <action_inputs/>
+        <values>H4sIAAAAAAAA/+VVXU/bMBT9K5Wf28r5aJr0baJiqsRAgokXhiLHvgFLjpPZDtBV/e+zE6ftCkKgsQe0R98vn3NyT3yzQYQaXsuV1IZICldrvWJogRI6n7EkLLKonKVhgCmLYc5mUVgUJMBlgMaIu7oYGA6yIKFREEUhxmEaB0USFUHIIgLg6iSpwFYqoLVi9vxAROsCm41ui1LUj1NKFMu5R7Dd2hrGdSPI+tqX2gi954IpkGhxcztGDVF2qgGFFpuj1FthCVKAsKWXA65jnGbduDOraVuBNDkfgme+c+kzo9XSZmyTgxPgMYInA5KBBVISoWGMKiIZMbVao4VRrQ0oIOxCivWu4p5L0xOtyJPmv+zNMXZ1JVhm1IuwO+ZeoD5cLokhV3YyNa3a6VVzCrrXhEFJWmFODmN9wUXjvn7fYkghhu5atJU87xVBuwEH36PVFgQ0jqdD3tMqr+7rx8sB5CmXnSSeoqgpEbsTMUbxojUOzgaBgE7jijQNl3d5o+oH3jVbKNX0TtjD1O2KvVPzOzntt3ZqVSXTUxtfduFrorgj8c2Osc3bMdJrfSKI1nsqVsP8Z+uQ9MQ8hbxToZMg7zbBNVPFG/PFXvUAHvh2/LeOKWavrSbN9pt4AGbvmqc8SNIsnedejRznf9jnuXm+2gGjE1szWu1r3menN2Ae7PS9W6KXOXhHPYudHfaOzvuE99Psw/yUfiY/eRqf3lD/zEY4fPUPf7CCnXP0gYVoq5QD2NSPoH60GEdssylZbhSRuqxVtcAxZEGcFBMazOaTuKDlJMUZnWRhmmQkojQO45feqQ+c/D6DvkGNwaCnHATTL8gzuBMqS8lA3st15FCfHF375O7V+8BnD38mo/43D9/tb+h1C4ksCgAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
         <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
         <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
         <attributes/>
         <comment/>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
         <display_text/>
         <flow display_value="CARD-ACT: On Reveal: If your opponent played a card here this turn, +2 Power.">ea95526b93f58210cd4e7d532bba1032</flow>
         <generation_source/>
         <order>5</order>
         <parent_ui_id/>
-        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-05-02 12:09:56</sys_created_on>
-        <sys_id>7695926b93f58210cd4e7d532bba101c</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_created_on>2025-03-02 04:44:21</sys_created_on>
+        <sys_id>a3e2125dc3406210ff1f33bc05013123</sys_id>
+        <sys_mod_count>1</sys_mod_count>
         <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-05-02 12:09:56</sys_updated_on>
+        <sys_updated_on>2025-03-02 04:44:21</sys_updated_on>
         <ui_id>a647a964-ca4e-41f3-b6a1-8c7f9855addb</ui_id>
-    </sys_hub_action_instance>
-    <sys_variable_value action="delete_multiple" query="document_key=7695926b93f58210cd4e7d532bba101c"/>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_action_instance</document>
-        <document_key>7695926b93f58210cd4e7d532bba101c</document_key>
-        <order>0</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-05-02 12:09:56</sys_created_on>
-        <sys_id>4795926b93f58210cd4e7d532bba101e</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-05-02 12:09:56</sys_updated_on>
-        <value>x_168987_flow_de_0_card_instance</value>
-        <variable display_value="Table">8f400a1587003300663ca1bb36cb0b4b</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_action_instance</document>
-        <document_key>7695926b93f58210cd4e7d532bba101c</document_key>
-        <order>4</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-05-02 12:09:56</sys_created_on>
-        <sys_id>8395926b93f58210cd4e7d532bba101e</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-05-02 12:09:56</sys_updated_on>
-        <value>1</value>
-        <variable display_value="Max Results">4f400a1587003300663ca1bb36cb0b61</variable>
-    </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="id=7695926b93f58210cd4e7d532bba101c"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>conditions</field>
-        <id>7695926b93f58210cd4e7d532bba101c</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-05-02 12:09:56</sys_created_on>
-        <sys_id>7e95926b93f58210cd4e7d532bba101d</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-05-02 12:09:56</sys_updated_on>
-        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
-        <value>player_session.sys_id={{flow_variable.target_player_id}}^turn_played={{subflow.card_instance.turn_played}}^current_location={{subflow.card_instance.current_location}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>max_results</field>
-        <id>7695926b93f58210cd4e7d532bba101c</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-05-02 12:09:56</sys_created_on>
-        <sys_id>ba95926b93f58210cd4e7d532bba101d</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-05-02 12:09:56</sys_updated_on>
-        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>table</field>
-        <id>7695926b93f58210cd4e7d532bba101c</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-05-02 12:09:56</sys_created_on>
-        <sys_id>0395926b93f58210cd4e7d532bba101e</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-05-02 12:09:56</sys_updated_on>
-        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_hub_input_scripts action="delete_multiple" query="instance=7695926b93f58210cd4e7d532bba101c"/>
-    <sys_hub_alias_mapping action="delete_multiple" query="source_id=7695926b93f58210cd4e7d532bba101c"/>
-    <sys_hub_action_instance action="INSERT_OR_UPDATE">
-        <action_inputs/>
+        <values>H4sIAAAAAAAA/+VX227bOBD9FUPPhiFZviVviwQpArQN0BR9aVNiRFI2sTTlJSknjuF/71CkZK3tBDHgAA76yLmQZy5nSP5cR0CtKNStMhYU5fcrc8uiy4hBPmDAxxdpPpz0k5iyAR+zYdrPMkji0TjqRsLZTfJBHEMynIzjOE3jeDRKKSRZlo5oFmeDDO0UzDlaWsgkx+USZOnWTyQZTS4mY5LL4pEwTmJCQTMiAhI0ZcIsJKx+BI9PuFHnCm06t1sbOhOSaa6iy58P3WgBGo0s19Hlekf1VrgSMi7R9HvAuwPfrhbNklQ6L/vcdut89YpCMwcl7kb8yXLFOGLIQRrejeagGNhCrxqJ5sDulNwKZkJZ3DFyxk9GPOO5k9jZ5RyjotzrmiUJ6fLi/Bos3FtdUlvqYEpnhaDc+HwwnkMp7VVb5g3uFq4jvIsP23sXspyrrz4dUbNBXR2UlAZB8IUL1CEPYeT3s+LxW43yRqgqJ0EpCwqyWYG1WmSldXjWEZd8jhuROSwWQk3JQhdLUTkjlnlvKnHRC91jxFT1fCv3MK/Qu0H5dSX+AVq4KL7gNuiMgITEDiG+hKYodZXKJaGyNJVCgzJ+r2jTjczKXEkwZhs5ppz8VzrcPg8hYuKT5lyoFgv7D26x5CG4Tfd9qTaMt71KC8WEO8q0+OZaA4Mz3BiXJIyKCParxL3Yel1lcRkS1bOgp9yS4CHYZvMbm0h5QeNjysy59f7H2l7LEN1oqbXLjCuzA/S67671ZrM/BD5qGKecU1Wt6zl11S72oQYIE2tP9vnQBmFiJSebWBjHR5pZePj5jazjh5BPwXtNIjp+tTuH20Y0hbbEF6E1ivZZfTRB3gChJsida+lOtnoJVeBHLrhkh270G6fYudH7f+eNfpbsQECM+OoJJYWqnmcI9OxoE78+1C92GrTqyy1pKhkYuk8e6Nii83w0hd4Ap6bQPZ7d+e7xHIBY3zBVr+3eLrUwMCc9GXPS/mmYs27CbBJ5IOf1U961QW3/7Oxh1x57t+WQbA4x86gzk2PP7G/2mZ8eRf12s3nN9Qs9d+I3/wtU7r7n7JihaziPeOKTR8Hw6bg9vbZihX0E+e8hfeg4UheqCu+c/g+DV/k+SrbcRooRzQ1Wvf2BSPYnT3L00HkDiDqBX+Cp861BcRBaGDw4G/i0qmZ78tw20kCLwQkftWd7aSf43n6RtUnXaz/ER/101Hn4A98EsUjnEgAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
         <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
         <action_type_parent display_value="Log">0e0ae8c2531003003bf1d9109ec587c8</action_type_parent>
         <attributes/>
         <comment/>
+        <compiled_snapshot>5bc1bcc6531003003bf1d9109ec587d4</compiled_snapshot>
         <display_text/>
         <flow display_value="CARD-ACT: On Reveal: If your opponent played a card here this turn, +2 Power.">ea95526b93f58210cd4e7d532bba1032</flow>
         <generation_source/>
         <order>8</order>
         <parent_ui_id/>
-        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-05-02 12:09:57</sys_created_on>
-        <sys_id>8795926b93f58210cd4e7d532bba1042</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_created_on>2025-03-02 04:44:21</sys_created_on>
+        <sys_id>f3e2125dc3406210ff1f33bc05013141</sys_id>
+        <sys_mod_count>1</sys_mod_count>
         <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-05-02 12:09:57</sys_updated_on>
+        <sys_updated_on>2025-03-02 04:44:21</sys_updated_on>
         <ui_id>aec62c37-f906-4f3a-a6c0-21275903b0e5</ui_id>
-    </sys_hub_action_instance>
-    <sys_variable_value action="delete_multiple" query="document_key=8795926b93f58210cd4e7d532bba1042"/>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_action_instance</document>
-        <document_key>8795926b93f58210cd4e7d532bba1042</document_key>
-        <order>1</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-05-02 12:09:57</sys_created_on>
-        <sys_id>cb95926b93f58210cd4e7d532bba1043</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-05-02 12:09:57</sys_updated_on>
-        <value>Card Subflow Template Placeholder</value>
-        <variable display_value="Message">23c1bcc6531003003bf1d9109ec587e5</variable>
-    </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_input_5bc1bcc6531003003bf1d9109ec587d4^id=8795926b93f58210cd4e7d532bba1042"/>
-    <sys_hub_input_scripts action="delete_multiple" query="instance=8795926b93f58210cd4e7d532bba1042"/>
-    <sys_hub_alias_mapping action="delete_multiple" query="source_id=8795926b93f58210cd4e7d532bba1042"/>
-    <sys_hub_flow_logic action="delete_multiple" query="flow=ea95526b93f58210cd4e7d532bba1032^sys_idNOT IN3695526b93f58210cd4e7d532bba10e3,3e95926b93f58210cd4e7d532bba1005,b695526b93f58210cd4e7d532bba10df,ba95926b93f58210cd4e7d532bba1002,be95526b93f58210cd4e7d532bba10e6"/>
-    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <values>H4sIAAAAAAAA/+VU32/aMBD+V5CfAZGEjMLbRFepUn9MY+oeqgpdnAtYcuzMdmgZ6v++MzGQtWgCrW+T8nJfPvvuO393jxsG3AmtrpV1oDjO1vY6ZxMWQzocI4zGSZFexNGA50Mc5WkSZxlEAyhYlwnPSzMeZZx/SpNoMEjoy4ooH0eDMfL0YpSPiKegRGJKvZhLXKEkaAWy9phQhaYwF7aSsH4I6HWD8qWQuUHFJo9PXVaBoXscGjbZvPl1aiESMso+YTehiiOFuXXlIb7UgmOIb8Kx6Q7UJvdlDLoMXxyqHCl/AdJil5WgcnDarPeIQcjvlTwAS6Ec3cY8+cWKX5RvOPC8AkkRx+bfPpyH5jRwcQkOZs7U3NUmUJtiLfVis5fY63XutMJOr9fqdqv01+6BG9r95k0CM2ozf4BRQi1a5GdCDuS4Tf5ijDYtKoY4cJNXerkcC6ilm56vIDpZQXyOguQMBUOvoGn+feVniCiR9wxkcvc0Wtalumt8xvZ6H97Yv0Evj05BbckCWHmbed8EExWzpX7+tvPIlVDbisJPqTnIfQTOGZHVzvd3w1BiSRfNS6gqasS8Mnoltoep2LK/kBT0C6mfKakVC9Vv1kOfXA39K8Ivt/ADGOFl3tI1dPi1y+zaTiVYexBLFp7/rH0ljfSgYb5t1PYIN6JynynBCkO5vv3/tpDi5G97ANM/575Ea2GBrUeegsk7szrzPeh8x5KexGHnqwSOSy19p97tq1OOnLfMThCxM+ntXsFRWWGhWfLA1vbthTbbgbuZ+rCFFqfpx2y0Yzvi/dSdNXT/30w9/QZ7oLPU5gcAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=ea95526b93f58210cd4e7d532bba1032"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=ea95526b93f58210cd4e7d532bba1032^sys_idNOT IN2fe2125dc3406210ff1f33bc05013118,63e2125dc3406210ff1f33bc0501311f,e3e2125dc3406210ff1f33bc0501311c,e3e2125dc3406210ff1f33bc05013122,f7e2125dc3406210ff1f33bc0501313f"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
         <attributes/>
-        <block display_value="">d295126b93f58210cd4e7d532bba1096</block>
+        <block display_value="">43e29e1dc3406210ff1f33bc050131f5</block>
         <comment/>
         <connected_to/>
         <decision_table/>
-        <decision_table_inputs/>
         <display_text/>
-        <extended_inputs/>
         <flow display_value="CARD-ACT: On Reveal: If your opponent played a card here this turn, +2 Power.">ea95526b93f58210cd4e7d532bba1032</flow>
-        <flow_variable/>
-        <flow_variable/>
-        <flow_variables_assigned>target_player_id</flow_variables_assigned>
-        <generation_source/>
-        <inputs/>
-        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
-        <order>2</order>
-        <outputs_assigned/>
-        <outputs_to_assign/>
-        <parent_ui_id>fd57ca12-c5e0-4641-8611-b9e31dbad906</parent_ui_id>
-        <sys_class_name>sys_hub_flow_logic</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-05-02 12:09:56</sys_created_on>
-        <sys_id>3695526b93f58210cd4e7d532bba10e3</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_scope/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-05-02 12:09:56</sys_updated_on>
-        <ui_id>7c646327-7657-4167-8c70-df52227c0484</ui_id>
-        <workflow_inputs/>
-        <workflow_reference/>
-    </sys_hub_flow_logic>
-    <sys_variable_value action="delete_multiple" query="document_key=3695526b93f58210cd4e7d532bba10e3"/>
-    <sys_element_mapping action="delete_multiple" query="id=3695526b93f58210cd4e7d532bba10e3"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>target_player_id</field>
-        <id>3695526b93f58210cd4e7d532bba10e3</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-05-02 12:09:56</sys_created_on>
-        <sys_id>3295526b93f58210cd4e7d532bba10e6</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-05-02 12:09:56</sys_updated_on>
-        <table>var__m_sys_hub_flow_variable_ea95526b93f58210cd4e7d532bba1032</table>
-        <value>{{subflow.game_instance.player_2.sys_id}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_ea95526b93f58210cd4e7d532bba1032^id=3695526b93f58210cd4e7d532bba10e3"/>
-    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=3695526b93f58210cd4e7d532bba10e3"/>
-    <sys_hub_input_scripts action="delete_multiple" query="instance=3695526b93f58210cd4e7d532bba10e3"/>
-    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <attributes/>
-        <block display_value="">5295126b93f58210cd4e7d532bba10b3</block>
-        <comment/>
-        <connected_to/>
-        <decision_table/>
-        <decision_table_inputs/>
-        <display_text/>
-        <extended_inputs/>
-        <flow display_value="CARD-ACT: On Reveal: If your opponent played a card here this turn, +2 Power.">ea95526b93f58210cd4e7d532bba1032</flow>
-        <flow_variable/>
         <flow_variables_assigned/>
         <generation_source/>
-        <inputs/>
-        <inputs/>
-        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
-        <order>6</order>
-        <outputs_assigned/>
-        <outputs_to_assign/>
-        <parent_ui_id/>
-        <sys_class_name>sys_hub_flow_logic</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-05-02 12:09:56</sys_created_on>
-        <sys_id>3e95926b93f58210cd4e7d532bba1005</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_scope/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-05-02 12:09:56</sys_updated_on>
-        <ui_id>2ac08fd7-af33-4d18-8502-53e5f5fb4a97</ui_id>
-        <workflow_inputs/>
-        <workflow_reference/>
-    </sys_hub_flow_logic>
-    <sys_variable_value action="delete_multiple" query="document_key=3e95926b93f58210cd4e7d532bba1005"/>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_flow_logic</document>
-        <document_key>3e95926b93f58210cd4e7d532bba1005</document_key>
-        <order>10</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-05-02 12:09:56</sys_created_on>
-        <sys_id>3e95926b93f58210cd4e7d532bba1008</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-05-02 12:09:56</sys_updated_on>
-        <value>Any Cards Played?</value>
-        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
-    </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_ea95526b93f58210cd4e7d532bba1032^id=3e95926b93f58210cd4e7d532bba1005"/>
-    <sys_element_mapping action="delete_multiple" query="id=3e95926b93f58210cd4e7d532bba1005"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>condition</field>
-        <id>3e95926b93f58210cd4e7d532bba1005</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-05-02 12:09:56</sys_created_on>
-        <sys_id>ba95926b93f58210cd4e7d532bba1008</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-05-02 12:09:56</sys_updated_on>
-        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
-        <value>{{a647a964-ca4e-41f3-b6a1-8c7f9855addb.Count}}&gt;0</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>condition_name</field>
-        <id>3e95926b93f58210cd4e7d532bba1005</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-05-02 12:09:56</sys_created_on>
-        <sys_id>f695926b93f58210cd4e7d532bba1008</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-05-02 12:09:56</sys_updated_on>
-        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_ea95526b93f58210cd4e7d532bba1032^id=3e95926b93f58210cd4e7d532bba1005"/>
-    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=3e95926b93f58210cd4e7d532bba1005"/>
-    <sys_hub_input_scripts action="delete_multiple" query="instance=3e95926b93f58210cd4e7d532bba1005"/>
-    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <attributes/>
-        <block display_value="">da95126b93f58210cd4e7d532bba1090</block>
-        <comment/>
-        <connected_to/>
-        <decision_table/>
-        <decision_table_inputs/>
-        <display_text/>
-        <extended_inputs/>
-        <flow display_value="CARD-ACT: On Reveal: If your opponent played a card here this turn, +2 Power.">ea95526b93f58210cd4e7d532bba1032</flow>
-        <flow_variable/>
-        <flow_variables_assigned/>
-        <generation_source/>
-        <inputs/>
-        <inputs/>
         <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
         <order>1</order>
         <outputs_assigned/>
-        <outputs_to_assign/>
         <parent_ui_id/>
-        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-05-02 12:09:56</sys_created_on>
-        <sys_id>b695526b93f58210cd4e7d532bba10df</sys_id>
+        <sys_created_on>2025-03-02 04:44:21</sys_created_on>
+        <sys_id>2fe2125dc3406210ff1f33bc05013118</sys_id>
         <sys_mod_count>1</sys_mod_count>
-        <sys_scope/>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-05-02 12:09:56</sys_updated_on>
+        <sys_updated_on>2025-03-02 04:44:21</sys_updated_on>
         <ui_id>fd57ca12-c5e0-4641-8611-b9e31dbad906</ui_id>
-        <workflow_inputs/>
+        <values>H4sIAAAAAAAA/+1Vy27bMBD8FYNnQdAjNhrfAgcBAqRN0QS5tIGwoiibKEWqfNhxBf17l3rZSFy0RnPszZzl7s6MOHBDlLO1s+ZRXRnD15Isvz4HhEuP4e+GSKgYWRKqZMEtVzLrgIBsQThfuC1nnwXsmZ5xM/6Kg5kFvWZ2BBJsKLip8fR0bh/dcFFoNjCrQeN+yzRZNq9KvMCxZQRlfEljmiaLNImi5MNFnC/SPE6KFBikOFBAzgReXY2SZncdEvxWq93XHjdWc7keznfDlIcRVLrwrOIoIOzFMlkw5FOCMCwgFcgCrNL7CdEMinspDsCGS4vjiL/8YvhPXJjM5/5iyVAiZX1xOmaDnz1cXoMFpOKodXq4SjeKU2Z6cwpWghN2dYz1F+5rL7VvsZCLsVsJV8lPvSNkGjB+PkScQRKs9ko99UFH+bBRuy8jyxsuO1eGolAUxHQCi97lzno+DWGCVTgoq6Cu0dGs1mrLu2bkUoVrgYewFGqHS/1LDYF64iEaC+EN4tcd/ASaexUfcQw29zRzMJxm3avGcWgTI21AzN6sBBhzEInuZj+cp9hLHsRlvT++hWpe2yvcvGWDjjZ4G5KjfDSNcbmnHdbdm84Mw6Ap2bbfXBSlxaG+xiHI0VhA48bbcdu+zc67zDwvV5cwL+dxND+dq4vFqVydSNSZYUr+ECb/Jf8yS1EU/Q/TP4eJm6yPwKCtW/6OWXr2wel3Tl5T7t/2o8dux/8lX9jj4+L0GNop/d2LOmDtL7jAJwjhBgAA</values>
         <workflow_reference/>
-    </sys_hub_flow_logic>
-    <sys_variable_value action="delete_multiple" query="document_key=b695526b93f58210cd4e7d532bba10df"/>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_flow_logic</document>
-        <document_key>b695526b93f58210cd4e7d532bba10df</document_key>
-        <order>10</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-05-02 12:09:56</sys_created_on>
-        <sys_id>f695526b93f58210cd4e7d532bba10e2</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-05-02 12:09:56</sys_updated_on>
-        <value>If Player is Player 1, target Player 2</value>
-        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
-    </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_ea95526b93f58210cd4e7d532bba1032^id=b695526b93f58210cd4e7d532bba10df"/>
-    <sys_element_mapping action="delete_multiple" query="id=b695526b93f58210cd4e7d532bba10df"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>condition</field>
-        <id>b695526b93f58210cd4e7d532bba10df</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-05-02 12:09:56</sys_created_on>
-        <sys_id>7695526b93f58210cd4e7d532bba10e2</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-05-02 12:09:56</sys_updated_on>
-        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
-        <value>{{subflow.player_session}}={{subflow.game_instance.player_1}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>condition_name</field>
-        <id>b695526b93f58210cd4e7d532bba10df</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-05-02 12:09:56</sys_created_on>
-        <sys_id>b295526b93f58210cd4e7d532bba10e2</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-05-02 12:09:56</sys_updated_on>
-        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_ea95526b93f58210cd4e7d532bba1032^id=b695526b93f58210cd4e7d532bba10df"/>
-    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=b695526b93f58210cd4e7d532bba10df"/>
-    <sys_hub_input_scripts action="delete_multiple" query="instance=b695526b93f58210cd4e7d532bba10df"/>
-    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
         <attributes/>
-        <block display_value="">1e95126b93f58210cd4e7d532bba109f</block>
-        <comment/>
-        <connected_to/>
-        <decision_table/>
-        <decision_table_inputs/>
-        <display_text/>
-        <extended_inputs/>
-        <flow display_value="CARD-ACT: On Reveal: If your opponent played a card here this turn, +2 Power.">ea95526b93f58210cd4e7d532bba1032</flow>
-        <flow_variable/>
-        <flow_variable/>
-        <flow_variables_assigned>target_player_id</flow_variables_assigned>
-        <generation_source/>
-        <inputs/>
-        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
-        <order>4</order>
-        <outputs_assigned/>
-        <outputs_to_assign/>
-        <parent_ui_id>3f5bf481-3efd-4034-b57d-3913a55edc05</parent_ui_id>
-        <sys_class_name>sys_hub_flow_logic</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-05-02 12:09:56</sys_created_on>
-        <sys_id>ba95926b93f58210cd4e7d532bba1002</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_scope/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-05-02 12:09:56</sys_updated_on>
-        <ui_id>6e85d64f-e5be-4227-86fe-8921b9e856ec</ui_id>
-        <workflow_inputs/>
-        <workflow_reference/>
-    </sys_hub_flow_logic>
-    <sys_variable_value action="delete_multiple" query="document_key=ba95926b93f58210cd4e7d532bba1002"/>
-    <sys_element_mapping action="delete_multiple" query="id=ba95926b93f58210cd4e7d532bba1002"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>target_player_id</field>
-        <id>ba95926b93f58210cd4e7d532bba1002</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-05-02 12:09:56</sys_created_on>
-        <sys_id>3295926b93f58210cd4e7d532bba1005</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-05-02 12:09:56</sys_updated_on>
-        <table>var__m_sys_hub_flow_variable_ea95526b93f58210cd4e7d532bba1032</table>
-        <value>{{subflow.game_instance.player_1.sys_id}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_ea95526b93f58210cd4e7d532bba1032^id=ba95926b93f58210cd4e7d532bba1002"/>
-    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=ba95926b93f58210cd4e7d532bba1002"/>
-    <sys_hub_input_scripts action="delete_multiple" query="instance=ba95926b93f58210cd4e7d532bba1002"/>
-    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <attributes/>
-        <block display_value="">5e95126b93f58210cd4e7d532bba109a</block>
+        <block display_value="">83e2de1dc3406210ff1f33bc05013114</block>
         <comment/>
         <connected_to>fd57ca12-c5e0-4641-8611-b9e31dbad906</connected_to>
         <decision_table/>
-        <decision_table_inputs/>
         <display_text/>
-        <extended_inputs/>
         <flow display_value="CARD-ACT: On Reveal: If your opponent played a card here this turn, +2 Power.">ea95526b93f58210cd4e7d532bba1032</flow>
-        <flow_variable/>
         <flow_variables_assigned/>
         <generation_source/>
-        <inputs/>
         <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
         <order>3</order>
         <outputs_assigned/>
-        <outputs_to_assign/>
         <parent_ui_id/>
-        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-05-02 12:09:56</sys_created_on>
-        <sys_id>be95526b93f58210cd4e7d532bba10e6</sys_id>
+        <sys_created_on>2025-03-02 04:44:21</sys_created_on>
+        <sys_id>63e2125dc3406210ff1f33bc0501311f</sys_id>
         <sys_mod_count>1</sys_mod_count>
-        <sys_scope/>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-05-02 12:09:56</sys_updated_on>
+        <sys_updated_on>2025-03-02 04:44:21</sys_updated_on>
         <ui_id>3f5bf481-3efd-4034-b57d-3913a55edc05</ui_id>
-        <workflow_inputs/>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
         <workflow_reference/>
-    </sys_hub_flow_logic>
-    <sys_variable_value action="delete_multiple" query="document_key=be95526b93f58210cd4e7d532bba10e6"/>
-    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_ea95526b93f58210cd4e7d532bba1032^id=be95526b93f58210cd4e7d532bba10e6"/>
-    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_ea95526b93f58210cd4e7d532bba1032^id=be95526b93f58210cd4e7d532bba10e6"/>
-    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=be95526b93f58210cd4e7d532bba10e6"/>
-    <sys_hub_input_scripts action="delete_multiple" query="instance=be95526b93f58210cd4e7d532bba10e6"/>
-    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=ea95526b93f58210cd4e7d532bba1032"/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">c7e29e1dc3406210ff1f33bc050131f8</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="CARD-ACT: On Reveal: If your opponent played a card here this turn, +2 Power.">ea95526b93f58210cd4e7d532bba1032</flow>
+        <flow_variables_assigned>target_player_id</flow_variables_assigned>
+        <generation_source/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id>fd57ca12-c5e0-4641-8611-b9e31dbad906</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-02 04:44:21</sys_created_on>
+        <sys_id>e3e2125dc3406210ff1f33bc0501311c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-02 04:44:21</sys_updated_on>
+        <ui_id>7c646327-7657-4167-8c70-df52227c0484</ui_id>
+        <values>H4sIAAAAAAAA/+1VyW7bMBD9lYBnW5CXxMstSBDAQNoUjZtLEAgjcmQTpUmFix3X8L93xpLtotuhtwK5iW+29x450E64FOsUw9xdh6AXVkyfXzpCW8boeycq4zb3bqHlzIYIVuLjNsyUmIq8B0OFMJoMqstxv5dLNcSRuhz0yxJ6eU8JasN5EfwCY1Eb2KIvNOMWVvj7yBpM4tBuF1LJo7MF5Ra6nZ21uf0sbANV7PdUo3Rg+OkfSmvwlBPRi+lOyKU2yuPRAuZelqPhpI9/0DiaUAsDJRpKnR/EXHw6TLmY3f5VZtzWHAnRa7toz/dto8cj6LxiYnlH4FtEq5AYVWACdsQKrILo/PaEeAT1YM0ZWGobqZvg5Legv9G8cZ7nnFkhqZTYRE/HovWxgatbiEBUkozJt6ly6bTE0PijsIJk4s2PWJPwUEftbFMSoTTHamfSyn5sPBGnBsdrIyQFIoE1S2XurZDqcek2n48s77Q9uNIGjZNgTieI5F2ZIvPZiaTnP9ncIL8YjQZXNLFYQV0TUtTerfVhCpFeZQtDh4xfFLHjHclAssKMrgCyO8JvD/ATeM1yP1AbKuZxX6x+TXhYl8vJaDgGlXfH9J669Fl1x5Mr2Z1UVzgYViMcAIh9R9DrvDEQwtkouqHiNbHMxrbWoKLxmEuk13W8JlJrbL3Yv/AuNXze9/h9j9/3+P/dY4VSB+I5Z1Kz45+ZA1t6mbzQZ2jj/FdWeMb23wH4IHfy4wcAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">c3e2de1dc3406210ff1f33bc05013117</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="CARD-ACT: On Reveal: If your opponent played a card here this turn, +2 Power.">ea95526b93f58210cd4e7d532bba1032</flow>
+        <flow_variables_assigned>target_player_id</flow_variables_assigned>
+        <generation_source/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <parent_ui_id>3f5bf481-3efd-4034-b57d-3913a55edc05</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-02 04:44:21</sys_created_on>
+        <sys_id>e3e2125dc3406210ff1f33bc05013122</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-02 04:44:21</sys_updated_on>
+        <ui_id>6e85d64f-e5be-4227-86fe-8921b9e856ec</ui_id>
+        <values>H4sIAAAAAAAA/+1VTW/aQBD9K9GewTJfMXCLgiIhpU3V0FyiyBqvx7DqsuvsBwlF/PfOYANVW+XQWyVu3jdf773dkXfCxlDH4Bf2xnu1NGL6/NIRyjBG3ztRaft2b5dKzo0PYCQ+bv28FFORVXI46WM2GVSjcb+XynKIWTka9IsCeum4J6gN5wVwSwx5rWGLLieoIwys8e+RDejIod3Ox4JHJ0vKzVU7O2lze4nfeqrY76mmVJ7hp38orcFRTkAnpjshV0qXDo8WMPeiyD7QmE2ohYYCNaUuDmKuvhymXM1nH8oM25ojPjhllu35vm30eAStK5lY2hH4HtCUSIwq0B47Yg2mhGDd9oQ4hPLB6DOwUiZQN8HJ7179oHnjNE05s0JSKbGJno5562MDVzMIQFSiDNG1qXJllUTf+FNiBVGH21+xJuGhDsqapiRAoY/VVse1+dx4Ik4NjtdGSPREAmuWytxbIdXjyr59PbK8U+bgShvUVoI+nSCQd0UMzGcnolr8ZnOD/GE0alzTxHwNdU1IXju7UYcpRHqdLDUdEn5RxI53JAHJChO6AkjuCJ8d4CdwiuV+ojZUzOO+GfUa8bAuo0k2HEOZdsf0nrr0WXXHk2vZnVTXOBhWGQ4AxL4j6HXeavD+bBTdUP4aWWZjW2tQ3njMJdKpOtwQqQ22XuxfeJcaPpc9vuzxZY//3z0uUSpPPBdMan78M3NgSy+TF/oMvVn3nRWesf1PIE0PRuMHAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">0be2de1dc3406210ff1f33bc0501311b</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="CARD-ACT: On Reveal: If your opponent played a card here this turn, +2 Power.">ea95526b93f58210cd4e7d532bba1032</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>6</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-02 04:44:21</sys_created_on>
+        <sys_id>f7e2125dc3406210ff1f33bc0501313f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-02 04:44:21</sys_updated_on>
+        <ui_id>2ac08fd7-af33-4d18-8502-53e5f5fb4a97</ui_id>
+        <values>H4sIAAAAAAAA/+1Vy27bMBD8lYBn2dDDUmxfCsNBgAJpUzRBLmkgrEjKJkqRKknZcQ3/e5eS/EDjPtL22Jt3drk7s9qBt0Q3rm6cvdcza8VCkenjU0CE8hj+3hIFFSdTQrViwgmt8hYIyApk4xMztbmYg2H24oOEDWdvMMeErTF4+EkJXQrJDO/n1WCwq+OGTLffpQTDDmUIZTShEU3iLInDMB6PoiJLiihmCXBIsKGEgkssne+JXty0SPBDBW5Te9w6I9Sij2/6Lnd7UBvmWUVhQPiz44px5FOCtDwgFSgGTpvNATEc2K2SR2AplMN2xBc/W/EVB8Zp6gtLjhIp75KHMO9X18HlFThAKg11jelL6VILym23HMZLaKSbn2JdwW3tpXZPHBRy/1rLplLvu42QQ4P9l0KksUiC116pp97rKO+Wev1xz/JaqHYrfVJqCvIQgcPdFY3zfLaES15ho7yCusaN5rXRK9E+Ri7VcCExGJZSr3Gov78hUE98iIuF4TXiVy38AEZ4Fe+wDT7uaBZgBc3bW8V2uCZOdgGxGzuXYO1RJG43/9J4ip3kXlze7cc/oUbUboaTV7zXsQtenv7J1W+3kI0uYZKNBhRGfDCKymRQZBANxvSynIzTFBgrhnPdKLfbfWrCMOHhS2f8aZvXuWcCaZlGYXrePaPsnHvO+OaVlol/YRn/vX7TMWEY/rfMX1tG2Lw79F5bO/wfOubJ26Obedg1FRap3Xvs7f4/xSc2eFyCnkJrbT57UUds9w2qQLabnQYAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=ea95526b93f58210cd4e7d532bba1032^sys_idNOT IN0395926b93f58210cd4e7d532bba1044,8395926b93f58210cd4e7d532bba1044"/>
     <sys_hub_pill_compound action="INSERT_OR_UPDATE">
         <attached_to>ea95526b93f58210cd4e7d532bba1032</attached_to>
@@ -2171,7 +1579,6 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_variable>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_ea95526b93f58210cd4e7d532bba1032^sys_idNOT INa695526b93f58210cd4e7d532bba1047,b695526b93f58210cd4e7d532bba1052,fe95526b93f58210cd4e7d532bba1069"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>player_session</element>
         <help/>
@@ -2185,11 +1592,11 @@
         <sys_created_on>2024-05-02 12:09:55</sys_created_on>
         <sys_id>a695526b93f58210cd4e7d532bba1047</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Player Session</sys_name>
+        <sys_name/>
         <sys_package display_value="SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_ea95526b93f58210cd4e7d532bba1032_player_session_en</sys_update_name>
+        <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-05-02 12:09:55</sys_updated_on>
         <url/>
@@ -2208,11 +1615,11 @@
         <sys_created_on>2024-05-02 12:09:55</sys_created_on>
         <sys_id>b695526b93f58210cd4e7d532bba1052</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Card Instance</sys_name>
+        <sys_name/>
         <sys_package display_value="SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_ea95526b93f58210cd4e7d532bba1032_card_instance_en</sys_update_name>
+        <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-05-02 12:09:55</sys_updated_on>
         <url/>
@@ -2231,18 +1638,17 @@
         <sys_created_on>2024-05-02 12:09:56</sys_created_on>
         <sys_id>fe95526b93f58210cd4e7d532bba1069</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Game Instance</sys_name>
+        <sys_name/>
         <sys_package display_value="SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_ea95526b93f58210cd4e7d532bba1032_game_instance_en</sys_update_name>
+        <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-05-02 12:09:56</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_ea95526b93f58210cd4e7d532bba1032"/>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_ea95526b93f58210cd4e7d532bba1032^sys_idNOT INba95526b93f58210cd4e7d532bba10c5"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>status</element>
         <help/>
@@ -2256,11 +1662,11 @@
         <sys_created_on>2024-05-02 12:09:56</sys_created_on>
         <sys_id>ba95526b93f58210cd4e7d532bba10c5</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Status</sys_name>
+        <sys_name/>
         <sys_package display_value="SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_ea95526b93f58210cd4e7d532bba1032_status_en</sys_update_name>
+        <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-05-02 12:09:56</sys_updated_on>
         <url/>
@@ -2312,23 +1718,23 @@
     <sys_hub_flow action="UPDATE">
         <sys_id>da549ea793f58210cd4e7d532bba1058</sys_id>
         <latest_snapshot>ea95526b93f58210cd4e7d532bba1032</latest_snapshot>
-        <compiler_build>glide-xanadu-07-02-2024__patch4-11-22-2024_12-02-2024_1408.zip</compiler_build>
+        <compiler_build>glide-yokohama-12-18-2024__patch0-01-14-2025_01-22-2025_0439.zip</compiler_build>
     </sys_hub_flow>
     <sys_flow_trigger_plan action="delete_multiple" query="plan_id=da549ea793f58210cd4e7d532bba1058"/>
     <sys_flow_subflow_plan action="delete_multiple" query="plan_id=da549ea793f58210cd4e7d532bba1058^sys_idNOT INc395926b93f58210cd4e7d532bba106e"/>
     <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
         <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"c395926b93f58210cd4e7d532bba106e","name":"plan","plan_signature":null}}</plan>
         <plan_id display_value="CARD-ACT: On Reveal: If your opponent played a card here this turn, +2 Power.">da549ea793f58210cd4e7d532bba1058</plan_id>
-        <snapshot>0ef409ccc37e5610ff1f33bc05013113</snapshot>
+        <snapshot>14e59619c3806210ff1f33bc050131d7</snapshot>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-05-02 12:09:57</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>c395926b93f58210cd4e7d532bba106e</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-05-02 12:09:57</sys_updated_on>
+        <sys_updated_on>2025-03-02 04:44:21</sys_updated_on>
     </sys_flow_subflow_plan>
 </record_update>
