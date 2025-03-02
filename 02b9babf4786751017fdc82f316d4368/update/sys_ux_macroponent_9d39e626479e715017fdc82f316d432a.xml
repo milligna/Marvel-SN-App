@@ -10,8 +10,8 @@
             "id": "d356d14b6e293a3020a244b63d278d8f",
             "type": "MACROPONENT"
         },
-        "elementId": "header",
-        "elementLabel": "Header",
+        "elementId": "base_container",
+        "elementLabel": "Base Container",
         "eventMappings": [],
         "isHidden": {
             "type": "JSON_LITERAL",
@@ -21,151 +21,844 @@
             "composition": [
                 {
                     "definition": {
-                        "id": "d37ce8abca89d02905fed903c8e34d8e",
+                        "id": "d356d14b6e293a3020a244b63d278d8f",
                         "type": "MACROPONENT"
                     },
-                    "elementId": "deck_list",
-                    "elementLabel": "Back to Deck List button",
-                    "eventMappings": [
-                        {
-                            "eventMappingId": "clqhkgaajgaabbeccddbhhoihwrwhzff",
-                            "isConfiguration": false,
-                            "offRowStorageId": null,
-                            "sourceEventApiName": "sn_button.NOW_BUTTON#CLICKED",
-                            "sourceEventCorrelationId": null,
-                            "sourceEventDefinition": {
-                                "apiName": "sn_button.NOW_BUTTON#CLICKED",
-                                "id": null,
-                                "type": "UXEVENT"
-                            },
-                            "sourceEventSysId": null,
-                            "targets": [
-                                {
-                                    "broker": null,
-                                    "clientScript": null,
-                                    "conditional": null,
-                                    "declarativeAction": null,
-                                    "event": {
-                                        "apiName": "x_168987_flow_de_0.NAV_ITEM_SELECTED_RELAY_9d39e626479e715017fdc82f316d432a",
-                                        "payload": {
-                                            "container": {
-                                                "external": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": null
-                                                },
-                                                "fields": {
-                                                    "container": {
-                                                        "userid": {
-                                                            "binding": {
-                                                                "address": [
-                                                                    "get_deck_record",
-                                                                    "result",
-                                                                    "player",
-                                                                    "value"
-                                                                ]
-                                                            },
-                                                            "type": "DATA_OUTPUT_BINDING"
-                                                        }
-                                                    },
-                                                    "type": "MAP_CONTAINER"
-                                                },
-                                                "multiInstField": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": null
-                                                },
-                                                "navigationOptions": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": null
-                                                },
-                                                "params": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": null
-                                                },
-                                                "passiveNavigation": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": null
-                                                },
-                                                "redirect": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": null
-                                                },
-                                                "route": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": "decks-to-edit"
-                                                },
-                                                "targetRoute": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": null
-                                                },
-                                                "title": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": null
-                                                }
-                                            },
-                                            "type": "MAP_CONTAINER"
-                                        },
-                                        "sysId": "db140a994793711017fdc82f316d43d8"
-                                    },
-                                    "operation": null,
-                                    "targetId": "clqhkgaajhaabbeddddbhhokquvvrbbk",
-                                    "type": "EVENT"
-                                }
-                            ]
-                        }
-                    ],
+                    "elementId": "header",
+                    "elementLabel": "Header Container",
+                    "eventMappings": [],
                     "isHidden": {
                         "type": "JSON_LITERAL",
-                        "value": false
+                        "value": null
+                    },
+                    "overrides": {
+                        "composition": [
+                            {
+                                "definition": {
+                                    "id": "15fe506403f8a98575b6df59008ea8f1",
+                                    "type": "MACROPONENT"
+                                },
+                                "elementId": "image_4",
+                                "elementLabel": "SN App Logo",
+                                "eventMappings": [],
+                                "isHidden": {
+                                    "type": "JSON_LITERAL",
+                                    "value": null
+                                },
+                                "preset": null,
+                                "propertyValues": {
+                                    "alt": {
+                                        "type": "TRANSLATION_LITERAL",
+                                        "value": {
+                                            "code": null,
+                                            "comment": "",
+                                            "message": ""
+                                        }
+                                    },
+                                    "configAria": {
+                                        "container": {
+                                            "link": {
+                                                "container": {},
+                                                "type": "MAP_CONTAINER"
+                                            }
+                                        },
+                                        "type": "MAP_CONTAINER"
+                                    },
+                                    "fit": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "scale-down"
+                                    },
+                                    "height": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "href": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "landmark": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "position": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "center center"
+                                    },
+                                    "sources": {
+                                        "type": "JSON_LITERAL",
+                                        "value": []
+                                    },
+                                    "src": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "snapp-logo-small.png"
+                                    },
+                                    "supportRtl": {
+                                        "type": "JSON_LITERAL",
+                                        "value": false
+                                    },
+                                    "width": {
+                                        "type": "JSON_LITERAL",
+                                        "value": 140
+                                    }
+                                },
+                                "slot": null,
+                                "styles": null
+                            },
+                            {
+                                "definition": {
+                                    "id": "4335ba6dca80378f7ba7a67cd6667bec",
+                                    "type": "MACROPONENT"
+                                },
+                                "elementId": "deck_name",
+                                "elementLabel": "Deck Name",
+                                "eventMappings": [],
+                                "isHidden": {
+                                    "type": "JSON_LITERAL",
+                                    "value": null
+                                },
+                                "preset": null,
+                                "propertyValues": {
+                                    "css": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "* { }"
+                                    },
+                                    "tag": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "h1"
+                                    },
+                                    "text": {
+                                        "binding": {
+                                            "address": [
+                                                "get_deck_record",
+                                                "result",
+                                                "deck_name",
+                                                "displayValue"
+                                            ]
+                                        },
+                                        "type": "DATA_OUTPUT_BINDING"
+                                    }
+                                },
+                                "slot": null,
+                                "styles": null
+                            },
+                            {
+                                "definition": {
+                                    "id": "d37ce8abca89d02905fed903c8e34d8e",
+                                    "type": "MACROPONENT"
+                                },
+                                "elementId": "deck_list",
+                                "elementLabel": "Back to Deck List button",
+                                "eventMappings": [
+                                    {
+                                        "eventMappingId": "clqhkgaajgaabbeccddbhhoihwrwhzff",
+                                        "isConfiguration": false,
+                                        "offRowStorageId": null,
+                                        "sourceEventApiName": "sn_button.NOW_BUTTON#CLICKED",
+                                        "sourceEventCorrelationId": null,
+                                        "sourceEventDefinition": {
+                                            "apiName": "sn_button.NOW_BUTTON#CLICKED",
+                                            "id": null,
+                                            "type": "UXEVENT"
+                                        },
+                                        "sourceEventSysId": null,
+                                        "targets": [
+                                            {
+                                                "broker": null,
+                                                "clientScript": null,
+                                                "conditional": null,
+                                                "declarativeAction": null,
+                                                "event": {
+                                                    "apiName": "x_168987_flow_de_0.NAV_ITEM_SELECTED_RELAY_9d39e626479e715017fdc82f316d432a",
+                                                    "payload": {
+                                                        "container": {
+                                                            "external": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": null
+                                                            },
+                                                            "fields": {
+                                                                "container": {
+                                                                    "userid": {
+                                                                        "binding": {
+                                                                            "address": [
+                                                                                "get_deck_record",
+                                                                                "result",
+                                                                                "player",
+                                                                                "value"
+                                                                            ]
+                                                                        },
+                                                                        "type": "DATA_OUTPUT_BINDING"
+                                                                    }
+                                                                },
+                                                                "type": "MAP_CONTAINER"
+                                                            },
+                                                            "multiInstField": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": null
+                                                            },
+                                                            "navigationOptions": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": null
+                                                            },
+                                                            "params": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": null
+                                                            },
+                                                            "passiveNavigation": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": null
+                                                            },
+                                                            "redirect": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": null
+                                                            },
+                                                            "route": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": "decks-to-edit"
+                                                            },
+                                                            "targetRoute": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": null
+                                                            },
+                                                            "title": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": null
+                                                            }
+                                                        },
+                                                        "type": "MAP_CONTAINER"
+                                                    },
+                                                    "sysId": "db140a994793711017fdc82f316d43d8"
+                                                },
+                                                "operation": null,
+                                                "targetId": "clqhkgaajhaabbeddddbhhokquvvrbbk",
+                                                "type": "EVENT"
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "isHidden": {
+                                    "type": "JSON_LITERAL",
+                                    "value": false
+                                },
+                                "preset": null,
+                                "propertyValues": {
+                                    "configAria": {
+                                        "type": "JSON_LITERAL",
+                                        "value": {}
+                                    },
+                                    "disabled": {
+                                        "type": "JSON_LITERAL",
+                                        "value": false
+                                    },
+                                    "icon": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "label": {
+                                        "type": "TRANSLATION_LITERAL",
+                                        "value": {
+                                            "code": null,
+                                            "comment": "",
+                                            "message": "Back to Deck list"
+                                        }
+                                    },
+                                    "size": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "md"
+                                    },
+                                    "tooltipContent": {
+                                        "type": "TRANSLATION_LITERAL",
+                                        "value": {
+                                            "code": null,
+                                            "comment": "",
+                                            "message": "Enter a label"
+                                        }
+                                    },
+                                    "variant": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "primary-positive"
+                                    }
+                                },
+                                "slot": null,
+                                "styles": {}
+                            },
+                            {
+                                "definition": {
+                                    "id": "1f6e0643eca7a637e36bd7833549ec9e",
+                                    "type": "MACROPONENT"
+                                },
+                                "elementId": "debug_resource",
+                                "elementLabel": "debug data resource",
+                                "eventMappings": [],
+                                "isHidden": {
+                                    "type": "JSON_LITERAL",
+                                    "value": true
+                                },
+                                "preset": {
+                                    "controllerElementId": "deck_form_resource",
+                                    "disabledEventTargetIds": [],
+                                    "id": "e61aa04af8f8f7b18abc73e3f61ab4e8"
+                                },
+                                "propertyValues": {
+                                    "label": {
+                                        "binding": {
+                                            "address": [
+                                                "get_deck_record",
+                                                "result",
+                                                "card_count",
+                                                "displayValue"
+                                            ]
+                                        },
+                                        "type": "DATA_OUTPUT_BINDING"
+                                    }
+                                },
+                                "slot": null,
+                                "styles": null
+                            }
+                        ],
+                        "layout": {
+                            "default": {
+                                "children": null,
+                                "items": [
+                                    {
+                                        "element_id": "image_4",
+                                        "styles": {
+                                            "align-self": "center",
+                                            "flex": "0 1 auto",
+                                            "padding-left": "var(--now-scalable-space--3xl)",
+                                            "width": "150px"
+                                        }
+                                    },
+                                    {
+                                        "element_id": "deck_name",
+                                        "styles": {
+                                            "align-self": "center",
+                                            "color": "#dee2fb",
+                                            "flex": "1 0 auto",
+                                            "font-style": "italic",
+                                            "font-variant": "small-caps",
+                                            "margin-bottom": "0px",
+                                            "margin-top": "0px",
+                                            "padding-left": "0",
+                                            "text-shadow": "1px 1px 2px #9097b7, 0 0 1em blue, 0 0 0.2em blue"
+                                        }
+                                    },
+                                    {
+                                        "element_id": "deck_list",
+                                        "styles": {
+                                            "align-self": "center"
+                                        }
+                                    },
+                                    {
+                                        "element_id": "debug_resource",
+                                        "styles": {
+                                            "background": "#D21616",
+                                            "color": "white",
+                                            "padding": "var(--now-scalable-space--lg)",
+                                            "padding-bottom": "var(--now-scalable-space--lg)",
+                                            "padding-left": "var(--now-scalable-space--lg)",
+                                            "padding-right": "var(--now-scalable-space--lg)",
+                                            "padding-top": "var(--now-scalable-space--lg)"
+                                        }
+                                    }
+                                ],
+                                "root": null,
+                                "rules": null,
+                                "styles": {
+                                    "align-items": "center",
+                                    "display": "flex",
+                                    "flex-direction": "row",
+                                    "gap": "var(--now-scalable-space--3xl)",
+                                    "justify-content": "flex-start",
+                                    "margin-bottom": "0",
+                                    "margin-left": "var(--now-scalable-space--md)",
+                                    "margin-right": "var(--now-scalable-space--md)",
+                                    "margin-top": "0",
+                                    "padding-bottom": "var(--now-scalable-space--sm)",
+                                    "padding-top": "var(--now-scalable-space--sm)"
+                                },
+                                "templateId": "5832fd4d53c31010e6bcddeeff7b12db",
+                                "type": "flex"
+                            },
+                            "version": "3.0.0"
+                        }
                     },
                     "preset": null,
                     "propertyValues": {
-                        "configAria": {
+                        "ariaRegionHeadingLevel": {
                             "type": "JSON_LITERAL",
-                            "value": {}
+                            "value": "1"
                         },
-                        "disabled": {
+                        "ariaRegionName": {
+                            "type": "TRANSLATION_LITERAL",
+                            "value": {
+                                "code": null,
+                                "comment": "",
+                                "message": ""
+                            }
+                        },
+                        "ariaRole": {
+                            "type": "JSON_LITERAL",
+                            "value": ""
+                        },
+                        "hideEmptyStateUi": {
+                            "type": "JSON_LITERAL",
+                            "value": true
+                        },
+                        "includeAriaHeading": {
                             "type": "JSON_LITERAL",
                             "value": false
                         },
-                        "icon": {
+                        "slotWrapperBehavior": {
                             "type": "JSON_LITERAL",
-                            "value": null
+                            "value": "fullheight"
                         },
-                        "label": {
-                            "type": "TRANSLATION_LITERAL",
-                            "value": {
-                                "code": null,
-                                "comment": "",
-                                "message": "Back to Deck list"
-                            }
-                        },
-                        "size": {
+                        "type": {
                             "type": "JSON_LITERAL",
-                            "value": "md"
-                        },
-                        "tooltipContent": {
-                            "type": "TRANSLATION_LITERAL",
-                            "value": {
-                                "code": null,
-                                "comment": "",
-                                "message": "Enter a label"
-                            }
-                        },
-                        "variant": {
-                            "type": "JSON_LITERAL",
-                            "value": "primary"
+                            "value": "section"
                         }
                     },
                     "slot": null,
-                    "styles": null
+                    "styles": {}
+                },
+                {
+                    "definition": {
+                        "id": "REPEATER",
+                        "type": "REPEATER"
+                    },
+                    "elementId": "current_deck_repeater",
+                    "elementLabel": "Current Deck repeater",
+                    "eventMappings": [],
+                    "isHidden": {
+                        "type": "JSON_LITERAL",
+                        "value": null
+                    },
+                    "overrides": {
+                        "composition": [
+                            {
+                                "definition": {
+                                    "id": "e772e788e32ce32b8daa2ac7b092d2c6",
+                                    "type": "MACROPONENT"
+                                },
+                                "elementId": "deck_card_container",
+                                "elementLabel": "Deck Card container",
+                                "eventMappings": [
+                                    {
+                                        "eventMappingId": "clusfwjggwaaffccsddbhhnmroliiaddm",
+                                        "isConfiguration": false,
+                                        "offRowStorageId": null,
+                                        "sourceEventApiName": "sn_card.NOW_CARD#CLICKED",
+                                        "sourceEventCorrelationId": null,
+                                        "sourceEventDefinition": {
+                                            "apiName": "sn_card.NOW_CARD#CLICKED",
+                                            "id": null,
+                                            "type": "UXEVENT"
+                                        },
+                                        "sourceEventSysId": null,
+                                        "targets": [
+                                            {
+                                                "broker": null,
+                                                "clientScript": null,
+                                                "conditional": null,
+                                                "declarativeAction": null,
+                                                "event": {
+                                                    "apiName": "x_168987_flow_de_0.MODAL_SELECTED_RELAY_9d39e626479e715017fdc82f316d432a",
+                                                    "payload": {
+                                                        "type": "JSON_LITERAL",
+                                                        "value": {
+                                                            "bare": true,
+                                                            "displayOptions": null,
+                                                            "headerLabel": null,
+                                                            "modalId": "[component-id$='deck_view_modal']",
+                                                            "showModal": true,
+                                                            "viewportElementId": null,
+                                                            "viewportFields": null,
+                                                            "viewportParams": null,
+                                                            "viewportRoute": null
+                                                        }
+                                                    },
+                                                    "sysId": "d9f5a34493210210cd4e7d532bba10c4"
+                                                },
+                                                "operation": null,
+                                                "targetId": "clusfwjggwaaffcctddbhhnsafriiyju",
+                                                "type": "EVENT"
+                                            },
+                                            {
+                                                "broker": null,
+                                                "clientScript": null,
+                                                "conditional": null,
+                                                "declarativeAction": null,
+                                                "event": {
+                                                    "apiName": "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
+                                                    "payload": {
+                                                        "container": {
+                                                            "propName": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": "Selected Deck Slot Id"
+                                                            },
+                                                            "value": {
+                                                                "binding": {
+                                                                    "address": [
+                                                                        "_row_data",
+                                                                        "uniqueValue"
+                                                                    ],
+                                                                    "category": "value"
+                                                                },
+                                                                "type": "REPEATER_ITEM_BINDING"
+                                                            }
+                                                        },
+                                                        "type": "MAP_CONTAINER"
+                                                    },
+                                                    "sysId": "32408b42ff7a10109046e490703bf176"
+                                                },
+                                                "operation": null,
+                                                "targetId": "clusfwtxiiaaffddjjddbhhnaafxhhjggnc",
+                                                "type": "EVENT"
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "isHidden": {
+                                    "type": "JSON_LITERAL",
+                                    "value": null
+                                },
+                                "overrides": {
+                                    "composition": [
+                                        {
+                                            "definition": {
+                                                "id": "4335ba6dca80378f7ba7a67cd6667bec",
+                                                "type": "MACROPONENT"
+                                            },
+                                            "elementId": "deck_card_name",
+                                            "elementLabel": "Deck Card name",
+                                            "eventMappings": [],
+                                            "isHidden": {
+                                                "type": "JSON_LITERAL",
+                                                "value": null
+                                            },
+                                            "preset": null,
+                                            "propertyValues": {
+                                                "configAria": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": {}
+                                                },
+                                                "css": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": "* { display: inline-block;\n    white-space: nowrap;\n    font-size: 16px; /* Start with default font size */\n    line-height: 1;\n    text-align: center;\n    transform: scale(1);\n    width: 100%;\n    height: auto;\n    text-overflow: ellipsis; /* For any overflow content */}"
+                                                },
+                                                "tag": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": "div"
+                                                },
+                                                "text": {
+                                                    "binding": {
+                                                        "address": [
+                                                            "card_definition",
+                                                            "displayValue"
+                                                        ],
+                                                        "category": "value"
+                                                    },
+                                                    "type": "REPEATER_ITEM_BINDING"
+                                                }
+                                            },
+                                            "slot": null,
+                                            "styles": null
+                                        },
+                                        {
+                                            "definition": {
+                                                "id": "d356d14b6e293a3020a244b63d278d8f",
+                                                "type": "MACROPONENT"
+                                            },
+                                            "elementId": "image_container",
+                                            "elementLabel": "Image Container",
+                                            "eventMappings": [],
+                                            "isHidden": {
+                                                "type": "JSON_LITERAL",
+                                                "value": null
+                                            },
+                                            "overrides": {
+                                                "composition": [
+                                                    {
+                                                        "definition": {
+                                                            "id": "15fe506403f8a98575b6df59008ea8f1",
+                                                            "type": "MACROPONENT"
+                                                        },
+                                                        "elementId": "player_card_image",
+                                                        "elementLabel": "Player card image",
+                                                        "eventMappings": [],
+                                                        "isHidden": {
+                                                            "type": "JSON_LITERAL",
+                                                            "value": null
+                                                        },
+                                                        "preset": {
+                                                            "controllerElementId": "deck_form_resource",
+                                                            "disabledEventTargetIds": [],
+                                                            "id": "fb915bf1bad80b3097b5b2c76b35b215"
+                                                        },
+                                                        "propertyValues": {
+                                                            "fit": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": "scale-down"
+                                                            },
+                                                            "position": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": "center center"
+                                                            },
+                                                            "sources": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": []
+                                                            },
+                                                            "src": {
+                                                                "binding": {
+                                                                    "address": [
+                                                                        "card_definition",
+                                                                        "_reference",
+                                                                        "card_image",
+                                                                        "displayValue"
+                                                                    ],
+                                                                    "category": "value"
+                                                                },
+                                                                "type": "REPEATER_ITEM_BINDING"
+                                                            },
+                                                            "width": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": 100
+                                                            }
+                                                        },
+                                                        "slot": null,
+                                                        "styles": null
+                                                    }
+                                                ],
+                                                "layout": {
+                                                    "default": {
+                                                        "children": null,
+                                                        "items": [
+                                                            {
+                                                                "element_id": "card_base_container_1",
+                                                                "styles": {
+                                                                    "width": "100%"
+                                                                }
+                                                            },
+                                                            {
+                                                                "element_id": "player_card_image",
+                                                                "styles": {}
+                                                            }
+                                                        ],
+                                                        "root": null,
+                                                        "rules": null,
+                                                        "styles": {
+                                                            "flex-direction": "column"
+                                                        },
+                                                        "templateId": "5832fd4d53c31010e6bcddeeff7b12db",
+                                                        "type": "flex"
+                                                    },
+                                                    "version": "3.0.0"
+                                                }
+                                            },
+                                            "preset": null,
+                                            "propertyValues": {
+                                                "ariaRegionHeadingLevel": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": "1"
+                                                },
+                                                "ariaRegionName": {
+                                                    "type": "TRANSLATION_LITERAL",
+                                                    "value": {
+                                                        "code": null,
+                                                        "comment": "",
+                                                        "message": ""
+                                                    }
+                                                },
+                                                "ariaRole": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": ""
+                                                },
+                                                "hideEmptyStateUi": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": true
+                                                },
+                                                "includeAriaHeading": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": false
+                                                },
+                                                "slotWrapperBehavior": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": "fullheight"
+                                                },
+                                                "type": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": "section"
+                                                }
+                                            },
+                                            "slot": null,
+                                            "styles": null
+                                        },
+                                        {
+                                            "definition": {
+                                                "id": "2d56f06d55f46bbd4e79b5e624beb940",
+                                                "type": "MACROPONENT"
+                                            },
+                                            "elementId": "player_card_ability",
+                                            "elementLabel": "Player card ability",
+                                            "eventMappings": [],
+                                            "isHidden": {
+                                                "type": "JSON_LITERAL",
+                                                "value": null
+                                            },
+                                            "preset": null,
+                                            "propertyValues": {
+                                                "html": {
+                                                    "binding": {
+                                                        "address": [
+                                                            "card_definition",
+                                                            "_reference",
+                                                            "abilitys",
+                                                            "displayValue"
+                                                        ],
+                                                        "category": "value"
+                                                    },
+                                                    "type": "REPEATER_ITEM_BINDING"
+                                                }
+                                            },
+                                            "slot": null,
+                                            "styles": null
+                                        }
+                                    ],
+                                    "layout": {
+                                        "default": {
+                                            "children": null,
+                                            "items": [
+                                                {
+                                                    "element_id": "deck_card_name",
+                                                    "styles": {
+                                                        "align-self": "center",
+                                                        "color": "#dee2fb",
+                                                        "flex": "none",
+                                                        "font-size": "20px",
+                                                        "font-style": "italic",
+                                                        "font-variant": "small-caps",
+                                                        "padding": "var(--now-scalable-space--md)",
+                                                        "padding-bottom": "var(--now-scalable-space--md)",
+                                                        "padding-left": "var(--now-scalable-space--md)",
+                                                        "padding-right": "var(--now-scalable-space--md)",
+                                                        "padding-top": "var(--now-scalable-space--md)",
+                                                        "text-shadow": "1px 1px 2px #9097b7, 0 0 1em blue, 0 0 0.2em blue"
+                                                    }
+                                                },
+                                                {
+                                                    "element_id": "image_container",
+                                                    "styles": {
+                                                        "align-self": "center",
+                                                        "box-shadow": "0 0 15px 5px white,  /* inner white */    0 0 10px 5px #f0f, /* middle magenta */    0 0 10px 5px #0ff",
+                                                        "margin-top": "0",
+                                                        "padding-top": "0",
+                                                        "width": ""
+                                                    }
+                                                },
+                                                {
+                                                    "element_id": "player_card_ability",
+                                                    "styles": {
+                                                        "color": "white",
+                                                        "margin-top": "var(--now-scalable-space--md)",
+                                                        "padding": "var(--now-scalable-space--sm)",
+                                                        "padding-bottom": "var(--now-scalable-space--sm)",
+                                                        "padding-left": "var(--now-scalable-space--sm)",
+                                                        "padding-right": "var(--now-scalable-space--sm)",
+                                                        "padding-top": "var(--now-scalable-space--sm)"
+                                                    }
+                                                }
+                                            ],
+                                            "root": null,
+                                            "rules": null,
+                                            "styles": {
+                                                "align-items": "center",
+                                                "display": "flex",
+                                                "flex-direction": "column"
+                                            },
+                                            "templateId": "5832fd4d53c31010e6bcddeeff7b12db",
+                                            "type": "flex"
+                                        },
+                                        "version": "3.0.0"
+                                    }
+                                },
+                                "preset": null,
+                                "propertyValues": {
+                                    "configAria": {
+                                        "type": "JSON_LITERAL",
+                                        "value": {}
+                                    },
+                                    "hideShadow": {
+                                        "type": "JSON_LITERAL",
+                                        "value": false
+                                    },
+                                    "interaction": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "click"
+                                    },
+                                    "selected": {
+                                        "type": "JSON_LITERAL",
+                                        "value": false
+                                    },
+                                    "sidebar": {
+                                        "type": "JSON_LITERAL",
+                                        "value": {}
+                                    },
+                                    "size": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "lg"
+                                    }
+                                },
+                                "slot": null,
+                                "styles": null
+                            }
+                        ],
+                        "layout": {
+                            "default": {
+                                "children": null,
+                                "items": [
+                                    {
+                                        "element_id": "deck_card_container",
+                                        "styles": {
+                                            "height": "220px",
+                                            "width": "16.666666%"
+                                        }
+                                    }
+                                ],
+                                "root": null,
+                                "rules": null,
+                                "styles": {
+                                    "align-content": "flex-start",
+                                    "display": "flex",
+                                    "flex-direction": "row",
+                                    "flex-wrap": "wrap",
+                                    "margin-left": "var(--now-scalable-space--3xl)",
+                                    "margin-right": "var(--now-scalable-space--3xl)"
+                                },
+                                "templateId": "5832fd4d53c31010e6bcddeeff7b12db",
+                                "type": "flex"
+                            },
+                            "version": "3.0.0"
+                        }
+                    },
+                    "preset": null,
+                    "repeatWith": {
+                        "binding": {
+                            "address": [
+                                "get_player_cards",
+                                "results"
+                            ]
+                        },
+                        "type": "DATA_OUTPUT_BINDING"
+                    },
+                    "slot": null,
+                    "styles": {}
                 },
                 {
                     "definition": {
                         "id": "4335ba6dca80378f7ba7a67cd6667bec",
                         "type": "MACROPONENT"
                     },
-                    "elementId": "deck_name",
-                    "elementLabel": "Deck Name",
+                    "elementId": "select_card_sep",
+                    "elementLabel": "Select Cards separator",
                     "eventMappings": [],
                     "isHidden": {
                         "type": "JSON_LITERAL",
@@ -182,52 +875,367 @@
                             "value": "h1"
                         },
                         "text": {
-                            "binding": {
-                                "address": [
-                                    "get_deck_record",
-                                    "result",
-                                    "deck_name",
-                                    "displayValue"
-                                ]
-                            },
-                            "type": "DATA_OUTPUT_BINDING"
+                            "type": "TRANSLATION_LITERAL",
+                            "value": {
+                                "code": null,
+                                "comment": "",
+                                "message": "Select Cards:"
+                            }
                         }
                     },
                     "slot": null,
-                    "styles": null
+                    "styles": {}
                 },
                 {
                     "definition": {
-                        "id": "1f6e0643eca7a637e36bd7833549ec9e",
-                        "type": "MACROPONENT"
+                        "id": "REPEATER",
+                        "type": "REPEATER"
                     },
-                    "elementId": "debug_resource",
-                    "elementLabel": "debug data resource",
+                    "elementId": "card_options",
+                    "elementLabel": "Card Options",
                     "eventMappings": [],
                     "isHidden": {
                         "type": "JSON_LITERAL",
-                        "value": true
+                        "value": null
                     },
-                    "preset": {
-                        "controllerElementId": "deck_form_resource",
-                        "disabledEventTargetIds": [],
-                        "id": "e61aa04af8f8f7b18abc73e3f61ab4e8"
-                    },
-                    "propertyValues": {
-                        "label": {
-                            "binding": {
-                                "address": [
-                                    "get_deck_record",
-                                    "result",
-                                    "card_count",
-                                    "displayValue"
-                                ]
+                    "overrides": {
+                        "composition": [
+                            {
+                                "definition": {
+                                    "id": "e772e788e32ce32b8daa2ac7b092d2c6",
+                                    "type": "MACROPONENT"
+                                },
+                                "elementId": "card_to_add",
+                                "elementLabel": "Card to Add",
+                                "eventMappings": [
+                                    {
+                                        "eventMappingId": "clotgggjxkaabbyccddbhhpsodhnajbb",
+                                        "isConfiguration": false,
+                                        "offRowStorageId": null,
+                                        "sourceEventApiName": "sn_card.NOW_CARD#CLICKED",
+                                        "sourceEventCorrelationId": null,
+                                        "sourceEventDefinition": {
+                                            "apiName": "sn_card.NOW_CARD#CLICKED",
+                                            "id": null,
+                                            "type": "UXEVENT"
+                                        },
+                                        "sourceEventSysId": null,
+                                        "targets": [
+                                            {
+                                                "broker": null,
+                                                "clientScript": null,
+                                                "conditional": null,
+                                                "declarativeAction": null,
+                                                "event": {
+                                                    "apiName": "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
+                                                    "payload": {
+                                                        "container": {
+                                                            "propName": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": "Selected Card Id"
+                                                            },
+                                                            "value": {
+                                                                "binding": {
+                                                                    "address": [
+                                                                        "_row_data",
+                                                                        "uniqueValue"
+                                                                    ],
+                                                                    "category": "value"
+                                                                },
+                                                                "type": "REPEATER_ITEM_BINDING"
+                                                            }
+                                                        },
+                                                        "type": "MAP_CONTAINER"
+                                                    },
+                                                    "sysId": "32408b42ff7a10109046e490703bf176"
+                                                },
+                                                "operation": null,
+                                                "targetId": "cluseciicpaaddbbiddbhhnlbsqytaas",
+                                                "type": "EVENT"
+                                            },
+                                            {
+                                                "broker": null,
+                                                "clientScript": null,
+                                                "conditional": null,
+                                                "declarativeAction": null,
+                                                "event": {
+                                                    "apiName": "x_168987_flow_de_0.MODAL_SELECTED_RELAY_9d39e626479e715017fdc82f316d432a",
+                                                    "payload": {
+                                                        "type": "JSON_LITERAL",
+                                                        "value": {
+                                                            "bare": true,
+                                                            "displayOptions": null,
+                                                            "headerLabel": null,
+                                                            "modalId": "[component-id$='card_view_modal']",
+                                                            "showModal": true,
+                                                            "viewportElementId": null,
+                                                            "viewportFields": null,
+                                                            "viewportParams": null,
+                                                            "viewportRoute": null
+                                                        }
+                                                    },
+                                                    "sysId": "d9f5a34493210210cd4e7d532bba10c4"
+                                                },
+                                                "operation": null,
+                                                "targetId": "clusedaafbaaddddeeddbhhnxcrjzxddjj",
+                                                "type": "EVENT"
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "isHidden": {
+                                    "type": "JSON_LITERAL",
+                                    "value": null
+                                },
+                                "overrides": {
+                                    "composition": [
+                                        {
+                                            "definition": {
+                                                "id": "4335ba6dca80378f7ba7a67cd6667bec",
+                                                "type": "MACROPONENT"
+                                            },
+                                            "elementId": "card_name",
+                                            "elementLabel": "Card Name",
+                                            "eventMappings": [],
+                                            "isHidden": {
+                                                "type": "JSON_LITERAL",
+                                                "value": null
+                                            },
+                                            "preset": null,
+                                            "propertyValues": {
+                                                "configAria": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": {}
+                                                },
+                                                "css": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": "* { align-self: center;\n    color: #dee2fb;\n    font-style: italic;\n    font-variant: small-caps;\n    text-shadow: 1px 1px 2px #9097b7, 0 0 1em blue, 0 0 0.2em blue;\n    display: inline-block;\n    white-space: nowrap;\n    font-size: 16px; /* Start with default font size */\n    line-height: 1;\n    text-align: center;\n    transform: scale(1);\n    width: 100%;\n    height: auto;\n    text-overflow: ellipsis; /* For any overflow content */\n    }"
+                                                },
+                                                "tag": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": "div"
+                                                },
+                                                "text": {
+                                                    "binding": {
+                                                        "address": [
+                                                            "name",
+                                                            "displayValue"
+                                                        ],
+                                                        "category": "value"
+                                                    },
+                                                    "type": "REPEATER_ITEM_BINDING"
+                                                }
+                                            },
+                                            "slot": null,
+                                            "styles": null
+                                        },
+                                        {
+                                            "definition": {
+                                                "id": "15fe506403f8a98575b6df59008ea8f1",
+                                                "type": "MACROPONENT"
+                                            },
+                                            "elementId": "card_image",
+                                            "elementLabel": "Card Image",
+                                            "eventMappings": [],
+                                            "isHidden": {
+                                                "type": "JSON_LITERAL",
+                                                "value": false
+                                            },
+                                            "preset": {
+                                                "controllerElementId": "deck_form_resource",
+                                                "disabledEventTargetIds": [],
+                                                "id": "fb915bf1bad80b3097b5b2c76b35b215"
+                                            },
+                                            "propertyValues": {
+                                                "fit": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": "scale-down"
+                                                },
+                                                "height": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": ""
+                                                },
+                                                "sources": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": []
+                                                },
+                                                "src": {
+                                                    "binding": {
+                                                        "address": [
+                                                            "card_image",
+                                                            "displayValue"
+                                                        ],
+                                                        "category": "value"
+                                                    },
+                                                    "type": "REPEATER_ITEM_BINDING"
+                                                },
+                                                "width": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": ""
+                                                }
+                                            },
+                                            "slot": null,
+                                            "styles": null
+                                        },
+                                        {
+                                            "definition": {
+                                                "id": "2d56f06d55f46bbd4e79b5e624beb940",
+                                                "type": "MACROPONENT"
+                                            },
+                                            "elementId": "ability_text",
+                                            "elementLabel": "Ability",
+                                            "eventMappings": [],
+                                            "isHidden": {
+                                                "type": "JSON_LITERAL",
+                                                "value": null
+                                            },
+                                            "preset": null,
+                                            "propertyValues": {
+                                                "html": {
+                                                    "binding": {
+                                                        "address": [
+                                                            "abilitys",
+                                                            "displayValue"
+                                                        ],
+                                                        "category": "value"
+                                                    },
+                                                    "type": "REPEATER_ITEM_BINDING"
+                                                }
+                                            },
+                                            "slot": null,
+                                            "styles": null
+                                        }
+                                    ],
+                                    "layout": {
+                                        "default": {
+                                            "children": null,
+                                            "items": [
+                                                {
+                                                    "element_id": "card_selector",
+                                                    "styles": {
+                                                        "width": "20%"
+                                                    }
+                                                },
+                                                {
+                                                    "element_id": "card_name",
+                                                    "styles": {
+                                                        "align-self": "center",
+                                                        "flex": "none"
+                                                    }
+                                                },
+                                                {
+                                                    "element_id": "card_image",
+                                                    "styles": {
+                                                        "align-self": "center",
+                                                        "border-color": "RGB(var(--now-color--neutral-5))",
+                                                        "border-style": "id",
+                                                        "border-width": "var(--now-static-space--xxs)",
+                                                        "flex": "none",
+                                                        "margin-top": "0",
+                                                        "padding-left": "0",
+                                                        "padding-right": "0",
+                                                        "width": "140px"
+                                                    }
+                                                },
+                                                {
+                                                    "element_id": "ability_text",
+                                                    "styles": {
+                                                        "color": "white",
+                                                        "font-style": "italic",
+                                                        "margin": "1px",
+                                                        "margin-bottom": "1px",
+                                                        "margin-left": "1px",
+                                                        "margin-right": "1px",
+                                                        "margin-top": "1px",
+                                                        "padding": "1px",
+                                                        "padding-bottom": "1px",
+                                                        "padding-left": "1px",
+                                                        "padding-right": "1px",
+                                                        "padding-top": "1px"
+                                                    }
+                                                }
+                                            ],
+                                            "root": null,
+                                            "rules": null,
+                                            "styles": {
+                                                "align-items": "stretch",
+                                                "display": "flex",
+                                                "flex-direction": "column",
+                                                "justify-content": "center"
+                                            },
+                                            "templateId": "5832fd4d53c31010e6bcddeeff7b12db",
+                                            "type": "flex"
+                                        },
+                                        "version": "3.0.0"
+                                    }
+                                },
+                                "preset": null,
+                                "propertyValues": {
+                                    "configAria": {
+                                        "type": "JSON_LITERAL",
+                                        "value": {}
+                                    },
+                                    "hideShadow": {
+                                        "type": "JSON_LITERAL",
+                                        "value": true
+                                    },
+                                    "interaction": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "click"
+                                    },
+                                    "selected": {
+                                        "type": "JSON_LITERAL",
+                                        "value": false
+                                    },
+                                    "sidebar": {
+                                        "type": "JSON_LITERAL",
+                                        "value": {}
+                                    },
+                                    "size": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "lg"
+                                    }
+                                },
+                                "slot": null,
+                                "styles": null
+                            }
+                        ],
+                        "layout": {
+                            "default": {
+                                "children": null,
+                                "items": [
+                                    {
+                                        "element_id": "card_to_add",
+                                        "styles": {
+                                            "height": "300px",
+                                            "width": "16.6666666%"
+                                        }
+                                    }
+                                ],
+                                "root": null,
+                                "rules": null,
+                                "styles": {
+                                    "flex-direction": "row",
+                                    "flex-wrap": "wrap"
+                                },
+                                "templateId": "5832fd4d53c31010e6bcddeeff7b12db",
+                                "type": "flex"
                             },
-                            "type": "DATA_OUTPUT_BINDING"
+                            "version": "3.0.0"
                         }
                     },
+                    "preset": null,
+                    "repeatWith": {
+                        "binding": {
+                            "address": [
+                                "get_card_definitions",
+                                "results"
+                            ]
+                        },
+                        "type": "DATA_OUTPUT_BINDING"
+                    },
                     "slot": null,
-                    "styles": null
+                    "styles": {}
                 }
             ],
             "layout": {
@@ -235,52 +1243,47 @@
                     "children": null,
                     "items": [
                         {
-                            "element_id": "deck_list",
-                            "styles": {}
-                        },
-                        {
-                            "element_id": "deck_name",
+                            "element_id": "header",
                             "styles": {
-                                "align-self": "center",
-                                "color": "#dee2fb",
-                                "font-style": "italic",
-                                "font-variant": "small-caps",
-                                "margin-bottom": "0px",
-                                "margin-top": "0px",
-                                "text-shadow": "1px 1px 2px #9097b7, 0 0 1em blue, 0 0 0.2em blue"
+                                "align-self": "stretch",
+                                "flex": "none"
                             }
                         },
                         {
-                            "element_id": "debug_resource",
+                            "element_id": "current_deck_repeater",
                             "styles": {
-                                "background": "#D21616",
-                                "color": "white",
-                                "padding": "var(--now-scalable-space--lg)",
-                                "padding-bottom": "var(--now-scalable-space--lg)",
-                                "padding-left": "var(--now-scalable-space--lg)",
-                                "padding-right": "var(--now-scalable-space--lg)",
-                                "padding-top": "var(--now-scalable-space--lg)"
+                                "height": "100%",
+                                "width": "100%"
+                            }
+                        },
+                        {
+                            "element_id": "select_card_sep",
+                            "styles": {
+                                "align-self": "center",
+                                "color": "#dee2fb",
+                                "flex": "none",
+                                "font-style": "italic",
+                                "font-variant": "small-caps",
+                                "hex": "text-shadow: 10px 10px 25px rgb(81,67,21),     -10px 10px 25px rgb(81,67,21),     -10px -10px 25px rgb(81,67,21),     10px -10px 25px rgb(81,67,21);",
+                                "text-shadow": "1px 1px 2px #9097b7, 0 0 1em blue, 0 0 0.2em blue",
+                                "width": "100%"
+                            }
+                        },
+                        {
+                            "element_id": "card_options",
+                            "styles": {
+                                "width": "100%"
                             }
                         }
                     ],
                     "root": null,
                     "rules": null,
                     "styles": {
-                        "display": "grid",
-                        "grid-auto-columns": "1fr",
-                        "grid-auto-rows": "1fr",
-                        "grid-template-columns": "1fr 1fr 1fr",
-                        "grid-template-rows": "1fr",
-                        "justify-content": "flex-start",
-                        "margin-bottom": "0",
-                        "margin-left": "var(--now-scalable-space--md)",
-                        "margin-right": "var(--now-scalable-space--md)",
-                        "margin-top": "0",
-                        "padding-bottom": "var(--now-scalable-space--sm)",
-                        "padding-top": "var(--now-scalable-space--sm)"
+                        "display": "flex",
+                        "flex-direction": "column"
                     },
                     "templateId": "5832fd4d53c31010e6bcddeeff7b12db",
-                    "type": "grid"
+                    "type": "flex"
                 },
                 "version": "3.0.0"
             }
@@ -319,824 +1322,6 @@
                 "type": "JSON_LITERAL",
                 "value": "section"
             }
-        },
-        "slot": null,
-        "styles": null
-    },
-    {
-        "definition": {
-            "id": "REPEATER",
-            "type": "REPEATER"
-        },
-        "elementId": "current_deck_repeater",
-        "elementLabel": "Current Deck repeater",
-        "eventMappings": [],
-        "isHidden": {
-            "type": "JSON_LITERAL",
-            "value": null
-        },
-        "overrides": {
-            "composition": [
-                {
-                    "definition": {
-                        "id": "e772e788e32ce32b8daa2ac7b092d2c6",
-                        "type": "MACROPONENT"
-                    },
-                    "elementId": "deck_card_container",
-                    "elementLabel": "Deck Card container",
-                    "eventMappings": [
-                        {
-                            "eventMappingId": "clusfwjggwaaffccsddbhhnmroliiaddm",
-                            "isConfiguration": false,
-                            "offRowStorageId": null,
-                            "sourceEventApiName": "sn_card.NOW_CARD#CLICKED",
-                            "sourceEventCorrelationId": null,
-                            "sourceEventDefinition": {
-                                "apiName": "sn_card.NOW_CARD#CLICKED",
-                                "id": null,
-                                "type": "UXEVENT"
-                            },
-                            "sourceEventSysId": null,
-                            "targets": [
-                                {
-                                    "broker": null,
-                                    "clientScript": null,
-                                    "conditional": null,
-                                    "declarativeAction": null,
-                                    "event": {
-                                        "apiName": "x_168987_flow_de_0.MODAL_SELECTED_RELAY_9d39e626479e715017fdc82f316d432a",
-                                        "payload": {
-                                            "type": "JSON_LITERAL",
-                                            "value": {
-                                                "bare": true,
-                                                "displayOptions": null,
-                                                "headerLabel": null,
-                                                "modalId": "[component-id$='deck_view_modal']",
-                                                "showModal": true,
-                                                "viewportElementId": null,
-                                                "viewportFields": null,
-                                                "viewportParams": null,
-                                                "viewportRoute": null
-                                            }
-                                        },
-                                        "sysId": "d9f5a34493210210cd4e7d532bba10c4"
-                                    },
-                                    "operation": null,
-                                    "targetId": "clusfwjggwaaffcctddbhhnsafriiyju",
-                                    "type": "EVENT"
-                                },
-                                {
-                                    "broker": null,
-                                    "clientScript": null,
-                                    "conditional": null,
-                                    "declarativeAction": null,
-                                    "event": {
-                                        "apiName": "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
-                                        "payload": {
-                                            "container": {
-                                                "propName": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": "Selected Deck Slot Id"
-                                                },
-                                                "value": {
-                                                    "binding": {
-                                                        "address": [
-                                                            "_row_data",
-                                                            "uniqueValue"
-                                                        ],
-                                                        "category": "value"
-                                                    },
-                                                    "type": "REPEATER_ITEM_BINDING"
-                                                }
-                                            },
-                                            "type": "MAP_CONTAINER"
-                                        },
-                                        "sysId": "32408b42ff7a10109046e490703bf176"
-                                    },
-                                    "operation": null,
-                                    "targetId": "clusfwtxiiaaffddjjddbhhnaafxhhjggnc",
-                                    "type": "EVENT"
-                                }
-                            ]
-                        }
-                    ],
-                    "isHidden": {
-                        "type": "JSON_LITERAL",
-                        "value": null
-                    },
-                    "overrides": {
-                        "composition": [
-                            {
-                                "definition": {
-                                    "id": "4335ba6dca80378f7ba7a67cd6667bec",
-                                    "type": "MACROPONENT"
-                                },
-                                "elementId": "deck_card_name",
-                                "elementLabel": "Deck Card name",
-                                "eventMappings": [],
-                                "isHidden": {
-                                    "type": "JSON_LITERAL",
-                                    "value": null
-                                },
-                                "preset": null,
-                                "propertyValues": {
-                                    "configAria": {
-                                        "type": "JSON_LITERAL",
-                                        "value": {}
-                                    },
-                                    "css": {
-                                        "type": "JSON_LITERAL",
-                                        "value": "* { display: inline-block;\n    white-space: nowrap;\n    font-size: 16px; /* Start with default font size */\n    line-height: 1;\n    text-align: center;\n    transform: scale(1);\n    width: 100%;\n    height: auto;\n    text-overflow: ellipsis; /* For any overflow content */}"
-                                    },
-                                    "tag": {
-                                        "type": "JSON_LITERAL",
-                                        "value": "div"
-                                    },
-                                    "text": {
-                                        "binding": {
-                                            "address": [
-                                                "card_definition",
-                                                "displayValue"
-                                            ],
-                                            "category": "value"
-                                        },
-                                        "type": "REPEATER_ITEM_BINDING"
-                                    }
-                                },
-                                "slot": null,
-                                "styles": null
-                            },
-                            {
-                                "definition": {
-                                    "id": "d356d14b6e293a3020a244b63d278d8f",
-                                    "type": "MACROPONENT"
-                                },
-                                "elementId": "image_container",
-                                "elementLabel": "Image Container",
-                                "eventMappings": [],
-                                "isHidden": {
-                                    "type": "JSON_LITERAL",
-                                    "value": null
-                                },
-                                "overrides": {
-                                    "composition": [
-                                        {
-                                            "definition": {
-                                                "id": "15fe506403f8a98575b6df59008ea8f1",
-                                                "type": "MACROPONENT"
-                                            },
-                                            "elementId": "player_card_image",
-                                            "elementLabel": "Player card image",
-                                            "eventMappings": [],
-                                            "isHidden": {
-                                                "type": "JSON_LITERAL",
-                                                "value": null
-                                            },
-                                            "preset": {
-                                                "controllerElementId": "deck_form_resource",
-                                                "disabledEventTargetIds": [],
-                                                "id": "fb915bf1bad80b3097b5b2c76b35b215"
-                                            },
-                                            "propertyValues": {
-                                                "fit": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": "scale-down"
-                                                },
-                                                "position": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": "center center"
-                                                },
-                                                "sources": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": []
-                                                },
-                                                "src": {
-                                                    "binding": {
-                                                        "address": [
-                                                            "card_definition",
-                                                            "_reference",
-                                                            "card_image",
-                                                            "displayValue"
-                                                        ],
-                                                        "category": "value"
-                                                    },
-                                                    "type": "REPEATER_ITEM_BINDING"
-                                                },
-                                                "width": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": 100
-                                                }
-                                            },
-                                            "slot": null,
-                                            "styles": null
-                                        }
-                                    ],
-                                    "layout": {
-                                        "default": {
-                                            "children": null,
-                                            "items": [
-                                                {
-                                                    "element_id": "card_base_container_1",
-                                                    "styles": {
-                                                        "width": "100%"
-                                                    }
-                                                },
-                                                {
-                                                    "element_id": "player_card_image",
-                                                    "styles": {}
-                                                }
-                                            ],
-                                            "root": null,
-                                            "rules": null,
-                                            "styles": {
-                                                "flex-direction": "column"
-                                            },
-                                            "templateId": "5832fd4d53c31010e6bcddeeff7b12db",
-                                            "type": "flex"
-                                        },
-                                        "version": "3.0.0"
-                                    }
-                                },
-                                "preset": null,
-                                "propertyValues": {
-                                    "ariaRegionHeadingLevel": {
-                                        "type": "JSON_LITERAL",
-                                        "value": "1"
-                                    },
-                                    "ariaRegionName": {
-                                        "type": "TRANSLATION_LITERAL",
-                                        "value": {
-                                            "code": null,
-                                            "comment": "",
-                                            "message": ""
-                                        }
-                                    },
-                                    "ariaRole": {
-                                        "type": "JSON_LITERAL",
-                                        "value": ""
-                                    },
-                                    "hideEmptyStateUi": {
-                                        "type": "JSON_LITERAL",
-                                        "value": true
-                                    },
-                                    "includeAriaHeading": {
-                                        "type": "JSON_LITERAL",
-                                        "value": false
-                                    },
-                                    "slotWrapperBehavior": {
-                                        "type": "JSON_LITERAL",
-                                        "value": "fullheight"
-                                    },
-                                    "type": {
-                                        "type": "JSON_LITERAL",
-                                        "value": "section"
-                                    }
-                                },
-                                "slot": null,
-                                "styles": null
-                            },
-                            {
-                                "definition": {
-                                    "id": "2d56f06d55f46bbd4e79b5e624beb940",
-                                    "type": "MACROPONENT"
-                                },
-                                "elementId": "player_card_ability",
-                                "elementLabel": "Player card ability",
-                                "eventMappings": [],
-                                "isHidden": {
-                                    "type": "JSON_LITERAL",
-                                    "value": null
-                                },
-                                "preset": null,
-                                "propertyValues": {
-                                    "html": {
-                                        "binding": {
-                                            "address": [
-                                                "card_definition",
-                                                "_reference",
-                                                "abilitys",
-                                                "displayValue"
-                                            ],
-                                            "category": "value"
-                                        },
-                                        "type": "REPEATER_ITEM_BINDING"
-                                    }
-                                },
-                                "slot": null,
-                                "styles": null
-                            }
-                        ],
-                        "layout": {
-                            "default": {
-                                "children": null,
-                                "items": [
-                                    {
-                                        "element_id": "deck_card_name",
-                                        "styles": {
-                                            "align-self": "center",
-                                            "color": "#dee2fb",
-                                            "flex": "none",
-                                            "font-size": "20px",
-                                            "font-style": "italic",
-                                            "font-variant": "small-caps",
-                                            "padding": "var(--now-scalable-space--md)",
-                                            "padding-bottom": "var(--now-scalable-space--md)",
-                                            "padding-left": "var(--now-scalable-space--md)",
-                                            "padding-right": "var(--now-scalable-space--md)",
-                                            "padding-top": "var(--now-scalable-space--md)",
-                                            "text-shadow": "1px 1px 2px #9097b7, 0 0 1em blue, 0 0 0.2em blue"
-                                        }
-                                    },
-                                    {
-                                        "element_id": "image_container",
-                                        "styles": {
-                                            "align-self": "center",
-                                            "box-shadow": "0 0 15px 5px white,  /* inner white */    0 0 10px 5px #f0f, /* middle magenta */    0 0 10px 5px #0ff",
-                                            "margin-top": "0",
-                                            "padding-top": "0",
-                                            "width": ""
-                                        }
-                                    },
-                                    {
-                                        "element_id": "player_card_ability",
-                                        "styles": {
-                                            "color": "white",
-                                            "margin-top": "var(--now-scalable-space--md)",
-                                            "padding": "var(--now-scalable-space--sm)",
-                                            "padding-bottom": "var(--now-scalable-space--sm)",
-                                            "padding-left": "var(--now-scalable-space--sm)",
-                                            "padding-right": "var(--now-scalable-space--sm)",
-                                            "padding-top": "var(--now-scalable-space--sm)"
-                                        }
-                                    }
-                                ],
-                                "root": null,
-                                "rules": null,
-                                "styles": {
-                                    "align-items": "center",
-                                    "background-color": "#060007",
-                                    "display": "flex",
-                                    "flex-direction": "column"
-                                },
-                                "templateId": "5832fd4d53c31010e6bcddeeff7b12db",
-                                "type": "flex"
-                            },
-                            "version": "3.0.0"
-                        }
-                    },
-                    "preset": null,
-                    "propertyValues": {
-                        "configAria": {
-                            "type": "JSON_LITERAL",
-                            "value": {}
-                        },
-                        "hideShadow": {
-                            "type": "JSON_LITERAL",
-                            "value": false
-                        },
-                        "interaction": {
-                            "type": "JSON_LITERAL",
-                            "value": "click"
-                        },
-                        "selected": {
-                            "type": "JSON_LITERAL",
-                            "value": false
-                        },
-                        "sidebar": {
-                            "type": "JSON_LITERAL",
-                            "value": {}
-                        },
-                        "size": {
-                            "type": "JSON_LITERAL",
-                            "value": "lg"
-                        }
-                    },
-                    "slot": null,
-                    "styles": null
-                }
-            ],
-            "layout": {
-                "default": {
-                    "children": null,
-                    "items": [
-                        {
-                            "element_id": "deck_card_container",
-                            "styles": {
-                                "background-color": "#060007",
-                                "height": "220px",
-                                "width": "16.666666%"
-                            }
-                        }
-                    ],
-                    "root": null,
-                    "rules": null,
-                    "styles": {
-                        "flex-direction": "row",
-                        "flex-wrap": "wrap",
-                        "margin-left": "var(--now-scalable-space--3xl)",
-                        "margin-right": "var(--now-scalable-space--3xl)"
-                    },
-                    "templateId": "5832fd4d53c31010e6bcddeeff7b12db",
-                    "type": "flex"
-                },
-                "version": "3.0.0"
-            }
-        },
-        "preset": null,
-        "repeatWith": {
-            "binding": {
-                "address": [
-                    "get_player_cards",
-                    "results"
-                ]
-            },
-            "type": "DATA_OUTPUT_BINDING"
-        },
-        "slot": null,
-        "styles": null
-    },
-    {
-        "definition": {
-            "id": "4335ba6dca80378f7ba7a67cd6667bec",
-            "type": "MACROPONENT"
-        },
-        "elementId": "select_card_sep",
-        "elementLabel": "Select Cards separator",
-        "eventMappings": [],
-        "isHidden": {
-            "type": "JSON_LITERAL",
-            "value": null
-        },
-        "preset": null,
-        "propertyValues": {
-            "css": {
-                "type": "JSON_LITERAL",
-                "value": "* { }"
-            },
-            "tag": {
-                "type": "JSON_LITERAL",
-                "value": "h1"
-            },
-            "text": {
-                "type": "TRANSLATION_LITERAL",
-                "value": {
-                    "code": null,
-                    "comment": "",
-                    "message": "Select Cards:"
-                }
-            }
-        },
-        "slot": null,
-        "styles": null
-    },
-    {
-        "definition": {
-            "id": "REPEATER",
-            "type": "REPEATER"
-        },
-        "elementId": "card_options",
-        "elementLabel": "Card Options",
-        "eventMappings": [],
-        "isHidden": {
-            "type": "JSON_LITERAL",
-            "value": null
-        },
-        "overrides": {
-            "composition": [
-                {
-                    "definition": {
-                        "id": "e772e788e32ce32b8daa2ac7b092d2c6",
-                        "type": "MACROPONENT"
-                    },
-                    "elementId": "card_to_add",
-                    "elementLabel": "Card to Add",
-                    "eventMappings": [
-                        {
-                            "eventMappingId": "clotgggjxkaabbyccddbhhpsodhnajbb",
-                            "isConfiguration": false,
-                            "offRowStorageId": null,
-                            "sourceEventApiName": "sn_card.NOW_CARD#CLICKED",
-                            "sourceEventCorrelationId": null,
-                            "sourceEventDefinition": {
-                                "apiName": "sn_card.NOW_CARD#CLICKED",
-                                "id": null,
-                                "type": "UXEVENT"
-                            },
-                            "sourceEventSysId": null,
-                            "targets": [
-                                {
-                                    "broker": null,
-                                    "clientScript": null,
-                                    "conditional": null,
-                                    "declarativeAction": null,
-                                    "event": {
-                                        "apiName": "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
-                                        "payload": {
-                                            "container": {
-                                                "propName": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": "Selected Card Id"
-                                                },
-                                                "value": {
-                                                    "binding": {
-                                                        "address": [
-                                                            "_row_data",
-                                                            "uniqueValue"
-                                                        ],
-                                                        "category": "value"
-                                                    },
-                                                    "type": "REPEATER_ITEM_BINDING"
-                                                }
-                                            },
-                                            "type": "MAP_CONTAINER"
-                                        },
-                                        "sysId": "32408b42ff7a10109046e490703bf176"
-                                    },
-                                    "operation": null,
-                                    "targetId": "cluseciicpaaddbbiddbhhnlbsqytaas",
-                                    "type": "EVENT"
-                                },
-                                {
-                                    "broker": null,
-                                    "clientScript": null,
-                                    "conditional": null,
-                                    "declarativeAction": null,
-                                    "event": {
-                                        "apiName": "x_168987_flow_de_0.MODAL_SELECTED_RELAY_9d39e626479e715017fdc82f316d432a",
-                                        "payload": {
-                                            "type": "JSON_LITERAL",
-                                            "value": {
-                                                "bare": true,
-                                                "displayOptions": null,
-                                                "headerLabel": null,
-                                                "modalId": "[component-id$='card_view_modal']",
-                                                "showModal": true,
-                                                "viewportElementId": null,
-                                                "viewportFields": null,
-                                                "viewportParams": null,
-                                                "viewportRoute": null
-                                            }
-                                        },
-                                        "sysId": "d9f5a34493210210cd4e7d532bba10c4"
-                                    },
-                                    "operation": null,
-                                    "targetId": "clusedaafbaaddddeeddbhhnxcrjzxddjj",
-                                    "type": "EVENT"
-                                }
-                            ]
-                        }
-                    ],
-                    "isHidden": {
-                        "type": "JSON_LITERAL",
-                        "value": null
-                    },
-                    "overrides": {
-                        "composition": [
-                            {
-                                "definition": {
-                                    "id": "4335ba6dca80378f7ba7a67cd6667bec",
-                                    "type": "MACROPONENT"
-                                },
-                                "elementId": "card_name",
-                                "elementLabel": "Card Name",
-                                "eventMappings": [],
-                                "isHidden": {
-                                    "type": "JSON_LITERAL",
-                                    "value": null
-                                },
-                                "preset": null,
-                                "propertyValues": {
-                                    "configAria": {
-                                        "type": "JSON_LITERAL",
-                                        "value": {}
-                                    },
-                                    "css": {
-                                        "type": "JSON_LITERAL",
-                                        "value": "* { align-self: center;\n    color: #dee2fb;\n    font-style: italic;\n    font-variant: small-caps;\n    text-shadow: 1px 1px 2px #9097b7, 0 0 1em blue, 0 0 0.2em blue;\n    display: inline-block;\n    white-space: nowrap;\n    font-size: 16px; /* Start with default font size */\n    line-height: 1;\n    text-align: center;\n    transform: scale(1);\n    width: 100%;\n    height: auto;\n    text-overflow: ellipsis; /* For any overflow content */\n    }"
-                                    },
-                                    "tag": {
-                                        "type": "JSON_LITERAL",
-                                        "value": "div"
-                                    },
-                                    "text": {
-                                        "binding": {
-                                            "address": [
-                                                "name",
-                                                "displayValue"
-                                            ],
-                                            "category": "value"
-                                        },
-                                        "type": "REPEATER_ITEM_BINDING"
-                                    }
-                                },
-                                "slot": null,
-                                "styles": null
-                            },
-                            {
-                                "definition": {
-                                    "id": "15fe506403f8a98575b6df59008ea8f1",
-                                    "type": "MACROPONENT"
-                                },
-                                "elementId": "card_image",
-                                "elementLabel": "Card Image",
-                                "eventMappings": [],
-                                "isHidden": {
-                                    "type": "JSON_LITERAL",
-                                    "value": false
-                                },
-                                "preset": {
-                                    "controllerElementId": "deck_form_resource",
-                                    "disabledEventTargetIds": [],
-                                    "id": "fb915bf1bad80b3097b5b2c76b35b215"
-                                },
-                                "propertyValues": {
-                                    "fit": {
-                                        "type": "JSON_LITERAL",
-                                        "value": "scale-down"
-                                    },
-                                    "height": {
-                                        "type": "JSON_LITERAL",
-                                        "value": ""
-                                    },
-                                    "sources": {
-                                        "type": "JSON_LITERAL",
-                                        "value": []
-                                    },
-                                    "src": {
-                                        "binding": {
-                                            "address": [
-                                                "card_image",
-                                                "displayValue"
-                                            ],
-                                            "category": "value"
-                                        },
-                                        "type": "REPEATER_ITEM_BINDING"
-                                    },
-                                    "width": {
-                                        "type": "JSON_LITERAL",
-                                        "value": ""
-                                    }
-                                },
-                                "slot": null,
-                                "styles": null
-                            },
-                            {
-                                "definition": {
-                                    "id": "2d56f06d55f46bbd4e79b5e624beb940",
-                                    "type": "MACROPONENT"
-                                },
-                                "elementId": "ability_text",
-                                "elementLabel": "Ability",
-                                "eventMappings": [],
-                                "isHidden": {
-                                    "type": "JSON_LITERAL",
-                                    "value": null
-                                },
-                                "preset": null,
-                                "propertyValues": {
-                                    "html": {
-                                        "binding": {
-                                            "address": [
-                                                "abilitys",
-                                                "displayValue"
-                                            ],
-                                            "category": "value"
-                                        },
-                                        "type": "REPEATER_ITEM_BINDING"
-                                    }
-                                },
-                                "slot": null,
-                                "styles": null
-                            }
-                        ],
-                        "layout": {
-                            "default": {
-                                "children": null,
-                                "items": [
-                                    {
-                                        "element_id": "card_selector",
-                                        "styles": {
-                                            "width": "20%"
-                                        }
-                                    },
-                                    {
-                                        "element_id": "card_name",
-                                        "styles": {
-                                            "align-self": "center",
-                                            "flex": "none"
-                                        }
-                                    },
-                                    {
-                                        "element_id": "card_image",
-                                        "styles": {
-                                            "align-self": "center",
-                                            "border-color": "RGB(var(--now-color--neutral-5))",
-                                            "border-style": "id",
-                                            "border-width": "var(--now-static-space--xxs)",
-                                            "flex": "none",
-                                            "margin-top": "0",
-                                            "padding-left": "0",
-                                            "padding-right": "0",
-                                            "width": "140px"
-                                        }
-                                    },
-                                    {
-                                        "element_id": "ability_text",
-                                        "styles": {
-                                            "color": "white",
-                                            "font-style": "italic",
-                                            "margin": "1px",
-                                            "margin-bottom": "1px",
-                                            "margin-left": "1px",
-                                            "margin-right": "1px",
-                                            "margin-top": "1px",
-                                            "padding": "1px",
-                                            "padding-bottom": "1px",
-                                            "padding-left": "1px",
-                                            "padding-right": "1px",
-                                            "padding-top": "1px"
-                                        }
-                                    }
-                                ],
-                                "root": null,
-                                "rules": null,
-                                "styles": {
-                                    "align-items": "stretch",
-                                    "display": "flex",
-                                    "flex-direction": "column",
-                                    "justify-content": "center"
-                                },
-                                "templateId": "5832fd4d53c31010e6bcddeeff7b12db",
-                                "type": "flex"
-                            },
-                            "version": "3.0.0"
-                        }
-                    },
-                    "preset": null,
-                    "propertyValues": {
-                        "configAria": {
-                            "type": "JSON_LITERAL",
-                            "value": {}
-                        },
-                        "hideShadow": {
-                            "type": "JSON_LITERAL",
-                            "value": true
-                        },
-                        "interaction": {
-                            "type": "JSON_LITERAL",
-                            "value": "click"
-                        },
-                        "selected": {
-                            "type": "JSON_LITERAL",
-                            "value": false
-                        },
-                        "sidebar": {
-                            "type": "JSON_LITERAL",
-                            "value": {}
-                        },
-                        "size": {
-                            "type": "JSON_LITERAL",
-                            "value": "lg"
-                        }
-                    },
-                    "slot": null,
-                    "styles": null
-                }
-            ],
-            "layout": {
-                "default": {
-                    "children": null,
-                    "items": [
-                        {
-                            "element_id": "card_to_add",
-                            "styles": {
-                                "background": "#060007",
-                                "height": "300px",
-                                "width": "16.6666666%"
-                            }
-                        }
-                    ],
-                    "root": null,
-                    "rules": null,
-                    "styles": {
-                        "flex-direction": "row",
-                        "flex-wrap": "wrap"
-                    },
-                    "templateId": "5832fd4d53c31010e6bcddeeff7b12db",
-                    "type": "flex"
-                },
-                "version": "3.0.0"
-            }
-        },
-        "preset": null,
-        "repeatWith": {
-            "binding": {
-                "address": [
-                    "get_card_definitions",
-                    "results"
-                ]
-            },
-            "type": "DATA_OUTPUT_BINDING"
         },
         "slot": null,
         "styles": null
@@ -4250,48 +4435,23 @@
                 "element_id": "custom_1"
             },
             {
-                "element_id": "header",
+                "element_id": "base_container",
                 "styles": {
-                    "background": "#060007",
-                    "width": "100%"
-                }
-            },
-            {
-                "element_id": "current_deck_repeater",
-                "styles": {
-                    "background": "#060007",
-                    "border-color": "#010908",
-                    "border-radius": "var(--now-static-border-radius--0)",
-                    "border-style": "hidden",
-                    "border-width": "1px",
-                    "height": "100%",
-                    "width": "100%"
-                }
-            },
-            {
-                "element_id": "select_card_sep",
-                "styles": {
-                    "align-self": "center",
-                    "background": "#060007",
-                    "color": "#dee2fb",
-                    "flex": "none",
-                    "font-style": "italic",
-                    "font-variant": "small-caps",
-                    "hex": "text-shadow: 10px 10px 25px rgb(81,67,21),     -10px 10px 25px rgb(81,67,21),     -10px -10px 25px rgb(81,67,21),     10px -10px 25px rgb(81,67,21);",
-                    "text-shadow": "1px 1px 2px #9097b7, 0 0 1em blue, 0 0 0.2em blue",
-                    "width": "100%"
-                }
-            },
-            {
-                "element_id": "card_options",
-                "styles": {
-                    "width": "100%"
+                    "background": "rgb(var(--now-color--neutral-1))",
+                    "background-image": "url(\"Deck Builder Background.jpg\")",
+                    "background-position": "center",
+                    "background-repeat": "no-repeat",
+                    "background-size": "100rem"
                 }
             }
         ],
         "root": null,
         "rules": null,
         "styles": {
+            "background": "rgb(var(--now-color--neutral-1))",
+            "background-image": "url(\"Deck Builder Background.jpg\")",
+            "background-position": "top",
+            "display": "flex",
             "flex-direction": "column",
             "padding": "0",
             "padding-bottom": "0",
@@ -4369,18 +4529,19 @@
         "valueType": "string"
     }
 ]</state_properties>
+        <style_config>{}</style_config>
         <sys_class_name>sys_ux_macroponent</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-11-07 11:21:53</sys_created_on>
         <sys_id>9d39e626479e715017fdc82f316d432a</sys_id>
-        <sys_mod_count>301</sys_mod_count>
+        <sys_mod_count>313</sys_mod_count>
         <sys_name>Default</sys_name>
         <sys_package display_value="SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_update_name>sys_ux_macroponent_9d39e626479e715017fdc82f316d432a</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-12-23 09:23:41</sys_updated_on>
+        <sys_updated_on>2025-03-02 10:58:31</sys_updated_on>
     </sys_ux_macroponent>
     <sys_translated_text action="delete_multiple" query="documentkey=9d39e626479e715017fdc82f316d432a"/>
 </record_update>
