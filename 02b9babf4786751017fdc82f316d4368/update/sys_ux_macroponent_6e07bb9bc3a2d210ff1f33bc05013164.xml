@@ -1435,10 +1435,10 @@
                                                 "text": {
                                                     "binding": {
                                                         "address": [
-                                                            "get_location_1",
+                                                            "get_opp_session",
                                                             "result",
-                                                            "player_1_score",
-                                                            "displayValue"
+                                                            "location_1_score",
+                                                            "value"
                                                         ]
                                                     },
                                                     "type": "DATA_OUTPUT_BINDING"
@@ -1706,10 +1706,10 @@
                                                 "text": {
                                                     "binding": {
                                                         "address": [
-                                                            "get_location_1",
+                                                            "get_Player_session",
                                                             "result",
-                                                            "player_2_score",
-                                                            "displayValue"
+                                                            "location_1_score",
+                                                            "value"
                                                         ]
                                                     },
                                                     "type": "DATA_OUTPUT_BINDING"
@@ -2455,10 +2455,10 @@
                                                 "text": {
                                                     "binding": {
                                                         "address": [
-                                                            "get_location_2",
+                                                            "get_opp_session",
                                                             "result",
-                                                            "player_1_score",
-                                                            "displayValue"
+                                                            "location_2_score",
+                                                            "value"
                                                         ]
                                                     },
                                                     "type": "DATA_OUTPUT_BINDING"
@@ -2703,7 +2703,7 @@
                                                 "type": "MACROPONENT"
                                             },
                                             "elementId": "l2_p2_score",
-                                            "elementLabel": "L2 P2 Score",
+                                            "elementLabel": "L2 Player Score",
                                             "eventMappings": [],
                                             "isHidden": {
                                                 "type": "JSON_LITERAL",
@@ -2726,10 +2726,10 @@
                                                 "text": {
                                                     "binding": {
                                                         "address": [
-                                                            "get_location_2",
+                                                            "get_Player_session",
                                                             "result",
-                                                            "player_2_score",
-                                                            "displayValue"
+                                                            "location_2_score",
+                                                            "value"
                                                         ]
                                                     },
                                                     "type": "DATA_OUTPUT_BINDING"
@@ -3470,10 +3470,10 @@
                                                 "text": {
                                                     "binding": {
                                                         "address": [
-                                                            "get_location_3",
+                                                            "get_opp_session",
                                                             "result",
-                                                            "player_1_score",
-                                                            "displayValue"
+                                                            "location_3_score",
+                                                            "value"
                                                         ]
                                                     },
                                                     "type": "DATA_OUTPUT_BINDING"
@@ -3742,10 +3742,10 @@
                                                 "text": {
                                                     "binding": {
                                                         "address": [
-                                                            "get_location_3",
+                                                            "get_Player_session",
                                                             "result",
-                                                            "player_2_score",
-                                                            "displayValue"
+                                                            "location_3_score",
+                                                            "value"
                                                         ]
                                                     },
                                                     "type": "DATA_OUTPUT_BINDING"
@@ -8901,7 +8901,7 @@
             },
             "returnFields": {
                 "type": "JSON_LITERAL",
-                "value": "sys_id,cards_drawn,current_energy,current_turn_number,short_description,turn_status,hide_buttons,user.sys_id,user.name"
+                "value": "sys_id,cards_drawn,current_energy,current_turn_number,short_description,turn_status,hide_buttons,user.sys_id,user.name,location_1_score,location_2_score,location_3_score"
             },
             "returnTableMetadata": {
                 "type": "JSON_LITERAL",
@@ -9059,7 +9059,7 @@
             },
             "returnFields": {
                 "type": "JSON_LITERAL",
-                "value": "sys_id,cards_drawn,current_energy,current_turn_number,short_description,turn_status,hide_buttons"
+                "value": "sys_id,cards_drawn,current_energy,current_turn_number,short_description,turn_status,hide_buttons,location_1_score,location_2_score,location_3_score"
             },
             "returnTableMetadata": {
                 "type": "JSON_LITERAL",
@@ -11352,7 +11352,7 @@
     {
         "initialValue": {
             "type": "JSON_LITERAL",
-            "value": "fa98ac08c3fa5610ff1f33bc05013175"
+            "value": ""
         },
         "name": "opp_session_id",
         "shape": "",
@@ -11416,14 +11416,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-12-24 03:35:24</sys_created_on>
         <sys_id>6e07bb9bc3a2d210ff1f33bc05013164</sys_id>
-        <sys_mod_count>65</sys_mod_count>
+        <sys_mod_count>69</sys_mod_count>
         <sys_name>Player View</sys_name>
         <sys_package display_value="SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_update_name>sys_ux_macroponent_6e07bb9bc3a2d210ff1f33bc05013164</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-02 10:09:02</sys_updated_on>
+        <sys_updated_on>2025-03-08 23:33:40</sys_updated_on>
     </sys_ux_macroponent>
     <sys_translated_text action="delete_multiple" query="documentkey=6e07bb9bc3a2d210ff1f33bc05013164"/>
 </record_update>
