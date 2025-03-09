@@ -8611,6 +8611,212 @@
                     },
                     "slot": null,
                     "styles": null
+                },
+                {
+                    "definition": {
+                        "id": "d356d14b6e293a3020a244b63d278d8f",
+                        "type": "MACROPONENT"
+                    },
+                    "elementId": "end_game_button_cont",
+                    "elementLabel": "Button Container",
+                    "eventMappings": [],
+                    "isHidden": {
+                        "type": "JSON_LITERAL",
+                        "value": null
+                    },
+                    "overrides": {
+                        "composition": [
+                            {
+                                "definition": {
+                                    "id": "d37ce8abca89d02905fed903c8e34d8e",
+                                    "type": "MACROPONENT"
+                                },
+                                "elementId": "end_game_button",
+                                "elementLabel": "End Game button",
+                                "eventMappings": [
+                                    {
+                                        "eventMappingId": "eehhtMYeeeehhHeBEbbGeeddLeeBeeddSSDgSwe",
+                                        "isConfiguration": false,
+                                        "offRowStorageId": null,
+                                        "sourceEventApiName": "sn_button.NOW_BUTTON#CLICKED",
+                                        "sourceEventCorrelationId": null,
+                                        "sourceEventDefinition": {
+                                            "apiName": "sn_button.NOW_BUTTON#CLICKED",
+                                            "id": null,
+                                            "type": "UXEVENT"
+                                        },
+                                        "sourceEventSysId": null,
+                                        "targets": [
+                                            {
+                                                "broker": null,
+                                                "clientScript": null,
+                                                "conditional": null,
+                                                "declarativeAction": null,
+                                                "event": {
+                                                    "apiName": "x_168987_flow_de_0.NAV_ITEM_SELECTED_RELAY_6e07bb9bc3a2d210ff1f33bc05013164",
+                                                    "payload": {
+                                                        "type": "JSON_LITERAL",
+                                                        "value": {
+                                                            "external": null,
+                                                            "fields": null,
+                                                            "multiInstField": null,
+                                                            "navigationOptions": null,
+                                                            "params": null,
+                                                            "passiveNavigation": null,
+                                                            "redirect": null,
+                                                            "route": "decks-to-edit",
+                                                            "targetRoute": null,
+                                                            "title": null
+                                                        }
+                                                    },
+                                                    "sysId": "7a0777dbc3a2d210ff1f33bc0501316b"
+                                                },
+                                                "operation": null,
+                                                "targetId": "EMddLIPOeeAaarggjjccaaHwteeeexrlD",
+                                                "type": "EVENT"
+                                            },
+                                            {
+                                                "broker": null,
+                                                "clientScript": null,
+                                                "conditional": null,
+                                                "declarativeAction": null,
+                                                "event": {
+                                                    "apiName": "x_168987_flow_de_0.MODAL_SELECTED_RELAY_6e07bb9bc3a2d210ff1f33bc05013164",
+                                                    "payload": {
+                                                        "type": "JSON_LITERAL",
+                                                        "value": {
+                                                            "bare": false,
+                                                            "displayOptions": null,
+                                                            "headerLabel": null,
+                                                            "modalId": "[component-id$='winner_modal']",
+                                                            "preserveState": false,
+                                                            "showModal": false,
+                                                            "viewportElementId": null,
+                                                            "viewportFields": null,
+                                                            "viewportParams": null,
+                                                            "viewportRoute": null
+                                                        }
+                                                    },
+                                                    "sysId": "fe0777dbc3a2d210ff1f33bc05013167"
+                                                },
+                                                "operation": null,
+                                                "targetId": "GagffrfQoAEsHeeddCMDxLjjdffweehhq",
+                                                "type": "EVENT"
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "isHidden": {
+                                    "type": "JSON_LITERAL",
+                                    "value": null
+                                },
+                                "preset": null,
+                                "propertyValues": {
+                                    "configAria": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "disabled": {
+                                        "type": "JSON_LITERAL",
+                                        "value": false
+                                    },
+                                    "icon": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "label": {
+                                        "type": "TRANSLATION_LITERAL",
+                                        "value": {
+                                            "code": null,
+                                            "comment": "",
+                                            "message": "Return to Menu"
+                                        }
+                                    },
+                                    "landmark": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "size": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "lg"
+                                    },
+                                    "tooltipContent": {
+                                        "type": "TRANSLATION_LITERAL",
+                                        "value": {
+                                            "code": null,
+                                            "comment": "",
+                                            "message": "Enter a label"
+                                        }
+                                    },
+                                    "variant": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "primary-positive"
+                                    }
+                                },
+                                "slot": null,
+                                "styles": null
+                            }
+                        ],
+                        "layout": {
+                            "default": {
+                                "children": null,
+                                "items": [
+                                    {
+                                        "element_id": "end_game_button",
+                                        "styles": {
+                                            "align-self": "center"
+                                        }
+                                    }
+                                ],
+                                "root": null,
+                                "rules": null,
+                                "styles": {
+                                    "display": "flex",
+                                    "flex-direction": "column"
+                                },
+                                "templateId": "5832fd4d53c31010e6bcddeeff7b12db",
+                                "type": "flex"
+                            },
+                            "version": "3.0.0"
+                        }
+                    },
+                    "preset": null,
+                    "propertyValues": {
+                        "ariaRegionHeadingLevel": {
+                            "type": "JSON_LITERAL",
+                            "value": "1"
+                        },
+                        "ariaRegionName": {
+                            "type": "TRANSLATION_LITERAL",
+                            "value": {
+                                "code": null,
+                                "comment": "",
+                                "message": ""
+                            }
+                        },
+                        "ariaRole": {
+                            "type": "JSON_LITERAL",
+                            "value": ""
+                        },
+                        "hideEmptyStateUi": {
+                            "type": "JSON_LITERAL",
+                            "value": true
+                        },
+                        "includeAriaHeading": {
+                            "type": "JSON_LITERAL",
+                            "value": false
+                        },
+                        "slotWrapperBehavior": {
+                            "type": "JSON_LITERAL",
+                            "value": "fullheight"
+                        },
+                        "type": {
+                            "type": "JSON_LITERAL",
+                            "value": "section"
+                        }
+                    },
+                    "slot": null,
+                    "styles": null
                 }
             ],
             "layout": {
@@ -8635,6 +8841,18 @@
                                 "padding-left": "var(--now-scalable-space--3xl)",
                                 "padding-right": "var(--now-scalable-space--3xl)",
                                 "padding-top": "var(--now-scalable-space--3xl)"
+                            }
+                        },
+                        {
+                            "element_id": "end_game_button_cont",
+                            "styles": {
+                                "background": "#480565",
+                                "background-position": "center",
+                                "padding": "var(--now-scalable-space--md)",
+                                "padding-bottom": "var(--now-scalable-space--md)",
+                                "padding-left": "var(--now-scalable-space--md)",
+                                "padding-right": "var(--now-scalable-space--md)",
+                                "padding-top": "var(--now-scalable-space--md)"
                             }
                         }
                     ],
@@ -11331,6 +11549,9 @@
   "message" : "Power:",
   "comment" : ""
 }, {
+  "message" : "Return to Menu",
+  "comment" : ""
+}, {
   "message" : "Selected Card client state:",
   "comment" : ""
 }, {
@@ -11416,14 +11637,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-12-24 03:35:24</sys_created_on>
         <sys_id>6e07bb9bc3a2d210ff1f33bc05013164</sys_id>
-        <sys_mod_count>69</sys_mod_count>
+        <sys_mod_count>71</sys_mod_count>
         <sys_name>Player View</sys_name>
         <sys_package display_value="SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_update_name>sys_ux_macroponent_6e07bb9bc3a2d210ff1f33bc05013164</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-08 23:33:40</sys_updated_on>
+        <sys_updated_on>2025-03-09 09:26:17</sys_updated_on>
     </sys_ux_macroponent>
     <sys_translated_text action="delete_multiple" query="documentkey=6e07bb9bc3a2d210ff1f33bc05013164"/>
 </record_update>
