@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_168987_flow_de_0.GenerateGamePayload</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description>Payload generator for LLM Gameplay autoplayer</description>
+        <mobile_callable>false</mobile_callable>
+        <name>GenerateGamePayload</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var GenerateGamePayload = Class.create();
+GenerateGamePayload.prototype = {
+    initialize: function() {},
+
+    generateTestPayload: function(game_instance_id) {
+        var payload = {};
+        
+        // Query Game Instance to get Player 2 Session
+        var gameGR = new GlideRecord('x_168987_flow_de_0_game_instance');
+        if (!gameGR.get(game_instance_id)) {
+            return JSON.stringify({"error": "Game instance not found"});
+        }
+        var player2SessionID = gameGR.getValue('player_2');
+        var player1SessionID = gameGR.getValue('player_1');
+        if (!player2SessionID || !player1SessionID) {
+            return JSON.stringify({"error": "Player sessions not found in game instance"});
+        }
+
+        var player1Score = 0;
+        var player1SessionGR = new GlideRecord('x_168987_flow_de_0_player_session');
+        if (player1SessionGR.get(player1SessionID) && player1SessionGR.isValidRecord()) {
+            player1Score = player1SessionGR.isValidField('location_1_score') ? parseInt(player1SessionGR.getValue('location_1_score') || "0") : 0;
+        }
+
+        // Query Player 2 Session
+        var player2SessionGR = new GlideRecord('x_168987_flow_de_0_player_session');
+        if (!player2SessionGR.get(player2SessionID) || !player2SessionGR.isValidRecord()) {
+            return JSON.stringify({"error": "Player 2 session record not found"});
+        }
+
+        payload.current_energy = player2SessionGR.isValidField('current_energy') ? parseInt(player2SessionGR.getValue('current_energy') || "0") : 0;
+        payload.locations = [];
+
+        // Query Locations
+        var locationGR = new GlideRecord('x_168987_flow_de_0_location_instance');
+        locationGR.addQuery('game_instance', game_instance_id);
+        locationGR.orderBy('sys_created_on'); // Ensure locations are ordered properly
+        locationGR.query();
+        var locationNumber = 1;
+        while (locationGR.next()) {
+            var locationID = locationGR.getUniqueValue();
+            var player2Score = player2SessionGR.isValidField('location_1_score') ? parseInt(player2SessionGR.getValue('location_1_score') || "0") : 0;
+            
+            var ability = "";
+            var locationName = "";
+            if (locationGR.isValidField('location_card')) {
+                var locationCardGR = new GlideRecord('x_168987_flow_de_0_card_definition');
+                if (locationCardGR.get(locationGR.getValue('location_card'))) {
+                    ability = locationCardGR.getValue('abilitys') || "";
+                    locationName = locationCardGR.getValue('name') || "";
+                }
+            }
+            
+            var location = {
+                "id": locationID,
+                "location_number": locationNumber,
+                "name": locationName,
+                "player_1_score": player1Score,
+                "player_2_score": player2Score,
+                "ability": ability,
+                "slots": {"player_1": [], "player_2": []}
+            };
+            locationNumber++;
+
+            // Query Location Slots
+            var slotGR = new GlideRecord('x_168987_flow_de_0_location_slot');
+            slotGR.addQuery('location_instance', locationID);
+            slotGR.query();
+            while (slotGR.next()) {
+                var cardInstanceID = slotGR.isValidField('card_instance') ? slotGR.getValue('card_instance') : null;
+                var cardData = null;
+                if (cardInstanceID) {
+                    var cardGR = new GlideRecord('x_168987_flow_de_0_card_instance');
+                    if (cardGR.get(cardInstanceID) && cardGR.isValidRecord()) {
+                        var cardName = "";
+                        if (cardGR.isValidField('original_card_reference')) {
+                            var originalCardGR = new GlideRecord('x_168987_flow_de_0_card_definition');
+                            if (originalCardGR.get(cardGR.getValue('original_card_reference'))) {
+                                cardName = originalCardGR.getValue('name') || "";
+                            }
+                        }
+                        
+                        cardData = {
+                            "id": cardGR.getUniqueValue(),
+                            "name": cardName,
+                            "power": cardGR.isValidField('current_power') ? parseInt(cardGR.getValue('current_power') || "0") : 0,
+                            "cost": cardGR.isValidField('current_cost') ? parseInt(cardGR.getValue('current_cost') || "0") : 0,
+                            "ability": originalCardGR.getValue('abilitys') || ""
+                        };
+                    }
+                }
+                
+                // Match player session ID to player_1 or player_2
+                var playerSessionID = slotGR.isValidField('player') ? slotGR.getValue('player') : null;
+                var playerSlot = "unknown";
+                if (playerSessionID === player1SessionID) {
+                    playerSlot = "player_1";
+                } else if (playerSessionID === player2SessionID) {
+                    playerSlot = "player_2";
+                }
+                
+                // Ensure we add only valid player slots
+                if (playerSlot === "player_1" || playerSlot === "player_2") {
+                    location.slots[playerSlot].push(cardData);
+                }
+            }
+            payload.locations.push(location);
+        }
+
+        // Query Player 2 Hand from `card_instance` where `status = in_hand`
+        payload.hand = [];
+        var handGR = new GlideRecord('x_168987_flow_de_0_card_instance');
+        handGR.addQuery('player_session', player2SessionID);
+        handGR.addQuery('status', 'in_hand'); // Ensure this matches the choice value in the system
+        handGR.query();
+        while (handGR.next()) {
+            var cardName = "";
+            if (handGR.isValidField('original_card_reference')) {
+                var originalCardGR = new GlideRecord('x_168987_flow_de_0_card_definition');
+                if (originalCardGR.get(handGR.getValue('original_card_reference'))) {
+                    cardName = originalCardGR.getValue('name') || "";
+                }
+            }
+            
+            var cardData = {
+                "id": handGR.getUniqueValue(),
+                "name": cardName,
+                "power": handGR.isValidField('current_power') ? parseInt(handGR.getValue('current_power') || "0") : 0,
+                "cost": handGR.isValidField('current_cost') ? parseInt(handGR.getValue('current_cost') || "0") : 0,
+                "ability": originalCardGR.getValue('abilitys') || ""
+            };
+            payload.hand.push(cardData);
+        }
+gs.info("Generate Game payload result: "+JSON.stringify(payload));
+        return JSON.stringify(payload);
+    },
+
+    type: 'GenerateGamePayload'
+};
+]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-13 12:33:28</sys_created_on>
+        <sys_id>0f472c016d9c22107f448d5f282fc360</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_name>GenerateGamePayload</sys_name>
+        <sys_package display_value="SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_update_name>sys_script_include_0f472c016d9c22107f448d5f282fc360</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-14 10:05:58</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>0f472c016d9c22107f448d5f282fc360</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-13 12:33:28</sys_created_on>
+        <sys_id>36c72c016d9c22107f448d5f282fc3a9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-13 12:33:28</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

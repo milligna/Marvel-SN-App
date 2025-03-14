@@ -36,7 +36,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>6a0e4273479af55017fdc82f316d43bd</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>DECK: Deck Mod - Remove Card</sys_name>
         <sys_overrides/>
         <sys_package display_value="SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
@@ -44,7 +44,7 @@
         <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_update_name>sys_hub_flow_6a0e4273479af55017fdc82f316d43bd</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-02 01:19:55</sys_updated_on>
+        <sys_updated_on>2025-03-13 12:05:43</sys_updated_on>
         <type>flow</type>
         <version>2</version>
     </sys_hub_flow>
@@ -60,7 +60,6 @@
         <on_delete>false</on_delete>
         <on_insert>true</on_insert>
         <on_update>false</on_update>
-        <published_version/>
         <run_flow_in>background</run_flow_in>
         <run_on_extended>false</run_on_extended>
         <run_when_setting>both</run_when_setting>
@@ -78,7 +77,6 @@
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-11-11 06:36:42</sys_updated_on>
         <table>x_168987_flow_de_0_deck_modification_event</table>
-        <trigger_definition/>
     </sys_flow_record_trigger>
     <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
         <active>true</active>
@@ -285,7 +283,6 @@
         <display_text/>
         <flow display_value="DECK: Deck Mod - Remove Card">6a0e4273479af55017fdc82f316d43bd</flow>
         <name>Created</name>
-        <published_version/>
         <remote_sys_id/>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-03-02 01:19:54</sys_created_on>
@@ -325,29 +322,7 @@
     <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=6a0e4273479af55017fdc82f316d43bd"/>
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=6a0e4273479af55017fdc82f316d43bd"/>
     <sys_hub_flow_variable action="delete_multiple" query="model=6a0e4273479af55017fdc82f316d43bd"/>
-    <sys_documentation action="INSERT_OR_UPDATE">
-        <element>current</element>
-        <help/>
-        <hint/>
-        <label>Record</label>
-        <language>en</language>
-        <name>var__m_sys_hub_flow_input_6a0e4273479af55017fdc82f316d43bd</name>
-        <plural/>
-        <sys_class_name>sys_documentation</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2023-11-11 06:36:41</sys_created_on>
-        <sys_id>664e82b3479af55017fdc82f316d439e</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
-        <sys_package display_value="SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
-        <sys_policy/>
-        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-11-11 06:36:41</sys_updated_on>
-        <url/>
-        <url_target/>
-    </sys_documentation>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_6a0e4273479af55017fdc82f316d43bd^sys_idNOT IN0c21284d6d5822107f448d5f282fc3dc,cc21284d6d5822107f448d5f282fc3d8"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>table_name</element>
         <help/>
@@ -359,9 +334,32 @@
         <sys_class_name>sys_documentation</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-11-11 06:36:41</sys_created_on>
-        <sys_id>664e82b3479af55017fdc82f316d43a1</sys_id>
+        <sys_id>0c21284d6d5822107f448d5f282fc3dc</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Table Name</sys_name>
+        <sys_package display_value="SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-11 06:36:41</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_6a0e4273479af55017fdc82f316d43bd</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-11 06:36:41</sys_created_on>
+        <sys_id>cc21284d6d5822107f448d5f282fc3d8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Record</sys_name>
         <sys_package display_value="SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
@@ -372,6 +370,7 @@
         <url_target/>
     </sys_documentation>
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_6a0e4273479af55017fdc82f316d43bd"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_6a0e4273479af55017fdc82f316d43bd"/>
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_6a0e4273479af55017fdc82f316d43bd"/>
     <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -609,7 +608,6 @@
         <display_text/>
         <flow display_value="DECK: Deck Mod - Remove Card">3e4e82b3479af55017fdc82f316d43e8</flow>
         <name>Created</name>
-        <published_version/>
         <remote_sys_id/>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-03-02 01:19:55</sys_created_on>
@@ -649,29 +647,7 @@
     <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=3e4e82b3479af55017fdc82f316d43e8"/>
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=3e4e82b3479af55017fdc82f316d43e8"/>
     <sys_hub_flow_variable action="delete_multiple" query="model=3e4e82b3479af55017fdc82f316d43e8"/>
-    <sys_documentation action="INSERT_OR_UPDATE">
-        <element>table_name</element>
-        <help/>
-        <hint/>
-        <label>Table Name</label>
-        <language>en</language>
-        <name>var__m_sys_hub_flow_input_3e4e82b3479af55017fdc82f316d43e8</name>
-        <plural/>
-        <sys_class_name>sys_documentation</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2023-11-11 06:36:42</sys_created_on>
-        <sys_id>be4e82b3479af55017fdc82f316d43f8</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
-        <sys_package display_value="SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
-        <sys_policy/>
-        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-11-11 06:36:42</sys_updated_on>
-        <url/>
-        <url_target/>
-    </sys_documentation>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_3e4e82b3479af55017fdc82f316d43e8^sys_idNOT IN6311284d6d5822107f448d5f282fc319,af11284d6d5822107f448d5f282fc31c"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>current</element>
         <help/>
@@ -683,9 +659,32 @@
         <sys_class_name>sys_documentation</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-11-11 06:36:42</sys_created_on>
-        <sys_id>f24e82b3479af55017fdc82f316d43f1</sys_id>
+        <sys_id>6311284d6d5822107f448d5f282fc319</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Record</sys_name>
+        <sys_package display_value="SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-11 06:36:42</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_3e4e82b3479af55017fdc82f316d43e8</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-11 06:36:42</sys_created_on>
+        <sys_id>af11284d6d5822107f448d5f282fc31c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Table Name</sys_name>
         <sys_package display_value="SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
@@ -696,6 +695,7 @@
         <url_target/>
     </sys_documentation>
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_3e4e82b3479af55017fdc82f316d43e8"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_3e4e82b3479af55017fdc82f316d43e8"/>
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_3e4e82b3479af55017fdc82f316d43e8"/>
     <sys_hub_flow action="UPDATE">
         <sys_id>6a0e4273479af55017fdc82f316d43bd</sys_id>

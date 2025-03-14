@@ -36,7 +36,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>66bd180693f94a10cd4e7d532bba10e6</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>CARD-ACT: On Reveal: Draw a card from your opponent’s deck.</sys_name>
         <sys_overrides/>
         <sys_package display_value="SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
@@ -44,7 +44,7 @@
         <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_update_name>sys_hub_flow_66bd180693f94a10cd4e7d532bba10e6</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-02 04:40:16</sys_updated_on>
+        <sys_updated_on>2025-03-13 12:05:42</sys_updated_on>
         <type>subflow</type>
         <version>2</version>
     </sys_hub_flow>
@@ -573,6 +573,7 @@
     </sys_hub_flow_logic_instance_v2>
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=66bd180693f94a10cd4e7d532bba10e6"/>
     <sys_hub_flow_variable action="delete_multiple" query="model=66bd180693f94a10cd4e7d532bba10e6"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_66bd180693f94a10cd4e7d532bba10e6^sys_idNOT IN0821284d6d5822107f448d5f282fc39c,0821284d6d5822107f448d5f282fc3d5,4421284d6d5822107f448d5f282fc3a0"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>card_instance</element>
         <help/>
@@ -584,9 +585,9 @@
         <sys_class_name>sys_documentation</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-04-27 11:35:18</sys_created_on>
-        <sys_id>3abd180693f94a10cd4e7d532bba10f4</sys_id>
+        <sys_id>0821284d6d5822107f448d5f282fc39c</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Card Instance</sys_name>
         <sys_package display_value="SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
@@ -607,9 +608,9 @@
         <sys_class_name>sys_documentation</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-04-27 11:35:18</sys_created_on>
-        <sys_id>f6bd180693f94a10cd4e7d532bba10f0</sys_id>
+        <sys_id>0821284d6d5822107f448d5f282fc3d5</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Player Session</sys_name>
         <sys_package display_value="SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
@@ -630,9 +631,9 @@
         <sys_class_name>sys_documentation</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-04-27 11:35:18</sys_created_on>
-        <sys_id>febd580693f94a10cd4e7d532bba1004</sys_id>
+        <sys_id>4421284d6d5822107f448d5f282fc3a0</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Game Instance</sys_name>
         <sys_package display_value="SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
@@ -643,6 +644,7 @@
         <url_target/>
     </sys_documentation>
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_66bd180693f94a10cd4e7d532bba10e6"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_66bd180693f94a10cd4e7d532bba10e6^sys_idNOT IN92212c4d6d5822107f448d5f282fc356"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>status</element>
         <help/>
@@ -654,9 +656,9 @@
         <sys_class_name>sys_documentation</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-04-27 11:35:18</sys_created_on>
-        <sys_id>32bd580693f94a10cd4e7d532bba100e</sys_id>
+        <sys_id>92212c4d6d5822107f448d5f282fc356</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Status</sys_name>
         <sys_package display_value="SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
@@ -666,28 +668,8 @@
         <url/>
         <url_target/>
     </sys_documentation>
-    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_66bd180693f94a10cd4e7d532bba10e6^sys_idNOT IN0a4c8b72c3a61210ff1f33bc0501315b,8a4c8b72c3a61210ff1f33bc0501315a"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_66bd180693f94a10cd4e7d532bba10e6^sys_idNOT IN15f124c16d9822107f448d5f282fc384,91f124c16d9822107f448d5f282fc385"/>
     <sys_choice field="status" table="var__m_sys_hub_flow_output_66bd180693f94a10cd4e7d532bba10e6">
-        <sys_choice action="INSERT_OR_UPDATE">
-            <dependent_value/>
-            <element>status</element>
-            <hint/>
-            <inactive>false</inactive>
-            <label>Failed</label>
-            <language>en</language>
-            <name>var__m_sys_hub_flow_output_66bd180693f94a10cd4e7d532bba10e6</name>
-            <sequence>2</sequence>
-            <synonyms/>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-04-27 11:35:18</sys_created_on>
-            <sys_domain>global</sys_domain>
-            <sys_domain_path>/</sys_domain_path>
-            <sys_id>0a4c8b72c3a61210ff1f33bc0501315b</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-04-27 11:35:18</sys_updated_on>
-            <value>failed</value>
-        </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
             <element>status</element>
@@ -702,11 +684,31 @@
             <sys_created_on>2024-04-27 11:35:18</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>8a4c8b72c3a61210ff1f33bc0501315a</sys_id>
+            <sys_id>15f124c16d9822107f448d5f282fc384</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2024-04-27 11:35:18</sys_updated_on>
             <value>successful</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Failed</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_output_66bd180693f94a10cd4e7d532bba10e6</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-04-27 11:35:18</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>91f124c16d9822107f448d5f282fc385</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-04-27 11:35:18</sys_updated_on>
+            <value>failed</value>
         </sys_choice>
     </sys_choice>
     <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
@@ -1277,6 +1279,7 @@
     </sys_hub_flow_logic_instance_v2>
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=5cfe588693f94a10cd4e7d532bba10b1"/>
     <sys_hub_flow_variable action="delete_multiple" query="model=5cfe588693f94a10cd4e7d532bba10b1"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_5cfe588693f94a10cd4e7d532bba10b1^sys_idNOT IN3311284d6d5822107f448d5f282fc387,7b11284d6d5822107f448d5f282fc38a,f311284d6d5822107f448d5f282fc383"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>game_instance</element>
         <help/>
@@ -1288,9 +1291,9 @@
         <sys_class_name>sys_documentation</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-04-27 11:40:36</sys_created_on>
-        <sys_id>5cfe588693f94a10cd4e7d532bba10e5</sys_id>
+        <sys_id>3311284d6d5822107f448d5f282fc387</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Game Instance</sys_name>
         <sys_package display_value="SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
@@ -1311,9 +1314,9 @@
         <sys_class_name>sys_documentation</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-04-27 11:40:36</sys_created_on>
-        <sys_id>98fe588693f94a10cd4e7d532bba10c3</sys_id>
+        <sys_id>7b11284d6d5822107f448d5f282fc38a</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Player Session</sys_name>
         <sys_package display_value="SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
@@ -1334,9 +1337,9 @@
         <sys_class_name>sys_documentation</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-04-27 11:40:36</sys_created_on>
-        <sys_id>d4fe588693f94a10cd4e7d532bba10ce</sys_id>
+        <sys_id>f311284d6d5822107f448d5f282fc383</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Card Instance</sys_name>
         <sys_package display_value="SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
@@ -1347,6 +1350,7 @@
         <url_target/>
     </sys_documentation>
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_5cfe588693f94a10cd4e7d532bba10b1"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_5cfe588693f94a10cd4e7d532bba10b1^sys_idNOT INd2212c4d6d5822107f448d5f282fc352"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>status</element>
         <help/>
@@ -1358,9 +1362,9 @@
         <sys_class_name>sys_documentation</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-04-27 11:40:36</sys_created_on>
-        <sys_id>d0fe988693f94a10cd4e7d532bba1003</sys_id>
+        <sys_id>d2212c4d6d5822107f448d5f282fc352</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Status</sys_name>
         <sys_package display_value="SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
@@ -1370,28 +1374,8 @@
         <url/>
         <url_target/>
     </sys_documentation>
-    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_5cfe588693f94a10cd4e7d532bba10b1^sys_idNOT IN024c8b72c3a61210ff1f33bc05013155,824c8b72c3a61210ff1f33bc05013154"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_5cfe588693f94a10cd4e7d532bba10b1^sys_idNOT IN5df124c16d9822107f448d5f282fc33f,d9f124c16d9822107f448d5f282fc340"/>
     <sys_choice field="status" table="var__m_sys_hub_flow_output_5cfe588693f94a10cd4e7d532bba10b1">
-        <sys_choice action="INSERT_OR_UPDATE">
-            <dependent_value/>
-            <element>status</element>
-            <hint/>
-            <inactive>false</inactive>
-            <label>Failed</label>
-            <language>en</language>
-            <name>var__m_sys_hub_flow_output_5cfe588693f94a10cd4e7d532bba10b1</name>
-            <sequence>2</sequence>
-            <synonyms/>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-04-27 11:40:36</sys_created_on>
-            <sys_domain>global</sys_domain>
-            <sys_domain_path>/</sys_domain_path>
-            <sys_id>024c8b72c3a61210ff1f33bc05013155</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-04-27 11:40:36</sys_updated_on>
-            <value>failed</value>
-        </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
             <element>status</element>
@@ -1406,11 +1390,31 @@
             <sys_created_on>2024-04-27 11:40:36</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>824c8b72c3a61210ff1f33bc05013154</sys_id>
+            <sys_id>5df124c16d9822107f448d5f282fc33f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2024-04-27 11:40:36</sys_updated_on>
             <value>successful</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Failed</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_output_5cfe588693f94a10cd4e7d532bba10b1</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-04-27 11:40:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d9f124c16d9822107f448d5f282fc340</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-04-27 11:40:36</sys_updated_on>
+            <value>failed</value>
         </sys_choice>
     </sys_choice>
     <sys_hub_flow action="UPDATE">

@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="ca3b77ba4796f15017fdc82f316d43ac" label="Deck Modification Event" max_length="40" name="x_168987_flow_de_0_deck_modification_event" type="collection">
+        <element label="Definition to Add" max_length="32" name="definition_to_add" reference="x_168987_flow_de_0_card_definition" type="reference"/>
+        <element label="Instance to Remove" max_length="32" name="instance_to_remove" reference="x_168987_flow_de_0_player_deck_card" type="reference"/>
         <element choice="3" label="Operation" max_length="40" name="operation" type="choice">
             <choice>
-                <element inactive_on_update="false" label="Remove" sequence="1" value="remove"/>
                 <element inactive_on_update="false" label="Add" sequence="0" value="add"/>
+                <element inactive_on_update="false" label="Remove" sequence="1" value="remove"/>
+            </choice>
+        </element>
+        <element choice="3" label="Status" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="In Progress" sequence="1" value="in_progress"/>
+                <element inactive_on_update="false" label="Failed" sequence="3" value="failed"/>
+                <element inactive_on_update="false" label="Pending" sequence="0" value="pending"/>
+                <element inactive_on_update="false" label="Completed" sequence="2" value="completed"/>
             </choice>
         </element>
         <element label="deck" max_length="32" name="deck" reference="x_168987_flow_de_0_player_deck" type="reference"/>
-        <element choice="3" label="Status" max_length="40" name="status" type="choice">
-            <choice>
-                <element inactive_on_update="false" label="Failed" sequence="3" value="failed"/>
-                <element inactive_on_update="false" label="In Progress" sequence="1" value="in_progress"/>
-                <element inactive_on_update="false" label="Completed" sequence="2" value="completed"/>
-                <element inactive_on_update="false" label="Pending" sequence="0" value="pending"/>
-            </choice>
-        </element>
-        <element label="Definition to Add" max_length="32" name="definition_to_add" reference="x_168987_flow_de_0_card_definition" type="reference"/>
-        <element label="Instance to Remove" max_length="32" name="instance_to_remove" reference="x_168987_flow_de_0_player_deck_card" type="reference"/>
         <index name="index">
             <element name="deck"/>
         </index>

@@ -36,7 +36,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>7c414a6b93758210cd4e7d532bba10d4</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>CARD-ACT: On Reveal: If your opponent played a card here this turn, +3 Power.</sys_name>
         <sys_overrides/>
         <sys_package display_value="SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
@@ -44,7 +44,7 @@
         <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_update_name>sys_hub_flow_7c414a6b93758210cd4e7d532bba10d4</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-02 04:44:39</sys_updated_on>
+        <sys_updated_on>2025-03-13 12:05:52</sys_updated_on>
         <type>subflow</type>
         <version>2</version>
     </sys_hub_flow>
@@ -724,29 +724,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_variable>
-    <sys_documentation action="INSERT_OR_UPDATE">
-        <element>player_session</element>
-        <help/>
-        <hint/>
-        <label>Player Session</label>
-        <language>en</language>
-        <name>var__m_sys_hub_flow_input_7c414a6b93758210cd4e7d532bba10d4</name>
-        <plural/>
-        <sys_class_name>sys_documentation</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-05-02 10:41:04</sys_created_on>
-        <sys_id>49414a6b93758210cd4e7d532bba10e4</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
-        <sys_package display_value="SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
-        <sys_policy/>
-        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-05-02 10:41:04</sys_updated_on>
-        <url/>
-        <url_target/>
-    </sys_documentation>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_7c414a6b93758210cd4e7d532bba10d4^sys_idNOT IN2c21684d6d5822107f448d5f282fc33f,6821684d6d5822107f448d5f282fc343,e421684d6d5822107f448d5f282fc353"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>card_instance</element>
         <help/>
@@ -758,9 +736,9 @@
         <sys_class_name>sys_documentation</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-05-02 10:41:04</sys_created_on>
-        <sys_id>81414a6b93758210cd4e7d532bba10e9</sys_id>
+        <sys_id>2c21684d6d5822107f448d5f282fc33f</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Card Instance</sys_name>
         <sys_package display_value="SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
@@ -781,9 +759,32 @@
         <sys_class_name>sys_documentation</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-05-02 10:41:04</sys_created_on>
-        <sys_id>85414a6b93758210cd4e7d532bba10ed</sys_id>
+        <sys_id>6821684d6d5822107f448d5f282fc343</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Game Instance</sys_name>
+        <sys_package display_value="SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-02 10:41:04</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>player_session</element>
+        <help/>
+        <hint/>
+        <label>Player Session</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_7c414a6b93758210cd4e7d532bba10d4</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-02 10:41:04</sys_created_on>
+        <sys_id>e421684d6d5822107f448d5f282fc353</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Player Session</sys_name>
         <sys_package display_value="SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
@@ -794,6 +795,7 @@
         <url_target/>
     </sys_documentation>
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_7c414a6b93758210cd4e7d532bba10d4"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_7c414a6b93758210cd4e7d532bba10d4^sys_idNOT INae212c4d6d5822107f448d5f282fc385"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>status</element>
         <help/>
@@ -805,9 +807,9 @@
         <sys_class_name>sys_documentation</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-05-02 10:41:04</sys_created_on>
-        <sys_id>85414a6b93758210cd4e7d532bba10f8</sys_id>
+        <sys_id>ae212c4d6d5822107f448d5f282fc385</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Status</sys_name>
         <sys_package display_value="SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
@@ -817,28 +819,8 @@
         <url/>
         <url_target/>
     </sys_documentation>
-    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_7c414a6b93758210cd4e7d532bba10d4^sys_idNOT IN4a4c8b72c3a61210ff1f33bc050131a5,c64c8b72c3a61210ff1f33bc050131a6"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_7c414a6b93758210cd4e7d532bba10d4^sys_idNOT IN6df124c16d9822107f448d5f282fc3c3,edf124c16d9822107f448d5f282fc3c2"/>
     <sys_choice field="status" table="var__m_sys_hub_flow_output_7c414a6b93758210cd4e7d532bba10d4">
-        <sys_choice action="INSERT_OR_UPDATE">
-            <dependent_value/>
-            <element>status</element>
-            <hint/>
-            <inactive>false</inactive>
-            <label>Successful</label>
-            <language>en</language>
-            <name>var__m_sys_hub_flow_output_7c414a6b93758210cd4e7d532bba10d4</name>
-            <sequence>1</sequence>
-            <synonyms/>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-05-02 10:41:04</sys_created_on>
-            <sys_domain>global</sys_domain>
-            <sys_domain_path>/</sys_domain_path>
-            <sys_id>4a4c8b72c3a61210ff1f33bc050131a5</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-05-02 10:41:04</sys_updated_on>
-            <value>successful</value>
-        </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
             <element>status</element>
@@ -853,11 +835,31 @@
             <sys_created_on>2024-05-02 10:41:04</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>c64c8b72c3a61210ff1f33bc050131a6</sys_id>
+            <sys_id>6df124c16d9822107f448d5f282fc3c3</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2024-05-02 10:41:04</sys_updated_on>
             <value>failed</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Successful</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_output_7c414a6b93758210cd4e7d532bba10d4</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-05-02 10:41:04</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>edf124c16d9822107f448d5f282fc3c2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-05-02 10:41:04</sys_updated_on>
+            <value>successful</value>
         </sys_choice>
     </sys_choice>
     <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
@@ -1579,6 +1581,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_variable>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_c233ce2f93758210cd4e7d532bba10b1^sys_idNOT IN8521a84d6d5822107f448d5f282fc35e,8921a84d6d5822107f448d5f282fc365,c121a84d6d5822107f448d5f282fc362"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>card_instance</element>
         <help/>
@@ -1590,9 +1593,9 @@
         <sys_class_name>sys_documentation</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-05-02 10:49:36</sys_created_on>
-        <sys_id>0a33ce2f93758210cd4e7d532bba10da</sys_id>
+        <sys_id>8521a84d6d5822107f448d5f282fc35e</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Card Instance</sys_name>
         <sys_package display_value="SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
@@ -1613,9 +1616,9 @@
         <sys_class_name>sys_documentation</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-05-02 10:49:36</sys_created_on>
-        <sys_id>4233ce2f93758210cd4e7d532bba10c3</sys_id>
+        <sys_id>8921a84d6d5822107f448d5f282fc365</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Player Session</sys_name>
         <sys_package display_value="SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
@@ -1636,9 +1639,9 @@
         <sys_class_name>sys_documentation</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-05-02 10:49:36</sys_created_on>
-        <sys_id>9a33ce2f93758210cd4e7d532bba10e5</sys_id>
+        <sys_id>c121a84d6d5822107f448d5f282fc362</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Game Instance</sys_name>
         <sys_package display_value="SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
@@ -1649,6 +1652,7 @@
         <url_target/>
     </sys_documentation>
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_c233ce2f93758210cd4e7d532bba10b1"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_c233ce2f93758210cd4e7d532bba10b1^sys_idNOT IN7a216c4d6d5822107f448d5f282fc301"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>status</element>
         <help/>
@@ -1660,9 +1664,9 @@
         <sys_class_name>sys_documentation</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-05-02 10:49:37</sys_created_on>
-        <sys_id>9233026f93758210cd4e7d532bba1003</sys_id>
+        <sys_id>7a216c4d6d5822107f448d5f282fc301</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Status</sys_name>
         <sys_package display_value="SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
@@ -1672,7 +1676,7 @@
         <url/>
         <url_target/>
     </sys_documentation>
-    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_c233ce2f93758210cd4e7d532bba10b1^sys_idNOT IN0a4ccb72c3a61210ff1f33bc050131a3,8a4ccb72c3a61210ff1f33bc050131a2"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_c233ce2f93758210cd4e7d532bba10b1^sys_idNOT IN7df164c16d9822107f448d5f282fc368,fdf164c16d9822107f448d5f282fc367"/>
     <sys_choice field="status" table="var__m_sys_hub_flow_output_c233ce2f93758210cd4e7d532bba10b1">
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
@@ -1688,7 +1692,7 @@
             <sys_created_on>2024-05-02 10:49:37</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>0a4ccb72c3a61210ff1f33bc050131a3</sys_id>
+            <sys_id>7df164c16d9822107f448d5f282fc368</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2024-05-02 10:49:37</sys_updated_on>
@@ -1708,7 +1712,7 @@
             <sys_created_on>2024-05-02 10:49:37</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>8a4ccb72c3a61210ff1f33bc050131a2</sys_id>
+            <sys_id>fdf164c16d9822107f448d5f282fc367</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2024-05-02 10:49:37</sys_updated_on>

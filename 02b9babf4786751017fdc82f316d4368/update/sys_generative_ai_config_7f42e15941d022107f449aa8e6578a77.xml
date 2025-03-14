@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_generative_ai_config">
+    <sys_generative_ai_config action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <additional_configurations>{"skill_config_id":"3b4bcd19415022107f449aa8e6578a84"}</additional_configurations>
+        <ai_suggested>false</ai_suggested>
+        <definition>634bcd19415022107f449aa8e6578a2c</definition>
+        <definition_table>sys_one_extend_capability_definition</definition_table>
+        <max_tokens>1000</max_tokens>
+        <min_word_count>-1</min_word_count>
+        <model>llm_generic</model>
+        <name>Gameplay Suggestion</name>
+        <parent display_value="OneExtend Capability Definition: SN App Gameplay Suggestion Skill single opponent">734bcd19415022107f449aa8e6578a38</parent>
+        <prompt>Game Overview
+
+You are Player 2 in a card game where your goal is to play a card into one of three Locations.
+
+Each Location has a Location Score, which is the sum of the Power values of all cards played there. You win a Location if your Location Score is higher than your opponent’s at the end of the game. You win the game by winning more Locations than your opponent.
+
+Game Mechanics
+	•	You have a Hand of Playable Cards.
+	•	Each card has:
+	•	A Power value, which contributes to the Location Score when played.
+	•	A Cost, which determines the required Current Energy to play it.
+	•	An Ability, which can be either On Reveal (triggers when played) or Ongoing (active while in play).
+	•	You can only play a card if its Cost is equal to or lower than your Current Energy.
+  • Playing a card will reduce your Current Energy for the turn by that amount.
+  • If you have remaining Current Energy after playing a card, you can play an additional card as long as the next card is equal to or lower than your Current Energy.
+	•	Each Location has:
+	•	8 Location Slots (4 for each player).
+	•	A Location Ability, which may modify gameplay.
+	•	Cards can only be played in Locations with available Empty Slots.
+
+Decision Process
+
+You must determine the optimal card to play and the optimal Location to play it in.
+
+Your "output' should be a JSON object with the selected card and location, along with a rationale:
+
+{
+  "card_selected": "&lt;the card's ID&gt;",
+  "location_selected": "&lt;the location's ID&gt;",
+  "rationale": "A string describing your reason for selecting this card and location combo",
+  "end_turn": &lt;true/false&gt;
+}
+
+Your rationale should be brief and it is intended to explain to the opponent why you played it.   When identifying things like the Location or the Card, use a human readable name or location number in your explanation.  Try to add a bit of personality to your rationale to indicate whether you think you are winning, losing or neutral.
+
+If you won't be able to play a card (due to insufficient current energy), return nothing in the card_selected, location_selected and rationale fields with "end_turn" set to true.  
+
+If you are playing a card and will have enough remaining energy to play ANOTHER card from your hand in your current turn after the current_energy is reduced by the cost of the card you're playing, set end_turn to false.
+
+If you won't have any remaining current_energy once the card is played to play another card from your hand, set end_turn to true.
+
+Return ONLY the output object and nothing else.
+
+Decision-Making Steps
+	1.	Assess Cards in All Location Slots for Both Players:
+	•	Identify which slots contain cards and which are Empty.
+	•	Record the Power and Ability of each played card.
+	•	Identify any card Abilities that might influence gameplay (e.g., Ongoing effects, On Reveal effects, power modifications).
+	2.	Assess Your Current State:
+	•	Record your Current Energy.
+	•	Note your score at each Location.
+	•	Identify any played card Abilities that might influence your decision.
+	•	Identify any active Location Abilities that could impact your move.
+	3.	Assess Your Opponent’s State:
+	•	Record your opponent’s score at each Location.
+	•	Identify any active opponent’s card Abilities in play.
+	4.	Review Available Locations:
+	•	Identify which Locations have Empty Slots where you can play a card.
+	•	Consider how the Location Ability may impact your strategy.
+	5.	Review Your Hand:
+	•	Identify which cards in your Hand have a Cost ≤ Current Energy.
+	•	Evaluate each card’s Power and Ability.
+	•	Consider how playing each card would impact your chances of winning a Location.
+	6.	Select the Best Card and Location:
+	•	Choose the best card that maximizes your chances of winning or securing an advantage.
+	•	Choose a Location where playing this card will have the most strategic benefit.
+	•	If multiple options exist, prioritize based on:
+	•	Maximizing your lead in a Location.
+	•	Closing a gap in a contested Location.
+	•	Disrupting an opponent’s advantage.
+	•	Synergizing with card or Location Abilities.
+	•	Consider how remaining Energy will be used. If the chosen card doesn’t consume all your Energy, keep in mind that you can play additional cards before ending your turn.
+
+Example JSON Payload for LLM Input
+
+Here’s an example JSON structure that includes all the necessary elements - this will be the structure of the input you receive: 
+
+{
+  "current_energy": &lt;integer&gt;,
+  "locations": [
+    {
+      "id": "&lt;string - unique location ID&gt;",
+      "location_number": &lt;integer - 1, 2, or 3&gt;,
+      "name": "&lt;string - location name&gt;",
+      "player_1_score": &lt;integer&gt;,
+      "player_2_score": &lt;integer&gt;,
+      "ability": "&lt;string - description of the location's ability&gt;",
+      "slots": {
+        "player_1": [
+          {
+            "id": "&lt;string - unique card ID&gt;",
+            "name": "&lt;string - card name&gt;",
+            "power": &lt;integer&gt;,
+            "cost": &lt;integer&gt;,
+            "ability": "&lt;string - card ability&gt;"
+          },
+          null,
+          null,
+          null
+        ],
+        "player_2": [
+          {
+            "id": "&lt;string - unique card ID&gt;",
+            "name": "&lt;string - card name&gt;",
+            "power": &lt;integer&gt;,
+            "cost": &lt;integer&gt;,
+            "ability": "&lt;string - card ability&gt;"
+          },
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "id": "&lt;string - unique location ID&gt;",
+      "location_number": &lt;integer - 1, 2, or 3&gt;,
+      "name": "&lt;string - location name&gt;",
+      "player_1_score": &lt;integer&gt;,
+      "player_2_score": &lt;integer&gt;,
+      "ability": "&lt;string - description of the location's ability&gt;",
+      "slots": {
+        "player_1": [null, null, null, null],
+        "player_2": [null, null, null, null]
+      }
+    },
+    {
+      "id": "&lt;string - unique location ID&gt;",
+      "location_number": &lt;integer - 1, 2, or 3&gt;,
+      "name": "&lt;string - location name&gt;",
+      "player_1_score": &lt;integer&gt;,
+      "player_2_score": &lt;integer&gt;,
+      "ability": "&lt;string - description of the location's ability&gt;",
+      "slots": {
+        "player_1": [
+          null,
+          {
+            "id": "&lt;string - unique card ID&gt;",
+            "name": "&lt;string - card name&gt;",
+            "power": &lt;integer&gt;,
+            "cost": &lt;integer&gt;,
+            "ability": "&lt;string - card ability&gt;"
+          },
+          null,
+          null
+        ],
+        "player_2": [null, null, null, null]
+      }
+    }
+  ],
+  "hand": [
+    {
+      "id": "&lt;string - unique card ID&gt;",
+      "name": "&lt;string - card name&gt;",
+      "power": &lt;integer&gt;,
+      "cost": &lt;integer&gt;,
+      "ability": "&lt;string - card ability&gt;"
+    },
+    {
+      "id": "&lt;string - unique card ID&gt;",
+      "name": "&lt;string - card name&gt;",
+      "power": &lt;integer&gt;,
+      "cost": &lt;integer&gt;,
+      "ability": "&lt;string - card ability&gt;"
+    }
+  ]
+}
+
+The input for your decision is as follows - please only return the JSON string requested and no other information: 
+ {{GenerateOutput.output}} </prompt>
+        <prompt_template_role>user</prompt_template_role>
+        <request_tokens>15134</request_tokens>
+        <show_in_prompt_library>true</show_in_prompt_library>
+        <state>published</state>
+        <sys_class_name>sys_generative_ai_config</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-14 11:27:37</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7f42e15941d022107f449aa8e6578a77</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>634bcd19415022107f449aa8e6578a2c</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_update_name>sys_generative_ai_config_7f42e15941d022107f449aa8e6578a77</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-14 11:28:11</sys_updated_on>
+        <temperature>0.2</temperature>
+        <version>2</version>
+    </sys_generative_ai_config>
+</record_update>

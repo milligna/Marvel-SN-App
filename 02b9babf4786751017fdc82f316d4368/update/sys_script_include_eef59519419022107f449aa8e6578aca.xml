@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_168987_flow_de_0.SinglePlayerAISuggestion</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description>Calls the AI Skill for a Single Player move</description>
+        <mobile_callable>false</mobile_callable>
+        <name>SinglePlayerAISuggestion</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var SinglePlayerAISuggestion = Class.create();
+SinglePlayerAISuggestion.prototype = {
+    initialize: function() {},
+
+    suggestionFromGameInstance: function(instanceSysID) {
+
+        var gameInstanceId = instanceSysID;
+        var responseContent = "";
+        var inputsPayload = {};
+        // game_instance is a input of type: glide_record
+        inputsPayload['game_instance'] = {
+            tableName: 'x_168987_flow_de_0_game_instance',
+            sysId: gameInstanceId,
+            queryString: ''
+        };
+
+        var capabilityId = 'e34b8519415022107f449aa8e6578aad';
+        var request = {
+            executionRequests: [{
+                payload: inputsPayload,
+                capabilityId: capabilityId,
+                meta: {
+                    skillConfigId: '3b4bcd19415022107f449aa8e6578a84'
+                }
+            }],
+            mode: 'sync'
+        };
+
+        try {
+            var response = sn_one_extend.OneExtendUtil.execute(request) || {};
+            var skillResponse = ((response["capabilities"] || {})[capabilityId] || {})["response"];
+            gs.info(JSON.stringify(skillResponse));
+            responseContent = skillResponse;
+        } catch (e) {
+            gs.error(e);
+            responseContent = 'Something went wrong while executing skill. game instance : ' + gameInstanceId + " and Error: " + e;
+        }
+		gs.info("SinglePlayerAISuggestion SI: responseContent: "+responseContent);
+        return responseContent;
+    },
+
+
+
+
+    type: 'SinglePlayerAISuggestion'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-14 10:41:21</sys_created_on>
+        <sys_id>eef59519419022107f449aa8e6578aca</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>SinglePlayerAISuggestion</sys_name>
+        <sys_package display_value="SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_update_name>sys_script_include_eef59519419022107f449aa8e6578aca</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-14 10:59:54</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>eef59519419022107f449aa8e6578aca</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-14 10:41:21</sys_created_on>
+        <sys_id>8eb751d5419022107f449aa8e6578a74</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-14 10:41:21</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>
