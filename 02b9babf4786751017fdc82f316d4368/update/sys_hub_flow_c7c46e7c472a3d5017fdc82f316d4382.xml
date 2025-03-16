@@ -4,7 +4,7 @@
         <acls/>
         <active>true</active>
         <annotation/>
-        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=40919343000,viewActivatedIn=naturalLanguage</attributes>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=42200145000,viewActivatedIn=naturalLanguage</attributes>
         <authored_on_release_version/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
@@ -15,7 +15,7 @@
         <flow_priority>MEDIUM</flow_priority>
         <generation_source/>
         <internal_name>create_game_upon_successful_match</internal_name>
-        <label_cache>[{"name":"d5ee69e3-1e1a-48ac-90a2-3e159339e570.game_instance.player_2","label":"1 - START-SUB: Create Game Instance and Sessions➛Game Instance➛Player 2","reference":"x_168987_flow_de_0_player_session","reference_display":"Player Session","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_game_instance","column_name":"player_2"},{"name":"8c66c2cf-2889-4d09-8dee-03526e5e6afd.context","label":"2 - START-SUB: Create Card Instances from a Player Deck➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"d5ee69e3-1e1a-48ac-90a2-3e159339e570.game_instance.matchmaking_instance.player_2_session","label":"1 - START-SUB: Create Game Instance and Sessions➛Game Instance➛Matchmaking instance➛Player 2 Session","reference":"x_168987_flow_de_0_player_session","reference_display":"Player Session","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_matchmaking_queue","column_name":"player_2_session"},{"name":"d5ee69e3-1e1a-48ac-90a2-3e159339e570.game_instance.matchmaking_instance.player_1_session","label":"1 - START-SUB: Create Game Instance and Sessions➛Game Instance➛Matchmaking instance➛Player 1 Session","reference":"x_168987_flow_de_0_player_session","reference_display":"Player Session","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_matchmaking_queue","column_name":"player_1_session"},{"name":"Updated_1.current.game_instance","label":"Trigger - Record Updated➛Matchmaking Queue Record➛Game Instance","reference":"x_168987_flow_de_0_game_instance","reference_display":"Game Instance","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_matchmaking_queue","column_name":"game_instance"},{"name":"8d44078a-9f83-4167-a16d-53756d6b400f.__status__.message","label":"6 - Error Handler➛Error Status➛Message","reference":"","reference_display":"Message","type":"string","base_type":"string","attributes":{}},{"name":"8d44078a-9f83-4167-a16d-53756d6b400f.__status__.code","label":"6 - Error Handler➛Error Status➛Code","reference":"","reference_display":"Code","type":"integer","base_type":"integer","attributes":{}},{"name":"Updated_1.current.player_1","label":"Trigger - Record Updated➛Matchmaking Queue Record➛Player 1","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_matchmaking_queue","column_name":"player_1"},{"name":"436bb16b-7d7e-4775-a292-673e6683649b.item.card_definition.power","label":"3 - For Each➛Player Deck Card Record➛Card Definition➛Power","reference":"","reference_display":"Power","type":"integer","base_type":"integer","parent_table_name":"x_168987_flow_de_0_card_definition","column_name":"power"},{"name":"436bb16b-7d7e-4775-a292-673e6683649b.item.card_definition","label":"3 - For Each➛Player Deck Card Record➛Card Definition","reference":"x_168987_flow_de_0_card_definition","reference_display":"Card Definition","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_player_deck_card","column_name":"card_definition"},{"name":"436bb16b-7d7e-4775-a292-673e6683649b.item.card_definition.cost","label":"3 - For Each➛Player Deck Card Record➛Card Definition➛Cost","reference":"","reference_display":"Cost","type":"integer","base_type":"integer","parent_table_name":"x_168987_flow_de_0_card_definition","column_name":"cost"},{"name":"fea9a6bc-cf84-4477-9ba9-96a61393e167.Records","label":"3 - Look Up Records➛Player Deck Card Records","reference":"x_168987_flow_de_0_player_deck_card","reference_display":"Player Deck Card Slots","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Updated_1.current.player_1_deck","label":"Trigger - Record Updated➛Matchmaking Queue Record➛Player 1 Deck","reference":"x_168987_flow_de_0_player_deck","reference_display":"Player Deck","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_matchmaking_queue","column_name":"player_1_deck"},{"name":"Updated_1.current","label":"Trigger - Record Updated➛Matchmaking Queue Record","reference":"x_168987_flow_de_0_matchmaking_queue","reference_display":"Matchmaking Queue","type":"reference","base_type":"reference","attributes":{}},{"name":"d5ee69e3-1e1a-48ac-90a2-3e159339e570.game_instance","label":"1 - START-SUB: Create Game Instance and Sessions➛Game Instance","reference":"x_168987_flow_de_0_game_instance","reference_display":"Game Instance","type":"reference","base_type":"reference","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"b8ac3fdc-405a-494a-9572-24252548faa7"}},{"name":"Updated_1.current.player_2_deck","label":"Trigger - Record Updated➛Matchmaking Queue Record➛Player 2 deck","reference":"x_168987_flow_de_0_player_deck","reference_display":"Player Deck","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_matchmaking_queue","column_name":"player_2_deck"},{"name":"Updated_1.current.player_2","label":"Trigger - Record Updated➛Matchmaking Queue Record➛Player 2","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_matchmaking_queue","column_name":"player_2"},{"name":"d5ee69e3-1e1a-48ac-90a2-3e159339e570.game_instance.player_1","label":"1 - START-SUB: Create Game Instance and Sessions➛Game Instance➛Player 1","reference":"x_168987_flow_de_0_player_session","reference_display":"Player Session","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_game_instance","column_name":"player_1"},{"name":"1ae4ef7f-211e-4fa9-931f-66d290e34713.Count","label":"6 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d1226321-d072-4d66-ac4d-ce2a342ff809.Records","label":"6 - Look Up Records➛Card Instance Records","reference":"x_168987_flow_de_0_card_instance","reference_display":"Game Card Instance","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Updated_1.current.player_1_session","label":"Trigger - Record Updated➛Matchmaking Queue Record➛Player 1 Session","reference":"x_168987_flow_de_0_player_session","reference_display":"Player Session","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_matchmaking_queue","column_name":"player_1_session"},{"name":"d5ee69e3-1e1a-48ac-90a2-3e159339e570.game_instance.matchmaking_instance.player_1_deck","label":"1 - START-SUB: Create Game Instance and Sessions➛Game Instance➛Matchmaking instance➛Player 1 Deck","reference":"x_168987_flow_de_0_player_deck","reference_display":"Player Deck","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_matchmaking_queue","column_name":"player_1_deck"},{"name":"d5ee69e3-1e1a-48ac-90a2-3e159339e570.game_instance.matchmaking_instance.player_2_deck","label":"1 - START-SUB: Create Game Instance and Sessions➛Game Instance➛Matchmaking instance➛Player 2 deck","reference":"x_168987_flow_de_0_player_deck","reference_display":"Player Deck","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_matchmaking_queue","column_name":"player_2_deck"}]</label_cache>
+        <label_cache>[{"name":"d5ee69e3-1e1a-48ac-90a2-3e159339e570.game_instance.matchmaking_instance.player_2_deck","label":"1 - START-SUB: Create Game Instance and Sessions➛Game Instance➛Matchmaking instance➛Player 2 deck","reference":"x_168987_flow_de_0_player_deck","reference_display":"Player Deck","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_matchmaking_queue","column_name":"player_2_deck"},{"name":"d5ee69e3-1e1a-48ac-90a2-3e159339e570.game_instance.matchmaking_instance.player_1_deck","label":"1 - START-SUB: Create Game Instance and Sessions➛Game Instance➛Matchmaking instance➛Player 1 Deck","reference":"x_168987_flow_de_0_player_deck","reference_display":"Player Deck","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_matchmaking_queue","column_name":"player_1_deck"},{"name":"Updated_1.current.player_1_session","label":"Trigger - Record Updated➛Matchmaking Queue Record➛Player 1 Session","reference":"x_168987_flow_de_0_player_session","reference_display":"Player Session","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_matchmaking_queue","column_name":"player_1_session"},{"name":"d1226321-d072-4d66-ac4d-ce2a342ff809.Records","label":"6 - Look Up Records➛Card Instance Records","reference":"x_168987_flow_de_0_card_instance","reference_display":"Game Card Instance","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1ae4ef7f-211e-4fa9-931f-66d290e34713.Count","label":"6 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d5ee69e3-1e1a-48ac-90a2-3e159339e570.game_instance.player_1","label":"1 - START-SUB: Create Game Instance and Sessions➛Game Instance➛Player 1","reference":"x_168987_flow_de_0_player_session","reference_display":"Player Session","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_game_instance","column_name":"player_1"},{"name":"Updated_1.current.player_2","label":"Trigger - Record Updated➛Matchmaking Queue Record➛Player 2","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_matchmaking_queue","column_name":"player_2"},{"name":"Updated_1.current.player_2_deck","label":"Trigger - Record Updated➛Matchmaking Queue Record➛Player 2 deck","reference":"x_168987_flow_de_0_player_deck","reference_display":"Player Deck","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_matchmaking_queue","column_name":"player_2_deck"},{"name":"d5ee69e3-1e1a-48ac-90a2-3e159339e570.game_instance","label":"1 - START-SUB: Create Game Instance and Sessions➛Game Instance","reference":"x_168987_flow_de_0_game_instance","reference_display":"Game Instance","type":"reference","base_type":"reference","usedInstances":{"efcf16b2-cde0-4985-a769-ab881c0740f0":["gameinstance"]},"attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"b8ac3fdc-405a-494a-9572-24252548faa7"}},{"name":"Updated_1.current","label":"Trigger - Record Updated➛Matchmaking Queue Record","reference":"x_168987_flow_de_0_matchmaking_queue","reference_display":"Matchmaking Queue","type":"reference","base_type":"reference","attributes":{}},{"name":"Updated_1.current.player_1_deck","label":"Trigger - Record Updated➛Matchmaking Queue Record➛Player 1 Deck","reference":"x_168987_flow_de_0_player_deck","reference_display":"Player Deck","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_matchmaking_queue","column_name":"player_1_deck"},{"name":"fea9a6bc-cf84-4477-9ba9-96a61393e167.Records","label":"3 - Look Up Records➛Player Deck Card Records","reference":"x_168987_flow_de_0_player_deck_card","reference_display":"Player Deck Card Slots","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"436bb16b-7d7e-4775-a292-673e6683649b.item.card_definition.cost","label":"3 - For Each➛Player Deck Card Record➛Card Definition➛Cost","reference":"","reference_display":"Cost","type":"integer","base_type":"integer","parent_table_name":"x_168987_flow_de_0_card_definition","column_name":"cost"},{"name":"436bb16b-7d7e-4775-a292-673e6683649b.item.card_definition","label":"3 - For Each➛Player Deck Card Record➛Card Definition","reference":"x_168987_flow_de_0_card_definition","reference_display":"Card Definition","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_player_deck_card","column_name":"card_definition"},{"name":"436bb16b-7d7e-4775-a292-673e6683649b.item.card_definition.power","label":"3 - For Each➛Player Deck Card Record➛Card Definition➛Power","reference":"","reference_display":"Power","type":"integer","base_type":"integer","parent_table_name":"x_168987_flow_de_0_card_definition","column_name":"power"},{"name":"Updated_1.current.player_1","label":"Trigger - Record Updated➛Matchmaking Queue Record➛Player 1","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_matchmaking_queue","column_name":"player_1"},{"name":"8d44078a-9f83-4167-a16d-53756d6b400f.__status__.code","label":"8 - Error Handler➛Error Status➛Code","reference":"","reference_display":"Code","type":"integer","base_type":"integer","attributes":{}},{"name":"8d44078a-9f83-4167-a16d-53756d6b400f.__status__.message","label":"8 - Error Handler➛Error Status➛Message","reference":"","reference_display":"Message","type":"string","base_type":"string","attributes":{}},{"name":"Updated_1.current.game_instance","label":"Trigger - Record Updated➛Matchmaking Queue Record➛Game Instance","reference":"x_168987_flow_de_0_game_instance","reference_display":"Game Instance","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_matchmaking_queue","column_name":"game_instance"},{"name":"d5ee69e3-1e1a-48ac-90a2-3e159339e570.game_instance.matchmaking_instance.player_1_session","label":"1 - START-SUB: Create Game Instance and Sessions➛Game Instance➛Matchmaking instance➛Player 1 Session","reference":"x_168987_flow_de_0_player_session","reference_display":"Player Session","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_matchmaking_queue","column_name":"player_1_session"},{"name":"d5ee69e3-1e1a-48ac-90a2-3e159339e570.game_instance.matchmaking_instance.player_2_session","label":"1 - START-SUB: Create Game Instance and Sessions➛Game Instance➛Matchmaking instance➛Player 2 Session","reference":"x_168987_flow_de_0_player_session","reference_display":"Player Session","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_matchmaking_queue","column_name":"player_2_session"},{"name":"8c66c2cf-2889-4d09-8dee-03526e5e6afd.context","label":"2 - START-SUB: Create Card Instances from a Player Deck➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"d5ee69e3-1e1a-48ac-90a2-3e159339e570.game_instance.player_2","label":"1 - START-SUB: Create Game Instance and Sessions➛Game Instance➛Player 2","reference":"x_168987_flow_de_0_player_session","reference_display":"Player Session","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_game_instance","column_name":"player_2"},{"name":"d5ee69e3-1e1a-48ac-90a2-3e159339e570.game_instance.p2_ai","label":"1 - START-SUB: Create Game Instance and Sessions➛Game Instance➛Player 2 AI?","reference":"","reference_display":"Player 2 AI?","type":"boolean","base_type":"boolean","parent_table_name":"x_168987_flow_de_0_game_instance","column_name":"p2_ai","usedInstances":{"be23d25d-2708-48e4-8a0a-f63c6de5d404":["condition"]}}]</label_cache>
         <master_snapshot>faf0fabc476a3d5017fdc82f316d43bd</master_snapshot>
         <master_snapshot_digest/>
         <name>START: Create Game upon successful match</name>
@@ -36,15 +36,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>c7c46e7c472a3d5017fdc82f316d4382</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>START: Create Game upon successful match</sys_name>
         <sys_overrides/>
         <sys_package display_value="SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_update_name>sys_hub_flow_c7c46e7c472a3d5017fdc82f316d4382</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-13 12:06:25</sys_updated_on>
+        <sys_updated_by>kevin.clark</sys_updated_by>
+        <sys_updated_on>2025-03-16 22:04:46</sys_updated_on>
         <type>flow</type>
         <version>2</version>
     </sys_hub_flow>
@@ -58,6 +58,7 @@
         <on_delete>false</on_delete>
         <on_insert>false</on_insert>
         <on_update>true</on_update>
+        <published_version/>
         <run_flow_in>background</run_flow_in>
         <run_on_extended>false</run_on_extended>
         <run_when_setting>both</run_when_setting>
@@ -75,21 +76,22 @@
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-11-14 11:42:12</sys_updated_on>
         <table>x_168987_flow_de_0_matchmaking_queue</table>
+        <trigger_definition/>
     </sys_flow_record_trigger>
     <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
         <active>true</active>
         <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
         <identifier>c7c46e7c472a3d5017fdc82f316d4382</identifier>
         <runner>FDTriggerRunner</runner>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-03-02 01:18:04</sys_created_on>
-        <sys_id>75b36159c3482210ff1f33bc05013121</sys_id>
+        <sys_created_by>kevin.clark</sys_created_by>
+        <sys_created_on>2025-03-16 22:04:46</sys_created_on>
+        <sys_id>a8578a4e47d06650089ce5e5316d43df</sys_id>
         <sys_mod_count>2</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-02 01:18:04</sys_updated_on>
+        <sys_updated_by>kevin.clark</sys_updated_by>
+        <sys_updated_on>2025-03-16 22:04:46</sys_updated_on>
         <trigger display_value="">87f03ebc476a3d5017fdc82f316d4375</trigger>
     </sys_trigger_runner_mapping>
-    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=c7c46e7c472a3d5017fdc82f316d4382^sys_idNOT IN75b36159c3482210ff1f33bc05013121"/>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=c7c46e7c472a3d5017fdc82f316d4382^sys_idNOT INa8578a4e47d06650089ce5e5316d43df"/>
     <sys_hub_flow_stage action="delete_multiple" query="flow=c7c46e7c472a3d5017fdc82f316d4382"/>
     <sys_flow_cat_variable_model action="delete_multiple" query="id=c7c46e7c472a3d5017fdc82f316d4382^sys_idNOT IN03c46e7c472a3d5017fdc82f316d4384"/>
     <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
@@ -204,7 +206,7 @@
         <sys_mod_count>101</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
-        <sys_package display_value="Flow Designer Designer Model" source="com.glide.hub.designer_backend.model">a2ff82de64f112107f440ccd6385c0e0</sys_package>
+        <sys_package display_value="Flow Designer Designer Model" source="com.glide.hub.designer_backend.model">99d1049e93d30210ef61b2db5cba1000</sys_package>
         <sys_policy/>
         <sys_scope display_value="Global">global</sys_scope>
         <sys_update_name/>
@@ -388,16 +390,17 @@
         <display_text/>
         <flow display_value="START: Create Game upon successful match">c7c46e7c472a3d5017fdc82f316d4382</flow>
         <name>Updated</name>
+        <published_version/>
         <remote_sys_id/>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-03-02 01:17:58</sys_created_on>
         <sys_id>ecb3ad19c3482210ff1f33bc0501317d</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_scope/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-02 01:17:58</sys_updated_on>
+        <sys_updated_by>kevin.clark</sys_updated_by>
+        <sys_updated_on>2025-03-16 22:04:40</sys_updated_on>
         <trigger_definition display_value="Updated">bb695e60c31322002841b63b12d3aea5</trigger_definition>
-        <trigger_inputs>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</trigger_inputs>
+        <trigger_inputs>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</trigger_inputs>
         <trigger_outputs/>
         <trigger_type>record_update</trigger_type>
     </sys_hub_trigger_instance_v2>
@@ -411,20 +414,41 @@
         <display_text/>
         <flow display_value="START: Create Game upon successful match">c7c46e7c472a3d5017fdc82f316d4382</flow>
         <generation_source/>
-        <order>7</order>
+        <order>9</order>
         <parent_ui_id>8d44078a-9f83-4167-a16d-53756d6b400f</parent_ui_id>
         <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-03-02 01:17:58</sys_created_on>
         <sys_id>24b3ad19c3482210ff1f33bc05013198</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2025-03-13 12:43:09</sys_updated_on>
+        <sys_updated_on>2025-03-16 22:05:48</sys_updated_on>
         <ui_id>e26fe65b-baeb-4080-849d-0d50ea21e0c7</ui_id>
-        <values>H4sIAAAAAAAA/+1WyW7bMBD9FZVnx6AWy7Zu2Ru0iYE4TQ9RItDkyCZCUapIJXEN/3tHi5MgC5ouhwaobpx5M3zzhuPxxYowbmWuj7SxTHOYLs2RIBFxYTj2Qj8IhiHzxYC6w1TwkZf6bigCnzPSI7LGhS7QwdgNue/6vkepNwrcWejPXE/4DCBAnGYZINKymYKkOfTIDVNVbZSaSwHaoklIUyi2PO88Rw8evpBKlKBJdHHZIwUrMYeFkkSrJ663MlJsBgqhZzWlVxjaZfGi7fPjWOekdeSlqPnQHoE7C1oAEkmZMtAjGdOC2bxcksiWFRpKYGKi1fIesZBYZURIjb0z8jteO6I1LgWsjEPruz82F++1YrWudI9ZNsXs3FZlB+eLXHIwrS4CUlYpu/vY1gImRd38NqQptYvOVZXpk1YWcp9g0xu0VAYSAUVda82+KyWdLvLb0w3TA6kbWTqnyjlT9ydmbSlnla35rAgoyDBRkrGikHqeFGV+I5tg5JL15woP/VTlt3ipkXPdb19tH6Vl/QO07zXmc1bKuopjTIPB6x4xS7OrmDEPtaCQybeqZtJW1tWQtDLUIbyUhd3GC26go7vu/fGcCKDjV1+lO3t4hc1omEczguyxtEaeeZlXRVxR6otVvJmYmEQxmUJ5g/10UIfrmPTiNrpxidAbCM6BUzaibjiklHmex2g6HFMqaNjAUadEijfi11dmkZe27kWjFerSkppOjvfPPh6dHDo7p5NP+x/wu3oGOluAk+YKm4addmZlfg1RrKdfdg4+T75Gzi4OiAXnENVwqiLXjqmQjDFppZyMWb6I9e5kbz9yVquRCAI6HLGtcTrytwLkusVQ962BPxyEIpwFlKb9JMGO2cokSZ/nAtbrWB/vT6fbh7+VIkMmbI5Znv9i/e/TP9qnX9wfP5/Uzf44kKCEeWF0N8sDMmy8haQd5ScLpHM6552zWyLu31oibkib752tkrbAd79JHv1xeGWnXP4ARBgLK30JAAA=</values>
+        <values>H4sIAAAAAAAA/+1WyW7bMBD9FZVnx6AWy7Zu2Ru0iYE4TQ9RItDkyCZCUapIJXEN/3tHi5MgC5ouhwaobpx5M3zzhuPxxYowbmWuj7SxTHOYLs2RIBFxYTj2Qj8IhiHzxYC6w1TwkZf6bigCnzPSI7LGhS7QwdgNue/6vkepNwrcWejPXE/4DCBAnGYZINKymYKkOfTIDVNVbZSaSwHaoklIUyi2PO88Rw8evpBKlKBJdHHZIwUrMYeFkkSrJ663MlJsBgqhZzWlVxjaZfGi7fPjWOekdeSlqPnQHoE7C1oAEkmZMtAjGdOC2bxcksiWFRpKYGKi1fIesZBYZURIjb0z8jteO6I1LgWsjEPruz8mnVCtOd1jlk0xM7dV2UH5IpccTKuJgJRVyu4+trWASVE3vg1pyuyic1Vl+qSVhNwn2PQFLZVBElDUddbMuzLS6SK/Pd2wPJC6kaRzqpwzdX9i1pZyVtmaz4qAggwTJRkrCqnnSVHmN7IJRi5Zf67w0E9VfouXGjnX/fbF9lFW1j9A+15jPmelrKs4xjQYvO4RszS7ihnzUAuKmHyraiZtZV0NSStDHcJLWdhtvOAGOrrr3h/PiAA6fvVFurOHF9iMhXk0H8geS2vkmZd5VcQVpb5YxZtpiUkUkymUN9hPB3W4jkkvbqMblwi9geAcOGUj6oZDSpnneYymwzGlgoYNHHVKpHgjfn1lFnlp6140WqEuLanp5Hj/7OPRyaGzczr5tP8Bv6tnoLMFOGmusGnYaWdW5tcQxXr6Zefg8+Rr5OzicFhwDlENpypy7ZgKyRiTVsrJmOWLWO9O9vYjZ7UaiSCgwxHbGqcjfytArlsMdd8a+MNBKMJZQGnaTxLsmK1MkvR5LmC9jvXx/nS6ffhbKTJkwuaY5fmv1f8+/aN9+sXd8fNJ3eyOAwlKmBdGd7M4IMPGW0jaUX6yPDqnc945uwXi/q0F4oa0+d7RGmmLe/db5NEfhlf2yeUP9DaYmHUJAAA=</values>
     </sys_hub_action_instance_v2>
-    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=c7c46e7c472a3d5017fdc82f316d4382^sys_idNOT IN64b3ad19c3482210ff1f33bc05013183,6cb3ad19c3482210ff1f33bc05013186,a0b3ad19c3482210ff1f33bc05013185,acb3ad19c3482210ff1f33bc05013185,e4b3ad19c3482210ff1f33bc05013187"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=c7c46e7c472a3d5017fdc82f316d4382^sys_idNOT IN1b474a4e47d06650089ce5e5316d43dd,64b3ad19c3482210ff1f33bc05013183,6cb3ad19c3482210ff1f33bc05013186,a0b3ad19c3482210ff1f33bc05013185,acb3ad19c3482210ff1f33bc05013185,e4b3ad19c3482210ff1f33bc05013187"/>
+    <sys_hub_sub_flow_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="START: Create Game upon successful match">c7c46e7c472a3d5017fdc82f316d4382</flow>
+        <generation_source/>
+        <order>7</order>
+        <parent_ui_id>be23d25d-2708-48e4-8a0a-f63c6de5d404</parent_ui_id>
+        <subflow display_value="AI: 1 Player - Generate and Process Gameplay Suggestion">83a9e5d1411422107f449aa8e6578a71</subflow>
+        <subflow_inputs>H4sIAAAAAAAA/41Sy27bMBD8lYJnSxAl2bJ8K1CkCNA2QB+5BAGxJlc2AYpSKMqxa/jfu5QUR21zyIngLHdnZ4YPZ6YV27BkCyUuFc85z9OUJ0WV5yXAGlfLYg1FxhbMQo30ckeHtp0HK5HQA5g+wOezWiKuSswijhyifA0yKhNIowz5sswyGl8kcegWL+2XCw1QumsNnO6nOYTIvTbKoWWbh8cFa8FRj0fHNud/Sv7UojCwRUON37FCqgxLvVfSS+9nYrh91fS20sBGqJvxNE6FvfiC4dGjVUi8FZgOF6wGq8A37nRFHIK6s+YV2GvrR8U1HDv9m6Zn6WJGsGFHwVfrcl2IyjTPQqFIxF8OstlzMTk56fkwEyT3jZZ413rd2JHRw9a8k0A2pq/tt9GTEBhW0Bs/C6zviBzbYEBQNMmrfuyb52sqN9oOXk1F00gw1xt47/S299iFkHv983+rR/DLG2GjwZp4RQ1tq+1OtK456IGLVq/jnaFLPMnr9M7GIIMPMcUD8Q3hnwb4HpwOpnylMdQcGH9Z/dTjbfhMpUoqlEkWAV8mUZ5ARZ+75BGsMp6mskpUiewypCGe+iBttGoyRYy+04NOOt36j7TCASf9l8c/lEywMYYDAAA=</subflow_inputs>
+        <sys_class_name>sys_hub_sub_flow_instance_v2</sys_class_name>
+        <sys_created_by>kevin.clark</sys_created_by>
+        <sys_created_on>2025-03-16 22:04:41</sys_created_on>
+        <sys_id>1b474a4e47d06650089ce5e5316d43dd</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_updated_by>kevin.clark</sys_updated_by>
+        <sys_updated_on>2025-03-16 22:04:41</sys_updated_on>
+        <ui_id>efcf16b2-cde0-4985-a769-ab881c0740f0</ui_id>
+        <wait_for_completion>true</wait_for_completion>
+    </sys_hub_sub_flow_instance_v2>
     <sys_hub_sub_flow_instance_v2 action="INSERT_OR_UPDATE">
         <attributes/>
         <comment/>
@@ -530,10 +554,10 @@
         <ui_id>747dcb6e-92b1-4728-8d09-34588c7d0bd9</ui_id>
         <wait_for_completion>true</wait_for_completion>
     </sys_hub_sub_flow_instance_v2>
-    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=c7c46e7c472a3d5017fdc82f316d4382^sys_idNOT IN60b3ad19c3482210ff1f33bc0501318b,a4b3ad19c3482210ff1f33bc05013182"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=c7c46e7c472a3d5017fdc82f316d4382^sys_idNOT IN60b3ad19c3482210ff1f33bc0501318b,97474a4e47d06650089ce5e5316d43dc,a4b3ad19c3482210ff1f33bc05013182"/>
     <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
         <attributes/>
-        <block display_value="">68b3ad19c3482210ff1f33bc0501318a</block>
+        <block display_value="">53474a4e47d06650089ce5e5316d43df</block>
         <comment/>
         <connected_to/>
         <decision_table/>
@@ -542,24 +566,50 @@
         <flow_variables_assigned/>
         <generation_source/>
         <logic_definition display_value="Top Level Catch">35d60003e6022010a5e40cdd1254dd23</logic_definition>
-        <order>6</order>
+        <order>8</order>
         <outputs_assigned/>
         <parent_ui_id/>
         <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-03-02 01:17:58</sys_created_on>
         <sys_id>60b3ad19c3482210ff1f33bc0501318b</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-02 01:17:58</sys_updated_on>
+        <sys_updated_by>kevin.clark</sys_updated_by>
+        <sys_updated_on>2025-03-16 22:04:41</sys_updated_on>
         <ui_id>8d44078a-9f83-4167-a16d-53756d6b400f</ui_id>
-        <values>H4sIAAAAAAAA/+1YS0/jSBD+KyuLI3idd8gNwUZitRBpk+GyQVanu5z0bMftsdsBBvHft/phx3bCzMBkuGykKLKryvX8qqrtZ0/mKslVNpMXWcaXsTf65/7U47Gm4fWzF5M1eCMvDDNFVJ6FoXfqbYjINfF57m0gzbiM595o7rX8YO6dzr0MUk4E/0oUcsYyXRNl+H9OJ7dGgMp1IuBxsvgMVE3pCtYEBVDbWMiHK9B+QDoaX11czq4nt9PZxezT1ApQycDouo4VLCF16hj4JxEHwcKIUFCZFZ5ybeaGJGNNNI89z+dzL+ezpwT+IgsQ+nak/wp9c60R/1IgLJSxeColIiIyKPkrHquSVVKt5pLOG0oZRCQXKjT5231a1Dy61KEWLEJ1LkNIU5mGtmSloErzreCaxIwomb7mt0yZdcjwWpXnHkMB8VKtSmY30P8v+MMcryHLyNLmfqpSHi9N6h35Z7PvNB40+Vld55tyf+Oi/cXpb387/UFZAF2Bb/SGf6Iw8h/K/pvScGHC/m1qOv/wycj5p5h/yeGabYMmLFoMFvTsnPUHZ93zITsbDllwNmR92mG9YTcC1ih4HUl2ppQiVIYmNXqKlTKNwVLIgoA1xCpckyRB5IRJKje8Wi4cW/5SIMmPsBYhM8XwbTp8jJT42xrdEZyBC1OB5D1jJc6F2IdqWY/vDe3c7zUAVZvCtfGKVyd0U1wY8HwmG+ILEi/9SvefbAzP6duOiHc8//KCe4XxLBHk6e64Xo7r5bhejuvluF6O6+WA64WuuGApxOa9hjPcMEh07zfatcqbTV0a34gymvJEacRukG+yWhDRD3RwR6Pz92eUokhCUlSnIEVCPQAzEk37IQg0t4JXNOY2Dtrc01DI162Eo7fq3HfcaXqf8yu7r7VZ1MBLi6YnxI4jRYIKzqXNeb0CqqnMYNAbtU49eFQQM2Clb+UEKCm6ASaI/5KgEW+tImYz/hV1dwMtFwEGQl3k5W3ojiBFtSSnMEl0/ixF6aZzTCnydXxrndeHFzv67rb5dJSr+qkGGXmGhiDRwWjvnKvRdCUf/i48GfPYxO2YQlIiyjuiEOWLXEFmC4P+h19yLWDtOtWhdVuD8ztosV3zgWDJCoM1rJRuNKFyUzbTTnephkKHl/YB8RL87xBz3yiMneJFYYJo0CY90u4tWp120AoW/RYQvOgMhi066J5XCveHBpJb8dvq1b4muQLKwkTR8DrrByrh8ONKeNhKuTatpqfeuGVhqkcRpNcPIch/7fhhJu97Dx7eD8yefZNCTyTnKMRaHausydbum6CZP82R8tpqbGJ3hg//PtZmC/wyNghawwGlnT5o/PZ6vc5i0A0I6waMMVrB79a9HX8dbhdSCiDxrwHux+yqyCVn//gpuB++tfYi514DxWIws8VmQLn+SDDTtOviy7VmPGHNOK2SHmT6rwb5lvbyH6fHScIDFwAA</values>
+        <values>H4sIAAAAAAAA/+1Y32+jOBD+V06ojy0HCWnavFXtRerp2kiXbF+OChlsEu85NgsmbTfK/37jHxAg6e62m+3LRYoimBnGM/N9njGsHVHKrJTFTFwVBZ1zZ/TP46lDuZLB9drhaEmckRNFhUSyLKLIOXVWiJVKuA6dFckLKnjojELHd73QOQ2dRCwzRp4n8WeSSNCslQgTc3WSrKoL/dBntEIuQ3zuTmVO+Vx7OFlpXehsNnC3JEWB5u98ftMNaJosyBIZH2Mmnm6Iypvko/HN1fXsdnI/nV3NPk1bcYfOLZdkTnKbHybuSUoJw1GKEiILYzylapk7lI2VUD+2DsPQKensJSN/oZgwdTtSf5W/UHmEv5wgHAnOXmqLFLGC1PoF5bJW1VLjuZbTjlNMUlQyGWm8dp9mrYiuVaqVCiUSUI1Inos8MhSpDWVebg2XiGMkRf5a3CLHJiCt8xvPPUeM8Llc1MrAU/8b+LUwh7pugbXin62+9XjQ4hdtn2+q/Z3N9heXv/ft8ns1AAqBb+wN90RC5j9U/TeV4Uqn/dtUd5rDF6Oknzj9UpJbXBsML4M46Qe9s8vkEp8FQRCfoX7aO8M4iM/RAHn+sN8BvM0k2+Qqk0REujSqa9Y2ncZS2RJGloTLaImyDJgTZblY0SZc0LbcOQORmwIWEdZguKYcLmSK3C1GDyinKNYIZO9pK7xkbB+rRTu/N2zn80GHUAWBEBn9ilT8Y5EvkeHJn9PJPZjAXMG0yBh6eTiOl+N4OY6X43g5jpfjeDngeEkWlOGccP1eQzFMGBDa9xvVdBtvNm1reCMqkpxmUjFoBXqdZSUEgkIAOx5tL/kZp2CSoRzcSZKDoJ2AblF6OwAoStvgDyxmJwCsuYfgoFfUhlbYDO474XSjL+mNmddqWfBA6xU1R9lOIFWBKs21qXkbAdl1pjnhjPxThzxLwjHBdWz1jqwlipAT4GMtUAw0qwKHCvoVfAeesksJJJLYzOvbyB5BKrQETcgkU/UzEqk2gVUKVi75vQleHV5MK3rY1tNKbtqnGlCUBSxEMpWMis6Gmk4X4unvKpIx5Tpvq2QiQay+QxKmQVxKUhhgIP7oS6kMzLrWdWTCVuT8DlvMxPpAshTVgi2u1GF0qXJXb6ad3SU7Di1fegfki/e/Y8xjBxgzhypgvHTYg+nVG8R+v+f5XnzuEwQX/eGFnwyDywZwfygi2ZG7Ra/1NckCKKolqg2vqn4gCC8+DsLDImW3abM87Y1bA9M8GoC8fSgA/WvHAd1533sQcH6g9+zrFKoj2UAJV+5wY0z6u2+Cuv90W8pro7HL3Rk8/PtYLVvxF+Oh518Mk6R/ThR/B4NBPx4GHsKBhzFOGvzdhrcTr+VtLAQjiP8a4n7MrEptcfa3n0r74VNrL3MeFVEMBwsDNiYJVR8JZkp2W325VooXwIwmTdGTyP9VJN/KNv8BikeGZgMXAAA=</values>
         <workflow_reference/>
     </sys_hub_flow_logic_instance_v2>
     <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
         <attributes/>
-        <block display_value="">acb3ad19c3482210ff1f33bc05013181</block>
+        <block display_value="">9f474a4e47d06650089ce5e5316d43db</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="START: Create Game upon successful match">c7c46e7c472a3d5017fdc82f316d4382</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>6</order>
+        <outputs_assigned/>
+        <parent_ui_id>42936f65-7626-4a83-b007-94fd28fdcfcb</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>kevin.clark</sys_created_by>
+        <sys_created_on>2025-03-16 22:04:41</sys_created_on>
+        <sys_id>97474a4e47d06650089ce5e5316d43dc</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_updated_by>kevin.clark</sys_updated_by>
+        <sys_updated_on>2025-03-16 22:04:41</sys_updated_on>
+        <ui_id>be23d25d-2708-48e4-8a0a-f63c6de5d404</ui_id>
+        <values>H4sIAAAAAAAA/+1V227aQBD9FbTPxvIF08BLhVpFQmqbqonykkbWeD2GVdded3cNoYh/76wvJGpARVUe+8aeuZ1zPCP2TDW2bqy5UwtjxKpi84dHj4nKYfR7z0TO5qwIoAhnPORxNI2jIIiuJmE2jbMwymNAiJnHKiiRMrmqcmGFqtIW8NgGZOMCSzP6KmGHehSNFsv3FMmFqQm5P5vA10LmGntONWjqaFGz+f6PkN3VmErIUFKfW6tFtaLyS5kPhR8G6qNPLXJek5tHuBkmKZ07WmHgMXyyWOVIowuQBj1WQpWDVXp3RDRCflPJZ2AtKkvtmEt+MuIX9Y6SxCUWSBo5dsHjM+2d62C+VoLjTe0IdoiFTPY1XMmmrL50OpznWEAj7eA5IY2hflg70o5FT6m4Xavtt2HgtahagX1QKg7y+AJLNmSNReM+DEosqVFaQl2TOWmt1Ua0xcSl9FeSHn4h1ZaGun3zgTviPnkE/jXhH1v4HrRwKj5TGyruaGZgBE/b3aR2VpOEQ2tL+rNxhDqBvZS0c4MSDNeitguas8Ge9cHrF3sGSZGEQXJ6PSbTE0vwYqf3+zxBnM4wHocYwnhyBXw8CyAaxxgmszieYfIu8FfUgWgbC+SlX0cpiMPhexMEcd6KeHUKb9b3LS7oAoteXdBp286cTfSXs3FaLryaIAj+n83LsxEm7da/19YO/+ereXSr300w3d7kyIUhIncOWw7/Gi6wowUQ/CW0VfqHk/CMHX4Dc1YcV38GAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">5f474a4e47d06650089ce5e5316d43d7</block>
         <comment/>
         <connected_to/>
         <decision_table/>
@@ -575,17 +625,16 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-03-02 01:17:58</sys_created_on>
         <sys_id>a4b3ad19c3482210ff1f33bc05013182</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-02 01:17:58</sys_updated_on>
+        <sys_updated_by>kevin.clark</sys_updated_by>
+        <sys_updated_on>2025-03-16 22:04:40</sys_updated_on>
         <ui_id>42936f65-7626-4a83-b007-94fd28fdcfcb</ui_id>
         <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
         <workflow_reference/>
     </sys_hub_flow_logic_instance_v2>
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=c7c46e7c472a3d5017fdc82f316d4382"/>
     <sys_hub_flow_variable action="delete_multiple" query="model=c7c46e7c472a3d5017fdc82f316d4382"/>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_c7c46e7c472a3d5017fdc82f316d4382^sys_idNOT IN4521a84d6d5822107f448d5f282fc370,5921a84d6d5822107f448d5f282fc377,9121a84d6d5822107f448d5f282fc374"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>changed_fields</element>
         <help/>
@@ -599,7 +648,7 @@
         <sys_created_on>2023-11-14 10:49:29</sys_created_on>
         <sys_id>4521a84d6d5822107f448d5f282fc370</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Changed Fields</sys_name>
+        <sys_name/>
         <sys_package display_value="SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
@@ -622,7 +671,7 @@
         <sys_created_on>2023-11-14 10:49:29</sys_created_on>
         <sys_id>5921a84d6d5822107f448d5f282fc377</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Table Name</sys_name>
+        <sys_name/>
         <sys_package display_value="SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
@@ -645,7 +694,7 @@
         <sys_created_on>2023-11-14 10:49:29</sys_created_on>
         <sys_id>9121a84d6d5822107f448d5f282fc374</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Record</sys_name>
+        <sys_name/>
         <sys_package display_value="SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
@@ -656,7 +705,6 @@
         <url_target/>
     </sys_documentation>
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_c7c46e7c472a3d5017fdc82f316d4382"/>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_c7c46e7c472a3d5017fdc82f316d4382"/>
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_c7c46e7c472a3d5017fdc82f316d4382"/>
     <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -672,7 +720,7 @@
         <description/>
         <flow_priority>MEDIUM</flow_priority>
         <internal_name>create_game_upon_successful_match</internal_name>
-        <label_cache>[{"name":"d5ee69e3-1e1a-48ac-90a2-3e159339e570.game_instance.player_2","label":"1 - START-SUB: Create Game Instance and Sessions➛Game Instance➛Player 2","reference":"x_168987_flow_de_0_player_session","reference_display":"Player Session","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_game_instance","column_name":"player_2"},{"name":"8c66c2cf-2889-4d09-8dee-03526e5e6afd.context","label":"2 - START-SUB: Create Card Instances from a Player Deck➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"d5ee69e3-1e1a-48ac-90a2-3e159339e570.game_instance.matchmaking_instance.player_2_session","label":"1 - START-SUB: Create Game Instance and Sessions➛Game Instance➛Matchmaking instance➛Player 2 Session","reference":"x_168987_flow_de_0_player_session","reference_display":"Player Session","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_matchmaking_queue","column_name":"player_2_session"},{"name":"d5ee69e3-1e1a-48ac-90a2-3e159339e570.game_instance.matchmaking_instance.player_1_session","label":"1 - START-SUB: Create Game Instance and Sessions➛Game Instance➛Matchmaking instance➛Player 1 Session","reference":"x_168987_flow_de_0_player_session","reference_display":"Player Session","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_matchmaking_queue","column_name":"player_1_session"},{"name":"Updated_1.current.game_instance","label":"Trigger - Record Updated➛Matchmaking Queue Record➛Game Instance","reference":"x_168987_flow_de_0_game_instance","reference_display":"Game Instance","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_matchmaking_queue","column_name":"game_instance"},{"name":"8d44078a-9f83-4167-a16d-53756d6b400f.__status__.message","label":"6 - Error Handler➛Error Status➛Message","reference":"","reference_display":"Message","type":"string","base_type":"string","attributes":{}},{"name":"8d44078a-9f83-4167-a16d-53756d6b400f.__status__.code","label":"6 - Error Handler➛Error Status➛Code","reference":"","reference_display":"Code","type":"integer","base_type":"integer","attributes":{}},{"name":"Updated_1.current.player_1","label":"Trigger - Record Updated➛Matchmaking Queue Record➛Player 1","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_matchmaking_queue","column_name":"player_1"},{"name":"436bb16b-7d7e-4775-a292-673e6683649b.item.card_definition.power","label":"3 - For Each➛Player Deck Card Record➛Card Definition➛Power","reference":"","reference_display":"Power","type":"integer","base_type":"integer","parent_table_name":"x_168987_flow_de_0_card_definition","column_name":"power"},{"name":"436bb16b-7d7e-4775-a292-673e6683649b.item.card_definition","label":"3 - For Each➛Player Deck Card Record➛Card Definition","reference":"x_168987_flow_de_0_card_definition","reference_display":"Card Definition","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_player_deck_card","column_name":"card_definition"},{"name":"436bb16b-7d7e-4775-a292-673e6683649b.item.card_definition.cost","label":"3 - For Each➛Player Deck Card Record➛Card Definition➛Cost","reference":"","reference_display":"Cost","type":"integer","base_type":"integer","parent_table_name":"x_168987_flow_de_0_card_definition","column_name":"cost"},{"name":"fea9a6bc-cf84-4477-9ba9-96a61393e167.Records","label":"3 - Look Up Records➛Player Deck Card Records","reference":"x_168987_flow_de_0_player_deck_card","reference_display":"Player Deck Card Slots","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Updated_1.current.player_1_deck","label":"Trigger - Record Updated➛Matchmaking Queue Record➛Player 1 Deck","reference":"x_168987_flow_de_0_player_deck","reference_display":"Player Deck","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_matchmaking_queue","column_name":"player_1_deck"},{"name":"Updated_1.current","label":"Trigger - Record Updated➛Matchmaking Queue Record","reference":"x_168987_flow_de_0_matchmaking_queue","reference_display":"Matchmaking Queue","type":"reference","base_type":"reference","attributes":{}},{"name":"d5ee69e3-1e1a-48ac-90a2-3e159339e570.game_instance","label":"1 - START-SUB: Create Game Instance and Sessions➛Game Instance","reference":"x_168987_flow_de_0_game_instance","reference_display":"Game Instance","type":"reference","base_type":"reference","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"b8ac3fdc-405a-494a-9572-24252548faa7"}},{"name":"Updated_1.current.player_2_deck","label":"Trigger - Record Updated➛Matchmaking Queue Record➛Player 2 deck","reference":"x_168987_flow_de_0_player_deck","reference_display":"Player Deck","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_matchmaking_queue","column_name":"player_2_deck"},{"name":"Updated_1.current.player_2","label":"Trigger - Record Updated➛Matchmaking Queue Record➛Player 2","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_matchmaking_queue","column_name":"player_2"},{"name":"d5ee69e3-1e1a-48ac-90a2-3e159339e570.game_instance.player_1","label":"1 - START-SUB: Create Game Instance and Sessions➛Game Instance➛Player 1","reference":"x_168987_flow_de_0_player_session","reference_display":"Player Session","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_game_instance","column_name":"player_1"},{"name":"1ae4ef7f-211e-4fa9-931f-66d290e34713.Count","label":"6 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d1226321-d072-4d66-ac4d-ce2a342ff809.Records","label":"6 - Look Up Records➛Card Instance Records","reference":"x_168987_flow_de_0_card_instance","reference_display":"Game Card Instance","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Updated_1.current.player_1_session","label":"Trigger - Record Updated➛Matchmaking Queue Record➛Player 1 Session","reference":"x_168987_flow_de_0_player_session","reference_display":"Player Session","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_matchmaking_queue","column_name":"player_1_session"},{"name":"d5ee69e3-1e1a-48ac-90a2-3e159339e570.game_instance.matchmaking_instance.player_1_deck","label":"1 - START-SUB: Create Game Instance and Sessions➛Game Instance➛Matchmaking instance➛Player 1 Deck","reference":"x_168987_flow_de_0_player_deck","reference_display":"Player Deck","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_matchmaking_queue","column_name":"player_1_deck"},{"name":"d5ee69e3-1e1a-48ac-90a2-3e159339e570.game_instance.matchmaking_instance.player_2_deck","label":"1 - START-SUB: Create Game Instance and Sessions➛Game Instance➛Matchmaking instance➛Player 2 deck","reference":"x_168987_flow_de_0_player_deck","reference_display":"Player Deck","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_matchmaking_queue","column_name":"player_2_deck"}]</label_cache>
+        <label_cache>[{"name":"d5ee69e3-1e1a-48ac-90a2-3e159339e570.game_instance.matchmaking_instance.player_2_deck","label":"1 - START-SUB: Create Game Instance and Sessions➛Game Instance➛Matchmaking instance➛Player 2 deck","reference":"x_168987_flow_de_0_player_deck","reference_display":"Player Deck","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_matchmaking_queue","column_name":"player_2_deck"},{"name":"d5ee69e3-1e1a-48ac-90a2-3e159339e570.game_instance.matchmaking_instance.player_1_deck","label":"1 - START-SUB: Create Game Instance and Sessions➛Game Instance➛Matchmaking instance➛Player 1 Deck","reference":"x_168987_flow_de_0_player_deck","reference_display":"Player Deck","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_matchmaking_queue","column_name":"player_1_deck"},{"name":"Updated_1.current.player_1_session","label":"Trigger - Record Updated➛Matchmaking Queue Record➛Player 1 Session","reference":"x_168987_flow_de_0_player_session","reference_display":"Player Session","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_matchmaking_queue","column_name":"player_1_session"},{"name":"d1226321-d072-4d66-ac4d-ce2a342ff809.Records","label":"6 - Look Up Records➛Card Instance Records","reference":"x_168987_flow_de_0_card_instance","reference_display":"Game Card Instance","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1ae4ef7f-211e-4fa9-931f-66d290e34713.Count","label":"6 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d5ee69e3-1e1a-48ac-90a2-3e159339e570.game_instance.player_1","label":"1 - START-SUB: Create Game Instance and Sessions➛Game Instance➛Player 1","reference":"x_168987_flow_de_0_player_session","reference_display":"Player Session","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_game_instance","column_name":"player_1"},{"name":"Updated_1.current.player_2","label":"Trigger - Record Updated➛Matchmaking Queue Record➛Player 2","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_matchmaking_queue","column_name":"player_2"},{"name":"Updated_1.current.player_2_deck","label":"Trigger - Record Updated➛Matchmaking Queue Record➛Player 2 deck","reference":"x_168987_flow_de_0_player_deck","reference_display":"Player Deck","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_matchmaking_queue","column_name":"player_2_deck"},{"name":"d5ee69e3-1e1a-48ac-90a2-3e159339e570.game_instance","label":"1 - START-SUB: Create Game Instance and Sessions➛Game Instance","reference":"x_168987_flow_de_0_game_instance","reference_display":"Game Instance","type":"reference","base_type":"reference","usedInstances":{"efcf16b2-cde0-4985-a769-ab881c0740f0":["gameinstance"]},"attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"b8ac3fdc-405a-494a-9572-24252548faa7"}},{"name":"Updated_1.current","label":"Trigger - Record Updated➛Matchmaking Queue Record","reference":"x_168987_flow_de_0_matchmaking_queue","reference_display":"Matchmaking Queue","type":"reference","base_type":"reference","attributes":{}},{"name":"Updated_1.current.player_1_deck","label":"Trigger - Record Updated➛Matchmaking Queue Record➛Player 1 Deck","reference":"x_168987_flow_de_0_player_deck","reference_display":"Player Deck","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_matchmaking_queue","column_name":"player_1_deck"},{"name":"fea9a6bc-cf84-4477-9ba9-96a61393e167.Records","label":"3 - Look Up Records➛Player Deck Card Records","reference":"x_168987_flow_de_0_player_deck_card","reference_display":"Player Deck Card Slots","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"436bb16b-7d7e-4775-a292-673e6683649b.item.card_definition.cost","label":"3 - For Each➛Player Deck Card Record➛Card Definition➛Cost","reference":"","reference_display":"Cost","type":"integer","base_type":"integer","parent_table_name":"x_168987_flow_de_0_card_definition","column_name":"cost"},{"name":"436bb16b-7d7e-4775-a292-673e6683649b.item.card_definition","label":"3 - For Each➛Player Deck Card Record➛Card Definition","reference":"x_168987_flow_de_0_card_definition","reference_display":"Card Definition","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_player_deck_card","column_name":"card_definition"},{"name":"436bb16b-7d7e-4775-a292-673e6683649b.item.card_definition.power","label":"3 - For Each➛Player Deck Card Record➛Card Definition➛Power","reference":"","reference_display":"Power","type":"integer","base_type":"integer","parent_table_name":"x_168987_flow_de_0_card_definition","column_name":"power"},{"name":"Updated_1.current.player_1","label":"Trigger - Record Updated➛Matchmaking Queue Record➛Player 1","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_matchmaking_queue","column_name":"player_1"},{"name":"8d44078a-9f83-4167-a16d-53756d6b400f.__status__.code","label":"8 - Error Handler➛Error Status➛Code","reference":"","reference_display":"Code","type":"integer","base_type":"integer","attributes":{}},{"name":"8d44078a-9f83-4167-a16d-53756d6b400f.__status__.message","label":"8 - Error Handler➛Error Status➛Message","reference":"","reference_display":"Message","type":"string","base_type":"string","attributes":{}},{"name":"Updated_1.current.game_instance","label":"Trigger - Record Updated➛Matchmaking Queue Record➛Game Instance","reference":"x_168987_flow_de_0_game_instance","reference_display":"Game Instance","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_matchmaking_queue","column_name":"game_instance"},{"name":"d5ee69e3-1e1a-48ac-90a2-3e159339e570.game_instance.matchmaking_instance.player_1_session","label":"1 - START-SUB: Create Game Instance and Sessions➛Game Instance➛Matchmaking instance➛Player 1 Session","reference":"x_168987_flow_de_0_player_session","reference_display":"Player Session","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_matchmaking_queue","column_name":"player_1_session"},{"name":"d5ee69e3-1e1a-48ac-90a2-3e159339e570.game_instance.matchmaking_instance.player_2_session","label":"1 - START-SUB: Create Game Instance and Sessions➛Game Instance➛Matchmaking instance➛Player 2 Session","reference":"x_168987_flow_de_0_player_session","reference_display":"Player Session","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_matchmaking_queue","column_name":"player_2_session"},{"name":"8c66c2cf-2889-4d09-8dee-03526e5e6afd.context","label":"2 - START-SUB: Create Card Instances from a Player Deck➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"d5ee69e3-1e1a-48ac-90a2-3e159339e570.game_instance.player_2","label":"1 - START-SUB: Create Game Instance and Sessions➛Game Instance➛Player 2","reference":"x_168987_flow_de_0_player_session","reference_display":"Player Session","type":"reference","base_type":"reference","parent_table_name":"x_168987_flow_de_0_game_instance","column_name":"player_2"},{"name":"d5ee69e3-1e1a-48ac-90a2-3e159339e570.game_instance.p2_ai","label":"1 - START-SUB: Create Game Instance and Sessions➛Game Instance➛Player 2 AI?","reference":"","reference_display":"Player 2 AI?","type":"boolean","base_type":"boolean","parent_table_name":"x_168987_flow_de_0_game_instance","column_name":"p2_ai","usedInstances":{"be23d25d-2708-48e4-8a0a-f63c6de5d404":["condition"]}}]</label_cache>
         <master>true</master>
         <name>START: Create Game upon successful match</name>
         <natlang/>
@@ -689,15 +737,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>faf0fabc476a3d5017fdc82f316d43bd</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-02 01:18:03</sys_updated_on>
+        <sys_updated_by>kevin.clark</sys_updated_by>
+        <sys_updated_on>2025-03-16 22:04:45</sys_updated_on>
         <type>flow</type>
         <version>2</version>
     </sys_hub_flow_snapshot>
@@ -781,14 +829,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-11-14 11:42:10</sys_created_on>
         <sys_id>3ef0fabc476a3d5017fdc82f316d43bf</sys_id>
-        <sys_mod_count>17</sys_mod_count>
+        <sys_mod_count>19</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-02 01:18:02</sys_updated_on>
+        <sys_updated_by>kevin.clark</sys_updated_by>
+        <sys_updated_on>2025-03-16 22:04:44</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -865,14 +913,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-11-14 11:42:11</sys_created_on>
         <sys_id>7af0fabc476a3d5017fdc82f316d43d7</sys_id>
-        <sys_mod_count>17</sys_mod_count>
+        <sys_mod_count>19</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-02 01:18:02</sys_updated_on>
+        <sys_updated_by>kevin.clark</sys_updated_by>
+        <sys_updated_on>2025-03-16 22:04:44</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -901,7 +949,7 @@
         <sys_mod_count>101</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
-        <sys_package display_value="Flow Designer Designer Model" source="com.glide.hub.designer_backend.model">a2ff82de64f112107f440ccd6385c0e0</sys_package>
+        <sys_package display_value="Flow Designer Designer Model" source="com.glide.hub.designer_backend.model">99d1049e93d30210ef61b2db5cba1000</sys_package>
         <sys_policy/>
         <sys_scope display_value="Global">global</sys_scope>
         <sys_update_name/>
@@ -1001,16 +1049,17 @@
         <display_text/>
         <flow display_value="START: Create Game upon successful match">faf0fabc476a3d5017fdc82f316d43bd</flow>
         <name>Updated</name>
+        <published_version/>
         <remote_sys_id/>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-03-02 01:18:01</sys_created_on>
         <sys_id>59b3ed19c3482210ff1f33bc050131bf</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_scope/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-02 01:18:01</sys_updated_on>
+        <sys_updated_by>kevin.clark</sys_updated_by>
+        <sys_updated_on>2025-03-16 22:04:44</sys_updated_on>
         <trigger_definition display_value="Updated">bb695e60c31322002841b63b12d3aea5</trigger_definition>
-        <trigger_inputs>H4sIAAAAAAAA/+VabXOjNhD+Kwyf2hm3A8Y2dvopdZJeZnJJ6/iuH9KMRkjCZg4LHwgS9yb/vSsQBGPwa9KLc18So9d9dvfZXQnuvuki9CYTFl7ySGBO2O0iuqT6iU4s1mFth3TsNrZo1zBtl5J+27XMHu1YNtFbuo8d5sPQMXZ8Bs8eFyzk2B8v5gyahWxGHM9k3wxzikUQLvQTEcaspbthMBuz2dzHAga72I+gMQgpC/UTs6Wn09QaMD3BfiyfH5HZ6w/6NnL94AFRhgw0w4JMZ/iLxyfoa8xiOZx6ESy8+KxmfXweov2lhsxxCFsIud03nUw9n4aM6yd39y1dgPxoCZx2naHwpGZMSrHZZgaxTKvdNox2v2M6Pcsx29TCDPdrNFNBI2oU9AydPQrGKaOFVlZ0FzJMb7i/KEZMQfWwYKrnx8j7F1bvG3KcywAVYVlf8YiUfrJmMg08wm7mwgt41pLJmXUGfjzj15n8UrPMxbEvcs1CSxzBemwuRZZCKInc22nwMMo3vPB4ik51+gHBfvGEBbigEwsWSVO4ng9GQZluoiAOU+lH58Ob0Rn6+3Q8/HA+QqPz2/Hocjg+P9OfUlxgebliJqGSBWVwngp3uPCYLw0YTYNQgMwRCb0MdUvPfp8S4SW5Oz61XoIcw4BTT21SIQjJu6Ky2CU/KRk+V+s61hhG4WmktGvOHYAg4uif2DAsCr9DAS62QpX6QduSZVhGlJLFcQaYMtxAlp7doKkaGKJGaWXk62ijWrbhTccwvhNzVFzclzizgDL/rOxFme8ij89jIbWVawgFcxZKzcA8/fPp1fDD6fUf57e/qf8Xo5uP+e/xDcx7wFxESAQIU4pK+pdbAJZNDMx08vSKHAtjDluhwgNWmZYaqrDYlReBgu4g2OTWSIWBfvdKLTmKuRaAq8AfjcQhGENoOS3dyxmeKBu6f+bUSI2g/DbBIUIzFC0iNI0dtGQJ5Di9QZf1mvJHd0mDKXlh6Ttdv3+S3sF8RkTJy91PUfnpoxdFkOZK6i0wpsZagVigA7ZouQYzqNFxYb0/JGCuulBScY1KoFznIFuHy9wt01DZI9TsOHbPsKWmTMNyXNOwjS52qWUYA2utwzfCEBUGvErI3C1gRin3/C2YVrVBLrz0a38XN06WOaDWaUufUXF5+AZFq+QXa6cEU/ht1ny2vfu+cEWHaSLjOt02X7x6qkjPDl5dQbYpTTiYfJmEQcxpNZDKNTWPa88jtJ+U5n8+rjBaThluELL1eJdHHA/Kg5PFsxPlBMZ8sZomssb9EkKHEWr3Oj0D8oAFKcDpDgYOwW3XtXs2M2ijW9eKeRSJYAONkjoeNkXeWhdN6jx7h3Tw/QU8KCkoH61NCVnfew/+D1PGEYAMkS/D+0oOmPgeZXnfYSFiZavk+exXCRM7xIgrJbbEbrl92u3aNrEhWkKEcDvMwWan3cUDu2ex3ibs64QVNfr4X87bMjlIQRqix6es623dWr1NN4+YEDLn7V7ocDhEpHNwJl4p+0uDamn4CkLtOuC/XD6P024ZZNn0uuaIaoFyxbMNaOmB2rtC7QRiulLhAdLfoX0JqTzCNNj8R7stqDAsWVZlzW3BPgrds3DsW4Muda36tGC318eKZoxvvoTcMjYljVGurlTblvtJbQgpSrdq8beHN1R8TC1tbShbf1ylHFQq50RuvD7ZR9gfouxIq8hDag8pLUOBW05JZ4EGHRpsonmupqRlVHMWmpgyMIYPpyn5glfufmS5qJyKV5EXVHvXuLPT50oFAs2aOgwcEbCXKS4qPFp7z1Sjr/1qB+IOHDqwGo6U3eYjZXMBUel+81XEzqEmqYtca7PmbutW16zNmyXLL3vKlmXCO0b9aldmNVK85wwv4Y6zVfbI6wEnlTM1OeK36TH3vsYMkSnmk+xNeY7rAhyCYTLVsiFaNuR4kWL/AS8ivVqRAJllvFAvD6EBIgfPIvyRAmUJCxcrlpSNWjynMmsfFbQ9ipDSh5dK7EiEMHKyWIrLpOZ7CMXmPYsOc9BtW7QPahlYq2oxG2NQs7SNVcaGLyw3VBml7ZVrCG/G0kxWfBmlpZ+ksqilgf+kL9nTROeFkUhH//qSFx6ErZqmLgk3RqWkKaDVpd1NzE+qMaNIw1VRlmmVVCiopnU2Xm28f/gHFS85V2urF6W9l61Y9i1Q7v8DDV0dtIsuAAA=</trigger_inputs>
+        <trigger_inputs>H4sIAAAAAAAA/+VaXXOjNhT9KwxP7UzaAWMbO31K89HNzO6mdbzbhzSjEZKwmcXCC4LE3cl/7xUIgvkwtpN04+xLYiQh3XN17rlXwM03XYTebMbCSx4JzAm7XkWXVD/WicX6rOeQvt3DFh0Ypu1SMuq5ljmkfcsm+pHuY4f5MHSKHZ/BtccFCzn2p6slg2YhmxHHC9m3wJxiEYQr/ViEMTvS3TBYTNli6WMBg13sR9AYhJSF+rF5pKe3qTng9gT7sby+R+ZwNB7ZyPWDO0QZMtACCzJf4C8en6GvMYvlcOpFMPHqs7rrw+MQ7S81ZIlDWELI5b7pZO75NGRcP765BRwSv0kpNnvMIJZp9XqG0Rv1TWdoOWaPWpjhUQP+is2iwQ2PANm9YJwyWmCveShkmF5xf1WMmIODYcLUm/eR9y/MPjLkOJeB7YRlfcUlUl7Imsk88Ai7Wgov4FlLZmfWGfjxgn/M7Jf+Yy6OfZH7D1riCOZjS2myNEJZ5F7Pg7tJvuCFx1N0qtMPCPaLKyyAaE4sWCQd7no+uB5lvomCOEytn5yfXk3O0N8n09N35xM0Ob+eTi5Pp+dn+kOKC/ZXzphZqGxBGZyHYtMvPObLDYzmQSjA5oiEXob6SM9+nxDhJTnpHo6eIwROA049tUglDEjeFZXNLvGktPG5WzfFhmEUTCOlVfMIAQgijv6JDcOi8DsUQLFaQDQP6goJxxljynBLSAztFn80GCsaXFPGtyk4VMs20dE3jO8UH0rj9g2PRUCZf1bmSsZQ5PFlLKS3cg+hYMlC6Rm4T/988v703cnHP86vf1P/LyZXH/Lf0yu47w5zESERIEwpKvlfLgFYuuIs88nDC0ZSGHNYChUMqMdTulHFjr33InDQDUhKvhupMdDvvldTTmKuBUAV+KOROITNEFoefO7lAs/UHrp/5gGQboLibYJDhBYoWkVoHjtobSeQ4wzHAzZsyxKDNQ+mIQpT3+j67YNkB/MZESWWu5+i8tUHL4ogZZXcW2BMN6sGsUAH0aLlHsygRoeF9fYpslinUFKhRkUONxGkSxSHhJp9xx4atvSJaViOaxq2McAutQxjbG2kdqvBosL1FxHH3aQxSqPM3yKmqt7OjZcM9nchbLLOdjVPT7JDKfDpKzStkkmsnVJJwdCs+Wx7oj5zhYZpIhWcbpsZXjwppBW/11RgdSUEB5MvszCIOa1KppxT87j2OEL7SXn+58MSzHJycIOQbca7PuJwUD45LTySKA9gzFf1hJA1dkl/nxFqD/tDAxTfArF3BuOxQ3DPde2hzQzaSuBGgw5C8jsCJmmKuDaNbSRj0sThHYT/+xv4JPlXbGwU/6zvrcv83ZxxBCBD5Eshr6n9zPcoy/ueJga1pZLH81xFELZQA8sd0cHAtokNGghq4PaZg81+b4DH9tBiwy6cmwwTDdj/l/OylHxpSItSfMq6XtezpddJ6YgJITPZ7uULh6NBeg/OzCvldLmhWipVQah9DPgvl4/jtGsGuTN93HJAGb5cx2wDWjJQe1OonUDMa3UbIP0d2teQyoNJy57/aKf9SoQl665sOO3v49DOcnBkjQfUtZoTgN3brArtaF59YbilCiWtetZUgG0b5UmjWBQFWbWk22PfK2xSU1sdxeiP65QnFcB5yLY+/tjH2B+iwEjrxadUGdJahgK3nHzOAg06NFhE81xNWcuo5qw0MWewGT6ckeRrVbn6gWWdctKtIy9C7U3jzs6UtVoDmjVV9h8QsOcpIypxtPE5UYO/uqoE4o4dOrZajomD9mNie6lQ6X719cLOopI0adTG/LjbvNU5GzNkaY/XObFlQfCGUb/YI68GK95yLpdwp9kse2TwgJPKOZkc8BvumHtfY4bIHPNZ9vY6x3UBhGCYzLVsiJYNOVyk2L/Dq0iv1h4QzFIv1Gs+aADl4JnCHyhQlrBwVdtJ2ajFSyrz80FB26PcKH3YqMyORAgjZ6s1XSYN3yioaO4sL8zxoGfREThgbNUdYLaqTbtdrfVEx1eMHfVEaXlFAuEtWJqziu+StPTjThYdacCU9MV3mtK8MBLp6F+f8yEGYfVNaEq3rfqTtElXU4LtivGkqg5Fwq2ash5ASSXY1G39zscVbx/+k8qUPCob6xTlveetTfYtRW7/A5EVUATVLQAA</trigger_inputs>
         <trigger_outputs/>
         <trigger_type>record_update</trigger_type>
     </sys_hub_trigger_instance_v2>
@@ -1024,20 +1073,20 @@
         <display_text/>
         <flow display_value="START: Create Game upon successful match">faf0fabc476a3d5017fdc82f316d43bd</flow>
         <generation_source/>
-        <order>7</order>
+        <order>9</order>
         <parent_ui_id>8d44078a-9f83-4167-a16d-53756d6b400f</parent_ui_id>
         <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-03-02 01:18:02</sys_created_on>
         <sys_id>21b32159c3482210ff1f33bc05013169</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-02 01:18:02</sys_updated_on>
+        <sys_updated_by>kevin.clark</sys_updated_by>
+        <sys_updated_on>2025-03-16 22:04:45</sys_updated_on>
         <ui_id>e26fe65b-baeb-4080-849d-0d50ea21e0c7</ui_id>
-        <values>H4sIAAAAAAAA/+1WyW7bMBD9FZVnx6AWy7Zu2Ru0iYE4TQ9RItDkyCZCUapIJXEN/3tHi5MgC5ouhwaob5x5M3zzhuPRxYowbmWuj7SxTHOYLs2RIBFxYTj2Qj8IhiHzxYC6w1TwkZf6bigCnzPSI7LGhS7QwdgNue/6vkepNwrcWejPXE/4DCBAnGYZINKymYKkOfTIDVNVbZSaSwHaoklIUyi2PO88Rw8evpBKlKBJdHHZIwUrMYeFkkSrJ663MlJsBgqhZzWlVxjaZfGi7fPjWOekdeSlqPnQHoE7C1oAEkmZMtAjGdOC2bxcksiWFRpKYGKi1fIesZBYZURIjb0z8jteO6I1LgWsjEPruz8mnVCtOd1jlk0xM7dV2UH5IpccTKuJgJRVyu4+trWASVE3vg1pyuyic1Vl+qSVhNwn2PQFLZVBElDUddbMuzLS6SK/Pd2wPJC6kaRzqpwzdX9i1pZyVtmaz4qAggwTJRkrCqnnSVHmN7IJRi5Zf67w0E9VfouXGjnX/fbF9lFW1j9A+15jPmelrKs4xjQYvO4RszS7ihnzUAuKmHyraiZtZV0NSStDHcJLWdhtvOAGOrrr3h/PiAA6fvVFurOHF9iMhXk0H8geS2vkmZd5VcQVpb5YxZtpiUkUkymUN9hPB3W4jkkvbqMblwi9geAcOGUj6oZDSpnneYymwzGlgoYNHHVKpHgjfn1lFnlp6140WqEuLanp5Hj/7OPRyaGzczr5tP8Bf1fPQGcLcNJcYdOw086szK8hivX0y87B58nXyNnF4bDgHKIaTlXk2jEVkjEmrZSTMcsXsd6d7O1Hzmo1EkFAhyO2NU5H/laAXLcY6r418IeDUISzgNK0nyTYMVuZJOnzXMB6Hevj/el0+/C3UmTIhM0xy/N/q/99+kf79Iu74+eTutkdBxKUMC+M7mZxQIaNt5C0o/xkeXRO57xzdgvE/VsLBCV5TyukLezdb5BHHwuv7JLLHwgmP1ZxCQAA</values>
+        <values>H4sIAAAAAAAA/+1WyW7bMBD9FZVnx6AWy7Zu2Ru0iYE4TQ9RItDkyCZCUapIJXEN/3tHi5MgC5ouhwaobpx5M3zzhuPxxYowbmWuj7SxTHOYLs2RIBFxYTj2Qj8IhiHzxYC6w1TwkZf6bigCnzPSI7LGhS7QwdgNue/6vkepNwrcWejPXE/4DCBAnGYZINKymYKkOfTIDVNVbZSaSwHaoklIUyi2PO88Rw8evpBKlKBJdHHZIwUrMYeFkkSrJ663MlJsBgqhZzWlVxjaZfGi7fPjWOekdeSlqPnQHoE7C1oAEkmZMtAjGdOC2bxcksiWFRpKYGKi1fIesZBYZURIjb0z8jteO6I1LgWsjEPruz8mnVCtOd1jlk0xM7dV2UH5IpccTKuJgJRVyu4+trWASVE3vg1pyuyic1Vl+qSVhNwn2PQFLZVBElDUddbMuzLS6SK/Pd2wPJC6kaRzqpwzdX9i1pZyVtmaz4qAggwTJRkrCqnnSVHmN7IJRi5Zf67w0E9VfouXGjnX/fbF9lFW1j9A+15jPmelrKs4xjQYvO4RszS7ihnzUAuKmHyraiZtZV0NSStDHcJLWdhtvOAGOrrr3h/PiAA6fvVFurOHF9iMhXk0H8geS2vkmZd5VcQVpb5YxZtpiUkUkymUN9hPB3W4jkkvbqMblwi9geAcOGUj6oZDSpnneYymwzGlgoYNHHVKpHgjfn1lFnlp6140WqEuLanp5Hj/7OPRyaGzczr5tP8Bv6tnoLMFOGmusGnYaWdW5tcQxXr6Zefg8+Rr5OzicFhwDlENpypy7ZgKyRiTVsrJmOWLWO9O9vYjZ7UaiSCgwxHbGqcjfytArlsMdd8a+MNBKMJZQGnaTxLsmK1MkvR5LmC9jvXx/nS6ffhbKTJkwuaY5fmv1f8+/aN9+sXd8fNJ3eyOAwlKmBdGd7M4IMPGW0jaUX6yPDqnc945uwXi/q0F4oa0+d7RGmmLe/db5NEfhlf2yeUP9DaYmHUJAAA=</values>
     </sys_hub_action_instance_v2>
-    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=faf0fabc476a3d5017fdc82f316d43bd^sys_idNOT IN29b32159c3482210ff1f33bc05013164,61b32159c3482210ff1f33bc05013161,adb32159c3482210ff1f33bc05013163,e1b32159c3482210ff1f33bc05013162,edb32159c3482210ff1f33bc05013162"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=faf0fabc476a3d5017fdc82f316d43bd^sys_idNOT IN29b32159c3482210ff1f33bc05013164,61b32159c3482210ff1f33bc05013161,adb32159c3482210ff1f33bc05013163,d0578a4e47d06650089ce5e5316d436d,e1b32159c3482210ff1f33bc05013162,edb32159c3482210ff1f33bc05013162"/>
     <sys_hub_sub_flow_instance_v2 action="INSERT_OR_UPDATE">
         <attributes/>
         <comment>Deal Player 2</comment>
@@ -1103,6 +1152,27 @@
     </sys_hub_sub_flow_instance_v2>
     <sys_hub_sub_flow_instance_v2 action="INSERT_OR_UPDATE">
         <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="START: Create Game upon successful match">faf0fabc476a3d5017fdc82f316d43bd</flow>
+        <generation_source/>
+        <order>7</order>
+        <parent_ui_id>be23d25d-2708-48e4-8a0a-f63c6de5d404</parent_ui_id>
+        <subflow display_value="AI: 1 Player - Generate and Process Gameplay Suggestion">83a9e5d1411422107f449aa8e6578a71</subflow>
+        <subflow_inputs>H4sIAAAAAAAA/42TXW+bMBSG/8rka4gwkA9yN7XKVGlbpXXrTVWhE/uQWDKG2iZNFuW/7zjQhG296FXEy/l43+eQpyNTki1ZsoYCp5LnnOdpypN5lecFwAJn0/kC5hmLmIEaqXJDP8o4D0YgqTvQXZCPRzlFnBWYxRw5xPkCRFwkkMYZ8mmRZTR+nkxCd/nWfjrRAKlcq+HwOMwhRWyVlhYNWz49R6wFSz0eLVse/3n1Ueca1qip9AsNurtafz+QP7RBtVghLbpIX4cZP0Z6Y2WwxSOGe49GIvmpQDuMWA1Ggm/s4aJYBHlv9FXYKuP7wDXsnfpNW7M0Gi1esn3JZ4tiMS8r3byWEsuk/AsgG5WXA8gh56dR0OoWPDx42wnf2QvkRgl0PUiJFXTa34y1vuC+9aoxfYuHtf6gK9Horjbfe8DssmB05M6RY2wDtYBhYFI9bJvXC+KVMmfAw0vdCNCjUgQrtiuFOnwGbttYTxOdsKr3HDHw3qp150OkI+vUz/9P24vvHRc11mStrKFtldmUrW126myH0tWTjaaHyUDAqY2ZgAhrJ3R2mKxIvz3Lj2BV4PaNxlBz2PjLqJcO74LrQiYViiSLgU+TOE+gov9MwWOYZTxNRZXIAtkpYu7gbjQ4dyVKIcqXLvDo+Q4ky/5YoeUM4jOZ2uEA7fT8BxSrdTnvAwAA</subflow_inputs>
+        <sys_class_name>sys_hub_sub_flow_instance_v2</sys_class_name>
+        <sys_created_by>kevin.clark</sys_created_by>
+        <sys_created_on>2025-03-16 22:04:44</sys_created_on>
+        <sys_id>d0578a4e47d06650089ce5e5316d436d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_updated_by>kevin.clark</sys_updated_by>
+        <sys_updated_on>2025-03-16 22:04:44</sys_updated_on>
+        <ui_id>efcf16b2-cde0-4985-a769-ab881c0740f0</ui_id>
+        <wait_for_completion>true</wait_for_completion>
+    </sys_hub_sub_flow_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
         <comment>Create Player 1 Card instances</comment>
         <display_text/>
         <flow display_value="START: Create Game upon successful match">faf0fabc476a3d5017fdc82f316d43bd</flow>
@@ -1143,10 +1213,10 @@
         <ui_id>f7512ba4-c0b0-4f57-8c45-c7f97bc0416f</ui_id>
         <wait_for_completion>true</wait_for_completion>
     </sys_hub_sub_flow_instance_v2>
-    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=faf0fabc476a3d5017fdc82f316d43bd^sys_idNOT IN25b32159c3482210ff1f33bc05013168,a1b32159c3482210ff1f33bc05013160"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=faf0fabc476a3d5017fdc82f316d43bd^sys_idNOT IN25b32159c3482210ff1f33bc05013168,a1b32159c3482210ff1f33bc05013160,cc578a4e47d06650089ce5e5316d4366"/>
     <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
         <attributes/>
-        <block display_value="">68b3ad19c3482210ff1f33bc0501318a</block>
+        <block display_value="">53474a4e47d06650089ce5e5316d43df</block>
         <comment/>
         <connected_to/>
         <decision_table/>
@@ -1155,24 +1225,24 @@
         <flow_variables_assigned/>
         <generation_source/>
         <logic_definition display_value="Top Level Catch">35d60003e6022010a5e40cdd1254dd23</logic_definition>
-        <order>6</order>
+        <order>8</order>
         <outputs_assigned/>
         <parent_ui_id/>
         <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-03-02 01:18:02</sys_created_on>
         <sys_id>25b32159c3482210ff1f33bc05013168</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-02 01:18:02</sys_updated_on>
+        <sys_updated_by>kevin.clark</sys_updated_by>
+        <sys_updated_on>2025-03-16 22:04:45</sys_updated_on>
         <ui_id>8d44078a-9f83-4167-a16d-53756d6b400f</ui_id>
-        <values>H4sIAAAAAAAA/+1ZbU/jOBD+K6eIj6WXQktLvyG4SpwWKl27++WKItd2inddOxs7BRb1v9/4JW7SltXCFh0fIqEqmRlP5uWZxzF5jmShs0KrqbxQii1ENPz3rhUxYWRw/RwJtKTRMEoSpZEuVJJErWiFeGGEz7NoRXPFpJhFw1nUacezqDWLFM0Z4uwH0qAZyXyJtNX/PRnfWgMslxmnj+P5V4r1BN/TJQID8Dbi8uGKmjhoPhxdXVxOr8e3k+nF9PPEGWBJqPV1LTRd0Ny7I7R9lDLKSZIiTLVyxhNmHnODspER2mXPs9ksKtj0KaOf0Jxyczs0P6W/mfEIPzlFJJGCPwWLFHFFg/6eCR1UQeo8BznbckpoigquE1u/3dW8FtGlSbVUIWxqmdA8l3niWhYMdV5sDJdIEKRl/lLcMicuIKvrVNY9JpyKhb4Pym5sftfwBzVeUqXQwtV+onMmFrb0Xvy71fceD1p8Vff5qtrf+GzfufwnPy9/HBpgOvCT2Wgfacj8l6r/qjJc2LT/mNjJP3wxCvZZsO8FvSabpBFJ5/05Pj4nZ/3j7vmAHA8GJD4ekDN8SnqDbkrJVsPrSHKcEkywTGxpDIsFmy1iKW0pp0sqdLJEWQbISbJcrli1XUBb7QUHUTuFXiTENqPtytGGTFF706MvCDhwbjuQvYVWRMH5PlTLen6vGOez3hagaixco1e4OsKr8sKC5ytaoTZHYtGuTP/Ryuq8vw1FvGH9eg37CmEq4+jpS7O9NNtLs70020uzvTTbywG3F3zPOMmpqJ5rTEigylAO95rm4DSyZGOBDeU1ggoSYInncli1B6qgNyAFUgunpN2NDSQK5yzTZgJWILFdKoXwxHXLknsuEP/ExDe3pBI+HNEKduWcmtDAgIWoLCL5TrCMODel5tJlXq+D3udsN3GLi2jYaUX0UVNBKAk5hKkMEgPKMWAyCAwKXSyAI8V+wBO7sbFLKaSHfYXCbeKr58TpFUwCNLnAushpWRnJMFWuMO5mnJnWOLU2k+ItJS+W4tblbBrj+KrSGC+52ulYoSASmplsTfg+l3RyLx/+KUMdMWEL45VcYsTDHdIAzXmhTaCmw+pJXXKk1CYaSDn5XpglLhL/sMQlst6LmnUrYNlPyCvh7Abmg6FZlUHVwBxC3cbyTch8pxR6j8Od1D2eTw6I57hB9FsRfbcF4BpvN+TckPOHhHJDtA3Rflh03vlWxmn/BPXQSW/eOT2JO/H8rEMRXJz2Bx3c755XWv2Xgac/nG36XfsO4FvuDg1bLR+XwpKOTJ8O1PTBIZvuu3Z5QCActt+eRqqFrhNLKHX1OAry+kEU9C8dQe0W89bDZ/Qer7JUmAeQyremzi4fWsbcJriX3hzKCSCkH3cGfYxPz6iZgF6vdzrvd2NEujEhBFcmYBPETlQe+XMpOUViC/pTiOvPkcnofeB/wP340OBPfdb7qbDU/v98+OKL58pjO9QHM/MP6KmRXZdfRY3iCTDBcFX0IPNvZng2svV/PpOEPF8dAAA=</values>
+        <values>H4sIAAAAAAAA/+1ZUU/jOBD+K6eIx9JL25RC3xBcJU4Lla7dfbmgyLGd4l3XycZOga36328cO27SltXCFh0PkVCVzNjOzHyfv4nJ2ksLlRVKztNLKdlCeON/7zseE9oG12tPoCX1xl4USYVUIaPI63grxAttXIfeiuaSpSL0xqHX6/qh1wk9nC4zTp+m8VeKFXjW2kSouTrBq+qinPQVrVCXI7HozlTOxKJc4WRV+kJvs4G7JZUSLd44f7Mb0Aw/0CUya0x4+nhNdd40H0+uL6/mN9O72fxy/nnWiDv0boSiC5rb/AjtniSMchIlCFMlzeAZ04+5RdlEG8tp6zAMvYLNnzP6CcWU69ux/qnWC/WK8JNTRKJU8Gc3IkFcUud/YEI5l7OalZ2d7SxKaIIKrqISr/3ZvBHRlU61ciGsANWI5nmaR4YibqDKi+3AJRIEqTR/Ke40Jyag0terzXuKOBUL9eCcga9/N/DXwBzqugXWmn+3+nbFoxZfNtd8Ve1vbbbvXP7+z8vvOwA0Aj/ZG90TBZn/UvVfVYbLMu0/ZqXSHL8YBfss2PeC3hA3YHQRxHgQ9E8v8AU5DYIgPkWDpH9KSBCfoSHye6PBDuBNJlmRq4bgNCpLo1XTjdkRlmos5XRJhYqWKMuAOVGWpytWhwtkq7vgYOomgEVESjC6phxdyBR1txh9QTlDcYlA9hZZEQXnh1idNvN7xXY+G+4QSlIIkbMfSMc/SfMlMjz5eza9gyHQVwiTGUfPX9r20raXtr207aVtL217OWJ7wQ+Mk5yK+rlGiy24MpTDvaI5sM0rN39JNEhXG2rIwBSrrTDrAHXAr0kDIuNOSfuNDSwS5yxTmpErsJRVq4zwxE2nFNtcIP6JiW9mSi18OKIV7NosqkODAcxFVTKE7wXLiFmm8lyZzJt1UIcW20+8xMkb9zoefVJUEEpcDm6XOIsmyRQ44gyaFSYWwFWyH/DEwNfjEgrpYVshdxvZ6hlzcg3MBIEtsCpyWlUmZZhKUxhzM800NMatNHPtyJQXS3FnctbAGP2oAWMt13uIFRIioZnOVodvc0lmD+njP1WoEybKwlgnTzHi7g4pkPC4UDpQjbB8llccSbmNBlKOvhd6ionEPiwyiWwOsmbTcVy23euVdDbN6oOxWVZBNcjsQt3l8q3LfK8U6sCCe6lbPvePyGe/ZfRbGX2/Q+CGbrfi3Irzh6RyK7St0H5Ydt5bKP1k1IdzR38Y9wZ9v+fHZz2K4GIwOu/hUXBRg/ovTU97WNri3fgOYCE3L/E7kE8rYyVHGqcjgX5+TNAtaldHJMJx8bYyUi90U1hcqevHQ7A3D4bgf+lIWLaYtx4Gvfd4laVCP4DUvjX19vWwVMxdgXvpzaHaAYSM/N75COPBGdU7YDgcDuJR4CMS+IQQXNsB2yD2orLMj9OUUyR2qD+HuP6c6Izeh/5H7MfHJn9isz4shZX3/9fDF188V5bbrj6Y6X9Az7Xtpvoqqh3PwAmG66bHNP+mN8/WtvkPhRC4wF8dAAA=</values>
         <workflow_reference/>
     </sys_hub_flow_logic_instance_v2>
     <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
         <attributes/>
-        <block display_value="">acb3ad19c3482210ff1f33bc05013181</block>
+        <block display_value="">5f474a4e47d06650089ce5e5316d43d7</block>
         <comment/>
         <connected_to/>
         <decision_table/>
@@ -1188,17 +1258,42 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-03-02 01:18:02</sys_created_on>
         <sys_id>a1b32159c3482210ff1f33bc05013160</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-02 01:18:02</sys_updated_on>
+        <sys_updated_by>kevin.clark</sys_updated_by>
+        <sys_updated_on>2025-03-16 22:04:44</sys_updated_on>
         <ui_id>42936f65-7626-4a83-b007-94fd28fdcfcb</ui_id>
         <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
         <workflow_reference/>
     </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">9f474a4e47d06650089ce5e5316d43db</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="START: Create Game upon successful match">faf0fabc476a3d5017fdc82f316d43bd</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>6</order>
+        <outputs_assigned/>
+        <parent_ui_id>42936f65-7626-4a83-b007-94fd28fdcfcb</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>kevin.clark</sys_created_by>
+        <sys_created_on>2025-03-16 22:04:44</sys_created_on>
+        <sys_id>cc578a4e47d06650089ce5e5316d4366</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_updated_by>kevin.clark</sys_updated_by>
+        <sys_updated_on>2025-03-16 22:04:44</sys_updated_on>
+        <ui_id>be23d25d-2708-48e4-8a0a-f63c6de5d404</ui_id>
+        <values>H4sIAAAAAAAA/+1VTW8aMRD9K8jnZbUfLA1cKkQUCSltqibKpY1Wg3cWrJr11vZCKOK/d7wfgBqiEjXH3vCb8cx7b/3EjqnKlpU1D2pijFgUbPztyWOicBj93jGRsTHLA8jDEQ95HA3jKAiiq0E4H8bzMMpiQIiZxwpYIXVyVWTCClWkNeCxNcjKFWam90XCFnUv6k1mH6mSCVMS8vhqA18KmWlsOZWgaaJFzca7P0qXcpQwR0mt045k77ZGXmdvt6XDjdWiWLTn23bKfQcqnTlWYeAxfLZYZEh8cpAGPbaCIgOr9PaAaITsrpBHYCkKS+OYa3424hctjJLENeZIEjk2xcMxbY1r4PwaLBCVittKt618qQRH05iTYQ6VtNNTrGm4K53U5oqFuexuK1mtis+NI+wwoPtOhFSGSGDplDrqrY78fqk2XzuWN6KoXWmLUnGQhxNY8m5eWcdnx1DiigalKyhLcjQttVqL+jJxWfkLSQc/l2pDS90b9YE74j4ZC/4N4dc1/AhaOBWfaAxdbmjOwQie1u+ZxpFNyPYeM1szlWDMUSS5m/6sHMVGcisubfxxV7gWpZ3Q5jW2OvZeG48RJHkSBsn5pzcYnnlgJ8nY7bIEcTjCuB9iCP3BFfD+KICoH2OYjOJ4hMmHwF/QBBJiLJC7fhmlIPb771UQxFkt60Wg3m3u23J4gRkvcnjeoLeEL/pL+JyUC7MXBMH/8P1z+IRJm8i02url75i9JxegZufBay4MUXtw2Kz7B3OFLT0uwU+hjdI/nKgjtv8N0dPjpQsHAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=faf0fabc476a3d5017fdc82f316d43bd"/>
     <sys_hub_flow_variable action="delete_multiple" query="model=faf0fabc476a3d5017fdc82f316d43bd"/>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_faf0fabc476a3d5017fdc82f316d43bd^sys_idNOT IN4a21e84d6d5822107f448d5f282fc3e5,4e21e84d6d5822107f448d5f282fc3ec,8621e84d6d5822107f448d5f282fc3e9"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>changed_fields</element>
         <help/>
@@ -1212,7 +1307,7 @@
         <sys_created_on>2023-11-14 11:42:11</sys_created_on>
         <sys_id>4a21e84d6d5822107f448d5f282fc3e5</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Changed Fields</sys_name>
+        <sys_name/>
         <sys_package display_value="SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
@@ -1235,7 +1330,7 @@
         <sys_created_on>2023-11-14 11:42:11</sys_created_on>
         <sys_id>4e21e84d6d5822107f448d5f282fc3ec</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Table Name</sys_name>
+        <sys_name/>
         <sys_package display_value="SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
@@ -1258,7 +1353,7 @@
         <sys_created_on>2023-11-14 11:42:11</sys_created_on>
         <sys_id>8621e84d6d5822107f448d5f282fc3e9</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Record</sys_name>
+        <sys_name/>
         <sys_package display_value="SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
@@ -1269,29 +1364,28 @@
         <url_target/>
     </sys_documentation>
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_faf0fabc476a3d5017fdc82f316d43bd"/>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_faf0fabc476a3d5017fdc82f316d43bd"/>
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_faf0fabc476a3d5017fdc82f316d43bd"/>
     <sys_hub_flow action="UPDATE">
         <sys_id>c7c46e7c472a3d5017fdc82f316d4382</sys_id>
         <latest_snapshot>faf0fabc476a3d5017fdc82f316d43bd</latest_snapshot>
-        <compiler_build>glide-xanadu-07-02-2024__patch3-10-23-2024_11-01-2024_2230.zip</compiler_build>
+        <compiler_build>glide-yokohama-12-18-2024__patch0-01-14-2025_01-22-2025_0439.zip</compiler_build>
     </sys_hub_flow>
     <sys_flow_trigger_plan action="delete_multiple" query="plan_id=c7c46e7c472a3d5017fdc82f316d4382^sys_idNOT IN47f03ebc476a3d5017fdc82f316d4377"/>
     <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
         <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
         <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"47f03ebc476a3d5017fdc82f316d4377","name":"plan","plan_signature":null}}</plan>
         <plan_id>c7c46e7c472a3d5017fdc82f316d4382</plan_id>
-        <snapshot>600a2c056d9c22107f448d5f282fc350</snapshot>
+        <snapshot>2b87028e47d06650089ce5e5316d43c9</snapshot>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-11-14 11:42:12</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>47f03ebc476a3d5017fdc82f316d4377</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-02 01:18:04</sys_updated_on>
+        <sys_updated_by>kevin.clark</sys_updated_by>
+        <sys_updated_on>2025-03-16 22:04:46</sys_updated_on>
         <trigger display_value="">87f03ebc476a3d5017fdc82f316d4375</trigger>
     </sys_flow_trigger_plan>
     <sys_flow_subflow_plan action="delete_multiple" query="plan_id=c7c46e7c472a3d5017fdc82f316d4382"/>
