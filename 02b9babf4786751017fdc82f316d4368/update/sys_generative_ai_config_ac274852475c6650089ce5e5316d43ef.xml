@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_generative_ai_config">
     <sys_generative_ai_config action="INSERT_OR_UPDATE">
-        <active>false</active>
+        <active>true</active>
         <additional_configurations>{"skill_config_id":"3b4bcd19415022107f449aa8e6578a84"}</additional_configurations>
         <ai_suggested>false</ai_suggested>
         <definition>634bcd19415022107f449aa8e6578a2c</definition>
@@ -9,7 +9,7 @@
         <min_word_count>-1</min_word_count>
         <model>llm_generic</model>
         <name>Gameplay Suggestion</name>
-        <parent display_value="OneExtend Capability Definition: SN App Gameplay Suggestion Skill single opponent">7f42e15941d022107f449aa8e6578a77</parent>
+        <parent display_value="OneExtend Capability Definition: SN App Gameplay Suggestion Skill single opponent">f99e09b1395022107f441a02d7b38dc1</parent>
         <prompt>Game Overview
 
 You are Player 2 in a card game where your goal is to play a card into one of three Locations.
@@ -43,9 +43,15 @@ Your "output' should be a JSON object with the selected card and location, along
   "end_turn": &lt;true/false&gt;
 }
 
+If your current_energy is less than the cost of any the cards in your hand, return null for card_selected and location_selected and end_turn should be true.
+
+If your current_energy is zero, then you can't play a card. Return null for card_selected and location_selected and end_turn should be true.
+
 Your rationale should be brief and it is intended to explain to the opponent why you played it.   When identifying things like the Location or the Card, use a human readable name or location number in your explanation.  Try to add a bit of personality to your rationale to indicate whether you think you are winning, losing or neutral.
 
-If you won't be able to play a card (due to insufficient current energy), return nothing in the card_selected, location_selected and rationale fields with "end_turn" set to true.  
+If no valid move exists, return null for card_selected and location_selected and "end_turn": true.
+
+If "end_turn" is false, explicitly include a statement confirming how much energy remains and what potential second move could be played.
 
 If you are playing a card and will have enough remaining energy to play ANOTHER card from your hand in your current turn after the current_energy is reduced by the cost of the card you're playing, set end_turn to false. In the rationale, say what you think the starting current energy value was, and the remaining current energy after playing the card.
 
@@ -73,6 +79,7 @@ Decision-Making Steps
 	•	Identify which cards in your Hand have a Cost ≤ Current Energy.
 	•	Evaluate each card’s Power and Ability.
 	•	Consider how playing each card would impact your chances of winning a Location.
+	•	Subtract Energy for Multiple Plays: If playing a card, update your available energy before considering playing another. The remaining energy should be recalculated after each play.
 	6.	Select the Best Card and Location:
 	•	Choose the best card that maximizes your chances of winning or securing an advantage.
 	•	Choose a Location where playing this card will have the most strategic benefit.
@@ -82,6 +89,13 @@ Decision-Making Steps
 	•	Disrupting an opponent’s advantage.
 	•	Synergizing with card or Location Abilities.
 	•	Consider how remaining Energy will be used. If the chosen card doesn’t consume all your Energy, keep in mind that you can play additional cards before ending your turn.
+	•	Penalty for Over-budget Moves: If no valid card can be played within the remaining energy, return end_turn: true.
+	•	Prioritize Spread: If you have at least one Location where you have not yet played a card, prioritize playing into that Location before adding another card to a Location where you have already played this turn.
+	•	Check Location Needs: If you already have two cards in a Location and there are open slots elsewhere, evaluate whether reinforcing an existing lead is necessary or if spreading power will increase your chances of winning more Locations.
+	•	Reinforce energy accounting at every step.
+	•	Discourage over-committing to a single Location.
+	•	Encourage balance between securing leads and contesting new Locations.
+
 
 Example JSON Payload for LLM Input
 
@@ -179,27 +193,27 @@ Here’s an example JSON structure that includes all the necessary elements - th
 }
 
 The input for your decision is as follows - please only return the JSON string requested and no other information: 
- {{GenerateOutput.output}} </prompt>
+ {{GenerateOutput.output}}</prompt>
         <prompt_template_role>user</prompt_template_role>
         <request_tokens>15134</request_tokens>
         <show_in_prompt_library>true</show_in_prompt_library>
-        <state>archived</state>
+        <state>published</state>
         <sys_class_name>sys_generative_ai_config</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-03-15 23:18:25</sys_created_on>
+        <sys_created_by>kevin.clark</sys_created_by>
+        <sys_created_on>2025-03-17 07:23:11</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>f99e09b1395022107f441a02d7b38dc1</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_id>ac274852475c6650089ce5e5316d43ef</sys_id>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name>634bcd19415022107f449aa8e6578a2c</sys_name>
         <sys_overrides/>
         <sys_package display_value="SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_update_name>sys_generative_ai_config_f99e09b1395022107f441a02d7b38dc1</sys_update_name>
+        <sys_update_name>sys_generative_ai_config_ac274852475c6650089ce5e5316d43ef</sys_update_name>
         <sys_updated_by>kevin.clark</sys_updated_by>
-        <sys_updated_on>2025-03-17 07:44:01</sys_updated_on>
+        <sys_updated_on>2025-03-17 07:44:02</sys_updated_on>
         <temperature>0.2</temperature>
-        <version>3</version>
+        <version>4</version>
     </sys_generative_ai_config>
 </record_update>

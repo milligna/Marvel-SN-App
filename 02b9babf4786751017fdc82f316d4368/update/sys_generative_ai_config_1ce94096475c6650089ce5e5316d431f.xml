@@ -9,7 +9,7 @@
         <min_word_count>-1</min_word_count>
         <model>llm_generic</model>
         <name>Gameplay Suggestion</name>
-        <parent display_value="OneExtend Capability Definition: SN App Gameplay Suggestion Skill single opponent">7f42e15941d022107f449aa8e6578a77</parent>
+        <parent display_value="OneExtend Capability Definition: SN App Gameplay Suggestion Skill single opponent">f99e09b1395022107f441a02d7b38dc1</parent>
         <prompt>Game Overview
 
 You are Player 2 in a card game where your goal is to play a card into one of three Locations.
@@ -45,7 +45,10 @@ Your "output' should be a JSON object with the selected card and location, along
 
 Your rationale should be brief and it is intended to explain to the opponent why you played it.   When identifying things like the Location or the Card, use a human readable name or location number in your explanation.  Try to add a bit of personality to your rationale to indicate whether you think you are winning, losing or neutral.
 
-If you won't be able to play a card (due to insufficient current energy), return nothing in the card_selected, location_selected and rationale fields with "end_turn" set to true.  
+If you won't be able to play a card (due to insufficient current energy), return nothing in the card_selected, location_selected and rationale fields with "end_turn" set to true. 
+
+If the location for your side (player_2) has 4 slots occupied, you cannot use that location.  Select a different location or make no play. 
+
 
 If you are playing a card and will have enough remaining energy to play ANOTHER card from your hand in your current turn after the current_energy is reduced by the cost of the card you're playing, set end_turn to false. In the rationale, say what you think the starting current energy value was, and the remaining current energy after playing the card.
 
@@ -68,6 +71,7 @@ Decision-Making Steps
 	•	Identify any active opponent’s card Abilities in play.
 	4.	Review Available Locations:
 	•	Identify which Locations have Empty Slots where you can play a card.
+	•	once all 4 slots in a location for your side (the player_2 side) are occupied you cannot play a card to that location!
 	•	Consider how the Location Ability may impact your strategy.
 	5.	Review Your Hand:
 	•	Identify which cards in your Hand have a Cost ≤ Current Energy.
@@ -179,27 +183,27 @@ Here’s an example JSON structure that includes all the necessary elements - th
 }
 
 The input for your decision is as follows - please only return the JSON string requested and no other information: 
- {{GenerateOutput.output}} </prompt>
+ {{GenerateOutput.output</prompt>
         <prompt_template_role>user</prompt_template_role>
         <request_tokens>15134</request_tokens>
-        <show_in_prompt_library>true</show_in_prompt_library>
-        <state>archived</state>
+        <show_in_prompt_library>false</show_in_prompt_library>
+        <state>finalized</state>
         <sys_class_name>sys_generative_ai_config</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-03-15 23:18:25</sys_created_on>
+        <sys_created_by>kevin.clark</sys_created_by>
+        <sys_created_on>2025-03-17 07:35:10</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>f99e09b1395022107f441a02d7b38dc1</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_id>1ce94096475c6650089ce5e5316d431f</sys_id>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name>634bcd19415022107f449aa8e6578a2c</sys_name>
         <sys_overrides/>
         <sys_package display_value="SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
-        <sys_update_name>sys_generative_ai_config_f99e09b1395022107f441a02d7b38dc1</sys_update_name>
+        <sys_update_name>sys_generative_ai_config_1ce94096475c6650089ce5e5316d431f</sys_update_name>
         <sys_updated_by>kevin.clark</sys_updated_by>
-        <sys_updated_on>2025-03-17 07:44:01</sys_updated_on>
+        <sys_updated_on>2025-03-17 07:42:10</sys_updated_on>
         <temperature>0.2</temperature>
-        <version>3</version>
+        <version>4</version>
     </sys_generative_ai_config>
 </record_update>
