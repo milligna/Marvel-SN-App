@@ -164,7 +164,7 @@
                                                                 },
                                                                 {
                                                                     "type": "JSON_LITERAL",
-                                                                    "value": "! You can manage your decks below:"
+                                                                    "value": "! You can manage your decks or launch a game below:"
                                                                 }
                                                             ],
                                                             "type": "LIST_CONTAINER"
@@ -217,586 +217,6 @@
                                             },
                                             "slot": null,
                                             "styles": null
-                                        },
-                                        {
-                                            "definition": {
-                                                "id": "d356d14b6e293a3020a244b63d278d8f",
-                                                "type": "MACROPONENT"
-                                            },
-                                            "elementId": "column_layout_2",
-                                            "elementLabel": "Debug Column",
-                                            "eventMappings": [],
-                                            "isHidden": {
-                                                "type": "JSON_LITERAL",
-                                                "value": null
-                                            },
-                                            "overrides": {
-                                                "composition": [
-                                                    {
-                                                        "definition": {
-                                                            "id": "d356d14b6e293a3020a244b63d278d8f",
-                                                            "type": "MACROPONENT"
-                                                        },
-                                                        "elementId": "__ohjaagfiijBUZLeeddLeeCqgwoLvBii__column_1",
-                                                        "elementLabel": "Column 1",
-                                                        "eventMappings": [],
-                                                        "isHidden": {
-                                                            "type": "JSON_LITERAL",
-                                                            "value": null
-                                                        },
-                                                        "overrides": {
-                                                            "composition": [
-                                                                {
-                                                                    "definition": {
-                                                                        "id": "4335ba6dca80378f7ba7a67cd6667bec",
-                                                                        "type": "MACROPONENT"
-                                                                    },
-                                                                    "elementId": "stylized_text_8",
-                                                                    "elementLabel": "AI User State Parameter",
-                                                                    "eventMappings": [],
-                                                                    "isHidden": {
-                                                                        "type": "JSON_LITERAL",
-                                                                        "value": true
-                                                                    },
-                                                                    "preset": null,
-                                                                    "propertyValues": {
-                                                                        "configAria": {
-                                                                            "container": {},
-                                                                            "type": "MAP_CONTAINER"
-                                                                        },
-                                                                        "css": {
-                                                                            "type": "JSON_LITERAL",
-                                                                            "value": "* { \n    color: #dee2fb;\n    \n    }"
-                                                                        },
-                                                                        "tag": {
-                                                                            "type": "JSON_LITERAL",
-                                                                            "value": "p"
-                                                                        },
-                                                                        "text": {
-                                                                            "transform": {
-                                                                                "operands": {
-                                                                                    "container": [
-                                                                                        {
-                                                                                            "binding": {
-                                                                                                "address": [
-                                                                                                    "AI user ID"
-                                                                                                ]
-                                                                                            },
-                                                                                            "type": "STATE_BINDING"
-                                                                                        },
-                                                                                        {
-                                                                                            "type": "JSON_LITERAL",
-                                                                                            "value": " - AI User"
-                                                                                        }
-                                                                                    ],
-                                                                                    "type": "LIST_CONTAINER"
-                                                                                },
-                                                                                "operator": "CONCAT"
-                                                                            },
-                                                                            "type": "CLIENT_TRANSFORM"
-                                                                        }
-                                                                    },
-                                                                    "slot": null,
-                                                                    "styles": {}
-                                                                },
-                                                                {
-                                                                    "definition": {
-                                                                        "id": "4335ba6dca80378f7ba7a67cd6667bec",
-                                                                        "type": "MACROPONENT"
-                                                                    },
-                                                                    "elementId": "stylized_text_9",
-                                                                    "elementLabel": "AI Deck State Parameter",
-                                                                    "eventMappings": [],
-                                                                    "isHidden": {
-                                                                        "type": "JSON_LITERAL",
-                                                                        "value": true
-                                                                    },
-                                                                    "preset": null,
-                                                                    "propertyValues": {
-                                                                        "configAria": {
-                                                                            "container": {},
-                                                                            "type": "MAP_CONTAINER"
-                                                                        },
-                                                                        "css": {
-                                                                            "type": "JSON_LITERAL",
-                                                                            "value": "* { \n    color: #dee2fb;\n    \n    }"
-                                                                        },
-                                                                        "tag": {
-                                                                            "type": "JSON_LITERAL",
-                                                                            "value": "p"
-                                                                        },
-                                                                        "text": {
-                                                                            "transform": {
-                                                                                "operands": {
-                                                                                    "container": [
-                                                                                        {
-                                                                                            "binding": {
-                                                                                                "address": [
-                                                                                                    "AI Deck ID"
-                                                                                                ]
-                                                                                            },
-                                                                                            "type": "STATE_BINDING"
-                                                                                        },
-                                                                                        {
-                                                                                            "type": "JSON_LITERAL",
-                                                                                            "value": " - AI DecK"
-                                                                                        }
-                                                                                    ],
-                                                                                    "type": "LIST_CONTAINER"
-                                                                                },
-                                                                                "operator": "CONCAT"
-                                                                            },
-                                                                            "type": "CLIENT_TRANSFORM"
-                                                                        }
-                                                                    },
-                                                                    "slot": null,
-                                                                    "styles": {}
-                                                                },
-                                                                {
-                                                                    "definition": {
-                                                                        "id": "4335ba6dca80378f7ba7a67cd6667bec",
-                                                                        "type": "MACROPONENT"
-                                                                    },
-                                                                    "elementId": "stylized_text_4",
-                                                                    "elementLabel": "Debug Queue",
-                                                                    "eventMappings": [],
-                                                                    "isHidden": {
-                                                                        "type": "JSON_LITERAL",
-                                                                        "value": true
-                                                                    },
-                                                                    "preset": null,
-                                                                    "propertyValues": {
-                                                                        "configAria": {
-                                                                            "container": {},
-                                                                            "type": "MAP_CONTAINER"
-                                                                        },
-                                                                        "css": {
-                                                                            "type": "JSON_LITERAL",
-                                                                            "value": "* { \n    color: #dee2fb;\n    \n    }"
-                                                                        },
-                                                                        "tag": {
-                                                                            "type": "JSON_LITERAL",
-                                                                            "value": "p"
-                                                                        },
-                                                                        "text": {
-                                                                            "transform": {
-                                                                                "operands": {
-                                                                                    "container": [
-                                                                                        {
-                                                                                            "binding": {
-                                                                                                "address": [
-                                                                                                    "Matchmaking Queue"
-                                                                                                ]
-                                                                                            },
-                                                                                            "type": "STATE_BINDING"
-                                                                                        },
-                                                                                        {
-                                                                                            "type": "JSON_LITERAL",
-                                                                                            "value": " - Queue"
-                                                                                        }
-                                                                                    ],
-                                                                                    "type": "LIST_CONTAINER"
-                                                                                },
-                                                                                "operator": "CONCAT"
-                                                                            },
-                                                                            "type": "CLIENT_TRANSFORM"
-                                                                        }
-                                                                    },
-                                                                    "slot": null,
-                                                                    "styles": {}
-                                                                },
-                                                                {
-                                                                    "definition": {
-                                                                        "id": "4335ba6dca80378f7ba7a67cd6667bec",
-                                                                        "type": "MACROPONENT"
-                                                                    },
-                                                                    "elementId": "stylized_text_5",
-                                                                    "elementLabel": "Debug Instance",
-                                                                    "eventMappings": [],
-                                                                    "isHidden": {
-                                                                        "type": "JSON_LITERAL",
-                                                                        "value": true
-                                                                    },
-                                                                    "preset": null,
-                                                                    "propertyValues": {
-                                                                        "configAria": {
-                                                                            "container": {},
-                                                                            "type": "MAP_CONTAINER"
-                                                                        },
-                                                                        "css": {
-                                                                            "type": "JSON_LITERAL",
-                                                                            "value": "* { \n    color: #dee2fb;\n    \n    }"
-                                                                        },
-                                                                        "tag": {
-                                                                            "type": "JSON_LITERAL",
-                                                                            "value": "p"
-                                                                        },
-                                                                        "text": {
-                                                                            "transform": {
-                                                                                "operands": {
-                                                                                    "container": [
-                                                                                        {
-                                                                                            "binding": {
-                                                                                                "address": [
-                                                                                                    "Game Instance"
-                                                                                                ]
-                                                                                            },
-                                                                                            "type": "STATE_BINDING"
-                                                                                        },
-                                                                                        {
-                                                                                            "type": "JSON_LITERAL",
-                                                                                            "value": "- Game Instance"
-                                                                                        }
-                                                                                    ],
-                                                                                    "type": "LIST_CONTAINER"
-                                                                                },
-                                                                                "operator": "CONCAT"
-                                                                            },
-                                                                            "type": "CLIENT_TRANSFORM"
-                                                                        }
-                                                                    },
-                                                                    "slot": null,
-                                                                    "styles": {}
-                                                                },
-                                                                {
-                                                                    "definition": {
-                                                                        "id": "4335ba6dca80378f7ba7a67cd6667bec",
-                                                                        "type": "MACROPONENT"
-                                                                    },
-                                                                    "elementId": "stylized_text_6",
-                                                                    "elementLabel": "My Session debug",
-                                                                    "eventMappings": [],
-                                                                    "isHidden": {
-                                                                        "type": "JSON_LITERAL",
-                                                                        "value": true
-                                                                    },
-                                                                    "preset": null,
-                                                                    "propertyValues": {
-                                                                        "configAria": {
-                                                                            "container": {},
-                                                                            "type": "MAP_CONTAINER"
-                                                                        },
-                                                                        "css": {
-                                                                            "type": "JSON_LITERAL",
-                                                                            "value": "* { \n    color: #dee2fb;\n    \n    }"
-                                                                        },
-                                                                        "tag": {
-                                                                            "type": "JSON_LITERAL",
-                                                                            "value": "p"
-                                                                        },
-                                                                        "text": {
-                                                                            "transform": {
-                                                                                "operands": {
-                                                                                    "container": [
-                                                                                        {
-                                                                                            "binding": {
-                                                                                                "address": [
-                                                                                                    "MyPlayerSesison"
-                                                                                                ]
-                                                                                            },
-                                                                                            "type": "STATE_BINDING"
-                                                                                        },
-                                                                                        {
-                                                                                            "type": "JSON_LITERAL",
-                                                                                            "value": "- Session"
-                                                                                        }
-                                                                                    ],
-                                                                                    "type": "LIST_CONTAINER"
-                                                                                },
-                                                                                "operator": "CONCAT"
-                                                                            },
-                                                                            "type": "CLIENT_TRANSFORM"
-                                                                        }
-                                                                    },
-                                                                    "slot": null,
-                                                                    "styles": {}
-                                                                },
-                                                                {
-                                                                    "definition": {
-                                                                        "id": "4335ba6dca80378f7ba7a67cd6667bec",
-                                                                        "type": "MACROPONENT"
-                                                                    },
-                                                                    "elementId": "debug_event_id",
-                                                                    "elementLabel": "Debug Event ID",
-                                                                    "eventMappings": [],
-                                                                    "isHidden": {
-                                                                        "type": "JSON_LITERAL",
-                                                                        "value": true
-                                                                    },
-                                                                    "preset": null,
-                                                                    "propertyValues": {
-                                                                        "configAria": {
-                                                                            "container": {},
-                                                                            "type": "MAP_CONTAINER"
-                                                                        },
-                                                                        "css": {
-                                                                            "type": "JSON_LITERAL",
-                                                                            "value": "* { \n    color: #dee2fb;\n    \n    }"
-                                                                        },
-                                                                        "tag": {
-                                                                            "type": "JSON_LITERAL",
-                                                                            "value": "p"
-                                                                        },
-                                                                        "text": {
-                                                                            "transform": {
-                                                                                "operands": {
-                                                                                    "container": [
-                                                                                        {
-                                                                                            "binding": {
-                                                                                                "address": [
-                                                                                                    "Matchmaking Event"
-                                                                                                ]
-                                                                                            },
-                                                                                            "type": "STATE_BINDING"
-                                                                                        },
-                                                                                        {
-                                                                                            "type": "JSON_LITERAL",
-                                                                                            "value": " - Event"
-                                                                                        }
-                                                                                    ],
-                                                                                    "type": "LIST_CONTAINER"
-                                                                                },
-                                                                                "operator": "CONCAT"
-                                                                            },
-                                                                            "type": "CLIENT_TRANSFORM"
-                                                                        }
-                                                                    },
-                                                                    "slot": null,
-                                                                    "styles": {}
-                                                                },
-                                                                {
-                                                                    "definition": {
-                                                                        "id": "4335ba6dca80378f7ba7a67cd6667bec",
-                                                                        "type": "MACROPONENT"
-                                                                    },
-                                                                    "elementId": "stylized_text_11",
-                                                                    "elementLabel": "P1 Session",
-                                                                    "eventMappings": [],
-                                                                    "isHidden": {
-                                                                        "type": "JSON_LITERAL",
-                                                                        "value": true
-                                                                    },
-                                                                    "preset": null,
-                                                                    "propertyValues": {
-                                                                        "configAria": {
-                                                                            "container": {},
-                                                                            "type": "MAP_CONTAINER"
-                                                                        },
-                                                                        "css": {
-                                                                            "type": "JSON_LITERAL",
-                                                                            "value": "* { \n    color: #dee2fb;\n    \n    }"
-                                                                        },
-                                                                        "tag": {
-                                                                            "type": "JSON_LITERAL",
-                                                                            "value": "p"
-                                                                        },
-                                                                        "text": {
-                                                                            "transform": {
-                                                                                "operands": {
-                                                                                    "container": [
-                                                                                        {
-                                                                                            "binding": {
-                                                                                                "address": [
-                                                                                                    "Player 1 Session (for AI)"
-                                                                                                ]
-                                                                                            },
-                                                                                            "type": "STATE_BINDING"
-                                                                                        },
-                                                                                        {
-                                                                                            "type": "JSON_LITERAL",
-                                                                                            "value": "-  P1 Session for AI Match"
-                                                                                        }
-                                                                                    ],
-                                                                                    "type": "LIST_CONTAINER"
-                                                                                },
-                                                                                "operator": "CONCAT"
-                                                                            },
-                                                                            "type": "CLIENT_TRANSFORM"
-                                                                        }
-                                                                    },
-                                                                    "slot": null,
-                                                                    "styles": {}
-                                                                }
-                                                            ],
-                                                            "layout": {
-                                                                "default": {
-                                                                    "children": null,
-                                                                    "items": [
-                                                                        {
-                                                                            "element_id": "stylized_text_8",
-                                                                            "styles": {}
-                                                                        },
-                                                                        {
-                                                                            "element_id": "stylized_text_9",
-                                                                            "styles": {}
-                                                                        },
-                                                                        {
-                                                                            "element_id": "stylized_text_4",
-                                                                            "styles": {}
-                                                                        },
-                                                                        {
-                                                                            "element_id": "stylized_text_5",
-                                                                            "styles": {}
-                                                                        },
-                                                                        {
-                                                                            "element_id": "stylized_text_6",
-                                                                            "styles": {}
-                                                                        },
-                                                                        {
-                                                                            "element_id": "debug_event_id",
-                                                                            "styles": {}
-                                                                        },
-                                                                        {
-                                                                            "element_id": "stylized_text_11",
-                                                                            "styles": {}
-                                                                        }
-                                                                    ],
-                                                                    "root": null,
-                                                                    "styles": {
-                                                                        "align-items": "stretch",
-                                                                        "background": "rgb(var(--now-color_brand--neutral))",
-                                                                        "box-sizing": "border-box",
-                                                                        "display": "flex",
-                                                                        "flex-direction": "column",
-                                                                        "height": "100%",
-                                                                        "justify-content": "flex-start",
-                                                                        "overflow": "auto"
-                                                                    },
-                                                                    "type": "flex"
-                                                                },
-                                                                "disableAutoReflow": true,
-                                                                "version": "3.0.0"
-                                                            }
-                                                        },
-                                                        "preset": null,
-                                                        "propertyValues": {
-                                                            "hideEmptyStateUi": {
-                                                                "type": "JSON_LITERAL",
-                                                                "value": true
-                                                            },
-                                                            "slotWrapperBehavior": {
-                                                                "type": "JSON_LITERAL",
-                                                                "value": "contents"
-                                                            }
-                                                        },
-                                                        "scratchPad": {
-                                                            "uib": {
-                                                                "layout": {
-                                                                    "column": {
-                                                                        "columnNumber": 2,
-                                                                        "id": "default",
-                                                                        "styleConfig": {
-                                                                            "external": {},
-                                                                            "internal": {}
-                                                                        }
-                                                                    },
-                                                                    "type": "column"
-                                                                },
-                                                                "version": "1.0.0"
-                                                            }
-                                                        },
-                                                        "slot": null,
-                                                        "styles": null
-                                                    }
-                                                ],
-                                                "layout": {
-                                                    "default": {
-                                                        "children": null,
-                                                        "isInline": null,
-                                                        "items": [
-                                                            {
-                                                                "element_id": "__ohjaagfiijBUZLeeddLeeCqgwoLvBii__column_1",
-                                                                "styles": {
-                                                                    "display": "contents"
-                                                                }
-                                                            }
-                                                        ],
-                                                        "root": null,
-                                                        "rules": null,
-                                                        "styles": {
-                                                            "background": "rgb(var(--now-color_chrome--divider-6))",
-                                                            "box-sizing": "border-box",
-                                                            "display": "grid",
-                                                            "grid-auto-columns": "1fr",
-                                                            "grid-auto-rows": "1fr",
-                                                            "grid-template-columns": "100fr",
-                                                            "grid-template-rows": "1fr",
-                                                            "width": "auto"
-                                                        },
-                                                        "type": "grid"
-                                                    },
-                                                    "disableAutoReflow": true,
-                                                    "queries": [
-                                                        {
-                                                            "layout": {
-                                                                "children": null,
-                                                                "isInline": null,
-                                                                "items": [],
-                                                                "root": null,
-                                                                "rules": null,
-                                                                "styles": {
-                                                                    "grid-template-columns": "1fr",
-                                                                    "height": "fit-content",
-                                                                    "max-height": "max-content",
-                                                                    "min-height": "min-content"
-                                                                },
-                                                                "type": "grid"
-                                                            },
-                                                            "query": {
-                                                                "max-width": 640
-                                                            }
-                                                        }
-                                                    ],
-                                                    "version": "3.0.0"
-                                                }
-                                            },
-                                            "preset": null,
-                                            "propertyValues": {
-                                                "hideEmptyStateUi": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": true
-                                                },
-                                                "slotWrapperBehavior": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": "contents"
-                                                }
-                                            },
-                                            "scratchPad": {
-                                                "uib": {
-                                                    "layout": {
-                                                        "columnSection": {
-                                                            "breakpoints": [
-                                                                {
-                                                                    "behavior": "stack",
-                                                                    "max-width": 640,
-                                                                    "styles": {
-                                                                        "grid-template-columns": "1fr",
-                                                                        "height": "fit-content",
-                                                                        "max-height": "max-content",
-                                                                        "min-height": "min-content"
-                                                                    }
-                                                                }
-                                                            ],
-                                                            "children": [
-                                                                {
-                                                                    "columnNumber": 1,
-                                                                    "unit": "%",
-                                                                    "width": 100
-                                                                }
-                                                            ],
-                                                            "id": "UIB_COLUMN_SECTION_SINGLE_COLUMN_SECTION",
-                                                            "styleConfig": {
-                                                                "external": {},
-                                                                "internal": {}
-                                                            }
-                                                        },
-                                                        "type": "columnSection"
-                                                    },
-                                                    "version": "1.0.0"
-                                                }
-                                            },
-                                            "slot": null,
-                                            "styles": {}
                                         }
                                     ],
                                     "layout": {
@@ -818,12 +238,6 @@
                                                 {
                                                     "element_id": "startstate",
                                                     "styles": {}
-                                                },
-                                                {
-                                                    "element_id": "column_layout_2",
-                                                    "styles": {
-                                                        "display": "contents"
-                                                    }
                                                 }
                                             ],
                                             "root": null,
@@ -1283,6 +697,589 @@
                 },
                 {
                     "definition": {
+                        "id": "d356d14b6e293a3020a244b63d278d8f",
+                        "type": "MACROPONENT"
+                    },
+                    "elementId": "debug_cont",
+                    "elementLabel": "Debug Container",
+                    "eventMappings": [],
+                    "isHidden": {
+                        "type": "JSON_LITERAL",
+                        "value": null
+                    },
+                    "overrides": {
+                        "composition": [
+                            {
+                                "definition": {
+                                    "id": "4335ba6dca80378f7ba7a67cd6667bec",
+                                    "type": "MACROPONENT"
+                                },
+                                "elementId": "stylized_text_8",
+                                "elementLabel": "AI User State Parameter",
+                                "eventMappings": [],
+                                "isHidden": {
+                                    "type": "JSON_LITERAL",
+                                    "value": true
+                                },
+                                "preset": null,
+                                "propertyValues": {
+                                    "configAria": {
+                                        "container": {},
+                                        "type": "MAP_CONTAINER"
+                                    },
+                                    "css": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "* { \n    color: #dee2fb;\n    \n    }"
+                                    },
+                                    "tag": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "p"
+                                    },
+                                    "text": {
+                                        "transform": {
+                                            "operands": {
+                                                "container": [
+                                                    {
+                                                        "binding": {
+                                                            "address": [
+                                                                "AI user ID"
+                                                            ]
+                                                        },
+                                                        "type": "STATE_BINDING"
+                                                    },
+                                                    {
+                                                        "type": "JSON_LITERAL",
+                                                        "value": " - AI User"
+                                                    }
+                                                ],
+                                                "type": "LIST_CONTAINER"
+                                            },
+                                            "operator": "CONCAT"
+                                        },
+                                        "type": "CLIENT_TRANSFORM"
+                                    }
+                                },
+                                "slot": null,
+                                "styles": {}
+                            },
+                            {
+                                "definition": {
+                                    "id": "4335ba6dca80378f7ba7a67cd6667bec",
+                                    "type": "MACROPONENT"
+                                },
+                                "elementId": "stylized_text_9",
+                                "elementLabel": "AI Deck State Parameter",
+                                "eventMappings": [],
+                                "isHidden": {
+                                    "type": "JSON_LITERAL",
+                                    "value": true
+                                },
+                                "preset": null,
+                                "propertyValues": {
+                                    "configAria": {
+                                        "container": {},
+                                        "type": "MAP_CONTAINER"
+                                    },
+                                    "css": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "* { \n    color: #dee2fb;\n    \n    }"
+                                    },
+                                    "tag": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "p"
+                                    },
+                                    "text": {
+                                        "transform": {
+                                            "operands": {
+                                                "container": [
+                                                    {
+                                                        "binding": {
+                                                            "address": [
+                                                                "AI Deck ID"
+                                                            ]
+                                                        },
+                                                        "type": "STATE_BINDING"
+                                                    },
+                                                    {
+                                                        "type": "JSON_LITERAL",
+                                                        "value": " - AI DecK"
+                                                    }
+                                                ],
+                                                "type": "LIST_CONTAINER"
+                                            },
+                                            "operator": "CONCAT"
+                                        },
+                                        "type": "CLIENT_TRANSFORM"
+                                    }
+                                },
+                                "slot": null,
+                                "styles": {}
+                            },
+                            {
+                                "definition": {
+                                    "id": "4335ba6dca80378f7ba7a67cd6667bec",
+                                    "type": "MACROPONENT"
+                                },
+                                "elementId": "stylized_text_4",
+                                "elementLabel": "Debug Queue",
+                                "eventMappings": [],
+                                "isHidden": {
+                                    "type": "JSON_LITERAL",
+                                    "value": false
+                                },
+                                "preset": null,
+                                "propertyValues": {
+                                    "configAria": {
+                                        "container": {},
+                                        "type": "MAP_CONTAINER"
+                                    },
+                                    "css": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "* { \n    color: #dee2fb;\n    \n    }"
+                                    },
+                                    "tag": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "p"
+                                    },
+                                    "text": {
+                                        "transform": {
+                                            "operands": {
+                                                "container": [
+                                                    {
+                                                        "binding": {
+                                                            "address": [
+                                                                "Matchmaking Queue"
+                                                            ]
+                                                        },
+                                                        "type": "STATE_BINDING"
+                                                    },
+                                                    {
+                                                        "type": "JSON_LITERAL",
+                                                        "value": " - Queue"
+                                                    }
+                                                ],
+                                                "type": "LIST_CONTAINER"
+                                            },
+                                            "operator": "CONCAT"
+                                        },
+                                        "type": "CLIENT_TRANSFORM"
+                                    }
+                                },
+                                "slot": null,
+                                "styles": {}
+                            },
+                            {
+                                "definition": {
+                                    "id": "4335ba6dca80378f7ba7a67cd6667bec",
+                                    "type": "MACROPONENT"
+                                },
+                                "elementId": "stylized_text_5",
+                                "elementLabel": "Debug Instance",
+                                "eventMappings": [],
+                                "isHidden": {
+                                    "type": "JSON_LITERAL",
+                                    "value": false
+                                },
+                                "preset": null,
+                                "propertyValues": {
+                                    "configAria": {
+                                        "container": {},
+                                        "type": "MAP_CONTAINER"
+                                    },
+                                    "css": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "* { \n    color: #dee2fb;\n    \n    }"
+                                    },
+                                    "tag": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "p"
+                                    },
+                                    "text": {
+                                        "transform": {
+                                            "operands": {
+                                                "container": [
+                                                    {
+                                                        "binding": {
+                                                            "address": [
+                                                                "Game Instance"
+                                                            ]
+                                                        },
+                                                        "type": "STATE_BINDING"
+                                                    },
+                                                    {
+                                                        "type": "JSON_LITERAL",
+                                                        "value": "- Game Instance"
+                                                    }
+                                                ],
+                                                "type": "LIST_CONTAINER"
+                                            },
+                                            "operator": "CONCAT"
+                                        },
+                                        "type": "CLIENT_TRANSFORM"
+                                    }
+                                },
+                                "slot": null,
+                                "styles": {}
+                            },
+                            {
+                                "definition": {
+                                    "id": "4335ba6dca80378f7ba7a67cd6667bec",
+                                    "type": "MACROPONENT"
+                                },
+                                "elementId": "stylized_text_6",
+                                "elementLabel": "My Session debug",
+                                "eventMappings": [],
+                                "isHidden": {
+                                    "type": "JSON_LITERAL",
+                                    "value": false
+                                },
+                                "preset": null,
+                                "propertyValues": {
+                                    "configAria": {
+                                        "container": {},
+                                        "type": "MAP_CONTAINER"
+                                    },
+                                    "css": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "* { \n    color: #dee2fb;\n    \n    }"
+                                    },
+                                    "tag": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "p"
+                                    },
+                                    "text": {
+                                        "transform": {
+                                            "operands": {
+                                                "container": [
+                                                    {
+                                                        "binding": {
+                                                            "address": [
+                                                                "MyPlayerSesison"
+                                                            ]
+                                                        },
+                                                        "type": "STATE_BINDING"
+                                                    },
+                                                    {
+                                                        "type": "JSON_LITERAL",
+                                                        "value": "- Session"
+                                                    }
+                                                ],
+                                                "type": "LIST_CONTAINER"
+                                            },
+                                            "operator": "CONCAT"
+                                        },
+                                        "type": "CLIENT_TRANSFORM"
+                                    }
+                                },
+                                "slot": null,
+                                "styles": {}
+                            },
+                            {
+                                "definition": {
+                                    "id": "4335ba6dca80378f7ba7a67cd6667bec",
+                                    "type": "MACROPONENT"
+                                },
+                                "elementId": "stylized_text_13",
+                                "elementLabel": "AI Session Debug",
+                                "eventMappings": [],
+                                "isHidden": {
+                                    "type": "JSON_LITERAL",
+                                    "value": false
+                                },
+                                "preset": null,
+                                "propertyValues": {
+                                    "configAria": {
+                                        "container": {},
+                                        "type": "MAP_CONTAINER"
+                                    },
+                                    "css": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "* { \n    color: #dee2fb;\n    \n    }"
+                                    },
+                                    "tag": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "p"
+                                    },
+                                    "text": {
+                                        "transform": {
+                                            "operands": {
+                                                "container": [
+                                                    {
+                                                        "binding": {
+                                                            "address": [
+                                                                "Player 1 Session (for AI)"
+                                                            ]
+                                                        },
+                                                        "type": "STATE_BINDING"
+                                                    },
+                                                    {
+                                                        "type": "JSON_LITERAL",
+                                                        "value": "- AI Session"
+                                                    }
+                                                ],
+                                                "type": "LIST_CONTAINER"
+                                            },
+                                            "operator": "CONCAT"
+                                        },
+                                        "type": "CLIENT_TRANSFORM"
+                                    }
+                                },
+                                "slot": null,
+                                "styles": {}
+                            },
+                            {
+                                "definition": {
+                                    "id": "4335ba6dca80378f7ba7a67cd6667bec",
+                                    "type": "MACROPONENT"
+                                },
+                                "elementId": "debug_event_id",
+                                "elementLabel": "Debug Event ID",
+                                "eventMappings": [],
+                                "isHidden": {
+                                    "type": "JSON_LITERAL",
+                                    "value": false
+                                },
+                                "preset": null,
+                                "propertyValues": {
+                                    "configAria": {
+                                        "container": {},
+                                        "type": "MAP_CONTAINER"
+                                    },
+                                    "css": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "* { \n    color: #dee2fb;\n    \n    }"
+                                    },
+                                    "tag": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "p"
+                                    },
+                                    "text": {
+                                        "transform": {
+                                            "operands": {
+                                                "container": [
+                                                    {
+                                                        "binding": {
+                                                            "address": [
+                                                                "Matchmaking Event"
+                                                            ]
+                                                        },
+                                                        "type": "STATE_BINDING"
+                                                    },
+                                                    {
+                                                        "type": "JSON_LITERAL",
+                                                        "value": " - Event"
+                                                    }
+                                                ],
+                                                "type": "LIST_CONTAINER"
+                                            },
+                                            "operator": "CONCAT"
+                                        },
+                                        "type": "CLIENT_TRANSFORM"
+                                    }
+                                },
+                                "slot": null,
+                                "styles": {}
+                            },
+                            {
+                                "definition": {
+                                    "id": "4335ba6dca80378f7ba7a67cd6667bec",
+                                    "type": "MACROPONENT"
+                                },
+                                "elementId": "stylized_text_14",
+                                "elementLabel": "Debug AI Button",
+                                "eventMappings": [],
+                                "isHidden": {
+                                    "type": "JSON_LITERAL",
+                                    "value": false
+                                },
+                                "preset": null,
+                                "propertyValues": {
+                                    "configAria": {
+                                        "container": {},
+                                        "type": "MAP_CONTAINER"
+                                    },
+                                    "css": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "* { \n    color: #dee2fb;\n    \n    }"
+                                    },
+                                    "tag": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "p"
+                                    },
+                                    "text": {
+                                        "transform": {
+                                            "operands": {
+                                                "container": [
+                                                    {
+                                                        "binding": {
+                                                            "address": [
+                                                                "Show AI Button"
+                                                            ]
+                                                        },
+                                                        "type": "STATE_BINDING"
+                                                    },
+                                                    {
+                                                        "type": "JSON_LITERAL",
+                                                        "value": " - AI button"
+                                                    }
+                                                ],
+                                                "type": "LIST_CONTAINER"
+                                            },
+                                            "operator": "CONCAT"
+                                        },
+                                        "type": "CLIENT_TRANSFORM"
+                                    }
+                                },
+                                "slot": null,
+                                "styles": {}
+                            },
+                            {
+                                "definition": {
+                                    "id": "4335ba6dca80378f7ba7a67cd6667bec",
+                                    "type": "MACROPONENT"
+                                },
+                                "elementId": "stylized_text_15",
+                                "elementLabel": "General Debug",
+                                "eventMappings": [],
+                                "isHidden": {
+                                    "type": "JSON_LITERAL",
+                                    "value": false
+                                },
+                                "preset": null,
+                                "propertyValues": {
+                                    "configAria": {
+                                        "container": {},
+                                        "type": "MAP_CONTAINER"
+                                    },
+                                    "css": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "* { \n    color: #dee2fb;\n    \n    }"
+                                    },
+                                    "tag": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "p"
+                                    },
+                                    "text": {
+                                        "transform": {
+                                            "operands": {
+                                                "container": [
+                                                    {
+                                                        "binding": {
+                                                            "address": [
+                                                                "Generic Debug"
+                                                            ]
+                                                        },
+                                                        "type": "STATE_BINDING"
+                                                    },
+                                                    {
+                                                        "type": "JSON_LITERAL",
+                                                        "value": " - General debug"
+                                                    }
+                                                ],
+                                                "type": "LIST_CONTAINER"
+                                            },
+                                            "operator": "CONCAT"
+                                        },
+                                        "type": "CLIENT_TRANSFORM"
+                                    }
+                                },
+                                "slot": null,
+                                "styles": {}
+                            }
+                        ],
+                        "layout": {
+                            "default": {
+                                "children": null,
+                                "items": [
+                                    {
+                                        "element_id": "stylized_text_8",
+                                        "styles": {}
+                                    },
+                                    {
+                                        "element_id": "stylized_text_9",
+                                        "styles": {}
+                                    },
+                                    {
+                                        "element_id": "stylized_text_4",
+                                        "styles": {}
+                                    },
+                                    {
+                                        "element_id": "stylized_text_5",
+                                        "styles": {}
+                                    },
+                                    {
+                                        "element_id": "stylized_text_6",
+                                        "styles": {}
+                                    },
+                                    {
+                                        "element_id": "stylized_text_13",
+                                        "styles": {}
+                                    },
+                                    {
+                                        "element_id": "debug_event_id",
+                                        "styles": {}
+                                    },
+                                    {
+                                        "element_id": "stylized_text_14",
+                                        "styles": {}
+                                    },
+                                    {
+                                        "element_id": "stylized_text_15",
+                                        "styles": {}
+                                    }
+                                ],
+                                "root": null,
+                                "rules": null,
+                                "styles": {
+                                    "display": "flex",
+                                    "flex-direction": "column"
+                                },
+                                "templateId": "5832fd4d53c31010e6bcddeeff7b12db",
+                                "type": "flex"
+                            },
+                            "version": "3.0.0"
+                        }
+                    },
+                    "preset": null,
+                    "propertyValues": {
+                        "ariaRegionHeadingLevel": {
+                            "type": "JSON_LITERAL",
+                            "value": "1"
+                        },
+                        "ariaRegionName": {
+                            "type": "TRANSLATION_LITERAL",
+                            "value": {
+                                "code": null,
+                                "comment": "",
+                                "message": ""
+                            }
+                        },
+                        "ariaRole": {
+                            "type": "JSON_LITERAL",
+                            "value": ""
+                        },
+                        "hideEmptyStateUi": {
+                            "type": "JSON_LITERAL",
+                            "value": true
+                        },
+                        "includeAriaHeading": {
+                            "type": "JSON_LITERAL",
+                            "value": false
+                        },
+                        "slotWrapperBehavior": {
+                            "type": "JSON_LITERAL",
+                            "value": "fullheight"
+                        },
+                        "type": {
+                            "type": "JSON_LITERAL",
+                            "value": "section"
+                        }
+                    },
+                    "slot": null,
+                    "styles": {}
+                },
+                {
+                    "definition": {
                         "id": "4335ba6dca80378f7ba7a67cd6667bec",
                         "type": "MACROPONENT"
                     },
@@ -1291,7 +1288,7 @@
                     "eventMappings": [],
                     "isHidden": {
                         "type": "JSON_LITERAL",
-                        "value": true
+                        "value": false
                     },
                     "preset": null,
                     "propertyValues": {
@@ -4323,6 +4320,10 @@
                             }
                         },
                         {
+                            "element_id": "debug_cont",
+                            "styles": {}
+                        },
+                        {
                             "element_id": "stylized_text_10",
                             "styles": {}
                         },
@@ -5652,150 +5653,20 @@
                                                 "clientScript": null,
                                                 "conditional": null,
                                                 "declarativeAction": null,
-                                                "event": null,
-                                                "operation": {
-                                                    "dataBrokerId": "9b4b978353211010cbc2ddeeff7b1245",
-                                                    "operationName": "EXECUTE",
-                                                    "parentResourceId": "update_matchmaking_queue",
-                                                    "payload": {
-                                                        "container": {
-                                                            "recordId": {
-                                                                "binding": {
-                                                                    "address": [
-                                                                        "Matchmaking Queue"
-                                                                    ]
-                                                                },
-                                                                "type": "STATE_BINDING"
-                                                            },
-                                                            "table": {
-                                                                "type": "JSON_LITERAL",
-                                                                "value": "x_168987_flow_de_0_matchmaking_queue"
-                                                            },
-                                                            "templateFields": {
-                                                                "transform": {
-                                                                    "operands": {
-                                                                        "container": [
-                                                                            {
-                                                                                "type": "JSON_LITERAL",
-                                                                                "value": "player_2="
-                                                                            },
-                                                                            {
-                                                                                "binding": {
-                                                                                    "address": [
-                                                                                        "AI user ID"
-                                                                                    ]
-                                                                                },
-                                                                                "type": "STATE_BINDING"
-                                                                            },
-                                                                            {
-                                                                                "type": "JSON_LITERAL",
-                                                                                "value": "^player_2_deck="
-                                                                            },
-                                                                            {
-                                                                                "binding": {
-                                                                                    "address": [
-                                                                                        "AI Deck ID"
-                                                                                    ]
-                                                                                },
-                                                                                "type": "STATE_BINDING"
-                                                                            },
-                                                                            {
-                                                                                "type": "JSON_LITERAL",
-                                                                                "value": "^status=started^p2_ai=true"
-                                                                            }
-                                                                        ],
-                                                                        "type": "LIST_CONTAINER"
-                                                                    },
-                                                                    "operator": "CONCAT"
-                                                                },
-                                                                "type": "CLIENT_TRANSFORM"
-                                                            },
-                                                            "useSetDisplayValue": {
-                                                                "type": "JSON_LITERAL",
-                                                                "value": null
-                                                            }
-                                                        },
-                                                        "type": "MAP_CONTAINER"
-                                                    }
-                                                },
-                                                "targetId": "rwlqHeehhktCERkeeddBQOnmXeeQKxX",
-                                                "type": "DATABROKER_OP"
-                                            },
-                                            {
-                                                "broker": null,
-                                                "clientScript": null,
-                                                "conditional": null,
-                                                "declarativeAction": null,
-                                                "event": null,
-                                                "operation": {
-                                                    "dataBrokerId": "9b4b978353211010cbc2ddeeff7b1245",
-                                                    "operationName": "EXECUTE",
-                                                    "parentResourceId": "update_matchmaking_queue",
-                                                    "payload": {
-                                                        "container": {
-                                                            "recordId": {
-                                                                "binding": {
-                                                                    "address": [
-                                                                        "Matchmaking Event"
-                                                                    ]
-                                                                },
-                                                                "type": "STATE_BINDING"
-                                                            },
-                                                            "table": {
-                                                                "type": "JSON_LITERAL",
-                                                                "value": "x_168987_flow_de_0_matchmaking_event"
-                                                            },
-                                                            "templateFields": {
-                                                                "transform": {
-                                                                    "operands": {
-                                                                        "container": [
-                                                                            {
-                                                                                "type": "JSON_LITERAL",
-                                                                                "value": "event_state=completed^my_player_session="
-                                                                            },
-                                                                            {
-                                                                                "binding": {
-                                                                                    "address": [
-                                                                                        "Player 1 Session (for AI)"
-                                                                                    ]
-                                                                                },
-                                                                                "type": "STATE_BINDING"
-                                                                            }
-                                                                        ],
-                                                                        "type": "LIST_CONTAINER"
-                                                                    },
-                                                                    "operator": "CONCAT"
-                                                                },
-                                                                "type": "CLIENT_TRANSFORM"
-                                                            },
-                                                            "useSetDisplayValue": {
-                                                                "type": "JSON_LITERAL",
-                                                                "value": null
-                                                            }
-                                                        },
-                                                        "type": "MAP_CONTAINER"
-                                                    }
-                                                },
-                                                "targetId": "eenuFFPbbCBaaJbjjpeeNjUwDGSddo",
-                                                "type": "DATABROKER_OP"
-                                            },
-                                            {
-                                                "broker": null,
-                                                "clientScript": null,
-                                                "conditional": null,
-                                                "declarativeAction": null,
-                                                "event": null,
-                                                "operation": {
-                                                    "dataBrokerId": "9664d48053461010cbc2ddeeff7b128e",
-                                                    "operationName": "REFRESH",
-                                                    "parentResourceId": "look_up_event",
+                                                "event": {
+                                                    "apiName": "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
                                                     "payload": {
                                                         "type": "JSON_LITERAL",
-                                                        "value": {}
-                                                    }
+                                                        "value": {
+                                                            "propName": "Show AI Button",
+                                                            "value": "true"
+                                                        }
+                                                    },
+                                                    "sysId": "32408b42ff7a10109046e490703bf176"
                                                 },
-                                                "targetId": "XeeddhhlHfiiSCUcddeeddDAKGgaLDfBgg",
-                                                "type": "DATABROKER_OP"
+                                                "operation": null,
+                                                "targetId": "ggNBbbaaeehhthAUpKjjqoHfddxvRYqW",
+                                                "type": "EVENT"
                                             }
                                         ]
                                     }
@@ -6025,15 +5896,29 @@
                                 "isHidden": {
                                     "operation": {
                                         "operand": {
-                                            "binding": {
-                                                "address": [
-                                                    "look_up_event",
-                                                    "result",
-                                                    "ready_to_start_game",
-                                                    "value"
-                                                ]
+                                            "operation": {
+                                                "left": {
+                                                    "binding": {
+                                                        "address": [
+                                                            "look_up_event",
+                                                            "result",
+                                                            "ready_to_start_game",
+                                                            "value"
+                                                        ]
+                                                    },
+                                                    "type": "DATA_OUTPUT_BINDING"
+                                                },
+                                                "operator": "AND",
+                                                "right": {
+                                                    "binding": {
+                                                        "address": [
+                                                            "Show AI Button"
+                                                        ]
+                                                    },
+                                                    "type": "STATE_BINDING"
+                                                }
                                             },
-                                            "type": "DATA_OUTPUT_BINDING"
+                                            "type": "BINARY"
                                         },
                                         "operator": "NOT"
                                     },
@@ -6084,6 +5969,217 @@
                                 },
                                 "slot": null,
                                 "styles": null
+                            },
+                            {
+                                "definition": {
+                                    "id": "d37ce8abca89d02905fed903c8e34d8e",
+                                    "type": "MACROPONENT"
+                                },
+                                "elementId": "ai_start_button",
+                                "elementLabel": "AI Start Button",
+                                "eventMappings": [
+                                    {
+                                        "eventMappingId": "ffQfeeddivdLAkdSjjioIYGBaadbbOt",
+                                        "isConfiguration": false,
+                                        "offRowStorageId": null,
+                                        "sourceEventApiName": "sn_button.NOW_BUTTON#CLICKED",
+                                        "sourceEventCorrelationId": null,
+                                        "sourceEventDefinition": {
+                                            "apiName": "sn_button.NOW_BUTTON#CLICKED",
+                                            "id": null,
+                                            "type": "UXEVENT"
+                                        },
+                                        "sourceEventSysId": null,
+                                        "targets": [
+                                            {
+                                                "broker": null,
+                                                "clientScript": null,
+                                                "conditional": null,
+                                                "declarativeAction": null,
+                                                "event": {
+                                                    "apiName": "x_168987_flow_de_0.NAV_ITEM_SELECTED_RELAY_0e6e21914753711017fdc82f316d43e1",
+                                                    "payload": {
+                                                        "container": {
+                                                            "external": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": null
+                                                            },
+                                                            "fields": {
+                                                                "container": {
+                                                                    "gameInstance": {
+                                                                        "binding": {
+                                                                            "address": [
+                                                                                "Game Instance"
+                                                                            ]
+                                                                        },
+                                                                        "type": "STATE_BINDING"
+                                                                    },
+                                                                    "page": {
+                                                                        "type": "JSON_LITERAL",
+                                                                        "value": "player"
+                                                                    },
+                                                                    "playerSession": {
+                                                                        "binding": {
+                                                                            "address": [
+                                                                                "MyPlayerSesison"
+                                                                            ]
+                                                                        },
+                                                                        "type": "STATE_BINDING"
+                                                                    }
+                                                                },
+                                                                "type": "MAP_CONTAINER"
+                                                            },
+                                                            "multiInstField": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": null
+                                                            },
+                                                            "navigationOptions": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": null
+                                                            },
+                                                            "params": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": {}
+                                                            },
+                                                            "passiveNavigation": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": null
+                                                            },
+                                                            "redirect": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": null
+                                                            },
+                                                            "route": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": "debug-play-space"
+                                                            },
+                                                            "targetRoute": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": null
+                                                            },
+                                                            "title": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": null
+                                                            }
+                                                        },
+                                                        "type": "MAP_CONTAINER"
+                                                    },
+                                                    "sysId": "547e61914753711017fdc82f316d4327"
+                                                },
+                                                "operation": null,
+                                                "targetId": "SiiaaDuPhFDkiipjjRcNebbLakDIV",
+                                                "type": "EVENT"
+                                            },
+                                            {
+                                                "broker": null,
+                                                "clientScript": null,
+                                                "conditional": null,
+                                                "declarativeAction": null,
+                                                "event": {
+                                                    "apiName": "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
+                                                    "payload": {
+                                                        "type": "JSON_LITERAL",
+                                                        "value": {
+                                                            "propName": "AI Starting",
+                                                            "value": false
+                                                        }
+                                                    },
+                                                    "sysId": "32408b42ff7a10109046e490703bf176"
+                                                },
+                                                "operation": null,
+                                                "targetId": "tAKRFwDggBUaajjjjveePwwVvoZmR",
+                                                "type": "EVENT"
+                                            },
+                                            {
+                                                "broker": null,
+                                                "clientScript": null,
+                                                "conditional": null,
+                                                "declarativeAction": null,
+                                                "event": {
+                                                    "apiName": "x_168987_flow_de_0.MODAL_SELECTED_RELAY_0e6e21914753711017fdc82f316d43e1",
+                                                    "payload": {
+                                                        "type": "JSON_LITERAL",
+                                                        "value": {
+                                                            "bare": false,
+                                                            "displayOptions": null,
+                                                            "headerLabel": null,
+                                                            "modalId": "[component-id$='custom_1']",
+                                                            "preserveState": false,
+                                                            "showModal": false,
+                                                            "viewportElementId": null,
+                                                            "viewportFields": null,
+                                                            "viewportParams": null,
+                                                            "viewportRoute": null
+                                                        }
+                                                    },
+                                                    "sysId": "d07e61914753711017fdc82f316d4327"
+                                                },
+                                                "operation": null,
+                                                "targetId": "MBsXOvbbiiDUnKjjyYMreLWRJggW",
+                                                "type": "EVENT"
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "isHidden": {
+                                    "operation": {
+                                        "operand": {
+                                            "binding": {
+                                                "address": [
+                                                    "Show AI Button"
+                                                ]
+                                            },
+                                            "type": "STATE_BINDING"
+                                        },
+                                        "operator": "NOT"
+                                    },
+                                    "type": "UNARY"
+                                },
+                                "preset": null,
+                                "propertyValues": {
+                                    "configAria": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "disabled": {
+                                        "type": "JSON_LITERAL",
+                                        "value": false
+                                    },
+                                    "icon": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "label": {
+                                        "type": "TRANSLATION_LITERAL",
+                                        "value": {
+                                            "code": null,
+                                            "comment": "",
+                                            "message": "Proceed to AI Game"
+                                        }
+                                    },
+                                    "landmark": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "size": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "lg"
+                                    },
+                                    "tooltipContent": {
+                                        "type": "TRANSLATION_LITERAL",
+                                        "value": {
+                                            "code": null,
+                                            "comment": "",
+                                            "message": "Enter a label"
+                                        }
+                                    },
+                                    "variant": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "primary-positive"
+                                    }
+                                },
+                                "slot": null,
+                                "styles": null
                             }
                         ],
                         "layout": {
@@ -6107,6 +6203,13 @@
                                     },
                                     {
                                         "element_id": "start_button",
+                                        "styles": {
+                                            "align-self": "center",
+                                            "background": "#070707"
+                                        }
+                                    },
+                                    {
+                                        "element_id": "ai_start_button",
                                         "styles": {
                                             "align-self": "center",
                                             "background": "#070707"
@@ -7377,7 +7480,46 @@
                     {
                         "broker": null,
                         "clientScript": null,
-                        "conditional": null,
+                        "conditional": {
+                            "transform": {
+                                "operands": {
+                                    "container": [
+                                        {
+                                            "operation": {
+                                                "left": {
+                                                    "binding": {
+                                                        "address": [
+                                                            "look_up_event",
+                                                            "result",
+                                                            "matchmaking_queue",
+                                                            "value"
+                                                        ]
+                                                    },
+                                                    "type": "DATA_OUTPUT_BINDING"
+                                                },
+                                                "operator": "NOT_EQUAL",
+                                                "right": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": ""
+                                                }
+                                            },
+                                            "type": "BINARY"
+                                        },
+                                        {
+                                            "type": "JSON_LITERAL",
+                                            "value": true
+                                        },
+                                        {
+                                            "type": "JSON_LITERAL",
+                                            "value": false
+                                        }
+                                    ],
+                                    "type": "LIST_CONTAINER"
+                                },
+                                "operator": "IF"
+                            },
+                            "type": "CLIENT_TRANSFORM"
+                        },
                         "declarativeAction": null,
                         "event": {
                             "apiName": "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
@@ -7530,39 +7672,6 @@
                                 "container": {
                                     "propName": {
                                         "type": "JSON_LITERAL",
-                                        "value": "Game Instance"
-                                    },
-                                    "value": {
-                                        "binding": {
-                                            "address": [
-                                                "look_up_queue",
-                                                "result",
-                                                "game_instance",
-                                                "value"
-                                            ]
-                                        },
-                                        "type": "DATA_OUTPUT_BINDING"
-                                    }
-                                },
-                                "type": "MAP_CONTAINER"
-                            },
-                            "sysId": "32408b42ff7a10109046e490703bf176"
-                        },
-                        "operation": null,
-                        "targetId": "ccMNLHPYYCUXJjjxYMKknqRKIcc",
-                        "type": "EVENT"
-                    },
-                    {
-                        "broker": null,
-                        "clientScript": null,
-                        "conditional": null,
-                        "declarativeAction": null,
-                        "event": {
-                            "apiName": "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
-                            "payload": {
-                                "container": {
-                                    "propName": {
-                                        "type": "JSON_LITERAL",
                                         "value": "GAME START?"
                                     },
                                     "value": {
@@ -7626,15 +7735,38 @@
                                         "value": "Matchmaking Queue"
                                     },
                                     "value": {
-                                        "binding": {
-                                            "address": [
-                                                "look_up_queue",
-                                                "result",
-                                                "_row_data",
-                                                "uniqueValue"
-                                            ]
+                                        "transform": {
+                                            "operands": {
+                                                "container": [
+                                                    {
+                                                        "binding": {
+                                                            "address": [
+                                                                "Matchmaking Queue"
+                                                            ]
+                                                        },
+                                                        "type": "STATE_BINDING"
+                                                    },
+                                                    {
+                                                        "type": "JSON_LITERAL",
+                                                        "value": " || Lookup:  "
+                                                    },
+                                                    {
+                                                        "binding": {
+                                                            "address": [
+                                                                "look_up_queue",
+                                                                "result",
+                                                                "_row_data",
+                                                                "uniqueValue"
+                                                            ]
+                                                        },
+                                                        "type": "DATA_OUTPUT_BINDING"
+                                                    }
+                                                ],
+                                                "type": "LIST_CONTAINER"
+                                            },
+                                            "operator": "CONCAT"
                                         },
-                                        "type": "DATA_OUTPUT_BINDING"
+                                        "type": "CLIENT_TRANSFORM"
                                     }
                                 },
                                 "type": "MAP_CONTAINER"
@@ -7642,7 +7774,7 @@
                             "sysId": "32408b42ff7a10109046e490703bf176"
                         },
                         "operation": null,
-                        "targetId": "JxpNuvfPDaaiisjjpgGptcbeehhccaac",
+                        "targetId": "bbSiiMrvrQDUCeeddjjtaaFaaXbJKChcc",
                         "type": "EVENT"
                     }
                 ]
@@ -7652,10 +7784,13 @@
             "recordId": {
                 "binding": {
                     "address": [
-                        "Matchmaking Queue"
+                        "look_up_event",
+                        "result",
+                        "matchmaking_queue",
+                        "value"
                     ]
                 },
-                "type": "STATE_BINDING"
+                "type": "DATA_OUTPUT_BINDING"
             },
             "returnFieldMetadata": {
                 "type": "JSON_LITERAL",
@@ -7915,10 +8050,13 @@
                             {
                                 "binding": {
                                     "address": [
-                                        "Matchmaking Event"
+                                        "look_up_event",
+                                        "result",
+                                        "_row_data",
+                                        "uniqueValue"
                                     ]
                                 },
-                                "type": "STATE_BINDING"
+                                "type": "DATA_OUTPUT_BINDING"
                             }
                         ],
                         "type": "LIST_CONTAINER"
@@ -7929,7 +8067,7 @@
             },
             "subscribe": {
                 "type": "JSON_LITERAL",
-                "value": true
+                "value": false
             },
             "table": {
                 "type": "JSON_LITERAL",
@@ -7992,10 +8130,13 @@
                             {
                                 "binding": {
                                     "address": [
-                                        "Matchmaking Event"
+                                        "look_up_event",
+                                        "result",
+                                        "_row_data",
+                                        "uniqueValue"
                                     ]
                                 },
-                                "type": "STATE_BINDING"
+                                "type": "DATA_OUTPUT_BINDING"
                             },
                             {
                                 "type": "JSON_LITERAL",
@@ -8010,7 +8151,7 @@
             },
             "subscribe": {
                 "type": "JSON_LITERAL",
-                "value": true
+                "value": false
             },
             "table": {
                 "type": "JSON_LITERAL",
@@ -8018,142 +8159,6 @@
             }
         },
         "readEvaluationMode": "EAGER"
-    },
-    {
-        "definition": {
-            "id": "9664d48053461010cbc2ddeeff7b128e",
-            "type": "COMPOSITE"
-        },
-        "elementId": "Look_up_session",
-        "elementLabel": "Look up session",
-        "eventMappings": [
-            {
-                "eventMappingId": "ccXUxQfqDAUjWjjmAGjaaKLLKyh",
-                "isConfiguration": false,
-                "offRowStorageId": null,
-                "sourceEventApiName": "sn_uxf.DATA_FETCH_SUCCEEDED",
-                "sourceEventCorrelationId": null,
-                "sourceEventDefinition": {
-                    "apiName": "sn_uxf.DATA_FETCH_SUCCEEDED",
-                    "id": null,
-                    "type": "UXEVENT"
-                },
-                "sourceEventSysId": null,
-                "targets": [
-                    {
-                        "broker": null,
-                        "clientScript": null,
-                        "conditional": null,
-                        "declarativeAction": null,
-                        "event": {
-                            "apiName": "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
-                            "payload": {
-                                "container": {
-                                    "propName": {
-                                        "type": "JSON_LITERAL",
-                                        "value": "GAME START?"
-                                    },
-                                    "value": {
-                                        "transform": {
-                                            "operands": {
-                                                "container": [
-                                                    {
-                                                        "type": "JSON_LITERAL",
-                                                        "value": "Game start - yep: session: "
-                                                    },
-                                                    {
-                                                        "binding": {
-                                                            "address": [
-                                                                "Look_up_session",
-                                                                "result",
-                                                                "_row_data",
-                                                                "uniqueValue"
-                                                            ]
-                                                        },
-                                                        "type": "DATA_OUTPUT_BINDING"
-                                                    }
-                                                ],
-                                                "type": "LIST_CONTAINER"
-                                            },
-                                            "operator": "CONCAT"
-                                        },
-                                        "type": "CLIENT_TRANSFORM"
-                                    }
-                                },
-                                "type": "MAP_CONTAINER"
-                            },
-                            "sysId": "32408b42ff7a10109046e490703bf176"
-                        },
-                        "operation": null,
-                        "targetId": "NwkBlflgAaaWijjmwArRjjEeehheehhCs",
-                        "type": "EVENT"
-                    },
-                    {
-                        "broker": null,
-                        "clientScript": null,
-                        "conditional": null,
-                        "declarativeAction": null,
-                        "event": {
-                            "apiName": "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
-                            "payload": {
-                                "container": {
-                                    "propName": {
-                                        "type": "JSON_LITERAL",
-                                        "value": "MyPlayerSesison"
-                                    },
-                                    "value": {
-                                        "binding": {
-                                            "address": [
-                                                "look_up_event",
-                                                "result",
-                                                "my_player_session",
-                                                "value"
-                                            ]
-                                        },
-                                        "type": "DATA_OUTPUT_BINDING"
-                                    }
-                                },
-                                "type": "MAP_CONTAINER"
-                            },
-                            "sysId": "32408b42ff7a10109046e490703bf176"
-                        },
-                        "operation": null,
-                        "targetId": "ffHPwsvhhnAkbHjjZwKUBccWvmjja",
-                        "type": "EVENT"
-                    }
-                ]
-            }
-        ],
-        "inputValues": {
-            "recordId": {
-                "binding": {
-                    "address": [
-                        "look_up_event",
-                        "result",
-                        "my_player_session",
-                        "value"
-                    ]
-                },
-                "type": "DATA_OUTPUT_BINDING"
-            },
-            "returnFieldMetadata": {
-                "type": "JSON_LITERAL",
-                "value": false
-            },
-            "returnFields": {
-                "type": "JSON_LITERAL",
-                "value": "game_instance,sys_created_on,sys_created_by,cards_drawn,current_energy,current_turn_number,hide_buttons,number"
-            },
-            "returnTableMetadata": {
-                "type": "JSON_LITERAL",
-                "value": false
-            },
-            "table": {
-                "type": "JSON_LITERAL",
-                "value": "x_168987_flow_de_0_player_session"
-            }
-        },
-        "readEvaluationMode": "EXPLICIT"
     },
     {
         "definition": {
@@ -8265,113 +8270,7 @@
             },
             "subscribe": {
                 "type": "JSON_LITERAL",
-                "value": true
-            },
-            "table": {
-                "type": "JSON_LITERAL",
-                "value": "x_168987_flow_de_0_matchmaking_queue"
-            }
-        },
-        "readEvaluationMode": "EAGER"
-    },
-    {
-        "definition": {
-            "id": "b997a84053021010cbc2ddeeff7b1228",
-            "type": "COMPOSITE"
-        },
-        "elementId": "look_up_match_queues",
-        "elementLabel": "Look up pending matches",
-        "eventMappings": [],
-        "inputValues": {
-            "encodedQuery": {
-                "type": "JSON_LITERAL",
-                "value": "ORDERBYDESCsys_created_on"
-            },
-            "limit": {
-                "type": "JSON_LITERAL",
-                "value": "1000"
-            },
-            "offset": {
-                "type": "JSON_LITERAL",
-                "value": null
-            },
-            "orderBy": {
-                "type": "JSON_LITERAL",
-                "value": null
-            },
-            "queryCategory": {
-                "type": "JSON_LITERAL",
-                "value": ""
-            },
-            "returnFieldMetadata": {
-                "type": "JSON_LITERAL",
                 "value": false
-            },
-            "returnFields": {
-                "type": "JSON_LITERAL",
-                "value": "player_1.name,player_1_deck.deck_name"
-            },
-            "sortType": {
-                "type": "JSON_LITERAL",
-                "value": "asc"
-            },
-            "table": {
-                "type": "JSON_LITERAL",
-                "value": "x_168987_flow_de_0_matchmaking_queue"
-            }
-        },
-        "readEvaluationMode": "EXPLICIT"
-    },
-    {
-        "definition": {
-            "id": "bba46ec077223010f5025df90f5a9920",
-            "type": "CLIENT_STATE"
-        },
-        "elementId": "queue_watcher",
-        "elementLabel": "Watch Queue generally",
-        "eventMappings": [
-            {
-                "eventMappingId": "nYyTlPGaaDEUZjjhkJEVzYEzajj",
-                "isConfiguration": false,
-                "offRowStorageId": null,
-                "sourceEventApiName": "sn_record_watcher.RECORD_WATCHER#MESSAGE_RECEIVED",
-                "sourceEventCorrelationId": null,
-                "sourceEventDefinition": {
-                    "apiName": "sn_record_watcher.RECORD_WATCHER#MESSAGE_RECEIVED",
-                    "id": null,
-                    "type": "UXEVENT"
-                },
-                "sourceEventSysId": null,
-                "targets": [
-                    {
-                        "broker": null,
-                        "clientScript": null,
-                        "conditional": null,
-                        "declarativeAction": null,
-                        "event": null,
-                        "operation": {
-                            "dataBrokerId": "b997a84053021010cbc2ddeeff7b1228",
-                            "operationName": "REFRESH",
-                            "parentResourceId": "look_up_match_queues",
-                            "payload": {
-                                "type": "JSON_LITERAL",
-                                "value": {}
-                            }
-                        },
-                        "targetId": "LWncqPjjlBaafaeeddKQIIaVbbtqeehhgg",
-                        "type": "DATABROKER_OP"
-                    }
-                ]
-            }
-        ],
-        "inputValues": {
-            "filterConditions": {
-                "type": "JSON_LITERAL",
-                "value": ""
-            },
-            "subscribe": {
-                "type": "JSON_LITERAL",
-                "value": true
             },
             "table": {
                 "type": "JSON_LITERAL",
@@ -8658,7 +8557,7 @@
             },
             "subscribe": {
                 "type": "JSON_LITERAL",
-                "value": true
+                "value": false
             },
             "table": {
                 "type": "JSON_LITERAL",
@@ -8693,63 +8592,36 @@
                         "clientScript": null,
                         "conditional": null,
                         "declarativeAction": null,
-                        "event": null,
-                        "operation": {
-                            "dataBrokerId": "9b4b978353211010cbc2ddeeff7b1245",
-                            "operationName": "EXECUTE",
-                            "parentResourceId": "update_matchmaking_queue",
-                            "payload": {
-                                "container": {
-                                    "recordId": {
-                                        "binding": {
-                                            "address": [
-                                                "Matchmaking Event"
-                                            ]
-                                        },
-                                        "type": "STATE_BINDING"
-                                    },
-                                    "table": {
-                                        "type": "JSON_LITERAL",
-                                        "value": "x_168987_flow_de_0_matchmaking_event"
-                                    },
-                                    "templateFields": {
-                                        "type": "JSON_LITERAL",
-                                        "value": "ready_to_start_game=true"
-                                    },
-                                    "useSetDisplayValue": {
-                                        "type": "JSON_LITERAL",
-                                        "value": null
-                                    }
-                                },
-                                "type": "MAP_CONTAINER"
-                            }
-                        },
-                        "targetId": "SEnxjeehhceehhCkggtjjccgPeneKFTvH",
-                        "type": "DATABROKER_OP"
-                    },
-                    {
-                        "broker": null,
-                        "clientScript": null,
-                        "conditional": null,
-                        "declarativeAction": null,
                         "event": {
                             "apiName": "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
                             "payload": {
                                 "container": {
                                     "propName": {
                                         "type": "JSON_LITERAL",
-                                        "value": "Player 1 Session (for AI)"
+                                        "value": "GAME START?"
                                     },
                                     "value": {
-                                        "binding": {
-                                            "address": [
-                                                "look_up_game_instance",
-                                                "result",
-                                                "player_1",
-                                                "value"
-                                            ]
+                                        "transform": {
+                                            "operands": {
+                                                "container": [
+                                                    {
+                                                        "binding": {
+                                                            "address": [
+                                                                "GAME START?"
+                                                            ]
+                                                        },
+                                                        "type": "STATE_BINDING"
+                                                    },
+                                                    {
+                                                        "type": "JSON_LITERAL",
+                                                        "value": " AI Game Watch || "
+                                                    }
+                                                ],
+                                                "type": "LIST_CONTAINER"
+                                            },
+                                            "operator": "CONCAT"
                                         },
-                                        "type": "DATA_OUTPUT_BINDING"
+                                        "type": "CLIENT_TRANSFORM"
                                     }
                                 },
                                 "type": "MAP_CONTAINER"
@@ -8757,9 +8629,84 @@
                             "sysId": "32408b42ff7a10109046e490703bf176"
                         },
                         "operation": null,
-                        "targetId": "KqPhHPdiCUfHjjUYJddEItVWdz",
+                        "targetId": "QsPMnfybAEccjeeddFeeABccrLISTR",
                         "type": "EVENT"
+                    }
+                ]
+            }
+        ],
+        "inputValues": {
+            "filterConditions": {
+                "transform": {
+                    "operands": {
+                        "container": [
+                            {
+                                "type": "JSON_LITERAL",
+                                "value": "matchmaking_instance="
+                            },
+                            {
+                                "binding": {
+                                    "address": [
+                                        "Matchmaking Queue"
+                                    ]
+                                },
+                                "type": "STATE_BINDING"
+                            },
+                            {
+                                "type": "JSON_LITERAL",
+                                "value": "^matchmaking_instance.sys_idISNOTEMPTY^matchmaking_instance.source_matchmaking_event="
+                            },
+                            {
+                                "binding": {
+                                    "address": [
+                                        "Matchmaking Event"
+                                    ]
+                                },
+                                "type": "STATE_BINDING"
+                            },
+                            {
+                                "type": "JSON_LITERAL",
+                                "value": "^player_1ISNOTEMPTY^player_2ISNOTEMPTY^p2_ai=true"
+                            }
+                        ],
+                        "type": "LIST_CONTAINER"
                     },
+                    "operator": "CONCAT"
+                },
+                "type": "CLIENT_TRANSFORM"
+            },
+            "subscribe": {
+                "type": "JSON_LITERAL",
+                "value": false
+            },
+            "table": {
+                "type": "JSON_LITERAL",
+                "value": "x_168987_flow_de_0_game_instance"
+            }
+        },
+        "readEvaluationMode": "EAGER"
+    },
+    {
+        "definition": {
+            "id": "9664d48053461010cbc2ddeeff7b128e",
+            "type": "COMPOSITE"
+        },
+        "elementId": "look_up_game_inst_ai",
+        "elementLabel": "Look up Game Instance (AI)",
+        "eventMappings": [
+            {
+                "eventMappingId": "XVGDvvvqAEBojjggDawUdINxy",
+                "isConfiguration": false,
+                "offRowStorageId": null,
+                "sourceEventApiName": "sn_uxf.DATA_FETCH_SUCCEEDED",
+                "sourceEventCorrelationId": null,
+                "sourceEventDefinition": {
+                    "apiName": "sn_uxf.DATA_FETCH_SUCCEEDED",
+                    "id": null,
+                    "type": "UXEVENT"
+                },
+                "sourceEventSysId": null,
+                "targets": [
                     {
                         "broker": null,
                         "clientScript": null,
@@ -8787,7 +8734,22 @@
                                                     },
                                                     {
                                                         "type": "JSON_LITERAL",
-                                                        "value": "Game Inst AI Watcher  |"
+                                                        "value": " Lookup AI Game | "
+                                                    },
+                                                    {
+                                                        "binding": {
+                                                            "address": [
+                                                                "look_up_game_inst_ai",
+                                                                "result",
+                                                                "_row_data",
+                                                                "uniqueValue"
+                                                            ]
+                                                        },
+                                                        "type": "DATA_OUTPUT_BINDING"
+                                                    },
+                                                    {
+                                                        "type": "JSON_LITERAL",
+                                                        "value": " || "
                                                     }
                                                 ],
                                                 "type": "LIST_CONTAINER"
@@ -8802,7 +8764,7 @@
                             "sysId": "32408b42ff7a10109046e490703bf176"
                         },
                         "operation": null,
-                        "targetId": "IajJeehhveCCETUjjhhQKIIiicywQeehh",
+                        "targetId": "iURfevJRBEXGjjwMEshhfbbURNdd",
                         "type": "EVENT"
                     },
                     {
@@ -8810,103 +8772,127 @@
                         "clientScript": null,
                         "conditional": null,
                         "declarativeAction": null,
-                        "event": null,
-                        "operation": {
-                            "dataBrokerId": "9b4b978353211010cbc2ddeeff7b1245",
-                            "operationName": "EXECUTE",
-                            "parentResourceId": "update_matchmaking_queue",
+                        "event": {
+                            "apiName": "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
                             "payload": {
                                 "container": {
-                                    "recordId": {
+                                    "propName": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "Game Instance"
+                                    },
+                                    "value": {
                                         "binding": {
                                             "address": [
-                                                "Matchmaking Event"
+                                                "look_up_game_inst_ai",
+                                                "result",
+                                                "_row_data",
+                                                "uniqueValue"
                                             ]
                                         },
-                                        "type": "STATE_BINDING"
-                                    },
-                                    "table": {
-                                        "type": "JSON_LITERAL",
-                                        "value": "x_168987_flow_de_0_matchmaking_event"
-                                    },
-                                    "templateFields": {
-                                        "transform": {
-                                            "operands": {
-                                                "container": [
-                                                    {
-                                                        "type": "JSON_LITERAL",
-                                                        "value": "my_player_session="
-                                                    },
-                                                    {
-                                                        "binding": {
-                                                            "address": [
-                                                                "look_up_game_instance",
-                                                                "result",
-                                                                "player_1",
-                                                                "value"
-                                                            ]
-                                                        },
-                                                        "type": "DATA_OUTPUT_BINDING"
-                                                    }
-                                                ],
-                                                "type": "LIST_CONTAINER"
-                                            },
-                                            "operator": "CONCAT"
-                                        },
-                                        "type": "CLIENT_TRANSFORM"
-                                    },
-                                    "useSetDisplayValue": {
-                                        "type": "JSON_LITERAL",
-                                        "value": null
+                                        "type": "DATA_OUTPUT_BINDING"
                                     }
                                 },
                                 "type": "MAP_CONTAINER"
-                            }
+                            },
+                            "sysId": "32408b42ff7a10109046e490703bf176"
                         },
-                        "targetId": "hhiiKmccvhheeAUbrjjbbiiIjQaeNccKR",
-                        "type": "DATABROKER_OP"
+                        "operation": null,
+                        "targetId": "EPXVoeehhNhDUSIjjeeeOaUggIggsVG",
+                        "type": "EVENT"
+                    },
+                    {
+                        "broker": null,
+                        "clientScript": null,
+                        "conditional": null,
+                        "declarativeAction": null,
+                        "event": {
+                            "apiName": "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
+                            "payload": {
+                                "container": {
+                                    "propName": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "MyPlayerSesison"
+                                    },
+                                    "value": {
+                                        "binding": {
+                                            "address": [
+                                                "look_up_game_inst_ai",
+                                                "result",
+                                                "player_1",
+                                                "value"
+                                            ]
+                                        },
+                                        "type": "DATA_OUTPUT_BINDING"
+                                    }
+                                },
+                                "type": "MAP_CONTAINER"
+                            },
+                            "sysId": "32408b42ff7a10109046e490703bf176"
+                        },
+                        "operation": null,
+                        "targetId": "fdXVrvRxAEOueeddEAFDeeddQaaRLAO",
+                        "type": "EVENT"
+                    },
+                    {
+                        "clientScript": null,
+                        "clientTransformScript": null,
+                        "clientTransformScriptUxValue": null,
+                        "conditional": null,
+                        "declarativeAction": null,
+                        "event": null,
+                        "operation": null,
+                        "targetId": "nQwPVPbbfAkkAeeddIYItVccceeddpFS",
+                        "type": "EVENT"
                     }
                 ]
             }
         ],
         "inputValues": {
-            "filterConditions": {
-                "transform": {
-                    "operands": {
-                        "container": [
-                            {
-                                "type": "JSON_LITERAL",
-                                "value": "matchmaking_instance="
-                            },
-                            {
-                                "binding": {
-                                    "address": [
-                                        "Matchmaking Queue"
-                                    ]
-                                },
-                                "type": "STATE_BINDING"
-                            },
-                            {
-                                "type": "JSON_LITERAL",
-                                "value": "^player_1ISNOTEMPTY^player_2ISNOTEMPTY^p2_ai=true"
-                            }
-                        ],
-                        "type": "LIST_CONTAINER"
-                    },
-                    "operator": "CONCAT"
+            "recordId": {
+                "binding": {
+                    "address": [
+                        "look_up_queue",
+                        "result",
+                        "game_instance",
+                        "value"
+                    ]
                 },
-                "type": "CLIENT_TRANSFORM"
+                "type": "DATA_OUTPUT_BINDING"
             },
-            "subscribe": {
+            "returnFieldMetadata": {
                 "type": "JSON_LITERAL",
-                "value": true
+                "value": false
+            },
+            "returnFields": {
+                "type": "JSON_LITERAL",
+                "value": "sys_created_on,matchmaking_instance,player_1,p1_ai,player_2,p2_ai,short_description"
+            },
+            "returnTableMetadata": {
+                "type": "JSON_LITERAL",
+                "value": false
             },
             "table": {
                 "type": "JSON_LITERAL",
                 "value": "x_168987_flow_de_0_game_instance"
             }
         },
-        "readEvaluationMode": "EAGER"
+        "readEvaluationMode": "EXPLICIT"
+    },
+    {
+        "definition": {
+            "id": "03fc8aee4758e650089ce5e5316d43f2",
+            "type": "TRANSFORM"
+        },
+        "elementId": "sn_app___1_player_ai_matchmaking_action_1",
+        "elementLabel": "SN App - 1 Player AI matchmaking action 1",
+        "eventMappings": [],
+        "inputValues": {
+            "matchmakingQueueID": {
+                "type": "JSON_LITERAL",
+                "value": ""
+            }
+        },
+        "readEvaluationMode": "EXPLICIT"
     }
 ]</data>
         <description/>
@@ -9016,6 +9002,9 @@
   "message" : "Play Against AI Instead",
   "comment" : ""
 }, {
+  "message" : "Proceed to AI Game",
+  "comment" : ""
+}, {
   "message" : "Proceed to Game",
   "comment" : ""
 }, {
@@ -9083,7 +9072,7 @@
         "id": "wDWYQfn5C0E196AA6Dxm74tm",
         "initialValue": {
             "type": "JSON_LITERAL",
-            "value": ""
+            "value": "NULL"
         },
         "name": "MyPlayerSesison",
         "shape": "",
@@ -9134,9 +9123,30 @@
         "id": "ESCNWPiLA0p69kIHYvJ43v3lB",
         "initialValue": {
             "type": "JSON_LITERAL",
-            "value": null
+            "value": ""
         },
         "name": "Player 1 Session (for AI)",
+        "shape": "",
+        "valueType": "string"
+    },
+    {
+        "fieldType": "boolean",
+        "id": "gQ69B47e1BEOh91QCpU7c943tL",
+        "initialValue": {
+            "type": "JSON_LITERAL",
+            "value": false
+        },
+        "name": "Show AI Button",
+        "shape": "",
+        "valueType": "boolean"
+    },
+    {
+        "id": "GToTNvugDU8l9v0MrYOXZaQP",
+        "initialValue": {
+            "type": "JSON_LITERAL",
+            "value": ""
+        },
+        "name": "Generic Debug",
         "shape": "",
         "valueType": "string"
     }
@@ -9146,14 +9156,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-12-23 02:55:22</sys_created_on>
         <sys_id>0e6e21914753711017fdc82f316d43e1</sys_id>
-        <sys_mod_count>240</sys_mod_count>
+        <sys_mod_count>306</sys_mod_count>
         <sys_name>Default</sys_name>
         <sys_package display_value="SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_update_name>sys_ux_macroponent_0e6e21914753711017fdc82f316d43e1</sys_update_name>
         <sys_updated_by>kevin.clark</sys_updated_by>
-        <sys_updated_on>2025-03-18 09:16:05</sys_updated_on>
+        <sys_updated_on>2025-03-18 12:59:14</sys_updated_on>
     </sys_ux_macroponent>
     <sys_translated_text action="delete_multiple" query="documentkey=0e6e21914753711017fdc82f316d43e1"/>
 </record_update>
