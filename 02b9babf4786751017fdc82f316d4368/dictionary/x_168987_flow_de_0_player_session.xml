@@ -1,23 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element audit="true" db_object_id="c9f08bb747c6751017fdc82f316d439e" label="Player Session" max_length="40" name="x_168987_flow_de_0_player_session" type="collection">
-        <element label="Game Instance" max_length="32" name="game_instance" reference="x_168987_flow_de_0_game_instance" reference_cascade_rule="delete" type="reference"/>
-        <element label="Location 3 Score" max_length="255" name="location_3_score" type="integer"/>
         <element label="Current Energy" max_length="40" name="current_energy" type="integer"/>
+        <element label="Location 2 Score" max_length="255" name="location_2_score" type="integer"/>
+        <element display="true" label="Short Description" max_length="40" name="short_description" type="string"/>
+        <element label="User" max_length="40" name="user" reference="sys_user" type="reference"/>
+        <element label="Rationale" max_length="200" name="rationale" type="string"/>
         <element choice="3" label="Turn Status" max_length="40" name="turn_status" type="choice">
             <choice>
                 <element inactive_on_update="false" label="In progress" sequence="1" value="in_progress"/>
-                <element inactive_on_update="false" label="Ended" sequence="2" value="ended"/>
                 <element inactive_on_update="false" label="Started" sequence="0" value="started"/>
+                <element inactive_on_update="false" label="Ended" sequence="2" value="ended"/>
             </choice>
         </element>
-        <element label="Cards Drawn" max_length="40" name="cards_drawn" type="integer"/>
-        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
-        <element display="true" label="Short Description" max_length="40" name="short_description" type="string"/>
-        <element label="Location 2 Score" max_length="255" name="location_2_score" type="integer"/>
         <element label="Hide buttons" max_length="255" name="hide_buttons" type="boolean"/>
+        <element label="Game Instance" max_length="32" name="game_instance" reference="x_168987_flow_de_0_game_instance" reference_cascade_rule="delete" type="reference"/>
+        <element label="Cards Drawn" max_length="40" name="cards_drawn" type="integer"/>
         <element label="Current Turn Number" max_length="40" name="current_turn_number" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
         <element label="Location 1 Score" max_length="255" name="location_1_score" type="integer"/>
-        <element label="User" max_length="40" name="user" reference="sys_user" type="reference"/>
+        <element label="Location 3 Score" max_length="255" name="location_3_score" type="integer"/>
         <index name="index">
             <element name="game_instance"/>
         </index>
