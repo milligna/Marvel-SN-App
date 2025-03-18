@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_data_broker_transform">
+    <sys_ux_data_broker_transform action="DELETE">
+        <acl_failure_result/>
+        <api_name>x_168987_flow_de_0.SN App - 1 Player AI matchmaking action</api_name>
+        <batch_exclude>false</batch_exclude>
+        <description>Data Broker to create or update the relevant 1 player AI Matchmaking:&#13;
+1. Update the Existing Queue record with Player 2, Player 2 AI = true,  Player 2 Deck, and Status = Started,&#13;
+</description>
+        <mutates_server_data>true</mutates_server_data>
+        <name>SN App - 1 Player AI matchmaking action</name>
+        <output_schema/>
+        <private>false</private>
+        <props>[&#13;
+   {&#13;
+      "name":"matchmakingQueueID",&#13;
+      "label":"Matchmaking Queue ID",&#13;
+      "description":"Updates the Matchmaking Queue with the hardcoded AI player and Deck ides.",&#13;
+      "readOnly":false,&#13;
+      "fieldType":"string",&#13;
+      "mandatory":true,&#13;
+      "defaultValue":""&#13;
+   }&#13;
+]</props>
+        <required_translations>[ {
+  "message" : "Matchmaking Queue ID",
+  "comment" : ""
+}, {
+  "message" : "Updates the Matchmaking Queue with the hardcoded AI player and Deck ides.",
+  "comment" : ""
+} ]</required_translations>
+        <schema_version>1.0.0</schema_version>
+        <script><![CDATA[function transform(input) {
+    var response = {};
+    response[Constants.IS_ERROR] = false;
+    response[Constants.ERROR_MESSAGE] = "";
+    try {
+        if (!input.matchmakingQueueID) throw "No matchmakingQueueID provided in the payload.";
+
+        // AI user Property: x_168987_flow_de_0.sn-app.ai_opponent_id AND AI user's deck property: x_168987_flow_de_0.sn_app.ai_deck_id
+        var matchmakingQueueID = input.matchmakingQueueID;
+        var aiUserID = gs.getProperty(x_168987_flow_de_0.sn - app.ai_opponent_id);
+        var aiDeckID = x_168987_flow_de_0.sn_app.ai_deck_id
+
+        // validate the AI user
+        var aiUserGR = new GlideRecord("sys_user");
+        if (!aiUserGR.get(aiUserID).isValidRecord()) throw "Invalid AI User in system property: x_168987_flow_de_0.sn-app.ai_opponent_id.";
+
+        // validate the AI deck
+        var aiUserGR = new GlideRecord("sys_user");
+        if (!aiUserGR.get(aiUserID).isValidRecord()) throw "Invalid AI User in system property: x_168987_flow_de_0.sn-app.ai_opponent_id.";
+
+        // If all are valid, then call the queue
+        var queueGR = new GlideRecord("x_168987_flow_de_0_matchmaking_queue");
+        if (!queueGR.get(matchmakingQueueID)) {
+            throw "Invalid Matchmaking record.";
+        } else {
+            queueGR.setValue("player_2", aiUserID);
+            queueGR.setValue("player_1_deck", aiDeckID);
+            queueGR.setValue("p2_ai", true);
+            queueGR.setValue("status", "started");
+            queueGR.update();
+        }
+        var updatedRecord = queueGR.update();
+
+        response = updatedRecord;
+
+
+    } catch (error) {
+        response[Constants.IS_ERROR] = true;
+        response[Constants.ERROR_MESSAGE] = 'Failed to update Queue: ' + error;
+        new Logger("SN APP Update matchmakingQueueID").logError(response[Constants.ERROR_MESSAGE]);
+    }
+    return response;
+}]]></script>
+        <sys_class_name>sys_ux_data_broker_transform</sys_class_name>
+        <sys_created_by>kevin.clark</sys_created_by>
+        <sys_created_on>2025-03-18 12:09:05</sys_created_on>
+        <sys_id>03fc8aee4758e650089ce5e5316d43f2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>SN App - 1 Player AI matchmaking action</sys_name>
+        <sys_package display_value="SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_update_name>sys_ux_data_broker_transform_03fc8aee4758e650089ce5e5316d43f2</sys_update_name>
+        <sys_updated_by>kevin.clark</sys_updated_by>
+        <sys_updated_on>2025-03-18 12:09:05</sys_updated_on>
+    </sys_ux_data_broker_transform>
+    <sys_translated_text action="DELETE" query="documentkey=03fc8aee4758e650089ce5e5316d43f2"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="SN App">02b9babf4786751017fdc82f316d4368</application>
+        <file_path/>
+        <instance_id>ac93ff0aeb9b8210e9bbfddacad0cd66</instance_id>
+        <instance_name>empeduque</instance_name>
+        <name>sys_ux_data_broker_transform_03fc8aee4758e650089ce5e5316d43f2</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ux_data_broker_transform"&gt;&lt;sys_ux_data_broker_transform action="INSERT_OR_UPDATE"&gt;&lt;acl_failure_result/&gt;&lt;api_name&gt;x_168987_flow_de_0.SN App - 1 Player AI matchmaking action&lt;/api_name&gt;&lt;batch_exclude&gt;false&lt;/batch_exclude&gt;&lt;description&gt;Data Broker to create or update the relevant 1 player AI Matchmaking:&amp;#13;
+1. Update the Existing Queue record with Player 2, Player 2 AI = true,  Player 2 Deck, and Status = Started,&amp;#13;
+&lt;/description&gt;&lt;mutates_server_data&gt;true&lt;/mutates_server_data&gt;&lt;name&gt;SN App - 1 Player AI matchmaking action&lt;/name&gt;&lt;output_schema/&gt;&lt;private&gt;false&lt;/private&gt;&lt;props&gt;[&amp;#13;
+   {&amp;#13;
+      "name":"matchmakingQueueID",&amp;#13;
+      "label":"Matchmaking Queue ID",&amp;#13;
+      "description":"Updates the Matchmaking Queue with the hardcoded AI player and Deck ides.",&amp;#13;
+      "readOnly":false,&amp;#13;
+      "fieldType":"string",&amp;#13;
+      "mandatory":true,&amp;#13;
+      "defaultValue":""&amp;#13;
+   }&amp;#13;
+]&lt;/props&gt;&lt;required_translations&gt;[ {
+  "message" : "Matchmaking Queue ID",
+  "comment" : ""
+}, {
+  "message" : "Updates the Matchmaking Queue with the hardcoded AI player and Deck ides.",
+  "comment" : ""
+} ]&lt;/required_translations&gt;&lt;schema_version&gt;1.0.0&lt;/schema_version&gt;&lt;script&gt;&lt;![CDATA[function transform(input) {
+    var response = {};
+    response[Constants.IS_ERROR] = false;
+    response[Constants.ERROR_MESSAGE] = "";
+    try {
+        if (!input.matchmakingQueueID) throw "No matchmakingQueueID provided in the payload.";
+
+        // AI user Property: x_168987_flow_de_0.sn-app.ai_opponent_id AND AI user's deck property: x_168987_flow_de_0.sn_app.ai_deck_id
+        var matchmakingQueueID = input.matchmakingQueueID;
+        var aiUserID = gs.getProperty(x_168987_flow_de_0.sn - app.ai_opponent_id);
+        var aiDeckID = x_168987_flow_de_0.sn_app.ai_deck_id
+
+        // validate the AI user
+        var aiUserGR = new GlideRecord("sys_user");
+        if (!aiUserGR.get(aiUserID).isValidRecord()) throw "Invalid AI User in system property: x_168987_flow_de_0.sn-app.ai_opponent_id.";
+
+        // validate the AI deck
+        var aiUserGR = new GlideRecord("sys_user");
+        if (!aiUserGR.get(aiUserID).isValidRecord()) throw "Invalid AI User in system property: x_168987_flow_de_0.sn-app.ai_opponent_id.";
+
+        // If all are valid, then call the queue
+        var queueGR = new GlideRecord("x_168987_flow_de_0_matchmaking_queue");
+        if (!queueGR.get(matchmakingQueueID)) {
+            throw "Invalid Matchmaking record.";
+        } else {
+            queueGR.setValue("player_2", aiUserID);
+            queueGR.setValue("player_1_deck", aiDeckID);
+            queueGR.setValue("p2_ai", true);
+            queueGR.setValue("status", "started");
+            queueGR.update();
+        }
+        var updatedRecord = queueGR.update();
+
+        response = updatedRecord;
+
+
+    } catch (error) {
+        response[Constants.IS_ERROR] = true;
+        response[Constants.ERROR_MESSAGE] = 'Failed to update Queue: ' + error;
+        new Logger("SN APP Update matchmakingQueueID").logError(response[Constants.ERROR_MESSAGE]);
+    }
+    return response;
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_ux_data_broker_transform&lt;/sys_class_name&gt;&lt;sys_created_by&gt;kevin.clark&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-03-18 12:09:05&lt;/sys_created_on&gt;&lt;sys_id&gt;03fc8aee4758e650089ce5e5316d43f2&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;SN App - 1 Player AI matchmaking action&lt;/sys_name&gt;&lt;sys_package display_value="SN App" source="x_168987_flow_de_0"&gt;02b9babf4786751017fdc82f316d4368&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SN App"&gt;02b9babf4786751017fdc82f316d4368&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ux_data_broker_transform_03fc8aee4758e650089ce5e5316d43f2&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;kevin.clark&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-03-18 12:09:05&lt;/sys_updated_on&gt;&lt;/sys_ux_data_broker_transform&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=03fc8aee4758e650089ce5e5316d43f2"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>174363717</payload_hash>
+        <record_name>SN App - 1 Player AI matchmaking action</record_name>
+        <reverted_from/>
+        <source>9406679947dc6250089ce5e5316d43a2</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>kevin.clark</sys_created_by>
+        <sys_created_on>2025-03-18 12:09:05</sys_created_on>
+        <sys_id>962212664798e650089ce5e5316d430a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>195a9284c480000001</sys_recorded_at>
+        <sys_updated_by>kevin.clark</sys_updated_by>
+        <sys_updated_on>2025-03-18 12:09:05</sys_updated_on>
+        <type>Data Broker Server Script</type>
+        <update_guid>5a2212661598e6506656281cdb344209</update_guid>
+        <update_guid_history>5a2212661598e6506656281cdb344209:174363717</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>kevin.clark</sys_created_by>
+        <sys_created_on>2025-03-18 12:25:35</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_data_broker_transform">sys_ux_data_broker_transform</sys_db_object>
+        <sys_id>4ea801e601f34694a195cb17923a6bf1</sys_id>
+        <sys_metadata>03fc8aee4758e650089ce5e5316d43f2</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>SN App - 1 Player AI matchmaking action</sys_name>
+        <sys_package display_value="SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
+        <sys_scope_delete display_value="">110a0432adf34568b384fe43758aba10</sys_scope_delete>
+        <sys_update_name>sys_ux_data_broker_transform_03fc8aee4758e650089ce5e5316d43f2</sys_update_name>
+        <sys_update_version display_value="sys_ux_data_broker_transform_03fc8aee4758e650089ce5e5316d43f2">962212664798e650089ce5e5316d430a</sys_update_version>
+        <sys_updated_by>kevin.clark</sys_updated_by>
+        <sys_updated_on>2025-03-18 12:25:35</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
