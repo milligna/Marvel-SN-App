@@ -5659,13 +5659,125 @@
                                                         "type": "JSON_LITERAL",
                                                         "value": {
                                                             "propName": "Show AI Button",
-                                                            "value": "true"
+                                                            "value": "false"
                                                         }
                                                     },
                                                     "sysId": "32408b42ff7a10109046e490703bf176"
                                                 },
                                                 "operation": null,
                                                 "targetId": "ggNBbbaaeehhthAUpKjjqoHfddxvRYqW",
+                                                "type": "EVENT"
+                                            },
+                                            {
+                                                "broker": null,
+                                                "clientScript": null,
+                                                "conditional": null,
+                                                "declarativeAction": null,
+                                                "event": null,
+                                                "operation": {
+                                                    "dataBrokerId": "9b4b978353211010cbc2ddeeff7b1245",
+                                                    "operationName": "EXECUTE",
+                                                    "parentResourceId": "update_matchmaking_queue",
+                                                    "payload": {
+                                                        "container": {
+                                                            "recordId": {
+                                                                "binding": {
+                                                                    "address": [
+                                                                        "Matchmaking Queue"
+                                                                    ]
+                                                                },
+                                                                "type": "STATE_BINDING"
+                                                            },
+                                                            "table": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": "x_168987_flow_de_0_matchmaking_queue"
+                                                            },
+                                                            "templateFields": {
+                                                                "transform": {
+                                                                    "operands": {
+                                                                        "container": [
+                                                                            {
+                                                                                "type": "JSON_LITERAL",
+                                                                                "value": "player_2="
+                                                                            },
+                                                                            {
+                                                                                "binding": {
+                                                                                    "address": [
+                                                                                        "AI user ID"
+                                                                                    ]
+                                                                                },
+                                                                                "type": "STATE_BINDING"
+                                                                            },
+                                                                            {
+                                                                                "type": "JSON_LITERAL",
+                                                                                "value": "^p2_ai=true^player_2_deck="
+                                                                            },
+                                                                            {
+                                                                                "binding": {
+                                                                                    "address": [
+                                                                                        "AI Deck ID"
+                                                                                    ]
+                                                                                },
+                                                                                "type": "STATE_BINDING"
+                                                                            },
+                                                                            {
+                                                                                "type": "JSON_LITERAL",
+                                                                                "value": "^status=started"
+                                                                            }
+                                                                        ],
+                                                                        "type": "LIST_CONTAINER"
+                                                                    },
+                                                                    "operator": "CONCAT"
+                                                                },
+                                                                "type": "CLIENT_TRANSFORM"
+                                                            },
+                                                            "useSetDisplayValue": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": null
+                                                            }
+                                                        },
+                                                        "type": "MAP_CONTAINER"
+                                                    }
+                                                },
+                                                "targetId": "ffNllccPRNAEAvjjhhUJsaayikIdW",
+                                                "type": "DATABROKER_OP"
+                                            },
+                                            {
+                                                "broker": null,
+                                                "clientScript": null,
+                                                "conditional": null,
+                                                "declarativeAction": null,
+                                                "event": null,
+                                                "operation": {
+                                                    "dataBrokerId": "9664d48053461010cbc2ddeeff7b128e",
+                                                    "operationName": "REFRESH",
+                                                    "parentResourceId": "look_up_queue",
+                                                    "payload": {
+                                                        "type": "JSON_LITERAL",
+                                                        "value": {}
+                                                    }
+                                                },
+                                                "targetId": "WdOnjjPggDBUMeejjjjaaLEiiVszCW",
+                                                "type": "DATABROKER_OP"
+                                            },
+                                            {
+                                                "broker": null,
+                                                "clientScript": null,
+                                                "conditional": null,
+                                                "declarativeAction": null,
+                                                "event": {
+                                                    "apiName": "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
+                                                    "payload": {
+                                                        "type": "JSON_LITERAL",
+                                                        "value": {
+                                                            "propName": "Show AI Button",
+                                                            "value": "true"
+                                                        }
+                                                    },
+                                                    "sysId": "32408b42ff7a10109046e490703bf176"
+                                                },
+                                                "operation": null,
+                                                "targetId": "BDyTLfoWAaaPBjjyeeLObbpOggFbb",
                                                 "type": "EVENT"
                                             }
                                         ]
@@ -6123,7 +6235,7 @@
                                 ],
                                 "isHidden": {
                                     "operation": {
-                                        "operand": {
+                                        "left": {
                                             "binding": {
                                                 "address": [
                                                     "Show AI Button"
@@ -6131,9 +6243,13 @@
                                             },
                                             "type": "STATE_BINDING"
                                         },
-                                        "operator": "NOT"
+                                        "operator": "NOT_EQUAL",
+                                        "right": {
+                                            "type": "JSON_LITERAL",
+                                            "value": "true"
+                                        }
                                     },
-                                    "type": "UNARY"
+                                    "type": "BINARY"
                                 },
                                 "preset": null,
                                 "propertyValues": {
@@ -7631,7 +7747,7 @@
             },
             "returnTableMetadata": {
                 "type": "JSON_LITERAL",
-                "value": false
+                "value": true
             },
             "table": {
                 "type": "JSON_LITERAL",
@@ -7731,20 +7847,46 @@
                                         {
                                             "operation": {
                                                 "left": {
-                                                    "binding": {
-                                                        "address": [
-                                                            "look_up_queue",
-                                                            "result",
-                                                            "game_instance",
-                                                            "value"
-                                                        ]
+                                                    "transform": {
+                                                        "operands": {
+                                                            "container": [
+                                                                {
+                                                                    "binding": {
+                                                                        "address": [
+                                                                            "look_up_queue",
+                                                                            "result",
+                                                                            "source_matchmaking_event",
+                                                                            "value"
+                                                                        ]
+                                                                    },
+                                                                    "type": "DATA_OUTPUT_BINDING"
+                                                                }
+                                                            ],
+                                                            "type": "LIST_CONTAINER"
+                                                        },
+                                                        "operator": "STRING"
                                                     },
-                                                    "type": "DATA_OUTPUT_BINDING"
+                                                    "type": "CLIENT_TRANSFORM"
                                                 },
-                                                "operator": "NOT_EQUAL",
+                                                "operator": "EQUAL",
                                                 "right": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": ""
+                                                    "transform": {
+                                                        "operands": {
+                                                            "container": [
+                                                                {
+                                                                    "binding": {
+                                                                        "address": [
+                                                                            "Matchmaking Event"
+                                                                        ]
+                                                                    },
+                                                                    "type": "STATE_BINDING"
+                                                                }
+                                                            ],
+                                                            "type": "LIST_CONTAINER"
+                                                        },
+                                                        "operator": "STRING"
+                                                    },
+                                                    "type": "CLIENT_TRANSFORM"
                                                 }
                                             },
                                             "type": "BINARY"
@@ -7776,10 +7918,10 @@
                                     "value": {
                                         "binding": {
                                             "address": [
-                                                "look_up_game_instance",
+                                                "look_up_queue",
                                                 "result",
-                                                "_row_data",
-                                                "uniqueValue"
+                                                "game_instance",
+                                                "value"
                                             ]
                                         },
                                         "type": "DATA_OUTPUT_BINDING"
@@ -7807,22 +7949,22 @@
             },
             "returnFieldMetadata": {
                 "type": "JSON_LITERAL",
-                "value": false
+                "value": true
             },
             "returnFields": {
                 "type": "JSON_LITERAL",
-                "value": "game_instance,player_1,player_1_deck,player_1_session,player_2,player_2_session,player_2_deck,short_description,status"
+                "value": "game_instance,player_1,player_1_deck,player_1_session,player_2,player_2_session,player_2_deck,short_description,status,source_matchmaking_event,source_matchmaking_event.sys_id"
             },
             "returnTableMetadata": {
                 "type": "JSON_LITERAL",
-                "value": false
+                "value": true
             },
             "table": {
                 "type": "JSON_LITERAL",
                 "value": "x_168987_flow_de_0_matchmaking_queue"
             }
         },
-        "readEvaluationMode": "EXPLICIT"
+        "readEvaluationMode": "EAGER"
     },
     {
         "definition": {
@@ -7988,7 +8130,50 @@
                     {
                         "broker": null,
                         "clientScript": null,
-                        "conditional": null,
+                        "conditional": {
+                            "transform": {
+                                "operands": {
+                                    "container": [
+                                        {
+                                            "operation": {
+                                                "left": {
+                                                    "binding": {
+                                                        "address": [
+                                                            "look_up_event",
+                                                            "result",
+                                                            "matchmaking_queue",
+                                                            "value"
+                                                        ]
+                                                    },
+                                                    "type": "DATA_OUTPUT_BINDING"
+                                                },
+                                                "operator": "EQUAL",
+                                                "right": {
+                                                    "binding": {
+                                                        "address": [
+                                                            "Matchmaking Queue"
+                                                        ]
+                                                    },
+                                                    "type": "STATE_BINDING"
+                                                }
+                                            },
+                                            "type": "BINARY"
+                                        },
+                                        {
+                                            "type": "JSON_LITERAL",
+                                            "value": true
+                                        },
+                                        {
+                                            "type": "JSON_LITERAL",
+                                            "value": false
+                                        }
+                                    ],
+                                    "type": "LIST_CONTAINER"
+                                },
+                                "operator": "IF"
+                            },
+                            "type": "CLIENT_TRANSFORM"
+                        },
                         "declarativeAction": null,
                         "event": null,
                         "operation": {
@@ -8058,15 +8243,18 @@
                         "container": [
                             {
                                 "type": "JSON_LITERAL",
-                                "value": "source_matchmaking_event="
+                                "value": "sys_id="
                             },
                             {
                                 "binding": {
                                     "address": [
-                                        "Matchmaking Queue"
+                                        "look_up_event",
+                                        "result",
+                                        "matchmaking_queue",
+                                        "value"
                                     ]
                                 },
-                                "type": "STATE_BINDING"
+                                "type": "DATA_OUTPUT_BINDING"
                             }
                         ],
                         "type": "LIST_CONTAINER"
@@ -8124,6 +8312,51 @@
                         },
                         "targetId": "txjjhhNfgiDkkujjgsAEeeddeYMahhQ",
                         "type": "DATABROKER_OP"
+                    },
+                    {
+                        "broker": null,
+                        "clientScript": null,
+                        "conditional": null,
+                        "declarativeAction": null,
+                        "event": {
+                            "apiName": "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
+                            "payload": {
+                                "container": {
+                                    "propName": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "GAME START?"
+                                    },
+                                    "value": {
+                                        "transform": {
+                                            "operands": {
+                                                "container": [
+                                                    {
+                                                        "binding": {
+                                                            "address": [
+                                                                "GAME START?"
+                                                            ]
+                                                        },
+                                                        "type": "STATE_BINDING"
+                                                    },
+                                                    {
+                                                        "type": "JSON_LITERAL",
+                                                        "value": "Event Watcher | "
+                                                    }
+                                                ],
+                                                "type": "LIST_CONTAINER"
+                                            },
+                                            "operator": "CONCAT"
+                                        },
+                                        "type": "CLIENT_TRANSFORM"
+                                    }
+                                },
+                                "type": "MAP_CONTAINER"
+                            },
+                            "sysId": "32408b42ff7a10109046e490703bf176"
+                        },
+                        "operation": null,
+                        "targetId": "KPquteehhiiTCEEkjjvwNWqxhhqFhht",
+                        "type": "EVENT"
                     }
                 ]
             }
@@ -8158,7 +8391,7 @@
             },
             "subscribe": {
                 "type": "JSON_LITERAL",
-                "value": false
+                "value": true
             },
             "table": {
                 "type": "JSON_LITERAL",
@@ -8561,7 +8794,7 @@
             },
             "subscribe": {
                 "type": "JSON_LITERAL",
-                "value": false
+                "value": true
             },
             "table": {
                 "type": "JSON_LITERAL",
@@ -8576,7 +8809,7 @@
             "type": "CLIENT_STATE"
         },
         "elementId": "watch_game_instance_for_ai",
-        "elementLabel": "Watch Game Instance for AI",
+        "elementLabel": "Watch Game Instance (AI)",
         "eventMappings": [
             {
                 "eventMappingId": "eeddWWrafbbIAUdaeeddDaaIhhXQAbUpE",
@@ -8635,6 +8868,44 @@
                         "operation": null,
                         "targetId": "QsPMnfybAEccjeeddFeeABccrLISTR",
                         "type": "EVENT"
+                    },
+                    {
+                        "broker": null,
+                        "clientScript": null,
+                        "conditional": null,
+                        "declarativeAction": null,
+                        "event": null,
+                        "operation": {
+                            "dataBrokerId": "9664d48053461010cbc2ddeeff7b128e",
+                            "operationName": "REFRESH",
+                            "parentResourceId": "look_up_game_inst_ai",
+                            "payload": {
+                                "type": "JSON_LITERAL",
+                                "value": {}
+                            }
+                        },
+                        "targetId": "hmtggSPqTCUfjjeeddOQGZcubbggsuX",
+                        "type": "DATABROKER_OP"
+                    },
+                    {
+                        "broker": null,
+                        "clientScript": null,
+                        "conditional": null,
+                        "declarativeAction": null,
+                        "event": {
+                            "apiName": "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
+                            "payload": {
+                                "type": "JSON_LITERAL",
+                                "value": {
+                                    "propName": "Game Instance",
+                                    "value": ""
+                                }
+                            },
+                            "sysId": "32408b42ff7a10109046e490703bf176"
+                        },
+                        "operation": null,
+                        "targetId": "xNaacRvNpCaaCejjywClKWUIMrA",
+                        "type": "EVENT"
                     }
                 ]
             }
@@ -8652,18 +8923,6 @@
                                 "binding": {
                                     "address": [
                                         "Matchmaking Queue"
-                                    ]
-                                },
-                                "type": "STATE_BINDING"
-                            },
-                            {
-                                "type": "JSON_LITERAL",
-                                "value": "^matchmaking_instance.sys_idISNOTEMPTY^matchmaking_instance.source_matchmaking_event="
-                            },
-                            {
-                                "binding": {
-                                    "address": [
-                                        "Matchmaking Event"
                                     ]
                                 },
                                 "type": "STATE_BINDING"
@@ -8783,18 +9042,25 @@
                                                 "left": {
                                                     "binding": {
                                                         "address": [
-                                                            "look_up_game_inst_ai",
+                                                            "look_up_game_instance",
                                                             "result",
-                                                            "player_1",
-                                                            "value"
+                                                            "_row_data",
+                                                            "uniqueValue"
                                                         ]
                                                     },
                                                     "type": "DATA_OUTPUT_BINDING"
                                                 },
-                                                "operator": "NOT_EQUAL",
+                                                "operator": "EQUAL",
                                                 "right": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": ""
+                                                    "binding": {
+                                                        "address": [
+                                                            "look_up_queue",
+                                                            "result",
+                                                            "game_instance",
+                                                            "value"
+                                                        ]
+                                                    },
+                                                    "type": "DATA_OUTPUT_BINDING"
                                                 }
                                             },
                                             "type": "BINARY"
@@ -8851,7 +9117,84 @@
                         "declarativeAction": null,
                         "event": null,
                         "operation": null,
-                        "targetId": "nQwPVPbbfAkkAeeddIYItVccceeddpFS",
+                        "targetId": "nnlcYADhAaaLgjjccEAkflheNGB",
+                        "type": "EVENT"
+                    },
+                    {
+                        "clientScript": null,
+                        "clientTransformScript": null,
+                        "clientTransformScriptUxValue": null,
+                        "conditional": null,
+                        "declarativeAction": null,
+                        "event": null,
+                        "operation": null,
+                        "targetId": "keeddWhbPVTDUKHjjkwAscffHPgeehhS",
+                        "type": "EVENT"
+                    },
+                    {
+                        "clientScript": null,
+                        "clientTransformScript": null,
+                        "clientTransformScriptUxValue": null,
+                        "conditional": null,
+                        "declarativeAction": null,
+                        "event": null,
+                        "operation": null,
+                        "targetId": "ddRUjjbbvMaDETejjksIRJjXMdddhh",
+                        "type": "EVENT"
+                    },
+                    {
+                        "clientScript": null,
+                        "clientTransformScript": null,
+                        "clientTransformScriptUxValue": null,
+                        "conditional": null,
+                        "declarativeAction": null,
+                        "event": null,
+                        "operation": null,
+                        "targetId": "jjPHggbbvPiAkWDjjiisIteJRTWGw",
+                        "type": "EVENT"
+                    },
+                    {
+                        "clientScript": null,
+                        "clientTransformScript": null,
+                        "clientTransformScriptUxValue": null,
+                        "conditional": null,
+                        "declarativeAction": null,
+                        "event": null,
+                        "operation": null,
+                        "targetId": "NsKbbceehhaDBaanjjjjfsLeehhehxAaaQK",
+                        "type": "EVENT"
+                    },
+                    {
+                        "clientScript": null,
+                        "clientTransformScript": null,
+                        "clientTransformScriptUxValue": null,
+                        "conditional": null,
+                        "declarativeAction": null,
+                        "event": null,
+                        "operation": null,
+                        "targetId": "geCgDPffdBUPggjjwiiLSkbbSddiiES",
+                        "type": "EVENT"
+                    },
+                    {
+                        "clientScript": null,
+                        "clientTransformScript": null,
+                        "clientTransformScriptUxValue": null,
+                        "conditional": null,
+                        "declarativeAction": null,
+                        "event": null,
+                        "operation": null,
+                        "targetId": "WqccoJAAxAEdhjjYgGddZIarGnY",
+                        "type": "EVENT"
+                    },
+                    {
+                        "clientScript": null,
+                        "clientTransformScript": null,
+                        "clientTransformScriptUxValue": null,
+                        "conditional": null,
+                        "declarativeAction": null,
+                        "event": null,
+                        "operation": null,
+                        "targetId": "qCddiihheehhffDAEriijjekMewiFfAdo",
                         "type": "EVENT"
                     }
                 ]
@@ -8868,7 +9211,7 @@
             },
             "returnFieldMetadata": {
                 "type": "JSON_LITERAL",
-                "value": false
+                "value": true
             },
             "returnFields": {
                 "type": "JSON_LITERAL",
@@ -8876,7 +9219,7 @@
             },
             "returnTableMetadata": {
                 "type": "JSON_LITERAL",
-                "value": false
+                "value": true
             },
             "table": {
                 "type": "JSON_LITERAL",
@@ -9163,14 +9506,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-12-23 02:55:22</sys_created_on>
         <sys_id>0e6e21914753711017fdc82f316d43e1</sys_id>
-        <sys_mod_count>312</sys_mod_count>
+        <sys_mod_count>382</sys_mod_count>
         <sys_name>Default</sys_name>
         <sys_package display_value="SN App" source="x_168987_flow_de_0">02b9babf4786751017fdc82f316d4368</sys_package>
         <sys_policy/>
         <sys_scope display_value="SN App">02b9babf4786751017fdc82f316d4368</sys_scope>
         <sys_update_name>sys_ux_macroponent_0e6e21914753711017fdc82f316d43e1</sys_update_name>
         <sys_updated_by>kevin.clark</sys_updated_by>
-        <sys_updated_on>2025-03-18 22:22:52</sys_updated_on>
+        <sys_updated_on>2025-03-19 11:07:09</sys_updated_on>
     </sys_ux_macroponent>
     <sys_translated_text action="delete_multiple" query="documentkey=0e6e21914753711017fdc82f316d43e1"/>
 </record_update>
